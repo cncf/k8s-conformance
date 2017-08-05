@@ -2,6 +2,10 @@
 
 Info regarding the CNCF K8s Conformance Working Group.
 
+The Kubernetes Software Conformance Working Group operates under the aegis of CNCF. We are collaborating with the Kubernetes [Architecture](https://github.com/kubernetes/community/blob/master/sig-architecture/README.md) and [Testing](https://github.com/kubernetes/community/blob/master/sig-testing/README.md) SIGs to help ensure awareness and acceptance of our processes.
+
+The goal for the group is to create a software conformance program that any Kubernetes implementation can use to demonstrate that they are conformant and interoperate. Here is a [list](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) of all known current implementations of Kubernetes.
+
 # Mailing List
 
 https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
@@ -9,6 +13,12 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 # Documentation
 
 * [Early design proposal](https://docs.google.com/document/d/1JsE9itAzL-ZSqKbd5rYnHKKSFW6xK4m50wBj1lTz6Do/edit#heading=h.ub3h0cdur849)
+* [Certified Kubernetes Design Brief](https://docs.google.com/document/d/16ORnXNkR-hFQzNZ6aL3OroXM6_zLP4gKME9E3NyD1jw/edit#)
+
+# Upcoming Meetings
+
+* Tuesday, September 12, 3 to 5 PM PT, Los Angeles. Please [RSVP](https://docs.google.com/a/linuxfoundation.org/forms/d/1IerKI4yn6t9yROOGVxD65gSH9qO3gVmxXwFJW5NXN8s/edit)
+* Monday, November 27, 1:30 to 5:30 PM PT, Las Vegas
 
 # Past Meetings & Presentations
 
