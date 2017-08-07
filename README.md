@@ -17,7 +17,7 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 # Upcoming Meetings
 
-* Tuesday, September 12, 3 to 5 PM PT, Los Angeles. Please [RSVP](https://docs.google.com/a/linuxfoundation.org/forms/d/1IerKI4yn6t9yROOGVxD65gSH9qO3gVmxXwFJW5NXN8s/edit)
+* Tuesday, September 12, 3 to 5 PM PT, Los Angeles. Please [RSVP](https://docs.google.com/forms/d/e/1FAIpQLSdbvyJvO17RIOe827PBVhiJXwXdvW7UeBD7lwGjR-olzsmaJQ/viewform)
 * Monday, November 27, 1:30 to 5:30 PM PT, Las Vegas
 
 # Past Meetings & Presentations
