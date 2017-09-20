@@ -24,6 +24,10 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 NB. you need to join [kubernetes-dev](https://goo.gl/C4CR8r) to access all documents.
 
+## September 12, Los Angeles
+* [Notes] https://docs.google.com/document/d/1HcyeqfFCZ3pVvUg3HRqEPoAeiRKKH5oERm97kUy27RM/edit
+* [Slides] https://docs.google.com/presentation/d/198DZzAC22rLGNrLYpoEha-PuJE3QAkSaJdZ37lkJ8r4/edit#slide=id.g19497da556_0_12
+
 ## July 27, Seattle
 
 * [Notes](https://docs.google.com/document/d/1EO6S_o6hSRQFDQ_AkaizZd7Ia5N5fSFwAih-GfNGbRw/edit#heading=h.9mbss5g49xcf)
