@@ -10,6 +10,8 @@ The goal for the group is to create a software conformance program that any Kube
 
 https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
+⚠️ NOTE: To view all the docs below your Google account MUST also belong to [kubernetes-dev](https://goo.gl/C4CR8r) (though you don't need to actually receive mail from the group).
+
 # Documentation
 
 * [Early design proposal](https://docs.google.com/document/d/1JsE9itAzL-ZSqKbd5rYnHKKSFW6xK4m50wBj1lTz6Do/edit#heading=h.ub3h0cdur849)
@@ -24,9 +26,13 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 NB. you need to join [kubernetes-dev](https://goo.gl/C4CR8r) to access all documents.
 
+## September 26, Video Meet
+* [Notes](https://docs.google.com/document/d/1XkuZToB31AAjOCy4pMxzxS2HHcRj4O_Xu_F84l8ecAc/edit)
+
+
 ## September 12, Los Angeles
-* [Notes] https://docs.google.com/document/d/1HcyeqfFCZ3pVvUg3HRqEPoAeiRKKH5oERm97kUy27RM/edit
-* [Slides] https://docs.google.com/presentation/d/198DZzAC22rLGNrLYpoEha-PuJE3QAkSaJdZ37lkJ8r4/edit#slide=id.g19497da556_0_12
+* [Notes](https://docs.google.com/document/d/1HcyeqfFCZ3pVvUg3HRqEPoAeiRKKH5oERm97kUy27RM/edit)
+* [Slides](https://docs.google.com/presentation/d/198DZzAC22rLGNrLYpoEha-PuJE3QAkSaJdZ37lkJ8r4/edit#slide=id.g19497da556_0_12)
 
 ## July 27, Seattle
 
