@@ -10,7 +10,11 @@ The goal for the group is to create a software conformance program that any Kube
 
 https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
-⚠️ NOTE: To view all the docs below your Google account MUST also belong to [kubernetes-dev](https://goo.gl/C4CR8r) (though you don't need to actually receive mail from the group).
+⚠️ To view all the docs below your Google account MUST also belong to [kubernetes-dev](https://goo.gl/C4CR8r) (though you don't need to actually receive mail from the group).
+
+# Slack
+
+[slack.k8s.io](slack.k8s.io) #k8s-conformance 
 
 # Documentation
 
@@ -19,8 +23,7 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 # Upcoming Meetings
 
-* Tuesday, September 12, 3 to 5 PM PT, Los Angeles. Please [RSVP](https://docs.google.com/forms/d/e/1FAIpQLSdbvyJvO17RIOe827PBVhiJXwXdvW7UeBD7lwGjR-olzsmaJQ/viewform)
-* Monday, November 27, 1:30 to 5:30 PM PT, Las Vegas
+* [Kubecon](http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america), December 6-8 (date TBD), Austin
 
 # Past Meetings & Presentations
 
