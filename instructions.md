@@ -33,6 +33,7 @@ Description: `Conformance results for vX.Y/$dir`
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
+vX.Y/$dir/version.txt: Test and cluster versions.
 vX.Y/$dir/e2e.log: Test log output.
 vX.Y/$dir/junit_01.xml: Machine-readable test log.
 vX.Y/$dir/PRODUCT.yaml: See below.
