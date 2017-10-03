@@ -6,9 +6,10 @@ The Kubernetes Software Conformance Working Group operates under the aegis of CN
 
 The goal for the group is to create a software conformance program that any Kubernetes implementation can use to demonstrate that they are conformant and interoperate. Here is a [list](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) of all known current implementations of Kubernetes.
 
-# Instructions
+# Submitting Conformance Results
 
-Are [here](instructions.md)
+We have [instructions for submitters](instructions.md) and [for
+reviewers](reviewing.md).
 
 # Mailing List
 
