@@ -1,62 +1,31 @@
-# Kubernetes Conformance
+# Certified Kubernetes
 
-Info regarding the CNCF K8s Conformance Working Group.
+Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [60](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) known Kubernetes platforms and distributions.
 
-The Kubernetes Software Conformance Working Group operates under the aegis of CNCF. We are collaborating with the Kubernetes [Architecture](https://github.com/kubernetes/community/blob/master/sig-architecture/README.md) and [Testing](https://github.com/kubernetes/community/blob/master/sig-testing/README.md) SIGs to help ensure awareness and acceptance of our processes.
+One of the goals of the project has always been consistency and portability. Kubernetes sits on top of the infrastructure and enables you to describe your workload in a common format. Kubernetes makes it easy to move workloads from one place to another, or combine disjointed environments with a shared control plane.
 
-The goal for the group is to create a software conformance program that any Kubernetes implementation can use to demonstrate that they are conformant and interoperate. Here is a [list](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) of all known current implementations of Kubernetes.
+In order to better serve these goals, the Kubernetes community (under the aegis of the CNCF) is
+running a Kubernetes Software Conformance Certification program, currently in a pre-launch status.
+All vendors are invited to submit conformance testing results for review and certification by the CNCF. The CNCF will formally certify compliant platforms and officially launch the program later this year.
 
-# Submitting Conformance Results
+This program gives end users the confidence that when they use a Certified Kubernetes product they can rely on a high level of common functionality. It gives Independent Software Vendors (ISVs) confidence that if their customer is using a Certified Kubernetes platform that their software will behave as expected.
 
-We have [instructions for submitters](instructions.md) and [for
-reviewers](reviewing.md).
+Just like Kubernetes itself, the conformance certification is a living thing. Certification is versioned, and with each new version of Kubernetes, as features are added and the architecture changes, the Certification requirements will change as appropriate. The Kubernetes community, through [SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture), is the change controller and oversees of what it means to be Certified Kubernetes. Work on the mechanics of the conformance tests occurs in [SIG Testing](https://github.com/kubernetes/community/tree/master/sig-testing) and the [Conformance WG](README-WG.md) develops the process and policy around the certification program.
 
-# Mailing List
+Once the program officially launches later this year, platforms that certify will be able to proudly display the new Certified Kubernetes logo mark on their marketing materials and may also take advantage of a new combination trademark rule the CNCF adopted for Certified Kubernetes providers that keep up to date with their certification.
 
-https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
+To ensure the pace of innovation in Kubernetes continues and benefits all users, platforms must complete a recertification each year for the current or previous version of Kubernetes to remain certified. This ensures that when you see the Certified Kubernetes mark on a product, you’re not only getting something that’s proven conformant, but also contains the latest and greatest developments from the community.
 
-⚠️ To view all the docs below your Google account MUST also belong to [kubernetes-dev](https://goo.gl/C4CR8r) (though you don't need to actually receive mail from the group).
+## Program Information
 
-# Slack
+[Certification Guide](instructions.md)
 
-[slack.k8s.io](slack.k8s.io) #k8s-conformance 
+[Certified Kubernetes Conformance Program – Terms and Conditions](https://docs.google.com/document/d/1W35EaQe_lLWGpa-immAG1rGckerWBZzhA6Wiutn3EhQ/edit)
 
-# Documentation
+[Certified Kubernetes Conformance Program – Participation Form](https://docs.google.com/document/d/1lGTckgot3iw1_JpFY3BbWlIE01GMlymvALVQO3zmKW0/edit)
 
-* [Early design proposal](https://docs.google.com/document/d/1JsE9itAzL-ZSqKbd5rYnHKKSFW6xK4m50wBj1lTz6Do/edit#heading=h.ub3h0cdur849)
-* [Certified Kubernetes Design Brief](https://docs.google.com/document/d/16ORnXNkR-hFQzNZ6aL3OroXM6_zLP4gKME9E3NyD1jw/edit#)
+## Working Group Information
 
-# Upcoming Meetings
-
-* [Kubecon](http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america), December 6-8 (date TBD), Austin
-
-# Past Meetings & Presentations
-
-NB. you need to join [kubernetes-dev](https://goo.gl/C4CR8r) to access all documents.
-
-## September 26, Video Meet
-* [Notes](https://docs.google.com/document/d/1XkuZToB31AAjOCy4pMxzxS2HHcRj4O_Xu_F84l8ecAc/edit)
-
-
-## September 12, Los Angeles
-* [Notes](https://docs.google.com/document/d/1HcyeqfFCZ3pVvUg3HRqEPoAeiRKKH5oERm97kUy27RM/edit)
-* [Slides](https://docs.google.com/presentation/d/198DZzAC22rLGNrLYpoEha-PuJE3QAkSaJdZ37lkJ8r4/edit#slide=id.g19497da556_0_12)
-
-## July 27, Seattle
-
-* [Notes](https://docs.google.com/document/d/1EO6S_o6hSRQFDQ_AkaizZd7Ia5N5fSFwAih-GfNGbRw/edit#heading=h.9mbss5g49xcf)
-* [Sonobuoy Slides](https://docs.google.com/presentation/u/1/d/1jw5PJGKVMX_1Hv7pDsAqyq_xQThNEPEfaYaYxQqk6cU/edit?usp=sharing)
-
-## May 30, San Francisco
-
-* [Notes](https://docs.google.com/document/d/1nwGwnfvWoDkIdDW5dl2bbbA_nFULrq9xrt1vqpJOE3Y/edit#heading=h.ub3h0cdur849)
-
-## April, Austin
-
-* [Overview](https://docs.google.com/document/d/1Nbzi6vl6J2oBk3coGpW_oo1GPmOx7OGOYHDzlo2bxC0/edit)
-* [Notes](https://docs.google.com/document/d/1OqJDVBaCtn4DfSEyCByAkXkyKtLM7a9sDs_IZmvCbr0/edit)
-* [Slides](https://docs.google.com/presentation/d/1M1sesGhXyDDanF2WBr-l0jvyQQlKLH-YK7v2euqBeB4/edit#slide=id.g207a823394_2_299)
-
-## [BoF] March, Berlin
-
-* [Slides](https://docs.google.com/presentation/d/1DbwKE0TiG4hNkHnjerAhyUbvArkcCDw1JNqAWAO90Iw/edit#slide=id.g19497da556_0_12)
+To participate and contribute to the program itself (including discussion of
+issues affecting conformance and certification), join the mailing list and
+slack channel. Details: [Conformance WG](README-WG.md).
