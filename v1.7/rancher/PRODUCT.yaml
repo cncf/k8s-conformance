@@ -1,0 +1,6 @@
+vendor: Rancher Inc.
+name: Rancher Kubernetes
+version: v1.7.7
+website_url: http://rancher.com/kubernetes/
+documentation_url: http://rancher.com/docs/rancher/v1.6/en/kubernetes/
+product_logo_url: http://rancher.com/brand-guidelines/assets/logos/png/color/rancher-logo-horiz-color.png
