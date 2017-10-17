@@ -9,3 +9,4 @@ To reproduce:
 # wait for "no-exit was specified, sonobuoy is now blocking"
 
 % kubectl cp sonobuoy/sonobuoy:/tmp/sonobuoy ./results
+```
