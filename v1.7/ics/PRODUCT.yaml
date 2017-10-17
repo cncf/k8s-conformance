@@ -1,0 +1,6 @@
+vendor: IBM
+name: IBM Container Service
+version: v1.7.4
+website_url: https://www.ibm.com/Bluemix/Containers
+documentation_url: https://console.bluemix.net/docs/containers/container_index.html
+product_logo_url: http://ibm.biz/containerslogo
