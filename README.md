@@ -24,6 +24,10 @@ To ensure the pace of innovation in Kubernetes continues and benefits all users,
 
 [Certified Kubernetes Conformance Program – Participation Form](https://docs.google.com/document/d/1bYaCKZpOaMZe_zQ8GuomM0UY1um2S852EoehSFdLwlQ/edit)
 
+[Certified Kubernetes Conformance Program – Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified_kubernetes/Certified_Kubernetes_BrandGuide_101617.pdf)
+
+[Certified Kubernetes Conformance Program – Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified_kubernetes)
+
 ## Working Group Information
 
 To participate and contribute to the program itself (including discussion of
