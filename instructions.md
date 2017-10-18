@@ -54,6 +54,9 @@ documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 ```
 
+Note: the `version` property is the version of your product, not the version of
+Kubernetes being used.
+
 ### Sample PR
 
 See https://github.com/mml/k8s-conformance/pull/1 for a sample.
