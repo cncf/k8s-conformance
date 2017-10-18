@@ -69,3 +69,14 @@ If you need a private review, please contact info@cncf.io.
 
 A reviewer should be assigned to your PR shortly.  If you seek faster service,
 please contact info@cncf.io.
+
+## Issues
+
+If you have problems certifying that you feel are an issue with the conformance
+program itself (and not just your own configuration), you can file an issue in
+the [repository](https://github.com/cncf/k8s-conformance). Questions and
+comments can also be sent to the working group's 
+[mailing list and slack channel](https://github.com/cncf/k8s-conformance/blob/master/README.md).
+[SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture)
+is the change controller of the conformance definition, we track a
+[list of issue resolutions](issues.md) with SIG Architecture.
