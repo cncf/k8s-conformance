@@ -31,7 +31,7 @@ This will take 5-20 minutes, depending on how AWS is responding.
 2. `./kraken tool kubectl --config <complete\path\to\config>\sonobuoy.yaml --output <complete\path\to\output\directory> -- apply -f <complete\path\to\output\directory>\sonobuoy-conformance-1.7.yaml`
 
 ### Fetch the results
-1. `./kraken tool kubectl --config <complete\path\to\config>\sonobuoy.yaml -- exec -n sonobuoy sonobuoy ls /tmp/sonobuoy`
+1. `./kraken tool kubectl --config <complete\path\to\config>\sonobuoy.yaml --output <complete\path\to\output\directory> -- exec -n sonobuoy sonobuoy ls /tmp/sonobuoy`
 2. `./kraken tool kubectl --config <complete\path\to\config>\sonobuoy.yaml --output <complete\path\to\output\directory> -- cp -n sonobuoy sonobuoy:/tmp/sonobuoy/<filename of results> <complete\path\to\output\directory>\<filename of results>`
 
 ### Destroy cluster
