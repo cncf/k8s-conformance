@@ -1,6 +1,6 @@
 ## To Reproduce:
 
-This will install and run sonobuoy against a kubernetes v1.7 cluster as created by kraken.
+This will install and run sonobuoy against a kubernetes v1.7 cluster as created by [kraken](https://github.com/samsung-cnct/kraken).
 
 ### Download and unpack the appropriate cli tarball for your host OS (kraken v1.2.1):
  - [darwin](https://github.com/samsung-cnct/kraken/releases/download/1.2.1/kraken_1.2.1_darwin_amd64.tar.gz)
