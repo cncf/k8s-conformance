@@ -30,7 +30,9 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 # Upcoming Meetings
 
-* [Kubecon](http://events.linuxfoundation.org/events/kubecon-and-cloudnativecon-north-america), December 6-8 (date TBD), Austin
+## December 6, Austin (KubeCon)
+
+* [Agenda](https://docs.google.com/document/d/1kHgty5PqHRZWotmbb2aicgvKNhW4m4qWBXFSk-hkYBg/edit)
 
 # Past Meetings & Presentations
 
