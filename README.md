@@ -20,9 +20,9 @@ To ensure the pace of innovation in Kubernetes continues and benefits all users,
 
 [Certification Guide](instructions.md)
 
-[Certified Kubernetes Conformance Program – Terms and Conditions](https://docs.google.com/document/d/1os7XyfYTDtOjXsxuSyqQDUZVgc7-mzjP1d0lWFSgNm4/edit)
+[Certified Kubernetes Conformance Program – Terms and Conditions](https://github.com/cncf/k8s-conformance/tree/master/terms-conditions)
 
-[Certified Kubernetes Conformance Program – Participation Form](https://docs.google.com/document/d/1bYaCKZpOaMZe_zQ8GuomM0UY1um2S852EoehSFdLwlQ/edit)
+[Certified Kubernetes Conformance Program – Participation Form](https://github.com/cncf/k8s-conformance/tree/master/participation-form)
 
 [Certified Kubernetes Conformance Program – Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified_kubernetes/Certified_Kubernetes_BrandGuide_101617.pdf)
 
