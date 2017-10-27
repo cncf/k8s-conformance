@@ -1,0 +1,6 @@
+vendor: Microsoft
+name: Azure Container Service AKS
+version: v1.8.0
+website_url: https://azure.microsoft.com/en-us/services/container-service/
+documentation_url: https://docs.microsoft.com/en-us/azure/container-service/kubernetes/
+product_logo_url: https://i1.wp.com/buildazure.com/wp-content/uploads/2017/09/Azure.png
