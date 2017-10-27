@@ -19,7 +19,7 @@ $ acs-engine deploy --subscription-id $SUBID \
     --dns-prefix conformance --location westus2 \
     --auto-suffix --api-model kubernetes1.8.json 
 
-# Go to https://scanner.heptio.com and geenrate a unique scan token 
+# Go to https://scanner.heptio.com and generate a unique scan token and yaml, save to azscan.yaml
 
 $ kubectl apply -f ./azscan.yaml 
 
