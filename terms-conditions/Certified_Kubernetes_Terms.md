@@ -1,6 +1,6 @@
-﻿### Certified Kubernetes Conformance Program – Terms and Conditions
-#### Last updated: October 18, 2017
- 
+### Certified Kubernetes Conformance Program – Terms and Conditions
+#### Last updated: October 30, 2017
+
 This document sets forth the terms and conditions that apply to the Conformance Program and use of the Certified Kubernetes Marks.
 
 In this document, these terms have the following meanings:
@@ -17,7 +17,7 @@ Together with these terms and conditions, the following documents are part of th
 *  "**Certification Guide**": the conformance testing instructions and requirements for the Conformance Program, available at <https://github.com/cncf/k8s-conformance/blob/master/instructions.md>;
 *  "**Branding Guide**": the Certified Kubernetes Brand Guidelines, available at <https://github.com/cncf/artwork/blob/master/kubernetes/certified_kubernetes/Certified_Kubernetes_BrandGuide_101617.pdf>;
 *  "**LF Trademark Usage Guidelines**": The Linux Foundation Trademark Usage Guidelines, available at <https://www.linuxfoundation.org/trademark-usage>; and
-*  "**Participation Form**": the Certified Kubernetes Participation Form, available at <https://github.com/cncf/k8s-conformance/blob/master/Certified_Kubernetes_Form.md> or in PDF format at <https://github.com/cncf/k8s-conformance/blob/master/Certified_Kubernetes_Form.pdf>.
+*  "**Participation Form**": the Certified Kubernetes Participation Form, available at <https://github.com/cncf/k8s-conformance/tree/master/participation-form/Certified_Kubernetes_Form.pdf>.
 
 #### Introduction
 
@@ -31,16 +31,16 @@ In order to be a Participant in the Conformance Program and to use the Certified
 
 1. determine those of its goods and services with which it intends to use with the Certified Kubernetes Marks and Participant Kubernetes Combinations;
 2. confirm through self-testing that those goods and services are Qualifying Offerings, as described herein;
-3. submit to The Linux Foundation a signed Participation Form, designating the applicable Qualifying Offerings and Participant Kubernetes Combinations and accepting the terms and conditions of the Conformance Program;
+3. submit to The Linux Foundation a signed Participation Form (by email to [conformance@cncf.io](mailto:conformance@cncf.io) or other method made available by The Linux Foundation), designating the applicable Qualifying Offerings and Participant Kubernetes Combinations and accepting the terms and conditions of the Conformance Program;
 4. submit to the Cloud Native Computing Foundation ("CNCF") the successfully-passing self-testing results for the Qualifying Offerings, and have the results accepted by CNCF;
 5. pay fees (if any) required for its participation in the Conformance Program; and
-6. continue to abide by the terms and conditions of the Conformance Program, including subsequent re-testing as described herein, throughout the period of the Participant’s use of the Certified Kubernetes Marks and Participant Kubernetes Combinations.
+6. abide by the terms and conditions of the Conformance Program, including subsequent re-testing as described herein, throughout the period of the Participant’s use of the Certified Kubernetes Marks and Participant Kubernetes Combinations.
 
 Members of CNCF and non-profit organizations will not be charged fees to participate in the Conformance Program. Other potential Participants should contact CNCF for more information about participation fees.
 
 #### Qualifying Offerings and Self-Testing
 
-_Eligible Versions_. A Qualifying Offering may be initially self-certified for (1) the then-current minor (x.y) official release of Kubernetes, and (2) the immediately-preceding minor (x.y-1) official release of Kubernetes; in each case, provided that CNCF has made available a testing evaluation program for that version of Kubernetes. 
+_Eligible Versions_. A Qualifying Offering may be initially self-certified for (1) the then-current minor (x.y) official release of Kubernetes, and (2) the immediately-preceding minor (x.y-1) official release of Kubernetes; provided, in each case, that CNCF has made available a testing evaluation program for that version of Kubernetes.
 
 Example: Following the release of Kubernetes v1.10, a new Qualifying Offering may be initially self-certified for Kubernetes v1.10 or v1.9, but not for v1.8.
 
@@ -56,12 +56,14 @@ _End User Reproducibility_. One objective of the Conformance Program is that the
 
 _Changes to Qualifying Offerings_. The self-testing process and permission to use the Certified Kubernetes Marks and Participant Kubernetes Combinations are intended for a specific version of a Qualifying Offering. If a Participant subsequently modifies a Qualifying Offering, and The Linux Foundation determines or is informed that the Qualifying Offering no longer conforms to the compatibility tests set forth in the Certification Guide or to users’ expectations for Qualifying Offerings, then upon written notice from The Linux Foundation the Participant must again successfully pass the corresponding self-tests and submit to CNCF a copy of the new self-testing results generated by the testing evaluation program within 30 days following such notice. Otherwise, the Participant’s permitted usage time period will be deemed expired and will be subject to the requirements to remove the Certified Kubernetes Marks and Participant Kubernetes Combinations set forth herein.
 
-_Conformance Time Period; Later Versions of Kubernetes_. A Participant’s permission to use the Certified Kubernetes Marks and Participant Kubernetes Combinations with its Qualifying Offerings is time-limited, if the Participant does not continue to ensure that it passes the self-tests for subsequent versions of Kubernetes.
-The Certified Kubernetes Marks and Participant Kubernetes Combinations may be used with a Qualifying Offering for a particular version of Kubernetes (e.g., Kubernetes x.y) until 12 months after the release date of Kubernetes x.y.
+_Conformance Time Period; Later Versions of Kubernetes_. A Participant’s permission to use the Certified Kubernetes Marks and Participant Kubernetes Combinations with its Qualifying Offerings is time-limited. The Certified Kubernetes Marks and Participant Kubernetes Combinations may be used with a Qualifying Offering for a particular version of Kubernetes (e.g., Kubernetes x.y) until the later of:
 
-However, as long as a Participant’s Qualifying Offering continues to pass the self-tests for subsequent versions of Kubernetes (and the Participant otherwise continues to abide by the terms of the Conformance Program), then the Participant may also continue to use the Certified Kubernetes Marks and Participant Kubernetes Combinations with any prior version of Kubernetes for which the offering was a Qualifying Offering.
+* 12 months after the release date of Kubernetes x.y, or
+* 9 months after the release date of the next minor release (e.g., Kubernetes x.y+1).
 
-Example: A Participant’s Qualifying Offering passed the self-tests for Kubernetes v1.9. Over the next two years, the Participant continued to ensure that the Qualifying Offering passed the self-tests for subsequent Kubernetes versions through the then-current latest version, Kubernetes v1.12, and timely submitted the passing self-testing results to CNCF for each new version. Because the Participant has ensured ongoing conformance with later versions, the Participant may continue to use the applicable Certified Kubernetes Marks with the Qualifying Offering for Kubernetes 1.9, even though the 12 month time limit described above has expired.
+However, notwithstanding the time limits above, the Participant may also continue to use the Certified Kubernetes Marks and Participant Kubernetes Combinations for any prior version of Kubernetes for which the offering was a Qualifying Offering, for so long as (1) the offering continues to be a Qualifying Offering for each subsequent version of Kubernetes; (2) the Qualifying Offering with the subsequent version of Kubernetes is made generally available to users of the prior version; and (3) the Participant otherwise continues to abide by the terms of the Conformance Program.
+
+Example: A Participant’s Qualifying Offering passed the self-tests for Kubernetes v1.9. Over the next two years, the Participant continued to ensure that passing self-tests for the Qualifying Offering were submitted to and accepted by CNCF for subsequent Kubernetes versions through the then-current version, Kubernetes v1.12. The Participant may continue to use the applicable Certified Kubernetes Marks with the Qualifying Offering for Kubernetes 1.9, even though the time limit described above for v1.9 has expired.
 
 _Removal of Certified Kubernetes Marks and Participant Kubernetes Combinations at End of Participation_. After the expiration of the permitted usage time period (if the Participant does not continue to ensure that it passes the self-tests for subsequent versions of Kubernetes) or other termination of participation in the Conformance Program, a Participant may no longer use the Certified Kubernetes Marks or Participant Kubernetes Combinations in new materials, and must remove the Certified Kubernetes Marks and Participant Kubernetes Combinations from existing marketing materials and websites within 30 days.
 
@@ -109,9 +111,9 @@ Each Participant hereby grants to The Linux Foundation a royalty-free, worldwide
 
 #### Term and Termination
 
-_Term_. The term of a Participant’s participation in the Conformance Program shall begin upon the Participant’s submission, and The Linux Foundation’s receipt and acceptance, of a fully-completed Participation Form signed by the Participant.
+_Term_. The term of a Participant’s participation in the Conformance Program shall begin upon the Participant’s submission (by email to [conformance@cncf.io](mailto:conformance@cncf.io) or other method made available by The Linux Foundation), and The Linux Foundation’s receipt and acceptance, of a fully-completed Participation Form signed by the Participant.
 
-_Termination_. Either The Linux Foundation or the Participant may terminate Participant’s participation in the Conformance Program upon written notice to the other. Additionally, Participant’s participation in the Conformance Program shall automatically terminate (unless otherwise agreed by The Linux Foundation in writing) upon the occurrence of: (1) the Participant’s breach of the terms of the Conformance Program, if such breach is incurable or, if curable, is not cured within 15 days thereafter; or (2) the expiration of the usage time period for all of the Participant’s Qualifying Offerings, if the Participant does not confirm any newly Qualifying Offering within 30 days thereafter.
+_Termination_. Either The Linux Foundation or the Participant may terminate Participant’s participation in the Conformance Program upon written notice to the other. Additionally, Participant’s participation in the Conformance Program shall automatically terminate (unless otherwise agreed by The Linux Foundation in writing) upon the occurrence of: (1) the Participant’s breach of the terms of the Conformance Program, if such breach is incurable or, if curable, is not cured within 15 days thereafter; or (2) the expiration of the usage time period for all of the Participant’s Qualifying Offerings, if the Participant does not confirm any new Qualifying Offering within 30 days thereafter.
 
 _Effect of Termination; Survival_. Upon the termination of Participant’s participation in the Conformance Program, the Participant may no longer use the Certified Kubernetes Marks or Participant Kubernetes Combinations and must remove them from existing marketing materials and websites. The sections of this agreement entitled "Participant Marks," "Disclaimer of Warranties," "Limitation of Liability," "Indemnification" and "Miscellaneous" shall survive any such termination.
 

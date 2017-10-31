@@ -1,11 +1,11 @@
-﻿### Certified Kubernetes Conformance Program
+### Certified Kubernetes Conformance Program
 #### Participation Form
 
 Complete this form for each Participant (company or other entity) that desires to participate in the Certified Kubernetes Conformance Program and to use the Certified Kubernetes Marks or Participant Kubernetes Combinations. Kubernetes and the Certified Kubernetes Marks are trademarks of The Linux Foundation. Capitalized terms used herein and not otherwise defined shall have the same meanings set forth in the Program Terms.
 
-By signing below and submitting this form to The Linux Foundation:
+By signing below and submitting this form to The Linux Foundation (by email to [conformance@cncf.io](mailto:conformance@cncf.io), by [DocuSign](https://na3.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=ba08f93a-65ca-4c5d-8210-d5c858bb9208) or other method made available by The Linux Foundation):
 
-1.  The Participant agrees to the Terms and Conditions of the Certified Kubernetes Conformance Program (the "**Program Terms**"), available at <https://github.com/cncf/k8s-conformance/blob/master/Certified_Kubernetes_Terms.md> or in PDF format at <https://github.com/cncf/k8s-conformance/blob/master/Certified_Kubernetes_Terms.pdf>.
+1.  The Participant agrees to the Terms and Conditions of the Certified Kubernetes Conformance Program (the "**Program Terms**"), available at <https://github.com/cncf/k8s-conformance/tree/master/terms-conditions/Certified_Kubernetes_Terms.pdf>.
 2.  The Participant confirms that the products and services identified below as Qualifying Offerings have passed all of the self-tests described in the Certification Guide, and are Qualifying Offerings under the Program Terms.
 3.  The Participant confirms that it has submitted to the Cloud Native Computing Foundation ("**CNCF**") the results of the self-tests prior to its first public use of the Certified Kubernetes Marks associated with the corresponding version of Kubernetes.
 4.  The Participant confirms that it will either (a) maintain conformance of the Qualifying Offerings with later versions of Kubernetes, or (b) cease use of the Certified Kubernetes Marks and Participant Kubernetes Combinations at the end of the applicable conformance time period described in the Program Terms.
@@ -31,8 +31,6 @@ Contact address:
 
 \___________________________________________________
 
-\___________________________________________________
-
 Contact telephone:
 
 \___________________________________________________
@@ -48,7 +46,7 @@ Select one:
  - [ ] Participant is a non-profit organization.
  - [ ] Neither of the above. **Please contact CNCF to discuss fees for participation in the Conformance Program.**
 
-#### Qualifying Offerings 
+#### Qualifying Offerings
 
 Name, brief description and URLs for more information:
 
@@ -61,9 +59,11 @@ Name, brief description and URLs for more information:
 \___________________________________________________________________________
 
 
-#### Participant Kubernetes Combinations 
+#### Participant Kubernetes Combinations
 
-List all Participant Kubernetes Combinations to be used with the Qualifying Offerings: 
+List all Participant Kubernetes Combinations to be used with the Qualifying Offerings, if any:
+
+(for example, "XYZ Kubernetes" or "XYZ Kubernetes Platform")
 
 \___________________________________________________________________________
 
@@ -81,7 +81,7 @@ Initial Version of Kubernetes for Conformance (e.g., v1.8): _______
 Conformance Date: __________________
 
 
-#### Signed on behalf of Participant:
+#### Signed on behalf of Participant by:
 
 ```
 Signature: __________________________________
