@@ -31,7 +31,7 @@ In order to be a Participant in the Conformance Program and to use the Certified
 
 1. determine those of its goods and services with which it intends to use with the Certified Kubernetes Marks and Participant Kubernetes Combinations;
 2. confirm through self-testing that those goods and services are Qualifying Offerings, as described herein;
-3. submit to The Linux Foundation a signed Participation Form (by email to [conformance@cncf.io](mailto:conformance@cncf.io) or other method made available by The Linux Foundation), designating the applicable Qualifying Offerings and Participant Kubernetes Combinations and accepting the terms and conditions of the Conformance Program;
+3. submit to The Linux Foundation a signed Participation Form (by email to [conformance@cncf.io](mailto:conformance@cncf.io), by [DocuSign](https://na3.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=ba08f93a-65ca-4c5d-8210-d5c858bb9208) or other method made available by The Linux Foundation), designating the applicable Qualifying Offerings and Participant Kubernetes Combinations and accepting the terms and conditions of the Conformance Program;
 4. submit to the Cloud Native Computing Foundation ("CNCF") the successfully-passing self-testing results for the Qualifying Offerings, and have the results accepted by CNCF;
 5. pay fees (if any) required for its participation in the Conformance Program; and
 6. abide by the terms and conditions of the Conformance Program, including subsequent re-testing as described herein, throughout the period of the Participant’s use of the Certified Kubernetes Marks and Participant Kubernetes Combinations.
