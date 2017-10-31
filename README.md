@@ -1,6 +1,6 @@
 # Certified Kubernetes
 
-Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [60](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) known Kubernetes platforms and distributions.
+Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [35](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) known Kubernetes platforms and distributions.
 
 One of the goals of the project has always been consistency and portability. Kubernetes sits on top of the infrastructure and enables you to describe your workload in a common format. Kubernetes makes it easy to move workloads from one place to another, or combine disjointed environments with a shared control plane.
 
