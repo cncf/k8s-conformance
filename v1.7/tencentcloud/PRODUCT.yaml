@@ -1,0 +1,6 @@
+vendor: Tencent Cloud
+name: Tencent Cloud Container Service
+version: v1.7.8
+website_url: https://cloud.tencent.com/product/ccs?lang=en
+documentation_url: https://cloud.tencent.com/document/product/457?lang=en
+product_logo_url: https://www.cncf.io/wp-content/uploads/2017/05/logo_tencent-300x184.png
