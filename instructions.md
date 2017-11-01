@@ -43,13 +43,13 @@ vX.Y/$dir/PRODUCT.yaml: See below.
 
 This file describes your product. It is YAML formatted with the following root-level fields. Please fill in as appropriate.
 
-| Field  | Description |
-| ------------- | ------------- |
-| `vendor`  | Name of the legal entity that is certifying. This entity must have a signed participation form on file with the CNCF  |
-| `name`  | Name of the product being certified. |
-| `version`  | The version of the product being certified (not the version of Kubernetes it runs). |
-| `website_url`  | URL to the product information website |
-| `documentation_url`  | URL to the product documentation |
+| Field               | Description |
+| ------------------- | ----------- |
+| `vendor`            | Name of the legal entity that is certifying. This entity must have a signed participation form on file with the CNCF  |
+| `name`              | Name of the product being certified. |
+| `version`           | The version of the product being certified (not the version of Kubernetes it runs). |
+| `website_url`       | URL to the product information website |
+| `documentation_url` | URL to the product documentation |
 | `product_logo_url`  | URL to the product's logo, prefrably in SVG format. OPTIONAL. If not supplied, your product will not be listed on any Kubernetes/CNCF marketing around conformance |
 
 Examples below are for a fictional Kubernetes implementation called _Turbo
