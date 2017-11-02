@@ -10,13 +10,14 @@ suite.
 ## Running
 
 The standard tool for running these tests is
-[sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
+[Sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
 these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -`.
 
-Watch sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
+Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
 the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
 `kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain `plugins/e2e/results/{e2e.log,junit.xml}`.
+retain the 3 files `plugins/e2e/results/{e2e.log,junit.xml,version.txt}`, which will
+be included in your submission.
 
 ## Uploading
 
@@ -33,15 +34,25 @@ Description: `Conformance results for vX.Y/$dir`
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
-vX.Y/$dir/version.txt: Test and cluster versions.
-vX.Y/$dir/e2e.log: Test log output.
-vX.Y/$dir/junit_01.xml: Machine-readable test log.
+vX.Y/$dir/version.txt: Test and cluster versions (from Sonobuoy).
+vX.Y/$dir/e2e.log: Test log output (from Sonobuoy).
+vX.Y/$dir/junit_01.xml: Machine-readable test log (from Sonobuoy).
 vX.Y/$dir/PRODUCT.yaml: See below.
 ```
 
 #### PRODUCT.yaml
 
-This file describes your product.  Please fill in these fields as appropriate.
+This file describes your product. It is YAML formatted with the following root-level fields. Please fill in as appropriate.
+
+| Field               | Description |
+| ------------------- | ----------- |
+| `vendor`            | Name of the legal entity that is certifying. This entity must have a signed participation form on file with the CNCF  |
+| `name`              | Name of the product being certified. |
+| `version`           | The version of the product being certified (not the version of Kubernetes it runs). |
+| `website_url`       | URL to the product information website |
+| `documentation_url` | URL to the product documentation |
+| `product_logo_url`  | URL to the product's logo, prefrably in SVG format. OPTIONAL. If not supplied, your product will not be listed on any Kubernetes/CNCF marketing around conformance |
+
 Examples below are for a fictional Kubernetes implementation called _Turbo
 Encabulator_ produced by a company named _Yoyodyne_.
 
@@ -54,16 +65,15 @@ documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 ```
 
-Note: the `version` property is the version of your product, not the version of
-Kubernetes being used.
-
 ### Sample PR
 
 See https://github.com/mml/k8s-conformance/pull/1 for a sample.
 
 ## Amendment for Private Review
 
-If you need a private review, please contact info@cncf.io.
+If you need a private review for an unreleased product, please contact info@cncf.io.
+Note that your results must be made public at launch, at the time you start using the
+Certified Kubernetes Marks.
 
 ## Review
 
