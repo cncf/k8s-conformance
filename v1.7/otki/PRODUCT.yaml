@@ -1,0 +1,6 @@
+vendor: Oracle
+name: Oracle Terraform Kubernetes Installer
+version: 1.1.0
+website_url: https://github.com/oracle/terraform-kubernetes-installer
+documentation_url: https://github.com/oracle/terraform-kubernetes-installer
+product_logo_url: https://www.oracle.com/webfolder/s/brand/identity/logo/index.html#primary
