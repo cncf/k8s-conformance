@@ -10,13 +10,14 @@ suite.
 ## Running
 
 The standard tool for running these tests is
-[sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
+[Sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
 these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -`.
 
-Watch sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
+Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
 the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
 `kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain `plugins/e2e/results/{e2e.log,junit.xml}`.
+retain the 3 files `plugins/e2e/results/{e2e.log,junit.xml,version.txt}`, which will
+be included in your submission.
 
 ## Uploading
 
@@ -33,9 +34,9 @@ Description: `Conformance results for vX.Y/$dir`
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
-vX.Y/$dir/version.txt: Test and cluster versions.
-vX.Y/$dir/e2e.log: Test log output.
-vX.Y/$dir/junit_01.xml: Machine-readable test log.
+vX.Y/$dir/version.txt: Test and cluster versions (from Sonobuoy).
+vX.Y/$dir/e2e.log: Test log output (from Sonobuoy).
+vX.Y/$dir/junit_01.xml: Machine-readable test log (from Sonobuoy).
 vX.Y/$dir/PRODUCT.yaml: See below.
 ```
 
@@ -70,7 +71,9 @@ See https://github.com/mml/k8s-conformance/pull/1 for a sample.
 
 ## Amendment for Private Review
 
-If you need a private review, please contact info@cncf.io.
+If you need a private review for an unreleased product, please contact info@cncf.io.
+Note that your results must be made public at launch, at the time you start using the
+Certified Kubernetes Marks.
 
 ## Review
 
