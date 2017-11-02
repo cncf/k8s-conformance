@@ -3,7 +3,7 @@
 
 Complete this form for each Participant (company or other entity) that desires to participate in the Certified Kubernetes Conformance Program and to use the Certified Kubernetes Marks or Participant Kubernetes Combinations. Kubernetes and the Certified Kubernetes Marks are trademarks of The Linux Foundation. Capitalized terms used herein and not otherwise defined shall have the same meanings set forth in the Program Terms.
 
-By signing below and submitting this form to The Linux Foundation (by email to [conformance@cncf.io](mailto:conformance@cncf.io), by [DocuSign](https://na3.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=ba08f93a-65ca-4c5d-8210-d5c858bb9208) or other method made available by The Linux Foundation):
+By signing below and submitting this form to The Linux Foundation (by [DocuSign](https://na3.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=ba08f93a-65ca-4c5d-8210-d5c858bb9208) or by emailing the [PDF](https://github.com/cncf/k8s-conformance/raw/master/participation-form/Certified_Kubernetes_Form.pdf) to [conformance@cncf.io](mailto:conformance@cncf.io)):
 
 1.  The Participant agrees to the Terms and Conditions of the Certified Kubernetes Conformance Program (the "**Program Terms**"), available at <https://github.com/cncf/k8s-conformance/tree/master/terms-conditions/Certified_Kubernetes_Terms.pdf>.
 2.  The Participant confirms that the products and services identified below as Qualifying Offerings have passed all of the self-tests described in the Certification Guide, and are Qualifying Offerings under the Program Terms.
