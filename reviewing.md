@@ -23,6 +23,9 @@ were run) is equal to or greater than the Conformance Version.
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
 
+When a submission meets all technical requirements, reply to the pull request
+with a `+1` to indicate that the technical review is complete.
+
 ## Policy Requirements
 
 Review the `PRODUCT.yaml` file, and:
@@ -37,3 +40,7 @@ the `name` and `website_url` are listed.
 3. Review the `name`. If it contains the word "Kubernetes" in a non-descriptive
 fashion, verify that the `name` is listed in "Participant Kubernetes
 Combinations" section of the vendor's Participation Form.
+
+When a submission meets all policy requirements, label the pull request
+`participation-form-signed-yes` to indicate that the policy review is complete.
+
