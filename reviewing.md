@@ -10,10 +10,13 @@ Kubernetes for which conformance is being claimed, referenced as the
 3. Verify that the Conformance Version is the current or previous version of
 Kubernetes.
 
-4. Look at `version.txt`.  Verify that the `client` version matches the
-Conformance Version to a minor version level (the patch version may differ).
-`client` in this file represents the version of the e2e tests that were run.
+4. Look at `version.txt`.  Verify that the `major.minor` component of the 
+`server` version exactly matches the Conformance Version.
 
-5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
+5. Look at `version.txt`.  Verify that the `major.minor` component of the 
+`client` version (which represents the Kubernetes version of the e2e tests that
+were run) is equal to or greater than the Conformance Version.
+
+6. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
