@@ -1,0 +1,6 @@
+vendor: SAP
+name: Cloud Platform - Gardener (not yet released) shoot cluster deployed on Google Cloud Engine
+version: 1.3.1
+website_url: https://cloudplatform.sap.com/index.html
+documentation_url: https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/
+product_logo_url: https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg
