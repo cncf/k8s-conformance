@@ -33,7 +33,8 @@ with a `+1` to indicate that the technical review is complete.
 that they reach out to memberships@cncf.io to become a member in order to
 complete their certification. (Companies can alternatively pay a certfication
 fee equal to the cost of membership if, for whatever reason, they don't wish to
-become a CNCF member.)
+become a CNCF member.) Alternatively, non-profit organizations (including community
+distributions like Debian) can certify at no cost.
 
 Review the `PRODUCT.yaml` file, and:
 
