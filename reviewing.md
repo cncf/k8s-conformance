@@ -23,23 +23,28 @@ were run) is equal to or greater than the Conformance Version.
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
 
-7. Confirm that the vendor is currently a [member](https://www.cncf.io/about/members/) of CNCF. If they are not, request that they reach out to memberships@cncf.io to become a member in order to complete their certification. (Companies can alternatively pay a certfication fee equal to the cost of membership if, for whatever reason, they don't wish to become a CNCF member.)
-
 When a submission meets all technical requirements, reply to the pull request
-with a `+1` to indicate that the technical review is complete. Mention in the PR if they're not yet a member.
+with a `+1` to indicate that the technical review is complete.
 
 ## Policy Requirements
 
+1. Confirm that the vendor is currently a
+[member](https://www.cncf.io/about/members/) of CNCF. If they are not, request
+that they reach out to memberships@cncf.io to become a member in order to
+complete their certification. (Companies can alternatively pay a certfication
+fee equal to the cost of membership if, for whatever reason, they don't wish to
+become a CNCF member.)
+
 Review the `PRODUCT.yaml` file, and:
 
-1. Verify that there is a Participation Form on file for the `vendor`, and that
+2. Verify that there is a Participation Form on file for the `vendor`, and that
 the vendor is in good standing in the program.
 
-2. Verify the product `name` and `website_url` are listed in the
+3. Verify the product `name` and `website_url` are listed in the
 "Qualifying Offerings" section of the vendor's Participation Form, i.e. that
 the `name` and `website_url` are listed. 
 
-3. Review the `name`. If it contains the word "Kubernetes" in a non-descriptive
+4. Review the `name`. If it contains the word "Kubernetes" in a non-descriptive
 fashion, verify that the `name` is listed in "Participant Kubernetes
 Combinations" section of the vendor's Participation Form.
 
