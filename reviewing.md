@@ -23,8 +23,10 @@ were run) is equal to or greater than the Conformance Version.
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
 
+7. Confirm that the vendor is currently a [member](https://www.cncf.io/about/members/) of CNCF. If they are not, request that they reach out to memberships@cncf.io to become a member in order to complete their certification. (Companies can alternatively pay a certfication fee equal to the cost of membership if, for whatever reason, they don't wish to become a CNCF member.)
+
 When a submission meets all technical requirements, reply to the pull request
-with a `+1` to indicate that the technical review is complete.
+with a `+1` to indicate that the technical review is complete. Mention in the PR if they're not yet a member.
 
 ## Policy Requirements
 
