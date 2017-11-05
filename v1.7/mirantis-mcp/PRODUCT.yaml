@@ -1,0 +1,6 @@
+vendor: Mirantis
+name: Mirantis Cloud Platform
+version: v1.7.8-3+bdc5df8ecb261a
+website_url: https://www.mirantis.com/software/kubernetes/
+documentation_url: https://docs.mirantis.com/mcp/latest/
+product_logo_url: https://www.mirantis.com/wp-content/uploads/2017/11/mirantis-logo-2color-rgb-tagline.png
