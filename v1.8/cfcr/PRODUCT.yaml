@@ -1,4 +1,4 @@
-vendor: Cloud Foundry
+vendor: Cloud Foundry Foundation
 name: Cloud Foundry Container Runtime
 version: v0.8.0
 website_url: https://www.cloudfoundry.org/container-runtime/
