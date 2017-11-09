@@ -71,14 +71,14 @@ See https://github.com/mml/k8s-conformance/pull/1 for a sample.
 
 ## Amendment for Private Review
 
-If you need a private review for an unreleased product, please contact info@cncf.io.
+If you need a private review for an unreleased product, please contact conformance@cncf.io.
 Note that your results must be made public at launch, at the time you start using the
 Certified Kubernetes Marks.
 
 ## Review
 
 A reviewer should be assigned to your PR shortly.  If you seek faster service,
-please contact info@cncf.io.
+please contact conformance@cncf.io.
 
 ## Issues
 
