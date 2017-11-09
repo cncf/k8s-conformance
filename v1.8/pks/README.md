@@ -16,7 +16,7 @@ You can then run the k8s conformance test by:
 curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -
 ```
 
-Alternatively, the sonobuoy-conformance.yaml file from [here](https://raw.githubusercontent.com/afong94/k8s-conformance/pks/sonobuoy-conformance.yaml) (which removes the RBAC service accounts) can also be directly used by running:
+Alternatively, the sonobuoy-conformance.yaml file from [here](https://raw.githubusercontent.com/afong94/k8s-conformance/sonobuoy-abac/sonobuoy-conformance.yaml) (which removes the RBAC service accounts) can also be directly used by running:
 ```
 curl -L https://raw.githubusercontent.com/afong94/k8s-conformance/pks/sonobuoy-conformance.yaml | kubectl apply -f -
 ```
