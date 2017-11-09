@@ -12,6 +12,36 @@ metadata:
   name: sonobuoy-serviceaccount
   namespace: sonobuoy
 ---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    component: sonobuoy
+  name: sonobuoy-serviceaccount
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: sonobuoy-serviceaccount
+subjects:
+- kind: ServiceAccount
+  name: sonobuoy-serviceaccount
+  namespace: sonobuoy
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  labels:
+    component: sonobuoy
+  name: sonobuoy-serviceaccount
+  namespace: sonobuoy
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - '*'
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -89,6 +119,7 @@ data:
         - mountPath: /tmp/results
           name: results
       restartPolicy: Never
+      serviceAccountName: sonobuoy-serviceaccount
       tolerations:
       - effect: NoSchedule
         key: node-role.kubernetes.io/master
