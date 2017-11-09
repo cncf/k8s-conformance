@@ -2,7 +2,7 @@
 
 Pivotal Container Services (PKS) utilizes [KUBO](https://pivotal.io/partners/kubo) to deploy and manage your Kubernetes cluster.
 
-A Kubernetes cluster can be deployed to your choice of IaaS. Please follow the guide [here](https://docs-pks.cfapps.io/pks/installing.html) to install it on GCP, vSphere.
+A Kubernetes cluster can be deployed to your choice of IaaS. Please follow the guide [here](https://docs-pks.cfapps.io/pks/installing.html) to install it with GCP or vSphere. A PCF (Pivotal Cloud Foundry) environment with Ops Manager will be needed.
 
 ## Running the k8s conformance tests
 
