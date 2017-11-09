@@ -6,7 +6,7 @@ You'll first need to get access to the IBM Cloud Container Service and acquire t
 3) Follow the instructions below to create a cluster and run conformance tests.
 
 ```
-% bx cs cluster-create --name conformance
+% bx cs cluster-create --name conformance --kube-version 1.7
 % $(bx cs cluster-config conformance | grep export)
 % curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -
 % kubectl logs -f -n sonobuoy sonobuoy
