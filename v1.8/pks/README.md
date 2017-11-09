@@ -6,7 +6,7 @@ A Kubernetes cluster can be deployed to your choice of IaaS. Please follow the g
 
 Upon deploying Ops man with the PKS tile, create the cluster by issuing a POST request:
 ```
-curl -k -d '{"name": "${cluster_name}","parameters": {"kubernetes_master_host": "${KUBERNETES_SERVICE_HOST}","worker_haproxy_ip_addresses": "${WORKLOAD_ADDRESS:-}"},"plan": ""}' -X POST https://{PKS_API_ENDPOINT}:9021/v1/clusters/
+curl -k -d '{"name": "${CLUSTER_NAME}","parameters": {"kubernetes_master_host": "${KUBERNETES_SERVICE_HOST}","worker_haproxy_ip_addresses": "${WORKLOAD_ADDRESS:-}"},"plan": ""}' -X POST https://{PKS_API_ENDPOINT}:9021/v1/clusters/
 ```
 
 After the cluster has been created, bind it by issuing a POST request:
