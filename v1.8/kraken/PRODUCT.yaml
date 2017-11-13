@@ -1,0 +1,6 @@
+vendor: Samsung SDS
+name: Kraken
+version: v1.2.2
+website_url: https://github.com/samsung-cnct/kraken
+documentation_url: https://github.com/samsung-cnct/kraken
+product_logo_url: https://github.com/samsung-cnct/kraken-lib/blob/master/sphinx/_static/kraken.png
