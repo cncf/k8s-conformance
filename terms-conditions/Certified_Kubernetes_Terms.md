@@ -1,4 +1,7 @@
 ### Certified Kubernetes Conformance Program – Terms and Conditions
+
+(Available in [PDF](https://github.com/cncf/k8s-conformance/raw/master/terms-conditions/Certified_Kubernetes_Terms.pdf).)
+
 #### Last updated: October 30, 2017
 
 This document sets forth the terms and conditions that apply to the Conformance Program and use of the Certified Kubernetes Marks.
