@@ -26,7 +26,7 @@ To ensure the pace of innovation in Kubernetes continues and benefits all users,
 
 [Certified Kubernetes Conformance Program – Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
 
-[Certified Kubernetes Conformance Program – Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified_kubernetes)
+[Certified Kubernetes Conformance Program – Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/)
 
 ## Working Group Information
 
