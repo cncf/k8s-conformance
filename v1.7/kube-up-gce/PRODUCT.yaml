@@ -1,0 +1,5 @@
+vendor: Google
+name: kube-up.sh on Google Compute Engine
+version: v1.7.9
+website_url: https://github.com/kubernetes/kubernetes/tree/master/cluster
+documentation_url: https://github.com/kubernetes/kubernetes/tree/master/cluster
