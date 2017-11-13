@@ -1,0 +1,6 @@
+vendor: Huawei
+name: Huawei Cloud Container Engine
+version: v1.7.3-cce2.10
+website_url: http://www.huaweicloud.com/product/cce.html
+documentation_url: http://support.huaweicloud.com/cce/index.html
+product_logo_url: http://www.huawei.com/Assets/CBG/img/logo.png
