@@ -1,0 +1,6 @@
+vendor: Mesosphere
+name: Kubernetes on DC/OS
+version: 0.3.0-1.7.10
+website_url: https://mesosphere.com/kubernetes/
+documentation_url: https://docs.mesosphere.com/service-docs/beta-kubernetes/
+product_logo_url: https://mesosphere.com/wp-content/uploads/2017/11/MESO_dcos_Horz_RGB-SJxDvlwp3-.png 
