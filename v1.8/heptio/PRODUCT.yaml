@@ -1,0 +1,6 @@
+vendor: Heptio
+name: AWS-Quickstart
+version: v1.8.2
+website_url: https://aws.amazon.com/quickstart/architecture/heptio-kubernetes
+documentation_url: https://github.com/heptio/aws-quickstart
+product_logo_url: https://d1.awsstatic.com/partner-network/QuickStart/datasheets/heptio-kubernetes-qs.38d79785e9e107b624e911225e79066ad378e019.png
