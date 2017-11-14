@@ -49,6 +49,16 @@ the `name` and `website_url` are listed.
 fashion, verify that the `name` is listed in "Participant Kubernetes
 Combinations" section of the vendor's Participation Form.
 
-When a submission meets all policy requirements, label the pull request
-`participation-form-signed-yes` to indicate that the policy review is complete.
+When a submission meets all policy requirements, reply to the pull request
+with `Signed Participation Form Received` to indicate that the policy review is complete.
+
+## Tasks to Complete After Review
+
+1. Confirm there is a `+1` and `Signed Participation Form Received` in the comments. Merge the PR. 
+
+2. Update the spreadsheet to reflect the vendor's certified offering: https://docs.google.com/a/linuxfoundation.org/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit?usp=drive_web
+
+3. Add the vendor's logo to https://www.cncf.io/certification/software-conformance/
+
+4. Add the vendor's listing to https://kubernetes.io/partners/#dist
 
