@@ -16,8 +16,11 @@ these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8
 Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
 the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
 `kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain the 3 files `plugins/e2e/results/{e2e.log,junit.xml,version.txt}`, which will
+retain the 2 files `plugins/e2e/results/{e2e.log,junit.xml}`, which will
 be included in your submission.
+
+The last file to include in your submission can be obtained by executing 
+`kubectl version > version.txt`. 
 
 ## Uploading
 
