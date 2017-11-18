@@ -1,0 +1,6 @@
+vendor: inwinSTACK
+name: kube-ansible
+version: v1.8.2
+website_url: https://github.com/inwinstack/kube-ansible
+documentation_url: https://github.com/inwinstack/kube-ansible
+product_logo_url: http://www.inwinstack.com/wp-content/uploads/2017/09/%E8%B3%87%E7%94%A2-3@0.5x.png
