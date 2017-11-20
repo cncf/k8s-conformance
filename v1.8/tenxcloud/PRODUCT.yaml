@@ -1,0 +1,6 @@
+vendor: TenxCloud
+name: TenxCloud Container Service
+version: v1.8.3
+website_url: https://www.tenxcloud.com/caas.html
+documentation_url: http://docs.tenxcloud.com/enterprise
+product_logo_url: https://www.tenxcloud.com/assets/img/index/logo.svg
