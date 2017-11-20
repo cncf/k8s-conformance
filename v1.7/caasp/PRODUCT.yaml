@@ -2,5 +2,5 @@ vendor: SUSE
 name: SUSE CaaS (Container as a Service) Platform
 version: v2.0
 website_url: https://www.suse.com/products/caas-platform/
-documentation_url: https://www.suse.com/betaprogram/caasp-beta/doc-quickstart/
+documentation_url: https://www.suse.com/documentation/suse-caasp-2/book_caasp_deployment/data/book_caasp_deployment.html
 product_logo_url: https://www.suse.com/brandcentral/img/suse/logo-primary.png
