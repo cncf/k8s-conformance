@@ -16,7 +16,7 @@ that we have an official contact if your software falls out of compliance.
 ## How can I track issues that have been opened regarding certification?
 
 When a platform or distribution fails certification, the issue could be in the implementation or in the conformance
-tests. We use a [tracking issue.](https://github.com/cncf/k8s-conformance/issues/27) to record issues with the
+tests. We use a [tracking issue](https://github.com/cncf/k8s-conformance/issues/27) to record issues with the
 tests.
 
 ## What versions of Kubernetes can be certified?
