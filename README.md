@@ -16,17 +16,19 @@ Once the program officially launches later this year, platforms that certify wil
 
 To ensure the pace of innovation in Kubernetes continues and benefits all users, platforms must complete a recertification each year for the current or previous version of Kubernetes to remain certified. This ensures that when you see the Certified Kubernetes mark on a product, you’re not only getting something that’s proven conformant, but also contains the latest and greatest developments from the community.
 
-## Program Information
+## Certified Kubernetes Conformance Program
 
-[Certification Instructions](instructions.md)
+* [Instructions](instructions.md)
 
-[Certified Kubernetes Conformance Program – Terms and Conditions](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md)
+* [Terms and Conditions](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md)
 
-[Certified Kubernetes Conformance Program – Participation Form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md)
+* [Participation Form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md)
 
-[Certified Kubernetes Conformance Program – Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
+* [Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
 
-[Certified Kubernetes Conformance Program – Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/)
+* [Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/) (i.e., the logos)
+
+* [Frequently Asked Questions](./faq.md)
 
 ## Working Group Information
 
