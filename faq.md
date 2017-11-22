@@ -27,5 +27,5 @@ Certification is available for Kubernetes versions 1.7 and higher.
 
 You can, but it requires membership in CNCF. Instead, you may be able to accomplish your goal of ensuring conformance
 simply by [running](instructions.md) the conformance tests on your private cloud. As long as you pass, your
-implemehntation is conformant. It can't be certfied unless you complete the participation form, but certification
+implementation is conformant. It can't be certfied unless you complete the participation form, but certification
 (and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.
