@@ -12,10 +12,10 @@ Kubernetes for which conformance is being claimed, referenced as the
 3. Verify that the Conformance Version is the current or previous version of
 Kubernetes.
 
-4. Look at `version.txt`.  Verify that the `major.minor` component of the 
+4. Look at `version.txt`.  Verify that the `major.minor` component of the
 `server` version exactly matches the Conformance Version.
 
-5. Look at `version.txt`.  Verify that the `major.minor` component of the 
+5. Look at `version.txt`.  Verify that the `major.minor` component of the
 `client` version (which represents the Kubernetes version of the e2e tests that
 were run) is equal to or greater than the Conformance Version.
 
@@ -43,12 +43,20 @@ the vendor is in good standing in the program.
 
 3. Verify the product `name` and `website_url` are listed in the
 "Qualifying Offerings" section of the vendor's Participation Form, i.e. that
-the `name` and `website_url` are listed. 
+the `name` and `website_url` are listed.
 
 4. Review the `name`. If it contains the word "Kubernetes" in a non-descriptive
 fashion, verify that the `name` is listed in "Participant Kubernetes
 Combinations" section of the vendor's Participation Form.
 
-When a submission meets all policy requirements, label the pull request
-`participation-form-signed-yes` to indicate that the policy review is complete.
+If the submission doesn't meet all policy requirements, reply with a message indicating "Signed participation form needed", "Files missing from PR", "Membership in CNCF or confirmation of non-profit status needed", etc.
 
+## Tasks to Complete After Review
+
+1. Update the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/a/linuxfoundation.org/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit) to reflect the vendor's certified offering.
+
+2. Add the vendor's logo to https://www.cncf.io/certification/software-conformance/
+
+3. Add the vendor's listing to https://kubernetes.io/partners/#dist
+
+4. Merge the PR
