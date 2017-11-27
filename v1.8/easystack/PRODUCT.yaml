@@ -1,0 +1,6 @@
+vendor: EasyStack
+name: EasyStack Kubernetes Service (EKS)
+version: v1.8.3
+website_url: https://easystack.cn/eks/
+documentation_url: https://easystack.cn/eks/doc/
+product_logo_url: https://easystack.cn/static/cn/images/docs/eks/EKS%20logo1.svg
