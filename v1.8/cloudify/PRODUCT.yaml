@@ -1,0 +1,6 @@
+vendor: Cloudify/GigaSpaces
+name: Cloudify provider for Kubernetes
+version: v1.8.4
+website_url: http://cloudify.co/
+documentation_url: https://github.com/cloudify-incubator/cloudify-kubernetes-provider/blob/master/README.md
+product_logo_url: http://getcloudify.kinsta.com/wp-content/uploads/2017/04/cloudify-logo.svg
