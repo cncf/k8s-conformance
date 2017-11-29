@@ -10,7 +10,7 @@ certify but don't want to become a CNCF member, the fee is the same as [joining]
 
 For the purposes of certification, we treat community distributions/installers as non-profit organizations, so
 there is no charge. However, we do require an individual to complete the certification
-[agreement](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md) so
+[agreement](./participation-form/Certified_Kubernetes_Form.md) so
 that we have an official contact if your software falls out of compliance.
 
 ## How can I track issues that have been opened regarding certification?
@@ -22,3 +22,10 @@ tests.
 ## What versions of Kubernetes can be certified?
 
 Certification is available for Kubernetes versions 1.7 and higher.
+
+## Can I certify my private cloud that will not be available outside of our company?
+
+You can, but it requires membership in CNCF. Instead, you may be able to accomplish your goal of ensuring conformance
+simply by [running](instructions.md) the conformance tests on your private cloud. As long as you pass, your
+implementation is conformant. It can't be certfied unless you complete the participation form, but certification
+(and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.

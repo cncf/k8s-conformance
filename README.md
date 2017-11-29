@@ -20,15 +20,15 @@ To ensure the pace of innovation in Kubernetes continues and benefits all users,
 
 * [Instructions](instructions.md)
 
-* [Terms and Conditions](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md)
+* [Terms and Conditions](./terms-conditions/Certified_Kubernetes_Terms.md)
 
-* [Participation Form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md)
+* [Participation Form](./participation-form/Certified_Kubernetes_Form.md)
 
 * [Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
 
 * [Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/) (i.e., the logos)
 
-* [Frequently Asked Questions](./faq.md)
+* [Frequently Asked Questions](faq.md)
 
 ## Working Group Information
 
