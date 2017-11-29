@@ -59,4 +59,4 @@ If the submission doesn't meet all policy requirements, reply with a message ind
 
 3. Add the vendor's listing to https://kubernetes.io/partners/#dist
 
-4. Merge the PR
+4. Add a comment saying "You are now Certified Kubernetes" and merge the PR.
