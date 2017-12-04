@@ -1,13 +1,13 @@
 # To reproduce:
 
 ## Create IBM Cloud Private Cluster
-Install an IBM Cloud Private Community Edition Cluster based on steps from [here](https://www-03preprod.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/installing/install_containers_CE.html).
+Install an IBM Cloud Private Community Edition Cluster based on steps from [here](https://www.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/installing/install_containers_CE.html).
 
 ## Get KubeConfig
 
 Retrieve a `.config` file with administrator credentials on the cluster and set the environment variable `KUBECONFIG` following below steps:
 
-1) Config `kubectl` CLI based on steps [here](https://www-03preprod.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/manage_cluster/cfc_cli.html) for how to access the IBM Cloud Private Cluster.
+1) Config `kubectl` CLI based on steps [here](https://www.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/manage_cluster/cfc_cli.html) for how to access the IBM Cloud Private Cluster.
 
 2) After the `kubectl` CLI configuration finished, you will find the KubeConfig under `$HOME/.kube` named as `config`.
 
