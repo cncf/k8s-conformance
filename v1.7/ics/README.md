@@ -7,11 +7,15 @@ You'll first need to get access to the IBM Cloud Container Service and acquire t
 
 ```
 % bx cs cluster-create --name conformance --kube-version 1.7
+% bx cs cluster-get conformance
+
+# Wait for the cluster to reach "normal" state ...
+
 % $(bx cs cluster-config conformance | grep export)
 % curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -
 % kubectl logs -f -n sonobuoy sonobuoy
 
-# wait for "no-exit was specified, sonobuoy is now blocking"
+# Wait for "no-exit was specified, sonobuoy is now blocking" ...
 
 % kubectl cp sonobuoy/sonobuoy:tmp/sonobuoy ./results
 ```
