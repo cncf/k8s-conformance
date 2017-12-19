@@ -29,3 +29,7 @@ You can, but it requires membership in CNCF. Instead, you may be able to accompl
 simply by [running](instructions.md) the conformance tests on your private cloud. As long as you pass, your
 implementation is conformant. It can't be certfied unless you complete the participation form, but certification
 (and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.
+
+## I still have questions. Can you help?
+
+Yes. Please email us at conformance@cncf.io.
