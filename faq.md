@@ -8,10 +8,11 @@ certify but don't want to become a CNCF member, the fee is the same as [joining]
 
 ## What about community distributions?
 
+A community distribution does not have a company behind it.
 For the purposes of certification, we treat community distributions/installers as non-profit organizations, so
 there is no charge. However, we do require an individual to complete the certification
 [agreement](./participation-form/Certified_Kubernetes_Form.md) so
-that we have an official contact if your software falls out of compliance.
+that we have an official contact (or multiple contacts) if your software falls out of compliance.
 
 ## How can I track issues that have been opened regarding certification?
 
@@ -29,6 +30,15 @@ You can, but it requires membership in CNCF. Instead, you may be able to accompl
 simply by [running](instructions.md) the conformance tests on your private cloud. As long as you pass, your
 implementation is conformant. It can't be certfied unless you complete the participation form, but certification
 (and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.
+
+## What is a distribution and what is a platform?
+
+From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0):
+
+* A **vendor** is an organization providing a Kubernetes platform or distribution.
+* A **product** is a platform or distribution provided by a vendor.
+* A **platform** is a Kubernetes service provided and managed by a vendor.
+* A **distribution** is Kubernetes software that can be installed by an end user on to a public cloud or their own hardware.
 
 ## I still have questions. Can you help?
 
