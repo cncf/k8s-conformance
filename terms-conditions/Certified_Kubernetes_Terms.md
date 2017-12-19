@@ -39,7 +39,7 @@ In order to be a Participant in the Conformance Program and to use the Certified
 5. pay fees (if any) required for its participation in the Conformance Program; and
 6. abide by the terms and conditions of the Conformance Program, including subsequent re-testing as described herein, throughout the period of the Participant’s use of the Certified Kubernetes Marks and Participant Kubernetes Combinations.
 
-Members of CNCF and non-profit organizations will not be charged fees to participate in the Conformance Program. Other potential Participants should contact CNCF for more information about participation fees.
+Members of CNCF and non-profit organizations will not be charged fees to participate in the Conformance Program. Other potential Participants should [contact](https://github.com/cncf/k8s-conformance/blob/master/faq.md) CNCF for more information about participation fees.
 
 #### Qualifying Offerings and Self-Testing
 
