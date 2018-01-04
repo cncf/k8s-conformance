@@ -52,7 +52,7 @@ metadata:
 data:
   config.json: |
     {
-        "Description": "CNCF v1.7 or v1.8 Conformance Results",
+        "Description": "CNCF v1.7, v1.8, or v1.9 Conformance Results",
         "Filters": {
             "LabelSelector": "",
             "Namespaces": ".*"
@@ -92,7 +92,7 @@ data:
       - env:
         - name: E2E_FOCUS
           value: '\[Conformance\]'
-        image: gcr.io/heptio-images/kube-conformance:v1.8
+        image: gcr.io/heptio-images/kube-conformance:v1.9
         imagePullPolicy: Always
         name: e2e
         volumeMounts:
