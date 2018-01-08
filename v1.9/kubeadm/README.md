@@ -32,11 +32,15 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     #!/bin/sh
     set -ex
-
+    
     apt-get update && apt-get install -y apt-transport-https
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
     echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list
-    apt-get update && apt-get install -y kubelet kubeadm kubectl docker.io
+    apt-get update && apt-get install -y \
+      docker.io=1.13.1-0ubuntu6 \
+      kubelet=1.9.1-00 \
+      kubectl=1.9.1-00 \
+      kubeadm=1.9.1-00
     
     swapoff -a
     systemctl enable docker.service
