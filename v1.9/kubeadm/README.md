@@ -6,20 +6,21 @@ Official documentation:
 
 # Reproduce Conformance Results:
 
-## pre-reqs
+## Pre-Reqs
 - vagrant + virtualbox
 
-## install
+## Provision
 The following Vagrantfile will:
 - setup an Ubuntu 17.10 vm with 4 CPUs and 4GB of RAM
+- disable swap
+- install docker
 - install a single node k8s cluster with upstream kubeadm, and Weave 1.6
+- configure kubeconfig
 - start Sonobuoy /w e2e kube-conformance via [sonobuoy-conformance.yaml](../../sonobuoy-conformance.yaml)
 
-The virtualbox provider is assumed.
+The virtualbox provider is assumed.  
+If you're not using vagrant, copy the provision script from the **SHELL** heredoc, and modify as needed for use on your target machine. 
 ```ruby
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-17.10"
 
@@ -58,7 +59,7 @@ cd conformance-results
 vagrant up
 ```
 
-## observe sonobuoy
+## Observe Sonobuoy
 ```bash
 vagrant ssh
 # as vagrant user
@@ -72,7 +73,7 @@ sudo -i
   kubectl -n sonobuoy logs sonobuoy-e2e-job-${AUTOGEN_JOB_ID} -c e2e -f
 ```
 
-## generate version.txt
+## Generate version.txt
 **Important:** do this before conformance tests finish or the pod will die.
 ```bash
 # as root on vagrantbox
@@ -80,7 +81,7 @@ mkdir -p /vagrant/v1.9
 kubectl exec -it -n sonobuoy sonobuoy-e2e-job-${AUTOGEN_JOB_ID} -c e2e kubectl version > /vagrant/v1.9/version.txt
 ```
 
-## untar results
+## Untar the Conformance Results
 When you see `level=info msg="no-exit was specified, sonobuoy is now blocking"` in the sonobuoy logs, you can fetch your test results.
 The sonobuoy container is hanging so we can copy the tarball to our vagrantbox from its EmptyDir:
 ```bash
@@ -97,3 +98,11 @@ The needed test files are:
 - `conformance-results/v1.9/version.txt`
 - `conformance-results/v1.9/plugins/e2e/results/e2e.log`
 - `conformance-results/v1.9/plugins/e2e/results/junit_01.xml`
+
+
+## Cleanup
+```bash
+# on the host
+cd conformance-results
+vagrant destroy --force
+```
