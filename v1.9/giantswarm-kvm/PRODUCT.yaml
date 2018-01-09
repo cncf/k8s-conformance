@@ -1,0 +1,6 @@
+vendor: Giant Swarm
+name: Managed Kubernetes on KVM
+version: stable-2018-01-08
+website_url: https://giantswarm.io
+documentation_url: https://docs.giantswarm.io
+product_logo_url: https://www.dropbox.com/s/kydb137cjsix7du/giantswarm_ant.png
