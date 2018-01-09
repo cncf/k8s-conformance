@@ -21,7 +21,7 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 # Slack
 
-[slack.k8s.io](slack.k8s.io) #k8s-conformance 
+[slack.k8s.io](http://slack.k8s.io) #k8s-conformance 
 
 # Documentation
 
