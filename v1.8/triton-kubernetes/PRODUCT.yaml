@@ -1,0 +1,6 @@
+vendor: Joyent
+name: Triton Kubernetes
+version: v0.8.1
+website_url: https://github.com/joyent/triton-kubernetes
+documentation_url: https://github.com/joyent/triton-kubernetes/blob/master/README.md 
+product_logo_url: https://www.joyent.com/assets/img/external/triton-kubernetes.svg
