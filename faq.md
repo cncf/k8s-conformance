@@ -22,7 +22,7 @@ tests.
 
 ## What versions of Kubernetes can be certified?
 
-New platforms and distributions version 1.8 and higher can be certified. Already certified implementations version 1.7 remain certified as long as a newer version is certified at least once a year after the initial certification.
+New platforms and distributions version 1.8 and 1.9 can be certified. Already certified implementations version 1.7 remain certified as long as a newer version is certified at least once a year after the initial certification.
 
 ## Can I certify my private cloud that will not be available outside of our company?
 
