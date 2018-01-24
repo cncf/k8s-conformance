@@ -80,16 +80,16 @@ Certified Kubernetes Marks.
 
 ## Review
 
-A reviewer should be assigned to your PR shortly.  If you seek faster service,
-please contact conformance@cncf.io.
+A reviewer will shortly comment on and/or accept your pull request, following this [process](reviewing.md).
+If you don't see a response within 3 business days, please contact conformance@cncf.io.
 
 ## Issues
 
 If you have problems certifying that you feel are an issue with the conformance
-program itself (and not just your own configuration), you can file an issue in
+program itself (and not just your own implementation), you can file an issue in
 the [repository](https://github.com/cncf/k8s-conformance). Questions and
 comments can also be sent to the working group's 
-[mailing list and slack channel](https://github.com/cncf/k8s-conformance/blob/master/README.md).
+[mailing list and slack channel](README-WG.md).
 [SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture)
-is the change controller of the conformance definition, we track a
-[list of issue resolutions](issues.md) with SIG Architecture.
+is the change controller of the conformance definition. We track a
+[list of issue resolutions](https://github.com/cncf/k8s-conformance/issues/27) with SIG Architecture.
