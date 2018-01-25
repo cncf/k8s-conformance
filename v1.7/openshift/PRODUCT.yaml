@@ -1,6 +1,6 @@
 vendor: Red Hat
 name: OpenShift Online and OpenShift Container Platform by Red Hat
-version: v1.7.0
+version: v3.7.0
 website_url: https://www.openshift.com
 documentation_url: https://docs.openshift.com
 product_logo_url: https://assets.openshift.net/content/subdomain/openshift-logo-horizontal.svg

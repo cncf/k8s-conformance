@@ -1,6 +1,6 @@
 # Certified Kubernetes
 
-<img src="https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/certified-kubernetes/versionless/color/certified_kubernetes_color.png" align="right" width="200px">Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [35](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) known Kubernetes platforms and distributions.
+<img src="https://raw.githubusercontent.com/cncf/artwork/master/kubernetes/certified-kubernetes/versionless/color/certified_kubernetes_color.png" align="right" width="200px">Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [50](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) Kubernetes platforms and distributions.
 
 One of the goals of the project has always been consistency and portability. Kubernetes sits on top of the infrastructure and enables you to describe your workload in a common format. Kubernetes makes it easy to move workloads from one place to another, or combine disjointed environments with a shared control plane.
 
@@ -16,17 +16,19 @@ Once the program officially launches later this year, platforms that certify wil
 
 To ensure the pace of innovation in Kubernetes continues and benefits all users, platforms must complete a recertification each year for the current or previous version of Kubernetes to remain certified. This ensures that when you see the Certified Kubernetes mark on a product, you’re not only getting something that’s proven conformant, but also contains the latest and greatest developments from the community.
 
-## Program Information
+## Certified Kubernetes Conformance Program
 
-[Certification Instructions](instructions.md)
+* [Instructions](instructions.md)
 
-[Certified Kubernetes Conformance Program – Terms and Conditions](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md)
+* [Terms and Conditions](./terms-conditions/Certified_Kubernetes_Terms.md)
 
-[Certified Kubernetes Conformance Program – Participation Form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md)
+* [Participation Form](./participation-form/Certified_Kubernetes_Form.md)
 
-[Certified Kubernetes Conformance Program – Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
+* [Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
 
-[Certified Kubernetes Conformance Program – Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/)
+* [Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/) (i.e., the logos)
+
+* [Frequently Asked Questions](faq.md)
 
 ## Working Group Information
 
