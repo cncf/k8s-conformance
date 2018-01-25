@@ -1,0 +1,6 @@
+vendor: Nirmata Inc.
+name: Nirmata Managed Kubernetes
+version: v1.8.6
+website_url: https://www.nirmata.com/
+documentation_url: https://docs.nirmata.io/en/latest/Clusters.html#create-a-new-kubernetes-cluster
+product_logo_url: http://www.nirmata.com/wp-content/uploads/2017/05/logo-white.png
