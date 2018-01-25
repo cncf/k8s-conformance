@@ -1,0 +1,7 @@
+vendor: ghostcloud
+name: EcOS-Kubernetes
+version: v1.8
+website_url: https://www.ghostcloud.cn/ecos-kubernetes/
+documentation_url: https://www.ghostcloud.cn/wp-content/themes/ecos/source/EnterpriseContainerOperationSystemforKubernetes.pdf
+product_logo_url : https://www.ghostcloud.cn/wp-content/themes/ecos/images/ghostcloud.png
+

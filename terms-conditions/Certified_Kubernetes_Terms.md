@@ -2,7 +2,7 @@
 
 (Available in [PDF](https://github.com/cncf/k8s-conformance/raw/master/terms-conditions/Certified_Kubernetes_Terms.pdf).)
 
-#### Last updated: October 30, 2017
+#### Last updated: November 22, 2017
 
 This document sets forth the terms and conditions that apply to the Conformance Program and use of the Certified Kubernetes Marks.
 
@@ -39,7 +39,7 @@ In order to be a Participant in the Conformance Program and to use the Certified
 5. pay fees (if any) required for its participation in the Conformance Program; and
 6. abide by the terms and conditions of the Conformance Program, including subsequent re-testing as described herein, throughout the period of the Participant’s use of the Certified Kubernetes Marks and Participant Kubernetes Combinations.
 
-Members of CNCF and non-profit organizations will not be charged fees to participate in the Conformance Program. Other potential Participants should contact CNCF for more information about participation fees.
+Members of CNCF and non-profit organizations will not be charged fees to participate in the Conformance Program. Other potential Participants should [contact](https://github.com/cncf/k8s-conformance/blob/master/faq.md) CNCF for more information about participation fees.
 
 #### Qualifying Offerings and Self-Testing
 
@@ -138,4 +138,4 @@ These Terms and Conditions, together with the other documents referenced herein,
 
 #### Miscellaneous
 
-All notices to be sent to The Linux Foundation hereunder should be sent to [info@cncf.io](mailto:info@cncf.io), unless otherwise specified herein. The Conformance Program Terms and Conditions are governed by the law of the State of California, without regards to its choice of law provisions, and any action arising hereunder shall be brought in the state or federal courts located in California. The Participant and The Linux Foundation agree that the Conformance Program does not create a partnership or joint venture between them or any other Participant.
+All notices to be sent to The Linux Foundation hereunder should be sent to [conformance@cncf.io](mailto:conformance@cncf.io), unless otherwise specified herein. The Conformance Program Terms and Conditions are governed by the law of the State of California, without regards to its choice of law provisions, and any action arising hereunder shall be brought in the state or federal courts located in California. The Participant and The Linux Foundation agree that the Conformance Program does not create a partnership or joint venture between them or any other Participant.

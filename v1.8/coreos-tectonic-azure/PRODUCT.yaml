@@ -1,0 +1,6 @@
+vendor: CoreOS
+name: Tectonic
+version: 1.8.4-tectonic.1
+website_url: https://coreos.com/tectonic/
+documentation_url: https://coreos.com/tectonic/docs/latest/
+product_logo_url: https://coreos.com/assets/images/brand/tectonic-bycoreos-color.png
