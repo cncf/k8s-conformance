@@ -28,6 +28,29 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 * [Early design proposal](https://docs.google.com/document/d/1JsE9itAzL-ZSqKbd5rYnHKKSFW6xK4m50wBj1lTz6Do/edit#heading=h.ub3h0cdur849)
 * [Certified Kubernetes Design Brief](https://docs.google.com/document/d/16ORnXNkR-hFQzNZ6aL3OroXM6_zLP4gKME9E3NyD1jw/edit#)
 
+# Meeting Time
+
+The Kubernetes Conformance Working Group meets on the 2nd and 4th Thursday of every month at 11 AM PT (USA and Canada).
+
+Join from PC, Mac, Linux, iOS or Android: https://zoom.us/my/cncfk8sconformancewg
+
+Or iPhone one-tap:
+     US: +16699006833,,8142638525#  or +16465588656,,8142638525# 
+
+Or Telephone:
+     Dial: 
+         US: +1 669 900 6833 (US Toll) or +1 646 558 8656 (US Toll) 
+         or +1 877 369 0926 (Toll Free) or +1 855 880 1246 (Toll Free)
+
+Meeting ID: 814 263 8525
+
+International numbers available: https://zoom.us/zoomconference?m=7BNECpjrmz3CU-jVibqlS76cwbJxYYKv 
+
+NOTE: Please use *6 to mute/un-mute your phone during the call.
+
+World Time Zone Converter: http://www.thetimezoneconverter.com/?t=9:00%20am&tz=San%20Francisco&
+
+
 # Upcoming Meetings
 
 ## December 6, Austin (KubeCon)
