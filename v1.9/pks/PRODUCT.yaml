@@ -1,0 +1,6 @@
+vendor: Pivotal/VMware
+name: Pivotal Container Service (PKS)
+version: v1.0.0
+website_url: https://cloud.vmware.com/pivotal-container-service
+documentation_url: https://docs-pks.cfapps.io/pks/index.html
+product_logo_url: https://cloud.google.com/images/pivotal/pivotal-container-service-logo.png
