@@ -1,0 +1,6 @@
+vendor: IBM
+name: IBM Cloud Private
+version: v2.1.0.2
+website_url: https://www.ibm.com/cloud-computing/products/ibm-cloud-private/
+documentation_url: https://www.ibm.com/support/knowledgecenter/SSBS6K_2.1.0/kc_welcome_containers.html
+product_logo_url: https://github.com/IBM/charts/blob/master/logo/icp-logo-box.svg
