@@ -56,6 +56,10 @@ World Time Zone Converter: http://www.thetimezoneconverter.com/?t=9:00%20am&tz=S
 
 # Past Meetings & Presentations
 
+## February 8, (Video Chat)
+
+* [Agenda](https://docs.google.com/document/d/1SWHamTFgPfSvA1XTc1Im-p1atUOUVFWLLcGc3V1g1lw/edit#)
+
 ## December 6, Austin (Video Chat)
 
 * [Agenda](https://docs.google.com/document/d/1SWHamTFgPfSvA1XTc1Im-p1atUOUVFWLLcGc3V1g1lw/edit)
