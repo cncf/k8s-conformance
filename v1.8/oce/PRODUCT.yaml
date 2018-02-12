@@ -1,0 +1,6 @@
+vendor: Oracle
+name: Oracle Container Engine
+version: 1.2.19.25
+website_url: http://www.wercker.com/product
+documentation_url: http://devcenter.wercker.com/docs/getting-started-with-wercker-clusters
+product_logo_url: https://www.oracle.com/webfolder/s/brand/identity/logo/index.html#primary
