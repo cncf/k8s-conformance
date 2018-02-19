@@ -1,0 +1,8 @@
+vendor: Docker
+name: Docker for Mac
+version: 18.03.0-ce-mac58
+website_url: https://www.docker.com/docker-mac
+documentation_url: https://docs.docker.com/docker-for-mac/
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
+type: distribution
+description: Docker for Mac is an easy-to-install desktop app for building, debugging and testing Dockerized apps on a Mac.

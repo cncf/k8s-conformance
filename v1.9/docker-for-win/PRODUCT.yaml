@@ -1,0 +1,8 @@
+vendor: Docker
+name: Docker for Windows
+version: 18.03.0-ce-win58
+website_url: https://www.docker.com/docker-windows
+documentation_url: https://docs.docker.com/docker-for-windows/
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
+type: distribution
+description: An integrated, easy-to-deploy development environment for building, debugging and testing Docker apps on a Windows PC.
