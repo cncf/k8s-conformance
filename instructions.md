@@ -54,7 +54,9 @@ This file describes your product. It is YAML formatted with the following root-l
 | `version`           | The version of the product being certified (not the version of Kubernetes it runs). |
 | `website_url`       | URL to the product information website |
 | `documentation_url` | URL to the product documentation |
-| `product_logo_url`  | URL to the product's logo, prefrably in SVG format. OPTIONAL. If not supplied, your product will not be listed on any Kubernetes/CNCF marketing around conformance |
+| `product_logo_url`  | URL to the product's logo, preferably in SVG format. OPTIONAL. If not supplied, we'll use your company logo. Please see logo [guidelines](https://github.com/cncf/landscape#logos) |
+| `type`              | Is your product a distribution or platform (see [definitions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-a-distribution-and-what-is-a-platform)) |
+| `description` | One sentence description of your offering |
 
 Examples below are for a fictional Kubernetes implementation called _Turbo
 Encabulator_ produced by a company named _Yoyodyne_.
@@ -66,6 +68,8 @@ version: v1.7.4
 website_url: https://yoyo.dyne/turbo-encabulator
 documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
+type: distribution
+description: 'The Yoyodyne Turbo Encabulator is a superb Kubernetes distribution for all of your Encabulating needs.'
 ```
 
 ### Sample PR
