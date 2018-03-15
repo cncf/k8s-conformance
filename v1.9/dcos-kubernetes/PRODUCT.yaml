@@ -1,6 +1,6 @@
 vendor: Mesosphere
 name: Kubernetes on DC/OS
-version: 1.0.0-1.9.3
+version: 1.0.1-1.9.4
 website_url: https://mesosphere.com/kubernetes/
-documentation_url: https://docs.mesosphere.com/services/kubernetes/1.0.0-1.9.3/
+documentation_url: https://docs.mesosphere.com/services/kubernetes/1.0.1-1.9.4/
 product_logo_url: https://mesosphere.com/wp-content/uploads/2017/11/MESO_dcos_Horz_RGB-SJxDvlwp3-.png
