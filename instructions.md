@@ -78,9 +78,9 @@ See https://github.com/mml/k8s-conformance/pull/1 for a sample.
 
 ## Amendment for Private Review
 
-If you need a private review for an unreleased product, please contact conformance@cncf.io.
-Note that your results must be made public at launch, at the time you start using the
-Certified Kubernetes Marks.
+If you need a private review for an unreleased product, please email a zip file containing what you would otherwise submit
+as a pull request to conformance@cncf.io. We'll review and confirm that you are ready to be Certified Kubernetes
+as soon as you open the pull request. We can then often arrange to accept your pull request soon after you make it, at which point you become Certified Kubernetes.
 
 ## Review
 
