@@ -40,6 +40,10 @@ From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https:
 * A **platform** is a Kubernetes service provided and managed by a vendor.
 * A **distribution** is Kubernetes software that can be installed by an end user on to a public cloud or their own hardware.
 
+## What are the additional naming options for Certified Kubernetes?
+
+Certified Kubernetes products may use the word Kubernetes in their product name. E.g., Acme Kubernetes Engine or Acme Kubernetes. See this [section](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md#use-of-the-certified-kubernetes-marks-and-participant-kubernetes-combinations) of the terms and conditions for the exact details.
+
 ## I still have questions. Can you help?
 
 Yes. Please email us at conformance@cncf.io.
