@@ -1,0 +1,8 @@
+vendor: Amazon Web Services
+name: Amazon Elastic Container Service for Kubernetes (Amazon EKS)
+version: v1.9.2
+website_url: https://aws.amazon.com/eks/
+documentation_url: s3://amazon-eks-docs/EKSDocs.zip (Product in preview. Customers need to be whitelisted to open) 
+product_logo_url: https://s3-us-west-2.amazonaws.com/amazon-eks-docs/EKS.png
+type: platform
+description: Amazon Elastic Container Service for Kubernetes (Amazon EKS) is a managed service that makes it easy for you to run Kubernetes on AWS without needing to install and operate your own Kubernetes clusters.
