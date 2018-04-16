@@ -52,7 +52,7 @@ metadata:
 data:
   config.json: |
     {
-        "Description": "CNCF v1.8 or v1.9 or v.1.10 Conformance Results",
+        "Description": "CNCF v1.9 or v.1.10 Conformance Results",
         "Filters": {
             "LabelSelector": "",
             "Namespaces": ".*"
