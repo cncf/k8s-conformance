@@ -1,0 +1,6 @@
+vendor: Canonical Ltd
+name: Canonical Distribution of Kubernetes
+version: v1.10.0
+website_url: https://www.ubuntu.com/kubernetes
+documentation_url: https://kubernetes.io/docs/getting-started-guides/ubuntu/
+product_logo_url: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.svg
