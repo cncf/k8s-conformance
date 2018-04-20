@@ -55,7 +55,7 @@ This file describes your product. It is YAML formatted with the following root-l
 | `website_url`       | URL to the product information website |
 | `documentation_url` | URL to the product documentation |
 | `product_logo_url`  | URL to the product's logo, (must be in SVG, AI or EPS format and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see logo [guidelines](https://github.com/cncf/landscape#logos) |
-| `type`              | Is your product a distribution or platform (see [definitions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-a-distribution-and-what-is-a-platform)) |
+| `type`              | Is your product a distribution, hosted platform, or installer (see [definitions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-a-distribution-and-what-is-a-platform)) |
 | `description` | One sentence description of your offering |
 
 Examples below are for a fictional Kubernetes implementation called _Turbo
