@@ -1,6 +1,6 @@
 vendor: Docker
 name: Docker Enterprise Edition
-version: TBD
+version: 2.0
 website_url: https://www.docker.com/enterprise-edition
 documentation_url: https://docs.docker.com/enterprise/
 product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
