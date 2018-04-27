@@ -1,2 +1,2 @@
 Client Version: version.Info{Major:"1", Minor:"8", GitVersion:"v1.8.8", GitCommit:"2f73858c9e6ede659d6828fe5a1862a48034a0fd", GitTreeState:"clean", BuildDate:"2018-02-09T21:30:57Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
-Server Version: version.Info{Major:"1", Minor:"8+", GitVersion:"v1.8.8-2+9d6e0610086578", GitCommit:"9d6e06100865789613cbac936edce948f0710a2f", GitTreeState:"clean", BuildDate:"2018-02-23T08:20:09Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"8+", GitVersion:"v1.8.11-2+fa6873d3e386d7", GitCommit:"fa6873d3e386d7ead42923b24aea3b76e74395a3", GitTreeState:"clean", BuildDate:"2018-04-17T08:10:40Z", GoVersion:"go1.8.3", Compiler:"gc", Platform:"linux/amd64"}
