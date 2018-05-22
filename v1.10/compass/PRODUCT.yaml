@@ -1,0 +1,7 @@
+vendor: Caicloud
+name: Compass
+version: v1.10.1
+website_url: https://caicloud.io/products/compass
+documentation_url: https://docs.caicloud.io/compass/
+product_logo_url: https://caicloud.io/_static/caicloud_logo.svg
+type: distribution
