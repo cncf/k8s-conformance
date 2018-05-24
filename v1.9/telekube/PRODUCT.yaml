@@ -1,0 +1,7 @@
+vendor: Gravitational
+name: Telekube
+version: 5.0.0
+website_url: https://gravitational.com/telekube/
+documentation_url: https://gravitational.com/telekube/docs/overview/
+product_logo_url: https://gravitational.com/telekube/docs/img/logo.svg
+type: distribution
