@@ -1,7 +1,7 @@
 vendor: Kontena
 name: Kontena Pharos
-version: v1.0.0-rc.1
-website_url: https://pharos.sh
+version: v1.1.0-rc.3
+website_url: https://kontena.io/pharos/
 documentation_url: https://www.pharos.sh/docs/
 product_logo_url: https://pharos.sh/images/logo-blue.png
 type: distribution
