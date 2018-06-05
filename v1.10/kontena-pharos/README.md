@@ -1,15 +1,25 @@
-Conformance report created with:
+# Conformance testing Kontena Pharos
 
-* Platform: bare-metal (packet.net)
+## Setup Kontena Pharos cluster
 
-## Recreate
+Setup Kontena Pharos cluster as per the [Pharos documentation](https://www.pharos.sh/docs/). To run conformance tests, we recommend that you use a cluster that provides sufficient resources.
 
-1. Install a [Kontena Pharos](https://www.pharos.sh/docs/install.html) cluster.
-2. SSH into master host.
-3. Run the sonobuoy conformance tests.
+## Run conformance tests
 
-```
+Start the conformance tests on your Kontena Pharos cluster
+
+```sh
 curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -
 ```
 
-4. Follow the [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md) to collect the logs.
+You can monitor the conformance tests by tracking the sonobuoy logs. Wait for the line no-exit was specified, sonobuoy is now blocking, which signals the end of the testing.
+
+```sh
+kubectl logs -f sonobuoy -n sonobuoy
+```
+
+Upon completion of the tests you can obtain the results by copying them off the sonobuoy pod.
+
+```sh
+kubectl cp sonobuoy/sonobuoy:/tmp/sonobuoy ./results
+```
