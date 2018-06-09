@@ -1,0 +1,8 @@
+vendor: Mesosphere
+name: Kubernetes on DC/OS
+version: 1.1.0-1.10.3
+website_url: https://mesosphere.com/kubernetes/
+documentation_url: https://docs.mesosphere.com/services/kubernetes/1.1.0-1.10.3/
+product_logo_url: https://mesosphere.com/wp-content/uploads/2017/11/MESO_dcos_Horz_RGB-SJxDvlwp3-.png
+type: installer
+description: 'DC/OS Kubernetes package makes it easy to deploy and manage Kubernetes on DC/OS.'
