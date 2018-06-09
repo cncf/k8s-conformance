@@ -1,0 +1,8 @@
+vendor: Rancher Inc.
+name: Rancher Kubernetes
+version: v1.10.3-rancher2
+website_url: https://rancher.com/kubernetes/
+documentation_url: https://rancher.com/docs/rancher/v2.x/en/
+product_logo_url: https://rancher.com/brand-guidelines/assets/logos/png/color/rancher-logo-horiz-color.png
+type: distribution
+description: 'Deploy Rancher’s Kubernetes distro anywhere or launch cloud Kubernetes services from Google, Amazon or Microsoft.
