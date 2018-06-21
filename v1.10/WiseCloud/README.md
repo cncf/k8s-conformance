@@ -1,6 +1,6 @@
 # Conformance tests for WiseCloud v1.4.9 Kubernetes
 
-## Install WiseCloud Server v1.4.9 (base on Kubernetes v1.10.3)
+## Install WiseCloud Server v1.4.9 (base on Kubernetes v1.10.4)
 
 ## Run Conformance Test
 
