@@ -1,6 +1,6 @@
 vendor: IBM
-name: IBM Cloud Container Service
+name: IBM Cloud Kubernetes Service
 version: 1.9.8
 website_url: https://www.ibm.com/cloud/container-service
 documentation_url: https://console.bluemix.net/docs/containers/container_index.html
-product_logo_url: https://raw.githubusercontent.com/ibm-containers/logo/master/iccs.png
+product_logo_url: https://raw.githubusercontent.com/ibm-containers/logo/master/iks.png
