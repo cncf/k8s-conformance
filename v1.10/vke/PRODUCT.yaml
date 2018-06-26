@@ -1,0 +1,7 @@
+vendor: VMware
+name: VMware Kubernetes Engine (VKE)
+description: A fully managed cloud service that provides Kubernetes clusters
+version: v1.10.2
+type: hosted
+website_url: https://cloud.vmware.com/vmware-kubernetes-engine
+documentation_url: https://cloud.vmware.com/vmware-kubernetes-engine/resources
