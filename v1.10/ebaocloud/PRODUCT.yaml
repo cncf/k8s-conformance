@@ -4,4 +4,5 @@ version: v1.0.0
 website_url: https://sg.ebaocloud.com/
 documentation_url: https://sg.ebaocloud.com/
 type: hosted
-product_logo_url: https://enablement.ebaocloud.com/staticfile/img/ebaotech.svg
+product_logo_url: https://enablement.ebaocloud.com/staticfile/img/eBaoCloud-logo.svg
+description: 'eBaoCloud® InsureMO™, is an Open API platform to provide real connectivity and enablement for insurers, traditional channels, affinity partners, and FinTech start-ups as an Insurance Middle Office. After the success of eBao Software offerings where eBaoTech is already a global leader, InsureMO™ is another important step in eBaoTech’s mission to make insurance easy. eBaoCloud enables almost real time product launch to channels, including sales process, fulfilment, services and endorsement, claims, payments, and others.'
