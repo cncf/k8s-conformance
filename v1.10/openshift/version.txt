@@ -1,0 +1,10 @@
+Client Version: version.Info{Major:"1", Minor:"10+", GitVersion:"v1.10.6-beta.0.41+f7ef7a267727c2", GitCommit:"f7ef7a267727c2b32df51dab2f7d32773595e00e", GitTreeState:"clean", BuildDate:"2018-07-11T00:03:32Z", GoVersion:"go1.9.2", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"10+", GitVersion:"v1.10.0+b81c8f8", GitCommit:"b81c8f8", GitTreeState:"clean", BuildDate:"2018-07-10T23:12:56Z", GoVersion:"go1.9.7", Compiler:"gc", Platform:"linux/amd64"}
+-----
+oc v3.10.0-rc.0+9caa921-32
+kubernetes v1.10.0+b81c8f8
+features: Basic-Auth GSSAPI Kerberos SPNEGO
+
+Server https://internal-api.prtest-7ef3e0b-4.origin-ci-int-gce.dev.rhcloud.com:8443
+openshift v3.10.0-rc.0+9caa921-32
+kubernetes v1.10.0+b81c8f8
