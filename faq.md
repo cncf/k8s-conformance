@@ -16,13 +16,13 @@ that we have an official contact (or multiple contacts) if your software falls o
 
 ## How can I track issues that have been opened regarding certification?
 
-When a platform or distribution fails certification, the issue could be in the implementation or in the conformance
+When a product fails certification, the issue could be in the implementation or in the conformance
 tests. We use a [tracking issue](https://github.com/cncf/k8s-conformance/issues/27) to record issues with the
 tests.
 
 ## What versions of Kubernetes can be certified?
 
-New platforms and distributions version 1.8 and 1.9 can be certified. Already certified implementations version 1.7 remain certified as long as a newer version is certified at least once a year after the initial certification.
+You can certify the currently released version and the version before that. The currently released version is the number at the top right of https://kubernetes.io/. Already certified implementations remain certified as long as a newer version is certified at least once a year after the initial certification.
 
 ## Can I certify my private cloud that will not be available outside of our company?
 
@@ -31,14 +31,19 @@ simply by [running](instructions.md) the conformance tests on your private cloud
 implementation is conformant. It can't be certfied unless you complete the participation form, but certification
 (and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.
 
-## What is a distribution and what is a platform?
+## What is a distribution, hosted platform, and an installer?
 
 From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0):
 
-* A **vendor** is an organization providing a Kubernetes platform or distribution.
-* A **product** is a platform or distribution provided by a vendor.
-* A **platform** is a Kubernetes service provided and managed by a vendor.
-* A **distribution** is Kubernetes software that can be installed by an end user on to a public cloud or their own hardware.
+* A **vendor** is an organization providing a Kubernetes distribution, hosted platform, or installer.
+* A **product** is a distribution, hosted platform, or installer provided by a vendor.	
+* A **distribution** is software based on Kubernetes that can be installed by an end user on to a public cloud or bare metal and includes patches, additional software, or both.	
+* A **hosted** platform is a Kubernetes service provided and managed by a vendor.	
+* An **installer** downloads and then installs vanilla upstream Kubernetes.	
+
+## What are the additional naming options for Certified Kubernetes?
+
+Certified Kubernetes products may use the word Kubernetes in their product name. E.g., Acme Kubernetes Engine or Acme Kubernetes. See this [section](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md#use-of-the-certified-kubernetes-marks-and-participant-kubernetes-combinations) of the terms and conditions for the exact details.
 
 ## I still have questions. Can you help?
 

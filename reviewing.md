@@ -23,9 +23,6 @@ were run) is equal to or greater than the Conformance Version.
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
 
-When a submission meets all technical requirements, reply to the pull request
-with a `+1` to indicate that the technical review is complete.
-
 ## Policy Requirements
 
 1. Confirm that the vendor is currently a
