@@ -1,6 +1,6 @@
 vendor: Docker
 name: Docker Desktop for Windows
-version: 18.05.0-ce-win67
+version: 18.06.0-ce-win72
 website_url: https://www.docker.com/docker-windows
 documentation_url: https://docs.docker.com/docker-for-windows/
 product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
