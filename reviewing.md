@@ -12,14 +12,10 @@ Kubernetes for which conformance is being claimed, referenced as the
 3. Verify that the Conformance Version is the current or previous version of
 Kubernetes.
 
-4. Look at `version.txt`.  Verify that the `major.minor` component of the
-`server` version exactly matches the Conformance Version.
+4. Look at `e2e.log`.  Verify that the `major.minor` component of the
+`kube-apiserver version:` log exactly matches the Conformance Version.
 
-5. Look at `version.txt`.  Verify that the `major.minor` component of the
-`client` version (which represents the Kubernetes version of the e2e tests that
-were run) is equal to or greater than the Conformance Version.
-
-6. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
+5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
 matter as long as we see `0 Failed | 0 Pending`.
 
