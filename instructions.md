@@ -10,17 +10,55 @@ suite.
 ## Running
 
 The standard tool for running these tests is
-[Sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
-these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -`.
+[Sonobuoy](https://github.com/heptio/sonobuoy).  Sonobuoy is 
+regularly built and kept up to date to execute against all 
+currently supported versions of kubernetes, and can be obtained [here](https://github.com/heptio/sonobuoy/releases).
 
-Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
-the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
-`kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain the 2 files `plugins/e2e/results/{e2e.log,junit.xml}`, which will
-be included in your submission.
+Download the CLI by running:
 
-The last file to include in your submission can be obtained by executing 
-`kubectl version > version.txt`. 
+```
+$ go get -u -v github.com/heptio/sonobuoy
+```
+
+Deploy a Sonobuoy pod to your cluster with:
+
+```
+$ sonobuoy run
+```
+
+View actively running pods:
+
+```
+$ sonobuoy status 
+```
+
+To inspect the logs:
+
+```
+$ sonobuoy logs
+```
+
+Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to
+a local directory:
+
+```
+$ sonobuoy retrieve .
+```
+
+This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
+`.` directory. Extract the contents into `./results` with:
+
+```
+mkdir ./results; tar xzf *.tar.gz -C ./results
+```
+
+**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**. 
+
+To clean up Kubernetes objects created by Sonobuoy, run:
+
+```
+sonobuoy delete
+```
 
 ## Uploading
 
@@ -34,10 +72,12 @@ Description: `Conformance results for vX.Y/$dir`
 
 ### Contents of the PR
 
+For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission. 
+
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
-vX.Y/$dir/version.txt: Test and cluster versions (from Sonobuoy).
+vX.Y/$dir/sonobuoy.tar.gz: Raw output from sonobuoy. (optional)
 vX.Y/$dir/e2e.log: Test log output (from Sonobuoy).
 vX.Y/$dir/junit_01.xml: Machine-readable test log (from Sonobuoy).
 vX.Y/$dir/PRODUCT.yaml: See below.
@@ -71,10 +111,6 @@ product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 type: distribution
 description: 'The Yoyodyne Turbo Encabulator is a superb Kubernetes distribution for all of your Encabulating needs.'
 ```
-
-### Sample PR
-
-See https://github.com/mml/k8s-conformance/pull/1 for a sample.
 
 ## Amendment for Private Review
 
