@@ -5,11 +5,7 @@ Supergiant Kubernetes Conformance
 
 # Setup
 
-There are multiple options available for getting a working instance of Supergiant:
-
-* Sign up for the [hosted beta](https://beta.supergiant.io/).
-* Install the binaries [on Linux](https://supergiant.readthedocs.io/en/v1.0.0/Installation/Linux/).
-* Or run Supergiant in [development](https://github.com/supergiant/supergiant#development).
+The quickest means of getting a working instance of Supergiant is to sign up for the [hosted beta](https://beta.supergiant.io/). 
 
 Once Supergiant is running, [link a cloud account](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/cloud_accounts/) and [create a kube](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/deploying_kubes/) of version 1.11 on any cloud!
 
