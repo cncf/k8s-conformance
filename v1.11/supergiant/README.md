@@ -13,6 +13,6 @@ Note: _If any problems occur running Supergiant or creating a kube, please feel 
 
 # Testing
 
-At Supergiant, we used the browser-based [Heptio Sonobuoy Scanner](https://scanner.heptio.com/) (the "No RBAC" option). It's a stress-free shell for the official Kubernetes conformance tests to run in. Alternatively, there are more hands-on methods, such as [running the conformance tests raw](https://github.com/kubernetes/community/blob/master/contributors/devel/conformance-tests.md).
+At Supergiant, we used the browser-based [Heptio Sonobuoy Scanner](https://scanner.heptio.com/) (the "No RBAC" or `?rbac=no` option). It's a stress-free shell for the official Kubernetes conformance tests to run in. Alternatively, there are more hands-on methods, such as [running the conformance tests raw](https://github.com/kubernetes/community/blob/master/contributors/devel/conformance-tests.md).
 
 After the tests are completed, the results can be downloaded and perused.
