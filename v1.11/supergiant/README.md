@@ -1,7 +1,7 @@
 Supergiant Kubernetes Conformance
 =
 
-# <img src="http://supergiant.io/img/logo_dark.svg" width="400">
+<img src="http://supergiant.io/img/logo_dark.svg" width="400">
 
 # Setup
 
@@ -11,7 +11,7 @@ There are multiple options available for getting a working instance of Supergian
 * Install the binaries [on Linux](https://supergiant.readthedocs.io/en/v1.0.0/Installation/Linux/).
 * Or run Supergiant in [development](https://github.com/supergiant/supergiant#development).
 
-Once Supergiant is running, [link a cloud account](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/cloud_accounts/) and [create a kube](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/deploying_kubes/)!
+Once Supergiant is running, [link a cloud account](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/cloud_accounts/) and [create a kube](https://supergiant.readthedocs.io/en/v1.0.0/Using%20the%20UI/deploying_kubes/) of version 1.11 on any cloud!
 
 Note: _If any problems occur running Supergiant or creating a kube, please feel welcome to [submit an issue](https://github.com/supergiant/supergiant/issues) on GitHub._
 
