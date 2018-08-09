@@ -30,7 +30,7 @@ https://lists.cncf.io/mailman/listinfo/cncf-k8s-conformance
 
 # Meeting Time
 
-The Kubernetes Conformance Working Group meets on the 2nd and 4th Thursday of every month at 11 AM PT (USA and Canada).
+The Kubernetes Conformance Working Group meets on the 4th Wednesday of every month at 11 AM PT (USA and Canada).
 
 Join from PC, Mac, Linux, iOS or Android: https://zoom.us/my/cncfk8sconformancewg
 
