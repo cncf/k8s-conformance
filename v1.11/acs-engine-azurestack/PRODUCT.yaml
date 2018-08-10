@@ -1,0 +1,11 @@
+vendor: Microsoft
+
+name: Azure acs-egine
+
+version: v0.20.2
+
+website_url: https://github.com/msazurestackworkloads/acs-engine/tree/acs-engine-v0206
+
+documentation_url: https://github.com/msazurestackworkloads/acs-engine/tree/acs-engine-v0206  
+
+product_logo_url: https://i1.wp.com/buildazure.com/wp-content/uploads/2017/09/Azure.png
