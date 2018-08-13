@@ -1,0 +1,6 @@
+vendor: Cloud Foundry Foundation
+name: Cloud Foundry Container Runtime
+version: v0.20.0
+website_url: https://www.cloudfoundry.org/container-runtime/
+documentation_url: https://docs-kubo.cfapps.io/
+product_logo_url: https://www.cloudfoundry.org/wp-content/uploads/2017/10/CFF-Container-Runtime-Full-Color-768x230.png
