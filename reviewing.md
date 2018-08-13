@@ -13,7 +13,8 @@ Kubernetes for which conformance is being claimed, referenced as the
 Kubernetes.
 
 4. Look at `e2e.log`.  Verify that the `major.minor` component of the
-`kube-apiserver version:` log exactly matches the Conformance Version.
+`kube-apiserver version:` log exactly matches the Conformance Version. The
+patch version does not matter.
 
 5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
