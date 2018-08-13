@@ -1,0 +1,8 @@
+vendor: Scality
+name: MetalK8s
+description: "An opinionated Kubernetes distribution with a focus on long-term on-prem deployments"
+version: 0.1.0
+type: distribution
+website_url: https://github.com/scality/metal-k8s/
+product_logo_url: https://raw.githubusercontent.com/scality/metal-k8s/fbed729371c168c8c02924a499c2c02c4a3b9ee1/artwork/generated/metalk8s-logo-vertical-black.svg
+documentation_url: https://metal-k8s.readthedocs.io/
