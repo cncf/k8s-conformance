@@ -5,3 +5,4 @@ website_url: https://github.com/cablelabs/snaps-kubernetes
 documentation_url: https://github.com/cablelabs/snaps-kubernetes/blob/master/doc/source/install/install.md
 type: installer
 description: 'An installation tool to install Kubernetes on a Linux machines that have been initialized with SNAPS-Boot.'
+product_logo_url: https://brandfolder.com/cablelabs/attachments/oozlse-fpkc80-8r1zme?dl=true&resource_key=oopwe3-ac5uj4-gf3qau&resource_type=Brandfolder
