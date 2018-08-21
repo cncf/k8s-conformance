@@ -12,9 +12,9 @@ suite.
 The standard tool for running these tests is
 [Sonobuoy](https://github.com/heptio/sonobuoy).  Sonobuoy is 
 regularly built and kept up to date to execute against all 
-currently supported versions of kubernetes, and can be obtained [here](https://github.com/heptio/sonobuoy/releases).
+currently supported versions of kubernetes.
 
-Download the CLI by running:
+Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
 $ go get -u -v github.com/heptio/sonobuoy
