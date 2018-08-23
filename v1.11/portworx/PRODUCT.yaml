@@ -3,6 +3,6 @@ name: Portworx
 version: v1.5
 website_url: https://portworx.com/
 documentation_url: https://docs.portworx.com/scheduler/kubernetes/
-product_logo_url: https://docs.portworx.com/images/k8s-porx.png
+product_logo_url: https://landscape.cncf.io/logos/portworx.svg
 type: distribution
 description: Cloud Native Storage for Kubernetes
