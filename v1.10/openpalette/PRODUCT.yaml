@@ -1,0 +1,8 @@
+vendor: ZTE
+name: TECS OpenPalette
+version: v1.18.20
+website_url: https://sdnfv.zte.com.cn/
+documentation_url: https://sdnfv.zte.com.cn/en/products/infrastructure/NFVI/openpalette
+product_logo_url: https://sdnfv.zte.com.cn/upload_files/93a82082-e075-11e7-8fe0-744aa40210b9.jpg
+type: hosted
+description: 'The TECS OpenPalette platform is a unified cloud platform oriented to the ICT realm.'
