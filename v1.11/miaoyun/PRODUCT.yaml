@@ -1,0 +1,7 @@
+vendor: CStack
+name: MiaoYun
+version: v18.06.1
+website_url: https://cstack.net.cn/miaoyun/
+documentation_url: http://docs.miaoyun.io/
+product_logo_url: https://www.cncf.io/wp-content/uploads/2018/08/cstack.svg
+type: distribution
