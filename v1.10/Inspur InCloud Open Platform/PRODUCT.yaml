@@ -3,6 +3,6 @@ name: Inspur InCloud Open Platform
 version: v1.10
 website_url: http://www.inspur.com/lcjtww/2315499/2315503/2317662/2318105/2332890/index.html
 documentation_url: http://www.inspur.com/eportal/fileDir/defaultCurSite/resource/cms/2017/02/2017022309472517392.pdf
-product_logo_url: http://www.inspur.com/eportal/fileDir/defaultCurSite/resource/cms/2018/09/2018091815294922673.svg
+product_logo_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Inspur.svg
 type: distribution
 description: The Inspur InCloud Open Platform is a  PaaS platform based on Kubernetes
