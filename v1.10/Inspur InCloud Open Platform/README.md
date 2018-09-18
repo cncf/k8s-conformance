@@ -1,4 +1,4 @@
-Ready
+## Ready
 Environment：
     equipment：6 machines，8 core 16G memory，Download the installation package from the library.
     
@@ -9,11 +9,12 @@ Environment：
     
     Deploy the Go language Development environment.
 
-Running
+## Running
 
 Download a binary release of the CLI, or build it yourself by running:
 
 $ go get -u -v github.com/heptio/sonobuoy
+
 Deploy a Sonobuoy pod to your cluster with:
 
 $ sonobuoy run
@@ -33,5 +34,5 @@ NOTE: The two files required for submission are located in the tarball under plu
 
 To clean up Kubernetes objects created by Sonobuoy, run:
 
-sonobuoy delete
+$ sonobuoy delete
 
