@@ -1,0 +1,6 @@
+vendor: Qiniu Cloud
+name: Qiniu Cloud Container Engine
+version: v1.11.3
+website_url: https://www.qiniu.com/products/kirk
+documentation_url: http://kirk-docs.qiniu.com
+product_logo_url: https://github.com/fengyiyong/kirk-docs/raw/master/_figures/product-logo/product-icon.png
