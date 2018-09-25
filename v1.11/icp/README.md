@@ -41,52 +41,16 @@ users:
 
 ## Launch e2e Conformance Tests
 
-1) Download a binary release of the `sonobuoy` CLI,
-
-```
-go get -u -v github.com/heptio/sonobuoy
-```
-
-2) Change default image policy of ICP cluster to allow images from `gcr.io/heptio-images/*`. Run the following command to update the image policy
+1) Change default image policy of ICP cluster to allow all. Run the following command to update the image policy
 
 ```
 kubectl edit clusterimagepolicy ibmcloud-default-cluster-image-policy
 ```
 
-For exmaple,
+For exmaple, a wildcard (*) character is allowed in the repository name. You can also refer to [here](https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.0/manage_images/image_security.html) for more detail.
 
 ```
-    - name: gcr.io/heptio-images/*
+    - name: "*"
 ```
 
-3) Launch the e2e conformance test with following command, and this will launch a pod named as `sonobuoy` under namespace `heptio-sonobuoy`.
-
-```
-sonobuoy gen | kubectl apply -f -
-```
-
-4) Check logs of `sonobuoy` to see when this can be finished.
-
-```
-kubectl logs -f -n heptio-sonobuoy sonobuoy
-```
-
-5) Watch sonobuoy's logs with above command and wait for the line `no-exit was specified, sonobuoy is now blocking`. If this line appeared, it means the conformance test has been finished.
-
-6) Use `kubectl cp` to bring the results to your local machine by the following command:
-
-```
-kubectl cp heptio-sonobuoy/sonobuoy:/tmp/sonobuoy ./result
-```
-
-7) Delete the conformance test resources:
-```
-sonobuoy gen | kubectl delete -f -
-```
-
-8) Expand the tarball, and retain `plugins/e2e/results/{e2e.log,junit.xml}` by below command:
-
-```
-cd results
-tar xfz *_sonobuoy_*.tar.gz
-```
+2) Follow the [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md) here to run conformance test.
