@@ -1,0 +1,8 @@
+vendor: ENC Digital Technology
+name: Helium Cloud
+version: v1.33.0
+website_url: http://he2.io
+documentation_url: http://www.he2.io/doc/
+product_logo_url: http://www.he2.io/others/heliumcloud.svg
+type: distribution
+description: 'The helium cloud is a visible and customized container-orchestration & cluster management tool of Kubernetes together with embedded big data components and AI components.'
