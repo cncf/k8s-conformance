@@ -1,0 +1,8 @@
+vendor: Stratoscale
+name: Symphony
+version: 5.1.2
+website_url: https://www.stratoscale.com/products/symphony/
+documentation_url: https://www.stratoscale.com/docs/
+product_logo_url:
+type: distribution
+description: Symphony is the Stratoscale private cloud stack. Symphony gives you the ability to create an AWS-compatible on-prem private or public cloud within your own datacenter and on your own hardware.
