@@ -1,6 +1,0 @@
-vendor: CoreOS
-name: bootkube
-version: v1.8.2
-website_url: https://github.com/kubernetes-incubator/bootkube
-documentation_url: https://github.com/kubernetes-incubator/bootkube
-product_logo_url:
