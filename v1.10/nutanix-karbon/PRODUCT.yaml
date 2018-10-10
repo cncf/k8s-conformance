@@ -1,0 +1,6 @@
+vendor: Nutanix
+name: Karbon
+version: v0.8
+documentation_url: https://portal.nutanix.com/#/page/docs/details?targetId=Karbon-v08:Karbon-v08
+type: hosted
+description: Managed Kubernetes offering by Nutanix
