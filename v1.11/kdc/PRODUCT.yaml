@@ -1,7 +1,7 @@
 vendor: Exon LV
 name: Kubernetes Distribution by Containerum
 version: v 1.11.3
-website_url: https://containerum.com/kubernetes/
+website_url: https://containerum.com
 documentation_url: https://docs.kdc.containerum.com
 product_logo_url: https://exon.lv/img/logo_containerum.svg
 type: distribution
