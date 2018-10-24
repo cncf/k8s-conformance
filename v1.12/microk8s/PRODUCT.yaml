@@ -1,0 +1,6 @@
+vendor: Canonical Ltd
+name: microk8s
+version: v1.12.0
+website_url: https://microk8s.io
+documentation_url: https://github.com/ubuntu/microk8s/blob/master/README.md
+product_logo_url: https://landscape.cncf.io/logos/canonical-distribution-of-kubernetes.svg
