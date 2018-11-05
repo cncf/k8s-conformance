@@ -1,21 +1,32 @@
-To reproduce:
+# IBM Cloud Kubernetes Service
 
-You'll first need to get access to the IBM Cloud Kubernetes Service and acquire the appropriate CLIs.
-1) Sign up at https://bluemix.net
-2) Follow this guide to set up your CLI environment: https://console.bluemix.net/docs/containers/cs_cli_install.html#cs_cli_install_steps
-3) Follow the instructions below to create a cluster and run conformance tests.
+You'll first need to get started with IBM Cloud Kubernetes Service by setting up
+an IBM Cloud account. For details, see the
+[getting started](https://console.bluemix.net/docs/containers/container_index.html#container_index)
+instructions. Then follow the steps below to create a cluster and run the
+conformance tests.
+
+## Create a cluster
+
+If you haven't already done so, [install the CLI](https://console.bluemix.net/docs/containers/cs_cli_install.html#cs_cli_install_steps)
+for IBM Cloud Kubernetes Service. You may then create a cluster using the CLI or UI.
+
+### CLI
 
 ```
-% bx cs cluster-create --name conformance --kube-version 1.10
-% bx cs cluster-get conformance
-
-# Wait for the cluster and all worker nodes to reach "normal" state ...
-
-% $(bx cs cluster-config conformance | grep export)
-% curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -
-% kubectl logs -f -n sonobuoy sonobuoy
-
-# Wait for "no-exit was specified, sonobuoy is now blocking" ...
-
-% kubectl cp sonobuoy/sonobuoy:tmp/sonobuoy ./results
+% ibmcloud ks cluster-create --name conformance --kube-version 1.10 --zone <zone name> --machine-type <machine type> [--workers <number of workers>] [--private-vlan <private VLAN> --public-vlan <public VLAN>]
+% ibmcloud ks cluster-get conformance
+% ibmcloud ks cluster-config conformance
 ```
+
+### UI
+
+Go to [IBM Cloud catalog](https://console.bluemix.net/catalog/?category=containers)
+and select IBM Cloud Kubernetes Service and follow the instructions to create a
+cluster and gain access to it.
+
+## Run conformance tests
+
+Wait for the cluster and all worker nodes to reach `normal` state then follow the
+[test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running)
+to run the conformance tests.
