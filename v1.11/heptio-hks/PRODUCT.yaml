@@ -1,0 +1,8 @@
+vendor: Heptio
+name: Heptio Kubernetes Subscription (HKS)
+version: v1.11.4
+website_url: https://heptio.com/products/kubernetes-subscription/
+documentation_url: https://hub.heptio.com/
+product_logo_url: https://heptio.com/wp-content/uploads/2018/11/hks-horiz.svg
+type: distribution
+description: Heptio Kubernetes Subscription is the complete set of products, expertise, and support you need to deploy and manage upstream Kubernetes.
