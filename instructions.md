@@ -93,6 +93,7 @@ This file describes your product. It is YAML formatted with the following root-l
 | `name`              | Name of the product being certified. |
 | `version`           | The version of the product being certified (not the version of Kubernetes it runs). |
 | `website_url`       | URL to the product information website |
+| `repo_url`          | If your product is open source, this field is necessary to point to the primary GitHub repo containing the source. It's OK if this is a mirror. OPTIONAL  |
 | `documentation_url` | URL to the product documentation |
 | `product_logo_url`  | URL to the product's logo, (must be in SVG, AI or EPS format -- not a PNG -- and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see logo [guidelines](https://github.com/cncf/landscape#logos) |
 | `type`              | Is your product a distribution, hosted platform, or installer (see [definitions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-a-distribution-and-what-is-a-platform)) |
@@ -106,6 +107,7 @@ vendor: Yoyodyne
 name: Turbo Encabulator
 version: v1.7.4
 website_url: https://yoyo.dyne/turbo-encabulator
+repo_url: https://github.com/yoyo.dyne/turbo-encabulator
 documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 type: distribution
