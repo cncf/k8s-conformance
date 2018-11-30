@@ -1,0 +1,7 @@
+vendor: VEXXHOST, Inc.
+name: Kubernetes Container Service
+version: 7.0.2
+website_url: https://vexxhost.com/public-cloud/container-services/kubernetes/
+documentation_url: https://docs.openstack.org/magnum/rocky/
+type: hosted
+description: Fully managed Kubernetes fully integrated with OpenStack
