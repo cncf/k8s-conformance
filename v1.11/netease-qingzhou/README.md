@@ -1,6 +1,6 @@
 ### How to Reproduce
 
-1. Deploy 'Netease Qinqzhou MicroService' product please refer to [documentation](https://www.163yun.com/product-nsf)
+1. Deploy 'Netease Qingzhou MicroService' product please refer to [documentation](https://www.163yun.com/product-nsf)
 
 2. Launch the e2e conformance test with following the [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running)
 
