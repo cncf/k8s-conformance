@@ -47,7 +47,7 @@ Certified Kubernetes products may use the word Kubernetes in their product name.
 
 ## Do I need to re-submit results if we rebrand our offering?
 
-No. If the software is the same, and just the name has changed, you just need to submit a revised Participation Form available at https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md that includes the new name. Please also open a pull request to update the name in your PRODUCT.yaml file. We do ask that you send us the new Participation Form **prior** to announcing the name change.
+No. If the software is the same, and just the name has changed, you just need to submit a revised Participation Form available at https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md that includes the new name. Please also open a pull request to update the name in your PRODUCT.yaml file. We do ask that you send us the new Participation Form **prior** to announcing the name change. You can submit the pull request after the announcement, if necessary.
 
 ## I still have questions. Can you help?
 
