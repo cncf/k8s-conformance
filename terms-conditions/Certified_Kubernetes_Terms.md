@@ -2,7 +2,7 @@
 
 (Available in [PDF](https://github.com/cncf/k8s-conformance/raw/master/terms-conditions/Certified_Kubernetes_Terms.pdf).)
 
-#### Last updated: November 22, 2017
+#### Last updated: December 18, 2018
 
 This document sets forth the terms and conditions that apply to the Conformance Program and use of the Certified Kubernetes Marks.
 
