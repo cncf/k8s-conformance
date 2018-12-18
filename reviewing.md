@@ -49,8 +49,6 @@ If the submission doesn't meet all policy requirements, reply with a message ind
 
 1. Update the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/a/linuxfoundation.org/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit) to reflect the vendor's certified offering.
 
-2. Add the vendor's logo to https://www.cncf.io/certification/software-conformance/
+2. Add the vendor's information to the [CNCF landscape](https://landscape.cncf.io/grouping=landscape&landscape=certified-kubernetes-distribution,certified-kubernetes-hosted,certified-kubernetes-installer) which also causes them to appear on https://www.cncf.io/certification/software-conformance/ and https://kubernetes.io/partners/#conformance.
 
-3. Add the vendor's listing to https://kubernetes.io/partners/#dist
-
-4. Add a comment saying "You are now Certified Kubernetes" and merge the PR.
+3. Add a comment saying "You are now Certified Kubernetes" and merge the PR.
