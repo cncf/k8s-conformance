@@ -22,7 +22,7 @@ tests.
 
 ## What versions of Kubernetes can be certified?
 
-You can certify the currently released version and the version before that. The currently released version is the number at the top right of https://kubernetes.io/. Already certified implementations remain certified as long as a newer version is certified at least once a year after the initial certification.
+You can certify the currently released version and the two versions before that. The currently released version is the number at the top right of https://kubernetes.io/. Already certified implementations remain certified as long as a newer version is certified at least once a year after the initial certification.
 
 ## Can I certify my private cloud that will not be available outside of our company?
 
