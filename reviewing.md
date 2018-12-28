@@ -9,8 +9,7 @@
 Kubernetes for which conformance is being claimed, referenced as the
 "Conformance Version" from hereon.
 
-3. Verify that the Conformance Version is the current or previous version of
-Kubernetes.
+3. Verify that the Conformance Version is the current or previous two versions of Kubernetes.
 
 4. Look at `e2e.log`.  Verify that the `major.minor` component of the
 `kube-apiserver version:` log exactly matches the Conformance Version. The
