@@ -1,0 +1,8 @@
+vendor: Alauda
+name: Alauda Cloud Enterprise (ACE)
+version: 2.1
+website_url: http://www.alauda.cn/product/detail/id/239.html
+documentation_url: http://www.alauda.cn/product/detail/id/239.html
+product_logo_url: http://www.alauda.cn/Upload/image/201812/1545880263175025.png
+type: distribution
+description: An Enterprise Platform-as-a-Service based on Kubernetes
