@@ -1,5 +1,5 @@
 vendor: Canonical Ltd
-name: Canonical Distribution of Kubernetes
+name: Charmed Distribution of Kubernetes
 version: v1.8.1
 website_url: https://www.ubuntu.com/kubernetes
 documentation_url: https://kubernetes.io/docs/getting-started-guides/ubuntu/
