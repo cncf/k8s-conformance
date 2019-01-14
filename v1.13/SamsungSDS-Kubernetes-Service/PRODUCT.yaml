@@ -1,0 +1,6 @@
+vendor: SamsungSDS
+name: SamsungSDS Kubernetes Service
+version: v1.13
+website_url: https://cloud.samsungsds.com/
+product_logo_url: https://github.com/thdrnsdk/SamsungSDS-Kubernetes-Service/blob/master/logo.jpg
+type: hosted
