@@ -1,0 +1,8 @@
+vendor: Alauda
+name: Alauda Kubernetes (AKS)
+version: 1.2
+website_url: http://www.alauda.cn/product/detail/id/240.html
+documentation_url: http://www.alauda.cn/product/detail/id/240.html
+product_logo_url: http://www.alauda.cn/Upload/image/201812/1545880992590699.png
+type: distribution
+description: An Enterprise-Ready Kubernetes Distribution
