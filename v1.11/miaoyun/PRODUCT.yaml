@@ -1,7 +1,8 @@
-vendor: CStack
+vendor: Qimai
 name: MiaoYun
-version: v18.06.1
-website_url: https://cstack.net.cn/miaoyun/
-documentation_url: http://docs.miaoyun.io/
-product_logo_url: https://www.cncf.io/wp-content/uploads/2018/08/cstack.svg
+version: v18.12.1
+website_url: https://miaoyun.io/
+documentation_url: https://miaoyun.io/
+# FIXME: LOGO有问题
+product_logo_url: miaoyun.io/wp-content/uploads/2019/01/logo@2x.png
 type: distribution
