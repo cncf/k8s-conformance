@@ -1,0 +1,8 @@
+vendor: SysEleven
+name: MetaKube
+version: 2019-02-04
+website_url: https://metakube.syseleven.de
+documentation_url: https://docs.syseleven.de/metakube
+product_logo_url: https://metakube.syseleven.de/assets/images/logo/header-logo-syseleven-white.svg
+type: hosted
+description: MetaKube offers carefree managed Kubernetes hosting with features like Backup and Recovery, Monitoring, Lifecycle Management, LBaaS and more
