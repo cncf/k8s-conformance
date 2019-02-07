@@ -1,6 +1,6 @@
 vendor: Oracle Linux
 name: Oracle Container Services for use with Kubernetes
-version: 1.12.3-2.0.6.el7
+version: 1.12.5-2.1.1.el7
 website_url: https://www.oracle.com/linux/index.html
 documentation_url: https://docs.oracle.com/cd/E52668_01/E88884/html/index.html
 product_logo_url: https://www.oracle.com/webfolder/s/brand/identity/logo/index.html#primary
