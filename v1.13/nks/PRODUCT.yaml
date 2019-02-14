@@ -1,0 +1,8 @@
+vendor: NetApp
+name: NetApp Kubernetes Service
+version: 1.13.2
+website_url: https://cloud.netapp.com/kubernetes-service
+documentation_url: https://docs.netapp.com/us-en/kubernetes-service/
+product_logo_url: https://landscape.cncf.io/logos/net-app.svg
+type: hosted
+description: 'Cloud Native Infrastructure and Workload Management for the Multicloud'
