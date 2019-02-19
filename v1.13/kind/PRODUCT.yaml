@@ -1,0 +1,9 @@
+vendor: Kubernetes SIG-Testing kind Project
+name: kind
+version: v0.1.0
+website_url: https://sigs.k8s.io/kind
+repo_url: https://github.com/kubernetes-sigs/kind
+documentation_url: https://github.com/kubernetes-sigs/kind
+product_logo_url: https://raw.githubusercontent.com/kubernetes-sigs/kind/master/logo/logo.svg
+type: distribution
+description: kind creates local multi-node Kubernetes clusters using docker container nodes

@@ -1,0 +1,3 @@
+[root@node-6:~/WilliamZhang]$ kubectl version
+Client Version: version.Info{Major:"1", Minor:"10", GitVersion:"v1.10.5-1", GitCommit:"32ac1c9073b132b8ba18aa830f46b77dcceb0723", GitTreeState:"archive", BuildDate:"2018-07-23T08:10:31Z", GoVersion:"go1.9.3", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"10", GitVersion:"v1.10.5-1", GitCommit:"32ac1c9073b132b8ba18aa830f46b77dcceb0723", GitTreeState:"archive", BuildDate:"2018-07-23T08:00:29Z", GoVersion:"go1.9.3", Compiler:"gc", Platform:"linux/amd64"}

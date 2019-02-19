@@ -1,0 +1,8 @@
+vendor: Darx Kies
+name: Kubernetes - The Easier Way
+version: 2.0.2
+website_url: https://github.com/darxkies/k8s-tew
+documentation_url: https://github.com/darxkies/k8s-tew
+product_logo_url: https://raw.githubusercontent.com/darxkies/k8s-tew/master/logo.svg
+type: installer
+description: 'k8s-tew enables users to create and manage an easily customizable HA Kubernetes cluster with only a couple of commands'

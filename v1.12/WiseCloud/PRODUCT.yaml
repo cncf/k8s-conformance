@@ -1,0 +1,8 @@
+vendor: Wise2C Technology
+name: WiseCloud
+version: v1.5.1
+website_url: http://www.wise2c.com/solution
+documentation_url: http://www.wise2c.com/Assets/WiseCloud/doc/WiseCloud_User_Guide.pdf
+product_logo_url: http://www.wise2c.com/Assets/WiseCloud/img/WiseCloud.png
+type: distribution
+description: 'The WiseCloud is a production-ready full-featured PaaS platform based on Kubernetes.'
