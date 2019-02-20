@@ -1,0 +1,9 @@
+vendor: Linode
+name: Linode CLI
+version: v2.0.20
+website_url: https://developers.linode.com/kubernetes/
+repo_url: https://github.com/linode/linode-cli
+documentation_url: https://github.com/linode/linode-cli#kubernetes-deployment-plugin
+product_logo_url: https://www.linode.com/media/images/logos/diagonal/light/linode-logo_diagonal_light.eps
+type: installer
+description: 'The Linode CLI makes it easy to automate Linode infrastructure tasks and provision Kubernetes clusters.'
