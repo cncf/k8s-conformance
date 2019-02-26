@@ -1,0 +1,8 @@
+vendor: Rancher Labs
+name: k3s
+version: v0.1.0
+website_url: https://k3s.io
+documentation_url: https://github.com/rancher/k3s/blob/master/README.md
+product_logo_url: http://k3s.io/img/logo.svg?1
+type: distribution
+description: Lightweight Kubernetes
