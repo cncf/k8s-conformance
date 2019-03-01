@@ -1,15 +1,23 @@
 # How to reproduce
 
-## 1. Prepare tests
-As our Kubernetes product is still in private alpha, we created for you a cluster in version 1.12.
-Connect to the [OVH Manager](https://www.ovh.com/manager/cloud) with your OVH account: tc160318-ovh.
+## 1. Create an account
+Create a European OVH Account on [http://www.ovh.ie/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=IE](http://www.ovh.ie/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=IE).
 
-You will find your Kubernetes service named "My 1.12 cluster" under the "Platform and Services" section in the "Cloud" universe. Download the kubeconfig file from the bottom of the 'Service' tab.
+## 2. Order a new free cluster
 
-Then add some nodes from the 'Nodes' tab. We personnaly tested with 2 'B2-7'(General Purpose family) instances.
+Click on the "Get started for free" on [https://www.ovh.ie/kubernetes/](https://www.ovh.ie/kubernetes/).
 
+## 3. Wait
+Wait 3-10 minutes after your order (you should have received a "Your cluster is ready" email, then you can connect to [https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=IE](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=IE).
+You will find the Kubernetes service under the "Platform and Services" section in the "Cloud" universe.
 
-## 2. Run the tests
+## 4. Get credentials and add some nodes to your cluster
+Check the Kubernetes version delivered. If it's not the one you want to perform test on, click the "3 dot" button next to your cluster status and request cluster reset.
+Choose the major version of Kubernetes you wanna test and wait a few minutes for your service to be in "OK" state again.
+From the previous UI, download the kubeconfig file from the bottom of the 'Service' tab.
+Then add some nodes from the 'Nodes' tab. We personnaly tested with 2 'B2-7' instances.
+
+## 5. Run the tests
 Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```

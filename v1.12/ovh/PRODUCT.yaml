@@ -1,8 +1,8 @@
-vendor: OVH Group
+vendor: OVH
 name: OVH Managed Kubernetes Service
-version: beta1
-website_url: https://labs.ovh.com/kubernetes-k8s
-documentation_url: https://labs.ovh.com/kubernetes-k8s/documentation
+version: 1.0
+website_url: https://www.ovh.ie/kubernetes/
+documentation_url: https://docs.ovh.com/gb/en/kubernetes/
 product_logo_url: https://www.ovh.com/fr/images/logo/logo-ovh-long-baseline-blue.ai
 type: hosted platform
 description: 'Benefit from free HA managed Kubernetes service, by hosting your nodes and services on OVH Public Cloud'
