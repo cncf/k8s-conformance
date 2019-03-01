@@ -1,0 +1,8 @@
+vendor: Containership
+name: Containership Kubernetes Engine (CKE)
+version: v3.8.0
+website_url: https://containership.io
+documentation_url: https://docs.containership.io
+product_logo_url: https://cdn.containership.io/logos/containership/cs-vertical.svg
+type: distribution
+description: 'Containership Kubernetes Engine (CKE) is a multicloud provisioning tool that provides a simple to use UI and API for Kubernetes cluster lifecycle management in the cloud or on-premises.'
