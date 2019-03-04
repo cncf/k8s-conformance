@@ -17,7 +17,8 @@ patch version does not matter.
 
 5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
-matter as long as we see `0 Failed | 0 Pending`.
+matter as long as we see `0 Failed | 0 Pending`. Also, there should be 0 tests
+listed as `Flaked`.
 
 ## Policy Requirements
 
