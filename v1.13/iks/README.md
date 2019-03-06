@@ -2,13 +2,13 @@
 
 You'll first need to get started with IBM Cloud Kubernetes Service by setting up
 an IBM Cloud account. For details, see the
-[getting started](https://cloud.ibm.com/docs/containers/container_index.html#container_index)
+[getting started](https://cloud.ibm.com/docs/containers?topic=containers-container_index#container_index)
 instructions. Then follow the steps below to create a cluster and run the
 conformance tests.
 
 ## Create a cluster
 
-If you haven't already done so, [install the CLI](https://cloud.ibm.com/docs/containers/cs_cli_install.html#cs_cli_install_steps)
+If you haven't already done so, [install the CLI](https://cloud.ibm.com/docs/containers?topic=containers-cs_cli_install#cs_cli_install_steps)
 for IBM Cloud Kubernetes Service. You may then create a cluster using the CLI or UI.
 
 ### CLI
@@ -22,7 +22,7 @@ for IBM Cloud Kubernetes Service. You may then create a cluster using the CLI or
 
 ### UI
 
-Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog/?category=containers)
+Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog?category=containers)
 and select IBM Cloud Kubernetes Service and follow the instructions to create a
 cluster and gain access to it.
 
