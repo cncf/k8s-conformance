@@ -3,7 +3,7 @@
 #### Create Kubernetes Cluster
 
 - Login to [JDCloud Console](https://console.jdcloud.com/) 
-- Go to [JCS for Kubernetes](https://cns-console.jdcloud.com/host/kubernetes/list) web console and create a Kubernetes cluster, please visit document [How to create a cluster](https://docs.jdcloud.com/cn/jcs-for-kubernetes/create-to-cluster) for more details
+- Go to [JCS for Kubernetes](https://console.jdcloud.com/host/kubernetes/list) web console and create a Kubernetes cluster, please visit document [How to create a cluster](https://docs.jdcloud.com/cn/jcs-for-kubernetes/create-to-cluster) for more details
 - Please make sure a VPN is configured appropriately because of the cluster can't visit images of gcr.io in China mainland without VPN
 
 #### Run Conformance Test
