@@ -4,7 +4,7 @@ MiaoYun is a platform based on Docker container, supporting both Docker Swarm an
 
 ## How to Reproduce
 
-First install MiaoYun v18.06.1. To install MiaoYun online, first get the online installation tool myctl, then run:
+First install MiaoYun v18.12.1. To install MiaoYun online, first get the online installation tool myctl, then run:
 ```
 myctl deploy
 ```
@@ -15,7 +15,7 @@ Then create a Kubernetes cluster and add nodes. Login to MiaoYun management plat
 To setup kubectl, Copy the kubectl setup commands in settings and execute them on the remote node.
 
 Run the conformance test:
-Download a binary release of the sonobuoy v0.11.6, and run:
+Download the latest binary release of sonobuoy, and run:
 ```
 sonobuoy run
 ```
