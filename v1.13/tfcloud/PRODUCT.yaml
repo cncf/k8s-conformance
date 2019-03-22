@@ -1,0 +1,8 @@
+vendor: tfcloud
+name: UnitedStack Container Service
+version: v1.13.1
+website_url: https://www.tfcloud.com/
+documentation_url: https://www.tfcloud.com/
+product_logo_url: https://www.tfcloud.com/static/assets/tongfangyouyun-logo72dpi-2018-1.jpg
+type: distribution
+description: An Enterprise-Ready Kubernetes Distribution

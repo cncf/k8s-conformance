@@ -1,0 +1,8 @@
+vendor: Kubernetes Kops Project
+name: kops
+version: v1.11.1
+website_url: https://github.com/kubernetes/kops
+documentation_url: https://github.com/kubernetes/kops
+product_logo_url: https://raw.githubusercontent.com/kubernetes/kops/master/docs/img/logo.svg
+type: installer
+description: 'kops is open-source, community-maintained tooling for production-grade kubernetes cluster installation, management and upgrades'

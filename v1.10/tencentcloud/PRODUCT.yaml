@@ -1,0 +1,6 @@
+vendor: Tencent Cloud
+name: Tencent Kubernetes Engine #formerly: Cloud Container Sevice. After passing the certification, we will announce the change of name as TKE
+version: v1.10.3
+website_url: https://cloud.tencent.com/product/ccs?lang=en
+documentation_url: https://cloud.tencent.com/document/product/457?lang=en
+product_logo_url: https://www.cncf.io/wp-content/uploads/2017/05/logo_tencent-300x184.png

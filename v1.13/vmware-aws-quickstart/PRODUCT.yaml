@@ -1,0 +1,8 @@
+vendor: VMware
+name: VMware AWS Quick Start
+description: This Quick Start sets up a flexible, secure AWS environment and launches a Kubernetes cluster automatically into a configuration of your choice.
+version: ceaf2f30a16d390be869ce01f6043a7e41a1d2f2
+website_url: https://aws.amazon.com/quickstart/architecture/vmware-kubernetes
+documentation_url: https://github.com/heptio/aws-quickstart
+product_logo_url: https://landscape.cncf.io/logos/v-mware-pks.svg
+type: installer

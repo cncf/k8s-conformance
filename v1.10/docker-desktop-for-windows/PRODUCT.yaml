@@ -1,0 +1,8 @@
+vendor: Docker
+name: Docker Desktop for Windows
+version: 18.06.0-ce-win72
+website_url: https://www.docker.com/docker-windows
+documentation_url: https://docs.docker.com/docker-for-windows/
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
+type: distribution
+description: Docker Desktop for Windows is an easy-to-install desktop app for building, debugging and testing Dockerized apps on Windows.
