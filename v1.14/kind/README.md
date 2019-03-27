@@ -83,7 +83,7 @@ kubetest \
     --provider=skeleton \
     --test \
     --check-version-skew=false \
-    --test_args="--ginkgo.focus=\[Conformance\] --ginkgo.skip=Alpha|Kubectl|\[(Disruptive|Feature:[^\]]+|Flaky)\] --report-dir=${PWD}/_artifacts --disable-log-dump=true --num-nodes=2" \
+    --test_args="--ginkgo.focus=\[Conformance\] --report-dir=${PWD}/_artifacts --disable-log-dump=true --num-nodes=2" \
     | tee ./_artifacts/e2e.log
 ```
 
