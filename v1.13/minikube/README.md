@@ -1,6 +1,6 @@
 Download and install minikube 0.35
 ```shell
-$ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && sudo install minikube-linux-amd64 /usr/local/bin/minikube
+$ curl -LO https://storage.googleapis.com/minikube/releases/v0.35.0/minikube-linux-amd64 && sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 Instructions for running minikube on macOS and Windows are also
 [here](https://github.com/kubernetes/minikube)
