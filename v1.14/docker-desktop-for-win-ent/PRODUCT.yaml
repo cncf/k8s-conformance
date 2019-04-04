@@ -1,0 +1,8 @@
+vendor: Docker
+name: Docker Desktop Enterprise for Windows
+version: 2.0.0.2-ent (32735)
+website_url: https://hub.docker.com/editions/community/docker-desktop-ent
+documentation_url: https://success.docker.com/article/desktop
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
+type: distribution
+description: Docker Desktop Enterprise takes Docker Desktop Community, formerly known as Docker for Windows and Docker for Mac, a step further with simplified enterprise application development and maintenance.
