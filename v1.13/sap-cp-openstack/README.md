@@ -1,5 +1,8 @@
 # To reproduce:
 
+## Install Gardener on your Kubernetes Landscape
+Follow the instructions on https://github.com/gardener/garden-setup
+
 ## Create Kubernetes Cluster
 
 Login to SAP Gardener Dashboard to create a Kubernetes Clusters on Amazon Web Services, Microsoft Azure, Google Cloud Platform, or OpenStack cloud provider.
