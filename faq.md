@@ -49,6 +49,10 @@ Certified Kubernetes products may use the word Kubernetes in their product name.
 
 No. If the software is the same, and just the name has changed, you just need to submit a revised Participation Form available at https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md that includes the new name. Please also open a pull request to update the name in your PRODUCT.yaml file. We do ask that you send us the new Participation Form **prior** to announcing the name change. You can submit the pull request after the announcement, if necessary.
 
+## Is a participation form required per company or per offering?
+
+Per offering. Each separate offering (i.e., different product name) from your company requires a different [participation form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md). We don't need a new form for new versions of an existing offering.
+
 ## I still have questions. Can you help?
 
 Yes. Please email us at conformance@cncf.io.
