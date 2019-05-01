@@ -45,13 +45,13 @@ From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https:
 
 Certified Kubernetes products may use the word Kubernetes in their product name. E.g., Acme Kubernetes Engine or Acme Kubernetes. See this [section](https://github.com/cncf/k8s-conformance/blob/master/terms-conditions/Certified_Kubernetes_Terms.md#use-of-the-certified-kubernetes-marks-and-participant-kubernetes-combinations) of the terms and conditions for the exact details.
 
-## Do I need to re-submit results if we rebrand our offering?
+## Do I need to re-submit results if we rebrand our product?
 
 No. If the software is the same, and just the name has changed, you just need to submit a revised Participation Form available at https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md that includes the new name. Please also open a pull request to update the name in your PRODUCT.yaml file. We do ask that you send us the new Participation Form **prior** to announcing the name change. You can submit the pull request after the announcement, if necessary.
 
-## Is a participation form required per company or per offering?
+## Is a participation form required per company or per product?
 
-Per offering. Each separate offering (i.e., different product name) from your company requires a different [participation form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md). We don't need a new form for new versions of an existing offering.
+Per product. Each separate product (i.e., different product name) from your company requires a different [participation form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md). We don't need a new form for new versions of an existing product.
 
 ## I still have questions. Can you help?
 
