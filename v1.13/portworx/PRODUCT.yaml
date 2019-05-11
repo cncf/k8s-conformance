@@ -1,0 +1,8 @@
+vendor: Portworx
+name: Portworx on Kubernetes
+version: v2.1.1
+website_url: https://portworx.com/
+documentation_url: https://docs.portworx.com/portworx-install-with-kubernetes/
+product_logo_url: https://landscape.cncf.io/logos/portworx.svg
+type: distribution
+description: Cloud Native Storage for Kubernetes
