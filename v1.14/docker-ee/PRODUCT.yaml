@@ -1,0 +1,6 @@
+vendor: Docker
+name: Docker Enterprise
+version: 3.0
+website_url: https://www.docker.com/products/docker-enterprise
+documentation_url: https://docs.docker.com/enterprise/
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
