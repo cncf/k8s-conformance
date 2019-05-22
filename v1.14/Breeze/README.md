@@ -2,20 +2,30 @@
 
 ## Node Provisioning
 Provision 6+ nodes for your cluster. Follow the [OS requirements](https://github.com/wise2c-devops/breeze).
+
 1 deploy node
+
 1 harbor node
+
 3 master nodes
+
 1+ worker nodes
 
 ## Install Breeze on the deploy node
 (1) Install docker and docker-compose
+
 (2) Download the [docker-compose.yaml](https://github.com/wise2c-devops/breeze/blob/master/docker-compose.yml) file
+
 (3) execute the command:
+
     ```    
     docker-compose up -d
     ```
+
 (4) Open the browser to access the installer page
+
 (5) Add nodes and set up K8s components
+
 (6) Install the cluster
 
 ## Run Conformance Test
