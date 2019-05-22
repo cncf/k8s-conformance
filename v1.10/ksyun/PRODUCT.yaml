@@ -1,0 +1,8 @@
+vendor: Kingsoft Cloud
+name: Kingsoft Cloud Container Engine
+version: v1.10.11
+website_url: https://www.ksyun.com/post/product/KCE
+documentation_url: https://docs.ksyun.com/products/46
+product_logo_url: https://resource.ksyun.com/project/resource/img/logo.png
+type: distribution
+description: 'Kingsoft Cloud Container Engine, KCE.'
