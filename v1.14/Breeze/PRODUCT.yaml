@@ -1,0 +1,9 @@
+vendor: Wise2C Technology
+name: Breeze
+version: v1.14.2
+website_url: http://www.wise2c.com
+repo_url: https://github.com/wise2c-devops/breeze
+documentation_url: https://github.com/wise2c-devops/breeze/blob/master/manual/BreezeManual.pdf
+product_logo_url: https://github.com/wise2c-devops/breeze/blob/master/manual/Breeze-Logo.ai
+type: installer
+description: 'Deploy a Production Ready Kubernetes Cluster with graphical interface'
