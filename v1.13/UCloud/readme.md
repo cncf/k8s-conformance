@@ -19,7 +19,7 @@ After did that, you can ssh to the node or master.
 Run command as below:
 
 ```
-# install golang first
+# install golang first.
 
 go get -u -v github.com/heptio/sonobuoy
 
