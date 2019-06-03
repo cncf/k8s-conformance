@@ -1,4 +1,4 @@
-# Conformance tests for Helium Cloud v1.11.2 Kubernetes
+# Conformance tests for Helium Cloud v1.33.4 Kubernetes
 
 ## Install Helium Cloud v1.33.0 (base on Kubernetes v1.13.4)
 
