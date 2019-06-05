@@ -24,9 +24,9 @@ To ensure the pace of innovation in Kubernetes continues and benefits all users,
 
 * [Participation Form](./participation-form/Certified_Kubernetes_Form.md)
 
-* [Brand Guidelines](https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
+* [Brand Guidelines](https://github.com/cncf/artwork/blob/master/projects/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf)
 
-* [Marks](https://github.com/cncf/artwork/tree/master/kubernetes/certified-kubernetes/) (i.e., the logos)
+* [Marks](https://github.com/cncf/artwork/blob/master/examples/other.md#certified-kubernetes-logos) (i.e., the logos)
 
 * [Frequently Asked Questions](faq.md)
 
