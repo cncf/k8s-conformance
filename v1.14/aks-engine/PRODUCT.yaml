@@ -1,5 +1,5 @@
 vendor: Microsoft
-name: Azure aks-egine
+name: Azure aks-engine
 version: v0.36.2
 website_url: https://github.com/Azure/aks-engine
 documentation_url: https://github.com/Azure/aks-engine
