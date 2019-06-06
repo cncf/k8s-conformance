@@ -1,0 +1,8 @@
+vendor: Netease
+name: Netease Container Service Dedicated
+version: v1.2
+website_url: https://www.163yun.com/product/container-service-dedicated
+documentation_url: https://www.163yun.com/docs/product/container-service-dedicated/introduction
+product_logo_url: https://www.163yun.com/res/3rd/ndk.png
+type: distribution
+description: Netease Container Service Dedicated is an enterprise-grade container platform based on industry standards,Docker and Kubernetes.It enables you to efficiently run docker applications on Netease Dedicated Cloud and helps you to focus on your applications rather than managing container infrastructure.
