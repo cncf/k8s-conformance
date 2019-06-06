@@ -2,7 +2,7 @@
 
 ## Create Kubernetes Cluster
 
-Install Bocloud BeyondContainer to creat kubernetes cluster.
+Install Bocloud BeyondContainer to create a Kubernetes cluster.
 
 After the creation completed, add the test cluster and launch the Kubernetes e2e conformance tests.
 
