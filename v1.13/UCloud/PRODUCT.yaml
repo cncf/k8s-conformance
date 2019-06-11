@@ -3,6 +3,6 @@ name: UCloud Kubernetes Service（UK8S）
 version: v1.13.5
 website_url: https://www.ucloud.cn/site/product/uk8s.html
 documentation_url: https://docs.ucloud.cn/compute/uk8s
-product_logo_url: https://static.ucloud.cn/79fd00b7bc194164a370daf1fb1ef564.png
+product_logo_url: https://www.cncf.io/wp-content/uploads/2019/03/ucloud.svg
 type: hosted
 description: 'UK8S is a container service base on Kubernetes,integrated with  cloud product of UCloud platform.'
