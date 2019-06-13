@@ -1,0 +1,8 @@
+vendor: EasyStack
+name: EasyStack Kubernetes Service (EKS)
+version: v1.14.1
+website_url: https://www.easystack.cn/eks
+documentation_url: https://www.easystack.cn/EKS_DOC/eks_introduction
+product_logo_url: https://www.easystack.cn/images/EKS_logo1.svg
+type: distribution
+description: EasyStack Kubernetes Service (EKS) is enterprise container platform contains the best of bred capability of an integrated Kubernetes and OpenStack solution. 
