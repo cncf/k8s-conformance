@@ -1,7 +1,7 @@
 vendor: SIGHUP
 name: kubernetes-fury-aws
 version: k8s-1.14.3-fury-1.0.0
-website_url:https://github.com/sighupio/fury-kubernetes-aws
+website_url: https://github.com/sighupio/fury-kubernetes-aws
 repo_url: https://github.com/sighupio/fury-kubernetes-aws
 documentation_url: https://github.com/sighupio/fury-kubernetes-aws/blob/master/README.md
 product_logo_url: https://s3.us-west-1.wasabisys.com/sighup-logos/fury-logo.svg
