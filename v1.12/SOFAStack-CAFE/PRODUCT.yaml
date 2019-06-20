@@ -1,0 +1,8 @@
+vendor: Ant Financial
+name: Alibaba Cloud Container Service for Kubernetes
+version: v1.12.5
+website_url: https://tech.antfin.com
+documentation_url: https://tech.antfin.com/docs/2/89361
+product_logo_url: https://avatars2.githubusercontent.com/u/16377432?s=200&v=4
+type: hosted
+description: "SOFAStack CAFE (Cloud Application Fabric Engine), is a PaaS product providing full application life-cycle management, including deployment, orchestration, observability, and disaster recovery for the critical financial business scenarios with classic and cloud native architectural platform support."
