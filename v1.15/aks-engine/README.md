@@ -3,13 +3,13 @@ To reproduce:
 ```
 # Install AKS Engine based on https://github.com/Azure/aks-engine/blob/master/docs/tutorials/quickstart.md
 
-curl -L -o aks-engine-darwin.tar.gz https://github.com/Azure/aks-engine/releases/download/v0.37.2/aks-engine-v0.37.2-darwin-amd64.tar.gz
+curl -L -o aks-engine-darwin.tar.gz https://github.com/Azure/aks-engine/releases/download/v0.37.3/aks-engine-v0.37.2-darwin-amd64.tar.gz
 
 # Get the Kubernetes 1.15 install json
 
 curl -o kubernetes1.15.json https://github.com/Azure/aks-engine/blob/master/examples/kubernetes-releases/kubernetes1.15.json
 
-# Get the current Azure subscription ID 
+# Get the current Azure subscription ID
 
 $ az login
 
@@ -22,9 +22,9 @@ $ az ad sp create-for-rbac --skip-assignment
 # With the output of the command above set the CLIENTID and CLIENTSECRET from the appId and password fields respectively
 
 $ aks-engine deploy --subscription-id $SUBID \
-    --client-id $CLIENTID --client-secret $CLIENTSECRET \ 
+    --client-id $CLIENTID --client-secret $CLIENTSECRET \
     --dns-prefix conformance --location westus2 \
-    --auto-suffix --api-model kubernetes1.15.json 
+    --auto-suffix --api-model kubernetes1.15.json
 
 $ go get -u -v github.com/heptio/sonobuoy
 
