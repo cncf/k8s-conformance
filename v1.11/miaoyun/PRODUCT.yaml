@@ -1,0 +1,7 @@
+vendor: Qimai
+name: MiaoYun
+version: v18.12.1
+website_url: https://miaoyun.io/
+documentation_url: http://miaoyun.io:8000/
+product_logo_url: https://www.cncf.io/wp-content/uploads/2018/08/MiaoYun-logo.svg
+type: distribution

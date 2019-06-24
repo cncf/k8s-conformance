@@ -12,9 +12,9 @@ suite.
 The standard tool for running these tests is
 [Sonobuoy](https://github.com/heptio/sonobuoy).  Sonobuoy is 
 regularly built and kept up to date to execute against all 
-currently supported versions of kubernetes, and can be obtained [here](https://github.com/heptio/sonobuoy/releases).
+currently supported versions of kubernetes.
 
-Download the CLI by running:
+Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
 $ go get -u -v github.com/heptio/sonobuoy
@@ -25,6 +25,8 @@ Deploy a Sonobuoy pod to your cluster with:
 ```
 $ sonobuoy run
 ```
+
+**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the Conformance tests can take an hour or more.
 
 View actively running pods:
 
@@ -38,18 +40,17 @@ To inspect the logs:
 $ sonobuoy logs
 ```
 
-Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to
-a local directory:
+Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to a local directory:
 
 ```
-$ sonobuoy retrieve .
+$ outfile=$(sonobuoy retrieve)
 ```
 
 This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
 `.` directory. Extract the contents into `./results` with:
 
 ```
-mkdir ./results; tar xzf *.tar.gz -C ./results
+mkdir ./results; tar xzf $outfile -C ./results
 ```
 
 **NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**. 
@@ -93,8 +94,9 @@ This file describes your product. It is YAML formatted with the following root-l
 | `name`              | Name of the product being certified. |
 | `version`           | The version of the product being certified (not the version of Kubernetes it runs). |
 | `website_url`       | URL to the product information website |
+| `repo_url`          | If your product is open source, this field is necessary to point to the primary GitHub repo containing the source. It's OK if this is a mirror. OPTIONAL  |
 | `documentation_url` | URL to the product documentation |
-| `product_logo_url`  | URL to the product's logo, (must be in SVG, AI or EPS format and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see logo [guidelines](https://github.com/cncf/landscape#logos) |
+| `product_logo_url`  | URL to the product's logo, (must be in SVG, AI or EPS format -- not a PNG -- and include the product name). OPTIONAL. If not supplied, we'll use your company logo. Please see logo [guidelines](https://github.com/cncf/landscape#logos) |
 | `type`              | Is your product a distribution, hosted platform, or installer (see [definitions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-a-distribution-and-what-is-a-platform)) |
 | `description` | One sentence description of your offering |
 
@@ -106,6 +108,7 @@ vendor: Yoyodyne
 name: Turbo Encabulator
 version: v1.7.4
 website_url: https://yoyo.dyne/turbo-encabulator
+repo_url: https://github.com/yoyo.dyne/turbo-encabulator
 documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 type: distribution
@@ -122,6 +125,36 @@ as soon as you open the pull request. We can then often arrange to accept your p
 
 A reviewer will shortly comment on and/or accept your pull request, following this [process](reviewing.md).
 If you don't see a response within 3 business days, please contact conformance@cncf.io.
+
+## Example Script
+
+Combining the steps provided here, the process looks like this:
+
+```
+$ k8s_version=vX.Y
+$ prod_name=example
+
+$ go get -u -v github.com/heptio/sonobuoy
+
+$ sonobuoy run --wait
+$ outfile=$(sonobuoy retrieve)
+$ mkdir ./results; tar xzf $outfile -C ./results
+
+$ mkdir -p ./${k8s_version}/${prod_name}
+$ cp ./results/plugins/e2e/results/* ./${k8s_version}/${prod_name}/ 
+
+$ cat << EOF > ./${k8s_version}/${prod_name}/PRODUCT.yaml
+vendor: Yoyodyne
+name: Turbo Encabulator
+version: v1.7.4
+website_url: https://yoyo.dyne/turbo-encabulator
+repo_url: https://github.com/yoyo.dyne/turbo-encabulator
+documentation_url: https://yoyo.dyne/turbo-encabulator/docs
+product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
+type: distribution
+description: 'The Yoyodyne Turbo Encabulator is a superb Kubernetes distribution for all of your Encabulating needs.'
+EOF
+```
 
 ## Issues
 

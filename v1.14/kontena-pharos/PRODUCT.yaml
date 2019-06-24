@@ -1,0 +1,8 @@
+vendor: Kontena
+name: Kontena Pharos
+version: v2.4.0-rc.3
+website_url: https://kontena.io/pharos/
+documentation_url: https://www.pharos.sh/docs/
+product_logo_url: https://kontena.io/images/kontena-logo-solid-horizontal.svg
+type: distribution
+description: Kontena Pharos - The simple, solid, certified Kubernetes distribution that just works.
