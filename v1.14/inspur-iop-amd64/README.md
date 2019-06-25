@@ -11,8 +11,6 @@ instructions.
 
 Then navigate to ICE, follow the [quick start](https://console1.cloud.inspur.com/document/cks/2-quickstart.html) instruction to create a kubernetes cluster using the UI.
 
-![cluster](inspur-cks.png)
-
 ## Run conformance tests
 
 Wait for the cluster and all worker nodes to reach `running` state then follow the
