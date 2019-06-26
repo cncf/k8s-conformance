@@ -1,8 +1,33 @@
-To reproduce:
-Intellect FABRIC, our Cloud Native, machine learning based InsurTech Platform is proven on a global scale. It powers multiple products like Risk Analyst and Xponent for P&C insurance, and Distribution and Services Suite and Claims for Life insurance.
+To Reproduce:
 
-FABRIC ensures that high-performance and security is provided in a cost-effective manner which has led us to create award-winning solutions for our customers.
+Cluster creation:
 
-We have deployed containers on Kubernetes behind Elastic Load Balancer (ELB) for automatic distribution of incoming traffic. AWS enables us to handle application traffic in a single Availability Zone as well as scaling to multiple Regions.
+Create kubernetes cluster with AWS cloud.Once the cluster provisioned, install Intellect-FABRIC products inside cluster.
 
-The Kubernetes cluster is deployed over a set of different types of EC2 instance types that allow us to handle millions of concurrent threads over CPU optimized c4x instances or heavily integrated applications running over memory optimized instances r4x Instances. We have been able to simulate production workloads well before production with the use of Bees with Machine Guns.
+Run Kubernetes conformance test:
+
+The standard tool for running these tests is Sonobuoy. Sonobuoy is regularly built and kept up to date to execute against all currently supported versions of kubernetes, and can be obtained here.
+
+Download the CLI by running:
+
+$ go get -u -v github.com/heptio/sonobuoy
+Deploy a Sonobuoy pod to your cluster with:
+
+$ sonobuoy run
+View actively running pods:
+
+$ sonobuoy status
+To inspect the logs:
+
+$ sonobuoy logs
+Once sonobuoy status shows the run as completed, copy the output directory from the main Sonobuoy pod to a local directory:
+
+$ sonobuoy retrieve .
+This copies a single .tar.gz snapshot from the Sonobuoy pod into your local . directory. Extract the contents into ./results with:
+
+mkdir ./results; tar xzf *.tar.gz -C ./results
+NOTE: The two files required for submission are located in the tarball under plugins/e2e/results/{e2e.log,junit.xml}.
+
+To clean up Kubernetes objects created by Sonobuoy, run:
+
+sonobuoy delete
