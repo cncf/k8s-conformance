@@ -1,6 +1,6 @@
 vendor: Microsoft
-name: AKS Engine for Azure Stack
+name: Azure Stack
 version: v0.36.2
-website_url: https://github.com/msazurestackworkloads/aks-engine
-documentation_url: https://github.com/msazurestackworkloads/aks-engine/blob/master/README.md
-product_logo_url: https://landscape.cncf.io/logos/azure-aks-engine.svg
+website_url: https://azure.microsoft.com/en-us/overview/azure-stack/
+documentation_url: https://aka.ms/aksenginedoc
+product_logo_url: https://i1.wp.com/buildazure.com/wp-content/uploads/2017/09/Azure.png
