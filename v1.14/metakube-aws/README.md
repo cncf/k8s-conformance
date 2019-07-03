@@ -4,7 +4,7 @@
 
 1. Login to https://metakube.syseleven.de/
 2. Press the "Create Cluster" button
-3. Choose AWS as cloud provider and complete the create cluster wizard
+3. Choose AWS as cloud provider complete the create cluster wizard
 
 When the cluster is up and running,
 
