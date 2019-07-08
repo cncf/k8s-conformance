@@ -65,6 +65,8 @@ sonobuoy delete
 
 Prepare a PR to
 [https://github.com/cncf/k8s-conformance](https://github.com/cncf/k8s-conformance).
+Here are [directions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to
+prepare a pull request from a fork.
 In the descriptions below, `X.Y` refers to the kubernetes major and minor
 version, and `$dir` is a short subdirectory name to hold the results for your
 product.  Examples would be `gke` or `openshift`.
