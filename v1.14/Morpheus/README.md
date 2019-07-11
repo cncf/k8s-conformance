@@ -7,15 +7,18 @@ DISTRIB_CODENAME=xenial
 DISTRIB_DESCRIPTION="Ubuntu 16.04.5 LTS"
 
 see instructions:
+
 https://docs.morpheusdata.com/en/3.6.3/getting_started/installation/installation.html#centos
   
 
 Connect to target clouds/hypervisors
+
 #see instructions:
 
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/Clouds/vmware/vmware.html
 
 (optional) connect external DNS:
+
 #see instructions:
 
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#dns
