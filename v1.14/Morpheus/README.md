@@ -17,20 +17,24 @@ https://docs.morpheusdata.com/en/3.6.3/getting_started/installation/installation
 
 Connect to target clouds/hypervisors
 
-#see instructions:
-
+``
+see instructions:
+``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/Clouds/vmware/vmware.html
 
 (optional) connect external DNS:
 
-#see instructions:
 
+``
+see instructions:
+``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#dns
 
 (optional) connect external LB service:
 
-#see instructions:
-
+``
+see instructions:
+``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#load-balancers
 
 Use Morpheus KaaS builder to build new cluster based on CNCF compliant architecture
