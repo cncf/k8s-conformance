@@ -1,6 +1,7 @@
 #Reproducing test results. 
 
-Install Morpheus onto Ubuntu:
+#Initial cmp setup:
+1.   Install Morpheus onto Ubuntu:
 ```console
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=16.04
@@ -8,40 +9,41 @@ DISTRIB_CODENAME=xenial
 DISTRIB_DESCRIPTION="Ubuntu 16.04.5 LTS"
 ```
 
-
 ``
 see instructions:
 ``
 https://docs.morpheusdata.com/en/3.6.3/getting_started/installation/installation.html#centos
   
 
-Connect to target clouds/hypervisors
+2.  Connect to target clouds/hypervisors
 
 ``
 see instructions:
 ``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/Clouds/vmware/vmware.html
 
-(optional) connect external DNS:
-
+3.  (optional) connect external DNS:
 
 ``
 see instructions:
 ``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#dns
 
-(optional) connect external LB service:
+4.  (optional) connect external LB service:
 
 ``
 see instructions:
 ``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#load-balancers
 
-Use Morpheus KaaS builder to build new cluster based on CNCF compliant architecture
-#see instructions:
+5.  Use Morpheus KaaS builder to build new cluster based on CNCF compliant architecture
+``
+see instructions:
+``
 https://docs.morpheusdata.com/en/3.6.3/integration_guides/Containers/kubernetes.html
 
-SSH to one of the masters
+#Sonobuoy test: 
+6.  SSH to one of the masters
 1.       $ wget https://github.com/heptio/sonobuoy/releases/download/v0.15.0/sonobuoy_0.15.0_linux_amd64.tar.gz
 2.       $ tar -xzf sonobuoy_0.15.0_linux_amd64.tar.gz
 3.       $ ./sonobuoy run
