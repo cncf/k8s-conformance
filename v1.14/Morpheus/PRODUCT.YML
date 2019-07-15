@@ -5,5 +5,5 @@ website_url: https://www.morpheusdata.com/
 repo_url: 
 documentation_url: https://docs.morpheusdata.com/en/3.6.3/integration_guides/Containers/kubernetes.html?highlight=kubernetes
 product_logo_url: https://www.morpheusdata.com/wp-content/uploads/2018/06/cropped-morpheus_highres.png
-type: CMP 
+type: distribution 
 description: 'Morpheus is a hybrid cloud orchestration tool' 
