@@ -1,0 +1,7 @@
+vendor: IBM
+name: Red Hat OpenShift on IBM Cloud
+version: 3.11.129
+website_url: https://cloud.ibm.com/docs/openshift
+documentation_url: https://cloud.ibm.com/docs/openshift
+type: hosted
+description: 'Red Hat OpenShift on IBM Cloud is an extension of IBM Cloud Kubernetes Service, where IBM manages OpenShift Container Platform for you.'
