@@ -1,0 +1,8 @@
+vendor: iNNOVO Cloud GmbH
+name: iNNOVO Managed Kubernetes Engine
+version: v1.14.4
+website_url: https://www.innovo-cloud.de/produktgruppen/kubernetes-as-a-service-de/
+documentation_url: http://docs.imke.cloud
+product_logo_url: https://www.innovo-cloud.de/wp-content/uploads/2018/11/iMKE_Logo_4C_noSub.png
+type: hosted platform
+description: 'iMKE - iNNOVO Managed Kubernetes Engine. The first choice for Industrial and Finance clients Kubernetes.'
