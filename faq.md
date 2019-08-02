@@ -42,9 +42,9 @@ Per product. Each separate product (i.e., different product name) from your comp
 
 ## Are there any limitations regarding the logo?
 
-Yes. First, we need it in SVG, AI, or EPS format. If you don't have a product-specific logo, it is fine to reuse your company one. However, we have a set of [requirements](https://github.com/cncf/landscape#logos) including that it incorporate the name of the product or company in English (other languages are also fine) and that it not be reversed.
+Yes. First, we need it in SVG, AI, or EPS format. If you don't have a product-specific logo, it is fine to reuse your company one. However, we have a set of [requirements](https://github.com/cncf/landscape#logos) including that it incorporate the name of the product or company in English (it's fine to also include text in other languages) and that the logo not be reversed.
 
-Second, your logo can't be derivative of or includes portions of the Kubernetes [logo](https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos), in order to preserve the value of the Kubernetes logo. In particular, please don't include all or part of the Kubernetes wheel. Of course, under the terms of the Certified Kubernetes agreement, you're welcome and encouraged to keep use Kubernetes in your product name.
+Second, your logo can't be derivative of or include portions of the Kubernetes [logo](https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos), in order to preserve the value of the Kubernetes logo. In particular, please don't include all or part of the Kubernetes wheel. Of course, under the terms of the Certified Kubernetes agreement, you're welcome and encouraged to use Kubernetes in your product name.
 
 ## How can I track issues that have been opened regarding certification?
 
