@@ -1,11 +1,11 @@
 # Certified Kubernetes
 
-<img src="https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/certified-kubernetes/versionless/color/certified-kubernetes-color.png" align="right" width="200px">Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [50](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) Kubernetes platforms and distributions.
+<img src="https://raw.githubusercontent.com/cncf/artwork/master/projects/kubernetes/certified-kubernetes/versionless/color/certified-kubernetes-color.png" align="right" width="200px">Over the last 3 years Kubernetes has seen wide-scale adoption by a vibrant and diverse community of platform providers. In fact, there are now more than [90](https://docs.google.com/spreadsheets/u/1/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) Kubernetes platforms and distributions.
 
 One of the goals of the project has always been consistency and portability. Kubernetes sits on top of the infrastructure and enables you to describe your workload in a common format. Kubernetes makes it easy to move workloads from one place to another, or combine disjointed environments with a shared control plane.
 
 In order to better serve these goals, the Kubernetes community (under the aegis of the CNCF) is
-running a Kubernetes Software Conformance Certification program, currently in a pre-launch status.
+running a Kubernetes Software Conformance Certification program.
 All vendors are invited to submit conformance testing results for review and certification by the CNCF. The CNCF will formally certify compliant platforms and officially launch the program later this year.
 
 This program gives end users the confidence that when they use a Certified Kubernetes product they can rely on a high level of common functionality. It gives Independent Software Vendors (ISVs) confidence that if their customer is using a Certified Kubernetes platform that their software will behave as expected.
