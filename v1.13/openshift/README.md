@@ -22,4 +22,4 @@ To recreate these results
 
     test/extended/conformance-k8s.sh
 
-Nightly conformance tests are run against release branches and reported https://openshift-gce-devel.appspot.com/builds/origin-ci-test/logs/test_branch_origin_extended_conformance_k8s/
+Nightly conformance tests are run against release branches and reported https://prow.svc.ci.openshift.org/job-history/origin-ci-test/logs/periodic-ci-origin-conformance-k8s
