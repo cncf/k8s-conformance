@@ -1,0 +1,9 @@
+vendor: QingCloud Technologies Corp.
+name: QKE
+version: v1.0.0 - KubeSphere AE v2.0.1
+website_url: https://appcenter.qingcloud.com/apps/app-cmgbd5k2/KubeSphere%C2%AE%EF%B8%8F%20(QKE)
+repo_url: https://github.com/QingCloudAppcenter/QKE
+documentation_url: https://docs.qingcloud.com/product/container/qke/index.html
+product_logo_url: https://kubesphere.io/static/logo.58fe8884.svg
+type: distribution
+description: 'QKE is an open source enterprise-grade multi-tenant container platform, which is based on Kubernetes and powered by QingCloud. KubeSphere supports one-click deployment from QingCloud AppCenter. This App is based on KubeSphere Advanced Edition 2.0.2, with Kubernetes v1.13.5.'
