@@ -1,2 +1,0 @@
-Client Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5+1.2.2.el7", GitCommit:"067c6116d2598861bd31a0609b34599a68b14f89", GitTreeState:"archive", BuildDate:"2019-05-23T19:33:18Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/amd64"}
-Server Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.5+1.2.2.el7", GitCommit:"067c6116d2598861bd31a0609b34599a68b14f89", GitTreeState:"archive", BuildDate:"2019-05-23T19:33:18Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/amd64"}
