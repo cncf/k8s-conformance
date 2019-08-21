@@ -18,7 +18,7 @@ In this document, these terms have the following meanings:
 
 Together with these terms and conditions, the following documents are part of the Conformance Program, each as updated from time to time:
 *  "**Certification Guide**": the conformance testing instructions and requirements for the Conformance Program, available at <https://github.com/cncf/k8s-conformance/blob/master/instructions.md>;
-*  "**Branding Guide**": the Certified Kubernetes Brand Guidelines, available at <https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf>;
+*  "**Branding Guide**": the Certified Kubernetes Brand Guidelines, available at <https://github.com/cncf/artwork/blob/master/projects/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf>;
 *  "**LF Trademark Usage Guidelines**": The Linux Foundation Trademark Usage Guidelines, available at <https://www.linuxfoundation.org/trademark-usage>; and
 *  "**Participation Form**": the Certified Kubernetes Participation Form, available at <https://github.com/cncf/k8s-conformance/tree/master/participation-form/Certified_Kubernetes_Form.pdf>.
 

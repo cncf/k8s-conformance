@@ -1,0 +1,8 @@
+vendor: Cisco Systems
+name: Cisco Container Platform
+version: 4.0.0
+website_url: http://www.cisco.com/go/containers
+documentation_url: <Not Available>
+product_logo_url: <Not Available>
+type: distribution
+description: Cisco Container Platform provides a platform for deployment and management of Kubernetes clusters.

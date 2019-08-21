@@ -1,0 +1,8 @@
+vendor: Qimai
+name: MiaoYun
+version: v19.06.1
+website_url: https://miaoyun.io/
+documentation_url: http://miaoyun.io:8000/
+product_logo_url: https://www.cncf.io/wp-content/uploads/2018/08/MiaoYun-logo.svg
+type: distribution
+description: MiaoYun is a platform based on Docker container, supporting both Docker Swarm and Kubernetes container orchestration.
