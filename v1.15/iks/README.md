@@ -16,7 +16,10 @@ or UI.
 ### CLI
 
 ```
-$ ibmcloud ks cluster-create --name conformance --kube-version 1.15 --zone <zone name> --machine-type <machine type> [--workers <number of workers>] [--private-vlan <private VLAN> --public-vlan <public VLAN>]
+$ # Option 1: Create a cluster using classic infrastructure provider.
+$ ibmcloud ks cluster-create --name conformance --kube-version 1.15 --zone <zone name> --machine-type <machine type> --private-vlan <private VLAN> --public-vlan <public VLAN> --workers <number of workers>
+$ # Option 2: Create a cluster using vpc-classic infrastructure provider.
+$ ibmcloud ks cluster-create-vpc-classic --name conformance --kube-version 1.15 --zone <zone name> --flavor <flavor name> --vpc-id <vpc ID> --subnet-id <subnet ID> --workers <number of workers>
 ```
 
 ### UI
