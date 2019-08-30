@@ -1,0 +1,10 @@
+Client Version: version.Info{Major:"1", Minor:"11+", GitVersion:"v1.11.0+d4cacc0", GitCommit:"d4cacc0", GitTreeState:"clean", BuildDate:"2018-10-15T09:45:30Z", GoVersion:"go1.10.2", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"11+", GitVersion:"v1.11.0+d4cacc0", GitCommit:"d4cacc0", GitTreeState:"clean", BuildDate:"2019-02-08T23:07:29Z", GoVersion:"go1.10.3", Compiler:"gc", Platform:"linux/amd64"}
+-----
+oc v3.11.0+62803d0-1
+kubernetes v1.11.0+d4cacc0
+features: Basic-Auth GSSAPI Kerberos SPNEGO
+
+Server https://vip.cluster.local:8443
+openshift v3.11.0+d0c29df-98
+kubernetes v1.11.0+d4cacc0

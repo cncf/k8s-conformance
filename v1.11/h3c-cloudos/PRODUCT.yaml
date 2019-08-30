@@ -1,0 +1,6 @@
+vendor: H3C
+name: H3C CloudOS
+version: D5101
+website_url: https://www.h3c.com
+documentation_url:https://www.h3c.com/cn/
+product_logo_url: https://www.h3c.com/cn/tres/NewWebUI/images/index/logo.png
