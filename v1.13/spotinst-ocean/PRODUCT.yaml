@@ -1,0 +1,8 @@
+vendor: Spotinst
+name: Spotinst Ocean
+version: 1.13.8
+website_url: https://spotinst.com/products/ocean/
+documentation_url: https://api.spotinst.com/ocean/concepts/ocean-cloud/introduction/
+product_logo_url: https://console.spotinst.com/b0b261577fe24dba966577532f6417eb.svg
+type: hosted
+description: 'Spotinst Ocean provides an abstraction layer on top of virtual machines allowing to deploy Containers (Kubernetes and Amazon ECS) without the need to manage the underlying VMs Infrastructure'
