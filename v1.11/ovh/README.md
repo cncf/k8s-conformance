@@ -1,17 +1,19 @@
 # How to reproduce
 
 ## 1. Create an account
-Create a European OVH Account on [https://www.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=FR](https://www.ovh.com/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=FR).
+Create a European OVH Account on [http://www.ovh.ie/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=IE](http://www.ovh.ie/auth/signup/#/?ovhCompany=ovh&ovhSubsidiary=IE).
 
-## 2. Request a private beta access
-Request a private beta access on [OVH Labs](https://labs.ovh.com/kubernetes-k8s/).
-A few weeks later you will be whitelisted to order a Private cluster.
+## 2. Order a new free cluster
+
+Click on the "Get started for free" on [https://www.ovh.ie/kubernetes/](https://www.ovh.ie/kubernetes/).
 
 ## 3. Wait
-Wait 10 minutes after your order, then you can connect to [https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Wait 3-10 minutes after your order (you should have received a "Your cluster is ready" email, then you can connect to [https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=IE](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=IE).
 You will find the Kubernetes service under the "Platform and Services" section in the "Cloud" universe.
 
 ## 4. Get credentials and add some nodes to your cluster
+Check the Kubernetes version delivered. If not the one you want to perform test on, click the "3 dot" button next to your cluster status and request cluster reset.
+Choose the major version of Kubernetes you wanna test and wait a few minutes for your service to be in "OK" state again.
 From the previous UI, download the kubeconfig file from the bottom of the 'Service' tab.
 Then add some nodes from the 'Nodes' tab. We personnaly tested with 2 'B2-7' instances.
 

@@ -1,0 +1,8 @@
+vendor: Cloud 66 Maestro
+name: Cloud 66 Maestro
+version: v1.245
+website_url: https://www.cloud66.com/containers/maestro
+documentation_url: https://help.cloud66.com/maestro/
+product_logo_url: https://s3.amazonaws.com/cdn.cloud66.com/images/cloud66_logo_bordered.svg
+type: hosted
+description: Cloud 66 Maestro builds and maintains Kubernetes clusters on any cloud provider as well as provisioning non-container based workloads like databases, storage and network components
