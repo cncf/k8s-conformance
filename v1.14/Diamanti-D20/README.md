@@ -1,15 +1,15 @@
 # Conformance tests for Diamanti Kubernetes cluster
 
-## Install Diamanti D10 v2.1.0 (base on Kubernetes v1.14.3) and create a cluster
+## Install Diamanti D20 v2.3.0 (base on Kubernetes v1.14.3) and create a cluster
 
 
 Diamanti D20 cluster:
 
 [root@appserv9 diamanti]# dctl cluster status
 Name           	: devtb6
-UUID           	: 2bc2854f-e2bd-11e8-9821-2c600c82ec72
+UUID           	: f6439f75-d01c-11e9-b646-2c600c82ec72
 State          	: Created
-Version        	: 2.1.0 (0)
+Version        	: 2.3.0 (0)
 Master         	: appserv9
 Etcd State     	: Healthy
 Virtual IP     	: 172.16.19.23
@@ -17,11 +17,10 @@ Storage VLAN   	: 430
 Pod DNS Domain	: cluster.local
 
 NAME                      NODE-STATUS   K8S-STATUS   MILLICORES   MEMORY          STORAGE    IOPS      VNICS     BANDWIDTH   SCTRLS          LABELS
-                                                                                                                             LOCAL, REMOTE
-appserv10/(etcd)          Good          Good         0/32000      1GiB/64GiB      0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/hostname=appserv10
-appserv11/(etcd)          Good          Good         0/32000      1GiB/64GiB      0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/hostname=appserv11
-appserv9/(master, etcd)   Good          Good         250/32000    1.06GiB/64GiB   0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/hostname=appserv9
-
+                                                                                                                             LOCAL, REMOTE   
+appserv10/(etcd)          Good          Good         0/32000      1GiB/64GiB      0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=appserv10,kubernetes.io/os=linux
+appserv11/(etcd)          Good          Good         0/32000      1GiB/64GiB      0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=appserv11,kubernetes.io/os=linux
+appserv9/(master, etcd)   Good          Good         250/32000    1.25GiB/64GiB   0/3.05TB   0/500K    2/63      0/40G       0/64, 0/64      beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=appserv9,kubernetes.io/os=linux
 
 
 ## Run Conformance Test
