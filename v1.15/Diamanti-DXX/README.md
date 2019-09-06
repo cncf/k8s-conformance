@@ -1,6 +1,6 @@
 # Conformance tests for Diamanti Enterprise Kubernetes Platform
 
-## Install Diamanti distribution v2.3.1 on DXX (D20 or later, based on Kubernetes v1.15.3) and create a cluster
+## Install Diamanti distribution v2.3 on DXX (D20 or later, based on Kubernetes v1.15.3) and create a cluster
 
 Diamanti D20 cluster:
 
