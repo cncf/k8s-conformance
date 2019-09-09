@@ -7,9 +7,9 @@ To recreate these results, first you need to create a Kubernetes cluster on CKE.
 Run CKE, Follow below installation to install the latest CKE release.
 1.CKE is depending on Mesos, please install Mesos cluster.
 2.Run CKE Scheduler , example command as
-```
- docker run --env "HOST=192.168.142.224" --env "PORT=8512" -p8512:8512 reg.mg.hcbss/open/cke-scheduler:v0.1 /cke-scheduler/cke-scheduler -name cke-test -roles cke -k8s_executor cke-k8s-exec -k8s_node_image 'reg.mg.hcbss/open/cke-k8s-wrapper:v0.1' -k8s_registry_cert=./reg.mg.hcbss/reg.mg.hcbss.crt  -k8s_config_path=./default_cfg
 ```shell
+ docker run --env "HOST=192.168.142.224" --env "PORT=8512" -p8512:8512 reg.mg.hcbss/open/cke-scheduler:v0.1 /cke-scheduler/cke-scheduler -name cke-test -roles cke -k8s_executor cke-k8s-exec -k8s_node_image 'reg.mg.hcbss/open/cke-k8s-wrapper:v0.1' -k8s_registry_cert=./reg.mg.hcbss/reg.mg.hcbss.crt  -k8s_config_path=./default_cfg
+```
 3.Please use CKE UI create Kubernetes cluster.
 When the Kubernetes cluster is up and running, proceed to run the conformance tests.
 
