@@ -23,10 +23,12 @@ $ go get -u -v github.com/heptio/sonobuoy
 Deploy a Sonobuoy pod to your cluster with:
 
 ```
-$ sonobuoy run
+$ sonobuoy run --mode=certified-conformance
 ```
 
-**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the Conformance tests can take an hour or more.
+**NOTE:** The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
+
+**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the conformance tests can take an hour or more.
 
 View actively running pods:
 
@@ -138,7 +140,7 @@ $ prod_name=example
 
 $ go get -u -v github.com/heptio/sonobuoy
 
-$ sonobuoy run --wait
+$ sonobuoy run --mode=certified-conformance --wait
 $ outfile=$(sonobuoy retrieve)
 $ mkdir ./results; tar xzf $outfile -C ./results
 
