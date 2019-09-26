@@ -1,0 +1,8 @@
+vendor: Ant Financial
+name: SOFAStack Cloud Application Fabric Engine
+version: v2.0
+website_url: https://tech.antfin.com
+documentation_url: https://tech.antfin.com/docs/2/89361
+product_logo_url: https://raw.githubusercontent.com/alipay/SOFAStack/master/SOFAStack.svg
+type: Distribution
+description: "SOFAStack CAFE (Cloud Application Fabric Engine), is a cloud native application platform providing full application life-cycle management, including deployment, orchestration, observability, and disaster recovery for the critical financial business scenarios with both classic and modern architectural platform support."
