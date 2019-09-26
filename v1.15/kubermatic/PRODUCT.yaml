@@ -1,0 +1,7 @@
+vendor: Loodse
+name: Kubermatic Container Engine
+version: v2.11
+website_url: https://loodse.com
+documentation_url: https://docs.kubermatic.io/
+type: Distribution
+product_logo_url: https://drive.google.com/file/d/1NdEwTa_Aco_urdyY7bhDjJEPcpyAYRY9
