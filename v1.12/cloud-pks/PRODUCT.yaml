@@ -1,7 +1,0 @@
-vendor: VMware
-name: VMware Cloud PKS
-description: A fully managed cloud service that provides Kubernetes clusters
-version: v1.12.7
-type: hosted
-website_url: https://cloud.vmware.com/vmware-cloud-pks
-documentation_url: https://cloud.vmware.com/vmware-cloud-pks/resources
