@@ -18,13 +18,13 @@ accessing the cluster.
 
 1. **Start a Kubernetes cluster in your cloud environment**
 
-   In this example the `v2-k8s-8-fedora29` is the cluster template for the Kubernetes
+   In this example the `v2-k8s-8-v1.15.3` is the cluster template for the Kubernetes
    offering that provides the best cost/performance ratio, `my-key` is the name
    of your keypair inside Nova (compute service) and `my-cluster` is the name
    of the cluster.
 
    ```console
-   $ openstack coe cluster create --cluster-template v2-k8s-8-fedora29 \
+   $ openstack coe cluster create --cluster-template v2-k8s-8-v1.15.3 \
                                   --keypair my-key \
                                   my-cluster
    ```
