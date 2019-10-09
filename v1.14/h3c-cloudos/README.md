@@ -1,6 +1,6 @@
 To recreate these results
 
-1. Install  H3C CloudOS5.0 Platform.
+1. Install  H3C CloudOS Platform.
 2. Retrieve a \`.kubeconfig\` file with administrator credentials on that cluster and set the environment variable KUBECONFIG
     export KUBECONFIG=PATH_TO_KUBECONFIG
     export KUBECTL_PATH=PATH_TO_KUBECTL
