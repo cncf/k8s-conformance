@@ -26,11 +26,11 @@ Wait until service running successfully.
 
 ## Prepare hosts for deploying Kubernetes
 
-| Name         | Role    | Count  | OS          | Size    | Description  |
-| ------------ | ------- | ------ | ----------- | ------ | ---------------------------------------------------------------------- |
-| master-1     | Master  | 1      | CentOS 7.6  | 4C 16G | Running etcd、kube-apiserver、kube-scheduler、kube-apiserver.           |
-| worker-1     | Worker  | 1      | CentOS 7.6  | 8C 32G | Running kubelet、application workload.                                 |
-| nfs-storage  | NFS     | 1      | CentOS 7.6  | 4C 16G | Provide NFS persistent storage, disk recommendations of 500G or more. |
+| Name            | Role    | Count  | OS             | Size       | Description  |
+| --------------- | ------- | ------ | -------------- | ---------- | ---------------------------------------------------------------------- |
+| master-1        | Master  | 1      | CentOS 7.6     | 4C 16G     | Running etcd、kube-apiserver、kube-scheduler、kube-apiserver.           |
+| worker-1        | Worker  | 1      | CentOS 7.6     | 8C 32G     | Running kubelet、application workload.                                 |
+| nfs-storage     | NFS     | 1      | CentOS 7.6     | 4C 16G     | Provide NFS persistent storage, disk recommendations of 500G or more. |
 
 ## Deploy Kubernetes
 
