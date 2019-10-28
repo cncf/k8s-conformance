@@ -4,15 +4,15 @@
 
 Follow the [installation](https://docs.kubeoperator.io/kubeoperator-v2.1/installation) to install KubeOperator.
 
-Requirements
+**Requirements**
 
 OS requirements: CentOS 7.6 Minimal
 
-Download offline package
+**Download offline package**
 
 URL: https://kubeoperator-1256577600.file.myqcloud.com/release/2.0/kubeOperator-v2.1.35-release.tar.gz
 
-Intall KubeOperator
+**Intall KubeOperator**
 ```bash
 $ tar -zxvf kubeOperator-v2.1.35-release.tar.gz
 ```
