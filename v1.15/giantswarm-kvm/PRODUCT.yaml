@@ -1,6 +1,6 @@
 vendor: Giant Swarm
 name: Managed Kubernetes on KVM
-version: 8.0.0
+version: 9.0.0
 website_url: https://giantswarm.io
 repo_url: https://github.com/giantswarm/kvm-operator/
 documentation_url: https://docs.giantswarm.io
