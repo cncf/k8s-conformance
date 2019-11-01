@@ -3,6 +3,6 @@ name: KubeOperator
 version: v2.0.108
 website_url: https://www.kubeoperator.io/
 documentation_url: https://docs.kubeoperator.io/
-product_logo_url: https://www.kubeoperator.io/images/logo-default.png
+product_logo_url: https://raw.githubusercontent.com/KubeOperator/KubeOperator/master/kubeoperator-logo.svg?sanitize=true
 type: Installer
 description: KubeOperator is an open source project that deploys and manages production-level Kubernetes clusters on VMware, Openstack, or physical machines using a visual Web UI in an offline network environment.
