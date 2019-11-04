@@ -1,7 +1,8 @@
 vendor: Hangzhou FIT2CLOUD Information Technology Co., Ltd.
 name: KubeOperator
-version: v2.0.108
+version: v2.1.36
 website_url: https://www.kubeoperator.io/
+repo_url: https://github.com/KubeOperator/KubeOperator
 documentation_url: https://docs.kubeoperator.io/
 product_logo_url: https://raw.githubusercontent.com/KubeOperator/KubeOperator/master/kubeoperator-logo.svg?sanitize=true
 type: Installer
