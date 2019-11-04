@@ -7,7 +7,7 @@ Official documentation:
 By following these steps you may reproduce the Agorakube Conformance e2e
 results.
 
-## Install Agorakube Test Lab
+## Install Agorakube
 
 As per [documentation](https://github.com/ilkilab/agorakube/blob/master/LOCAL_ENVIRONMENT.md) install AgoraKube test lab on either a single node or HA mode.
 
