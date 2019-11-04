@@ -29,7 +29,7 @@ $ export KUBECONFIG="/path/to/your/cluster/kubeconfig.yml"
 
 4. Run sonobuoy:
 ```sh
-$ sonobuoy run
+$ sonobuoy run --mode=certified-conformance
 ```
 
 4. Watch the logs:
@@ -42,7 +42,23 @@ $ sonobuoy logs
 $ sonobuoy status
 ```
 
-6. Once the status commands shows the run as completed, you can download the results tar.gz file:
-```sh
-$ sonobuoy retrieve
+6. Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to a local directory:
+
+```
+$ outfile=$(sonobuoy retrieve)
+```
+
+This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
+`.` directory. Extract the contents into `./results` with:
+
+```
+$ mkdir ./results; tar xzf $outfile -C ./results
+```
+
+**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**.
+
+7. To clean up Kubernetes objects created by Sonobuoy, run:
+
+```
+$ sonobuoy delete
 ```
