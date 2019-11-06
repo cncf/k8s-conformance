@@ -1,0 +1,8 @@
+vendor: IBM
+name: IBM Cloud Kubernetes Service
+version: 1.16.2
+website_url: https://www.ibm.com/cloud/kubernetes-service
+documentation_url: https://cloud.ibm.com/docs/containers
+product_logo_url: https://raw.githubusercontent.com/ibm-containers/logo/master/iks.png
+type: hosted
+description: 'IBM Cloud Kubernetes Service delivers powerful tools by combining Docker containers, the Kubernetes technology, an intuitive user experience, and built-in security and isolation to automate the deployment, operation, scaling, and monitoring of containerized apps in a cluster of compute hosts.'
