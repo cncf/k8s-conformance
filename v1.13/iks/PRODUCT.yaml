@@ -1,6 +1,6 @@
 vendor: IBM
 name: IBM Cloud Kubernetes Service
-version: 1.13.9
+version: 1.13.12
 website_url: https://www.ibm.com/cloud/container-service
 documentation_url: https://cloud.ibm.com/docs/containers?topic=containers-container_index#container_index
 product_logo_url: https://raw.githubusercontent.com/ibm-containers/logo/master/iks.png

@@ -24,7 +24,7 @@ From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https:
 
 * A **vendor** is an organization providing a Kubernetes distribution, hosted platform, or installer.
 * A **product** is a distribution, hosted platform, or installer provided by a vendor.	
-* A **distribution** is software based on Kubernetes that can be installed by an end user on to a public cloud or bare metal and includes patches, additional software, or both.	
+* A **distribution** is software based on Kubernetes that can be installed by an end user on to a public cloud or bare metal and includes patches to the upstream codebase.	
 * A **hosted** platform is a Kubernetes service provided and managed by a vendor.	
 * An **installer** downloads and then installs vanilla upstream Kubernetes.	
 
