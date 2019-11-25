@@ -1,0 +1,8 @@
+vendor: Kazuhm
+name: Kazuhm Kubernetes
+version: v1.6
+website_url: https://www.kazuhm.com/
+documentation_url: https://support.kazuhm.com/
+product_logo_url: https://www.kazuhm.com/wp-content/themes/kazuhm/assets/img/kazuhm_logo.svg
+type: hosted
+description: Kazuhm is a distributed computing platform that unifies all resources, from desktops to servers to cloud, to create a private compute fabric, allowing users to place and process containerized workloads easily and intelligently.
