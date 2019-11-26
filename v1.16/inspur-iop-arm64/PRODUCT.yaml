@@ -1,0 +1,8 @@
+vendor: Inspur Cloud
+name: Inspur Open Platform for ARM
+version: v1.16.1
+website_url: http://www.inspur.com/lcjtww/2315499/2315503/2317662/2318105/2332890/index.html
+documentation_url: http://www.inspur.com/eportal/fileDir/defaultCurSite/resource/cms/2017/02/2017022309472517392.pdf
+product_logo_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Inspur.svg
+type: hosted 
+description: Inspur Open Platform for ARM is an application-oriented container management platform based on arm64 architecture. It provides complete Kubernetes clustering capabilities, helping users to quickly deploy flexible and reliable container clusters, easily create and manage container workloads, and provide automatic scaling and resource monitoring. Efficient operation and maintenance capabilities such as log collection and retrieval.
