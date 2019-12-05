@@ -1,0 +1,8 @@
+vendor: Banzai Cloud
+name: Pipeline Kubernetes Engine (PKE)
+version: v0.4.17
+website_url: https://banzaicloud.com
+documentation_url: https://beta.banzaicloud.io/docs/
+product_logo_url: https://banzaicloud.com/downloads/logo/banzai+cloud+logo-vertical.png
+type: distribution
+description: PKE is the preferred Kubernetes run-time of the Banzai Cloud Pipeline Cloud Native application and devops platform, which supercharges the development, deployment and scaling of container-based applications with native support for multi-, hybrid-, and edge-cloud environments.

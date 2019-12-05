@@ -1,0 +1,8 @@
+vendor: Google
+name: Google Kubernetes Engine
+version: 1.14.3-gke.11
+website_url: https://cloud.google.com/kubernetes-engine/
+documentation_url: https://cloud.google.com/kubernetes-engine/docs/
+product_logo_url: https://cloud.google.com/_static/97fb761314/images/cloud/gcp-logo.svg
+type: hosted
+description: 'Google Kubernetes Engine is a managed, production-ready environment for deploying containerized applications. It brings Google Cloud's latest innovations in developer productivity, resource efficiency, automated operations, and open source flexibility to accelerate your time to market.'
