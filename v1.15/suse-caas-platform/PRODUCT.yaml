@@ -1,0 +1,9 @@
+vendor: SUSE
+name: SUSE CaaS (Container as a Service) Platform
+version: v4.0
+website_url: https://www.suse.com/products/caas-platform/
+documentation_url: https://documentation.suse.com/suse-caasp/4.0/
+product_logo_url: https://www.suse.com/brandcentral/img/suse/logo-primary.png
+repo_url: https://github.com/SUSE/skuba
+type: distribution
+description: SUSE CaaS (Container as a Service) Platform is an application development and hosting platform for container applications and services that enables you to provision, manage, and scale container-based applications and services.
