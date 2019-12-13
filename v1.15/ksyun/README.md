@@ -1,40 +1,50 @@
 ### How To Reproduce:
 
-#### Create Account
-Create a Kingsoft Cloud Account by following this [instruction](https://passport.ksyun.com/en-iam-login.html).
 
-#### Login to Account
-Login to Kingsoft Cloud Account from [here](https://passport.ksyun.com/en-login.html).
+#### Login
+Login to [Kingsoft Cloud](https://passport.ksyun.com/) Website with your own kingsoft cloud account. If you don't have an account,please refer to the [page](https://passport.ksyun.com/register.html) to sign up an account first.
 
-#### Login to Console
-After login to the account, login to Console of Kingsoft Cloud Container Engine from [here](https://kce.console.ksyun.com/#/).
+#### Create Kubernetes Cluster
+Go to [Kingsoft Container Engine](https://kce.console.ksyun.com/)，please refer to the [documentation](https://docs.ksyun.com/documents/2664) for more information about how to create a cluster. 
 
-#### Create Cluster
-Create a Cluster in Hong Kong region by following this [instruction](https://docs.ksyun.com/documents/2664), the cluster Kubernetes version by default is v1.15.5.
+**Note:**
+- The cluster region need choose out of China( e.g. Russia1)
+- The cluster Kubernetes version need choose 1.15.5.
+![cluster](ksc-cluster.png)
+
 
 #### Access to Cluster
-The cluster will be setup in about 5 minutes, you can ssh to any node of cluster.
+Once you Kubernetes cluster is active, Download it's kubeconfig file on the cluster details page and save it locally.
+![kubeconfig](kubeconfig.png)
 
 
 #### Run Conformance Test
-On one of the worker node, run command as below:
+1. Download a sonobuoy [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+    ```sh
+    $ go get -u -v github.com/heptio/sonobuoy
+    ```
 
-```
-go get -u -v github.com/heptio/sonobuoy
+1. Configure your kubeconfig file by running:
+    ```sh
+    $ export KUBECONFIG="/path/to/your/cluster/config"
+    ```
 
-sonobuoy run
+3. Run sonobuoy:
+    ```sh
+    $ sonobuoy run
+    ```
 
-sonobuoy status
+4. Watch the logs:
+    ```sh
+    $ sonobuoy logs
+    ```
 
-sonobuoy logs
+5. Check the status:
+    ```sh
+    $ sonobuoy status
+    ```
 
-```
-
-Wait for around 1h30 minutes for the test to be finished, once sonobuoy status shows the run as completed to indicate that the test has been finished, then run the following command to extract the test results.
-
-```
-sonobuoy retrieve .
-
-mkdir ./results; tar xzf *.tar.gz -C ./results
-
-```
+6. Once the status commands shows the run as completed, you can download the results tar.gz file:
+    ```sh
+    $ sonobuoy retrieve
+    ```
