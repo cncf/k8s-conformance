@@ -1,0 +1,8 @@
+vendor: VMware
+name: VMware Essential PKS
+version: v1.14.1
+website_url: https://cloud.vmware.com/vmware-essential-PKS
+documentation_url: https://hub.vmware.com
+product_logo_url: https://raw.githubusercontent.com/cloudnativeapps/assets/master/VMware%20Essential%20PKS%20Icon.svg
+type: distribution
+description: VMware Essential PKS, A modular approach to cloud native operation built on upstream Kubernetes and expert support

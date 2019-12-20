@@ -1,0 +1,8 @@
+vendor: clusterfrak-dynamics
+name: Symplegma
+version: v1.14.0
+website_url: https://clusterfrak-dynamics.github.io/symplegma/
+documentation_url: https://clusterfrak-dynamics.github.io/symplegma/
+product_logo_url: https://raw.githubusercontent.com/clusterfrak-dynamics/symplegma/master/docs/images/logo44-text.svg
+type: distribution
+description: Symplegma (from greek σύμπλεγμα) is a simple set of Ansible playbooks to deploy Kubernetes with Kubeadm

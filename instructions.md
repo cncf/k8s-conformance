@@ -23,8 +23,12 @@ $ go get -u -v github.com/heptio/sonobuoy
 Deploy a Sonobuoy pod to your cluster with:
 
 ```
-$ sonobuoy run
+$ sonobuoy run --mode=certified-conformance
 ```
+
+**NOTE:** The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
+
+**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the conformance tests can take an hour or more.
 
 View actively running pods:
 
@@ -38,18 +42,17 @@ To inspect the logs:
 $ sonobuoy logs
 ```
 
-Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to
-a local directory:
+Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to a local directory:
 
 ```
-$ sonobuoy retrieve .
+$ outfile=$(sonobuoy retrieve)
 ```
 
 This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
 `.` directory. Extract the contents into `./results` with:
 
 ```
-mkdir ./results; tar xzf *.tar.gz -C ./results
+mkdir ./results; tar xzf $outfile -C ./results
 ```
 
 **NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**. 
@@ -64,6 +67,8 @@ sonobuoy delete
 
 Prepare a PR to
 [https://github.com/cncf/k8s-conformance](https://github.com/cncf/k8s-conformance).
+Here are [directions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to
+prepare a pull request from a fork.
 In the descriptions below, `X.Y` refers to the kubernetes major and minor
 version, and `$dir` is a short subdirectory name to hold the results for your
 product.  Examples would be `gke` or `openshift`.
@@ -124,6 +129,36 @@ as soon as you open the pull request. We can then often arrange to accept your p
 
 A reviewer will shortly comment on and/or accept your pull request, following this [process](reviewing.md).
 If you don't see a response within 3 business days, please contact conformance@cncf.io.
+
+## Example Script
+
+Combining the steps provided here, the process looks like this:
+
+```
+$ k8s_version=vX.Y
+$ prod_name=example
+
+$ go get -u -v github.com/heptio/sonobuoy
+
+$ sonobuoy run --mode=certified-conformance --wait
+$ outfile=$(sonobuoy retrieve)
+$ mkdir ./results; tar xzf $outfile -C ./results
+
+$ mkdir -p ./${k8s_version}/${prod_name}
+$ cp ./results/plugins/e2e/results/* ./${k8s_version}/${prod_name}/ 
+
+$ cat << EOF > ./${k8s_version}/${prod_name}/PRODUCT.yaml
+vendor: Yoyodyne
+name: Turbo Encabulator
+version: v1.7.4
+website_url: https://yoyo.dyne/turbo-encabulator
+repo_url: https://github.com/yoyo.dyne/turbo-encabulator
+documentation_url: https://yoyo.dyne/turbo-encabulator/docs
+product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
+type: distribution
+description: 'The Yoyodyne Turbo Encabulator is a superb Kubernetes distribution for all of your Encabulating needs.'
+EOF
+```
 
 ## Issues
 
