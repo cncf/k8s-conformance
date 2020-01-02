@@ -51,7 +51,7 @@ Create new Kubernetes cluster using kubeadm.
       $ kubeadm init --config kubeadm-config.yaml
    ```
 
-This is the kubeadm-config.yaml.
+Here is the kubeadm-config.yaml.
 
     apiVersion: kubeadm.k8s.io/v1beta2
     bootstrapTokens:
