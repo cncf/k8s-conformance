@@ -6,6 +6,8 @@ To be able to reproduce these results, you can create a 3-node vagrant setup fol
 
 You may also use any installation of Clear Linux with the [cloud-native-basic bundle](https://clearlinux.org/software/bundle/cloud-native-basic) installed in order to reproduce these results. Further information on running Kubernetes on Clear Linux using the cloud-native-basic bundle may be found on the [Clear Linux documentation site](https://docs.01.org/clearlinux/latest/tutorials/kubernetes.html).
 
+Clear Linux updates are released often and with these new releases, Clear Linux continues to package new updated versions of components such as Kubernetes. The Clear Linux team validates that Kubernetes conformance is maintained for the version of Kubernetes packaged with the specific release of Clear Linux.
+
 
 
 ## Install Vagrant
@@ -41,15 +43,16 @@ git clone https://github.com/clearlinux/cloud-native-setup.git
 
 Run vagrant up
 ```sh
+export CLRK8S_CLR_VER=31880 #Pins Clear Linux to specified release
 cd cloud-native-setup/clr-k8s-examples/
 vagrant up --provider=libvirt
 ```
 
-Once the `vagrant up` command completes, you will have a 3 node cluster, each of them having 4 vCPU, 8GB Memory, 2x10GB disks, and 1 additional private network. In addition the Vagrant command will have run the setup_system.sh script
+Once the `vagrant up` command completes, you will have a 3 node cluster, each of them having 4 vCPU, 8GB Memory, 2x10GB disks, and 1 additional private network. The cluster will be running the version of Clear Linux specified in the CLRK8s_CLR_VER parameter (if specified) In addition the Vagrant command will have run the setup_system.sh script
 
 This setup_system.sh  script ensures the following
 
-- Clear Linux is updated to the latest version
+- If CLRK8S_CLR_VER environment variable is not set, then Clear Linux is updated to the latest version
 - Installs the bundles the Clearlinux needs to support Kubernetes, CRIO and Kata
 - Customizes the system to ensure correct defaults are setup (IP Forwarding, Swap off,...)
 - Ensures all the dependencies are loaded on boot (kernel modules)
@@ -68,6 +71,8 @@ cd clr-k8s-examples
 ./create_stack.sh minimal
 ```
 
+Capture the join command when the create_stack.sh script pauses, you will need it for the next step.
+
 
 
 ## Join Workers to the cluster
@@ -78,14 +83,12 @@ in from master via the values setup in the `kubeadm.yaml` file.
 
 ```sh
 vagrant ssh clr-02
-sudo su
-kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash <hash>
+sudo kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash <hash>
 ```
 
 ```sh
 vagrant ssh clr-03
-sudo su
-kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash <hash>
+sudo kubeadm join <master-ip>:<master-port> --token <token> --discovery-token-ca-cert-hash <hash>
 ```
 
 
@@ -108,7 +111,7 @@ VERSION=0.16.5 OS=linux && \
 
 2. Run sonobuoy:
 ```sh
-$HOME/bin/sonobuoy run --mode=certified-conformance --wait
+$HOME/bin/sonobuoy run --mode=certified-conformance
 ```
 
 3. Check the status:
