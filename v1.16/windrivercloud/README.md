@@ -1,9 +1,7 @@
-###
-### Wind River Cloud Platform
-###     Release 19.12
-###
-###     Wind River Systems, Inc.
-###
+# Wind River Cloud Platform
+
+Release 19.12
+Wind River Systems, Inc.
 
 SW_VERSION="19.12"
 BUILD_TARGET="Host Installer"
