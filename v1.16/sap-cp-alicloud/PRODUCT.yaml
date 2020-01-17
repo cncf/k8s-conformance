@@ -1,5 +1,5 @@
 vendor: SAP
-name: Cloud Platform - Gardener (https://github.com/gardener/gardener) shoot cluster deployed on AWS
+name: Cloud Platform - Gardener (https://github.com/gardener/gardener) shoot cluster deployed on ALICLOUD
 version: v0.32.0
 website_url: https://cloudplatform.sap.com/index.html
 documentation_url: https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/
