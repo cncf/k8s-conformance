@@ -1,5 +1,5 @@
 vendor: SAP
-name: Gardener (https://github.com/gardener/gardener) shoot cluster deployed on GCE
+name: Gardener (https://github.com/gardener/gardener) shoot cluster deployed on ALICLOUD
 version: v0.32.0
 website_url: https://gardener.cloud
 repo_url: https://github.com/gardener/
