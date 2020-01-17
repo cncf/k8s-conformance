@@ -76,5 +76,5 @@ docker run -ti -e --rm -v $KUBECONFIG:/mye2e/shoot.config golang:1.13 bash
 # run all commands below within container
 go get github.com/gardener/test-infra; cd /go/src/github.com/gardener/test-infra
 export GO111MODULE=on; export E2E_EXPORT_PATH=/tmp/export; export KUBECONFIG=/mye2e/shoot.config; export GINKGO_PARALLEL=false
-go run -mod=vendor ./integration-tests/e2e --k8sVersion=1.15.6 --cloudprovider=alicloud --testcasegroup="conformance"
+go run -mod=vendor ./integration-tests/e2e --k8sVersion=1.16.4 --cloudprovider=alicloud --testcasegroup="conformance"
 ```
