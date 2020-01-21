@@ -9,7 +9,19 @@ instructions.
 
 ## Create a cluster
 
-Then navigate to ICE, follow the [quick start](https://console1.cloud.inspur.com/document/cks/2-quickstart.html) instruction to create a kubernetes cluster using the UI.
+1、You should login into the website and go to the [console](https://console1.cloud.inspur.com/cks/#/cks-overview?region=cn-north-3);
+2、Click the button "Buy Container Cluster"(![avatar](buy_cke.jpg)) to buy a cluster;
+3、When you successfully complete the payment，you have your own cluster, and you can use ssh tool to login your cluster to publish your applications;
+
+## Create an application
+
+You can also create your own cluster applications with your console.
+
+1、click the button named "Product and Service"
+2、choose "Container Engine",then click "Applications"
+3、Click the button "+ Create New" to create new applications;
+
+when you successfully create an application, you can Click publish button to publish the application you just created to your cluster you just purchased;
 
 ## Run conformance tests
 
