@@ -46,6 +46,10 @@ Yes. First, we need it in SVG, AI, or EPS format. If you don't have a product-sp
 
 Second, your logo can't be derivative of or include portions of the Kubernetes [logo](https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos), in order to preserve the value of the Kubernetes logo. In particular, please don't include all or part of the Kubernetes wheel. Of course, under the terms of the Certified Kubernetes agreement, you're welcome and encouraged to use Kubernetes in your product name.
 
+## Can I provide a link to the installation directions?
+
+No. We need the Readme of your conformance submission to contain more detailed directions on how to install and configure your Kubernetes implementation. The reason is that we need your users to be able to replicate the installation so that they can re-run the tests in the same environment and confirm that they get the same conformance results. We're trying to minimize link rot (i.e., the installation directions moving or changing) and we're requesting that you include sufficient detail (particularly around flags and permissions) such that an informed user will be able to replicate your results.
+
 ## How can I track issues that have been opened regarding certification?
 
 When a product fails certification, the issue could be in the implementation or in the conformance
