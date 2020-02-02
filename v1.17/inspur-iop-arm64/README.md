@@ -1,31 +1,56 @@
-# Inspur Cloud Container Engine and Inpsur Open Platform
+# Inspur Open Platform for ARM
 
-## Login or Create Account 
+## Prerequisites
 
-You'll first need to get started with Inspur Open Platform by setting up
-an Inspur Cloud account if you don't have one before. For details, see the
-[register](https://console1.cloud.inspur.com/document/account/1-registered.html)
-instructions.
+- Linux Host OS (Kylin 4.0.2, GNU/Linux 4.4.58, aarch64)
+- User SSH Key (~/.ssh/id_rsa & ~/.ssh/id_rsa.pub)
+- Product installation package (includes images like hyperkube-arm64:v1.17.0 and the deployment scripts,etc.)
 
-## Create a cluster
+## Install Inspur Cloud Kubernetes Engine
 
-1、You should login into the website and go to the [console](https://console1.cloud.inspur.com/cks/#/cks-overview?region=cn-north-3);
+### Upload CKE package 
 
-2、Click the button "Buy Container Cluster"(![avatar](buy_cke.jpg)) to buy a cluster;
+Upload cke installation package to master1 node  which will run ansible scripts on.
 
-3、When you successfully complete the payment，you have your own cluster, and you can use ssh tool to login your cluster to publish your applications;
+```shell
+scp products.tar.gz master1:/root/
 
-## Create an application
+tar -zvxf products.tar.gz
+```
 
-You can also create your own cluster applications with your console.
+### Configuration
 
-1、click the button named "Product and Service"
+Navigate to the deploy folder
 
-2、choose "Container Engine",then click "Applications"
+```shell
+cd /root/products/kubernetes-deploy
+```
+Custom your inventory config file
 
-3、Click the button "+ Create New" to create new applications;
+```shell
+vi my_inventory/my_inventory.cfg
+```
 
-when you successfully create an application, you can Click publish button to publish the application you just created to your cluster you just purchased;
+Config the parameters for cluster deployment in all.yaml
+
+```shell
+vi my_inventory/group_vars/all.yml
+```
+
+### Install cluster
+
+Run install scripts
+
+```shell
+./install.sh
+```
+
+Check out the installation logs
+
+```shell
+tail –f /var/log/clustermanage.log
+```
+This installation should complete without error.
 
 ## Run conformance tests
 
