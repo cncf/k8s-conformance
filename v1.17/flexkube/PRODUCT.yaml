@@ -1,0 +1,9 @@
+vendor: Mateusz Gozdek
+name: Flexkube
+vesion: v0.1.0
+website_url: https://github.com/flexkube/libflexkube
+repo_url: https://github.com/flexkube/libflexkube
+documentation_url: https://github.com/flexkube/libflexkube
+product_logo_url: https://flexkube.github.io/assets/logo.svg
+type: distribution
+description: 'Flexible Kubernetes distribution.'
