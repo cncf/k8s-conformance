@@ -17,7 +17,7 @@ $ go get -u -v github.com/heptio/sonobuoy
 Deploy a Sonobuoy pod to your cluster with:
 
 ```
-$ sonobuoy run
+$ sonobuoy run --mode=certified-conformance
 ```
 
 View actively running pods:
