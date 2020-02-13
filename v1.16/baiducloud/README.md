@@ -1,23 +1,28 @@
 ### How To Reproduce:
 
-#### Create Account
-Create a Baidu Cloud Account by following this [instruction](https://login.bce.baidu.com/reg.html?tpl=bceplat&from=portal).
+#### Create Account and Login
 
-#### Login to Account
-Login to Baidu Cloud Account from [here](https://login.bce.baidu.com/).
+Click this [link](https://login.bce.baidu.com/reg.html?tpl=bceplat&from=portal) to create a Baidu Cloud Account and login to Baidu Cloud Account from [here](https://login.bce.baidu.com/).
 
 #### Login to Console
-After login to the account, login to Console of Baidu Cloud Container Engine from [here](https://console.bce.baidu.com/cce/#/cce/cluster/list).
+
+After login to the account, login to Console of Baidu Cloud Container Engine in English from [here](https://console.bce.baidu.com/cce/?locale=en-us#/cce/cluster/list). 
+
+After successful login, select “Product Services > Container Engine CCE” and enter the “Cluster Management > Cluster List” page. 
+
+The “Cluster List” page will display all the created CCE cluster name/ID, status, region and other information and users can search the cluster through the cluster name. Please select and switch the region according to the actual needs.
 
 #### Create Cluster
-Create a Cluster in Hong Kong region by following this [instruction](https://cloud.baidu.com/doc/CCE/GettingStarted.html#.E5.88.9B.E5.BB.BA.E9.9B.86.E7.BE.A4), the cluster Kubernetes version by default is v1.16.3.
+
+Create a Cluster in Hong Kong region, the cluster Kubernetes version by default is v1.16.3. Please Click “Create cluster” and enter the “Create cluster” page. Fill in cluster name and then fill in relevant configuration information according to your needs. For ssh to the nodes in the cluster, users need to enable EIP binding for the cluster nodes.
 
 #### Access to Cluster
-The cluster will be setup in about 5 minutes, you can ssh to any node of cluster by following this [instruction](https://cloud.baidu.com/doc/CCE/GettingStarted.html#.E6.89.A9.E5.AE.B9.E9.9B.86.E7.BE.A4).
 
+After the CCE cluster is created, you can view the created CCE cluster and cluster details in the cluster list. Click a cluster link in the “cluster name” column of the container list to enter the “cluster details” page to view the status information. The cluster will be setup in about 5 minutes, you can ssh or use VNC to get access to any node of the cluster.
 
 #### Run Conformance Test
-On one of the worker node, run command as below:
+
+On one of the Kubernetes worker node, run command as below:
 
 ```
 go get -u -v github.com/heptio/sonobuoy
@@ -38,3 +43,6 @@ sonobuoy retrieve .
 mkdir ./results; tar xzf *.tar.gz -C ./results
 
 ```
+
+
+
