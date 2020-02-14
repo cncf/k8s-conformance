@@ -1,0 +1,8 @@
+vendor: Baidu Cloud
+name: Baidu Cloud Container Engine
+version: v1.16.3
+website_url: https://cloud.baidu.com/product/cce.html
+documentation_url: https://cloud.baidu.com/doc/CCE/index.html
+product_logo_url: https://agroup-bos.cdn.bcebos.com/b13cca62ab2549a75217d17c44fd0f22670f7edc
+type: hosted
+description: 'Baidu Cloud Container Engine, aka CCE.'
