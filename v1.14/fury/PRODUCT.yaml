@@ -1,0 +1,9 @@
+vendor: SIGHUP
+name: Fury
+version: v1.0.0
+website_url: https://sighup.io
+repo_url: https://github.com/sighupio/fury-distribution
+documentation_url: http://docs.v1.kubernetesfury.com/docs
+product_logo_url: http://docs.v1.kubernetesfury.com/fury-logo.svg
+type: distribution
+description: 'Kubernetes Fury is a battle-tested distribution purely based on upstream Kubernetes. Deploy and manage a stable and production grade Kubernetes Cluster at scale with a comprehensive Cloud Native stack implemented with top notch CNCF components.'
