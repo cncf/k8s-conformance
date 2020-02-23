@@ -2,6 +2,7 @@ vendor: Darx Kies
 name: Kubernetes - The Easier Way
 version: 2.3.5
 website_url: https://github.com/darxkies/k8s-tew
+repo_url: https://github.com/darxkies/k8s-tew
 documentation_url: https://darxkies.github.io/k8s-tew
 product_logo_url: https://raw.githubusercontent.com/darxkies/k8s-tew/master/logo.svg
 type: installer
