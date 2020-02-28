@@ -1,4 +1,4 @@
-To reproduce the test results, please reach out to your Fairwinds Pod.
+To reproduce the test results, please perform the following on your cluster via kubectl. 
 
 You must be on a 1.15.x cluster to perform these tests.
 
