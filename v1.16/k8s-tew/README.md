@@ -31,7 +31,7 @@ chmod u+x k8s-tew
 ./k8s-tew initialize 
 ./k8s-tew configure --public-network=$IP_PREFIX.0/24
 ./k8s-tew configure --resolv-conf=/run/systemd/resolve/resolv.conf
-./k8s-tew configure --version-k8s=k8s.gcr.io/hyperkube:v1.16.7
+./k8s-tew configure --version-k8s=k8s.gcr.io/hyperkube:v1.16.7 
 ./k8s-tew node-add -n worker00 -i $IP_PREFIX.100 -x 0 -l controller,worker,storage
 ./k8s-tew node-add -n worker01 -i $IP_PREFIX.101 -x 1 -l controller,worker,storage
 ./k8s-tew generate 
