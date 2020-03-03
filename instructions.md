@@ -10,28 +10,30 @@ suite.
 ## Running
 
 The standard tool for running these tests is
-[Sonobuoy](https://github.com/heptio/sonobuoy).  Sonobuoy is 
-regularly built and kept up to date to execute against all 
+[Sonobuoy](https://github.com/vmware-tanzu/sonobuoy).  Sonobuoy is
+regularly built and kept up to date to execute against all
 currently supported versions of kubernetes.
 
-Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+Download a [binary release](https://github.com/vmware-tanzu/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
-$ go get -u -v github.com/heptio/sonobuoy
+$ go get -u -v github.com/vmware-tanzu/sonobuoy
 ```
 
 Deploy a Sonobuoy pod to your cluster with:
 
 ```
-$ sonobuoy run
+$ sonobuoy run --mode=certified-conformance
 ```
 
-**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the Conformance tests can take an hour or more.
+**NOTE:** The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
+
+**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the conformance tests can take an hour or more.
 
 View actively running pods:
 
 ```
-$ sonobuoy status 
+$ sonobuoy status
 ```
 
 To inspect the logs:
@@ -53,7 +55,7 @@ This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
 mkdir ./results; tar xzf $outfile -C ./results
 ```
 
-**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**. 
+**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**.
 
 To clean up Kubernetes objects created by Sonobuoy, run:
 
@@ -75,7 +77,7 @@ Description: `Conformance results for vX.Y/$dir`
 
 ### Contents of the PR
 
-For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission. 
+For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission.
 
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
@@ -136,14 +138,14 @@ Combining the steps provided here, the process looks like this:
 $ k8s_version=vX.Y
 $ prod_name=example
 
-$ go get -u -v github.com/heptio/sonobuoy
+$ go get -u -v github.com/vmware-tanzu/sonobuoy
 
-$ sonobuoy run --wait
+$ sonobuoy run --mode=certified-conformance --wait
 $ outfile=$(sonobuoy retrieve)
 $ mkdir ./results; tar xzf $outfile -C ./results
 
 $ mkdir -p ./${k8s_version}/${prod_name}
-$ cp ./results/plugins/e2e/results/* ./${k8s_version}/${prod_name}/ 
+$ cp ./results/plugins/e2e/results/* ./${k8s_version}/${prod_name}/
 
 $ cat << EOF > ./${k8s_version}/${prod_name}/PRODUCT.yaml
 vendor: Yoyodyne
@@ -163,7 +165,7 @@ EOF
 If you have problems certifying that you feel are an issue with the conformance
 program itself (and not just your own implementation), you can file an issue in
 the [repository](https://github.com/cncf/k8s-conformance). Questions and
-comments can also be sent to the working group's 
+comments can also be sent to the working group's
 [mailing list and slack channel](README-WG.md).
 [SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture)
 is the change controller of the conformance definition. We track a

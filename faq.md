@@ -24,7 +24,7 @@ From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https:
 
 * A **vendor** is an organization providing a Kubernetes distribution, hosted platform, or installer.
 * A **product** is a distribution, hosted platform, or installer provided by a vendor.	
-* A **distribution** is software based on Kubernetes that can be installed by an end user on to a public cloud or bare metal and includes patches, additional software, or both.	
+* A **distribution** is software based on Kubernetes that can be installed by an end user on to a public cloud or bare metal and includes patches to the upstream codebase.	
 * A **hosted** platform is a Kubernetes service provided and managed by a vendor.	
 * An **installer** downloads and then installs vanilla upstream Kubernetes.	
 
@@ -45,6 +45,10 @@ Per product. Each separate product (i.e., different product name) from your comp
 Yes. First, we need it in SVG, AI, or EPS format. If you don't have a product-specific logo, it is fine to reuse your company one. However, we have a set of [requirements](https://github.com/cncf/landscape#logos) including that it incorporate the name of the product or company in English (it's fine to also include text in other languages) and that the logo not be reversed.
 
 Second, your logo can't be derivative of or include portions of the Kubernetes [logo](https://github.com/cncf/artwork/blob/master/examples/graduated.md#kubernetes-logos), in order to preserve the value of the Kubernetes logo. In particular, please don't include all or part of the Kubernetes wheel. Of course, under the terms of the Certified Kubernetes agreement, you're welcome and encouraged to use Kubernetes in your product name.
+
+## Can I provide a link to the installation directions?
+
+No. We need the Readme of your conformance submission to contain more detailed directions on how to install and configure your Kubernetes implementation. The reason is that we need your users to be able to replicate the installation so that they can re-run the tests in the same environment and confirm that they get the same conformance results. We're trying to minimize link rot (i.e., the installation directions moving or changing) and we're requesting that you include sufficient detail (particularly around flags and permissions) such that an informed user will be able to replicate your results.
 
 ## How can I track issues that have been opened regarding certification?
 
