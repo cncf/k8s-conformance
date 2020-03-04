@@ -1,0 +1,6 @@
+Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.3-beta.0.38+c3aac8e00076fd", GitCommit:"c3aac8e00076fd2b7c1af2dc221f1c452e868de4", GitTreeState:"clean", BuildDate:"2020-03-02T21:26:18Z", GoVersion:"go1.12.15", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.2", GitCommit:"4320e48", GitTreeState:"clean", BuildDate:"2020-01-21T19:50:59Z", GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"}
+-----
+Client Version: 4.3.1
+Server Version: 4.3.0
+Kubernetes Version: v1.16.2
