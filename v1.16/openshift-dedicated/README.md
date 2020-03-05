@@ -10,7 +10,7 @@ To recreate these results
 
 # Creating your cluster
 
-* Log in to link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift].
+* Log in to https://cloud.redhat.com/openshift
 * Select *Create Cluster* -> *Red Hat OpenShift Dedicated*.
 * Enter your *Cluster name*, number of *Compute nodes*, and select an *AWS Region*.
 * Select your *Node Type*. The number and types of nodes available to you depend
@@ -22,14 +22,16 @@ following are the default ranges available to use:
 ** Pod CIDR: 10.128.0.0/14
 
 * Add your Identity provider by clicking the *Add OAuth Configuration* link.
+
 ** Add a user by clicking the *Users* tab, then *Add User*. Input the user's name, then click *Add*.
+
 ** In the *Overview* tab under the *Details* heading will have a *Status* indicator. This will indicate that your cluster is *Ready* for use.
 
 # Accessing your cluster
 
 To access your OpenShift Dedicated cluster:
 
-* From link:https://cloud.redhat.com/openshift[cloud.redhat.com/openshift], click on the cluster you want to access.
+* From https://cloud.redhat.com/openshift, click on the cluster you want to access.
 * Click *Launch Console*.
 
 2. Retrieve a `.kubeconfig` file with administrator credentials on that cluster and set the environment variable KUBECONFIG
