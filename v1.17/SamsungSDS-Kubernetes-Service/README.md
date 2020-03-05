@@ -4,6 +4,34 @@
 
 SamsungSDS Kubernetes Service is a kubernetes provisioner that auto-provisions a fully functioning hosted cluster for Private Cloud Environment.
 
+### Setup Cluster
+
+Download installer file in our repository 
+```
+$ tar -xvf sdspaas-1.17-r1.tar.gz
+$ cd sdspaas-1.17-r1
+```
+
+Check command for sdspaas installer
+```
+$ ./sdspaas --help
+```
+
+
+Set configutaion and start Install in private Cloud.
+- Number of Master, Etcd, Worker
+- Name of Service IngressDomain
+- ETC..
+```
+$ ./sdspaas init cluster --config=config.yaml
+```
+
+After install check cluster, node status
+```
+$ ./sdspaas postFlight
+$ ./sdspaas nodeInfo
+```
+
 
 ## Run Conformance Test
 
