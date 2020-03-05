@@ -4,7 +4,7 @@
 - Go to  [Console of Tencent Kubernetes Engine ](https://console.cloud.tencent.com/tke2/cluster) 
 
 ### Create TKE Cluster
-- Follow the instructions to create a [Create Cluster](https://intl.cloud.tencent.com/document/product/457/30637)
+- Create a TKE Cluster
 - The cluster region need choose out of China( e.g. Hong Kong)
 - The cluster Kubernetes version need choose 1.16.3
 ![](CreateTkeCluster.png)
