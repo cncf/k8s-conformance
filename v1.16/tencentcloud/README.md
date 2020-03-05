@@ -13,7 +13,6 @@
 - After the creation completed, ssh to any node of cluster
 - Run command as below
 
-The standard tool for running these tests is Sonobuoy. Sonobuoy is regularly built and kept up to date to execute against all currently supported versions of kubernetes.
 Download a binary release of the CLI, Refer to the following command to run：
 
 ```shell
