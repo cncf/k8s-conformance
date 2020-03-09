@@ -1,15 +1,30 @@
 # To reproduce:
 
-## Create Kubernetes Cluster
+## Install Bocloud BeyondContainer
 
-Install Bocloud BeyondContainer to create a Kubernetes cluster.
+1. Extract files from the archive:
 
-After the creation completed, add the test cluster and launch the Kubernetes e2e conformance tests.
+    ```sh
+    tar zxvf paas_auto_deploy_2_3.tar.gz -C /opt
+    ```
+
+2. Prepare configuration (modify it if necessary):
+
+    ```sh
+    cd /opt/paas_auto_deploy_2_3
+    cp paas.conf.example  paas.conf
+    ```
+
+3. Install BeyondContainer platform:
+
+    ```sh
+    ./INSTALL
+    ```
 
 ## Run the Kubernetes conformance tests
 
 The standard tool for running these tests is [Sonobuoy](https://github.com/heptio/sonobuoy).
-Sonobuoy is regularly built and kept up to date to execute against all currently supported versions of kubernetes, 
+Sonobuoy is regularly built and kept up to date to execute against all currently supported versions of kubernetes,
 and can be obtained [here](https://github.com/heptio/sonobuoy/releases).
 
 Download the CLI by running:
@@ -36,7 +51,7 @@ $ sonobuoy status
 
 To inspect the logs:
 
-```
+```sh
 $ sonobuoy logs
 ```
 
