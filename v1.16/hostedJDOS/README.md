@@ -2,9 +2,13 @@
 
 #### Introduction
 
-Hosted JDOS is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB (https://github.com/tiglabs). 
+JDOS Hosted is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB (https://github.com/tiglabs). 
 
-#### Run Conformance Test
+#### Apply For a JDOS Account
+
+Login to our official website(https://jdos3.jd.com) to apply for a JDOS account and login your cluster.
+
+#### Run Conformance Test In Your Cluster
 
 ```
 Deploy a Sonobuoy pod to your cluster with:
