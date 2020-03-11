@@ -1,0 +1,11 @@
+vendor: OpenStack Foundation
+name: StarlingX
+version: 3.0
+website_url: https://opendev.org/starlingx
+documentation_url: https://docs.starlingx.io
+type: platform
+description: StarlingX is a fully integrated open source edge platform that
+    integrates OpenStack and Kubernetes together to provide all
+    functionality needed in the central cloud and on the edge sites. The
+    project is developed by the StarlingX community.
+product_logo_url: https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/openstack-logo/starlingx/EPS/StarlingX_Logo_RGB_Stacked_2color.eps
