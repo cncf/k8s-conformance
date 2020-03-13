@@ -1,6 +1,6 @@
 ## To Reproduce:
 
-Set up a cluster following the Essential PKS documentation. We tested with one control plane node and two worker nodes.
+Set up a cluster following the Tanzu Kuberneted Grid documentation. We tested with one control plane node and two worker nodes.
 
 Make sure your `KUBECONFIG` environment variable is set correctly for communicating with your cluster.
 
