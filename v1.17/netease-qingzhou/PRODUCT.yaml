@@ -1,0 +1,8 @@
+vendor: Netease
+name: Netease Qingzhou Microservice
+version: v1.5
+website_url: https://www.163yun.com/product-nsf
+documentation_url: https://www.163yun.com/help/documents/289945420007919616
+product_logo_url: https://nos.netease.com/cloud-website-bucket/ede0665c537943c2c0210acabce8b079.png
+type: distribution
+description: Netease Qingzhou Microservice is a one-stop PaaS platform built around applications and microservice, which helps users to quickly realize microservice solutions of easy access, easy operation and maintenance.
