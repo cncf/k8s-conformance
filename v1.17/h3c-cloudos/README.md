@@ -9,7 +9,7 @@ To recreate these results
   - Fill in the other two nodes's ip and ssh root user info, for example:<NODE2_IP>,root/<ROOT_PASSWORD>, join them to cluster.
   - Set VIP for the Cluster,please ensure the VIP has not been used.
   - Choose componets to deploy, recommend all.
-  - Prepare four shared storage（e.g.,ICSCI、NFS、GClusterFS) volumes which connectted to three nodes,and format these volumes with mkfs.ext4.
+  - Prepare four shared storage（e.g.,ISCSI、NFS、GClusterFS) volumes which connectted to three nodes,and format these volumes with mkfs.ext4.
   - After completing the above steps，click 'Confirm' button, start the deploy task.
 
 **2. Run Conformance Test:**
