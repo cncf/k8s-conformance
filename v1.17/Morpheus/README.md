@@ -46,8 +46,8 @@ https://docs.morpheusdata.com/en/4.2.0/integration_guides/Containers/kubernetes.
 
 #Sonobuoy test:
 
-1.       $ wget https://github.com/heptio/sonobuoy/releases/download/v0.15.0/sonobuoy_0.15.0_linux_amd64.tar.gz
-2.       $ tar -xzf sonobuoy_0.15.0_linux_amd64.tar.gz
+1.       $ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.17.2/sonobuoy_0.17.2_linux_amd64.tar.gz
+2.       $ tar -xzf sonobuoy_0.17.2_linux_amd64.tar.gz
 3.       $ ./sonobuoy run
 4.       $ ./sonobuoy status
 5.       $ ./sonobuoy logs
