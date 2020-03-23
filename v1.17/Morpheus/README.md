@@ -12,34 +12,34 @@ DISTRIB_DESCRIPTION="Ubuntu 16.04.5 LTS"
 ``
 see instructions:
 ``
-https://docs.morpheusdata.com/en/3.6.3/getting_started/installation/installation.html#ubuntu
+https://docs.morpheusdata.com/en/4.2.0/getting_started/installation/installation.html#ubuntu
 
 2.  Connect to target clouds/hypervisors
 
 ``
 see instructions:
 ``
-https://docs.morpheusdata.com/en/3.6.3/integration_guides/Clouds/vmware/vmware.html
+https://docs.morpheusdata.com/en/4.2.0/integration_guides/Clouds/vmware/vmware.html
 
 3.  (optional) connect external DNS:
 
 ``
 see instructions:
 ``
-https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#dns
+https://docs.morpheusdata.com/en/4.2.0/integration_guides/integration_guides.html#dns
 
 4.  (optional) connect external LB service:
 
 ``
 see instructions:
 ``
-https://docs.morpheusdata.com/en/3.6.3/integration_guides/integration_guides.html#load-balancers
+https://docs.morpheusdata.com/en/4.2.0/integration_guides/integration_guides.html#load-balancers
 
 5.  Use Morpheus KaaS builder to build new cluster based on CNCF compliant architecture
 ``
 see instructions:
 ``
-https://docs.morpheusdata.com/en/3.6.3/integration_guides/Containers/kubernetes.html
+https://docs.morpheusdata.com/en/4.2.0/integration_guides/Containers/kubernetes.html
 
 
 6.  SSH to one of the masters
