@@ -1,53 +1,28 @@
 # Conformance testing Agile Stacks Kubernetes Stack.
 
-## Setup Agile Stacks Kubernetes Stack
+## To reproduce
 
-Deploy Agile Stacks Kubernetes Stack as per the Agile Stacks documentation. Use at least 1 master and 1 worker node. We ran our conformance tests on a cluster with 2 r4.large worker instances.
+### Create Kubernetes Cluster
 
-## Run conformance tests
+- Login to [AgileStacks Console](https://controlplane.agilestacks.io)
+- Create cloud account & enviroment or reuse existing one
+- Select _Stacks_ -> _Clusters_ -> _Create_ -> _Kubernetes Cluster_
+- Deploy kuberentes cluster, to get more detailed info please visit document [How to create a cluster](https://docs.agilestacks.com/category/6qo6gq9hay-start-here) for more details
 
-To start the conformance tests on your Agile Stacks Kubernetes Stack download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+### Run Conformance Test
 
-```
-$ go get -u -v github.com/heptio/sonobuoy
-```
+- After _kuberbetes_ stack is created, go to the _stack_ page and select created stack
+- Switch to _kubernetes_ tab and download kubeconfig and save it locally
+- run:
 
-Deploy a Sonobuoy pod to your cluster with:
+```console
+$ go get -u -v github.com/vmware-tanzu/sonobuoy
 
-```
 $ sonobuoy run --mode=certified-conformance
+
+$ sonobuoy retrieve ./results
+
+# tar zxvf ./results/{XXX.tar.gz}
 ```
 
-View actively ru    nning pods:
-
-```
-$ sonobuoy status 
-```
-
-To inspect the logs:
-
-```
-$ sonobuoy logs
-```
-
-Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to
-a local directory:
-
-```
-$ sonobuoy retrieve .
-```
-
-This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
-`.` directory. Extract the contents into `./results` with:
-
-```
-mkdir ./results; tar xzf *.tar.gz -C ./results
-```
-
-**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**. 
-
-To clean up Kubernetes objects created by Sonobuoy, run:
-
-```
-sonobuoy delete
-```
+- To get more detailed info follow the conformance suite [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md) to test it.
