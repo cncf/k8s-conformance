@@ -2,7 +2,7 @@ vendor: OpenStack Foundation
 name: StarlingX
 version: 3.0
 website_url: https://www.starlingx.io
-repo_url: https://opendev.org/starlingx
+repo_url: https://github.com/starlingx
 documentation_url: https://docs.starlingx.io
 type: platform
 description: StarlingX is a fully integrated open source edge platform that
