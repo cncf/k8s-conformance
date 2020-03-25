@@ -54,42 +54,132 @@ Further reference:
     Once you’ve selected the group, click “NEXT”
     
     On the final tab of the “CREATE CLOUD” wizard, you’ll confirm your selections and click “COMPLETE”. The new cloud is now listed on the cloud detail page. After a short time, Morpheus will provide summary information and statistics on existing virtual machines, networks, and other resources available in the cloud.
+    
+    Further reference: `https://docs.morpheusdata.com/en/4.2.0/integration_guides/Clouds/vmware/vmware.html`
 
+#### Use Morpheus KaaS (MKS) builder to build new cluster based on CNCF compliant architecture
 
-``
-see instructions:
-``
-https://docs.morpheusdata.com/en/4.2.0/integration_guides/Clouds/vmware/vmware.html
+To create a new Kubernetes Cluster:
 
-3.  (optional) connect external DNS:
+1. Navigate to Infrastructure - Clusters
 
-``
-see instructions:
-``
-https://docs.morpheusdata.com/en/4.2.0/integration_guides/integration_guides.html#dns
+2. Select + ADD CLUSTER
 
-4.  (optional) connect external LB service:
+3. Select Kubernetes Cluster
 
-``
-see instructions:
-``
-https://docs.morpheusdata.com/en/4.2.0/integration_guides/integration_guides.html#load-balancers
+4. Select a Group for the Cluster
 
-5.  Use Morpheus KaaS builder to build new cluster based on CNCF compliant architecture
-``
-see instructions:
-``
-https://docs.morpheusdata.com/en/4.2.0/integration_guides/Containers/kubernetes.html
+5. Select NEXT
 
-6.  SSH to one of the masters
+6. Populate the following:
+
+*CLOUD*
+Select target Cloud
+
+*CLUSTER NAME*
+Name for the Kubernetes Cluster
+
+*RESOURCE NAME*
+Name for Kubernetes Cluster resources
+
+*DESCRIPTION*
+Description of the Cluster
+
+*VISIBILITY*
+Public
+Available to all Tenants
+
+*Private*
+Available to Master Tenant
+
+*LABELS*
+Internal label(s)
+
+7. Select NEXT
+
+8. Populate the following:
+
+*LAYOUT*
+Select Single Master from available layouts. System provided layouts include Single Master and Cluster Layouts.
+
+*PLAN*
+Select plan for Kubernetes Master (8gbx2vcpu used in testing)
+
+*VOLUMES*
+Configure volumes for Kubernetes Master
+
+*NETWORKS*
+Select the network for Kubernetes Master & Worker VM’s
+
+*CUSTOM CONFIG*
+Add custom Kubernetes annotations and config hash
+
+*CLUSTER HOSTNAME*
+Cluster address Hostname (cluster layouts only)
+
+*POD CIDR*
+POD network range in CIDR format ie 192.168.0.0/24 (cluster layouts only)
+
+*WORKER PLAN*
+Plan for Worker Nodes (cluster layouts only, 8gbx2vcpu used in testing)
+
+*NUMBER OF WORKERS*
+Specify the number of workers to provision (defaults to 3, used in testing)
+
+*LOAD BALANCER*
+Select an available Load Balancer (cluster layouts only) }
+
+*User Config*
+*CREATE YOUR USER*
+Select to create your user on provisioned hosts (requires Linux user config in Morpheus User Profile)
+
+*USER GROUP*
+Select User group to create users for all User Group members on provisioned hosts (requires Linux user config in Morpheus User Profile for all members of User Group)
+
+Advanced Options
+*DOMAIN*
+Specify Domain override for DNS records
+
+*HOSTNAME*
+Set hostname override (defaults to Instance name unless an Active Hostname Policy applies)
+
+9. Select NEXT
+
+10. Select optional Workflow to execute
+
+11. Select NEXT
+
+12. Review and select COMPLETE
+    
+    The Master Node(s) will provision first.
+    
+    Upon successful completion of VM provision, Kubernetes scripts will be executed to install and configure Kubernetes on the Masters.
+    
+    `Note: Access to the sites listed in the Requirements section is required from Master and Worker nodes over 443`
+    
+    After Master or Masters are successfully provisioned and Kubernetes is successfully installed and configured, the Worker Nodes will provision in parallel.
+    
+    Provision status can be viewed:
+    
+    From the Status next to the Cluster in Infrastructure -> Clusters
+    
+    Status bar with eta and current step available on Cluster detail page, accessible by selecting the Cluster name from Infrastructure -> Clusters
+    
+    All process status and history is available - From the Cluster detail page History tab, accessible by selecting the Cluster name from Infrastructure -> Clusters and the History tab - From Operations - Activity - History - Individual process output available by clicking  on target process
+    
+    Once all Master and Worker Nodes are successfully provisioned and Kubernetes is installed and configured, the Cluster status will turn green.
+
+Further Reference: `https://docs.morpheusdata.com/en/4.2.0/infrastructure/clusters/kubernetes.html#creating-kubernetes-clusters`
+
+#### SSH to one of the masters
 
 ## Sonobuoy test
 
-1.      $ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.17.2/sonobuoy_0.17.2_linux_amd64.tar.gz
-2.       $ tar -xzf sonobuoy_0.17.2_linux_amd64.tar.gz
-3.       $ ./sonobuoy run
-4.       $ ./sonobuoy status
-5.       $ ./sonobuoy logs
-6.       $ ./sonobuoy retrieve ./results
-7.       # untar the tarball, then add plugins/e2e/results/{e2e.log,junit_01.xml}
+1. `$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.17.2/sonobuoy_0.17.2_linux_amd64.tar.gz`
+2. `$ tar -xzf sonobuoy_0.17.2_linux_amd64.tar.gz`
+3. `$ ./sonobuoy run`
+4. `$ ./sonobuoy status`
+5. `$ ./sonobuoy logs`
+6. `$ ./sonobuoy retrieve ./results`
+7. `# untar the tarball, then add plugins/e2e/results/{e2e.log,junit_01.xml}`
 
