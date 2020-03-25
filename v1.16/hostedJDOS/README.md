@@ -4,11 +4,19 @@
 
 JDOS Hosted is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB (https://github.com/tiglabs). 
 
-#### Apply For a JDOS Account
+#### If you want to reproduce this, please under the following steps.
 
-Login to our official website(https://jdos3.jd.com) to apply for a JDOS account and login your cluster.
+#### Apply For a JDOS Account and Login Your Cluster
+
+```Login to our official website(https://jdos3.jd.com) to apply for a JDOS account. and then we will provide an account and URL, you can use these to login to your cluster.```
 
 #### Run Conformance Test In Your Cluster
+
+```
+Download the CLI by running:
+```
+
+$ go get -u -v github.com/heptio/sonobuoy
 
 ```
 Deploy a Sonobuoy pod to your cluster with:
@@ -50,10 +58,6 @@ To clean up Kubernetes objects created by Sonobuoy, run:
 
 sonobuoy delete
 
-```
 ### NOTICE:
 
 Some of the docker images from gcr.io cannot be pulled in China, you need to configure a proxy for your docker deamon.
-```
-
-
