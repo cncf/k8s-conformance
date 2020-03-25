@@ -2,7 +2,7 @@ vendor: Wind River Systems
 name: Wind River Cloud Platform
 version: 19.12
 website_url: https://www.windriver.com/products/cloud-platform/
-repo_url: https://opendev.org/starlingx
+repo_url: https://github.com/wind-river/starlingx-config
 documentation_url: https://docs.starlingx.io
 product_logo_url: https://www.windriver.com/products/cloud-platform/images/cp-video-cover.jpg
 type: distribution
