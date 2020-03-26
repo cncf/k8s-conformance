@@ -37,7 +37,7 @@ Now you're authorized to interact with your Ventus Cloud entities and you can ge
 openstack coe cluster list
 openstack coe cluster config <Name of Cluster>
 export KUBECONFIG="./config"
-kubectl get nodes --all-namespaces
+kubectl get pods --all-namespaces
 ```
 
 Obtain more details about this step following the [Access your Kubernetes Cluster using CLI instruction](https://ventuscloud.eu/docs/Kubernetes/access-by-cli).
