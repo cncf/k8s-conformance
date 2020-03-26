@@ -7,7 +7,7 @@ Fill the form, add billing information, and your account will be granted by 100E
 Obtain more details about this step following the [Creating a new account instruction](https://ventuscloud.eu/docs/quickstarts/create-account).
 
 ## 2. Create a new API user
-On the main Navigation Panel go to Cloud, choose API Users and click the (+) present in the lower right corner.
+On the main Navigation Panel go to Cloud, choose API Users and click the (+) button from the bottom right.
 Fill the form and once a User is created, click the "Get OpenRC file" button to save this file.
 
 Obtain more details about this step following the [API Users instruction](https://ventuscloud.eu/docs/coretasks/api-users).
@@ -19,7 +19,7 @@ Upload the SSH key or generate the new one using the (+) button from the bottom 
 Obtain more details about this step following the [SSH Keys instruction](https://ventuscloud.eu/docs/coretasks/ssh-keys).
 
 ## 4. Create a new cluster
-On the main Navigation Panel go to Cloud, choose Clusters and click the (+) button present in the lower right corner.
+On the main Navigation Panel go to Cloud, choose Clusters and click the (+) button from the bottom right.
 Fill the form, push CREATE CLUSTER button and wait about 5 minutes for "Create Completed" status.
 
 Obtain more details about this step following the [Kubernetes Cluster instruction](https://ventuscloud.eu/docs/Kubernetes/kubernetes-cluster).
