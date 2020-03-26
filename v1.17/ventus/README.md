@@ -10,7 +10,7 @@ Obtain more details about this step following the [Creating a new account instru
 On the main Navigation Panel go to Cloud, choose API Users and click the (+) present in the lower right corner.
 Fill the form and once a User is created, click the "Get OpenRC file" button to save this file.
 
-Obtain more details about this steo following the [API Users instruction](https://ventuscloud.eu/docs/coretasks/api-users).
+Obtain more details about this step following the [API Users instruction](https://ventuscloud.eu/docs/coretasks/api-users).
 
 ## 3. Create a new pair of SSH keys
 On the main Navigation Panel go to Cloud and choose SSH Keys. 
