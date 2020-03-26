@@ -1,7 +1,7 @@
 # How to reproduce
 
 ## 1. Create the Ventus Cloud account 
-Open the (https://portal.ventuscloud.eu/login) and click to CREATE NEW ACCOUNT button.
+Open the https://portal.ventuscloud.eu/login and click to CREATE NEW ACCOUNT button.
 Fill the form, add billing information, and your account will be granted by 100EUR credit.
 
 Obtain more details about this step following the [Creating a new account instruction](https://ventuscloud.eu/docs/quickstarts/create-account).
