@@ -6,9 +6,31 @@ JDOS Hosted is Jingdong Datacenter OS for automated management of shared contain
 
 #### If you want to reproduce this, please under the following steps.
 
-#### Apply For a JDOS Account and Login Your Cluster
+#### Apply For a JDOS Account and Create Your Cluster
 
-```Login to our official website(https://jdos3.jd.com) to apply for a JDOS account. and then we will provide an account and URL, you can use these to login to your cluster.```
+```Login to our official website(https://jdos3.jd.com) to apply for a JDOS account. and then we will provide an account and an address, you can use these to login the node.```
+
+```
+Set this to the email address of your JDOS user
+```
+
+$ export JDOS_USERNAME=a.b@c
+
+```
+Set k8s version and cluster name 
+```
+
+$ export VERSION=1.16.7
+
+$ export CLUSTER_NAME=k8s-conformance-test
+
+```
+Run your cluster with:
+
+jdos cluster create $CLUSTER_NAME —num-nodes=2 —cluster-version=$VERSION
+
+kubectl create clusterrolebinding your-user-cluster-admin-binding —clusterrole=cluster-admin —user=$JDOS_USERNAME
+```
 
 #### Run Conformance Test In Your Cluster
 
