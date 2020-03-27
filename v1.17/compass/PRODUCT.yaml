@@ -1,0 +1,8 @@
+vendor: Caicloud
+name: Compass
+version: v2.11
+website_url: https://caicloud.io/products/compass
+documentation_url: https://caicloud.io/products/compass
+product_logo_url: https://caicloud.io/_static/caicloud_logo.svg
+type: distribution
+description: 'Caicloud Compass is a Container Cloud Management Platform, Deep integration with Kubernetes to provide users with the ability to manage resources, deploy applications, deliver services, and automate operations.'
