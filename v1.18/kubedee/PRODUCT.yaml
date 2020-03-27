@@ -1,0 +1,9 @@
+vendor: schu
+name: kubedee
+version: v0.7.0
+website_url: https://github.com/schu/kubedee
+documentation_url: https://github.com/schu/kubedee
+product_logo_url: https://schu.github.io/kubedee/logo/kubedee.svg
+repo_url: https://github.com/schu/kubedee
+type: distribution
+description: Fast multi-node Kubernetes development and test clusters on LXD.
