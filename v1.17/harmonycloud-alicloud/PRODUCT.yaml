@@ -1,0 +1,8 @@
+vendor: Harmonycloud
+name: Harmonycloud Container Platform deployed on ALICLOUD
+version: v2.6.0
+website_url: http://harmonycloud.cn/products/rongqiyun/
+documentation_url: http://harmonycloud.cn/products/rongqiyun/
+product_logo_url: https://landscape.cncf.io/logos/harmony-cloud-container-platform.svg
+type: installer
+description: Harmonycloud Container Platform is an Enterprise Platform-as-a-Service based on Kubernetes
