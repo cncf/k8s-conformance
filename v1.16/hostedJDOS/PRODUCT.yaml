@@ -1,0 +1,9 @@
+vendor: JD.com
+name: Hosted JDOS
+version: v3.0
+website_url: https://jdos3.jd.com
+repo_url: N/A
+documentation_url: https://jdos3.jd.com
+product_logo_url: https://github.com/yangyefei-bj/jdos/blob/master/jd.com.svg
+type: Hosted
+description: "Hosted JDOS is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB."
