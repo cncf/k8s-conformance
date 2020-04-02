@@ -2,9 +2,9 @@
 
 ## Setup
 
-Install a Typhoon Kubernetes v1.18.x cluster on [AWS](https://typhoon.psdn.io/cl/aws/), [Azure](https://typhoon.psdn.io/cl/azure/), [bare-metal](https://typhoon.psdn.io/cl/bare-metal/), [DigitalOcean](https://typhoon.psdn.io/cl/digitalocean/) or [Google Cloud](https://typhoon.psdn.io/cl/google-cloud/). Pick any OS + platform combination marked [stable](https://github.com/poseidon/typhoon#modules).
+Define a Typhoon Kubernetes v1.18.x cluster in a Terraform workspace. Pick any OS + platform combination marked [stable](https://github.com/poseidon/typhoon/blob/v1.18.0/README.md#modules) at the v1.18 release.
 
-Define a cluster at v1.18.x and `terraform apply`.
+For example, a cluster on Google Cloud with Container Linux:
 
 ```
 module "google-cloud-yavin" {
@@ -31,10 +31,17 @@ resource "local_file" "kubeconfig-yavin" {
 }
 ```
 
+Apply the declared cluster.
+
+```
+terraform init
+terraform apply
+```
+
 To achieve complete conformance, you **must**:
 
 * Enable aggregation with `enable_aggregation="true"`
-* Allow inbound NodePort (30000-32767) traffic via cloud firewall rules
+* Allow inbound NodePort (30000-32767) traffic via firewall rules
 * Not use Preemptible or Spot instances
 
 Use the generated `kubeconfig`.
@@ -53,7 +60,7 @@ yavin-worker-mzdm.c.example-com.internal  Ready  <none>  5m  v1.18.0
 Use the `sonobuoy` command line tool (requires Go).
 
 ```
-go get -u -v github.com/heptio/sonobuoy
+go get -u -v github.com/vmware-tanzu/sonobuoy
 sonobuoy run
 sonobuoy status
 sonobuoy retrieve .
