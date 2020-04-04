@@ -9,16 +9,16 @@
 Kubernetes for which conformance is being claimed, referenced as the
 "Conformance Version" from hereon.
 
-3. Verify that the Conformance Version is the current or previous version of
-Kubernetes.
+3. Verify that the Conformance Version is the current or previous two versions of Kubernetes.
 
 4. Look at `e2e.log`.  Verify that the `major.minor` component of the
-`kube-apiserver version:` log exactly matches the Conformance Version. The
-patch version does not matter.
+`kube-apiserver version:` log and `e2e test version:` both exactly match
+the Conformance Version. The patch version does not matter.
 
 5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
 Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
-matter as long as we see `0 Failed | 0 Pending`.
+matter as long as we see `0 Failed | 0 Pending`. Also, there should be 0 tests
+listed as `Flaked`.
 
 ## Policy Requirements
 
@@ -49,8 +49,6 @@ If the submission doesn't meet all policy requirements, reply with a message ind
 
 1. Update the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/a/linuxfoundation.org/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit) to reflect the vendor's certified offering.
 
-2. Add the vendor's logo to https://www.cncf.io/certification/software-conformance/
+2. Add the vendor's information to the [CNCF landscape](https://landscape.cncf.io/grouping=landscape&landscape=certified-kubernetes-distribution,certified-kubernetes-hosted,certified-kubernetes-installer) which also causes them to appear on https://www.cncf.io/certification/software-conformance/ and https://kubernetes.io/partners/#conformance.
 
-3. Add the vendor's listing to https://kubernetes.io/partners/#dist
-
-4. Add a comment saying "You are now Certified Kubernetes" and merge the PR.
+3. Add a comment saying "You are now Certified Kubernetes" and merge the PR.

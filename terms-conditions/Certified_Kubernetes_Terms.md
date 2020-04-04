@@ -2,7 +2,7 @@
 
 (Available in [PDF](https://github.com/cncf/k8s-conformance/raw/master/terms-conditions/Certified_Kubernetes_Terms.pdf).)
 
-#### Last updated: November 22, 2017
+#### Last updated: December 18, 2018
 
 This document sets forth the terms and conditions that apply to the Conformance Program and use of the Certified Kubernetes Marks.
 
@@ -18,7 +18,7 @@ In this document, these terms have the following meanings:
 
 Together with these terms and conditions, the following documents are part of the Conformance Program, each as updated from time to time:
 *  "**Certification Guide**": the conformance testing instructions and requirements for the Conformance Program, available at <https://github.com/cncf/k8s-conformance/blob/master/instructions.md>;
-*  "**Branding Guide**": the Certified Kubernetes Brand Guidelines, available at <https://github.com/cncf/artwork/blob/master/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf>;
+*  "**Branding Guide**": the Certified Kubernetes Brand Guidelines, available at <https://github.com/cncf/artwork/blob/master/projects/kubernetes/certified-kubernetes/certified-kubernetes-brand-guide.pdf>;
 *  "**LF Trademark Usage Guidelines**": The Linux Foundation Trademark Usage Guidelines, available at <https://www.linuxfoundation.org/trademark-usage>; and
 *  "**Participation Form**": the Certified Kubernetes Participation Form, available at <https://github.com/cncf/k8s-conformance/tree/master/participation-form/Certified_Kubernetes_Form.pdf>.
 
@@ -43,9 +43,9 @@ Members of CNCF and non-profit organizations will not be charged fees to partici
 
 #### Qualifying Offerings and Self-Testing
 
-_Eligible Versions_. A Qualifying Offering may be initially self-certified for (1) the then-current minor (x.y) official release of Kubernetes, and (2) the immediately-preceding minor (x.y-1) official release of Kubernetes; provided, in each case, that CNCF has made available a testing evaluation program for that version of Kubernetes.
+_Eligible Versions_. A Qualifying Offering may be initially self-certified for (1) the then-current minor (x.y) official release of Kubernetes, and (2) the two immediately-preceding minor (x.y-1 and x.y-2) official releases of Kubernetes; provided, in each case, that CNCF has made available a testing evaluation program for that version of Kubernetes.
 
-Example: Following the release of Kubernetes v1.10, a new Qualifying Offering may be initially self-certified for Kubernetes v1.10 or v1.9, but not for v1.8.
+Example: Following the release of Kubernetes v1.11, a new Qualifying Offering may be initially self-certified for Kubernetes v1.11, v1.10 or v1.9, but not for v1.8.
 
 _Self-Testing Process_. The Certified Kubernetes Marks and Participant Kubernetes Combinations are intended to be used with Participants’ goods and services that are Qualifying Offerings. The Certification Guide contains details about the self-testing process and the specific tests that must be passed for a Participant’s offering to be a Qualifying Offering. A Participant confirms that its goods and services are Qualifying Offerings by demonstrating that its offerings have successfully passed all of the self-tests set forth in the Certification Guide. CNCF will make available a testing evaluation program that Participants will use to determine whether the self-tests are passed or failed.
 
