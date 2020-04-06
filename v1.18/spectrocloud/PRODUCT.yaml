@@ -1,0 +1,9 @@
+vendor: Spectro Cloud
+name: Spectro Cloud
+version: v0.4.0
+website_url: https://spectrocloud.com
+repo_url: https://github.com/spectrocloud
+documentation_url: https://docs.spectrocloud.com
+product_logo_url: http://marketing-assets.spectrocloud.com.s3-website-us-west-2.amazonaws.com/website/logo_portrait_for_light.svg
+type: distribution
+description: Keep control of your Kubernetes infrastructure stack with Spectro Cloud’s as-a-Service experience for public clouds, private clouds, and bare metal environments
