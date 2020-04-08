@@ -1,0 +1,9 @@
+vendor: Cloud Native Computing Foundation (CNCF)
+name: kubeadm
+version: v1.18.0
+website_url: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+repo_url: https://github.com/kubernetes/kubeadm/
+documentation_url: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/
+product_logo_url: https://raw.githubusercontent.com/kubernetes/kubeadm/master/logos/stacked/color/kubeadm-stacked-color.svg?sanitize=true
+type: installer
+description: kubeadm helps you bootstrap a minimum viable Kubernetes cluster that conforms to best practices.
