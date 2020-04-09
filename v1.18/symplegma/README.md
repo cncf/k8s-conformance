@@ -1,5 +1,9 @@
 # Symplegma
 
+## Official documentation
+
+Official project documentation can be found [here](https://clusterfrak-dynamics.github.io/symplegma/)
+
 ## How to reproduce the results
 
 ## Requirements
