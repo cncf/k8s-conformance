@@ -93,6 +93,10 @@ Leave it at the default `Token` option and download the config.
 
 Copy your downloaded KUBECONFIG file to whatever machine you will run the Sonobuoy tests from.  It will be named `${CLUSTER_NAME}.yaml`.
 
+Set the KUBECONFIG environment variable:
+
+`export KUBECONFIG=/path/to/mycluster.yaml`
+
 # Run the tests
 
 Download Sonobuoy and run the tests by following the instructions at: https://github.com/cncf/k8s-conformance/blob/master/instructions.md.
