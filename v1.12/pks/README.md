@@ -1,17 +1,24 @@
-# Pivotal Container Service v1.3
-Pivotal Container Service (PKS) provides both cloud and on-prem Kubernetes as a service.
-## Installing PKS
-To get started, follow the guide [here](https://docs.pivotal.io/runtimes/pks). The guide includes instructions on how to provision and manage the PKS control plane.
+# VMware Tanzu Kubernetes Grid Integrated Edition v1.3
+
+VMware Tanzu Kubernetes Grid Integrated Edition (TKGI) is a production grade Kubernetes-based container solution equipped with advanced networking, a private container registry, and full lifecycle management. TKGI radically simplifies the deployment and operation of Kubernetes clusters so you can run and manage containers at scale on private and public clouds.
+
+## Installing TKGI
+
+To get started, follow the guide [here](https://docs.pivotal.io/runtimes/pks). The guide includes instructions on how to provision and manage the TKGI control plane.
+
 ## Creating a Kubernetes Cluster
+
 ```
 pks create-cluster CLUSTER-NAME -e HOSTNAME -p PLAN_NAME
 pks get-credentials CLUSTER-NAME
 ```
+
 ## Running Conformance Tests
+
 The standard tool for running these tests is
-[Sonobuoy](https://github.com/heptio/sonobuoy).  Sonobuoy is
-regularly built and kept up to date to execute against all
-currently supported versions of kubernetes.
+[Sonobuoy](https://github.com/heptio/sonobuoy). Sonobuoy is regularly built and
+kept up to date to execute against all currently supported versions of
+kubernetes.
 
 Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 
