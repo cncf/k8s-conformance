@@ -16,14 +16,14 @@ pks get-credentials CLUSTER-NAME
 ## Running Conformance Tests
 
 The standard tool for running these tests is
-[Sonobuoy](https://github.com/heptio/sonobuoy). Sonobuoy is regularly built and
+[Sonobuoy](https://github.com/vmware-tanzu/sonobuoy). Sonobuoy is regularly built and
 kept up to date to execute against all currently supported versions of
 kubernetes.
 
-Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+Download a [binary release](https://github.com/vmware-tanzu/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
-$ go get -u -v github.com/heptio/sonobuoy
+$ go get -u -v github.com/vmware-tanzu/sonobuoy
 ```
 
 Deploy a Sonobuoy pod to your cluster with:
