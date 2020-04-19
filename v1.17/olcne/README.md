@@ -128,6 +128,7 @@ It is expected that an administrator user opc is present on each node.
 	    module install
 	~~~
 12. Verify Kubernetes state before executing conformance test
+	- On the operator node
 	Configure `kubectl`
 	~~~
 	mkdir "$HOME/.kube"
