@@ -1,10 +1,10 @@
 # Harmonycloud Container Platform
 
-An Enterprise Platform-as-a-Service based on Kubernetes 1.18
+An Enterprise Platform-as-a-Service based on Kubernetes 
 
 ## To Reproduce
 
-First Install Harmonycloud Container Platform v2.7.0. Installation packages can be downloaded at  [here](http://harmonycloud.cn/products/rongqiyun/), the kubernetes version is v1.17.2.
+First Install Harmonycloud Container Platform v2.7.0. Installation packages can be downloaded at  [here](http://harmonycloud.cn/products/rongqiyun/), the kubernetes version is v1.18.0.
 
  * install Harmonycloud Container Platform one master and two nodes for Kubernetes cluster. Centos is recommended.
 
