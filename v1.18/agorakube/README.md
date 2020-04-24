@@ -240,7 +240,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-2) Run the command: ```vagrant up``` to deploy the infrastructure and install Agorakube automatically
+You can edit the vagrant to fit your needs.
 
 
 ## Start the environment
