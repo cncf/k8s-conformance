@@ -1,4 +1,4 @@
-# VMware Tanzu Kubernetes Grid Integrated Edition v1.3
+# VMware Tanzu Kubernetes Grid Integrated Edition v1.7
 
 VMware Tanzu Kubernetes Grid Integrated Edition (TKGI) is a production grade Kubernetes-based container solution equipped with advanced networking, a private container registry, and full lifecycle management. TKGI radically simplifies the deployment and operation of Kubernetes clusters so you can run and manage containers at scale on private and public clouds.
 
@@ -106,7 +106,6 @@ See the linked guide for full configuration documentation. At a minimum you must
    Where `TKGI-API` is the domain name of your TKGI API server, `USERNAME` and
    `PASSWORD` belong to the account you created earlier, and `CERT-PATH` is the
    path to your root CA certificate.
-
 
 ## Creating a Kubernetes Cluster
 

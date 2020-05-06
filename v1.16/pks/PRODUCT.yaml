@@ -1,6 +1,6 @@
 vendor: VMware
 name: VMware Tanzu Kubernetes Grid Integrated Edition
-version: v1.5.0
+version: v1.7.0
 website_url: https://tanzu.vmware.com/kubernetes-grid
-documentation_url: https://docs.pivotal.io/pks/1-5/index.html
+documentation_url: https://docs.pivotal.io/pks/1-7/index.html
 product_logo_url: https://landscape.cncf.io/logos/v-mware-tanzu-kubernetes-grid.svg
