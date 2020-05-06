@@ -1,6 +1,6 @@
-vendor: Pivotal/VMware
-name: Pivotal Container Service (PKS)
+vendor: VMware
+name: VMware Tanzu Kubernetes Grid Integrated Edition
 version: v1.4.0
-website_url: https://cloud.vmware.com/pivotal-container-service
-documentation_url: https://docs-pks.cfapps.io/pks/index.html
-product_logo_url: https://cloud.google.com/images/pivotal/pivotal-container-service-logo.png
+website_url: https://tanzu.vmware.com/kubernetes-grid
+documentation_url: https://docs.pivotal.io/pks/1-4/index.html
+product_logo_url: https://landscape.cncf.io/logos/v-mware-tanzu-kubernetes-grid.svg

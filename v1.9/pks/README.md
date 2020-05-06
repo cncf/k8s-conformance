@@ -1,10 +1,10 @@
-# PKS (Pivotal Container Services)
+# VMware Tanzu Kubernetes Grid Integrated Edition
 
-Pivotal Container Services (PKS) utilizes [CFCR](https://pivotal.io/partners/kubo) to deploy and manage your Kubernetes cluster.
+VMware Tanzu Kubernetes Grid Integrated Edition (TKGI) is a production grade Kubernetes-based container solution equipped with advanced networking, a private container registry, and full lifecycle management. TKGI radically simplifies the deployment and operation of Kubernetes clusters so you can run and manage containers at scale on private and public clouds.
 
 A Kubernetes cluster can be deployed to your choice of IaaS. Please follow the guide [here](https://docs-pks.cfapps.io/pks/installing.html) to install it with GCP or vSphere. An environment with Ops Manager will be needed.
 
-Upon deploying Ops man with the PKS tile, follow instructions in the documentaton to [create](https://docs-pks.cfapps.io/pks/using.html#create-cluster) and [bind](https://docs-pks.cfapps.io/pks/using.html#get-credentials) to a cluster
+Upon deploying Ops man with the TKGI tile, follow instructions in the documentaton to [create](https://docs-pks.cfapps.io/pks/using.html#create-cluster) and [bind](https://docs-pks.cfapps.io/pks/using.html#get-credentials) to a cluster
 
 ## Running the k8s conformance tests
 
