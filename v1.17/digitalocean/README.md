@@ -5,11 +5,11 @@
 The following instructions will help you configure and create a Kubernetes cluster on DigitalOcean:
 
 ```
-$ doctl auth init 
+$ doctl auth init
 
-$ doctl kubernetes cluster create --version 1.16.6-do.2 do-sonobuoy-1166 --node-pool "name=conformance;size=s-4vcpu-8gb;count=3" --wait
+$ doctl kubernetes cluster create --version 1.17.5-do.0 do-sonobuoy-1175 --node-pool "name=conformance;size=s-4vcpu-8gb;count=3" --wait
 
-$ doctl kubernetes cluster kubeconfig save do-sonobuoy-1166 
+$ doctl kubernetes cluster kubeconfig save do-sonobuoy-1175
 ```
 
 > Further instructions can be found in our [product documentation](https://www.digitalocean.com/docs/kubernetes/how-to/create-cluster/).
