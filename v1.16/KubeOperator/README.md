@@ -1,0 +1,66 @@
+# Conformance tests for KubeOperator 2.6
+
+## Install KubeOperator 2.6
+
+Follow the [installation](https://docs.kubeoperator.io/KubeOperator-v2.6/installation) to install KubeOperator.
+
+**Requirements**
+
+OS requirements: CentOS 7.6 Minimal
+
+**Download offline package**
+
+URL: http://kubeoperator-1256577600.file.myqcloud.com/release/2.6/kubeOperator-v2.6.18-release.tar.gz
+
+**Intall KubeOperator**
+```bash
+$ tar -zxvf kubeOperator-v2.6.18-release.tar.gz
+```
+```bash
+$ cd kubeOperator-v2.6.18-release
+```
+```bash
+$ ./kubeopsctl install
+```
+Wait until service running successfully.
+
+## Prepare hosts for deploying Kubernetes
+
+| Name            | Role    | Count  | OS             | Size       | Description  |
+| --------------- | ------- | ------ | -------------- | ---------- | ---------------------------------------------------------------------- |
+| master-1        | Master  | 1      | CentOS 7.6     | 4C 16G     | Running etcd、kube-apiserver、kube-scheduler、kube-apiserver.           |
+| worker-1        | Worker  | 1      | CentOS 7.6     | 8C 32G     | Running kubelet、application workload.                                 |
+| nfs-storage     | NFS     | 1      | CentOS 7.6     | 4C 16G     | Provide NFS persistent storage, disk recommendations of 500G or more. |
+
+## Deploy Kubernetes
+
+Deploy Kubernetes according to the [documentation](https://docs.kubeoperator.io/KubeOperator-v2.6/userguide-manual/).
+
+## Run Conformance Test
+
+1. Download a sonobuoy [binary release](https://github.com/vmware-tanzu/sonobuoy/releases) of the CLI, or build it yourself by running:
+```bash
+$ go get -u -v github.com/vmware-tanzu/sonobuoy
+```
+
+2. Run sonobuoy:
+```bash
+$ sonobuoy run --mode=certified-conformance
+```
+
+3. Watch the logs:
+```bash
+$ sonobuoy logs
+```
+
+4. Check the status:
+```bash
+$ sonobuoy status
+```
+
+5. Once the status shows the run as completed, you can download the results archive by running:
+```bash
+$ sonobuoy retrieve
+```
+
+Please refer to [sonobuoy.tar.gz](sonobuoy.tar.gz) for the result.
