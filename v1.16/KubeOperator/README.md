@@ -6,7 +6,7 @@ Follow the [installation](https://docs.kubeoperator.io/KubeOperator-v2.6/install
 
 **Requirements**
 
-OS requirements: CentOS 7.6 Minimal
+OS requirements: CentOS 7.4 - 7.7 Minimal, RedHat 7.4 - 7.7 Minimal
 
 **Download offline package**
 
@@ -35,6 +35,21 @@ Wait until service running successfully.
 ## Deploy Kubernetes
 
 Deploy Kubernetes according to the [documentation](https://docs.kubeoperator.io/KubeOperator-v2.6/userguide-manual/).
+
+### Step 1: Cluster Planning
+1. System Settings
+- Before using the KubeOperator, you must set the necessary parameters for the KubeOperator. These system parameters will affect the installation of the Kubernetes cluster and access to related services.
+2. Prepare The Servers
+- We will prepare to add three servers, one master and one worker. If NFS is used for persistent storage, we also need NFS storage server (for example, name nfs-1) to be used as master node, worker node and NFS storage respectively.
+3. Prepare Storage
+- In addition to KubeOperator support for automatically creating NFS storage and adding self-provisioning NFS storage, new support for cloud native storage solution Rook Ceph has been added.
+
+### Strp 2: Cluster Deployment
+1. Create Cluster
+- After the project administrator account logs in to the KubeOperator system, click the "add" button on the "cluster" page to create the cluster.
+2. Deploy Cluster
+- Click on the cluster name to deploy in the cluster list, and by default the overview information for that cluster is displayed. The Kubernetes cluster is shown in great detail on the overview page. Click the install button at the top of the overview page to deploy the Kubernetes cluster.
+![](CreateCluster.png)
 
 ## Run Conformance Test
 
