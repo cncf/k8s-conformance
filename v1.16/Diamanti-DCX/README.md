@@ -1,4 +1,4 @@
-# Conformance tests for Diamanti Kubernetes cluster
+# Conformance tests for Diamanti Spektra integrated Kubernetes distribution
 
 ## Install Diamanti Spektra DCX v3.0.0 (based on Kubernetes v1.16.8) and create a cluster
 
