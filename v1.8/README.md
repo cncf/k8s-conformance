@@ -10,7 +10,7 @@ sudo su
 curl -L https://dce.daocloud.io/DaoCloud_Enterprise/4.0.0 os-requirements  > ./os-requirements
 chmod +x ./os-requirements
 ./os-requirements
-bash -c "$(docker run -i --rm daocloud.io/daocloud/dce:4.0.0-32741 install)"
+bash -c "$(docker run -i --rm daocloud.io/daocloud/dce:4.0.0-32559 install)"
 ```
 To add more nodes to the cluster, the user need log into DaoCloud Enterprise control panel and follow instructions under node management section.
 
