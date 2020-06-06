@@ -1,0 +1,8 @@
+vendor: ACME 
+name: ACME k8s 
+version: 0.1
+website_url: http://www.example.com/acmek8s/memeep.html
+documentation_url: http://www.example.com/acmek8s/memeep.html
+product_logo_url: https://landscape.cncf.io/logos/acme.svg
+type: distribution
+description: ACME Kubernetes for all your boulder workloads
