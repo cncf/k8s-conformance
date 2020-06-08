@@ -2,17 +2,16 @@
 
 ### Login 
 
-Login to [QingCloud Console Platform](https://console.qingcloud.com/) Website with your own qingcloud account.
+Sign in to [QingCloud Console](https://console.qingcloud.com/) with you own account.
 
 ### Create QKE Cluster
 
-Navigate to QKE cluster, Create a ap2a Region(important) QKE cluster according to [QKE Guide](https://docs.qingcloud.com/product/container/qke/index).
+Navigate to QKE cluster, choose ap2a/ap3 region, and create QKE cluster according to [QKE User Guide](https://docs.qingcloud.com/product/container/qke/index).
 
 ![](cluster.png)
 
 >> Note:
->> pls select ap2a region
->> gcr.io/google-containers website for some certain reason.
+>> please choose ap2a or ap3 region to avoid network issues when pulling gcr.io images.
 
 ### Run conformance tests
 
