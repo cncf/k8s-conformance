@@ -22,7 +22,7 @@ $ gsctl create kubeconfig -c <clusterid> --certificate-organizations=system:mast
 
 Wait a bit for the cluster to come up (depending on the underlying infrastructure this might take a few minutes).
 
-Download a [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+We follow the [official instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md):
 
 ```
 $ go get -u -v github.com/heptio/sonobuoy
@@ -37,7 +37,7 @@ $ sonobuoy run
 View actively running pods:
 
 ```
-$ sonobuoy status 
+$ sonobuoy status
 ```
 
 To inspect the logs:
