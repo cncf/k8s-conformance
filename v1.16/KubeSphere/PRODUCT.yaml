@@ -1,0 +1,10 @@
+vendor: QingCloud Technologies Corp.
+name: KubeSphere®️ (QKE)
+version: v2.0.0 - KubeSphere v2.1.1
+website_url: https://appcenter.qingcloud.com/apps/app-cmgbd5k2/KubeSphere%C2%AE%EF%B8%8F%20(QKE)
+repo_url: https://github.com/QingCloudAppcenter/QKE
+documentation_url: https://docs.qingcloud.com/product/container/qke/index
+product_logo_url: https://appcenter.qingcloud.com/apps/app-cmgbd5k2 
+type: distribution
+description: 'Kubesphere.io is an upstream project of the KubeSphere container management platform. Our vision is to provide an easier, more friendly and more powerful distributed management platform for individuals and enterprises based on Kubernetes, as well as meet more business demands and help more users to use Kubernetes faster and better.'
+
