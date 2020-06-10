@@ -2,7 +2,7 @@
 
 ### Login
 
-Login to [Lstack Container Service](https://www.lstack.com.cn/cluster/cluster-adm/) Website with your own lstack cloud account.
+Login to [LStack Container Service](https://www.lstack.com.cn/cluster/cluster-adm/) Website with your own lstack cloud account.
 
 ### Create Kubernetes Cluster
 
