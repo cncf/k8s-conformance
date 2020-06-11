@@ -4,5 +4,6 @@ version: v2.0.0 - KubeSphere v2.1.1
 website_url: https://www.qingcloud.com/products/kubesphereqke/
 repo_url: https://github.com/QingCloudAppcenter/QKE
 documentation_url: https://docs.qingcloud.com/product/container/qke/index
-type: platform
+product_logo_url: QingCloudLogo.ai
+type: hosted
 description: 'KubeSphere®️ (QKE) can provisioning a k8s/KubeSphere cluster in minutes automatically by just a few clicks and inputs.'
