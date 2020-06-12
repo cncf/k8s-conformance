@@ -1,11 +1,8 @@
-vendor: WangsuCloud
-name: WangsuCloud Container Service
+vendor: WANGSU CLOUD
+name: WANGSU CLOUD Container Service
 version: v1.16.9
 website_url: https://www.wangsucloud.com/#/product/ContainerService
 documentation_url: https://www.wangsucloud.com/index.html#/help/details/20140/20143
 product_logo_url: http://paas-update.s3-cn-east-1.wcsapi.com/logo/wangsucloud_logo.ai
 type: hosted
-description: Wangsu Cloud Container Service makes it easy for you to deploy, manage, and scale Kubernetes clusters to run containerised applications on the Wangsu Cloud.
-
-
-
+description: WANGSU CLOUD Container Service makes it easy for you to deploy, manage, and scale Kubernetes clusters to run containerised applications on the Wangsu Cloud.
