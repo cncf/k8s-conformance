@@ -1,0 +1,8 @@
+vendor: H3C
+name: H3C CloudOS
+version: E5101P01
+website_url: https://www.h3c.com/en/
+documentation_url:https://www.h3c.com/en/Support/Resource_Center/Technical_Documents/
+product_logo_url: https://landscape.cncf.io/logos/h3-c-technologies-member.svg
+type: distribution
+description: 'Based on container technology and pluggable open architecture, H3C CloudOS provides compute, storage, network, security, big data, database, PaaS, and DevOps services as a full-stack cloud management platform. It enables you to perform unified operations and management of various cloud resources.'
