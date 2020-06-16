@@ -12,39 +12,44 @@ You can create QKE cluster according to [QKE User Guide](https://docs.qingcloud.
 
 ![](guide1.png)
 
-- Create Cluster with one master node and two standard node configurations
+- Create Cluster with standard test resource configuration
 
 ![](guide2.png)
 
 ![](guide3.png)
 
-- Create a host which can communicate with QKE cluster as local test host
+![](guide4.png)
+
+![](guide5.png)
+
+- Choose client node as test host
+
+![](guide6.png)
+
+![](guide7.png)
 
 >> Note:
 >> please choose ap2a or ap3 region to avoid network issues when pulling gcr.io images.
 
 ### Run conformance tests
 
-- Copy Kubeconfig to your local test host
-
-- Start the conformance tests on your local test host
+- Start the conformance tests on your test host
 
 ```shell
 sonobuoy run \
   --mode=certified-conformance \
-  --kubeconfig=path/to/kubeconfig \
 ```
 
 You can monitor the conformance tests by tracking the sonobuoy logs. Wait for the line no-exit was specified, sonobuoy is now blocking, which signals the end of the testing.
 
 ```shell
-sonobuoy logs --kubeconfig=path/to/kubeconfig -f
+sonobuoy logs -f
 ```
 
 Upon completion of the tests you can obtain the results by copying them off the sonobuoy pod.
 
 ```shell
-OUTPUT_PATH=$(sonobuoy retrieve --kubeconfig=path/to/kubeconfig)
+OUTPUT_PATH=$(sonobuoy retrieve)
 echo ${OUTPUT_PATH}
 mkdir ./results
 tar xzf ${OUTPUT_PATH} -C ./results
