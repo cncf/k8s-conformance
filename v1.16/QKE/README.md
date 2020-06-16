@@ -22,7 +22,7 @@ You can create QKE cluster according to [QKE User Guide](https://docs.qingcloud.
 
 ![](guide5.png)
 
-- Choose client node as test host
+- Click the VNC icon to log in to the client node with root/k8s password
 
 ![](guide6.png)
 
