@@ -13,5 +13,7 @@ Secondly, choose the "cluster" function module.
 Thirdly, click on "Create Kubernetes cluster" button, then you should fill in the required parameters.
 Finally, you can get the new Kubernetes cluster.
 
+Pictures-create cluster.png can be for reference.
+
 ## Deploy sonobuoy Conformance test
 Follow the conformance suite instructions [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to test it.
