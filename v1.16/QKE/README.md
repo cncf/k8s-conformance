@@ -6,9 +6,19 @@ Sign in to [QingCloud Console](https://console.qingcloud.com/) with you own acco
 
 ### Create QKE Cluster
 
-Navigate to QKE cluster, choose ap2a/ap3 region, and create QKE cluster according to [QKE User Guide](https://docs.qingcloud.com/product/container/qke/index).
+You can create QKE cluster according to [QKE User Guide](https://docs.qingcloud.com/product/container/qke/index).
 
-![](cluster.png)
+- Choose ap2a/ap3 region, and navigate to QKE cluster
+
+![](guide1.png)
+
+- Create Cluster with one master node and two standard node configurations
+
+![](guide2.png)
+
+![](guide3.png)
+
+- Create a host which can communicate with QKE cluster as local test host
 
 >> Note:
 >> please choose ap2a or ap3 region to avoid network issues when pulling gcr.io images.
