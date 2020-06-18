@@ -1,0 +1,9 @@
+vendor: TmaxA&C
+name: HyperCloud
+version: v4.0.0
+website_url: https://tmaxanc.com/#!/product-introduce/HyperCloud
+repo_url: https://github.com/tmax-cloud
+documentation_url: https://tmaxanc.com/#!/support/board/TmaxOS?page=1
+product_logo_url: https://landscape.cncf.io/logos/tmax-a-c-member.svg
+type: distribution
+description: HyperCloud is an open-based integrated cloud engine based on Kubernetes. HyperCloud provides various cloud tools for customers to adjust infrastructure/platforms easily considering the IT environment. It also offers open-source services and technical supports that have been self-proven by Tmax.
