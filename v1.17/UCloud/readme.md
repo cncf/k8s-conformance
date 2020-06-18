@@ -6,7 +6,15 @@ You must register a UCLoud Cloud Account following [this](https://passport.uclou
 
 #### Create UK8S Cluster
 
-After login in UCLoud Console，You can Create a UK8S Cluster in Hong Kong region in this [pages](https://console.ucloud.cn/uk8s/manage). The Kubernetes Version is v1.17.4 by default.
+After login in UCLoud Console，You can Create a UK8S Cluster in Hong Kong region in this [pages](https://console.ucloud.cn/uk8s/manage). The Kubernetes Version is v1.17.4 bydefault.
+
+1. step one : Click "Create Cluster" Button ;
+
+2. step two : Config Master and Node, or you can just use the default config;
+
+3. step three: Set password for the node of  cluster;
+
+4. step four: Click "Purchase Now" button, the k8s cluster will running about  ten minutes later;
 
 #### Access Cluster
 
