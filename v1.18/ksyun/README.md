@@ -5,80 +5,79 @@
 Login to [Kingsoft Cloud](https://passport.ksyun.com/) Website with your own kingsoft cloud account. If you don't have an account,please refer to the [page](https://passport.ksyun.com/register.html) to sign up an account first.
 
 ### Create Kubernetes Cluster
-集群作为容器运行的基础云资源，创建集群是使用容器服务的第一步，在创建集群过程中，用户可以自定义集群中云服务器的数量、操作系统、数据盘等配置信息 创建集群分为以下三步：
-1. 配置集群信息
-2. 节点配置
-3. 设置基本信息
+There are three steps to create a cluster:
+1. Configure cluster information
+2. Master And Worker Node configuration
+3. Set basic information
 
-点击金山云控制台左边菜单栏，选择【计算】-【容器引擎】，进入容器引擎的控制台，
+Click the menu bar on the left side of the Ksyun Cloud console, select [Compute]-[Container Engine] to enter the console of the container engine
 
-##### 配置集群信息
+##### Configure cluster information
 ![](create-cluster.png)
 
-    1）集群名称：用户自定义集群的名称，2-64个字符，支持中文，英文，数字，以及特殊字符-,.!$^*()%#&+/:;<=>[]_`{|}~
+    1）Cluster Name：User-defined cluster name, 2-64 characters, supports Chinese, English, numbers, and special characters -,.!$^*()%#&+/:;<=>[]_`{|}~
 
-    2）Kubernetes版本：目前金山云kubernetes版本为1.10.5、1.12.3、1.13.4、1.15.5、1.17.6和1.18.3，自定义选择
+    2）Kubernetes Support Version：The current Kingsoft Cloud kubernetes version is 1.10.5, 1.12.3, 1.13.4, 1.15.5, 1.17.6 and 1.18.3
 
-    3）集群网络：选择集群所在的VPC网络
+    3）Cluster Network：Select the VPC network where the cluster is located
 
-    4）终端子网：终端子网用于创建私网负载均衡，用于集群内master节点和node节点通信
+    4）Terminal Subnet：The terminal subnet is used to create private network load balancing and is used for communication between the master node and worker nodes in the cluster
 
-    5）Pod CIDR：为集群内的Pod分配此网络地址段的IP，客户自定义三个私有网络作为Pod网段
+    5）Pod CIDR：Assign the IP of this network address segment to the Pods in the cluster. The customer defines three private networks as Pod network segments
 
-    6）Service CIDR：为集群内的Service分配此网络地址段的IP，客户自定义三个私有网络作为Service网段
+    6）Service CIDR：Assign the IP of this network address segment to the Service in the cluster. The customer defines three private networks as the Service segment
 
-    7）网络模型：选择集群的网络模型，目前支持Flannel和Canal
+    7）Network Model：Select the network model of the cluster, currently supports Flannel and Canal
 
-    8）集群描述：集群的描述，用户自定义填写
+    8）Cluster Description：Cluster description, user-defined
 
-##### 节点配置
-用户自定义集群中节点的配置和网络信息：
+##### Master And Worker Node configuration
+User-defined configuration and network information of nodes in the cluster：
 
-    1）计费模式：暂时只支持按日配置付费（月结）和按小时配置实时付费的计费方式
+    1）Billing Model：For the time being, only the daily configuration payment (monthly settlement) and hourly configuration real-time payment are supported
 
-    2）master管理模式：当前仅支持独立部署模式，托管模式集群正在内测中，敬请期待
+    2）Master Management Mode：Currently only supports the independent deployment mode, the managed mode cluster is under internal testing, so stay tuned
 
-    3）节点类型：目前支持选择普通云主机和专属云主机创建集群
+    3）Node Type：Currently supports the selection of ordinary cloud hosts and dedicated cloud hosts to create clusters
 
-    4）安全组：定义集群中节点所属的安全组，关于容器集群安全组推荐设置，请参考容器集群安全组推荐设置
+    4）Security Group：Define the security group to which the nodes in the cluster belong. For the container cluster security group recommended settings, please refer to the container cluster security group recommended settings
 
-##### Master&Etcd节点选择
+###### Master&Etcd node selection
 ![](node-selec.png)
 
-    1）可用区：选择节点部署的可用区
+    1）Availability Zone: Select Availability Zone for Node Deployment
 
-    2）集群网络-子网：选择节点部署的VPC内的子网信息
+    2）Cluster network-subnet: Select the subnet information in the VPC deployed by the node
 
-    3）云服务器系列：自定义选择云服务器的系列
+    3）Cloud Server Series: Customize cloud server series
 
-    4）云服务器类型：自定义选择云服务器的类型
+    4）Cloud Server Type: Customize the type of cloud server
 
-    5）CPU配置：自定义CPU的配置，推荐>=4核
+    5）CPU Configuration: Custom CPU configuration, recommended >=4 core
 
-    6）内存配置：自定义内存的配置，推荐>=8G
+    6）Memory Configuration: Custom memory configuration, recommended >=8G
 
-    7）操作系统：目前金山云容器引擎仅支持CentOS 7.3 64位和Ubuntu-18.04 64位节点镜像
+    7）Operating System: Currently, Kingsoft Cloud Container Engine only supports CentOS 7.5 64-bit and Ubuntu-18.04 64-bit node images
 
-    8）系统盘：本地SSD，20G
+    8）System Disk: 本地SSD，20G
 
-    9）数据盘：本地SSD，自定义数据盘大小
+    9）Data Disk: Local SSD, custom data disk size
 
-    11）购买数量：目前master节点数量只能是3个，支持挎可用区部署
 
-##### Worker节点选择
+###### Worker node selection
 ![](worker-select.png)
-配置信息同Master&Etcd
+Configuration information is the same as Master&Etcd
 
-##### 设置基本信息
+##### Set basic information
 ![](set-basic-info.png)
 
-    1）所属项目：自定义购买的云资源的所属项目
+    1）Project: Cloud resources project
 
-    2）服务器名称：自定义服务器名称，2-64个字符，支持中文，英文，数字，以及特殊字符-,.!$^*()%#&+/:;<=>[]_`{|}~
+    2）Server Nickname: Custom server name, 2-64 characters, support Chinese, English, numbers, and special characters -,.!$^*()%#&+/:;<=>[]_`{|}~
 
-    3）登录方式：用户自定义选择登录方式，支持设置密码和密钥登录
+    3）Login Method: User-defined choice of login method, support setting password and key login
 
-点击【创建】按钮，执行集群创建的操作，在集群列表页中可查询创建的集群
+Click the [Create] button to perform the operation of creating a cluster, you can query the created cluster on the cluster list page
 ![](cluster-list.png)
 
 ##### Access to Cluster
