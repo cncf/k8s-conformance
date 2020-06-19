@@ -15,6 +15,6 @@ After the cluster is created, run the following command to obtain the configurat
 eval $(openstack coe cluster config <CLUSTER_ID>)
 ```
 
-## Testing      
+## Testing
 
 Once the configuration files have been created, you should be able to run `kubectl` to interact with the APIs of the Kubernetes cluster. Follow the conformance suite [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to test it.
