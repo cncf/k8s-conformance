@@ -119,8 +119,7 @@ Now check the status of the cluster:
 ## Running the conformance suite
 
 Then, download sonobuoy from upstream:
-  $ wget
-https://github.com/heptio/sonobuoy/releases/download/v0.13.0/sonobuoy_0.13.0_linux_amd64.tar.gz
+  $ wget https://github.com/heptio/sonobuoy/releases/download/v0.13.0/sonobuoy_0.13.0_linux_amd64.tar.gz
   $ tar xzf sonobuoy_0.13.0_linux_amd64.tar.gz
 
 After that, prepare config for e2e only and trigger the e2e test suite
