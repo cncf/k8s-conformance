@@ -121,7 +121,7 @@ Replace "IP/FQDN" with the IP address to be used for the node.
 * Adding each worker node to the cluster
 For each worker node, join the node to the cluster:
  
- $ skuba node join --role worker [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
+ $ skuba node join --role worker [--user sles --sudo] --target IP/FQDN NODE_NAME
 
 Now check the status of the cluster:
  
