@@ -8,6 +8,37 @@ You just have to choose the cloud infrastructure to use. For more information ab
 
 A cocktail cloud is a container application management platform that provides a continuous development/deployment/operating environment for container-based applications. Integrated management of cloud infrastructure, automated continuous integration/deployment (CI/CD) operations required for development/operating container applications, service catalogs, auto scaling on load, and dynamic resource management are provided through easy and convenient GUI.
 
-## Run the conformance test
+## To Reproduce:
+1. Create a kubernetes cluster, download the kubeconfig and configure `kubectl` to use this config file.
 
-Wait for the cluster and all worker nodes to reach running state then follow the [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to run the conformance tests.
+2. Install Cocktail Cloud Enterprise.
+
+3. Download a sonobuoy [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
+    ```sh
+    $ go get -u -v github.com/vmware-tanzu/sonobuoy
+    ```
+
+4. Configure your kubeconfig file by running:
+    ```sh
+    $ export KUBECONFIG="/path/to/your/cluster/config"
+    ```
+
+5. Run sonobuoy:
+    ```sh
+    $ sonobuoy run --mode=certified-conformance
+    ```
+
+6. Watch the logs:
+    ```sh
+    $ sonobuoy logs
+    ```
+
+7. Check the status:
+    ```sh
+    $ sonobuoy status
+    ```
+
+8. Once the status commands shows the run as completed, you can download the results tar.gz file:
+    ```sh
+    $ sonobuoy retrieve
+    ```
