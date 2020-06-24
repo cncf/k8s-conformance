@@ -48,10 +48,13 @@ In both cases:
 
 If you have an existing SUSE Linux Enterprise Server 15 SP1 system that you can use as a management/deployment host, all you need to do on that system is:
 * Add the pattern for the Containers Module and the SUSE CaaS Platform extension
-$ SUSEConnect -p sle-module-containers/15.1/x86_64
-$ SUSEConnect -p caasp/4.0/x86_64 -r <PRODUCT_KEY>
+
+  $ SUSEConnect -p sle-module-containers/15.1/x86_64
+
+  $ SUSEConnect -p caasp/4.0/x86_64 -r <PRODUCT_KEY>
 * Install the Management pattern:
-$ zypper in -t pattern SUSE-CaaSP-Management
+
+  $ zypper in -t pattern SUSE-CaaSP-Management
 
 If you are installing the management/deployment host from scratch: 
 * Boot the system from the installer medium
@@ -59,10 +62,12 @@ If you are installing the management/deployment host from scratch:
 * Install at least the base module, the containers module, and the SUSE CaaS Platform extension module
 
 After completion of the installation and system reboot, log in and set up the SSH agent. If you indtalled a desktop environment, it should already be running. If not, start it manually:
-$ eval "$(ssh-agent)"
+
+  $ eval "$(ssh-agent)"
 
 Create SSH public and private keys for the identity to be used to bootstrap the cluster. Add them to the SSH server.
- * ssh-add -t <lifetime> <PATH-TO-KEY>
+
+  $ ssh-add -t <lifetime> <PATH-TO-KEY>
 
 You can use the automated installer, AutoYaST, and the Repository Mirroning Tool (RMT) to perform repetitive installations. For a small test cluster, manual configuration is adequate.
 
@@ -70,50 +75,66 @@ For each node of the cluster (master or worker), follow the installation steps a
 
 After installation:
 * Turn off swapping on each node
-$ sudo swapoff -a
-* Modify /etc/fstab on each node to remove the swap entries.
+
+  $ sudo swapoff -a
+ * Modify /etc/fstab on each node to remove the swap entries.
 * Reboot the nodes
 * Add the SUSE CaaS Platform repositories to each node
-$ SUSEConnect -p sle-module-containers/15.1/x86_64
-$ SUSEConnect -p caasp/4.0/x86_64 -r <CAASP_REGISTRATION_CODE>
+
+  $ SUSEConnect -p sle-module-containers/15.1/x86_64
+  
+  $ SUSEConnect -p caasp/4.0/x86_64 -r <CAASP_REGISTRATION_CODE>
 
 ## Bootstrapping the Cluster
 
 skuba, the cluster bootstrap and updating tool, is a wrapper that uses kubeadm, but performs needed setup and cleanup steps, and also orcherstrates cluster-wide operations such as updates. 
 
 By default, skuba runs as root. However, if you set up a non-root user and wish to use it for deployment, you must:
+
 * Configure sudo on each node for the user to be able to authenticate without password.
+  
   $ echo "<USERNAME> ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 * Add the following flags to any skuba command line:
+
     --sudo --user <USERNAME>
 
 You can now bootstrap the cluster on your management host. 
 
 * Generate the folder that contains configuration information for the cluster.
+
   $ skuba cluster init --control-plane <LB_IP/FQDN> my-cluster
+
 Replace "my-cluster" with the custom name you choose. Replace "<LB_IP/FQDN>" with the IP address or FQDN of your master node in the single-master configuration.
 
 You can now modify aspects of the configuration before adding nodes, but you probably will not have to. For example, the configuration defaults to a podSubnet value (the network on which all pods will be accessed) to 10.244.0.0/16 and the serviceSubnet (network for all services) to 10.96.0.0/12. You only need to change these if they conflict with non-routed addresses already in use. 
 
 * Adding the first master node to the cluster
+
   $ cd my-cluster   (or whatever name you gave your cluster)
+
   $ skuba node bootstrap [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
+
 Replace "<IP/FQDN>" with the IP address to be used for the node.
 
 * Adding each worker node to the cluster
 For each worker node, join the node to the cluster:
-  $ skuba node join --role worker [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
+ 
+ $ skuba node join --role worker [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
 
 Now check the status of the cluster:
-  $ skuba cluster status
+ 
+ $ skuba cluster status
 
 ##  Using kubectl
 * You can install and use kubectl by installing the kubernetes-client package from the SUSE CaaS Platform extension.
-  $ sudo zypper in kubernetes-client
+ 
+ $ sudo zypper in kubernetes-client
 
 * To make your configuration easier to access, copy it to a canonical location:
-  $ mkdir -p ~/.kube
-  $ cp admin.conf ~/.kube/config
+ 
+ $ mkdir -p ~/.kube
+ 
+ $ cp admin.conf ~/.kube/config
 
 ## Running the conformance suite
 
