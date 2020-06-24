@@ -83,37 +83,37 @@ skuba, the cluster bootstrap and updating tool, is a wrapper that uses kubeadm, 
 
 By default, skuba runs as root. However, if you set up a non-root user and wish to use it for deployment, you must:
 * Configure sudo on each node for the user to be able to authenticate without password.
-$ echo "<USERNAME> ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+  $ echo "<USERNAME> ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 * Add the following flags to any skuba command line:
-** --sudo --user <USERNAME>
+    --sudo --user <USERNAME>
 
 You can now bootstrap the cluster on your management host. 
 
 * Generate the folder that contains configuration information for the cluster.
-$ skuba cluster init --control-plane <LB_IP/FQDN> my-cluster
+  $ skuba cluster init --control-plane <LB_IP/FQDN> my-cluster
 Replace "my-cluster" with the custom name you choose. Replace "<LB_IP/FQDN>" with the IP address or FQDN of your master node in the single-master configuration.
 
 You can now modify aspects of the configuration before adding nodes, but you probably will not have to. For example, the configuration defaults to a podSubnet value (the network on which all pods will be accessed) to 10.244.0.0/16 and the serviceSubnet (network for all services) to 10.96.0.0/12. You only need to change these if they conflict with non-routed addresses already in use. 
 
 * Adding the first master node to the cluster
-$ cd my-cluster   (or whatever name you gave your cluster)
-$ skuba node bootstrap [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
+  $ cd my-cluster   (or whatever name you gave your cluster)
+  $ skuba node bootstrap [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
 Replace "<IP/FQDN>" with the IP address to be used for the node.
 
 * Adding each worker node to the cluster
 For each worker node, join the node to the cluster:
-$ skuba node join --role worker [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
+  $ skuba node join --role worker [--user sles --sudo] --target <IP/FQDN> <NODE_NAME>
 
 Now check the status of the cluster:
-$ skuba cluster status
+  $ skuba cluster status
 
 ##  Using kubectl
 * You can install and use kubectl by installing the kubernetes-client package from the SUSE CaaS Platform extension.
-$ sudo zypper in kubernetes-client
+  $ sudo zypper in kubernetes-client
 
 * To make your configuration easier to access, copy it to a canonical location:
-$ mkdir -p ~/.kube
-$ cp admin.conf ~/.kube/config
+  $ mkdir -p ~/.kube
+  $ cp admin.conf ~/.kube/config
 
 ## Running the conformance suite
 
@@ -132,14 +132,18 @@ After that, prepare config for e2e only and trigger the e2e test suite
  $ ./sonobuoy --config sonobuoy.json run
 
 You can check status of the test:
-  $ ./sonobuoy status
+ 
+ $ ./sonobuoy status
 
 Once sonobuoy status shows the run as completed, you can retrieve logs archive by:
-  $ ./sonobuoy retrieve ~/logs/
+ 
+ $ ./sonobuoy retrieve ~/logs/
 
 Then, you can extract the archive in ~/logs/ and check if the test passed by checking last few lines in
 <archive>/plugins/e2e/results/e2e.logs:
-  $ tail -n 10 e2e.log
+ 
+ $ tail -n 10 e2e.log
 
 Finally, you can do a cleanup on cluster by calling:
-  $ ./sonobuoy delete
+ 
+ $ ./sonobuoy delete
