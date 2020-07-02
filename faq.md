@@ -38,7 +38,7 @@ No. If the software is the same, and just the name has changed, you just need to
 
 ## Is a participation form required per company or per product?
 
-Per product. Each separate product (i.e., different product name) from your company requires a different [participation form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.md). We don't need a new form for new versions of an existing product.
+Per product. Each separate product (i.e., different product name) from your company requires a different [participation form](https://github.com/cncf/k8s-conformance/blob/master/participation-form/Certified_Kubernetes_Form.pdf). We don't need a new form for new versions of an existing product.
 
 ## Are there any limitations regarding the logo?
 
