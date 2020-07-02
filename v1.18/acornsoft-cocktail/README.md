@@ -13,6 +13,7 @@ A cocktail cloud is a container application management platform that provides a 
 The following instructions will help you configure and create a Kubernetes cluster:
 
 1. Download Cocktail Cloud CLI
+
    If you are a registered user, you can download using the download URL provided in the email.
 
 2. Prepare 1 Control Plane Node and 1 Node Worker Node.
