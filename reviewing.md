@@ -21,7 +21,7 @@ matter as long as we see `0 Failed | 0 Pending`. Also, there should be 0 tests
 listed as `Flaked`.
 
 6. Verify that no files outside of the submitted subdirectory are being modified.
-For example, if any submission is adding files to `https://github.com/cncf/k8s-conformance/tree/master/v1.18/coyote`,
+For example, if a submission is adding files to `https://github.com/cncf/k8s-conformance/tree/master/v1.18/coyote`,
 ensure that it doesn't change `https://github.com/cncf/k8s-conformance/blob/master/README.md` or
 `https://github.com/cncf/k8s-conformance/tree/master/v1.18/roadrunner`.
 
