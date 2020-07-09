@@ -21,16 +21,16 @@ matter as long as we see `0 Failed | 0 Pending`. Also, there should be 0 tests
 listed as `Flaked`.
 
 6. Verify that no files outside of the submitted subdirectory are being modified.
-For example, if a submission is adding files to `https://github.com/cncf/k8s-conformance/tree/master/v1.18/coyote`,
+For example, if a submission is adding files to `https://github.com/cncf/k8s-conformance/tree/master/v1.18/coyote/`,
 ensure that it doesn't change `https://github.com/cncf/k8s-conformance/blob/master/README.md` or
-`https://github.com/cncf/k8s-conformance/tree/master/v1.18/roadrunner`.
+`https://github.com/cncf/k8s-conformance/tree/master/v1.18/roadrunner/`.
 
 ## Policy Requirements
 
 1. Confirm that the vendor is currently a
 [member](https://www.cncf.io/about/members/) of CNCF. If they are not, request
 that they reach out to memberships@cncf.io to become a member in order to
-complete their certification. (Companies can alternatively pay a certfication
+complete their certification. (Companies can alternatively pay a certification
 fee equal to the cost of membership if, for whatever reason, they don't wish to
 become a CNCF member.) Alternatively, non-profit organizations (including community
 distributions like Debian) can certify at no cost.
