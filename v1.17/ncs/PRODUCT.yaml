@@ -1,0 +1,7 @@
+vendor: Nokia
+name: Nokia Container Services (NCS)
+version: NCS 20
+website_url: https://www.nokia.com/networks/products/cloudband-infrastructure-software/
+documentation_url: https://www.nokia.com/networks/products/cloudband-infrastructure-software/
+type: distribution
+description: 'Nokia Container Services introduces additional functionality to render upsream Kubernetes telco-grade.' 
