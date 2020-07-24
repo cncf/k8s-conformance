@@ -1,0 +1,9 @@
+vendor: AMIS Technology
+name: vishwakarma
+version: v1.18.6
+website_url: https://github.com/getamis/vishwakarma
+repo_url: https://github.com/getamis/vishwakarma
+documentation_url: https://github.com/getamis/vishwakarma/tree/master/Documentation
+product_logo_url: https://avatars2.githubusercontent.com/u/26534116?s=200&v=4
+type: distro
+description: Terraform modules to deploy Kubernetes cluster on opinionated Cloud Platform.
