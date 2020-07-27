@@ -9,7 +9,6 @@ https://imke.cloud
 
 Please email sales@innovo-cloud.de and ask for a new account credentials for Optimist and IMKE to be used by Cloud Native Computing Foundation (CNCF) Conformance tests for v1.16/innovo-imke 
 
-Your email should be sent from the cncf.io domain.
 Follow the steps in the email you recieve and login and change the password. Once this has been done then you should be able to login to https://imke.cloud
 
 
