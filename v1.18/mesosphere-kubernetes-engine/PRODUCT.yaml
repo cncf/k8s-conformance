@@ -3,6 +3,6 @@ name: Mesosphere Kubernetes Engine
 version: 2.7.0-1.18.6
 website_url: https://mesosphere.com/product/kubernetes-engine/
 documentation_url: https://docs.mesosphere.com/services/kubernetes/2.7.0-1.18.6/
-product_logo_url: https://user-images.brand.ai/mesosphere/mesosphere-brand-guidelines/mesosphere--vertical--color--dark-rkNdNBK83M.svg
+product_logo_url: https://assets.d2iq.com/production/assets/D2iQ-logo.svg
 type: distribution
 description: 'Mesosphere Kubernetes Engine makes it easy to deploy and manage Kubernetes on DC/OS.'
