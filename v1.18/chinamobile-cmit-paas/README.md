@@ -18,6 +18,8 @@ $ docker run -tid --name cmitpaas -p 1199:8088 --storage-opt size=70G \
           -v /var/run/docker.sock:/var/run/docker.sock \
         cmitpaas:20200715
 ```
+3.Please use UI to create Kubernetes cluster.
+When the Kubernetes cluster is up and running, proceed to run the conformance tests.
 
 ## Run Conformance Test
 
