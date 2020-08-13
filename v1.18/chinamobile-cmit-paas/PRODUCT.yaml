@@ -1,0 +1,8 @@
+vendor: China Mobile Infomation Technology Company Limited
+name: China Mobile CMIT PaaS
+version: 3.0.0
+website_url: http://www.10086.cn/
+documentation_url: http://it.10086.cn/
+product_logo_url: https://github.com/ChinaMobileIT/paas/blob/master/cmit-paas-logo.svg
+type: distribution
+description: An Enterprise Platform-as-a-Service based on Kubernetes.
