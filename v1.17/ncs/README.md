@@ -25,8 +25,8 @@
 
     Add following content.
 
-        http_proxy=http://135.245.48.34:8000/
-        https_proxy=http://135.245.48.34:8000/
+        http_proxy=http://100.100.100.100:8000/
+        https_proxy=http://100.100.100.100:8000/
         no_proxy="localhost,127.0.0.1,cluster.local,bcmt.cluster.local,<internal_service_ips>"
 
         export http_proxy https_proxy no_proxy
@@ -41,7 +41,7 @@
     Add following content:
 
         [Service]
-        Environment="HTTP_PROXY=http://135.245.48.34:8000/" "HTTPS_PROXY=http://135.245.48.34:8000/" "NO_PROXY=localhost,127.0.0.1,cluster.local,bcmt.cluster.local,bcmt-registry:5000,<internal_service_ips>"
+        Environment="HTTP_PROXY=http://100.100.100.100:8000/" "HTTPS_PROXY=http://100.100.100.100:8000/" "NO_PROXY=localhost,127.0.0.1,cluster.local,bcmt.cluster.local,bcmt-registry:5000,<internal_service_ips>"
 
     Restart docker:
 
