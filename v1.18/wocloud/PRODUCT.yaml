@@ -1,0 +1,8 @@
+vendor: CHINA UNICOM CLOUD & DATA CO.,LTD.
+name: WoCloud Container Platform
+version: v1.0
+website_url: https://www.woyun.cn
+documentation_url: https://www.woyun.cn/html/1/83/106/index.html
+product_logo_url: https://www.woyun.cn/upload/1595583259386.svg
+type: hosted
+description: 'WoCloud Container Platform is a container management platform based on Kubernetes.'
