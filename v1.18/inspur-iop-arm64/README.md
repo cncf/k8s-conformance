@@ -4,7 +4,7 @@
 
 - Linux Host OS (Kylin 4.0.2, GNU/Linux 4.4.58, aarch64)
 - User SSH Key (~/.ssh/id_rsa & ~/.ssh/id_rsa.pub)
-- Product installation package (includes images like hyperkube-arm64:v1.18.2 and the deployment scripts,etc.)
+- Product installation package (includes images like hyperkube-arm64:v1.18.6 and the deployment scripts,etc.)
 
 ## Install Inspur Cloud Kubernetes Engine
 
