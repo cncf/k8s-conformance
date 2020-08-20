@@ -1,0 +1,6 @@
+vendor: Alibaba Cloud
+name: Alibaba Cloud Container Service for Kubernetes
+version: v1.18.8
+website_url: https://www.aliyun.com/product/kubernetes
+documentation_url: https://help.aliyun.com/document_detail/86737.html
+product_logo_url: https://avatars2.githubusercontent.com/u/16377432?s=200&v=4
