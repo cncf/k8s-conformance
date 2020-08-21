@@ -79,7 +79,7 @@ Description: `Conformance results for vX.Y/$dir`
 
 For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission.
 
-If submitting test results for multiple versions, submit a pr for each product, ie. one pr for vX.Y results and a second pr for vX.Z
+If submitting test results for multiple versions, submit a PR for each product, ie. one PR for vX.Y results and a second PR for vX.Z
 
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
