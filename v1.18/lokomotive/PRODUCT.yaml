@@ -1,0 +1,9 @@
+vendor: Kinvolk
+name: Lokomotive
+version: v0.3.0
+website_url: https://github.com/kinvolk/lokomotive
+repo_url: https://github.com/kinvolk/lokomotive
+documentation_url: https://github.com/kinvolk/lokomotive/tree/v0.3.0/docs
+product_logo_url: https://raw.githubusercontent.com/kinvolk/lokomotive/v0.3.0/docs/images/lokomotive-logo.svg
+type: distribution
+description: 'Lokomotive is a minimal, easy to use and secure by default open source Kubernetes distribution.'
