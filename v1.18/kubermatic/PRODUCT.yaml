@@ -4,6 +4,6 @@ description: 'Kubermatic Kubernetes Platform is in an open source project to cen
 version: v2.14
 website_url: https://kubermatic.com
 documentation_url: https://docs.kubermatic.com/kubermatic/
-repo_url: github.com/kubermatic/kubermatic
+repo_url: https://github.com/kubermatic/kubermatic
 type: Distribution
 product_logo_url: https://drive.google.com/file/d/1Y73nNAI4qkLA3bbf6mmLN7hagjd2Z3s_/view?usp=sharing
