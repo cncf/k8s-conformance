@@ -1,5 +1,5 @@
 vendor: Kubermatic
-name: Kubermatic Kubernetes Engine
+name: Kubermatic Kubernetes Platform
 description: 'Kubermatic Kubernetes Platform is in an open source project to centrally manage the global automation of thousands of Kubernetes clusters across multicloud, on-prem and edge.'
 version: v2.14
 website_url: https://kubermatic.com
