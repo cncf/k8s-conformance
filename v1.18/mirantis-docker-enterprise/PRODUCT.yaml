@@ -1,6 +1,6 @@
 vendor: Mirantis
 name: Mirantis Docker Enterprise
-version: 3.3
+version: 3.3.3
 website_url: https://www.mirantis.com/software/docker/docker-enterprise/
 documentation_url: https://docs.docker.com/enterprise/
 product_logo_url: https://www.mirantis.com/json/mirantis-logo.svg
