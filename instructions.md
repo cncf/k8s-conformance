@@ -55,7 +55,7 @@ This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
 mkdir ./results; tar xzf $outfile -C ./results
 ```
 
-**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/{e2e.log,junit.xml}**.
+**NOTE:** The two files required for submission are located in the tarball under **plugins/e2e/results/global/{e2e.log,junit_01.xml}**.
 
 To clean up Kubernetes objects created by Sonobuoy, run:
 
@@ -78,6 +78,8 @@ Description: `Conformance results for vX.Y/$dir`
 ### Contents of the PR
 
 For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission.
+
+If submitting test results for multiple versions, submit a PR for each product, ie. one PR for vX.Y results and a second PR for vX.Z
 
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
@@ -145,7 +147,7 @@ $ outfile=$(sonobuoy retrieve)
 $ mkdir ./results; tar xzf $outfile -C ./results
 
 $ mkdir -p ./${k8s_version}/${prod_name}
-$ cp ./results/plugins/e2e/results/* ./${k8s_version}/${prod_name}/
+$ cp ./results/plugins/e2e/results/global/* ./${k8s_version}/${prod_name}/
 
 $ cat << EOF > ./${k8s_version}/${prod_name}/PRODUCT.yaml
 vendor: Yoyodyne
