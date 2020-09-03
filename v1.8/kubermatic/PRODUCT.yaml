@@ -1,5 +1,5 @@
 vendor: Kubermatic
-name: Kubermatic Container Engine
+name: Kubermatic Kubernetes Platform
 version: v2.0
 website_url: https://loodse.io
 documentation_url: https://loodse.io
