@@ -1,0 +1,9 @@
+vendor: Banzai Cloud
+name: Pipeline Kubernetes Engine (PKE)
+version: v0.5.1
+website_url: https://banzaicloud.com
+repo_url: https://github.com/banzaicloud/pke
+documentation_url: https://banzaicloud.com/docs/pke/overview/
+product_logo_url: https://banzaicloud.com/downloads/logo/bc+logo+vertical+2211.svg
+type: distribution
+description: PKE is the preferred Kubernetes distribution of the Banzai Cloud Pipeline platform which supercharges the development, deployment and scaling of container-based applications with native support for multi-, hybrid-, and edge-cloud environments.
