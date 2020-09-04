@@ -2,8 +2,9 @@
 
 ## Install Diamanti Spektra v3.1 (based on Kubernetes v1.18.8) and create a cluster
 
+Use regular dctl command to create a cluster (consult Diamanti D-Series CLI Guide for details) and then create a default network for that cluster.  If you are using D-Series hardware, for your default network set host-network flag as enabled.
 
-Diamanti cluster:
+Diamanti 3 nodes cluster:
 
 [root@softserv93 conformance]# dctl cluster status
 Name           	: mycluster
