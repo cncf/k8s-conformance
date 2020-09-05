@@ -1,6 +1,13 @@
 # ebaocloud
 
-## Create Kubernetes Cluster V1.18.x
+## Installation
+
+1. install ansible:
+
+   ```yum install -y ansible-2.9.2```
+2. install kubernetes cluster:
+
+   ```ansible-playbook -i hosts.yaml install.yaml```
 
 ## Run Conformance Test
 
