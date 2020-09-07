@@ -75,11 +75,20 @@ gcr.io/k8s-authenticated-test/agnhost:2.6
 invalid.com/invalid/alpine:3.1
 ```
 
+## Install TCMS
 
-NodePort range
+### Download the package
 
-[30000,32767]
+[Contact Teamsun](mailto: cloudsystem@vsettan.com.cn) to download the TCMS installation package.
 
+### Run the following command to install the TCMS:
+
+```sh
+$ tar xzvf -C /opt TCMS-v2.2-install.tar.gz
+$ cd /opt/TCMS-v2.2-install
+$ bash prepare.sh
+$ bash install.sh
+```
 
 ## Start Test
 
