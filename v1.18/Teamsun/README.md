@@ -16,7 +16,6 @@ go version go1.14.6 linux/amd64
 
 sonobuoy
 ```
-## Install
 $ go get github.com/vmware-tanzu/sonobuoy@v0.18.5
 Go to GOPATH/bin, copy binaries to /usr/local/bin
 
