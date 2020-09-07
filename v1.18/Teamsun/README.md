@@ -78,7 +78,7 @@ invalid.com/invalid/alpine:3.1
 
 ### Download the package
 
-[Contact Teamsun](mailto: cloudsystem@vsettan.com.cn) to download the TCMS installation package.
+[Contact Teamsun](mailto:cloudsystem@vsettan.com.cn) to download the TCMS installation package.
 
 ### Run the following command to install the TCMS:
 
