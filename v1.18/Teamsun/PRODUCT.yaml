@@ -1,0 +1,8 @@
+vendor: Teamsun
+name:  TCMS
+version: 2.2
+website_url: http://www.teamsun.com.cn/
+documentation_url: http://www.teamsun.com.cn/
+product_logo_url: https://landscape.cncf.io/logos/teamsun-member.svg
+type: distribution
+description: TCMS provides a simple, practical, user-friendly way to manage applications on Kubernetes.
