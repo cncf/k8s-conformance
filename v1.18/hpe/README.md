@@ -1,5 +1,5 @@
 All hosts are assumed to be Centos or RHEL.
-Assumes the user has HPE Container Platform software installed on 'controller' host.
+Assumes the user has HPE Ezmeral Container Platform software installed on 'controller' host.
 
 ### Add Gateway 
 -Login as admin to the Web UI controller running the product.
