@@ -1,0 +1,9 @@
+vendor: Talos Systems
+name: Talos
+version: v0.6.1
+website_url: https://www.talos-systems.com
+repo_url: https://github.com/talos-systems/talos
+documentation_url: https://www.talos.dev
+product_logo_url: https://www.talos-systems.com/images/TalosSystems_Horizontal_Logo_FullColor_RGB-for-site.svg
+type: installer
+description: Talos is a modern Kubernetes-focused OS designed to be secure, immutable, and minimal.
