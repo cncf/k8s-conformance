@@ -4,12 +4,12 @@
 
 | Name       | Version     |
 |------------|-------------|
-| kubeadm    | v1\.16\.9   |
-| kubelet    | v1\.16\.9   |
-| kubectl    | v1\.16\.9   |
-| etcd       | 3\.3\.15\-0 |
-| Calico     |  v3\.8      |
-| Docker     | 18\.06\.0   |
+| kubeadm    | v1\.19\.0   |
+| kubelet    | v1\.19\.0   |
+| kubectl    | v1\.19\.0   |
+| etcd       | 3\.4\.9\-1 |
+| Calico     |  v3\.16      |
+| Docker     | 18\.09\.0   |
 | Haproxy    | 1\.7        |
 | Keepalived | 2\.0\.17    |
 
@@ -91,7 +91,7 @@ $ setenforce 0
 $ sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
 
-$ yum install -y kubelet-1.16.9-0 kubeadm-1.16.9-0 kubectl-1.16.9-0 –disableexcludes=kubernetes
+$ yum install -y kubelet-1.19.0-0 kubeadm-1.19.0-0 kubectl-1.19.0-0 –disableexcludes=kubernetes
 
 $ systemctl enable -now kubelet
 
@@ -315,7 +315,7 @@ k8s-mgmt01   NotReady   master   31s   v1.16.9
 #### 5. Installing a Pod network add-on (Calico)
 
 ```sh
-$ wget https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+$ wget https://docs.projectcalico.org/v3.16/manifests/calico.yaml
 $ sed -i 's/192.168.0.0\/16/10.244.0.0\/16/g' calico.yaml
 $ kubectl apply -f calico.yaml
 ```
@@ -371,7 +371,7 @@ $ setenforce 0
 $ sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
 
-$ yum install -y kubelet-1.16.9-0 kubeadm-1.16.9-0 kubectl-1.16.9-0 –disableexcludes=kubernetes
+$ yum install -y kubelet-1.19.0-0 kubeadm-1.19.0-0 kubectl-1.19.0-0 –disableexcludes=kubernetes
 
 $ systemctl enable -now kubelet
 
