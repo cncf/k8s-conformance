@@ -1,0 +1,8 @@
+vendor: Revelry
+name: Moondog
+version: 0.1.1
+website_url: https://moondog.co/
+documentation_url: https://moondog.co/
+product_logo_url: http://moondog.co/moondog.svg
+type: installer
+description: "Portable, production-ready Kubernetes with GitOps, automatic SSL, OAuth2, monitoring and alerts, analytics, database provisioning, and more."
