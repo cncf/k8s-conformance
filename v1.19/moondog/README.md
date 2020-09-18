@@ -12,7 +12,7 @@ NOTE: Moondog is only installable on AWS at this time.
 
 ## Get and run the install script
 
-Installation instructions will be available at https://moondog.co when Moondog goes public.
+Installation instructions will be available at https://moondog.co when Moondog goes public. If you would like more information on this process please contact info@revelry.co and we will be happy to walk you through the installation process personally! Thanks.
 
 After installation, give the cluster some time to bootstrap itself.
 
