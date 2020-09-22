@@ -10,11 +10,16 @@ Run CKE, Follow below installation to install the latest CKE release.
 ```shell
  docker run --env "HOST=192.168.142.224" --env "PORT=8512" -p8512:8512 reg.mg.hcbss/open/cke-scheduler:v0.5.0 /cke-scheduler/cke-scheduler -name cke-test -roles cke -k8s_executor cke-k8s-exec -k8s_node_image 'reg.mg.hcbss/open/cke-k8s-wrapper:v0.5' -k8s_registry_cert=./reg.mg.hcbss/reg.mg.hcbss.crt  -k8s_config_path=./default_cfg
 ```
-3.Please use CKE UI create Kubernetes cluster.
+3.When CKE scheduler is ready, we can get a UI by http://192.168.142.224:8512/ui/ and we can input some information of cluster that we want to create.
+4.Choose 1 master and 2 nodes to create Kubernetes cluster, allocate 4 core cpu and 8G menory by each node.
+5.Confirm and click OK button in confirm modal to start creating kubernetes.
+6.After that, CKE scheduler allocates resources through MESOS and begin installing kubernetes.
+7.Waiting, When the progress finshed, kubernetes has runing.
+
 When the Kubernetes cluster is up and running, proceed to run the conformance tests.
 
 ### Run conformance tests
-Tests are run according to the [official instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md):
+Tests are running according to the [official instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md):
 ```shell
 $ go get -u -v github.com/heptio/sonobuoy
 $ sonobuoy run
