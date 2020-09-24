@@ -4,6 +4,24 @@
 
 JDOS is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB (https://github.com/tiglabs). You need to contact us to get the product.
 
+#### Deploy A JDOS Cluster
+
+Send mail with subject "Apply for JDOS deployment tool" to csp@jd.com, then we will send a tool to your email. 
+Next, follow the steps to insalll.
+
+```
+Step 1
+```
+
+$ mkdir -p /root/jdosdeploytool && tar xvf jdosdeploytool.tar.gz -C /root/jdosdeploytool
+
+```
+Step 2
+```
+
+$ /bin/bash ./download.sh && /bin/bash ./install.sh
+
+
 #### Run Conformance Test
 
 ```
