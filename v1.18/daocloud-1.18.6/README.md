@@ -20,8 +20,7 @@ The standard tool for running these tests is
 [Sonobuoy](https://github.com/heptio/sonobuoy), and the standard way to run
 these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8s-conformance/master/sonobuoy-conformance.yaml | kubectl apply -f -`.
 
-Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
-the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
-`kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain the 2 files `plugins/e2e/results/{e2e.log,junit.xml}`, which will
-be included in your submission.
+Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for the line
+`no-exit was specified, sonobuoy is now blocking`.  At this point, use `kubectl cp` to 
+bring the results to your local machine, expand the tarball, and retain the 2 files 
+`plugins/e2e/results/{e2e.log,junit.xml}`, which will be included in your submission.
