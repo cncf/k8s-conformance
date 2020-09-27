@@ -4,13 +4,13 @@ DaoCloud Enterprise is a platform based on Kubernetes which developed by [DaoClo
 
 ## How to Reproduce
 
-First install DaoCloud Enterprise 4.0.1, which is based on Kubernetes 1.18.0. To install DaoCloud Enterprise, run the following commands on CentOS 7.7 System:
+First install DaoCloud Enterprise 4.0.2, which is based on Kubernetes 1.18.6. To install DaoCloud Enterprise, run the following commands on Oracle-Linux Server(4.18.0-193.e18.x86_64) 8.2 System:
 ```
 sudo su
-curl -L https://dce.daocloud.io/DaoCloud_Enterprise/4.0.1os-requirements  > ./os-requirements
+curl -L https://dce.daocloud.io/DaoCloud_Enterprise/4.0.2/os-requirements  > ./os-requirements
 chmod +x ./os-requirements
 ./os-requirements
-bash -c "$(docker run -i --rm daocloud.io/daocloud/dce:4.0.1-32741 install)"
+bash -c "$(docker run -i --rm daocloud.io/daocloud/dce:4.0.2-33372 install)"
 ```
 To add more nodes to the cluster, the user need log into DaoCloud Enterprise control panel and follow instructions under node management section.
 
@@ -23,5 +23,5 @@ these in your cluster is with `curl -L https://raw.githubusercontent.com/cncf/k8
 Watch Sonobuoy's logs with `kubectl logs -f -n sonobuoy sonobuoy` and wait for
 the line `no-exit was specified, sonobuoy is now blocking`.  At this point, use
 `kubectl cp` to bring the results to your local machine, expand the tarball, and
-retain the 3 files `plugins/e2e/results/{e2e.log,junit.xml,version.txt}`, which will
+retain the 2 files `plugins/e2e/results/{e2e.log,junit.xml}`, which will
 be included in your submission.
