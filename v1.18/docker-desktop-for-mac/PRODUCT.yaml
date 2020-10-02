@@ -1,6 +1,6 @@
 vendor: Docker
 name: Docker Desktop for Mac
-version: 2.3.2.0
+version: 2.4.0.0
 website_url: https://hub.docker.com/editions/community/docker-ce-desktop-mac
 documentation_url: https://docs.docker.com/docker-for-mac/
 product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
