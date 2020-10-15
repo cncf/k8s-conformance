@@ -1,6 +1,6 @@
 vendor: Google
 name: Google Kubernetes Engine
-version: 1.17.4-gke.10
+version: 1.18.6-gke.4801
 website_url: https://cloud.google.com/kubernetes-engine/
 documentation_url: https://cloud.google.com/kubernetes-engine/docs/
 product_logo_url: https://www.gstatic.com/devrel-devsite/prod/ve2ae1395f351e38dc0b3037132204261d76b8f1c638764d7fd2c2fbb865782fc/cloud/images/cloud-logo.svg
