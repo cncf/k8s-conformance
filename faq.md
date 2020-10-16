@@ -58,7 +58,8 @@ tests.
 
 ## Can I certify my private cloud that will not be available outside of our company?
 
-You can, but it requires membership in CNCF. Instead, you may be able to accomplish your goal of ensuring conformance
+You can, but it requires membership in CNCF or else may require fees as described [above](#what-is-the-cost-of-certification).
+Instead, you may be able to accomplish your goal of ensuring conformance
 simply by [running](instructions.md) the conformance tests on your private cloud. As long as you pass, your
 implementation is conformant. It can't be certfied unless you complete the participation form, but certification
 (and the ability to use the Certified Kubernetes mark) is probably unnecessary for an internal-only product.
