@@ -2,7 +2,7 @@
 
 ## Official documentation
 
-Official project documentation can be found [here](https://clusterfrak-dynamics.github.io/symplegma/)
+Official project documentation can be found [here](https://particuleio.github.io/symplegma/)
 
 ## How to reproduce the results
 
@@ -19,7 +19,7 @@ Official project documentation can be found [here](https://clusterfrak-dynamics.
 * Clone the repository:
 
 ```
-git clone https://github.com/clusterfrak-dynamics/symplegma
+git clone https://github.com/particuleio/symplegma
 cd symplegma
 ansible-playbook install -r requirements.yml
 ```
