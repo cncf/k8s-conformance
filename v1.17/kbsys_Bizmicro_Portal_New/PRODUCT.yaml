@@ -2,5 +2,6 @@ vendor: KBSYS Inc.
 name: Bizmicro-Portal
 version: 0.9                                
 website_url: http://portal.kb-sys.co.kr
+documentation_url: http://portal.kb-sys.co.kr/files/BizMicro_Eng.pdf
 type: hosted platform
 description: Bizmicro is a practical, use-oriented call support platform for customer consultations.
