@@ -1,0 +1,9 @@
+vendor: Kubernative
+name: KubeOps
+version: 1.0.0-rc2
+website_url: https://kubernative.net/en/
+repo_url: https://kubernative.net/images/KubeOps/kubeops-1.0.0-3-rc2el7.x86_64.rpm
+documentation_url: https://kubernative.net/images/KubeOps/LIMA_End_User_Documentation.pdf
+product_logo_url: https://www.kubernative.net/images/Logos/Kubernative_CNCF.png
+type: distrubution
+description: KubeOps is a business-tailored kubernetes distribution designed for production environments. Our mission is to provide a new level of security and comfort for vanilla Kubernetes. It covers cluster lifecycle management, optimized software delivery and infrastructure managemnt, optimized for productive enrivonments.
