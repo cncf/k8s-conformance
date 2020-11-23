@@ -1,0 +1,9 @@
+vendor: Open Infrastructure Foundation
+name: Airship
+version: 2.0
+website_url: https://www.airshipit.org
+repo_url: https://github.com/airshipit/airshipctl
+documentation_url: https://docs.airship.org
+type: distribution
+description: Airship is a collection of loosely coupled but interoperable open source tools that declaratively automate cloud provisioning. Airship manages the full lifecycle of data center infrastructure to deliver a production-grade Kubernetes cluster with Helm deployed artifacts, including OpenStack-Helm.
+product_logo_url: https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/openstack-logo/airship/PNG/Airship_Logo_Horizontal_2Color_RGB.png
