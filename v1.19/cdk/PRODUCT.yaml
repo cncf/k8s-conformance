@@ -1,0 +1,8 @@
+vendor: Canonical Ltd
+name: Charmed Distribution of Kubernetes
+version: v1.19.4
+website_url: https://www.ubuntu.com/kubernetes
+documentation_url: https://kubernetes.io/docs/getting-started-guides/ubuntu/
+product_logo_url: https://landscape.cncf.io/logos/canonical-distribution-of-kubernetes.svg
+type: distribution
+description: Deploy, scale and upgrade Kubernetes clusters across multiple physical or virtual machines with Charmed Kubernetes.
