@@ -1,10 +1,10 @@
-# Mirantis Docker Enterprise 3.3.3
+# Mirantis Docker Enterprise 3.3.4
 
-The Mirantis Docker Enterprise 3.3.3 platform is made up of a number of
+The Mirantis Docker Enterprise 3.3.4 platform is made up of a number of
 components. Kubernetes is included within the Universal Control Plane (UCP)
 component.
 
-## Installing Mirantis Docker Enterprise 3.3.3 to reproduce the results
+## Installing Mirantis Docker Enterprise 3.3.4 to reproduce the results
 
 You will need to deploy a cluster of 1 or more machines with Mirantis Docker Engine Enterprise 19.03.12 or newer installed. Mirantis recommends using [Launchpad](https://github.com/Mirantis/launchpad/) tool to provision and install a cluster.
 
@@ -47,7 +47,7 @@ $ kubectl create clusterrolebinding sonobuoy-serviceaccount-cluster-admin --clus
 3. Launch the conformance tests
 
 ```
-$ ./sonobuoy run --mode=certified-conformance --kube-conformance-image-version=v1.18.8 --plugin-env='e2e.E2E_EXTRA_ARGS=--non-blocking-taints=com.docker.ucp.manager'
+$ ./sonobuoy run --mode=certified-conformance --kube-conformance-image-version=v1.18.10 --plugin-env='e2e.E2E_EXTRA_ARGS=--non-blocking-taints=com.docker.ucp.manager'
 ```
 
 Monitor the test running status:
