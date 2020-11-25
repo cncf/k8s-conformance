@@ -23,7 +23,7 @@ $ cd vanillastack/ansible
 
 2. Create inventory file
 
-3. Prepare configuration (example: group_vars.testing/all/*)
+3. Prepare configuration (example: group_vars.testing/all/*), disable all not needed components (like OpenStack, Cloud Foundry, Harbor, EFK, etc.)
 
 4. Run Playbook
 ```
