@@ -23,6 +23,7 @@ https://minikube.sigs.k8s.io/docs/start/
 
 We follow the [official instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md):
 Run minikube with 2 nodes and containerd runtime.
+For now, docker run time is not conformrant and "containerd" is required. We are still investigating docker run time issue.
 
 ```console
 % cd <minikube dir>
