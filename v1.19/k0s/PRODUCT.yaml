@@ -1,6 +1,6 @@
 vendor: Mirantis
 name: k0s
-version: v0.7.0
+version: v0.8.0
 website_url: https://k0sproject.io
 repo_url: https://github.com/k0sproject/k0s
 documentation_url: https://github.com/k0sproject/k0s/tree/main/docs
