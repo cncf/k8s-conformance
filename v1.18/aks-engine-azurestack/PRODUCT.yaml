@@ -1,0 +1,6 @@
+vendor: Microsoft
+name: AKS Engine for Azure Stack
+version: v0.58.0
+website_url: https://github.com/Azure/aks-engine
+documentation_url: https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md
+product_logo_url: https://landscape.cncf.io/logos/azure-aks-engine.svg
