@@ -18,7 +18,8 @@ Follow the steps in the email you recieve and login and change the password. Onc
 3. Create a new cluster in the project and select kubernetes version 1.17.9
 4. Choose the OpenStack as the Provider
 5. Choose a Datacenter location
-6. Enter your Provider Credentials and create a 3 nodes node group with Container Linux as distribution and the m1.medium as the flavor
+6. Enter your Provider Credentials and create a 3 nodes node group with Flatcar Linux as distribution and the m1.medium as the flavor
+7. Select a OpenStack Security Group that allows inbound traffic
 7. Check the requested settings and press Create Cluster
 8. Wait for the cluster to be ready
 
