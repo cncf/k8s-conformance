@@ -1,0 +1,7 @@
+vendor: VEXXHOST, Inc.
+name: Kubernetes Container Service
+version: 10.0.0
+website_url: https://vexxhost.com/public-cloud/container-services/kubernetes/
+documentation_url: https://docs.openstack.org/magnum/ussuri
+type: hosted
+description: Fully managed Kubernetes fully integrated with OpenStack
