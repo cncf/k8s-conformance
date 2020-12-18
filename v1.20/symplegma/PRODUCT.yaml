@@ -1,0 +1,9 @@
+vendor: particule.
+name: Symplegma
+version: v1.20.0
+website_url: https://particuleio.github.io/symplegma/
+documentation_url: https://particuleio.github.io/symplegma/
+product_logo_url: https://raw.githubusercontent.com/particuleio/symplegma/master/images/logo.svg
+repo_url: https://github.com/particuleio/symplegma/
+type: installer
+description: Symplegma (from greek σύμπλεγμα) is a simple set of Ansible playbooks to deploy Kubernetes with Kubeadm
