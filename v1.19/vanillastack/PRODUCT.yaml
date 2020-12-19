@@ -1,0 +1,9 @@
+vendor: VanillaStack
+name: VanillaStack
+version: v20.09
+website_url: https://www.vanillastack.io
+repo_url: https://github.com/vanillastack/vanillastack
+documentation_url: https://docs.vanillastack.io/
+product_logo_url: https://raw.githubusercontent.com/vanillastack/vanillastack/master/docs/images/VanillaStack.svg
+type: installer
+description: 'VanillaStack is the new open-source-only cloud-native stack based on Kubernetes. Easy to install and already integrated. On Bare-Metal, VMs, clouds and hyper-scalers.'
