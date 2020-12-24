@@ -72,7 +72,7 @@ $ VERSION=0.20.0 OS=linux && \
 Deploy a sonobuoy pod to your cluster:
 
 ```bash
-sonobuoy run
+sonobuoy run --mode=certified-conformance
 ```
 
 View actively running pods:
