@@ -1,27 +1,21 @@
-## To Reproduce:
+# To Reproduce:
 
-Set up a cluster following the Tanzu Kuberneted Grid documentation. We tested with one control plane node and two worker nodes.
+## Deploy Tanzu Kubernetes Grid environment
 
-Make sure your `KUBECONFIG` environment variable is set correctly for communicating with your cluster.
+Download the Tanzu Kubernetes Grid CLI from vmware.com and set up a Tanzu Kubernetes Grid management cluster first:
 
-Run:
-
-```
-sonobuoy gen --image-pull-policy IfNotPresent | kubectl apply -f -
+```console
+$ tkg init --ui
 ```
 
-Watch the sonobuoy logs. The tests are complete when it shows `no-exit was specified, sonobuoy is now blocking`. Run:
+Once the management cluster is set up, create a workload cluster with the `prod` plan (3 control plane, 3 worker nodes) to run the CNCF conformance suite:
 
-```
-kubectl -n heptio-sonobuoy logs sonobuoy -f
-```
-
-Retrieve the results:
-
-```
-mkdir results
-cd results
-sonobuoy retrieve .
+```console
+tkg create cluster tkg-conformance --plan prod
 ```
 
-Untar the tarball. The e2e results are `plugins/e2e/results/{e2e.log,junit_01.xml}`.
+Once the cluster is stood up, switch to the newly-created context with `kubectl config use-context <tkg-conformance context>`
+
+## Deploy sonobuoy Conformance test
+
+Follow the conformance suite instructions to test it.

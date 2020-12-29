@@ -1,0 +1,8 @@
+vendor: Red Hat
+name: OpenShift Container Platform by Red Hat
+version: v4.6.0
+website_url: https://www.openshift.com
+documentation_url: https://docs.openshift.com
+product_logo_url: https://cdn2.hubspot.net/hubfs/4305976/images/openshift-legacy/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Black.svg
+repo_url: https://github.com/openshift/origin
+type: Distribution
