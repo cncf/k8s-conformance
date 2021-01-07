@@ -1,0 +1,9 @@
+vendor: Hangzhou FIT2CLOUD Information Technology Co., Ltd.
+name: KubeOperator
+version: v3.0.1
+website_url: https://www.kubeoperator.io/
+repo_url: https://github.com/KubeOperator/KubeOperator
+documentation_url: https://kubeoperator.io/docs/
+product_logo_url: https://raw.githubusercontent.com/KubeOperator/KubeOperator/master/kubeoperator-logo.svg?sanitize=true
+type: Installer
+description: KubeOperator is an open-source light-weighted Kubernetes distribution that focuses on helping enterprises plan, deploy, and operate production-grade Kubernetes clusters in an offline network environment. It has a graphic Web UI that fasten up the process of software lifecycle in this current rapid cloud age.
