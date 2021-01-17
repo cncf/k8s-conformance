@@ -1,0 +1,8 @@
+vendor: Docker
+name: Docker Desktop for Windows
+version: 3.1.0
+website_url: https://hub.docker.com/editions/community/docker-ce-desktop-windows
+documentation_url: https://docs.docker.com/docker-for-windows/
+product_logo_url: https://www.docker.com/sites/default/files/vertical_large.png
+type: distribution
+description: The fastest and easiest way to get started with Docker on Windows.
