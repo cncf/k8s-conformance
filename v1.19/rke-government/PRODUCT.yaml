@@ -1,4 +1,4 @@
-vendor: SUSE
+vendor: Rancher
 name: RKE Government
 version: v1.19.5+rke2r1
 website_url: https://docs.rke2.io/
