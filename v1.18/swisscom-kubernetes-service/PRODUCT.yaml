@@ -1,0 +1,7 @@
+vendor: Swisscom
+name: Swisscom Kubernetes Service
+version: v1.18.12
+website_url: https://swisscom.com/container
+documentation_url: https://docs.entcloud.swisscom.com/guide/managed-services/managed-kubernetes
+type: hosted platform
+description: 'Swisscom Kubernetes Service provides managed Kubernetes on Swisscom Enterprise Service Cloud.'
