@@ -40,7 +40,7 @@ for more details and api referance refer to https://docs.ridge.co/reference/gett
 
 Once the RKS cluster has been provisioned, connect to the cluster and commence the conformance test by following these steps:
 
-```console
+```
 $ go get -u -v github.com/vmware-tanzu/sonobuoy
 
 $ sonobuoy run
