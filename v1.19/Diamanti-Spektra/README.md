@@ -6,6 +6,7 @@ Use regular dctl command to create a cluster (consult Diamanti D-Series CLI Guid
 
 Diamanti 3 nodes cluster:
 
+```
 [root@softserv93 conformance]# dctl cluster status
 
 Name           	: softtb2
@@ -21,7 +22,7 @@ NAME         NODE-STATUS   K8S-STATUS   ROLE      MILLICORES   MEMORY          S
 softserv24   Good          Good         master*   100/3000     1.07GiB/16GiB   0/0       0/0       0/0       0/0         0/64, 0/64
 softserv25   Good          Good         master    350/3000     1.32GiB/16GiB   0/0       0/0       0/0       0/0         0/64, 0/64
 softserv26   Good          Good         master    100/3000     1.07GiB/16GiB   0/0       0/0       0/0       0/0         0/64, 0/64
-
+```
 
 ## Run Conformance Test
 
