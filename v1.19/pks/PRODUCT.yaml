@@ -1,0 +1,9 @@
+vendor: VMware
+name: VMware Tanzu Kubernetes Grid Integrated Edition
+version: v1.10.0
+website_url: https://tanzu.vmware.com/kubernetes-grid
+documentation_url: https://docs.pivotal.io/tkgi/1-10/
+product_logo_url: https://landscape.cncf.io/logos/v-mware-tanzu-kubernetes-grid.svg
+type: distribution
+description: 'VMware Tanzu Kubernetes Grid Integrated Edition is a Kubernetes-based container solution with advanced networking, a private container registry, and life cycle management.'
+
