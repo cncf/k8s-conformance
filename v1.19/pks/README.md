@@ -15,7 +15,7 @@ Ops Manager:
 2. Navigate to `https://YOUR-OPS-MANAGER-FQDN/` in a browser to log in to the
    Ops Manager Installation Dashboard.
 3. Click Import a Product to upload the product file.
-4. Under **Enterprise PKS** in the left column, click the plus sign to add this
+4. Under **Tanzu Kubernetes Grid Integrated Edition** in the left column, click the plus sign to add this
    product to your staging area.
 
 ### Step 2: Configure TKGI
@@ -38,11 +38,11 @@ See the linked guide for full configuration documentation. At a minimum you must
 ### Step 4: Configure the TKGI API Load Balancer
 
 1. Navigate to the Ops Manager **Installation Dashboard**.
-2. Click the **Enterprise PKS** tile.
-3. Click the **Status** tab and locate the **PKS API** job. The IP address of
-   the TKGI API job is the **PKS API** endpoint.
+2. Click the **Tanzu Kubernetes Grid Integrated Edition** tile.
+3. Click the **Status** tab and locate the **TKGI API** job. The IP address of
+   the TKGI API job is the **TKGI API** endpoint.
 4. Configure an external load balancer to resolve to the domain name you entered
-   in the **Enterprise PKS** tile > **PKS API** > **API Hostname (FQDN)** using
+   in the **Tanzu Kubernetes Grid Integrated Edition** tile > **TKGI API** > **API Hostname (FQDN)** using
    this IP address, ports 8443 and 9021, and either HTTPS or TCP as the protocol.
 
 ### Step 5: Set Up a TKGI Admin User
@@ -62,9 +62,9 @@ See the linked guide for full configuration documentation. At a minimum you must
 
 3. Retrieve the UAA management admin client secret:
    1. In a web browser, navigate to the **Ops Manager Installation Dashboard**
-      and click the **Enterprise PKS** tile.
+      and click the **Tanzu Kubernetes Grid Integrated Edition** tile.
    2. Click the **Credentials** tab.
-   3. Click **Link to Credential** next to **Pks Uaa Management Admin Client**
+   3. Click **Link to Credential** next to **TKGI Uaa Management Admin Client**
       and copy the value of `secret`.
 
 4. Target your UAA server by running the following command:
@@ -94,13 +94,13 @@ See the linked guide for full configuration documentation. At a minimum you must
 7. Assign a TKGI cluster scope to the new user by running the following command:
 
    ```
-   uaac member add pks.clusters.admin USERNAME
+   uaac member add tkgi.clusters.admin USERNAME
    ```
 
 8. Run the following command in your terminal to log in to the TKGI CLI:
 
    ```
-   pks login -a TKGI-API -u USERNAME -p PASSWORD --ca-cert CERT-PATH
+   tkgi login -a TKGI-API -u USERNAME -p PASSWORD --ca-cert CERT-PATH
    ```
 
    Where `TKGI-API` is the domain name of your TKGI API server, `USERNAME` and
@@ -110,8 +110,8 @@ See the linked guide for full configuration documentation. At a minimum you must
 ## Creating a Kubernetes Cluster
 
 ```
-pks create-cluster CLUSTER-NAME -e HOSTNAME -p PLAN_NAME
-pks get-credentials CLUSTER-NAME
+tkgi create-cluster CLUSTER-NAME -e HOSTNAME -p PLAN_NAME
+tkgi get-credentials CLUSTER-NAME
 ```
 
 ## Running Conformance Tests
