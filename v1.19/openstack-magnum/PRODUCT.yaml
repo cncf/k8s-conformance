@@ -1,0 +1,9 @@
+vendor: OpenStack Foundation
+name: Magnum
+version: 11.0.0
+website_url: https://docs.openstack.org/magnum/latest/
+repo_url: https://opendev.org/openstack/magnum/
+documentation_url: https://docs.openstack.org/magnum/latest/user/#kubernetes
+type: installer
+description: Magnum is an OpenStack API service developed by the OpenStack Containers Team making container orchestration engines such as Kubernetes available as a first class resources in OpenStack.
+product_logo_url: https://www.openstack.org/themes/openstack/images/project-mascots/Magnum/OpenStack_Project_Magnum_vertical.eps
