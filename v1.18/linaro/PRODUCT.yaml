@@ -6,5 +6,5 @@ documentation_url: https://github.com/Linaro/cloud/blob/master/docs/ldc-kubernet
 product_logo_url: https://github.com/Linaro/website/blob/develop/assets/images/content/Linaro-Logo.svg
 repo_url: https://github.com/Linaro/magnum
 type: hosted
-description: Linaro Developer Cloud Kubernetes service make it easy for you to deploy, manage, and scale Kubernetes clusters to run containerised applications on the Arm64 platform.
+description: Linaro Developer Cloud Kubernetes service makes it easy for you to deploy, manage, and scale Kubernetes clusters to run containerised applications on the Arm64 platform.
 

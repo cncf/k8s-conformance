@@ -3,7 +3,7 @@
 
 ## Create Kubernetes Cluster
 
-Log in to the Catalyst Cloud dashboard to create a Kubernetes cluster or use the OpenStack command line interface to create the cluster.
+Log in to the Linaro Developer Cloud dashboard to create a Kubernetes cluster or use the OpenStack command line interface to create the cluster.
 
 ```shell
 openstack coe cluster create my-cluster --cluster-template kubernetes-prod
