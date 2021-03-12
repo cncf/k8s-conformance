@@ -1,9 +1,9 @@
 ## QFusion
-QFusion is an enterprise-level DBaaS platfrom based on cloud native technologies which support for MySQL,SQL Server,Redis,Oracle,PostgreSQL and MongoDB database.It implements key components of database operator orchestration and provides self-healing and auto-scale database feature
+QFusion is an enterprise-level DBaaS platform based on cloud native technologies which support for MySQL,SQL Server,Redis,Oracle,PostgreSQL and MongoDB database.It implements key components of database operator orchestration and provides self-healing and auto-scale database feature
 
 ## Reproduce Conformance Tests
 ###  prepare
-`contact Woqutech to push relevant images to own registry`
+`contact [Woqutech](http://woqutech.com)  to download relvent images and push to own registry`
 
 
 ### Start Test
