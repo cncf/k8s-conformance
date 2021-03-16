@@ -1,8 +1,0 @@
-vendor: Hewlett Packard Enterprise (HPE)
-name: HPE Ezmeral Container Platform
-version: 5.3
-website_url: hpe.com/info/containers
-documentation_url:  N/A
-product_logo_url: https://github.com/hpe-design/logos/blob/master/HPE%20Primary%20Logo%20-%20SVG/hpe-logo-color.svg
-type: Distribution
-description: The HPE Ezmeral Container Platform is an enterprise-grade solution to deploy containerized environments at scale with open source Kubernetes, for both cloud-native and non cloud-native applications.
