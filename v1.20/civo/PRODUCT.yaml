@@ -1,0 +1,8 @@
+vendor: Civo
+name: Civo Kubernetes
+version: v1.20
+website_url: https://www.civo.com
+documentation_url: https://www.civo.com/api
+product_logo_url: https://www.civo.com/brand-assets/logo/full-colour/civo-logo-fullcolour.svg
+type: hosted platform
+description: 'The world's first managed K3s service, built with simplicity in mind'
