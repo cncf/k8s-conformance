@@ -1,5 +1,5 @@
 
-# NIFCLOUD Hatoba
+# NIFCLOUD Kubernetes Service Hatoba
 
 ## Create cluster
 

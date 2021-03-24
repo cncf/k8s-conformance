@@ -1,5 +1,5 @@
 
-# NIFCLOUD Hatoba
+# NIFCLOUD Kubernetes Service Hatoba
 
 ## Create cluster
 
@@ -10,13 +10,14 @@ Install and setup [NIFCLOUD SDK for Python](https://github.com/nifcloud/nifcloud
 export CLUSTER_NAME=conformancetest
 export FIREWALL_NAME=conformancetestfw
 export SOURCE_IP=<YOUR SOURCE IP>
+export KUBERNETES_VERSION=v1.18.8
 
 # Create Firewall Group
 nifcloud-debugcli hatoba create-firewall-group --firewall-group "Name=$FIREWALL_NAME"
 nifcloud-debugcli hatoba --endpoint-url authorize-firewall-group --firewall-group-name $FIREWALL_NAME --rules "CidrIp=$SOURCE_IP,Direction=IN,FromPort=6443,ToPort=6443,Protocol=TCP"
 
 # Create Cluster
-nifcloud-debugcli hatoba create-cluster --cluster "FirewallGroup=test,Locations=east-11,Name=$CLUSTER_NAME,NodePools=[{InstanceType=medium,NodeCount=3,Name=nodepool01}]"
+nifcloud-debugcli hatoba create-cluster --cluster "FirewallGroup=test,KubernetesVersion=$KUBERNETES_VERSION,Locations=east-11,Name=$CLUSTER_NAME,NodePools=[{InstanceType=medium,NodeCount=3,Name=nodepool01}]"
 nifcloud-debugcli hatoba wait cluster-running --cluster-name $CLUSTER_NAME
 
 # Get Credentials
