@@ -6,7 +6,7 @@ Full instructions on how to set up a k0s cluster can be found [here](https://git
 k0s runs either as a single node (server with `--enable-worker`), or as a controller/worker cluster.
 These instructions assume you have one or more linux or arm boxes ready for installation.
 
-Download the k0s v0.10.0 binary from [releases](https://github.com/k0sproject/k0s/releases/v0.10.0) and push it to all the nodes you wish to connect to the cluster.
+Download the k0s v0.11.0 binary from [releases](https://github.com/k0sproject/k0s/releases/v0.11.0) and push it to all the nodes you wish to connect to the cluster.
 
 ## Cluster Setup
 #### Single node
