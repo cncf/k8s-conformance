@@ -34,11 +34,11 @@ clusterName: Testcluster
 spec:
   workers:
     - host: 192.168.23.135
-	  user: root
-	  password: 1234
-	- host: 192.168.23.141
-	  user: root
-	  password: 1234
+      user: root
+      password: 1234
+    - host: 192.168.23.141
+      user: root
+      password: 1234
 ```
 		
 4. After, I used the command: `echo 'export KUBEOPSROOT="<your path>"' >> $HOME/.bashrc` ;
