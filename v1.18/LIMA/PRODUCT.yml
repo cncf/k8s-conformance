@@ -1,8 +1,0 @@
-vendor: Kubernative GmbH
-name: LIMA
-version: 0.4.0 beta
-website_url: https://www.kubernative.net/
-documentation_url: https://www.kubernative.net/images/Downloads/LIMA/Documentation_LIMA_040_beta.pdf
-product_logo_url: https://www.kubernative.net/images/Logos/KubernativeLIMA.svg
-type: installer
-description: 'LIMA is a CLI application for creating a single control-plane Kubernetes cluster or a high-availability Kubernetes cluster.'
