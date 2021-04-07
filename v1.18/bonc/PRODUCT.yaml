@@ -1,0 +1,7 @@
+vendor: Bonc
+name: Bonc Kubernetes Service
+version: v1.18.6
+website_url: https://www.boncloud.com/
+documentation_url: https://www.boncloud.com/product/bcos
+type: installer 
+description: 'BCOS is acontainer management platform which is stable, safe, efficient, flexible and easy to use'
