@@ -27,7 +27,7 @@ nodes:
   extraMounts:
   - hostPath: /usr/share/zoneinfo/Asia/Shanghai 
     containerPath: /usr/share/zoneinfo/Asia/Shanghai
-- role: node
+- role: worker
   extraMounts:
   - hostPath: /usr/share/zoneinfo/Asia/Shanghai
     containerPath: /usr/share/zoneinfo/Asia/Shanghai
