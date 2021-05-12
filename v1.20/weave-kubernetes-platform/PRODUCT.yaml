@@ -1,0 +1,7 @@
+vendor: Weaveworks
+name: Weave Kubernetes Platform
+version: 2.4.2
+website_url: https://www.weave.works/product/enterprise-kubernetes-platform/
+documentation_url: https://www.weave.works/weave-kubernetes-platform-how-to-guide/
+type: distribution
+description: A complete Kubernetes platform that combines pure upstream open source Kubernetes from a curated set of platform components with GitOps.
