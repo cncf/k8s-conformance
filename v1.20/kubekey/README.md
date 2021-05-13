@@ -46,9 +46,9 @@ It's recommended to install using root user, then create a cluster using the con
 +-------+------+------+---------+----------+-------+-------+-----------+--------+------------+-------------+------------------+--------------+
 | name  | sudo | curl | openssl | ebtables | socat | ipset | conntrack | docker | nfs client | ceph client | glusterfs client | time         |
 +-------+------+------+---------+----------+-------+-------+-----------+--------+------------+-------------+------------------+--------------+
-| node3 | y    | y    | y       | y        |       |       | y         | y      |            |             |                  | CST 14:00:33 |
-| node2 | y    | y    | y       | y        |       |       | y         | y      |            |             |                  | CST 14:00:33 |
+| master1 | y    | y    | y       | y        |       |       | y         | y      |            |             |                  | CST 14:00:33 |
 | node1 | y    | y    | y       | y        |       |       | y         | y      |            |             |                  | CST 14:00:33 |
+| node2 | y    | y    | y       | y        |       |       | y         | y      |            |             |                  | CST 14:00:33 |
 +-------+------+------+---------+----------+-------+-------+-----------+--------+------------+-------------+------------------+--------------+
 
 This is a simple check of your environment.
