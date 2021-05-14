@@ -1,7 +1,7 @@
 ## To reproduce:
 #### Creating a cluster with kubekey
 
-Step 1:Download KubeKey v1.0.1 and add permission.
+Step 1:Download KubeKey v1.1.0 and add permission.
 ```
 curl -sfL https://get-kk.kubesphere.io | VERSION=v1.1.0 sh -
 chmod +x kk
@@ -33,7 +33,7 @@ spec:
   controlPlaneEndpoint:
     domain: lb.kubesphere.local
     address: ""
-    port: "6443"
+    port: 6443
   kubernetes:
     version: v1.20.4
 ```
