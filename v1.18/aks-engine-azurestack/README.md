@@ -10,7 +10,7 @@ curl -L -o aks-engine-darwin.tar.gz https://github.com/Azure/aks-engine/releases
 mkdir ./aks-engine; tar xzf aks-engine-darwin.tar.gz -C ./aks-engine
 ```
 
-Use the following cluster definition template for Kubernetes v1.18 to create a file named `kubernetes1.18.json`.
+Create a file named `kubernetes1.18.json`, the content of the file should be the following cluster definition template.
 
 ```
 {

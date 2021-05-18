@@ -8,7 +8,7 @@ To reproduce:
 # To install Azure Stack AKS Engine use curl command below and unpack content
 curl -L -s -f -O https://github.com/Azure/aks-engine/releases/download/v0.38.3/aks-engine-v0.38.3-linux-amd64.tar.gz
 
-# Use the following cluster definition template for Kubernetes v1.16 to create a file named "kubernetes1.16.json".
+# Create a file named "kubernetes1.16.json", the content of the file should be the following cluster definition template.
 
 {
     "apiVersion": "vlabs",
