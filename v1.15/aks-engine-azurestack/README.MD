@@ -8,11 +8,55 @@ To reproduce:
 # To install Azure Stack AKS Engine use curl command below and unpack content
 curl -L -s -f -O https://github.com/Azure/aks-engine/releases/download/v0.38.3/aks-engine-v0.38.3-linux-amd64.tar.gz
 
-# Get the Kubernetes json file
+# Use the following cluster definition template for Kubernetes v1.16 to create a file named "kubernetes1.15.json".
 
-curl -o kubernetes1.15.json https://raw.githubusercontent.com/Azure/aks-engine/master/examples/azurestack/kubernetes-azurestack-azure-ad.json
-
-# Open the Kubernetes json file and update orchestratorRelease value to 1.15
+{
+    "apiVersion": "vlabs",
+    "location": "",
+    "properties": {
+        "orchestratorProfile": {
+            "orchestratorRelease": "1.15",
+            "kubernetesConfig": {
+                "useInstanceMetadata": false,
+                "networkPlugin": "kubenet"
+            }
+        },
+        "customCloudProfile": {
+            "portalURL": "",
+            "identitySystem": ""
+        },
+        "masterProfile": {
+            "dnsPrefix": "",
+            "distro": "ubuntu",
+            "count": 3,
+            "vmSize": "Standard_D2_v2"
+        },
+        "agentPoolProfiles": [
+            {
+                "name": "linuxpool",
+                "count": 3,
+                "vmSize": "Standard_D2_v2",
+                "distro": "ubuntu",
+                "availabilityProfile": "AvailabilitySet",
+                "AcceleratedNetworkingEnabled": false
+            }
+        ],
+        "linuxProfile": {
+            "adminUsername": "azureuser",
+            "ssh": {
+                "publicKeys": [
+                    {
+                        "keyData": ""
+                    }
+                ]
+            }
+        },
+        "servicePrincipalProfile": {
+            "clientId": "",
+            "secret": ""
+        }
+    }
+}
 
 # To run the sonobuoy tests follow these steps:
 

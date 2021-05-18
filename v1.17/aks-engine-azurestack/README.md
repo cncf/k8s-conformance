@@ -10,10 +10,56 @@ curl -L -o aks-engine-darwin.tar.gz https://github.com/Azure/aks-engine/releases
 mkdir ./aks-engine; tar xzf aks-engine-darwin.tar.gz -C ./aks-engine
 ```
 
-Download the sample Kubernetes v1.17 cluster definition.
+Use the following cluster definition template for Kubernetes v1.17 to create a  file named `kubernetes1.17.json`.
 
-```bash
-curl -o kubernetes1.17.json https://raw.githubusercontent.com/Azure/aks-engine/master/examples/azure-stack/conformance/kubernetes1.17.json
+```
+{
+    "apiVersion": "vlabs",
+    "location": "",
+    "properties": {
+        "orchestratorProfile": {
+            "orchestratorRelease": "1.17",
+            "kubernetesConfig": {
+                "useInstanceMetadata": false,
+                "networkPlugin": "kubenet"
+            }
+        },
+        "customCloudProfile": {
+            "portalURL": "",
+            "identitySystem": ""
+        },
+        "masterProfile": {
+            "dnsPrefix": "",
+            "distro": "ubuntu",
+            "count": 3,
+            "vmSize": "Standard_D2_v2"
+        },
+        "agentPoolProfiles": [
+            {
+                "name": "linuxpool",
+                "count": 3,
+                "vmSize": "Standard_D2_v2",
+                "distro": "ubuntu",
+                "availabilityProfile": "AvailabilitySet",
+                "AcceleratedNetworkingEnabled": false
+            }
+        ],
+        "linuxProfile": {
+            "adminUsername": "azureuser",
+            "ssh": {
+                "publicKeys": [
+                    {
+                        "keyData": ""
+                    }
+                ]
+            }
+        },
+        "servicePrincipalProfile": {
+            "clientId": "",
+            "secret": ""
+        }
+    }
+}
 ```
 
 Create a service principal (client) and assign the Contributor role to it in the target subscription. Set the following variables:
