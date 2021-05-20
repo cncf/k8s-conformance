@@ -1,0 +1,7 @@
+vendor: Woqutech
+name: qfusion
+version: v3.10.1
+website_url: https://woqutech.com
+product_logo_url: http://woqutech.com/dist/woqutech.svg 
+type: distribution
+description: 'woqutech provides the research and development of database ecological products,combined with the development trend of cloud computing, x86 platform, and localization,to provide users with cloud platform solutions for the complete life cycle of relational databases'
