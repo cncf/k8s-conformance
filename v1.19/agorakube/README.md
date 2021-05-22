@@ -22,11 +22,12 @@ The document below describes pre-requisites for Agorakube local environment and 
 1) On your desktop, create a file named: "Vagrantfile" with the following content:
 
 ```
+
 $script = <<-SCRIPT
 echo "
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTj+4Tjx2Az14spFKaD1rkxrhQSaybNDQOS9P7jGk3OaubL8qWTXVr69n4xu56PDCe06g4XOlpXkLNUOVr5CKOyP+9Eyw41V9de4DDEaPhidFtOULTubzYJ4tyhwysFnB/vq75TfoCgI6uYHl4tcSZqQB6g/4C2TGuFWj/T0CzlE6hxNzRy16udyfMxH7YZ445238Wtn96RxfJdkINgB+6h0jGRh1j8OuuIwZdUa1e4W+p53JGizXCRySAtZPxlNyaT2SxqOpfXShp+KqhIG8N7HPgCMdBHNXFy2zticR/tWjdWOPsuro0z8SZY7EgZD3PfgKD88BkdaG4B50RPgt pierre@DESKTOP-BT28R5N
 " >> /home/vagrant/.ssh/authorized_keys
-bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/master/setup-hosts.sh)
+bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/master/setup-deploy.sh)
 SCRIPT
 
 $script2 = <<-SCRIPT
@@ -64,177 +65,208 @@ cd /home/vagrant/
 bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/master/setup-deploy.sh)
 echo '
 [deploy]
-deploy ansible_connection=local
+worker1 ansible_connection=local
 
 [masters]
-master1  ansible_host=10.10.20.4
-#k8s-2.novalocal  ansible_host=10.20.20.5
-#k8s-3.novalocal  ansible_host=10.20.20.8
-#deploy.novalocal ansible_connection=local ip=10.20.20.8
+worker1  ansible_host=10.10.20.4
+
 [etcd]
-master1  ansible_host=10.10.20.4
-#k8s-1.novalocal  ansible_host=10.20.20.4
-#k8s-2.novalocal  ansible_host=10.20.20.5
-#k8s-3.novalocal  ansible_host=10.20.20.8
-#deploy.novalocal ansible_connection=local ip=10.20.20.8
+worker1  ansible_host=10.10.20.4
+
 [workers]
-#worker1  ansible_host=10.10.20.4
-worker1  ansible_host=10.10.20.5
-worker2  ansible_host=10.10.20.6
-#k8s-6.novalocal  ansible_host=10.20.20.10
-#deploy.novalocal ansible_connection=local ip=10.20.20.8
+worker2  ansible_host=10.10.20.5
+worker3  ansible_host=10.10.20.6
 
 [storage]
-#worker1 ansible_host=10.10.20.4
-worker1 ansible_host=10.10.20.5
-worker2 ansible_host=10.10.20.6
-
+# worker3  ansible_host=10.10.20.6
 [all:vars]
-advertise_ip_masters=10.10.20.4
+advertise_masters=10.10.20.4
+#advertise_masters=kubernetes.localcluster.lan
 
 # SSH connection settings
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 ansible_user=vagrant
 ansible_ssh_private_key_file=/home/vagrant/ssh-private-key.pem
+
+[etc_hosts]
+#kubernetes.localcluster.lan ansible_host=10.10.20.4
 ' > /home/vagrant/agorakube/hosts
 
 echo '
 ---
+agorakube:
+  global:
+    data_path: /var/agorakube
 
-# CERTIFICATES
-cn_root_ca: ilkilabs
-c: FR
-st: Ile-De-France
-l: Paris
-expiry: 87600h
-rotate_certs_pki: false
-rotate_full_pki: false
+agorakube_pki:
+  infos:
+    state: "Ile-De-France"
+    locality: "Paris"
+    country: "FR"
+    root_cn: "ILKI Kubernetes Engine"
+    expirity: "+3650d"
+  management:
+    rotate_certificats: False
 
-# Components version
-etcd_release: v3.4.5
-kubernetes_release: v1.18.2
-delete_previous_k8s_install: False
-delete_etcd_install: False
-check_etcd_install: True
+agorakube_base_components:
+  etcd:
+    release: v3.4.14
+    upgrade: False
+    check: true
+    data_path: /var/lib/etcd
+    backup:
+      enabled: False
+      crontab: "*/30 * * * *"
+      storage:
+        capacity: 10Gi
+        enabled: True
+        type: "storageclass"
+        storageclass:
+          name: "default-jiva"
+        persistentvolume:
+          name: "my-pv-backup-etcd"
+          storageclass: "my-storageclass-name"
+        hostpath:
+          nodename: "master1"
+          path: /var/etcd-backup
+  kubernetes:
+    release: v1.19.11
+    upgrade: false
+  container:
+    engine: containerd
+# release : Only Supported if container engine is set to docker
+    release: ""
+#    upgrade: false
 
-# IPs-CIDR Configurations
-cluster_cidr: 10.33.0.0/16
-service_cluster_ip_range: 10.32.0.0/24
-kubernetes_service: 10.32.0.1
-cluster_dns_ip: 10.32.0.10
-service_node_port_range: 30000-32000
-kube_proxy_mode: ipvs
-kube_proxy_ipvs_algotithm: rr
-cni_release: 0.8.5
+agorakube_network:
+  cni_plugin: calico
+  mtu: 0
+  cidr:
+    pod: 10.33.0.0/16
+    service: 10.32.0.0/16
+  service_ip:
+    kubernetes: 10.32.0.1 
+    coredns: 10.32.0.10
+  nodeport:
+    range: 30000-32000
+  external_loadbalancing:
+    enabled: True
+    ip_range: 10.10.20.50-10.10.20.250
+    secret_key: LGyt2l9XftOxEUIeFf2w0eCM7KjyQdkHform0gldYBKMORWkfQIsfXW0sQlo1VjJBB17shY5RtLg0klDNqNq4PAhNaub+olSka61LxV73KN2VaJY/snrZmHbdf/a7DfdzaeQ5pzP6D5O7zbUZwfb5ASOhNrG8aDMY3rkf4ZzHkc=
+  kube_proxy:
+    mode: ipvs
+    algorithm: rr
 
-# Custom features
-runtime: docker
-network_cni_plugin: flannel
-flannel_iface: eth1
-ingress_controller: traefik
-dns_server_soft: coredns
-populate_etc_hosts: yes
-k8s_dashboard: True
-service_mesh: none
-linkerd_release: stable-2.6.0
-install_helm: False
-init_helm: False
-install_kubeapps: false
+agorakube_features:
+  coredns:
+    release: "1.8.3"
+    replicas: 2
+  reloader:
+    enabled: True
+    release: "0.0.89"
+  storage:
+    enabled: False
+    release: "2.8.0"
+    jiva:
+      data_path: /var/openebs
+      fs_type: ext4
+    hostpath:
+      data_path: /var/local-hostpath
+  dashboard:
+    enabled: False
+    generate_admin_token: False
+    release: v2.2.0
+  metrics_server:
+    enabled: true
+  ingress:
+    controller: nginx
+    release: v0.46.0
+  monitoring:
+    enabled: False
+    persistent: False
+    admin:
+      user: administrator
+      password: P@ssw0rd
+  logrotate:
+    enabled: False
+    crontab: "* 2 * * *"
+    day_retention: 14
+  keycloak_oidc:
+    enabled: true
+    admin:
+      user: administrator
+      password: P@ssw0rd
+    auto_bootstrap:
+        bootstrap_keycloak: true
+        bootstrap_kube_apiserver: true
+        populate_etc_hosts: true
+        host: keycloak.local.lan
 
-# Calico
-calico_mtu: 1440
+agorakube_populate_etc_hosts: true
 
 # Security
-encrypt_etcd_keys:
+agorakube_encrypt_etcd_keys:
 # Warrning: If multiple keys are defined ONLY LAST KEY is used for encrypt and decrypt.
-# Other keys are used only for decrypt purpose
+# Other keys are used only for decrypt purpose. Keys can be generated with command: head -c 32 /dev/urandom | base64
   key1:
     secret: 1fJcKt6vBxMt+AkBanoaxFF2O6ytHIkETNgQWv4b/+Q=
 
-# Data Directory
-data_path: "/var/agorakube"
-etcd_data_directory: "/var/lib/etcd"
 #restoration_snapshot_file: /path/snopshot/file Located on {{ etcd_data_directory }}
 
-# KUBE-APISERVER spec
-kube_apiserver_enable_admission_plugins:
-# plugin AlwaysPullImage can be deleted. Credentials would be required to pull the private images every time. 
-# Also, in trusted environments, this might increases load on network, registry, and decreases speed.
-#  - AlwaysPullImages
-  - NamespaceLifecycle
-# EventRateLimit is used to limit DoS on API server in case of event Flooding
-  - EventRateLimit
-  - LimitRanger
-  - ServiceAccount
-  - TaintNodesByCondition
-  - PodNodeSelector
-  - Priority
-  - DefaultTolerationSeconds
-  - DefaultStorageClass
-  - StorageObjectInUseProtection
-  - PersistentVolumeClaimResize
-  - MutatingAdmissionWebhook
-  - NodeRestriction
-  - ValidatingAdmissionWebhook
-  - RuntimeClass
-  - ResourceQuota
-# SecurityContextDeny should be replaced by PodSecurityPolicy
-#  - SecurityContextDeny
-
-
-# Rook Settings
-enable_rook: False
-rook_dataDirHostPath: /data/rook
-
-
-
-# Monitoring. Rook MUST be enabled to use monitoring (Monitoring use StorageClass to persist data)
-enable_monitoring: False
 ' > /home/vagrant/agorakube/group_vars/all.yaml
 cd /home/vagrant/agorakube
-sudo ansible-playbook agorakube.yaml
+echo '
+#!/bin/bash
+yum -y update
+yum -y install python3 python3-pip python3-venv
+yum install -y libselinux-python3
+python3 -m venv /usr/local/agorakube-env
+source /usr/local/agorakube-env/bin/activate
+pip3 install --upgrade pip
+pip3 install -r requirements.txt
+ansible --version
+' > /home/vagrant/agorakube/script.sh
+chmod +x /home/vagrant/agorakube/script.sh
+cd /home/vagrant/agorakube/
+. /home/vagrant/agorakube/script.sh
+
+cd /home/vagrant/agorakube/
+ansible-playbook agorakube.yaml
+cp /root/.kube/config /var/kubeconfig/config
 SCRIPT
 
 
 
 Vagrant.configure("2") do |config|
     config.vm.provision "shell", inline: $script
-    config.vm.box = "bento/ubuntu-18.04"
-    config.vm.define "master1" do |master1|
-		master1.vm.hostname = "worker1"
-		master1.vm.network "private_network", ip: "10.10.20.4"
-		master11.vm.provider "virtualbox" do |v|
-			v.memory = 3048
-			v.cpus = 1
-			v.name = "master1"
-		end
-	end
-	config.vm.define "worker1" do |worker1|
-		worker1.vm.hostname = "worker2"
-		worker1.vm.network "private_network", ip: "10.10.20.5"
-		worker1.vm.provider "virtualbox" do |v|
-			v.memory = 3048
-			v.cpus = 1
-			v.name = "worker1"
-		end
-	end
+    config.vm.box = "bento/centos-7"
 	config.vm.define "worker2" do |worker2|
-		worker2.vm.hostname = "worker3"
-		worker2.vm.network "private_network", ip: "10.10.20.6"
+		worker2.vm.hostname = "worker2"
+		worker2.vm.network "private_network", ip: "10.10.20.5"
 		worker2.vm.provider "virtualbox" do |v|
-			v.memory = 3048
+			v.memory = 4096
 			v.cpus = 1
 			v.name = "worker2"
 		end
 	end
-	config.vm.define "deploy" do |deploy|
-	    deploy.vm.provision "shell", inline: $script2
-		deploy.vm.hostname= "master1"
-		deploy.vm.network "private_network", ip: "10.10.20.3"
-		deploy.vm.provider "virtualbox" do |v|
-			v.memory = 2048
+	config.vm.define "worker3" do |worker3|
+		worker3.vm.hostname = "worker3"
+		worker3.vm.network "private_network", ip: "10.10.20.6"
+		worker3.vm.provider "virtualbox" do |v|
+			v.memory = 4096
 			v.cpus = 1
-			v.name = "deploy"
+			v.name = "worker3"
+		end
+	end
+	config.vm.define "worker1" do |worker1|
+	    worker1.vm.provision "shell", inline: $script2
+		worker1.vm.synced_folder ".", "/var/kubeconfig"
+		worker1.vm.hostname = "worker1"
+		worker1.vm.network "private_network", ip: "10.10.20.4"
+		worker1.vm.provider "virtualbox" do |v|
+			v.memory = 4096
+			v.cpus = 1
+			v.name = "worker1"
 		end
 	end
 end
@@ -251,7 +283,7 @@ You can edit the vagrant to fit your needs.
 
 2) One Agorakube installation is finished, connect to the deploy manachine with the following command:
 
-`vagrant ssh deploy`
+`vagrant ssh worker1`
 
 3) Kubernetes CLI "kubectl" is configured for root user, so use the following command to become root:
 
@@ -267,7 +299,9 @@ You can edit the vagrant to fit your needs.
 
 2. Download a sonobuoy [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 ```sh
-$ go get -u -v github.com/heptio/sonobuoy
+$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.19.0/sonobuoy_0.19.0_linux_amd64.tar.gz
+$ tar -xvf sonobuoy_0.19.0_linux_amd64.tar.gz
+$ mv sonobuoy /usr/bin
 ```
 
 3. Configure your kubeconfig file by running:
