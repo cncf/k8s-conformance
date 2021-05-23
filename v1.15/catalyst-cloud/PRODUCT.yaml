@@ -1,0 +1,8 @@
+vendor: Catalyst Cloud
+name: Catalyst Kubernetes Service
+version: v1.15.2
+website_url: https://catalystcloud.nz/services/paas/catalyst-kubernetes-service/
+documentation_url: https://catalystcloud.nz/services/paas/catalyst-kubernetes-service/
+product_logo_url: https://catalystcloud.nz/documents/11/CatalystCloud_Logo_RGB.svg
+type: hosted
+description: Catalyst Kubernetes Service makes it easy for you to deploy, manage, and scale Kubernetes clusters to run containerised applications on the Catalyst Cloud.

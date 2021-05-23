@@ -1,0 +1,7 @@
+vendor: Rackspace
+name: Rackspace Kubernetes-as-a-Service
+version: 1.14
+website_url: https://www.rackspace.com/managed-kubernetes
+documentation_url: https://developer.rackspace.com/docs/rkaas/v2.1.x/
+product_logo_url: https://www.rackspace.com/themes/custom/rackspace/libraries/zoolander2/dist/imgs/derek/rs-logo.svg
+

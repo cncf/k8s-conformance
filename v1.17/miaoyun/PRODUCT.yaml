@@ -1,0 +1,8 @@
+vendor: MiaoYun
+name: MiaoYun
+version: v19.12.2
+website_url: https://miaoyun.io/
+documentation_url: http://docs.miaoyun.io//
+product_logo_url: https://www.cncf.io/wp-content/uploads/2018/08/MiaoYun-logo.svg
+type: distribution
+description: MiaoYun is a platform based on Docker container, supporting both Docker Swarm and Kubernetes container orchestration.
