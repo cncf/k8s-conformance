@@ -1,0 +1,8 @@
+vendor: Intel Corporation
+name: OpenNESS
+version: 20.09
+website_url: https://www.openness.org/
+documentation_url: https://www.openness.org/products/intel-distribution
+product_logo_url: https://github.com/open-ness/specs/blob/master/OpenNESS_Logo.ai
+type: distribution
+description: 'OpenNESS is a Multi-access Edge Computing software tool kit that enables highly optimized and performance edge platforms to on-board and manage applications and network functions with Kubernetes cluster. Intel Distribution of OpenNESS supports all the features and capabilities of the open source distribution plus innovative new technologies'
