@@ -1,8 +1,0 @@
-vendor: Ventus Cloud AG
-name: Ventus Cloud Kubernetes Service
-version: v1.19.11
-website_url: https://ventuscloud.eu/products/kubernetes
-documentation_url: https://kb.ventuscloud.eu/knowledge/documentation
-type: hosted platform
-product_logo_url: https://ventuscloud.eu/images/ventus.logo.blue.svg
-description: 'Automate container deployment, scaling and management through the Ventus Cloud.'
