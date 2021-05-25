@@ -4,30 +4,23 @@ Docker Desktop - Windows is Docker designed to run on Windows 10. It is a native
 
 ## Setup
 
-- Download and install Docker Desktop for Windows version 2.3.2.0 Edge Channel: https://desktop.docker.com/win/edge/46268/Docker%20Desktop%20Installer.exe
-- In Docker Desktop for Windows preferences:
-  - Unset the _Use the WSL 2 based engine_ property,
-  - Enable Kubernetes to create a cluster on your local machine.
+- Download and install Docker Desktop for Windows version 2.4.0.0 from the Stable Channel: https://desktop.docker.com/win/stable/48506/Docker%20Desktop%20Installer.exe
+- In Docker Desktop for Windows preferences, enable Kubernetes to create a cluster on your local machine.
 
 ## Reproduce Conformance Tests
 
-Download the last binary release of Sonobuoy
+Download the binary release of Sonobuoy
 
 ```
-$ tar -xzf sonobuoy_0.18.3_windows_amd64.tar.gz
+PS C:\Users\...> wsl tar -xvzf sonobuoy_0.18.5_windows_amd64.tar.gz
 ```
 
 Run Sonobuoy on the cluster
 ```
-$ ./sonobuoy run --mode=certified-conformance --e2e-skip "should rollback without unnecessary restarts"
+PS C:\Users\...\sonobuoy> .\sonobuoy run --mode=certified-conformance --e2e-skip "should rollback without unnecessary restarts"
 ```
 
-Validate the tests result
+Retrieve the test results
 ```
-$ ./sonobuoy.exe e2e $(sonobuoy retrieve .)
-```
-
-Clean up Kubernetes objects created by Sonobuoy
-```
-$ ./sonobuoy.exe delete
+PS C:\Users\...\sonobuoy> .\sonobuoy retrieve
 ```

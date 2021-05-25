@@ -1,0 +1,9 @@
+vendor: kubeasz
+name: kubeasz
+version: 3.0.0
+website_url: https://github.com/easzlab/kubeasz
+repo_url: https://github.com/easzlab/kubeasz
+documentation_url: https://github.com/easzlab/kubeasz/tree/master/docs
+product_logo_url: https://github.com/easzlab/kubeasz/blob/master/pics/kubeasz.svg
+type: installer
+description: 'Deploy a Production Ready Kubernetes Cluster with ansible playbooks'
