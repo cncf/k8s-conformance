@@ -1,0 +1,8 @@
+vendor: OpenNebula Systems
+name: OpenNebula - Kubernetes Appliance
+version: v1.21
+website_url: https://marketplace.opennebula.io/appliance/1318e7ca-bd6d-11eb-9ae8-98fa9bde1a93
+documentation_url: https://docs.opennebula.io/appliances/service/kubernetes.html
+product_logo_url: https://opennebula.io/logo-blue.svg
+type: Installer
+description: Virtual Appliance for KVM with preinstalled Kubernetes service available from OpenNebula's Public Marketplace. The Appliance deploys a single Kubernetes master node. It can be customized with contextualization parameters to support multi-node clusters.
