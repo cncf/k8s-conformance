@@ -1,0 +1,9 @@
+vendor: Rafay Systems
+name: Rafay
+version: v2.4.5
+website_url: https://rafay.co/
+repo_url: https://github.com/RafaySystems/
+documentation_url: https://app.rafay.dev/docs/
+product_logo_url: https://github.com/rafayopen/k8s-conformance/blob/master/Rafay_Logo.svg
+type: hosted
+description: Rafay Systems enables DevOps and SRE teams to automate application lifecycle and cluster configuration management across on-premise and cloud-based Kubernetes clusters through a turnkey SaaS platform.
