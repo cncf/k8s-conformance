@@ -2,7 +2,8 @@
 
 ## Ordering a cluster
 
-Get started by applying for a cluster at https://elastx.se/en/kubernetes.
+Get started by applying for a cluster at: https://elastx.se/en/signup-openstack 
+In case of any questions regarding pricing or what's included you can visit the product page: https://elastx.se/en/kubernetes/ or contact our support att support@elastx.se
 
 ## Credentials
 
