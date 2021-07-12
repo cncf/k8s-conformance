@@ -3,6 +3,6 @@ name: Kingsoft Container Engine (KCE)
 version: v1.19.3
 website_url: https://www.ksyun.com/post/KCE
 documentation_url: https://docs.ksyun.com/products/24
-product_logo_url: https://fe.ksyun.com/project/resource/img/www-logo@2x.png
+product_logo_url: https://raw.githubusercontent.com/wppzxc/kingsoft-container-engine/master/logo.svg
 type: distribution
 description: 'Highly reliable and scalable container management service with high performance.'
