@@ -7,7 +7,7 @@ https://dashboard.optimist.innovo.cloud/
 and
 https://imke.cloud
 
-Please email sales@innovo-cloud.de and ask for a new account credentials for Optimist and IMKE to be used by Cloud Native Computing Foundation (CNCF) Conformance tests for v1.20/innovo-imke
+Please email sales@german-edge-cloud.io and ask for a new account credentials for Optimist and IMKE to be used by Cloud Native Computing Foundation (CNCF) Conformance tests for v1.20/innovo-imke
 
 Follow the steps in the email you recieve and login and change the password. Once this has been done then you should be able to login to https://imke.cloud
 
@@ -43,5 +43,5 @@ and you will be able to set KUBECONFIG
 export KUBECONFIG=$(pwd)/kubeconfig-admin-<CLUSTERID>
 ```
 
-If you have any issues please email support@innovo-cloud.de
+If you have any issues please email support@german-edge-cloud.io
 
