@@ -1,0 +1,8 @@
+vendor: Dahua Technology
+name: Dahua MagicCube Platform
+version: v2.1.2
+website_url: https://www.dahuasecurity.com/
+documentation_url:https://dahuawiki.dahuasecurity.com/
+product_logo_url: https://www.dahuasecurity.com/_nuxt/img/LOGO.e093234.png
+type: distribution
+description: 'Zhejiang Dahua Technology Co., Ltd. (Dahua Technology) is a world-leading video-centric smart IoT solution and service provider. Based on technological innovations, Dahua Technology offers end-to-end security solutions, systems, and services to create value for city operations, corporate management, and consumers.'
