@@ -1,6 +1,6 @@
 vendor: Amazon Web Services
 name: Amazon Elastic Kubernetes Service (Amazon EKS)
-version: v1.20.4
+version: v1.21.2
 website_url: https://aws.amazon.com/eks
 documentation_url: https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
 product_logo_url: https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png
