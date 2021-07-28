@@ -2,16 +2,21 @@
 
 ## Setup EKS Cluster
 
-Setup EKS cluster as per the [EKS documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html). Sample command:
+Setup EKS cluster as per the [EKS documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html).
+Use one of the following ways to create a cluster.
+
+Install [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) based on your version of OS.
+Use `eksctl` for quickly creating a cluster. EksCtl will take care of creating the required dependent resources for the cluster, including the managed nodes for running conformance tests.
 
 ```bash
-eksctl create cluster --version=1.21 --name=sample-cluster
+eksctl create cluster --version=1.21 --name=sample-cluster --managed --node-type c5.xlarge --nodes 10 --node-volume-size 40
 ```
 
 Or
+Use [aws-k8s-tester](https://github.com/aws/aws-k8s-tester). Install a recent [release](https://github.com/aws/aws-k8s-tester/releases).
+The parameters for running the aws-k8s-tester are following. This creates a cluster with 10 worker nodes.
 
 ```bash
-# https://github.com/aws/aws-k8s-tester
 AWS_K8S_TESTER_EKS_REGION=us-west-2 \
 AWS_K8S_TESTER_EKS_PARAMETERS_ENCRYPTION_CMK_CREATE=true \
 AWS_K8S_TESTER_EKS_PARAMETERS_ROLE_CREATE=true \
