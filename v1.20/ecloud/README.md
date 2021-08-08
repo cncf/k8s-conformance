@@ -4,7 +4,7 @@
 
 1. Access the [Ecloud Homepage]( https://ecloud.10086.cn/) , click [Register] in the upper right corner of the page;
 
- Click this [link]([10086.cn](https://ecloud.10086.cn/home/product-introduction/containerser)) to create a ECloud Account and login.
+ Click this [link](https://ecloud.10086.cn/home/product-introduction/containerser) to create a ECloud Account and login.
 
 #### Login to Console
 
