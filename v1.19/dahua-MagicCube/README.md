@@ -1,8 +1,59 @@
 # To recreate these results
 
-## 1.Install Dahua Magic Cube Platform
+## 1.Introduction
 
-## 2.Run Conformance Tests
+Based on intelligent cloud service of Dahua video, Dahua Magic Cube Platform is an intelligent-application center platform that provides rich cloud services, which including hardware resource pooling, resource allocation on demand, continuous integration(CI), continuous delivery(CD) and so on.
+
+The overall architecture of Dahua Magic Cube Platform:
+
+![](overallarch.bmp)
+
+**Key Features of MagicCube Platform**
+**K8s Resource Management** : Provide a web console for creating and managing Kubernetes resources;provide native, scalable and compatible Kubernetes API that enables enterprises to migrate toward cloud business seamlessly.
+**Efficient Management and Scheduling**：Support for mass hardware devices, network traffic and batch tasks; support deployment of multiple services in a stable and efficient manner to help users to improve resource utilization significantly.
+**Storage Management**: Support multiple storage types, on-demand allocation of storage resources;support local storage and distributed storage scheduling.
+Network Management: Support single cluster with multi-network; support load balancing; support real and fixed IP.
+**Application template orchestration**: Application template lifecycle management, startup sequence of visual orchestration, multi-environment rapid deployment service.
+**Multi-tenant Management**：Provide unified authentication with fine-grained roles and three-tier authorization system.
+
+**Components List**
+
+| Component      | Function description                                         |
+| -------------- | ------------------------------------------------------------ |
+| Infrastructure | supports ARM architecture, GPU management, CPU management and etc. |
+| K8S/Docker     | provides application orchestration and container runtime interface |
+| Network        | supports Calico/Macvlan network policy                       |
+| Storage        | supports distributed Ceph storage and local PV               |
+| App Monitoring | provides monitoring metrics and services of nodes, pods, middleware and API object |
+| Harbor         | provides images registry center                              |
+
+These are some symbolic displays of Dahua Magic Cube Platform:
+
+- First, the Project Overview of Dahua Magic Cube.
+
+![](1.png)
+
+- Second, the detail information of work node.
+
+![](2.png)
+
+![](3.png)
+
+- Three, the detail information include the usage of CPU, network bandwidth, the amount of memory.
+
+![](4.png)
+
+## 2.Install Dahua Magic Cube Platform（Private Clouds）
+
+Step1. Prepare three master node with CentOS 7.7 and one worker node
+
+Step2. Install kubernetes v1.19 with a binary deployment
+
+Step3. Install Calico CNI and CoreDNS
+
+Step4. Install Dahua Magic Cube components
+
+## 3.Run Conformance Tests
 
 - Download Sonobuoy (0.52.0)
 
@@ -44,12 +95,3 @@ sonobuoy logs --kubeconfig=/root/.kube/config
 result=$(sonobuoy retrieve --kubeconfig=/root/.kube/config)
 tar xzf $result -C results/
 ```
-
-
-
-
-
-
-
-
-
