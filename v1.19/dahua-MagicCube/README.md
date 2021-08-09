@@ -9,12 +9,18 @@ The overall architecture of Dahua Magic Cube Platform:
 ![](overallarch.bmp)
 
 **Key Features of MagicCube Platform**
+
 **K8s Resource Management** : Provide a web console for creating and managing Kubernetes resources;provide native, scalable and compatible Kubernetes API that enables enterprises to migrate toward cloud business seamlessly.
+
 **Efficient Management and Scheduling**：Support for mass hardware devices, network traffic and batch tasks; support deployment of multiple services in a stable and efficient manner to help users to improve resource utilization significantly.
+
 **Storage Management**: Support multiple storage types, on-demand allocation of storage resources;support local storage and distributed storage scheduling.
 Network Management: Support single cluster with multi-network; support load balancing; support real and fixed IP.
+
 **Application template orchestration**: Application template lifecycle management, startup sequence of visual orchestration, multi-environment rapid deployment service.
+
 **Multi-tenant Management**：Provide unified authentication with fine-grained roles and three-tier authorization system.
+
 
 **Components List**
 
