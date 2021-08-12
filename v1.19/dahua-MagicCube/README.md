@@ -51,13 +51,71 @@ These are some symbolic displays of Dahua Magic Cube Platform:
 
 ## 2.Install Dahua Magic Cube Platform（Private Clouds）
 
-Step1. Prepare three master node with CentOS 7.7 and one worker node
+**Instruction:** We install Dahua Magic Cube Platform by using Ansible tool
 
-Step2. Install kubernetes v1.19 with a binary deployment
+**config parameters**
 
-Step3. Install Calico CNI and CoreDNS
+```
+[master]
+master1_ip=
+master2_ip=
+master3_ip=
 
-Step4. Install Dahua Magic Cube components
+[k8s]
+keepalived_virtual_router_id=
+rabbit_vrrp_id=
+harbor_vrrp_route_id=
+
+keepalived_vip=
+rabbit_vip=
+mysql_vip=
+
+ntp_server=
+
+harbor_registry=
+```
+
+**Step1**. Prepare three master node with CentOS 7.7 and one worker node
+
+**Step2**. Prepare the required dependent environment of Kubernetes
+
+- config hostname for three master node and use master1_ip, master2_ip and master3_ip in config file
+- stop firewall and disable selinux
+- config ntpdate for timesync
+- use cfssl tool to generate certificates
+
+**Step3**. Install base components
+
+- use etcd binary file and etcd.service to deploy three etcd on three master node
+- deploy docker service 
+- deploy nginx and keepalived and use keepalived_virtual_router_id and keepalived_vip in config file
+- deploy some middleware by using docker that including redis, mysql, influxdb and rabbitmq
+- deploy harbor for storing cube images and use harbor_vrrp_route_id and harbor_registry like image.cube.com in config file
+- install helm
+- Install ceph for storage
+
+**Step4**. Install kubernetes v1.19 with a binary deployment
+
+- install kubectl  by using a binary file of kubectl
+- install apiserver by using a binary file of kube-apiserver and a config file of kube-apiserver.service
+- install controller-manager by using a binary file of kube-controller-manager and a config file of kube-controller-manager.service
+- install scheduler by using a binary file of kube-scheduler and a config file of kube-scheduler.service
+- install kubelet by using a binary file of kubelet  and a config file of kubelet .service
+- install kube-proxy by using a binary file of kube-proxy  and a config file of kube-proxy .service
+
+**Step5**. Install addon plugin like as Calico CNI and CoreDNS
+
+- install calico cni and coredns with helm
+- install GPU device plugin with helm
+- Install metric server with helm
+
+**Step6**. Install Dahua Magic Cube components
+
+- Install application store service for deploying some cloud application
+- Install network management service for providing network configuration
+- Install storage management service for providing ceph block and filesystem
+- Install node management service for establishing work cluster
+
 
 ## 3.Run Conformance Tests
 
