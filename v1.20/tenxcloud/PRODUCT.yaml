@@ -1,0 +1,8 @@
+vendor: TenxCloud
+name: TenxCloud Container Enterprise
+version: v5.3.0
+website_url: https://www.tenxcloud.com/product/paas.html
+documentation_url: http://docs.tenxcloud.com/enterprise
+product_logo_url: https://www.tenxcloud.com/img/logo.svg
+type: distribution
+description: TenxCloud Container Enterprise is a PaaS product based on Kubernetes
