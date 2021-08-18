@@ -36,7 +36,7 @@ My procedure followed the guidance at: https://github.com/cncf/k8s-conformance/b
 Here are the steps I performed:
 
 ```shell
-SONOGZIP=https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.53.1/sonobuoy_0.53.1_linux_amd64.tar.gz
+SONOGZIP=https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.53.2/sonobuoy_0.53.2_linux_amd64.tar.gz
 [[ -f conformance/sonobuoy ]] || curl -sL $SONOGZIP | tar zxvf - -C conformance sonobuoy
 
 conformance/sonobuoy run --mode=certified-conformance --timeout=30000
