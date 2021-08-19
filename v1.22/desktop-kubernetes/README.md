@@ -18,7 +18,31 @@ $ cd desktop-kubernetes
 
 Tag v1.0.0 is the current release tested.
 
+## Check requirements
+
+This is a Bash shell script project and requires certain command-line utilities on the desktop. Run the `new-cluster` script first with the `--check-compatibility` option:
+
+```shell
+$ ./new-cluster --check-compatibility
+Checking version compatibility
+component              tested              found                 matches?
+---------              ------              -----                 --------
+openssl                1.1.1f              1.1.1f                Yes
+openssh                OpenSSH_8.2p1       OpenSSH_8.2p1         Yes
+genisoimage            1.1.11              1.1.11                Yes
+virtual box            6.1.18r142142       6.1.18_Ubuntur142142  No
+host operating system  Ubuntu 20.04.2 LTS  Ubuntu 20.04.3 LTS    No
+kubectl (client only)  v1.22.0             v1.22.0               Yes
+curl                   7.68.0              7.68.0                Yes
+
+WARNING: Found mismatches between the tested configuration and your configuration
+```
+
+Virtualbox needs to be 6.1.18. The other components must exist, but version incompatibilities may not be an issue. You have to use your judgement. But, for example, the script uses the `genisoimage` utility to create ISOs to mount into the CentOS VMs during initialization. So if that utility is missing, the script will fail to gen the cluster. 
+
 ## Create the cluster
+
+If all requirements are reasonably satistfied:
 
 ```shell
 ./new-cluster --host-only-network=50.1.1 --vboxdir=/sdb1/virtualbox --create-template\
