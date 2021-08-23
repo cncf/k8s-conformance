@@ -11,7 +11,7 @@ For this conformance test we used two of google's n1-standard-4 (4 vCPUs, 15 GB 
 ssh into node1 and run the following command with root access. 
 
 ```
-curl -sSL https://k8s.kurl.sh/kurl-conformance-1-19-x | sudo bash
+curl -sSL https://k8s.kurl.sh/kurl-conformance-1-21-x | sudo bash
 ```
 
 This script will download the necessary packages, run tests and configuration setup to get a single node kubernetes cluster with scripts to add additional nodes.
@@ -21,7 +21,7 @@ The final output will have a script to join a worker which will be used to setup
 ```
 
 To add worker nodes to this installation, run the following script on your other nodes:
-    curl -fsSL https://kurl.sh/version/v2021.08.16-0/kurl-conformance-1-19-x/join.sh | sudo bash -s kubernetes-master-address=<IP>:6443 kubeadm-token=<TOKEN> kubeadm-token-ca-hash=<HASH> kubernetes-version=1.19.13 primary-host=<IP>
+    curl -fsSL https://kurl.sh/version/v2021.08.16-0/kurl-conformance-1-21-x/join.sh | sudo bash -s kubernetes-master-address=<IP>:6443 kubeadm-token=<TOKEN> kubeadm-token-ca-hash=<HASH> kubernetes-version=<VERSION> primary-host=<IP>
 ```
 Save this script as it will be used to configure node2 in the following step.
 
@@ -29,6 +29,9 @@ Save this script as it will be used to configure node2 in the following step.
 ## node2 setup
 
 ssh into node2 and run the script to add worker nodes from the node1 setup (see above).
+
+
+
 
 ## Run conformance tests
 
