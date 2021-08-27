@@ -23,6 +23,7 @@ The document below describes pre-requisites for Agorakube local environment and 
 
 ```
 
+
 $script = <<-SCRIPT
 echo "
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTj+4Tjx2Az14spFKaD1rkxrhQSaybNDQOS9P7jGk3OaubL8qWTXVr69n4xu56PDCe06g4XOlpXkLNUOVr5CKOyP+9Eyw41V9de4DDEaPhidFtOULTubzYJ4tyhwysFnB/vq75TfoCgI6uYHl4tcSZqQB6g/4C2TGuFWj/T0CzlE6hxNzRy16udyfMxH7YZ445238Wtn96RxfJdkINgB+6h0jGRh1j8OuuIwZdUa1e4W+p53JGizXCRySAtZPxlNyaT2SxqOpfXShp+KqhIG8N7HPgCMdBHNXFy2zticR/tWjdWOPsuro0z8SZY7EgZD3PfgKD88BkdaG4B50RPgt pierre@DESKTOP-BT28R5N
@@ -75,7 +76,7 @@ worker1  ansible_host=10.10.20.4
 
 [workers]
 worker2  ansible_host=10.10.20.5
-worker3  ansible_host=10.10.20.6
+worker1  ansible_host=10.10.20.4
 
 [storage]
 # worker3  ansible_host=10.10.20.6
@@ -110,7 +111,7 @@ agorakube_pki:
 
 agorakube_base_components:
   etcd:
-    release: v3.4.14
+    release: v3.4.16
     upgrade: False
     check: true
     data_path: /var/lib/etcd
@@ -119,7 +120,7 @@ agorakube_base_components:
       crontab: "*/30 * * * *"
       storage:
         capacity: 10Gi
-        enabled: True
+        enabled: False
         type: "storageclass"
         storageclass:
           name: "default-jiva"
@@ -130,7 +131,7 @@ agorakube_base_components:
           nodename: "master1"
           path: /var/etcd-backup
   kubernetes:
-    release: v1.19.11
+    release: v1.21.4
     upgrade: false
   container:
     engine: containerd
@@ -150,7 +151,7 @@ agorakube_network:
   nodeport:
     range: 30000-32000
   external_loadbalancing:
-    enabled: True
+    enabled: False
     ip_range: 10.10.20.50-10.10.20.250
     secret_key: LGyt2l9XftOxEUIeFf2w0eCM7KjyQdkHform0gldYBKMORWkfQIsfXW0sQlo1VjJBB17shY5RtLg0klDNqNq4PAhNaub+olSka61LxV73KN2VaJY/snrZmHbdf/a7DfdzaeQ5pzP6D5O7zbUZwfb5ASOhNrG8aDMY3rkf4ZzHkc=
   kube_proxy:
@@ -162,19 +163,19 @@ agorakube_features:
     release: "1.8.3"
     replicas: 2
   reloader:
-    enabled: True
+    enabled: false
     release: "0.0.89"
   storage:
-    enabled: False
-    release: "2.8.0"
+    enabled: false
+    release: "2.9.0"
     jiva:
       data_path: /var/openebs
       fs_type: ext4
     hostpath:
       data_path: /var/local-hostpath
   dashboard:
-    enabled: False
-    generate_admin_token: False
+    enabled: false
+    generate_admin_token: false
     release: v2.2.0
   metrics_server:
     enabled: true
@@ -182,15 +183,38 @@ agorakube_features:
     controller: nginx
     release: v0.46.0
   monitoring:
-    enabled: False
-    persistent: False
+    enabled: false
+    persistent:
+      enable: false
+      storage:
+        capacity: 4Gi
+        type: "storageclass"
+        storageclass:
+          name: "default-jiva"
+        persistentvolume:
+          name: "my-pv-monitoring"
+          storageclass: "my-storageclass-name"
+        hostpath:
+          nodename: "master1"
+          path: /var/monitoring-persistent
     admin:
       user: administrator
       password: P@ssw0rd
   logrotate:
-    enabled: False
+    enabled: false
     crontab: "* 2 * * *"
     day_retention: 14
+  gatekeeper:
+    enabled: false
+    release: v3.4.0
+    replicas:
+      #audit: 1
+      controller_manager: 3
+#argocd is an Alpha feature and do not support persistence wet. Use it only for test purpose.
+  argocd:
+    enabled: false
+   
+# keycloak_oidc is an Alpha feature and do not support persistence wet. Use it only for test purpose.
   keycloak_oidc:
     enabled: true
     admin:
@@ -200,9 +224,21 @@ agorakube_features:
         bootstrap_keycloak: true
         bootstrap_kube_apiserver: true
         populate_etc_hosts: true
-        host: keycloak.local.lan
+        host: oidc.local.lan
+#    storage:
+#        enabled: False
+#        capacity: 10Gi
+#        type: "storageclass"
+#        storageclass:
+#          name: "default-jiva"
+#        persistentvolume:
+#          name: "my-pv-backup-etcd"
+#          storageclass: "my-storageclass-name"
+#        hostpath:
+#          nodename: "master1"
+#          path: /var/keycloak
 
-agorakube_populate_etc_hosts: true
+agorakube_populate_etc_hosts: True
 
 # Security
 agorakube_encrypt_etcd_keys:
@@ -244,18 +280,9 @@ Vagrant.configure("2") do |config|
 		worker2.vm.hostname = "worker2"
 		worker2.vm.network "private_network", ip: "10.10.20.5"
 		worker2.vm.provider "virtualbox" do |v|
-			v.memory = 4096
-			v.cpus = 1
+			v.memory = 6096
+			v.cpus = 2
 			v.name = "worker2"
-		end
-	end
-	config.vm.define "worker3" do |worker3|
-		worker3.vm.hostname = "worker3"
-		worker3.vm.network "private_network", ip: "10.10.20.6"
-		worker3.vm.provider "virtualbox" do |v|
-			v.memory = 4096
-			v.cpus = 1
-			v.name = "worker3"
 		end
 	end
 	config.vm.define "worker1" do |worker1|
@@ -264,8 +291,8 @@ Vagrant.configure("2") do |config|
 		worker1.vm.hostname = "worker1"
 		worker1.vm.network "private_network", ip: "10.10.20.4"
 		worker1.vm.provider "virtualbox" do |v|
-			v.memory = 4096
-			v.cpus = 1
+			v.memory = 6096
+			v.cpus = 2
 			v.name = "worker1"
 		end
 	end
@@ -300,8 +327,8 @@ You can edit the vagrant to fit your needs.
 
 2. Download a sonobuoy [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 ```sh
-$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.51.0/sonobuoy_0.51.0_linux_amd64.tar.gz
-$ tar -xvf sonobuoy_0.19.0_linux_amd64.tar.gz
+$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.53.2/sonobuoy_0.53.2_linux_amd64.tar.gz
+$ tar -xvf sonobuoy_0.53.2_linux_amd64.tar.gz
 $ mv sonobuoy /usr/bin
 ```
 
