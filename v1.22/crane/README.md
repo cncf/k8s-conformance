@@ -13,15 +13,16 @@ Or use videos to describe the installation process [videos](https://asciinema.or
 * If the host cannot access the Internet at all, Modify it in the file `crane/group_vars/all.yml` in `Http_proxy` and `https_proxy` to continue.
 * No CRI needs to be installed per cluster.  
 * The SELinux and Firewall deployment process is closed.
+* You first need to know what changes to make to pass conformance tests before deploying. (documentation)[https://github.com/slzcc/crane/blob/v1.22.1.3/CHANGELOG/CHANGELOG-1.22.md#v12213]
 
 2. Access to the source code
 ```sh
 $ git clone https://github.com/slzcc/crane.git && cd crane
 ```
 
-3. Set kube-apiserver VIP or LB IP address
+3. Set kube-apiserver VIP or LB IP address (Modify your OWN VIP)
 ```sh
-$ sed -i "s/k8s_load_balance_ip:.*/k8s_load_balance_ip: 1.2.3.4/g" crane/group_vars/all.yml
+$ sed -i "s/k8s_load_balance_ip:.*/k8s_load_balance_ip: 10.140.0.16/g" crane/group_vars/all.yml
 ```
 
 4. Set the nic driver name (Because calico is used as a third-party network by default, this operation can be ignored if Cilium is used)
@@ -29,20 +30,17 @@ $ sed -i "s/k8s_load_balance_ip:.*/k8s_load_balance_ip: 1.2.3.4/g" crane/group_v
 $ sed -i "s/os_network_device_name:.*/os_network_device_name: 'ens4'/g" crane/group_vars/all.yml
 ```
 
-5. Set nodePortAddresses in kube-proxy
-```sh
-$ sed -i "s/kube_proxy_node_port_addresses:.*/kube_proxy_node_port_addresses: ['10.140.0.0\/24']/g" crane/group_vars/all.yml
-```
-
-6. Set up the machine list (non-Sudo users available)
+5. Set up the machine list (non-Sudo users available)
 ```sh
 $ cat > crane/nodes <<EOF
 [kube-master]
-10.140.0.1
+10.140.0.16
+10.140.0.17
 
 [kube-node]
 [etcd]
-10.140.0.1
+10.140.0.16
+10.140.0.17
 
 [all:vars]
 ansible_ssh_public_key_file='~/.ssh/id_rsa.pub'
@@ -54,16 +52,17 @@ ansible_ssh_user=shilei
 EOF
 ```
 
-7. Install Crane
+6. Install Crane
 ```sh
 $ make run_main
 ```
 
-8. Check Kubernetes Cluster
+7. Check Kubernetes Cluster
 ```sh
 $ kubectl get node
-NAME         STATUS   ROLES                  AGE     VERSION
-instance-1   Ready    control-plane,master   21h   v1.22.1
+NAME         STATUS   ROLES                  AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE       KERNEL-VERSION    CONTAINER-RUNTIME
+instance-1   Ready    control-plane,master   23h   v1.22.1   10.140.0.16   <none>        Ubuntu 21.04   5.11.0-1017-gcp   docker://20.10.8
+instance-2   Ready    control-plane,master   23h   v1.22.1   10.140.0.17   <none>        Ubuntu 21.04   5.11.0-1017-gcp   docker://20.10.8
 ```
 
 ## Run Conformance Test
