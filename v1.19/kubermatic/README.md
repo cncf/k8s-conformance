@@ -4,7 +4,7 @@
 
 1. Login to https://dev.kubermatic.io/
 2. Press the "Create Cluster" button
-3. Pick Kubernetes version v1.18.x
+3. Pick Kubernetes version v1.19.x
 4. Complete the create cluster wizard with either DigitalOcean or AWS (using a security group that allows all inbound trafic).
 
 When the cluster is up and running,
