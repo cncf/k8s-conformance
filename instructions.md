@@ -17,13 +17,13 @@ currently supported versions of kubernetes.
 Download a [binary release](https://github.com/vmware-tanzu/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
-$ go get -u -v github.com/vmware-tanzu/sonobuoy
+go get -u -v github.com/vmware-tanzu/sonobuoy
 ```
 
 Deploy a Sonobuoy pod to your cluster with:
 
 ```
-$ sonobuoy run --mode=certified-conformance
+sonobuoy run --mode=certified-conformance
 ```
 
 **NOTE:** The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
@@ -33,19 +33,19 @@ $ sonobuoy run --mode=certified-conformance
 View actively running pods:
 
 ```
-$ sonobuoy status
+sonobuoy status
 ```
 
 To inspect the logs:
 
 ```
-$ sonobuoy logs
+sonobuoy logs
 ```
 
 Once `sonobuoy status` shows the run as `completed`, copy the output directory from the main Sonobuoy pod to a local directory:
 
 ```
-$ outfile=$(sonobuoy retrieve)
+outfile=$(sonobuoy retrieve)
 ```
 
 This copies a single `.tar.gz` snapshot from the Sonobuoy pod into your local
