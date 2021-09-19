@@ -31,11 +31,19 @@ sonobuoy delete
 Install
 
 $ git clone https://github.com/kubernetes-sigs/kubespray.git
+
 $ cd kubespray
+
 $ sudo yum -y install python3
+
 $ sudo pip3 install -r requirements.txt
+
 $ declare -a IPS=(${NODE1 IP} ${NODE2 IP} ${NODE3 IP})
+
 $ CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 
+
 $ vi inventory/mycluster/hosts.yaml # edit hosts.yaml
+
 $ ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root cluster.yml
+
