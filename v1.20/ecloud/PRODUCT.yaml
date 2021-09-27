@@ -1,0 +1,8 @@
+vendor: China Mobile
+name: KCS
+version: v1.20.1
+website_url: https://ecloud.10086.cn/home/product-introduction/containerser
+documentation_url: https://ecloud.10086.cn/op-help-center/doc/article/41610
+product_logo_url: https://landscape.cncf.io/logos/china-mobile-kcsp.svg
+type: platform
+description: 'Ecloud Kubernetes Container Service（KCS）provides high-performance and reliable container application management capabilities. It simplifies the establishment of a cloud operating environment for container applications and provides a complete cloud operating environment for applications.'

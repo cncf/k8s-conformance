@@ -1,0 +1,8 @@
+vendor: DaoCloud
+name: DaoCloud Enterprise
+version: v4.0.5
+website_url: https://www.daocloud.io/dce
+documentation_url: https://download.daocloud.io/DaoCloud_Enterprise/DaoCloud_Enterprise/4.0.5
+product_logo_url: https://guide.daocloud.io/download/attachments/524290/global.logo?version=2&modificationDate=1469173304363&api=v2
+type: distribution
+description: DaoCloud Enterprise is a platform based on Kubernetes which developed by [DaoCloud](https://www.daocloud.io).
