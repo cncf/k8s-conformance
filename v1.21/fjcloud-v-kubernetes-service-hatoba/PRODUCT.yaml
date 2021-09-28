@@ -3,7 +3,7 @@ name: FUJITSU Hybrid IT Service FJcloud-V Kubernetes Service Hatoba
 version: v1.21.1
 website_url: https://pfs.nifcloud.com/service/hatoba.htm
 documentation_url: https://pfs.nifcloud.com/spec/hatoba/
-product_logo_url: https://raw.githubusercontent.com/syyama-net/k8s-conformance/fjcloud-v-kubernetes-service-hatoba-v1.21/v1.21/fjcloud-v-kubernetes-service-hatoba/FJcloud_logo.png
+product_logo_url: https://landscape.cncf.io/logos/fujitsu-member.svg
 type: hosted
 description: 'FJcloud-V Kubernetes Service Hatoba is a managed Kubernetes as a Service to deploy enterprise container applications and operate them simply and useful on FJcloud-V. FJcloud-V is the resale product name of NIFCLOUD.'
 
