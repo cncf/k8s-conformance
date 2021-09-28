@@ -1,0 +1,9 @@
+vendor: CNCF
+name: k3s
+version: v1.22.2+k3s1
+website_url: https://k3s.io/
+repo_url: https://github.com/k3s-io/k3s
+documentation_url: https://rancher.com/docs/k3s/latest/en/
+product_logo_url: https://k3s.io/img/logo.svg
+type: distribution
+description: Lightweight Kubernetes
