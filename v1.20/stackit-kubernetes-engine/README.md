@@ -1,7 +1,25 @@
 # Kubernetes Conformance tests on SKE
 
-## Setup SKE cluster
-To setup a Kubernetes cluster you have to create a STACKIT portal project, navigate to the runtimes and create yourself a SKE project. In the SKE project you can create yourself Kubernetes clusters on your demand. Further description can be found in: [create SKE Kubernetes clusters via Portal] (https://docs.stackit.cloud/display/public/STACKIT/Create+a+Kubernetes+Cluster+via+Portal)
+## Setup a STACKIT user account
+
+Setup a STACKIT user account following this document:
+
+[Setup a STACKIT user account](https://docs.stackit.cloud/display/STACKIT/How+to+setup+a+user+account)
+
+
+## How to create and manage a STACKIT project
+
+Afterwards you have to create a STACKIT project:
+
+[How to create and manage a project](https://docs.stackit.cloud/display/STACKIT/How+to+create+and+manage+a+project)
+
+## Setup Kubernetes cluster
+
+To setup a Kubernetes cluster you have to navigate to the runtimes section, where you can create yourself a Kubernetes project. In the Kubernetes project you can then create yourself Kubernetes clusters on your demand. 
+
+ATM you can only create Kubernetes cluster via the STACKIT portal. There you can configure the cluster as you prefer, e.g. Kubernetes version 1.20, node size, etc.
+
+Further description can be found in: [create SKE Kubernetes clusters via Portal] (https://docs.stackit.cloud/display/public/STACKIT/Create+a+Kubernetes+Cluster+via+Portal)
 
 ## Run conformance tests
 
