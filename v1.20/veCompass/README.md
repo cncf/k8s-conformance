@@ -12,7 +12,7 @@ For more detailed tutorial, you can visit `https://Your-Container-Cloud-Manageme
 Once the configuration files have been created, you should be able to run `kubectl` to interact with the APIs of the Kubernetes cluster. Follow the conformance suite [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to test it.
 
 * Use `ssh` to login into one of `master` machine.
-* Download `kubectl`,`sonobuoy` from [kubernetes-client-linux](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md) & [sonobuoy](https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.20.0).
+* Download `kubectl`,`sonobuoy` from [kubernetes-client-linux](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md) & [sonobuoy](https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.53.2).
 * Setup cluster config path:
 
 ```bash
