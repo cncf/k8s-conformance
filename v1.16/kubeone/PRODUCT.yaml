@@ -1,0 +1,9 @@
+vendor: Kubermatic
+name: KubeOne
+version: v0.10.0
+website_url: https://kubeone.io
+repo_url: https://github.com/kubermatic/kubeone
+documentation_url: https://github.com/kubermatic/kubeone/tree/master/docs
+product_logo_url: https://drive.google.com/a/loodse.com/file/d/1bIfZn0eNh75BhQj6Qr80krZ1zseBsvHW/view?usp=sharing
+type: installer
+description: 'Lifecycle management tool for Highly-Available Kubernetes clusters'

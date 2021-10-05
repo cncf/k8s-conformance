@@ -1,0 +1,6 @@
+vendor: Microsoft
+name: Azure aks-engine
+version: v0.48.0
+website_url: https://github.com/Azure/aks-engine
+documentation_url: https://github.com/Azure/aks-engine
+product_logo_url: https://i1.wp.com/buildazure.com/wp-content/uploads/2017/09/Azure.png
