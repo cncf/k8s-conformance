@@ -12,7 +12,7 @@ To setup the initial Orka cluster you will need to contact MacStadium as we depl
 
 For Conformance we run the following cluster setup command:
 ```
-kubeadmin init --config <config> --upload-certs
+kubeadm init --config <config> --upload-certs
 ``` 
 
 Run Conformance Test
