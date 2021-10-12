@@ -26,9 +26,12 @@ Deploy a Sonobuoy pod to your cluster with:
 sonobuoy run --mode=certified-conformance
 ```
 
-**NOTE:** The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
+**NOTES:** 
+ - The `--mode=certified-conformance` flag is required for certification runs since Kubernetes v1.16 (and Sonobuoy v0.16). Without this flag, tests which may be disruptive to your other workloads may be skipped. A valid certification run may not skip any conformance tests. If you're setting the test focus/skip values manually, certification runs require `E2E_FOCUS=\[Conformance\]` and no value for `E2E_SKIP`.
 
-**NOTE:** You can run the command synchronously by adding the flag `--wait` but be aware that running the conformance tests can take an hour or more.
+ - You can run the command synchronously by adding the flag `--wait` but be aware that running the conformance tests can take an hour or more.
+
+ - There was an issue with versions v0.53.0 and v0.53.1. Details can be found in the Sonobuoy [docs](https://sonobuoy.io/docs/v0.53.1/issue1388/) on how to avoid or work around the issue.
 
 View actively running pods:
 
