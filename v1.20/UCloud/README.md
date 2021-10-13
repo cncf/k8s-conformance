@@ -25,8 +25,8 @@ Run command as below:
 
 ```
 # install golang first.
-go get -u -v github.com/heptio/sonobuoy
-sonobuoy run
+go get -u -v github.com/vmware-tanzu/sonobuoy
+sonobuoy run --mode=certified-conformance
 sonobuoy status
 sonobuoy logs
 ```
@@ -34,6 +34,6 @@ sonobuoy logs
 Wait for abount 2 hours for the test to be finished.once sonobuoy status shows the run as completed to indicate that the test has been finished, then run the following command to extract the test results.
 
 ```
-sonobuoy retrieve .
+outfile=$(sonobuoy retrieve)
 mkdir ./results; tar xzf *.tar.gz -C ./results
 ```
