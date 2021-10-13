@@ -6,7 +6,9 @@ You must register a UCloud account following [this](https://passport.ucloud.cn/#
 
 ### Create UK8S Cluster
 
-After login into UCLoud Console，you can create a UK8S Cluster in Hong Kong region in this [pages](https://console.ucloud.cn/uk8s/manage). The Kubernetes Version is v1.20.6 by default.
+After login into UCLoud Console，you can create a UK8S Cluster in Hong Kong region in this [pages](https://console.ucloud.cn/uk8s/manage). The Kubernetes Version is v1.20.6 by default. 
+
+Make sure you choose HK region in order to get direct access to the gcr and docker repository.
 
 1. Click "Create Cluster" Button.
 2. Choose a dedicated / hosted cluster version. If you choose a dedicated cluster, 3 master nodes are required. If you choose a hosted version, we will maintain the masters and core componenets like apiserver, etcd, scheduler for you.
@@ -16,8 +18,10 @@ After login into UCLoud Console，you can create a UK8S Cluster in Hong Kong reg
 
 ### Access Cluster
 
-The Nodes can't access from Internet until you bind a EIP to the instance. You can bind EIP to any nodes in [uhost page](https://console.ucloud.cn/uhost/uhost).
+The Nodes can't access from Internet until you bind a EIP to the instance. You can bind an EIP to any nodes in [uhost page](https://console.ucloud.cn/uhost/uhost).
 After did that, you can ssh to the node or master.
+
+The Cluster uses the UCloud VPC to get connected to the UCloud intranet. In order to access the Internet, you need to create a [natgw](https://docs.ucloud.cn/vpc/briefguide/step4) and bind an EIP to the NAT.
 
 ### Run Conformance Test
 
