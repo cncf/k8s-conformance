@@ -21,11 +21,21 @@ After did that, you can ssh to the node or master.
 
 ### Run Conformance Test
 
-Run command as below:
+#### Install the Sonobuoy Tool for Conformance Test
+
+1. Install Go Environment
+2. Download the [latest release][releases] for your client platform.
+3. Extract the tarball:
+
+   ```
+   tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+   ```
+
+Move the extracted `sonobuoy` executable to somewhere on your `PATH`.
+
+#### Complete the Conformance Test
 
 ```
-# install golang first.
-go get -u -v github.com/vmware-tanzu/sonobuoy
 sonobuoy run --mode=certified-conformance
 sonobuoy status
 sonobuoy logs
