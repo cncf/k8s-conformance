@@ -1,0 +1,8 @@
+vendor: Fujitsu  Limited
+name: FUJITSU Hybrid IT Service FJcloud-V Kubernetes Service Hatoba
+version: v1.21.1
+website_url: https://jp.fujitsu.com/solutions/cloud/fjcloud/-v/
+documentation_url: https://doc.cloud.global.fujitsu.com/jp/
+product_logo_url: https://landscape.cncf.io/logos/fujitsu-member.svg
+type: hosted
+description: 'FUJITSU Hybrid IT Service FJcloud-V Kubernetes Service Hatoba is a container platform suitable for small start. It help you modernize your applications and accelerate DX.'
