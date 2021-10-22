@@ -26,9 +26,12 @@ ou can deploy a new VKE cluster in a few clicks. Here's how to get started.
 
 1. When ready, click **Deploy Now**.
 
-**Note:** During the open beta, you'll notice that the cluster status reports **Running** soon after deployment, which indicates that the nodes have booted. However, Kubernetes requires additional time to inventory and configure the nodes. Please allow several minutes for VKE to complete the configuration. We will correct the status reporting before the final release. To verify the status of your cluster, please download your `kubeconfig` file (as described in the next section) and run:
+**Note:** You'll notice that the cluster status reports **Running** soon after deployment, which indicates that the nodes have booted. However, Kubernetes requires additional time to inventory and configure the nodes. Please allow several minutes for VKE to complete the configuration. We will correct the status reporting before the final release. To verify the status of your cluster, please download your `kubeconfig` file (as described in the next section) and run:
 
         $ kubectl --kubeconfig={PATH TO THE FILE} cluster-info
+
+> Additonal information can be found [here](https://www.vultr.com/docs/vultr-kubernetes-engine)
+
 ## Run conformance tests
 
 Follow the k8s-conformance [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to run the conformance tests.
