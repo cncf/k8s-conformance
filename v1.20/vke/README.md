@@ -2,14 +2,14 @@
 
 ## Create a cluster
 
-ou can deploy a new VKE cluster in a few clicks. Here's how to get started.
+You can deploy a new VKE cluster in a few clicks. Here's how to get started.
 
 1. Navigate to [the Kubernetes page in the Customer Portal](https://my.vultr.com/kubernetes/).
 1. Click **Add Cluster**.
 1. Enter a descriptive label for the **Cluster Name**.
 1. Select the Kubernetes version.
 1. Choose a deployment location.
-1. Create a Node Pool.
+1. Create a Node Pool .
 
     **About Node Pools**
 
