@@ -1,0 +1,16 @@
+# Conformance tests for Vultr Kubernetes Engine
+
+## Create a cluster
+
+Deploying via Vultr UI
+
+Following the VKE deployment guide that can be found here : https://www.vultr.com/docs/vultr-kubernetes-engine#How_to_Deploy_a_VKE_Cluster
+
+
+## Run conformance tests
+
+Follow the k8s-conformance
+[test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running)
+to run the conformance tests.
+
+The output here was obtained with Sonobuoy 0.54.0 running on a Kubernetes 1.20.11 cluster.
