@@ -2,9 +2,7 @@
 
 ## Create a cluster
 
-Deploying via Vultr UI
-
-Following the VKE deployment guide that can be found here : https://www.vultr.com/docs/vultr-kubernetes-engine#How_to_Deploy_a_VKE_Cluster
+Following the VKE deployment guide that can be found [here](https://www.vultr.com/docs/vultr-kubernetes-engine#How_to_Deploy_a_VKE_Cluster)
 
 
 ## Run conformance tests
