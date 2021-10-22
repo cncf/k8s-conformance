@@ -2,7 +2,7 @@
 
 ## Create a cluster
 
-ou can deploy a new VKE cluster in a few clicks. Here's how to get started.
+You can deploy a new VKE cluster in a few clicks. Here's how to get started.
 
 1. Navigate to [the Kubernetes page in the Customer Portal](https://my.vultr.com/kubernetes/).
 1. Click **Add Cluster**.
