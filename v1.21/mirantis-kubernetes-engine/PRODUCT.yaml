@@ -1,0 +1,8 @@
+vendor: Mirantis
+name: Mirantis Docker Enterprise
+version: 3.5.0
+website_url: https://docs.mirantis.com/
+documentation_url: https://docs.mirantis.com/mke/3.5
+product_logo_url: https://www.mirantis.com/json/mirantis-logo.svg
+type: distribution
+description: Mirantis Kubernetes Engine Kubernetes distribution.
