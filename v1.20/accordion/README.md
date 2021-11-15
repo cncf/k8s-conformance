@@ -5,7 +5,33 @@
 
 Use regular ansible playbook command to create a cluster.
 
-Accordion 5 nodes cluster:
+If you need an installation package, please request it by e-mail.
+
+```
+$ vi group_vars/hostyml
+master_isolation "no"
+master_host_name acc-master 
+master_ip 10.20.200.161
+master_mode "yes"
+master2_ip 10.20.200.162
+master3_ip 10.20.200.163
+master2_hostname acc-master2 
+master3_hostname acc-master3 
+L4_mode "haproxy"
+haproxy_port 8443
+keep_vip 10.20.200.160 
+keep_interface ens192 
+```
+```
+$ vi etc/hosts
+10.20.200.161 acc-master
+10.20.200.164 acc-node1
+10.20.200.165 acc-node2
+10.20.200.162 acc-master2
+10.20.200.163 acc-master3
+```
+
+### Accordion 5 nodes cluster:
 
 ```
 root@acc-master:~# kubectl get nodes -o wide
