@@ -32,7 +32,7 @@ You need to change the value of `apiServer` to the IP address of master node. An
     ```
     kubeadm join 192.168.122.50:6443 --token mnp5b8.u7tl2cruk73gh0zh     --discovery-token-ca-cert-hash sha256:662a697f67ecbb8b376898dcd5bf4df806249175ea4a90c2d3014be399c6c18a
     ```
-3. If you create a single node Kubernetes cluster, you have to untaint the master node
+3. If you create a single node except master in Kubernetes cluster, you have to untaint the master node
     ```
     kubectl taint nodes --all node-role.kubernetes.io/master-
     ```
