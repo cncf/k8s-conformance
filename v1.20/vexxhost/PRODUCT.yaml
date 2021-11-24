@@ -1,0 +1,7 @@
+vendor: VEXXHOST, Inc.
+name: Kubernetes Container Service
+version: 12.0.1
+website_url: https://vexxhost.com/public-cloud/container-services/kubernetes/
+documentation_url: https://docs.openstack.org/magnum/wallaby
+type: hosted
+description: Fully managed Kubernetes fully integrated with OpenStack
