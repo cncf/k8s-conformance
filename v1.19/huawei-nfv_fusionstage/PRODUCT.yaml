@@ -1,0 +1,8 @@
+vendor: Huawei
+name: HUAWEI NFV_FusionStage
+version: NFV_FusionStage-21.3.RC1-X86_64.zip
+website_url: https://carrier.huawei.com/cn/products/core-network/telco-cloud
+documentation_url: https://support.huawei.com/carrier/docview?nid=DOC1100813443&path=PBI1-21262245/PBI1-21435125/PBI1-21435910/PBI1-22892300/PBI1-251091346&detailId=PBI1-252220093
+product_logo_url: https://carrier.huawei.com/~/media/CNBG/Images/Home/huawei_logo.png?h=30&la=zh&w=133
+type: hosted
+description: 'Huawei NFV_FusionStage is an open, distributed architecture and carries diversified services to help carriers achieve their business goals.'

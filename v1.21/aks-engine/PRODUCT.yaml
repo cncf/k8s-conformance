@@ -1,0 +1,8 @@
+vendor: Microsoft
+name: Azure aks-engine
+version: v0.66.0
+website_url: https://github.com/Azure/aks-engine
+documentation_url: https://github.com/Azure/aks-engine
+product_logo_url: https://raw.githubusercontent.com/cncf/landscape/master/cached_logos/azure-aks-engine.svg
+type: distribution
+description: 'Units of Kubernetes on Azure!'
