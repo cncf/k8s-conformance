@@ -110,7 +110,7 @@ tar -xzf sonobuoy_0.55.0_linux_amd64.tar.gz
 ```
 2. Run Sonobuoy
 ```
-./sonobuoy run
+./sonobuoy run --mode=certified-conformance
 ```
 3. Check the status
 ```
