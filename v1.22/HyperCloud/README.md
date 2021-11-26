@@ -5,9 +5,10 @@
 Prepare three nodes with CentOS 8 - one for `master node` and the others for `worker node`
 ### Setup master node
 #### Install Kubernetes, CRI-O, Calico and HyperCloud
-1. Download installer file in our repository
+1. Download installer file in our repository and Checkout Git branch
     ```
     git clone https://github.com/tmax-cloud/hypercloud_infra_installer.git
+    git checkout v1.22
     ```
 2. Modify `k8s.config` to suit your environment
 You need to change the value of `apiServer` to the IP address of master node. And set the versions of each components like below.
@@ -42,9 +43,10 @@ You need to change the value of `apiServer` to the IP address of master node. An
     ```
 ### Setup worker nodes
 #### Install Kubernetes and CRI-O
-1. Download installer file in our repository
+1. Download installer file in our repository and Checkout Git branch
     ```
     git clone https://github.com/tmax-cloud/hypercloud_infra_installer.git
+    git checkout v1.22
     ```
 2. Execute installer script
     ```
