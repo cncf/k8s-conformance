@@ -41,26 +41,26 @@ You need to change the value of `apiServer` to the IP address of master node. An
     ./k8s_master_install.sh
     ```
 #### Install HyperCloud Storage
+
 - Before installing hypercloud-storage with hcsctl, create yaml files is required for installation and change it to suit your environment.
 
    ``` shell
-   $ hcsctl create-inventory {$inventory_name}
-   # Ex) hcsctl create-inventory myInventory
+   $ ./hcsctl create-inventory {$inventory_name}
+   # Ex) ./hcsctl create-inventory myInventory
    ```
-- Two directories of rook and cdi are created in the created inventory. `./myInventory/rook/*.yaml` are yaml files used for Rook-Ceph installation, and `./myInventory/cdi/*.yaml` are yaml files used for KubeVirt-CDI installation.
+- Rook directory is created in the created inventory. `./myInventory/rook/*.yaml` are yaml files used for Rook-Ceph installation.
 - Since all the generated yaml files are for sample provision, you have to use the contents of each yaml file after **modifying to your environment**.<strong> Do not modify the folder and file name. </strong>
-- Modify yaml contents created under `./myInventory/rook/` path to fit your environment. Refer to https://rook.github.io/docs/rook/v1.4/ceph-cluster-crd.html
+- Modify yaml contents created under `./myInventory/rook/` path to fit your environment. Refer to https://rook.github.io/docs/rook/v1.7/ceph-cluster-crd.html
 - After modifying the inventory files to suit the environment, install hypercloud-storage with hcsctl.
    ``` shell
-   $ hcsctl install {$inventory_name}
-   # Ex) hcsctl install myInventory
+   $ ./hcsctl install {$inventory_name}
+   # Ex) ./hcsctl install myInventory
    ```
 
     - When installation is completed normally, you can use hypercloud-storage. After installation, you can use Block Storage and Shared Filesystem.
-- Verify whether hypercloud-storage is properly installed with rook.test and cdi.test.
+- Verify whether hypercloud-storage is properly installed with rook.test.
     ``` shell
-    $ rook.test
-    $ cdi.test
+    $ ./rook.test
     ```
     - To check whether hypercloud-storage can be used normally, various scenario tests are performed.
 
