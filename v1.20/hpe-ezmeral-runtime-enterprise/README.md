@@ -1,4 +1,4 @@
-All hosts are assumed to be Centos or RHEL.
+All hosts are assumed to be SLES 15 or RHEL or ec2.
 Assumes the user has HPE Ezmeral Container Platform software installed on 'controller' host.
 
 ### Add Gateway 
@@ -13,11 +13,11 @@ Assumes the user has HPE Ezmeral Container Platform software installed on 'contr
 -In the left pane, under "K8S", select "Hosts".
 -Enter the IPs (separated by comas) of the VMs or physical hosts. Provide user credentials that will be used to login into them, such as username/password. Click "Submit" button. Wait for the bundle to be installed on the hosts and for their state to be "ready".
 
-### Create 1.20.8 Kubernetes cluster
+### Create 1.20.11-hpe-1 Kubernetes cluster
 -In the left pane, under "K8S" select "Clusters". 
 -In the right pane, click "Create K8s Cluster" button.
 -Fill out the form for cluster creation. Specify one of the K8s hosts as Master and two or more as workers.
--Choose the k8s version as '1.20.8'.
+-Choose the k8s version as '1.20.11-hpe-1'.
 -Click 'Submit' button.
 Wait for the cluster to be in 'ready state'. This might take a while.
 
