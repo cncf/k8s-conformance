@@ -1,0 +1,9 @@
+vendor: openSUSE Project
+name: openSUSE Kubic
+version: 20210921
+website_url: https://kubic.opensuse.org
+repo_url: https://github.com/kubic-project
+documentation_url: https://en.opensuse.org/Portal:Kubic
+product_logo_url: https://raw.githubusercontent.com/kubic-project/community/master/logo/kubic_logo_official.svg
+type: distribution
+description: openSUSE Kubic is a community kubernetes distribution integrating latest kubeadm versions atop a container-optimised transactionally-updated base system called openSUSE MicroOS.
