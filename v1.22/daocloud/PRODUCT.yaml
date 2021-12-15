@@ -4,3 +4,6 @@ version: v4.0.7-35143
 website_url: https://www.daocloud.io/dce
 documentation_url: https://download.daocloud.io/DaoCloud_Enterprise/DaoCloud_Enterprise/4.0.7
 product_logo_url: https://guide.daocloud.io/download/attachments/524290/global.logo?version=2&modificationDate=1469173304363&api=v2
+type: distribution
+description: 'Daocloud helps you provide a reliable and consistent basic support environment to meet the high SLA requirements of enterprise critical applications
+.'
