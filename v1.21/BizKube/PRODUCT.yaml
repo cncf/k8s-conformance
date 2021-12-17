@@ -1,0 +1,9 @@
+vendor: KBSYS Inc.
+name: BizKube
+version: 1.0.0
+website_url: http://www.bizkube.co.kr
+repo_url: -- 
+documentation_url: -- 
+product_logo_url: http://www.bizkube.co.kr/static/media/logo.svg
+type: distribution
+description: 'Bizkube is a next-generation enterprise distributed processing and hybrid cloud operating solution that provides Built, Deployment, Elastic Scaling Modern Applications, and Data Service capabilities, various open source support, and a customized docker environment for users.'
