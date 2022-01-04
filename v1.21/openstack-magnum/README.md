@@ -12,7 +12,7 @@ Now you can create a Kubernetes cluster template by command:
 
 Then you can create a Kubernetes cluster by below command:
 
-	openstack coe cluster create k8s-calico-coreos --cluster-template k8s --labels=kube_tag=v1.20.2-rancher1 --node-count=2
+	openstack coe cluster create k8s-calico-coreos --cluster-template k8s --labels=kube_tag=v1.21.1-rancher1 --node-count=2
 
 After the cluster is created, run the following command to obtain the configuration/certificate files:
 
