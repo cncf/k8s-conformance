@@ -1,6 +1,6 @@
 vendor: Amazon Web Services
 name: Amazon Elastic Kubernetes Service Anywhere (Amazon EKS Anywhere)
-version: v1.21.2
+version: v1.21.5
 website_url: https://aws.amazon.com/eks/eks-anywhere
 repo_url: https://github.com/aws/eks-anywhere
 documentation_url: https://anywhere.eks.amazonaws.com/
