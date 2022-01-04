@@ -1,0 +1,8 @@
+vendor: Alauda
+name:  Alauda Container Platform (ACP)
+version: 3.6
+website_url: http://www.alauda.cn/product/detail/id/364.html
+documentation_url: http://www.alauda.cn/product/detail/id/364.html
+product_logo_url: http://www.alauda.cn/Upload/image/201907/1563443825449313.png
+type: distribution
+description: A Cloud-Native Application Platform based on Kubernetes
