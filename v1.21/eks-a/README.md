@@ -19,7 +19,7 @@ The target workload environment will need:
 * DHCP service running in vSphere environment in the primary VM network for your workload cluster
 * One network in vSphere to use for the cluster. This network must have inbound access into vCenter
 * A OVA imported into vSphere and converted into template for the workload VMs
-* User credentials to [create vms and attach networks, etc]({{< relref "user-permissions.md" >}})
+* User credentials to [create vms and attach networks, etc](https://anywhere.eks.amazonaws.com/docs/reference/vsphere/user-permissions/)
 
 Each VM will require:
 
@@ -97,7 +97,7 @@ chmod 755 sonobuoy
      controlPlaneConfiguration:
        count: 2
        endpoint:
-         host: ""
+         host: "198.18.100.79"
        machineGroupRef:
          kind: VSphereMachineConfig
          name: prod-cp
@@ -110,6 +110,8 @@ chmod 755 sonobuoy
          kind: VSphereMachineConfig
          name: prod-etcd
      kubernetesVersion: "1.21"
+     managementCluster:
+       name: prod
      workerNodeGroupConfigurations:
      - count: 2
        machineGroupRef:
@@ -121,10 +123,10 @@ chmod 755 sonobuoy
    metadata:
      name: prod
    spec:
-     datacenter: SDDC-Datacenter
+     datacenter: "SDDC-Datacenter"
      insecure: false
-     network: /SDDC-Datacenter/network/sddc-cgw-network-1
-     server: vcenter.sddc-12-345-678-9.vmwarevmc.com
+     network: "/SDDC-Datacenter/network/sddc-cgw-network-1"
+     server: "vcenter.sddc-44-239-186-141.vmwarevmc.com"
      thumbprint: ""
    ---
    apiVersion: anywhere.eks.amazonaws.com/v1alpha1
@@ -132,13 +134,13 @@ chmod 755 sonobuoy
    metadata:
      name: prod-cp
    spec:
-     datastore: /SDDC-Datacenter/datastore/WorkloadDatastore
+     datastore: "/SDDC-Datacenter/datastore/WorkloadDatastore"
      diskGiB: 25
-     folder: /SDDC-Datacenter/vm/capv/prod
+     folder: "/SDDC-Datacenter/vm/capv/prod"
      memoryMiB: 8192
      numCPUs: 2
      osFamily: bottlerocket
-     resourcePool: '*/Resources/Compute-ResourcePool'
+     resourcePool: "*/Resources/Compute-ResourcePool"
      users:
      - name: ec2-user
        sshAuthorizedKeys:
@@ -149,13 +151,13 @@ chmod 755 sonobuoy
    metadata:
      name: prod
    spec:
-     datastore: /SDDC-Datacenter/datastore/WorkloadDatastore
+     datastore: "/SDDC-Datacenter/datastore/WorkloadDatastore"
      diskGiB: 25
-     folder: /SDDC-Datacenter/vm/capv/prod
+     folder: "/SDDC-Datacenter/vm/capv/prod"
      memoryMiB: 8192
      numCPUs: 2
      osFamily: bottlerocket
-     resourcePool: '*/Resources/Compute-ResourcePool'
+     resourcePool: "*/Resources/Compute-ResourcePool"
      users:
      - name: ec2-user
        sshAuthorizedKeys:
@@ -166,13 +168,13 @@ chmod 755 sonobuoy
    metadata:
      name: prod-etcd
    spec:
-     datastore: /SDDC-Datacenter/datastore/WorkloadDatastore
+     datastore: "/SDDC-Datacenter/datastore/WorkloadDatastore"
      diskGiB: 25
-     folder: /SDDC-Datacenter/vm/capv/prod
+     folder: "/SDDC-Datacenter/vm/capv/prod"
      memoryMiB: 8192
      numCPUs: 2
      osFamily: bottlerocket
-     resourcePool: '*/Resources/Compute-ResourcePool'
+     resourcePool: "*/Resources/Compute-ResourcePool"
      users:
      - name: ec2-user
        sshAuthorizedKeys:
@@ -195,7 +197,7 @@ chmod 755 sonobuoy
 
 ## Run Sonobuoy e2e
 ```
-./sonobuoy run --mode=certified-conformance --wait --kube-conformance-image k8s.gcr.io/conformance:v1.21.2
+./sonobuoy run --mode=certified-conformance --wait --kube-conformance-image k8s.gcr.io/conformance:v1.21.5
 results=$(./sonobuoy retrieve)
 mkdir ./results
 tar xzf $results -C ./results
