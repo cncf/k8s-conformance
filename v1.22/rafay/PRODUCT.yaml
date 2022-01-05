@@ -1,8 +1,9 @@
 vendor: Rafay Systems
-name: Rafay Kubernetes Operations Platform
+name: Rafay
 version: v2.4.9
 website_url: https://rafay.co/
 documentation_url: https://docs.rafay.co/
 product_logo_url: https://github.com/rafayopen/k8s-conformance-1/blob/master/v1.22/rafay/Rafay_Logo.svg
 type: Hosted
-description: A SaaS-first Kubernetes Operations Platform with enterprise-class scalability, zero-trust security and interoperability for managing applications across public clouds, data centers & edge.
+description: Rafay Systems enables DevOps and SRE teams to automate application lifecycle and cluster configuration management across on-premise and cloud-based Kubernetes clusters through a turnkey SaaS platform.
+
