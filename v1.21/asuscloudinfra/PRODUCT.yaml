@@ -1,0 +1,8 @@
+vendor: ASUS Cloud
+name: ASUS Cloud Infra 
+version: 2.0.0
+website_url: www.asuscloud.com
+documentation_url: https://drive.google.com/file/d/196W9_KfWnolVooXX7JnYrbFWIHUIbMbE/view?usp=sharing
+product_logo_url: https://drive.google.com/file/d/1qeDvcfTLmr93pHJ0VHzeTjgE6OGkeIJg/view?usp=sharing
+type: distribution
+description: 'helps you bootstrap a Kubernetes cluster'

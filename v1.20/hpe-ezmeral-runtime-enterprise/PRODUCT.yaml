@@ -1,0 +1,8 @@
+vendor: Hewlett Packard Enterprise (HPE)
+name: HPE Ezmeral Runtime Enterprise
+version: 5.3.7
+website_url: hpe.com/info/containers
+documentation_url:  N/A
+product_logo_url: https://github.com/hpe-design/logos/blob/master/HPE%20Primary%20Logo%20-%20SVG/hpe-logo-color.svg
+type: Distribution
+description: HPE Ezmeral Runtime Enterprise is a unified software platform built on 100% open-source Kubernetes and designed for both cloud-native applications and non-cloud-native applications running on any infrastructure, either on-premises or hybrid and multi-cloud environments.
