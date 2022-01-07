@@ -4,4 +4,4 @@ version: 201221+0.6.0
 website_url: https://www.weave.works/product/gitops-enterprise/
 documentation_url: https://docs.gitops.weave.works/docs/enterprise/intro
 type: installer
-description: Weave GitOps Enterprise enables the management of cluster and applications on scale with GitOps.
+description: Weave GitOps Enterprise enables the management of clusters and applications on scale with GitOps.

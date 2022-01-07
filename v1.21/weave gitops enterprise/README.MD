@@ -159,8 +159,8 @@ Example template
    
 1. Populate the template
 2. Select the cluster credentials 
-2. Create a PR
-3. Merge the Cluster PR
+3. Create a PR
+4. Merge the Cluster PR
   
 
 ## Run Sonobuoy e2e
