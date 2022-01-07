@@ -6,7 +6,7 @@
 ### Create TKE Cluster
 - Create a TKE Cluster
 - The cluster region need choose out of China mainland ( e.g. Bangkok)
-- The cluster Kubernetes version need choose 1.20.6
+- The cluster Kubernetes version need choose 1.22.5
 ![](CreateTkeCluster.png)
 
 ### Deploy sonobuoy Conformance test
