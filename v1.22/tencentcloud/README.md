@@ -16,7 +16,7 @@
 Download a binary release of the CLI, Refer to the following command to run：
 
 ```shell
-sonobuoy run --mode=certified-conformance --kube-conformance-image-version=v1.22.5-tke.1
+sonobuoy run --mode=certified-conformance
 ```
 
 See more in conformance suite [instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to test it.
