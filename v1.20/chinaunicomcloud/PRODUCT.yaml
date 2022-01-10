@@ -1,3 +1,5 @@
+vendor: Chinaunicom Cloud
+name: Chinaunicom Kubernetes Engine
 version: v1.20.0
 website_url: https://www.cucloud.cn/product/csk.html
 documentation_url: https://www.cucloud.cn/product/csk.html
