@@ -6,7 +6,7 @@
 ### Create CKE Cluster
 - Create a CKE Cluster
 - The cluster region need choose out of China mainland ( e.g. kuiming)
-- The cluster Kubernetes version need choose 1.20.0
+- The cluster Kubernetes version need choose 1.22.1
 ![](cluster.png)
 
 ### Deploy sonobuoy Conformance test
