@@ -1,4 +1,4 @@
-# Whitemist
+# Whitemist 
 
 ## Prepare your installer environment
 
@@ -98,7 +98,7 @@ all:
         whitemist-node3: {}
 ```
 8. To avoid issues with slow sudo commands, it's a good idea to define the hostname (e.g. whitemist-nodeX) in the /etc/hosts files of the nodes.
-9. Download the WhiteMist deployer file:
+9. Download the WhiteMist deployer file (this is for Kubernetes v1.21):
 ```
 wget --no-check-certificate https://storage.whitestack.com/whitemist/whitemist-deployer-eclipse.sh
 ```
