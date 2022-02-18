@@ -1,0 +1,9 @@
+vendor: Kubermatic
+name: KubeOne
+version: v1.4.0-rc.1
+website_url: https://kubeone.io
+repo_url: https://github.com/kubermatic/kubeone
+documentation_url: https://docs.kubermatic.com/kubeone/v1.4/
+product_logo_url: https://drive.google.com/open?id=1g_QTM2VfN8-EwuPQYplqB9jW047lx-Rm
+type: installer
+description: "Kubermatic KubeOne automate cluster operations on all your cloud, on-prem, edge, and IoT environments."
