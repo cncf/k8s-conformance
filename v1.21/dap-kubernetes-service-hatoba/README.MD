@@ -1,4 +1,4 @@
-# FUJITSU Hybrid IT Service FJcloud-V Kubernetes Service Hatoba
+# FUJITSU Hybrid IT Service Digital Application Platform Kubernetes Service Hatoba
 
 ## Create cluster
 
