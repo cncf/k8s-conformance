@@ -9,7 +9,7 @@ results.
 
 # Install Agorakube For Local Development & CNCF Conformance Test Environment
 
-You can create a local environment by using Vagrant. 
+You can create a local environment by using Vagrant 
 The document below describes pre-requisites for Agorakube local environment and how you can start using them.
 
 ## Pre-requisites
