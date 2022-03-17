@@ -1,8 +1,8 @@
 vendor: Microsoft
 name: AKS Engine for Azure Stack
 version: v0.69.0
-website_url: https://github.com/Azure/aks-engine
-repo_url: https://github.com/Azure/aks-engine
+website_url: https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2108
+repo_url: https://github.com/msazurestackworkloads/aks-engine
 documentation_url: https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md
 product_logo_url: https://landscape.cncf.io/logos/azure-aks-engine.svg
 type: hosted platform
