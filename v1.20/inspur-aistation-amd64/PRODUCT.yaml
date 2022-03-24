@@ -1,0 +1,8 @@
+vendor: Inspur
+name: AIStation
+version: v3.3
+website_url: https://www.inspur.com/lcjtww/2526894/2526897/2526901/2527103/index.html
+documentation_url: https://www.inspur.com/lcjtww/resource/cms/2022/03/2022032415561548893.pdf
+product_logo_url: https://upload.wikimedia.org/wikipedia/en/7/73/Inspur_logo.svg
+type: hosted
+description: AIStation, an AI development platform, provides container deployment and efficient distributed training. It enables unified management, scheduling and monitoring of CPU and GPU resources of the cluster and effectively raise utilization of computation resources and productivity.
