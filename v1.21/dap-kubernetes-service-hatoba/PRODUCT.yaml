@@ -1,0 +1,8 @@
+vendor: Fujitsu  Limited
+name: FUJITSU Hybrid IT Service Digital Application Platform Kubernetes Service Hatoba
+version: v1.21.1
+website_url: https://www.fujitsu.com/jp/services/hybrid-it-service/digital-application-platform/
+documentation_url: https://www.fujitsu.com/jp/services/hybrid-it-service/digital-application-platform/dap-kubernetes-function-overview.pdf
+product_logo_url: https://landscape.cncf.io/logos/fujitsu-member.svg
+type: hosted
+description: 'FUJITSU Hybrid IT Service Digital Application Platform Kubernetes Service Hatoba is a container platform suitable for small starts. It helps modernize applications and accelerate DX.'
