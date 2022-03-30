@@ -1,0 +1,9 @@
+vendor: Intel Corporation
+name: Intel® Smart Edge Open
+version: 21.12
+website_url: https://www.intel.com/content/www/us/en/developer/tools/smart-edge-open/overview.html
+repo_url: https://github.com/smart-edge-open/open-developer-experience-kits
+documentation_url: https://smart-edge-open.github.io/docs/product-overview
+product_logo_url: https://github.com/smart-edge-open/docs/blob/main/smart-edge-open.svg
+type: distribution
+description: 'Intel® Smart Edge Open is an edge computing software toolkit for building platforms optimized for the edge solutions that host network functions alongside AI, media processing, and security workloads with reference solutions optimized for common use cases powered by a Certified Kubernetes* cloud native stack.'

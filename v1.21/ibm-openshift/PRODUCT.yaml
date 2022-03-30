@@ -1,8 +1,8 @@
 vendor: IBM
 name: Red Hat OpenShift on IBM Cloud
-version: 4.8.11
+version: 4.8.31
 website_url: https://www.ibm.com/cloud/openshift
 documentation_url: https://cloud.ibm.com/docs/openshift
-product_logo_url: https://github.com/ibm-cloud-docs/containers/blob/master/images-ui-only/logo-red-hat-openshift-on-ibm-cloud-light.svg
+product_logo_url: https://raw.githubusercontent.com/ibm-cloud-docs/containers/master/images-ui-only/logo-red-hat-openshift-on-ibm-cloud-light.svg
 type: hosted
 description: 'Red Hat OpenShift on IBM Cloud is a managed offering to create your own OpenShift cluster of compute hosts to deploy and manage containerized apps on IBM Cloud.'
