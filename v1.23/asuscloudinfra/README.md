@@ -305,7 +305,7 @@ Check the status of the Kubernetes cluster through kubectl:
 $ kubectl get node
 
 NAME          STATUS    ROLES    AGE   VERSION
-k8s-mgmt01   NotReady   master   31s   v1.23.4
+k8s-mgmt01   NotReady   master   32s   v1.23.4
 ```
 
 #### 5. Installing a Pod network add-on (Calico)
