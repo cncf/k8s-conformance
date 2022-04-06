@@ -1,3 +1,16 @@
+# Conformance tests for TaiChu v1.0.0
+
+## Deploy Kubernetes
+
+1. Prepare The Servers
+- Prepare a server for installing TaiChu, and then excute the script ```install.sh```.
+- Prepare three servers, one master and two workers to deploy kubernetes.
+
+1. Deploy Cluster
+- Click the "Resource Manager -> Compute Node -> Add" button to add the servers to TaiChu Kubernetes Platform. 
+- Click the "Cluster Manager -> Cluster -> Add" button to choose the servers and create the cluster.
+
+## Run Conformance Test
 1. kubernetes version
 ```
 k8s_version=v1.22.4
