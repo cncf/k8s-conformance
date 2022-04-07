@@ -11,7 +11,7 @@ $ az provider register -n Microsoft.ContainerService # if you have not done this
 
 $ az group create --name aksgroup --location eastus # create the resource group
 
-$ az aks create -g aksgroup -n aksconformance -k 1.22.2 --node-count 1 --generate-ssh-keys # create a single node AKS cluster
+$ az aks create -g aksgroup -n aksconformance -k 1.22.2 --node-count 2 --generate-ssh-keys # create a single node AKS cluster
 
 $ az aks get-credentials --resource-group aksgroup --name aksconformance # get the AKS cluster Kubernetes credentials for use with kubectl
 ```
