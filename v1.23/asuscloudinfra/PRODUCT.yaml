@@ -3,6 +3,6 @@ name: ASUS Cloud Infra
 version: 4.0.0
 website_url: https://asuscloud.com
 documentation_url: https://drive.google.com/file/d/1kOqdlZMFU6Sf_7vwhjd_DJiBBwzzrU-w/view?usp=sharing
-product_logo_url: https://drive.google.com/file/d/1qeDvcfTLmr93pHJ0VHzeTjgE6OGkeIJg/view?usp=sharing
+product_logo_url: https://landscape.cncf.io/logos/asus-cloud-infra.svg
 type: distribution
 description: 'helps you bootstrap a Kubernetes cluster'
