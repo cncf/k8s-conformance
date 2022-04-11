@@ -1,9 +1,9 @@
 ## To reproduce:
 #### Creating a cluster with kubekey
 
-Step 1:Download KubeKey v1.2.0 and add permission.
+Step 1:Download KubeKey v2.0.0 and add permission.
 ```
-curl -sfL https://get-kk.kubesphere.io | VERSION=v1.2.0 sh -
+curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
 chmod +x kk
 ```
 

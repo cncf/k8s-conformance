@@ -1,6 +1,6 @@
 vendor: QingCloud Technologies Corp.
 name: kubekey
-version: v1.2.0
+version: v2.0.0
 website_url: https://kubesphere.io/docs/installing-on-linux/introduction/kubekey
 repo_url: https://github.com/kubesphere/kubekey
 documentation_url: https://kubesphere.io/docs/installing-on-linux/introduction/kubekey
