@@ -25,7 +25,7 @@ $ ibmcloud oc cluster create vpc-gen2 --name conformance --version 4.7_openshift
 
 Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog?category=containers#services)
 and select `Red Hat OpenShift on IBM Cloud` to create a cluster. From the
-cluster creation UI, select version 4.7 and choose either classic or VPC
+cluster creation UI, select version 4.7.43 and choose either classic or VPC
 infrastructure. Then choose an appropriate location and worker pool configuration.
 Finally, give the cluster a name, such as `conformance`, and select `Create`.
 
@@ -52,11 +52,11 @@ $ oc adm policy add-scc-to-group anyuid system:authenticated system:serviceaccou
 Follow the
 [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running)
 to run the conformance tests. You will need to add the
-`--dns-namespace=openshift-dns --dns-pod-labels=dns.operator.openshift.io/daemonset-dns=default --kube-conformance-image-version v1.20.6`
+`--dns-namespace=openshift-dns --dns-pod-labels=dns.operator.openshift.io/daemonset-dns=default --kube-conformance-image-version v1.20.9`
 options to `sonobuoy run --mode=certified-conformance` so `sonobuoy` can find
 the cluster DNS pods and run a Kubernetes conformance image version that fixes a
-[known test case issue](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.20.md#failing-test-1).
-
+couple known test case issues, [1](https://github.com/kubernetes/kubernetes/issues/98648)
+and [2](https://github.com/kubernetes/kubernetes/issues/101949).
 Once conformance testing is completed, restore the default security rules.
 
 ```
