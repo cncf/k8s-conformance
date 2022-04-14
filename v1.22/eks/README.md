@@ -3,7 +3,6 @@
 ## Setup EKS Cluster
 
 Setup EKS cluster as per the [EKS documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html).
-Use one of the following ways to create a cluster.
 
 Install [eksctl](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html) based on your version of OS.
 Use `eksctl` for quickly creating a cluster. EksCtl will take care of creating the required dependent resources for the cluster, including the managed nodes for running conformance tests.
