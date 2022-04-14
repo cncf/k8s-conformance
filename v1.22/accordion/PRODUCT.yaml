@@ -3,6 +3,6 @@ name: Accordion
 version: v2.1.1
 website_url: https://accordions.co.kr/kube_eng/
 documentation_url: https://demo.accordions.co.kr/docs/
-product_logo_url: https://drive.google.com/file/d/1HR9tMR01rlztd__S7kMcREo3aZDcguCq/view?usp=sharing
+product_logo_url: https://accordions.co.kr/wp-content/uploads/2019/12/logo.png
 type: distribution
 description: 'Accordion Kubernetes Platform help you to orchestrate containerized workloads for your DevOps practices & CI/CD pipelines, delivering enhanced developer productivity and accelerating time to market.'
