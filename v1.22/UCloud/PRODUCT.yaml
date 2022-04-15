@@ -1,0 +1,8 @@
+vendor: UCloud
+name: UCloud Kubernetes Service（UK8S）
+version: v1.22.5
+website_url: https://www.ucloud.cn/site/product/uk8s.html
+documentation_url: https://docs.ucloud.cn/uk8s/
+product_logo_url: http://ued.ucloud.cn/share/%E7%BA%BF%E4%B8%8A%E5%9B%BE%E6%A0%87/product/uk8s.svg
+type: hosted & dedicated
+description: 'UK8S is a container service base on Kubernetes,integrated with  cloud product of UCloud platform.'
