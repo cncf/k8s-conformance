@@ -1,0 +1,8 @@
+vendor: Inspur
+name: AIStation
+version: v2.1
+website_url: https://www.inspur.com/lcjtww/2526894/2526897/2563322/2563340/index.html
+documentation_url: https://www.inspur.com/lcjtww/2526894/2526897/2526901/2527106/index.html
+product_logo_url: https://raw.githubusercontent.com/Iamlovingit/k8s-conformance/master/v1.23/aistation/AIStation_logo.svg
+type: distribution 
+description: AIStation inference platform is a one-stop AI reasoning service platform developed by Inspur，it faces enterprise AI application deployment and online service management scenarios. 
