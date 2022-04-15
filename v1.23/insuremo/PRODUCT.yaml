@@ -1,0 +1,8 @@
+vendor: eBaoTech
+name: InsureMO
+version: v1.0.0
+website_url: https://portal.insuremo.com/
+documentation_url: https://docs.insuremo.com/
+type: hosted
+product_logo_url: https://portal-tst.insuremo.com/assets/img/InsureMO_Logo_Primary.svg
+description: InsureMO is a cloud native PAAS platform for insurance industry based on containerization and Kubernetes technology. It provides a repository of insurance products covering a wide range of standard products worldwide; and rich micro services and reusable APIs related to general insurance, life insurance and health insurance. It also provides a variety of reusable common services and APIs, as well as management, development, monitoring and DevOps tools to help insurers get their products up and running quickly. InsureMO is a cloud-based next generation insurance operation system that connects and enables insurers, traditional channels, affinity partners, and FinTech/InsurTech startups.
