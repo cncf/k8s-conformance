@@ -41,10 +41,12 @@ mkdir ./results; tar xzf $outfile -C ./results
 
 ```
 path=plugins/e2e/results/global/{e2e.log,junit_01.xml}
+```
 
 
 Install
 
+```
 $ git clone https://github.com/kubernetes-sigs/kubespray.git
 
 $ cd kubespray
@@ -60,3 +62,4 @@ $ CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/i
 $ vi inventory/mycluster/hosts.yaml # edit hosts.yaml
 
 $ ansible-playbook -i inventory/mycluster/hosts.yaml --become --become-user=root cluster.yml
+```
