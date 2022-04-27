@@ -1,0 +1,8 @@
+vendor: China United Network Communications Limited Software Research Institute
+name: Chinaunicom Kubernetes Engine
+version: 0.5.0
+website_url: https://www.chinaunicom.cn/
+documentation_url: https://www.chinaunicom.cn/cke/docs
+product_logo_url: https://github.com/chinaunicom-sri/cke/blob/master/cke.svg
+type: distribution
+description: 'Chinaunicom Kubernetes engine can easily deploy and manage Kubernetes on mesos.'

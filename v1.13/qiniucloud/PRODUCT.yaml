@@ -1,0 +1,8 @@
+vendor: Qiniu Cloud
+name: Qiniu Enterprise Platform
+version: v4.2.0
+website_url: https://www.qiniu.com/products/kirk
+documentation_url: http://kirk-docs.qiniu.com
+product_logo_url: https://www.cncf.io/wp-content/uploads/2018/09/qiniu.svg
+type: distribution
+description: Qiniu Enterprise Platform is a multi-cloud support platform based on Kubernetes and Docker for application lifecycle management with high availability and high stability. This platform can accelerate time-to-market,improve cluster utilization,simplify the operation and maintenance.

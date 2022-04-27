@@ -1,0 +1,8 @@
+vendor: Nutanix
+name: Karbon
+version: v1.0.1
+documentation_url: https://portal.nutanix.com/#/page/docs/details?targetId=Karbon-v10:Karbon-v10
+website_url: https://www.nutanix.com
+product_logo_url: https://www.nutanix.com/wp-content/uploads/2017/11/nutanix.png
+type: hosted
+description: Managed Kubernetes offering by Nutanix

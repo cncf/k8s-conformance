@@ -1,0 +1,8 @@
+vendor: Cloud Control Solutions Inc.
+name: Cloud Control AppZ platform
+version: v2.0
+website_url: https://www.ecloudcontrol.com
+documentation_url: https://docs.ecloudcontrol.com/
+product_logo_url:
+type: distribution
+description: LOWTOUCH Multi-Cloud Automation! Hassle-free Kubernetes, CloudOps & SRE As-a-Service with GitOps and Observability.

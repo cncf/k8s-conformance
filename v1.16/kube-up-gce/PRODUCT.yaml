@@ -1,0 +1,8 @@
+vendor: Google
+name: kube-up.sh on Google Compute Engine
+version: v1.16.7
+website_url: https://github.com/kubernetes/kubernetes/tree/master/cluster
+repo_url: https://github.com/kubernetes/kubernetes
+documentation_url: https://github.com/kubernetes/kubernetes/tree/master/cluster
+type: installer
+description: Used by the kubernetes project to run clusters for release-blocking tests

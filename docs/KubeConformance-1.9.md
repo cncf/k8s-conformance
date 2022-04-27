@@ -283,7 +283,7 @@ DownwardAPIVolumeFiles.
 
 ## [downwardapi-volume-set-default-mode](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/downwardapi_volume.go#L61)
 
-Ensure that downward API can set default file premission
+Ensure that downward API can set default file permission
 mode for DownwardAPIVolumeFiles if no mode is specified.
 
 
@@ -645,10 +645,10 @@ pod with no other settings and make sure the pod actually consumes it.
 
 
 
-## [projected-secret-with-item-mode-mapped](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L455)
+## [projected-configmap-with-item-mode-mapped](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L455)
 
-Repeat the projected-secret-simple-mapped but this time
-with an item mode (e.g. 0400) for the secret map item
+Repeat the projected-configmap-simple-mapped but this time
+with an item mode (e.g. 0400) for the config map item
 
 
 
@@ -659,7 +659,7 @@ time with a user other than root.
 
 
 
-## [projected-volume-configMaps-updated-succesfully](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L479)
+## [projected-volume-configMaps-updated-successfully](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L479)
 
 Make sure that if a projected volume has configMaps,
 that the values in these configMaps can be updated, deleted,
@@ -691,7 +691,7 @@ DownwardAPIVolumeFiles in a projected volume.
 
 ## [projected-downwardapi-volume-set-default-mode](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L882)
 
-Ensure that downward API can set default file premission
+Ensure that downward API can set default file permission
 mode for DownwardAPIVolumeFiles if no mode is specified in a projected
 volume.
 
@@ -699,7 +699,7 @@ volume.
 
 ## [projected-downwardapi-volume-set-mode](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/common/projected.go#L897)
 
-Ensure that downward API can set file premission mode for
+Ensure that downward API can set file permission mode for
 DownwardAPIVolumeFiles in a projected volume.
 
 
@@ -890,7 +890,7 @@ reflected on a mounted volume.
 
 
 
-## [Kubectl version should check is all data is printed ](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/kubectl/kubectl.go#L1099)
+## [Kubectl version should check if all data is printed ](https://github.com/kubernetes/kubernetes/tree/v1.9.0-beta.2/test/e2e/kubectl/kubectl.go#L1099)
 
 
 

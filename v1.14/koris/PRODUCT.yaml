@@ -1,0 +1,8 @@
+vendor: noris-network
+name: koris
+version: 1.3.1
+website_url: https://gitlab.com/noris-network/koris
+documentation_url: https://noris-network.gitlab.io/koris/
+product_logo_url: https://gitlab.com/noris-network/koris/blob/master/docs/logos/stacked.svg
+type: installer
+description: 'Koris is a simple to use command line installer to created HA Clusters using kubeadm on Openstack'

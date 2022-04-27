@@ -1,0 +1,8 @@
+vendor: JD.COM
+name: Jingdong Datacenter OS
+version: v1.13.4
+website_url: http://tig.jd.com/en/products/jdos
+type: distribution
+documentation_url: http://tig.jd.com/docs/jdos
+product_logo_url: https://landscape.cncf.io/logos/jd-com-tig-jingdong-datacenter-os.svg
+

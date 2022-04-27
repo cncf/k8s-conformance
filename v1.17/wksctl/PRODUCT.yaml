@@ -1,0 +1,8 @@
+vendor: Weaveworks
+name: wksctl
+version: 0.8.3
+website_url: https://github.com/weaveworks/wksctl
+documentation_url: https://wksctl.readthedocs.io/en/latest/
+repo_url: https://github.com/weaveworks/wksctl
+type: distribution
+description: WKSctl is an open source tool bringing together a CAPI provider that can bootstrap a Kubernetes cluster given ssh details for existing Linux machines, and GitOps to manage your cluster.

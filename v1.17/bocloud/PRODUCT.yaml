@@ -1,0 +1,8 @@
+vendor: BoCloud
+name: BoCloud BeyondContainer
+version: v2.3
+website_url: http://bocloud.com.cn/product/BeyondContainer
+documentation_url: http://bocloud.com.cn/product/BeyondContainer
+product_logo_url: http://www.bocloud.com.cn/manager/images/by_logo.png
+type: hosted
+description: 'BoCloud BeyondContainer is a production-ready PaaS platform for Internet application deployment and management.'

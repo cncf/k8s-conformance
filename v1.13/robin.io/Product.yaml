@@ -1,0 +1,9 @@
+vendor: Robinsystems
+name: Robin hyper-converged Kubernetes platform
+version: v5.2.1
+website_url: https://robin.io
+repo_url: https://github.com/Robinsystems/robin
+documentation_url: https://s3-us-west-2.amazonaws.com/repo.robinsystems.com/docs/V5.0.2/user_guide/index.html
+product_logo_url: https://robin.io/wp-content/uploads/2019/05/robin-logo-horizontal-1-inch-white-bg.png
+type: Distribution
+description: 'ROBIN Platform, the industry’s first hyper-converged Kubernetes platform for big data, databases, and AI/ML'

@@ -1,0 +1,9 @@
+vendor: Gravitational
+name: Gravity
+version: 6.3.6
+website_url: https://gravitational.com/gravity
+repo_url: https://github.com/gravitational/gravity
+documentation_url: https://gravitational.com/gravity/docs/overview/
+product_logo_url: https://gravitational.com/gravity/docs/img/logo.svg
+type: distribution
+description: Gravity is a Kubernetes packaging solution that takes the drama out of on-prem deployments.

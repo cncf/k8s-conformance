@@ -1,0 +1,9 @@
+vendor: robin.io
+name: robin-cnp
+version: v5.3.9
+website_url: https://robin.io/
+repo_url: https://github.com/Robinsystems/robin
+documentation_url: https://docs.robin.io/platform/latest/
+product_logo_url: https://robin.io/wp-content/uploads/2019/10/robin-new-logo-white-bg-1024x217.png
+type: Distribution
+description: 'ROBIN Platform, the industry’s first hyper-converged Kubernetes platform for big data, databases, and AI/ML'

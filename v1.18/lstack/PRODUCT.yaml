@@ -1,0 +1,8 @@
+vendor: LStack Hybrid Cloud
+name: Launcher Tech LStack Container Service for Kubernetes
+version: v100r001c00b061
+website_url: https://www.lstack.com.cn
+documentation_url: https://document.lstack.com.cn
+product_logo_url: https://console.lstack.com.cn/lcs/lstack.svg
+type: hosted
+description: 'LStack Cloud Service (lcs) is a high-performance, high-reliability service through which enterprises can manage containerized applications. LCS supports native Kubernetes applications and tools, allowing you to easily set up a container runtime environment on the cloud.'

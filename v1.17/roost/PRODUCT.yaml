@@ -1,0 +1,8 @@
+vendor: Zettabytes
+name: Roost Desktop
+version: v1.9.1
+website_url: https://roost.io/
+documentation_url: https://roost.io/feed
+product_logo_url: https://roost.io/assets/images/Roost2020.svg
+type: distribution
+description: "Roost Desktop is a desktop application that provides a production-grade Kubernetes Engine on local machine. Zettabytes, Inc. is the company behind Roost Desktop."

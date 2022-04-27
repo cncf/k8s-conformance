@@ -1,0 +1,8 @@
+vendor: Rancher Inc.
+name: RKE - Rancher Kubernetes Engine
+version: v1.16
+website_url: https://github.com/rancher/rke
+repo_url: https://github.com/rancher/rke
+documentation_url: https://rancher.com/docs/rke/latest/en/
+type: Installer
+description: Rancher Kubernetes Engine, an extremely simple, lightning fast Kubernetes installer that works everywhere.

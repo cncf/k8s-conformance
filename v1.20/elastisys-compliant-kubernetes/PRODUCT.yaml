@@ -1,0 +1,9 @@
+vendor: Elastisys
+name: Compliant Kubernetes
+version: v2.16.0-ck8s1
+website_url: compliantkubernetes.io
+repo_url: https://github.com/elastisys/compliantkubernetes-kubespray
+documentation_url: compliantkubernetes.io
+product_logo_url: https://github.com/cncf/landscape/blob/master/hosted_logos/elastisys.svg 
+type: distribution
+description: Compliant Kubernetes (ck8s) is an enterprise-grade kubernetes distribution, built with security and compliance in mind.

@@ -1,0 +1,8 @@
+vendor: Elastisys
+name: Elastisys Compliant Kubernetes
+version: v0.1.0
+website_url: compliantkubernetes.com
+documentation_url: compliantkubernetes.com
+product_logo_url: https://github.com/cncf/landscape/blob/master/hosted_logos/elastisys.svg 
+type: distribution
+description: Elastisys Compliant Kubernetes (ECK) is an enterprise-grade kubernetes distribution, built with security and compliance in mind.

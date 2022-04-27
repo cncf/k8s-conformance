@@ -1,0 +1,6 @@
+vendor: Microsoft
+name: Azure Kubernetes Service AKS
+version: v1.13.5
+website_url: https://docs.microsoft.com/en-us/azure/aks/
+documentation_url: https://docs.microsoft.com/en-us/azure/aks/
+product_logo_url: https://i1.wp.com/buildazure.com/wp-content/uploads/2017/09/Azure.png

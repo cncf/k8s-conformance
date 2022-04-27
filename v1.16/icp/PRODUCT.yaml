@@ -1,0 +1,8 @@
+vendor: IBM
+name: IBM Cloud Private
+version: v3.2.2.2006
+website_url: https://www.ibm.com/cloud-computing/products/ibm-cloud-private/
+documentation_url: https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.1/kc_welcome_containers.html
+product_logo_url: https://github.com/IBM/charts/blob/master/logo/icp-logo-box.svg
+type: distribution
+description: 'IBM Cloud Private is a next generation, pre-packaged enterprise-class solution, and platform for developing and managing containerized applications.'
