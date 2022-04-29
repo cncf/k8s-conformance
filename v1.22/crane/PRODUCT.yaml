@@ -1,0 +1,9 @@
+vendor: crane
+name: crane
+version: 3.0.0
+website_url: https://github.com/slzcc/crane
+repo_url: https://github.com/slzcc/crane
+documentation_url: https://github.com/slzcc/crane/blob/master/docs
+product_logo_url: https://github.com/slzcc/crane/blob/master/logo/new-crane-logo.svg
+type: installer
+description: 'The Crane is a superb Kubernetes distribution for all of your Deploy needs.'

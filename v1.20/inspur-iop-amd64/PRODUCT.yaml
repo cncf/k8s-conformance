@@ -1,0 +1,8 @@
+vendor: Inspur Cloud
+name: Inspur Cloud Container Engine and Inspur Open Platform
+version: v1.20.1
+website_url: https://cloud.inspur.com/product/UK8S/
+documentation_url: https://console1.cloud.inspur.com/document/cks/index.html
+product_logo_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Inspur.svg
+type: hosted
+description: Inspur Cloud Container Engine and Inpsur Open Platform is an application-oriented container management platform based on amd64 architecture. It provides complete Kubernetes clustering capabilities, helping users to quickly deploy flexible and reliable container clusters, easily create and manage container workloads, and provide automatic scaling and resource monitoring. Efficient operation and maintenance capabilities such as log collection and retrieval.
