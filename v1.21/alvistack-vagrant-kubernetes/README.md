@@ -1,28 +1,34 @@
 # AlviStack - Vagrant Box Packaging for Kubernetes
 
-For running k8s conformance test we need a host, 2 vagrant instances as
-master and 1 vagrant instance as node with following minimal system
+For running k8s conformance test we need 2 vagrant instances as master
+and 1 vagrant instance as node with following minimal system
 requirement, e.g.
 
   - host
       - libvirt (or virtualbox)
       - nested virtualization enabled
-      - Ubuntu 20.04
+      - Ubuntu 22.04
       - 8 CPUs
       - 32GB RAM
   - `kube01`
       - kubernetes master, etcd
-      - cri-o, weave
+      - cri-o, cilium
+      - Ubuntu 22.04
+      - IP: 192.168.121.101/24
       - 2 CPUs
       - 8GB RAM
   - `kube02`
       - kubernetes master, etcd
-      - cri-o, weave
+      - cri-o, cilium
+      - Ubuntu 22.04
+      - IP: 192.168.121.102/24
       - 2 CPUs
       - 8GB RAM
   - `kube03`
       - kubernetes node, etcd
-      - cri-o, weave
+      - cri-o, cilium
+      - Ubuntu 22.04
+      - IP: 192.168.121.103/24
       - 2 CPUs
       - 8GB RAM
 
@@ -32,29 +38,28 @@ Install some basic pacakges for host:
 
     root@host:~# apt update
     root@host:~# apt full-upgrade
-    root@host:~# apt install aptitude git linux-generic-hwe-20.04 openssh-server python3 rsync vim
+    root@host:~# apt install aptitude git linux-generic-hwe-22.04 openssh-server python3 rsync vim
 
 Install Libvirt:
 
-    root@host:~# echo "deb http://ppa.launchpad.net/savoury1/virtualisation/ubuntu focal main" | tee /etc/apt/sources.list.d/savoury1.list
-    root@host:~# curl -fsSL "http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xE996735927E427A733BB653E374C7797FB006459" | gpg --dearmor | tee /etc/apt/trusted.gpg.d/savoury1.gpg > /dev/null
     root@host:~# apt-get update
     root@host:~# apt-get install -y binutils bridge-utils dnsmasq-base ebtables gcc libarchive-tools libguestfs-tools libvirt-clients libvirt-daemon-system libvirt-dev make qemu-system qemu-utils ruby-dev virt-manager
 
 Install Vagrant:
 
-    root@host:# echo "deb [arch=amd64] https://apt.releases.hashicorp.com focal main" | tee /etc/apt/sources.list.d/hashicorp.list
+    root@host:# echo "deb [arch=amd64] https://apt.releases.hashicorp.com jammy main" | tee /etc/apt/sources.list.d/hashicorp.list
     root@host:# curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /etc/apt/trusted.gpg.d/hashicorp.gpg > /dev/null
     root@host:# apt-get update
     root@host:# apt-get install -y vagrant
+    root@host:# vagrant plugin install vagrant-libvirt
 
 ## Create Vagrant Instance
 
 Create `Vagrantfile`:
 
-    root@host:# mkdir /tmp/vagrant-kubernetes
+    root@host:# mkdir /tmp/vagrant-kubernetes-1.21
     
-    root@host:# cd /tmp/vagrant-kubernetes
+    root@host:# cd /tmp/vagrant-kubernetes-1.21
     
     root@host:# cat > Vagrantfile <<-EOF
     Vagrant.configure("2") do |config|
@@ -132,11 +137,11 @@ Gather the IP for each instances:
 
 Setup `/etc/hostname` for each nodes, e.g.
 
-    root@kube01:~# echo "kube01" > /etc/hostname
+    root@kube01:~# hostnamectl set-hostname kube01
     
-    root@kube02:~# echo "kube02" > /etc/hostname
+    root@kube02:~# hostnamectl set-hostname kube02
     
-    root@kube03:~# echo "kube03" > /etc/hostname
+    root@kube03:~# hostnamectl set-hostname kube03
 
 Setup `/etc/hosts` for each nodes, e.g.
 
@@ -162,24 +167,24 @@ Test connectivity with ping:
 
     root@kube01:~# ping -c1 kube01
     PING kube01 (192.168.121.101) 56(84) bytes of data.
-    64 bytes from kube01 (192.168.121.101): icmp_seq=1 ttl=64 time=0.089 ms
+    64 bytes from kube01 (192.168.121.101): icmp_seq=1 ttl=64 time=0.016 ms
     --- kube01 ping statistics ---
     1 packets transmitted, 1 received, 0% packet loss, time 0ms
-    rtt min/avg/max/mdev = 0.089/0.089/0.089/0.000 ms
+    rtt min/avg/max/mdev = 0.016/0.016/0.016/0.000 ms
     
     root@kube01:~# ping -c1 kube02
     PING kube02 (192.168.121.102) 56(84) bytes of data.
-    64 bytes from kube02 (192.168.121.102): icmp_seq=1 ttl=64 time=0.754 ms
+    64 bytes from kube02 (192.168.121.102): icmp_seq=1 ttl=64 time=0.493 ms
     --- kube02 ping statistics ---
     1 packets transmitted, 1 received, 0% packet loss, time 0ms
-    rtt min/avg/max/mdev = 0.754/0.754/0.754/0.000 ms
+    rtt min/avg/max/mdev = 0.493/0.493/0.493/0.000 ms
     
     root@kube01:~# ping -c1 kube03
     PING kube03 (192.168.121.103) 56(84) bytes of data.
-    64 bytes from kube03 (192.168.121.103): icmp_seq=1 ttl=64 time=0.472 ms
+    64 bytes from kube03 (192.168.121.103): icmp_seq=1 ttl=64 time=0.448 ms
     --- kube03 ping statistics ---
     1 packets transmitted, 1 received, 0% packet loss, time 0ms
-    rtt min/avg/max/mdev = 0.472/0.472/0.472/0.000 ms
+    rtt min/avg/max/mdev = 0.448/0.448/0.448/0.000 ms
 
 Reboot all nodes for new kernel and hostname
 
@@ -208,13 +213,13 @@ Inject kube01 ssh public key for all nodes:
 Test kube01 could password-less ssh to all other nodes:
 
     root@kube01:~# ssh root@kube01 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube01 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     
     root@kube01:~# ssh root@kube02 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube02 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     
     root@kube01:~# ssh root@kube03 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube03 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 
 ## Bootstrap Ansible
 
@@ -241,16 +246,21 @@ Setup Ansible inventory and group variables:
     [kube_node]
     kube03
     EOF
+    
+    cat > /etc/ansible/group_vars/all/99-packer.yml <<-EOF
+    ---
+    kube_release: "1.21"
+    EOF
 
 Test Ansible connectivity:
 
     root@kube01:~# ansible all -m shell -a "uname -a"
     kube01 | CHANGED | rc=0 >>
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube01 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     kube02 | CHANGED | rc=0 >>
-    Linux kube02 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube02 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     kube03 | CHANGED | rc=0 >>
-    Linux kube03 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube03 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 
 ## Deploy Kubernetes
 
@@ -260,34 +270,35 @@ Deploy kubernetes
     
     root@kube01:~# ansible-playbook playbooks/verify.yml
     
-    root@kube01:~# ansible-playbook playbooks/60-kube_weave-install.yml
+    root@kube01:~# ansible-playbook playbooks/60-kube_cilium-install.yml
 
 Check result:
 
     root@kube01:~# kubectl get node
-    NAME     STATUS   ROLES                  AGE   VERSION
-    kube01   Ready    control-plane,master   84s   v1.21.11
-    kube02   Ready    control-plane,master   55s   v1.21.11
-    kube03   Ready    <none>                 24s   v1.21.11
+    NAME     STATUS   ROLES                  AGE     VERSION
+    kube01   Ready    control-plane,master   9m38s   v1.21.12
+    kube02   Ready    control-plane,master   8m32s   v1.21.12
+    kube03   Ready    <none>                 8m14s   v1.21.12
     
     root@kube01:~# kubectl get pod --all-namespaces
-    NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
-    kube-system   coredns-558bd4d5db-56v55         1/1     Running   0          100s
-    kube-system   coredns-558bd4d5db-5b29v         1/1     Running   0          101s
-    kube-system   kube-addon-manager-kube01        1/1     Running   0          49s
-    kube-system   kube-addon-manager-kube02        1/1     Running   0          49s
-    kube-system   kube-apiserver-kube01            1/1     Running   0          102s
-    kube-system   kube-apiserver-kube02            1/1     Running   0          88s
-    kube-system   kube-controller-manager-kube01   1/1     Running   0          102s
-    kube-system   kube-controller-manager-kube02   1/1     Running   0          89s
-    kube-system   kube-proxy-9fk6p                 1/1     Running   0          89s
-    kube-system   kube-proxy-df6jq                 1/1     Running   0          100s
-    kube-system   kube-proxy-wqc8w                 1/1     Running   0          58s
-    kube-system   kube-scheduler-kube01            1/1     Running   0          116s
-    kube-system   kube-scheduler-kube02            1/1     Running   0          62s
-    kube-system   weave-net-cnxgm                  2/2     Running   1          42s
-    kube-system   weave-net-dmd7g                  2/2     Running   1          42s
-    kube-system   weave-net-l89lb                  2/2     Running   1          42s
+    NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
+    kube-system   cilium-ggspc                      1/1     Running   0          36s
+    kube-system   cilium-hxrxv                      1/1     Running   0          44s
+    kube-system   cilium-operator-89b8c57bc-8wbc4   1/1     Running   0          50s
+    kube-system   cilium-r5j5k                      1/1     Running   0          46s
+    kube-system   coredns-558bd4d5db-mtp98          1/1     Running   0          49s
+    kube-system   coredns-558bd4d5db-xjm66          1/1     Running   0          49s
+    kube-system   kube-addon-manager-kube01         1/1     Running   0          49s
+    kube-system   kube-addon-manager-kube02         1/1     Running   0          49s
+    kube-system   kube-apiserver-kube01             1/1     Running   1          49s
+    kube-system   kube-apiserver-kube02             1/1     Running   1          49s
+    kube-system   kube-controller-manager-kube01    1/1     Running   1          49s
+    kube-system   kube-controller-manager-kube02    1/1     Running   1          49s
+    kube-system   kube-proxy-j4zh8                  1/1     Running   0          36s
+    kube-system   kube-proxy-wtnj5                  1/1     Running   0          46s
+    kube-system   kube-proxy-z9psl                  1/1     Running   0          45s
+    kube-system   kube-scheduler-kube01             1/1     Running   1          49s
+    kube-system   kube-scheduler-kube02             1/1     Running   1          48s
 
 Rolling reboot all nodes for new CNI:
 
