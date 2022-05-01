@@ -4,35 +4,29 @@ For running k8s conformance test we need 2 master and 1 node with
 following minimal system requirement, e.g.
 
   - `kube01`
-      - kubernetes master, etcd, ceph
-      - cri-o, weave, csi-cephfs
-      - Ubuntu 20.04
+      - kubernetes master, etcd
+      - cri-o, cilium
+      - Ubuntu 22.04
       - IP: 10.0.0.101/24
       - 2 CPUs
       - 8GB RAM
       - 50GB `/dev/sda` (ext4 for `/`)
-      - 250GB `/dev/sdb` (unformatted, auto detect and managed for ceph
-        osd)
   - `kube02`
-      - kubernetes master, etcd, ceph
-      - cri-o, weave, csi-cephfs
-      - Ubuntu 20.04
+      - kubernetes master, etcd
+      - cri-o, cilium
+      - Ubuntu 22.04
       - IP: 10.0.0.102/24
       - 2 CPUs
       - 8GB RAM
       - 50GB `/dev/sda` (ext4 for `/`)
-      - 250GB `/dev/sdb` (unformatted, auto detect and managed for ceph
-        osd)
   - `kube03`
-      - kubernetes node, etcd, ceph
-      - cri-o, weave, csi-cephfs
-      - Ubuntu 20.04
+      - kubernetes node, etcd
+      - cri-o, cilium
+      - Ubuntu 22.04
       - IP: 10.0.0.103/24
       - 2 CPUs
       - 8GB RAM
       - 50GB `/dev/sda` (ext4 for `/`)
-      - 250GB `/dev/sdb` (unformatted, auto detect and managed for ceph
-        osd)
 
 ## Bootstrap Nodes
 
@@ -42,15 +36,15 @@ Install some basic pacakges for each nodes:
     
     root@kube01:~# apt full-upgrade
     
-    root@kube01:~# apt install aptitude git linux-generic-hwe-20.04 openssh-server python3 rsync vim
+    root@kube01:~# apt install aptitude git linux-generic-hwe-22.04 openssh-server python3 rsync vim
 
 Setup `/etc/hostname` for each nodes, e.g.
 
-    root@kube01:~# echo "kube01" > /etc/hostname
+    root@kube01:~# hostnamectl set-hostname kube01
     
-    root@kube02:~# echo "kube02" > /etc/hostname
+    root@kube02:~# hostnamectl set-hostname kube02
     
-    root@kube03:~# echo "kube03" > /etc/hostname
+    root@kube03:~# hostnamectl set-hostname kube03
 
 Setup `/etc/hosts` for each nodes, e.g.
 
@@ -122,22 +116,22 @@ Inject kube01 ssh public key for all nodes:
 Test kube01 could password-less ssh to all other nodes:
 
     root@kube01:~# ssh root@kube01 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube01 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     
     root@kube01:~# ssh root@kube02 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube02 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     
     root@kube01:~# ssh root@kube03 uname -a
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube03 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 
 ## Bootstrap Ansible
 
 Install Ansible for kube01 (see
 <https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack>):
 
-    root@kube01:~# echo 'deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_20.04/ /' | tee /etc/apt/sources.list.d/home:alvistack.list
+    root@kube01:~# echo 'deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /' | tee /etc/apt/sources.list.d/home:alvistack.list
     
-    root@kube01:~# curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_20.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    root@kube01:~# curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
     
     root@kube01:~# apt update
     
@@ -148,26 +142,8 @@ Install Ansible for kube01 (see
     root@kube01:~# ansible --version
 
 GIT clone Ansible Collection for Kubernetes
-(<https://github.com/alvistack/ansible-collection-kubernetes>) and
-Ansible Collection for Ceph
-(<https://github.com/alvistack/ansible-collection-ceph>):
+(<https://github.com/alvistack/ansible-collection-kubernetes>):
 
-    root@kube01:~# mkdir -p /opt/ansible-collection-ceph
-    
-    root@kube01:~# cd /opt/ansible-collection-ceph
-    
-    root@kube01:~# git init
-    
-    root@kube01:~# git remote add upstream https://github.com/alvistack/ansible-collection-ceph.git
-    
-    root@kube01:~# git fetch --all --prune
-    
-    root@kube01:~# git checkout upstream/develop -- .
-    
-    root@kube01:~# git submodule sync --recursive
-    
-    root@kube01:~# git submodule update --init --recursive
-    
     root@kube01:~# mkdir -p /opt/ansible-collection-kubernetes
     
     root@kube01:~# cd /opt/ansible-collection-kubernetes
@@ -210,36 +186,6 @@ Setup Ansible inventory and group variables:
     
     [kube_node]
     kube03
-    
-    [ceph_mon]
-    kube01
-    kube02
-    kube03
-    
-    [ceph_mgr]
-    kube01
-    kube02
-    kube03
-    
-    [ceph_osd]
-    kube01
-    kube02
-    kube03
-    
-    [ceph_mds]
-    kube01
-    kube02
-    kube03
-    
-    [ceph_rgw]
-    kube01
-    kube02
-    kube03
-    EOF
-    
-    cat > /etc/ansible/group_vars/all/ceph.yml <<-EOF
-    ---
-    ceph_release: "16.2"
     EOF
     
     cat > /etc/ansible/group_vars/all/kube.yml <<-EOF
@@ -251,42 +197,11 @@ Test Ansible connectivity:
 
     root@kube01:~# ansible all -m shell -a "uname -a"
     kube01 | CHANGED | rc=0 >>
-    Linux kube01 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube01 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     kube02 | CHANGED | rc=0 >>
-    Linux kube02 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+    Linux kube02 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
     kube03 | CHANGED | rc=0 >>
-    Linux kube03 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
-
-## Deploy Ceph for CSI
-
-Deploy ceph:
-
-    root@kube01:~# cd /opt/ansible-collection-ceph
-    
-    root@kube01:~# ansible-playbook playbooks/converge.yml
-    
-    root@kube01:~# ansible-playbook playbooks/verify.yml
-
-Check result:
-
-    root@kube01:~# ceph -s
-      cluster:
-        id:     f1e6f2d6-9a2f-5c64-9a79-75a9a1e90090
-        health: HEALTH_OK
-    
-      services:
-        mon: 3 daemons, quorum kube01,kube02,kube03 (age 3h)
-        mgr: kube03(active, since 3h), standbys: kube01, kube02
-        mds: 1/1 daemons up, 2 standby
-        osd: 3 osds: 3 up (since 3h), 3 in (since 3h)
-        rgw: 3 daemons active (3 hosts, 1 zones)
-    
-      data:
-        volumes: 1/1 healthy
-        pools:   8 pools, 225 pgs
-        objects: 213 objects, 101 KiB
-        usage:   124 MiB used, 750 GiB / 750 GiB avail
-        pgs:     225 active+clean
+    Linux kube03 5.15.0-27-generic #28-Ubuntu SMP Thu Apr 14 04:55:28 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 
 ## Deploy Kubernetes
 
@@ -296,48 +211,39 @@ Deploy kubernetes
     
     root@kube01:~# ansible-playbook playbooks/converge.yml
     
-    root@kube01:~# ansible-playbook playbooks/60-kube_weave-install.yml
-    
-    root@kube01:~# ansible-playbook playbooks/verify.yml
-    
-    root@kube01:~# ansible-playbook playbooks/70-kube_csi_cephfs-install.yml
-    
-    root@kube01:~# ansible-playbook playbooks/70-kube_csi_cephfs-verify.yml
+    root@kube01:~# ansible-playbook playbooks/60-kube_cilium-install.yml
 
 Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES                  AGE     VERSION
-    kube01   Ready    control-plane,master   4m36s   v1.21.11
-    kube02   Ready    control-plane,master   3m33s   v1.21.11
-    kube03   Ready    <none>                 3m14s   v1.21.11
+    kube01   Ready    control-plane,master   9m38s   v1.21.12
+    kube02   Ready    control-plane,master   8m32s   v1.21.12
+    kube03   Ready    <none>                 8m14s   v1.21.12
     
     root@kube01:~# kubectl get pod --all-namespaces
-    NAMESPACE     NAME                                      READY   STATUS    RESTARTS   AGE
-    csi-cephfs    csi-cephfs-provisioner-5df8f5887d-tz7fz   6/6     Running   0          57s
-    csi-cephfs    csi-cephfsplugin-4xbkk                    3/3     Running   0          52s
-    csi-cephfs    csi-cephfsplugin-c25zp                    3/3     Running   0          52s
-    csi-cephfs    csi-cephfsplugin-wx2sq                    3/3     Running   0          48s
-    kube-system   coredns-558bd4d5db-4b9nq                  1/1     Running   0          57s
-    kube-system   coredns-558bd4d5db-s54kc                  1/1     Running   0          57s
-    kube-system   kube-addon-manager-kube01                 1/1     Running   1          57s
-    kube-system   kube-addon-manager-kube02                 1/1     Running   1          57s
-    kube-system   kube-apiserver-kube01                     1/1     Running   1          56s
-    kube-system   kube-apiserver-kube02                     1/1     Running   1          56s
-    kube-system   kube-controller-manager-kube01            1/1     Running   1          56s
-    kube-system   kube-controller-manager-kube02            1/1     Running   1          56s
-    kube-system   kube-proxy-4c44q                          1/1     Running   0          51s
-    kube-system   kube-proxy-dctqd                          1/1     Running   0          42s
-    kube-system   kube-proxy-hbfpc                          1/1     Running   0          48s
-    kube-system   kube-scheduler-kube01                     1/1     Running   1          55s
-    kube-system   kube-scheduler-kube02                     1/1     Running   1          55s
-    kube-system   weave-net-2mw5w                           2/2     Running   0          24s
-    kube-system   weave-net-7l2qj                           2/2     Running   0          15s
-    kube-system   weave-net-rxxtc                           2/2     Running   0          24s
+    NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
+    kube-system   cilium-ggspc                      1/1     Running   0          36s
+    kube-system   cilium-hxrxv                      1/1     Running   0          44s
+    kube-system   cilium-operator-89b8c57bc-8wbc4   1/1     Running   0          50s
+    kube-system   cilium-r5j5k                      1/1     Running   0          46s
+    kube-system   coredns-558bd4d5db-mtp98          1/1     Running   0          49s
+    kube-system   coredns-558bd4d5db-xjm66          1/1     Running   0          49s
+    kube-system   kube-addon-manager-kube01         1/1     Running   0          49s
+    kube-system   kube-addon-manager-kube02         1/1     Running   0          49s
+    kube-system   kube-apiserver-kube01             1/1     Running   1          49s
+    kube-system   kube-apiserver-kube02             1/1     Running   1          49s
+    kube-system   kube-controller-manager-kube01    1/1     Running   1          49s
+    kube-system   kube-controller-manager-kube02    1/1     Running   1          49s
+    kube-system   kube-proxy-j4zh8                  1/1     Running   0          36s
+    kube-system   kube-proxy-wtnj5                  1/1     Running   0          46s
+    kube-system   kube-proxy-z9psl                  1/1     Running   0          45s
+    kube-system   kube-scheduler-kube01             1/1     Running   1          49s
+    kube-system   kube-scheduler-kube02             1/1     Running   1          48s
 
 Rolling reboot all nodes for new CNI:
 
-    root@kube01:~# cd /opt/ansible-collection-ceph
+    root@kube01:~# cd /opt/ansible-collection-kubernetes
     
     root@kube01:~# ansible-playbook playbooks/reboot.yml
 
