@@ -8,7 +8,7 @@ To do this you will need to have registered for the HKS procuct and be part of a
 
 To create a HKE cluster you will need to login to the HKS cloud service here: https://console.cloud.hitachivantara.com/hks/home and follow the documentation as provided above. This may require that you create a provider in your HKS organisation, depending on which cloud service you are using (AWS, GCP, Azure). This can also be done using the VMWare provider or the manual provider.
 
-Use the guided HKS UI workflow to create your HKE cluster using your chosen provider.
+Use the guided HKS UI workflow to create your HKE cluster using your chosen provider (AWS/GCP/Azure/VMWare or Manual).
 
 Once the cluster has turned to a green status in the HKS UI you are then ready to perform the conformance test.
 
