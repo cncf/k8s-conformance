@@ -1,0 +1,8 @@
+vendor: Hitachi Vantara
+name: Hitachi Kubernetes Service
+version: v1.10
+website_url: https://console.cloud.hitachivantara.com/hks/home
+documentation_url: https://knowledge.hitachivantara.com/Documents/Cloud_Services/Kubernetes_Service
+product_logo_url: 
+type: distribution
+description: 'Single pane of glass orchestration and management of Kubernetes cluster and workloads for cloud, on-premise and hybrid environments'
