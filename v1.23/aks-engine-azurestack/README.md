@@ -114,3 +114,4 @@ export KUBECONFIG=_output/conformance/kubeconfig/kubeconfig.${AZURE_LOCATION}.js
 ./sonobuoy/sonobuoy run --mode=certified-conformance --wait
 ./sonobuoy/sonobuoy retrieve ./results
 ```
+
