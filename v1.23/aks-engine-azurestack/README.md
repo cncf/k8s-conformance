@@ -76,7 +76,7 @@ export AZURE_LOCATION=""
 export AZURE_CLIENT_ID=""
 export AZURE_CLIENT_SECRET=""
 export AZURE_SUBSCRIPTION_ID=""
-export IDENTITY_SYSTEM="" # azure_ad or adfs
+export IDENTITY_SYSTEM=""  # azure_ad or adfs
 export SSH_PUB_KEY="$(cat ~/.ssh/id_rsa.pub)"
 export PORTAL_URL=""
 ```
