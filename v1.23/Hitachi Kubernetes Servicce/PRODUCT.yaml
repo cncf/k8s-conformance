@@ -5,4 +5,4 @@ website_url: https://console.cloud.hitachivantara.com/hks/home
 documentation_url: https://knowledge.hitachivantara.com/Documents/Cloud_Services/Kubernetes_Service
 product_logo_url: 
 type: distribution
-description: 'Single pane of glass orchestration and management of Kubernetes clusters and workloads for cloud, on-premise and hybrid environments'
+description: 'Orchestration and management of Kubernetes clusters and workloads for cloud, on-premise and hybrid environments via a single pane of glass SaaS management platform'
