@@ -41,8 +41,9 @@ $ sonobuoy status
 
 7. Once the status commands shows the run as completed, you can download the results tar.gz file:
 ```sh
-$ sonobuoy retrieve
+$ outfile=$(sonobuoy retrieve)
 ```
+Note that you may have to do this locally on the cluster you have run conformance tests on. EOF messages have been experienced when doing this remotely to the cluster under validation.
 
 8. To clean up Kubernetes objects created by Sonobuoy, run:
 ```
