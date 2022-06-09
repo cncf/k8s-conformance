@@ -1,6 +1,6 @@
-vendor: crane
+vendor: hotstone.io
 name: crane
-version: 3.0.0
+version: 1.24.1.2
 website_url: https://github.com/slzcc/crane
 repo_url: https://github.com/slzcc/crane
 documentation_url: https://github.com/slzcc/crane/blob/master/docs
