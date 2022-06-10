@@ -1,0 +1,6 @@
+Ran 346 of 7042 Specs in 5479.201 seconds
+SUCCESS! -- 346 Passed | 0 Failed | 0 Pending | 6696 Skipped
+PASS
+
+Ginkgo ran 1 suite in 1h31m20.936241503s
+Test Suite Passed
