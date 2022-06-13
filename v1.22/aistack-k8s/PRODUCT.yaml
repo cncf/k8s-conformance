@@ -1,0 +1,9 @@
+vendor: InfinitiesSoft Solutions Inc.
+name: AI-Stack/K8S
+version: v3.45
+website_url: https://infinitiessoft.com/pages/ai-stack
+repo_url:
+documentation_url: https://infinitiessoft.com/pages/ai-stack
+product_logo_url:
+type: installer
+description: 'AI-Stack/K8S provision a vanilla Kubernetes environment for all AI-Stack related products'
