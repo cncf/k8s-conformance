@@ -32,3 +32,9 @@ outfile=$(sonobuoy retrieve)
 mkdir ./results
 tar xzf $outfile -C ./results
 ```
+
+Show the files required for submission
+
+```
+ls -l results/plugins/e2e/results/global/{e2e.log,junit_01.xml}
+```
