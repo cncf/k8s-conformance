@@ -1,6 +1,5 @@
 # Proact Managed Container Platform
 
-
 ## Steps-to-reproduce
 
 1. setup the cluster with standard tools
