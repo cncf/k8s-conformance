@@ -1,0 +1,8 @@
+vendor: Linklogis
+name: BeeKube
+version: v1.22.0
+website_url: https://cloud.linklogis.com/
+documentation_url: https://cloud.linklogis.com/#/beekube 
+product_logo_url: https://cloud.linklogis.com/assets/logo-color-en.31d0afd9.svg
+type: distribution
+description: 'Deploy Kubernetes clusters with BeeKube'
