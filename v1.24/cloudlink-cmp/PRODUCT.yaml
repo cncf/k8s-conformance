@@ -3,6 +3,6 @@ name: CloudLink-CMP
 version: v4.2
 website_url: https://www.bessystem.com/product/31f9842c24e5441394b85bfdc7a9d7df/info
 documentation_url: https://www.bessystem.com/product/31f9842c24e5441394b85bfdc7a9d7df/info
-product_logo_url: CloudLink-logo.svg
+product_logo_url: https://github.com/zhannk/k8s-conformance/blob/master/v1.24/cloudlink-cmp/CloudLink-logo.svg
 type: hosted
 description: "以DevOps为理念，提供以业务快速交付、高效管控、稳定运行为核心的企业级PaaS平台解决方案"
