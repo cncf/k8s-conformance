@@ -1,7 +1,7 @@
 # Reproducing the test results
 
 ## Deploy Deckhouse
-You can follow the [Getting Started guide](https://deckhouse.io/en/gs/) to install Dechkouse.
+You can follow the [Getting Started guide](https://deckhouse.io/en/gs/) to install Deckhouse.
 
 For example, to install Deckhouse on a bare metal you have to follow next steps:
 
