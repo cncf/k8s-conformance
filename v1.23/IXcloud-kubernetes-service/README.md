@@ -2,10 +2,6 @@
 
 ## Setup IKS Cluster
 To run the Kubernetes conformity test, you create the IKS Cluster by referring to this [link](https://manual.kinx.net/ixcloud/ixcloud/kubernetes/CreateCluster).  
-# conformance test for IKS
-
-## Setup IKS Cluster
-To run the Kubernetes conformity test, you create the IKS Cluster by referring to this [link](https://manual.kinx.net/ixcloud/ixcloud/kubernetes/CreateCluster).  
 ### Step 1. Access the IXcloud console and click the 'Create Cluster' button  
 ### Step 2. Enter cluster information  
 ① Cluster Name : Enter a name for the cluster.  
