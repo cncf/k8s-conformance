@@ -1,0 +1,9 @@
+vendor: KINX
+name: IXcloud Kubernetes Service
+version: v1.22.10
+website_url: https://www.kinx.net/service/cloud/kubernetes/intro/?lang=en
+documentation_url: https://manual.kinx.net/ixcloud/ixcloud/kubernetes
+product_logo_url: https://www.kinx.net/images/ixcloud_kuber_logo.svg
+type: hosted platform
+description: 'A quick and Easy Process to Start Kubernetes cluster in IXcloud.'
+
