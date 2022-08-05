@@ -35,4 +35,4 @@ You can deploy a new VKE cluster in a few clicks. Here's how to get started.
 ## Run conformance tests
 
 Follow the k8s-conformance [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running) to run the conformance tests.
-The output here was obtained with Sonobuoy 0.56.3 running on a Kubernetes 1.23.5 cluster.
+The output here was obtained with Sonobuoy 0.54.0 running on a Kubernetes 1.24.3 cluster.
