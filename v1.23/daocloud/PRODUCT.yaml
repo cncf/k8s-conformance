@@ -1,0 +1,9 @@
+vendor: DaoCloud
+name: DaoCloud Enterprise
+version: v4.0.9-35552
+website_url: https://www.daocloud.io/dce
+documentation_url: https://download.daocloud.io/DaoCloud_Enterprise/DaoCloud_Enterprise/4.0.9
+product_logo_url: https://github.com/dasu23/DC-Jenkinsfile/raw/master/DaoCloud.svg 
+type: distribution
+description: 'Daocloud helps you provide a reliable and consistent basic support environment to meet the high SLA requirements of enterprise critical applications
+.'
