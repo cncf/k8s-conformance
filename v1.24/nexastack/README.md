@@ -10,7 +10,7 @@ Nexastack is Infrastructure as Code Platform allowing to install applications on
 ## 2. Create a new cluster and download kubeconfig
 On the main Navigation Panel go to your Project, choose Clusters, select Nexastack managed clusters. Here you will find the cluster managed by Nexastack for you.
 
-Request t kubeconfig using the cluster's action button.
+Request kubeconfig using the cluster's action button.
 
 
 ## 3. Access the cluster
