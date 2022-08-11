@@ -88,21 +88,21 @@ Deploy kubernetes:
 
     cd /opt/ansible-collection-kubernetes
     export _MOLECULE_INSTANCE_NAME="$(pwgen -1AB 12)"
-    molecule converge -s libvirt-1.23 -- -e 'kube_release=1.23'
-    molecule verify -s libvirt-1.23
+    molecule converge -s kubernetes-1.23-libvirt -- -e 'kube_release=1.23'
+    molecule verify -s kubernetes-1.23-libvirt
 
 All instances could be SSH and switch as root with `sudo su -`, e.g.
 
     cd /opt/ansible-collection-kubernetes
-    molecule login -s libvirt-1.23 -h $_MOLECULE_INSTANCE_NAME-1
+    molecule login -s kubernetes-1.23-libvirt -h $_MOLECULE_INSTANCE_NAME-1
 
 Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES                  AGE     VERSION
-    kube01   Ready    control-plane,master   9m38s   v1.23.6
-    kube02   Ready    control-plane,master   8m32s   v1.23.6
-    kube03   Ready    <none>                 8m14s   v1.23.6
+    kube01   Ready    control-plane,master   9m38s   v1.23.9
+    kube02   Ready    control-plane,master   8m32s   v1.23.9
+    kube03   Ready    <none>                 8m14s   v1.23.9
     
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
