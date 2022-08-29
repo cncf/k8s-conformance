@@ -12,21 +12,21 @@ requirement, e.g.
       - 32GB RAM
   - `kube01`
       - kubernetes master, etcd
-      - cri-o, cilium
+      - cri-o, flannel
       - Ubuntu 22.04
       - IP: 192.168.121.101/24
       - 2 CPUs
       - 8GB RAM
   - `kube02`
       - kubernetes master, etcd
-      - cri-o, cilium
+      - cri-o, flannel
       - Ubuntu 22.04
       - IP: 192.168.121.102/24
       - 2 CPUs
       - 8GB RAM
   - `kube03`
       - kubernetes node, etcd
-      - cri-o, cilium
+      - cri-o, flannel
       - Ubuntu 22.04
       - IP: 192.168.121.103/24
       - 2 CPUs
@@ -100,29 +100,28 @@ Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES                  AGE     VERSION
-    kube01   Ready    control-plane,master   9m38s   v1.24.3
-    kube02   Ready    control-plane,master   8m32s   v1.24.3
-    kube03   Ready    <none>                 8m14s   v1.24.3
+    kube01   Ready    control-plane,master   9m38s   v1.24.4
+    kube02   Ready    control-plane,master   8m32s   v1.24.4
+    kube03   Ready    <none>                 8m14s   v1.24.4
     
     root@kube01:~# kubectl get pod --all-namespaces
-    NAMESPACE     NAME                              READY   STATUS    RESTARTS   AGE
-    kube-system   cilium-ggspc                      1/1     Running   0          36s
-    kube-system   cilium-hxrxv                      1/1     Running   0          44s
-    kube-system   cilium-operator-89b8c57bc-8wbc4   1/1     Running   0          50s
-    kube-system   cilium-r5j5k                      1/1     Running   0          46s
-    kube-system   coredns-558bd4d5db-mtp98          1/1     Running   0          49s
-    kube-system   coredns-558bd4d5db-xjm66          1/1     Running   0          49s
-    kube-system   kube-addon-manager-kube01         1/1     Running   0          49s
-    kube-system   kube-addon-manager-kube02         1/1     Running   0          49s
-    kube-system   kube-apiserver-kube01             1/1     Running   1          49s
-    kube-system   kube-apiserver-kube02             1/1     Running   1          49s
-    kube-system   kube-controller-manager-kube01    1/1     Running   1          49s
-    kube-system   kube-controller-manager-kube02    1/1     Running   1          49s
-    kube-system   kube-proxy-j4zh8                  1/1     Running   0          36s
-    kube-system   kube-proxy-wtnj5                  1/1     Running   0          46s
-    kube-system   kube-proxy-z9psl                  1/1     Running   0          45s
-    kube-system   kube-scheduler-kube01             1/1     Running   1          49s
-    kube-system   kube-scheduler-kube02             1/1     Running   1          48s
+    NAMESPACE      NAME                             READY   STATUS    RESTARTS   AGE
+    kube-flannel   kube-flannel-ds-5z9q7            1/1     Running   0          70s
+    kube-flannel   kube-flannel-ds-7bf94            1/1     Running   0          70s
+    kube-flannel   kube-flannel-ds-99tj8            1/1     Running   0          70s
+    kube-system    coredns-bd6b6df9f-cqzkx          1/1     Running   0          70s
+    kube-system    coredns-bd6b6df9f-tcv7m          1/1     Running   0          70s
+    kube-system    kube-addon-manager-kube01        1/1     Running   2          80s
+    kube-system    kube-addon-manager-kube02        1/1     Running   2          80s
+    kube-system    kube-apiserver-kube01            1/1     Running   3          80s
+    kube-system    kube-apiserver-kube02            1/1     Running   3          80s
+    kube-system    kube-controller-manager-kube01   1/1     Running   3          80s
+    kube-system    kube-controller-manager-kube02   1/1     Running   4          80s
+    kube-system    kube-proxy-brwdv                 1/1     Running   0          70s
+    kube-system    kube-proxy-ppn7b                 1/1     Running   0          70s
+    kube-system    kube-proxy-qn7vg                 1/1     Running   0          70s
+    kube-system    kube-scheduler-kube01            1/1     Running   3          80s
+    kube-system    kube-scheduler-kube02            1/1     Running   4          80s
 
 ## Run Sonobuoy
 
