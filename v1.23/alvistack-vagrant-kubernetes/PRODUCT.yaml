@@ -1,6 +1,6 @@
 vendor: AlviStack
 name: AlviStack - Vagrant Box Packaging for Kubernetes
-version: 20220806.1.1
+version: 20220824.1.2
 website_url: https://github.com/alvistack/vagrant-kubernetes
 documentation_url: https://github.com/alvistack/ansible-collection-kubernetes/tree/master/docs
 product_logo_url: https://raw.githubusercontent.com/alvistack/ansible-collection-kubernetes/master/docs/images/alvistack/stacked/color/alvistack-stacked-color.svg
