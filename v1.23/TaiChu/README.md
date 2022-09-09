@@ -1,4 +1,4 @@
-# Conformance tests for TaiChu v1.0.0
+# Conformance tests for TaiChu v1.2.0
 
 ## Deploy Kubernetes
 
