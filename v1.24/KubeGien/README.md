@@ -18,7 +18,7 @@ Deploy a Sonobuoy pod to your cluster with:
 
 View actively running pods:
 
-`sonobuoy status`
+`sonobuoy status --json |jq`
 
 To inspect the logs:
 
