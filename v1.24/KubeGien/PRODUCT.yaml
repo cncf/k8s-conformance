@@ -1,0 +1,9 @@
+vendor: GienTech
+name: GienTech Kubernetes Platform (KubeGien)
+version: v1.0
+website_url: www.gientech.com
+documentation_url: https://www.gientech.com/product/Basic-Runtime-Platform.html
+product_logo_url: https://www.gientech.com/statics/home/images/logo2.png
+type: distribution
+description: 'GienTech Kubernetes Platform (KubeGien) provides financial level, high availability, 
+and high security container service platform. KubeGien fully follows the conformance with Kubernetes and is flexible to extend more other services with GienTech PAAS products.'
