@@ -1,0 +1,9 @@
+vendor: SUSE, LLC
+name: k3s
+version: v1.25.0+k3s1
+website_url: https://k3s.io/
+repo_url: https://github.com/k3s-io/k3s
+documentation_url: https://rancher.com/docs/k3s/latest/en/
+product_logo_url: http://k3s.io/img/logo.svg?1
+type: distribution
+description: Lightweight Kubernetes
