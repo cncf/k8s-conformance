@@ -1,0 +1,9 @@
+vendor: Canonical Ltd
+name: Charmed Kubernetes
+version: 1.25
+website_url: https://www.ubuntu.com/kubernetes
+repo_url: https://github.com/charmed-kubernetes/bundle
+documentation_url: https://ubuntu.com/kubernetes/docs
+product_logo_url: https://assets.ubuntu.com/v1/e6cd15f7-Charmed+Kubernetes_RGB_2022.svg
+type: distribution
+description: Deploy, scale and upgrade Kubernetes clusters across multiple physical or virtual machines with Charmed Kubernetes.
