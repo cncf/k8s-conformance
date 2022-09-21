@@ -1,0 +1,8 @@
+vendor: D2iQ
+name: Konvoy
+version: v2.4.0-alpha.2
+website_url: https://d2iq.com/products/konvoy
+documentation_url: https://d2iq.com/products/konvoy
+product_logo_url: https://assets.d2iq.com/production/assets/D2iQ-logo.svg
+type: distribution
+description: 'Konvoy is a standalone distribution of Kubernetes that includes a native Kubernetes cluster pre-packaged for deployment with a complement of best-in-class add-on services enabled by default and ready for immediate use.'
