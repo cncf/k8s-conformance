@@ -1,0 +1,8 @@
+vendor: Symbiosis
+name: Symbiosis Kubernetes
+version: v1.24
+website_url: https://symbiosis.host
+documentation_url: https://docs.symbiosis.host
+product_logo_url: https://symbiosis.host/brand/logo/title.svg
+type: hosted platform
+description: 'A cheap and developer friendly cloud purpose-built for Kubernetes'
