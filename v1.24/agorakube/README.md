@@ -22,13 +22,11 @@ The document below describes pre-requisites for Agorakube local environment and 
 1) On your desktop, create a file named: "Vagrantfile" with the following content:
 
 ```
-
-
 $script = <<-SCRIPT
 echo "
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTj+4Tjx2Az14spFKaD1rkxrhQSaybNDQOS9P7jGk3OaubL8qWTXVr69n4xu56PDCe06g4XOlpXkLNUOVr5CKOyP+9Eyw41V9de4DDEaPhidFtOULTubzYJ4tyhwysFnB/vq75TfoCgI6uYHl4tcSZqQB6g/4C2TGuFWj/T0CzlE6hxNzRy16udyfMxH7YZ445238Wtn96RxfJdkINgB+6h0jGRh1j8OuuIwZdUa1e4W+p53JGizXCRySAtZPxlNyaT2SxqOpfXShp+KqhIG8N7HPgCMdBHNXFy2zticR/tWjdWOPsuro0z8SZY7EgZD3PfgKD88BkdaG4B50RPgt pierre@DESKTOP-BT28R5N
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBTj+4Tjx2Az14spFKaD1rkxrhQSaybNDQOS9P7jGk3OaubL8qWTXVr69n4xu56PDCe06g4XOlpXkLNUOVr5CKOyP+9Eyw41V9de4DDEaPhidFtOULTubzYJ4tyhwysFnB/vq75TfoCgI6uYHl4tcSZqQB6g/4C2TGuFWj/T0CzlE6hxNzRy16udyfMxH7YZ445238Wtn96RxfJdkINgB+6h0jGRh1j8OuuIwZdUa1e4W+p53JGizXCRySAtZPxlNyaT2SxqOpfXShp+KqhIG8N7HPgCMdBHNXFy2zticR/tWjdWOPsuro0z8SZY7EgZD3PfgKD88BkdaG4B50RPgt
 " >> /home/vagrant/.ssh/authorized_keys
-bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/master/setup-deploy.sh)
+bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/minimal/master/setup-hosts.sh)
 SCRIPT
 
 $script2 = <<-SCRIPT
@@ -63,44 +61,28 @@ tLPRCasq7fw/jx3UnZlYAx5JiSgSl6wcr+eF+JDLLfZn4ExEqcwN03WHCXPPqede
 " >> /home/vagrant/ssh-private-key.pem
 chmod 0400 /home/vagrant/ssh-private-key.pem
 cd /home/vagrant/
-bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/master/setup-deploy.sh)
+bash <(curl -s https://raw.githubusercontent.com/ilkilab/agorakube/minimal/master/setup-deploy.sh)
 echo '
 [deploy]
-master1 ansible_connection=local ansible_python_interpreter=/usr/bin/python3
-
+master10 ansible_connection=local
 [masters]
-master1  ansible_host=10.10.20.4
-
+master10  ansible_host=10.101.20.4
 [etcd]
-master1  ansible_host=10.10.20.4
-
+master10  ansible_host=10.101.20.4
 [workers]
-worker1  ansible_host=10.10.20.5
-worker2  ansible_host=10.10.20.6
-
-[storage]
-#worker4 ansible_host=10.10.20.20
+worker10  ansible_host=10.101.20.5
+worker20  ansible_host=10.101.20.6
 
 [all:vars]
-advertise_masters=10.10.20.4
+advertise_masters=10.101.20.4
 #advertise_masters=kubernetes.localcluster.lan
-
 # SSH connection settings
-ansible_ssh_extra_args=-o StrictHostKeyChecking=no
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 ansible_user=vagrant
 ansible_ssh_private_key_file=/home/vagrant/ssh-private-key.pem
-
-# Python version
-
-# If centOS-7, use python2.7
-# If no-CentOS-7, use Python3
-ansible_python_interpreter=/usr/bin/python3
-
 [etc_hosts]
 #kubernetes.localcluster.lan ansible_host=10.10.20.4
-
 ' > /home/vagrant/agorakube/hosts
-
 echo '
 ---
 agorakube:
@@ -119,35 +101,15 @@ agorakube_pki:
 
 agorakube_base_components:
   etcd:
-    release: v3.4.16
+    release: v3.4.21
     upgrade: False
     check: true
     data_path: /var/lib/etcd
-    backup:
-      enabled: False
-      crontab: "*/30 * * * *"
-      storage:
-        capacity: 10Gi
-        enabled: False
-        type: "storageclass"
-        storageclass:
-          name: "default-jiva"
-        persistentvolume:
-          name: "my-pv-backup-etcd"
-          storageclass: "my-storageclass-name"
-        hostpath:
-          nodename: "master1"
-          path: /var/etcd-backup
   kubernetes:
-    release: v1.23.0
+    release: v1.24.6
     upgrade: False
   cloud_controller_manager:
     enabled: False
-  container:
-    engine: containerd
-# release : Only Supported if container engine is set to docker
-    release: ""
-#    upgrade: false
 
 agorakube_network:
   cni_plugin: calico
@@ -157,7 +119,7 @@ agorakube_network:
     pod: 10.33.0.0/16
     service: 10.32.0.0/16
   service_ip:
-    kubernetes: 10.32.0.1
+    kubernetes: 10.32.0.1 
     coredns: 10.32.0.10
   dns:
     primary_forwarder: 8.8.8.8
@@ -165,8 +127,8 @@ agorakube_network:
   nodeport:
     range: 30000-32000
   external_loadbalancing:
-    enabled: False
-    ip_range: 10.10.20.50-10.10.20.250
+    enabled: True
+    ip_range: 10.101.20.50-10.101.20.250
     secret_key: LGyt2l9XftOxEUIeFf2w0eCM7KjyQdkHform0gldYBKMORWkfQIsfXW0sQlo1VjJBB17shY5RtLg0klDNqNq4PAhNaub+olSka61LxV73KN2VaJY/snrZmHbdf/a7DfdzaeQ5pzP6D5O7zbUZwfb5ASOhNrG8aDMY3rkf4ZzHkc=
   kube_proxy:
     mode: ipvs
@@ -174,118 +136,31 @@ agorakube_network:
 
 agorakube_features:
   coredns:
-    release: "1.8.3"
+    release: "1.9.4"
     replicas: 2
-  reloader:
-    enabled: False
-    release: "0.0.89"
-  storage:
-    enabled: False
-    release: "2.9.0"
-    jiva:
-      data_path: /var/openebs
-      fs_type: ext4
-    hostpath:
-      data_path: /var/local-hostpath
   dashboard:
-    enabled: False
-    generate_admin_token: False
-    release: v2.2.0
+    enabled: True
+    generate_admin_token: True
+    release: v2.7.0
   metrics_server:
     enabled: True
   ingress:
-    controller: none
-    release: v0.46.0
+    controller: nginx
+    release: v1.3.1
 
-  supervision:
-    monitoring:
-      enabled: False
-      dashboard: True
-      persistent:
-        enabled: False
-        storage:
-          capacity: 4Gi
-          type: "storageclass"
-          storageclass:
-            name: "default-jiva"
-          persistentvolume:
-            name: "my-pv-monitoring"
-            storageclass: "my-storageclass-name"
-          hostpath:
-            nodename: "worker1"
-            path: /var/monitoring-persistent
-    dashboard:
-      admin:
-        user: administrator
-        password: P@ssw0rd
-      persistent:
-        enabled: False
-        storage:
-          capacity: 4Gi
-          type: "storageclass"
-          storageclass:
-            name: "default-jiva"
-          persistentvolume:
-            name: "my-pv-monitoring"
-            storageclass: "my-storageclass-name"
-          hostpath:
-            nodename: "worker1"
-            path: /var/grafana-persistent
-    logging:
-      enabled: False
-      dashboard: True
-      persistent:
-        enabled: False
-        storage:
-          capacity: 4Gi
-          type: "storageclass"
-          storageclass:
-            name: "default-jiva"
-          persistentvolume:
-            name: "my-pv-monitoring"
-            storageclass: "my-storageclass-name"
-          hostpath:
-            nodename: "worker1"
-            path: /var/logging-persistent
-  logrotate:
-    enabled: False
-    crontab: "* 2 * * *"
-    day_retention: 14
-  gatekeeper:
-    enabled: False
-    release: v3.4.0
-    replicas:
-      #audit: 1
-      controller_manager: 3
-#argocd is an Alpha feature and do not support persistence wet. Use it only for test purpose.
-  argocd:
-    enabled: False
+etc_hosts:
+  - hostname: "localhost"
+    ip: "127.0.0.1"
 
-# keycloak_oidc is an Alpha feature.
-  keycloak_oidc:
-    enabled: true
-    admin:
-      user: administrator
-      password: P@ssw0rd
-    auto_bootstrap:
-        bootstrap_keycloak: true
-        bootstrap_kube_apiserver: true
-        populate_etc_hosts: true
-        host: oidc.local.lan
-    storage:
-        enabled: True
-        capacity: 10Gi
-        type: "hostpath"
-        storageclass:
-          name: "default-jiva"
-        persistentvolume:
-          name: "my-pv-backup-etcd"
-          storageclass: "my-storageclass-name"
-        hostpath:
-          nodename: "worker1"
-          path: /var/keycloak
-
+# Populate /etc/hosts using all inventory groups
+# Note: This will not remove /etc/hosts entries when removed from inventory
 agorakube_populate_etc_hosts: True
+
+# Remove ALL /etc/hosts entries that are NOT defined in the etc_hosts group or etc_hosts variable
+agorakube_remove_etc_hosts: False
+
+# Optionally backup /etc/hosts each time a change is made
+agorakube_backup_etc_hosts: False
 
 # Security
 agorakube_encrypt_etcd_keys:
@@ -294,15 +169,15 @@ agorakube_encrypt_etcd_keys:
   key1:
     secret: 1fJcKt6vBxMt+AkBanoaxFF2O6ytHIkETNgQWv4b/+Q=
 
+agorakube_sonobuoy_mode: False
 #restoration_snapshot_file: /path/snopshot/file Located on {{ etcd_data_directory }}
 
 ' > /home/vagrant/agorakube/group_vars/all.yaml
 cd /home/vagrant/agorakube
 echo '
 #!/bin/bash
-yum -y update
-yum -y install python3 python3-pip python3-venv
-yum install -y libselinux-python3
+apt update
+apt -y install python3.8-venv
 python3 -m venv /usr/local/agorakube-env
 source /usr/local/agorakube-env/bin/activate
 pip3 install --upgrade pip
@@ -312,43 +187,43 @@ ansible --version
 chmod +x /home/vagrant/agorakube/script.sh
 cd /home/vagrant/agorakube/
 . /home/vagrant/agorakube/script.sh
-
 cd /home/vagrant/agorakube/
 ansible-playbook agorakube.yaml
 cp /root/.kube/config /var/kubeconfig/config
 SCRIPT
 
 
+
 Vagrant.configure("2") do |config|
     config.vm.provision "shell", inline: $script
-    config.vm.box = "bento/ubuntu-18.04"
-	config.vm.define "worker1" do |worker1|
-		worker1.vm.hostname = "worker1"
-		worker1.vm.network "private_network", ip: "10.10.20.5"
-		worker1.vm.provider "virtualbox" do |v|
+    config.vm.box = "bento/ubuntu-20.04"
+	  config.vm.define "worker10" do |worker10|
+    worker10.vm.hostname = "worker10"
+    worker10.vm.network "private_network", ip: "10.101.20.5"
+    worker10.vm.provider "virtualbox" do |v|
 			v.memory = 3096
 			v.cpus = 1
-			v.name = "worker1"
+			v.name = "worker10"
 		end
 	end
-	config.vm.define "worker2" do |worker2|
-		worker2.vm.hostname = "worker2"
-		worker2.vm.network "private_network", ip: "10.10.20.6"
-		worker2.vm.provider "virtualbox" do |v|
+	config.vm.define "worker20" do |worker20|
+		worker20.vm.hostname = "worker20"
+		worker20.vm.network "private_network", ip: "10.101.20.6"
+		worker20.vm.provider "virtualbox" do |v|
 			v.memory = 3096
 			v.cpus = 1
-			v.name = "worker2"
+			v.name = "worker20"
 		end
 	end
-	config.vm.define "master1" do |master1|
-	    master1.vm.provision "shell", inline: $script2
-		master1.vm.synced_folder ".", "/var/kubeconfig"
-		master1.vm.hostname = "master1"
-		master1.vm.network "private_network", ip: "10.10.20.4"
-		master1.vm.provider "virtualbox" do |v|
+	config.vm.define "master10" do |master10|
+    master10.vm.provision "shell", inline: $script2
+		master10.vm.synced_folder ".", "/var/kubeconfig"
+		master10.vm.hostname = "master10"
+		master10.vm.network "private_network", ip: "10.101.20.4"
+		master10.vm.provider "virtualbox" do |v|
 			v.memory = 3096
 			v.cpus = 1
-			v.name = "master1"
+			v.name = "master10"
 		end
 	end
 end
@@ -365,7 +240,7 @@ You can edit the vagrant to fit your needs.
 
 2) One Agorakube installation is finished, connect to the deploy manachine with the following command:
 
-`vagrant ssh worker1`
+`vagrant ssh master10`
 
 3) Kubernetes CLI "kubectl" is configured for root user, so use the following command to become root:
 
@@ -382,8 +257,8 @@ You can edit the vagrant to fit your needs.
 
 2. Download a sonobuoy [binary release](https://github.com/heptio/sonobuoy/releases) of the CLI, or build it yourself by running:
 ```sh
-$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.55.1/sonobuoy_0.55.1_linux_amd64.tar.gz
-$ tar -xvf sonobuoy_0.55.1_linux_amd64.tar.gz
+$ wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.56.10/sonobuoy_0.56.10_linux_amd64.tar.gz
+$ tar -xvf sonobuoy_0.56.10_linux_amd64.tar.gz
 $ mv sonobuoy /usr/bin
 ```
 
@@ -394,7 +269,7 @@ $ export KUBECONFIG="/path/to/your/cluster/kubeconfig.yml"
 
 4. Run sonobuoy:
 ```sh
-$ sonobuoy run --mode=certified-conformance
+$ sonobuoy run --mode=certified-conformance --wait
 ```
 
 4. Watch the logs:
