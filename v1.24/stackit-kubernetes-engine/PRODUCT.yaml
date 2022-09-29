@@ -1,0 +1,8 @@
+vendor: STACKIT - Schwarz IT KG
+name: STACKIT Kubernetes Engine SKE
+version: v1.24.6
+website_url: https://stackit.de/en/
+documentation_url: https://docs.stackit.cloud/stackit/en/kubernetes-engine-10125671.html
+product_logo_url: https://cdn.apps.01.cf.eu01.stackit.cloud/assets/img/logo_inverted.svg
+type: hosted platform
+description: "STACKIT Kubernetes Engine (SKE) is a fully managed and scalable Kubernetes service for the deployment and management of Kubernetes clusters and containerized applications."
