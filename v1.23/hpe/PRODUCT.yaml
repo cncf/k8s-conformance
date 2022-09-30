@@ -1,0 +1,8 @@
+vendor: Hewlett Packard Enterprise (HPE)
+name: HPE Ezmeral Runtime Enterprise
+version: 5.5
+website_url: https://www.hpe.com/info/containers
+documentation_url:  https://docs.containerplatform.hpe.com/54/
+product_logo_url: https://raw.githubusercontent.com/hpe-design/logos/96bc14bde4683dfa701d822a9bbf9b6a2d0a822d/HPE%20Primary%20Logo%20-%20SVG/hpe-logo-color.svg
+type: Distribution
+description: The HPE Ezmeral Runtime Enterprise is a secure, enterprise-grade platform to deploy cloud-native and non-cloud-native applications at scale across your data centers, multiple clouds, and at the edge.
