@@ -1,0 +1,9 @@
+vendor: Loft Labs
+name: vcluster
+version: v0.12.0
+website_url: https://www.vcluster.com/
+repo_url: https://github.com/loft-sh/vcluster
+documentation_url: https://www.vcluster.com/docs
+product_logo_url: https://www.vcluster.com/docs/media/vcluster_horizontal_black.svg
+type: distribution
+description: 'vcluster lets you create fully functional but virtual Kubernetes clusters that run inside the namespaces of an underlying Kubernetes cluster. Using vcluster is cheaper than creating separate full-blown clusters and it offers better multi-tenancy and isolation than regular namespaces.'
