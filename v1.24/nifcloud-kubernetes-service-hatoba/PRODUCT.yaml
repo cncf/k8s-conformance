@@ -1,0 +1,8 @@
+vendor: Fujitsu Cloud Technologies Limited
+name: NIFCLOUD Kubernetes Service Hatoba
+version: v1.24.3
+website_url: https://pfs.nifcloud.com/service/kubernetes-service-hatoba.htm
+documentation_url: https://pfs.nifcloud.com/spec/kubernetes-service-hatoba/
+product_logo_url: https://pfs.nifcloud.com/service/images/hatoba_logo.svg
+type: hosted
+description: 'NIFCLOUD Kubernetes Service Hatoba is a managed Kubernetes as a Service to deploy enterprise container applications and operate them simply and useful on NIFCLOUD.'
