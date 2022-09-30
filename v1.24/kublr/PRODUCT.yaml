@@ -1,0 +1,8 @@
+vendor: Kublr
+name: Kublr
+version: v1.23.0
+website_url: https://kublr.com
+documentation_url: https://docs.kublr.com
+product_logo_url: https://assets.kublr.com/kublr-logo.svg
+type: distribution
+description: Kubernetes for the enterprise
