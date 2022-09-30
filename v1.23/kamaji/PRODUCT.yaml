@@ -1,0 +1,9 @@
+vendor: Clastix
+name: Kamaji
+version: v0.1.0
+website_url: https://github.com/clastix/kamaji
+repo_url: https://github.com/clastix/kamaji
+documentation_url: https://github.com/clastix/kamaji
+product_logo_url: https://raw.githubusercontent.com/clastix/kamaji/master/assets/kamaji-logo.svg
+type: distribution
+description: "Build and operate Kubernetes at scale with a fraction of operational burden."
