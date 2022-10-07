@@ -1,0 +1,9 @@
+vendor: Kubernetes kubespray project
+name: kubespray
+version: 2.20.0
+website_url: https://github.com/kubernetes-sigs/kubespray
+repo_url: https://github.com/kubernetes-sigs/kubespray
+documentation_url: https://kubespray.io
+product_logo_url: https://raw.githubusercontent.com/kubernetes-sigs/kubespray/master/logo/logo-text-clear.svg
+type: installer
+description: Deploy a Production Ready Kubernetes Cluster
