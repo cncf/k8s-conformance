@@ -1,0 +1,8 @@
+vendor: Xenonstack Inc
+name: Nexastack Managed Kubernetes
+version: v1.0.0
+website_url: https://www.nexastack.com
+documentation_url: https://www.nexastack.com
+product_logo_url: "https://nexastack.s3.us-west-2.amazonaws.com/nexastack-logo.svg"
+type: hosted platform
+description: Nexastack is a  Platform for the Automation of Cloud Native and IaC Tools for Effective Infrastructure Management

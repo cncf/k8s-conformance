@@ -1,0 +1,9 @@
+vendor: Ilki
+name: AgoraKube
+version: v1.25.0
+website_url: https://github.com/ilkilab/agorakube
+repo_url: https://github.com/ilkilab/agorakube
+documentation_url: https://github.com/ilkilab/agorakube
+product_logo_url: https://raw.githubusercontent.com/ilkilab/agorakube/master/images/agorakube-logo.svg?sanitize=true
+type: distribution
+description: 'AgoraKube helps you bootstrap a minimum enterprise-grade Kubernetes cluster.'
