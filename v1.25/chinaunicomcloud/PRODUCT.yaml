@@ -1,0 +1,8 @@
+vendor: Chinaunicom Cloud
+name: Chinaunicom Kubernetes Engine
+version: v1.25.0
+website_url: https://www.cucloud.cn/product/csk.html
+documentation_url: https://www.cucloud.cn/product/csk.html
+product_logo_url: https://raw.githubusercontent.com/c479096292/SpinachGains/master/content/cucloudsvg.svg 
+type: distribution
+description: Chinaunicom Kubernetes Engine (CKE), Fully compatible with Kubernetes' native API and capable of expanding Chinaunicom Cloud's Kubernetes plugins such as CNI and CSI, and a highly scalable and high-performance container management services.
