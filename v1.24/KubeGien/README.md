@@ -32,6 +32,6 @@ This copies a single .tar.gz snapshot from the Sonobuoy pod into your local . di
 
 `mkdir ./results; tar xzf $outfile -C ./results`
 
-Delete Sonobuoy
+Delete Sonobuoy 
 
 `sonobuoy delete`
