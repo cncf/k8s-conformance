@@ -1,0 +1,8 @@
+vendor:  Xi'an TieKe Jingwei Information Technology Co.,Ltd.
+name: TaiChu
+version: v1.4.0
+website_url: https://www.rails.cn/xian/en-us/src/prointroduce/kmpp
+documentation_url: https://www.rails.cn/xian/en-us/src/prointroduce/kmppfile
+product_logo_url: https://www.rails.cn/xian/assets/static/logo1.179003c.2b0dfa30eeb2a44c4d53445a8da814de.svg
+type: distribution
+description: 'TaiChu kubernetes engine provie an easier,powerful platform that helps enterprise to use Kubernetes faster and better, include but not limited to installation and maintenance of k8s, deployment, monitoring and management of containerized applications,etc.'
