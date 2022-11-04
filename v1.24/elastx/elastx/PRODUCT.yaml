@@ -1,0 +1,8 @@
+vendor: ELASTX
+name: ELASTX Private Kubernetes
+version: v2.20.0-elx1
+website_url: https://elastx.se/en/kubernetes/
+documentation_url: https://docs.elastx.cloud/docs/private-kubernetes/
+product_logo_url: https://landscape.cncf.io/logos/elastx-kcsp.svg
+type: hosted
+description: "ELASTX Private Kubernetes is fully managed and runs on top of our OpenStack platform in your own tenant."
