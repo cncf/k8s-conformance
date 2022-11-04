@@ -20,6 +20,10 @@ View actively running pods:
 
 `sonobuoy status`
 
+View active job status
+
+`sonobuoy status --json | jq`
+
 To inspect the logs:
 
 `sonobuoy logs`
