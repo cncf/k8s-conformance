@@ -7,3 +7,4 @@ documentation_url: https://docs.starlingx.io
 product_logo_url: https://www.windriver.com/themes/wr/global/images/svg/logo-white.svg
 type: distribution
 description: "Wind River Cloud Platform is a carrier-grade Kubernetes solution that makes 5G possible by solving the operational problem of deploying and managing distributed edge networks at scale.  It is Wind River's commercial product based on the open source StarlingX project."
+contact_email_address: greg.waines@windriver.com
