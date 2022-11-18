@@ -1,0 +1,9 @@
+vendor: Linklogis
+name: Linklogis Kubernetes Platform
+version: v1.24.0
+website_url: https://cloud.linklogis.com/
+documentation_url: https://cloud.linklogis.com/#/beekube 
+product_logo_url: https://cloud.linklogis.com/assets/logo-color.606a3f9a.svg
+type: distribution
+description: 'Deploy Kubernetes clusters with linklogis kubernetes platform'
+contact_email_address: hujunbin@linklogis.com
