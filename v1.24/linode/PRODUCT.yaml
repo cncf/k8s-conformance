@@ -1,0 +1,9 @@
+vendor: Linode
+name: Linode Kubernetes Engine
+version: v1.24.8
+website_url: https://www.linode.com/products/kubernetes/
+documentation_url: https://developers.linode.com/api/v4/lke-clusters
+product_logo_url: https://www.linode.com/media/images/logos/diagonal/light/linode-logo_diagonal_light.eps
+type: hosted
+description: "Linode Kubernetes Engine is a fast and simple way to deploy, scale, and manage Kubernetes clusters running on Linode's global infrastructure."
+contact_email_address: "smeggitt@akamai.com"
