@@ -1,0 +1,10 @@
+vendor: MoreSec
+name: Shangfu
+version: V2.0.0
+website_url: https://www.moresec.cn/scene/devsecops
+contact_email_address: wangkuokuo@moresec.cn
+repo_url:
+documentation_url: https://www.moresec.cn/product/cnpp
+product_logo_url: https://raw.githubusercontent.com/Moresec-ksp/KSP/main/Shangfu%20logo.svg
+type: installer
+description: 'Shangfu Cloud Native Protection Platform is a security protection model based on the concept of cloud native. In view of the characteristics of cloud native application life-cycle, it involves in many stages of security protection, including R&D construction, security testing, image control, container deployment, container operation, etc. Shangfu also integrates security with development which means providing feedback of the application security condition through correlating operation asset, and promoting the iteration and upgrade of application. Whereupon, a closed loop of efficient cloud native application security risk is created, covering the whole stages of DevSecOps.'
