@@ -1,0 +1,9 @@
+vendor: Nutanix
+name: Nutanix Kubernetes Engine
+version: v2.7.0
+website_url: https://www.nutanix.com/products/kubernetes-engine
+documentation_url: https://portal.nutanix.com/page/documents/details?targetId=Release-Notes-Nutanix-Kubernetes-Engine-v2_7:Release-Notes-Nutanix-Kubernetes-Engine-v2_7
+product_logo_url: https://landscape.cncf.io/logos/nutanix-karbon.svg
+type: hosted
+description: "Managed Kubernetes offering by Nutanix."
+contact_email_address: raj.surve@nutanix.com
