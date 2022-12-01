@@ -14,7 +14,7 @@ https://get.plusserver.com/en/managed-kubernetes-free-trial
 ## Run Conformance Test
 
 On the new kubernetes cluster run the Conformance tests using the following
-command:
+commands:
 
 ```sh
 $ go install github.com/vmware-tanzu/sonobuoy@latest
