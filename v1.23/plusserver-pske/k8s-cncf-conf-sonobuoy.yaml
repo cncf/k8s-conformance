@@ -1,0 +1,196 @@
+kind: Shoot
+apiVersion: core.gardener.cloud/v1beta1
+metadata:
+  name: k8s-cncf-conf
+  namespace: garden-kd500770
+  uid: 2497386e-4c06-4bcd-9d86-f7a58baa7efe
+  resourceVersion: '13818965'
+  generation: 2
+  creationTimestamp: '2022-12-01T08:29:39Z'
+  labels:
+    extensions.extensions.gardener.cloud/plusserver-billing-extension: 'true'
+    extensions.extensions.gardener.cloud/plusserver-mp-extension: 'true'
+    extensions.extensions.gardener.cloud/plusserver-rm-extension: 'true'
+    networking.extensions.gardener.cloud/cilium: 'true'
+    operatingsystemconfig.extensions.gardener.cloud/ubuntu: 'true'
+    provider.extensions.gardener.cloud/openstack: 'true'
+    shoot.gardener.cloud/status: healthy
+  annotations:
+    gardener.cloud/created-by: system:serviceaccount:garden-dashboard:admin
+  finalizers:
+    - gardener
+spec:
+  addons:
+    kubernetesDashboard:
+      enabled: false
+      authenticationMode: token
+    nginxIngress:
+      enabled: false
+      externalTrafficPolicy: Cluster
+  cloudProfileName: pluscloudopen
+  dns:
+    domain: k8s-cncf-conf.kd500770.projects.prod.gardener.get-cloud.io
+  hibernation: {}
+  kubernetes:
+    allowPrivilegedContainers: true
+    kubeAPIServer:
+      enableBasicAuthentication: false
+      requests:
+        maxNonMutatingInflight: 400
+        maxMutatingInflight: 200
+      enableAnonymousAuthentication: false
+      eventTTL: 1h0m0s
+    kubeControllerManager:
+      nodeCIDRMaskSize: 24
+      podEvictionTimeout: 2m0s
+      nodeMonitorGracePeriod: 2m0s
+    kubeScheduler:
+      profile: balanced
+    kubeProxy:
+      mode: IPTables
+      enabled: true
+    kubelet:
+      failSwapOn: true
+      kubeReserved:
+        cpu: 80m
+        memory: 1Gi
+        pid: 20k
+      imageGCHighThresholdPercent: 50
+      imageGCLowThresholdPercent: 40
+      serializeImagePulls: true
+    version: 1.23.13
+    enableStaticTokenKubeconfig: true
+  networking:
+    type: cilium
+    pods: 10.96.0.0/12
+    nodes: 10.250.0.0/16
+    services: 10.112.0.0/12
+  maintenance:
+    autoUpdate:
+      kubernetesVersion: true
+      machineImageVersion: true
+    timeWindow:
+      begin: 220000+0100
+      end: 230000+0100
+  provider:
+    type: openstack
+    controlPlaneConfig:
+      apiVersion: openstack.provider.extensions.gardener.cloud/v1alpha1
+      kind: ControlPlaneConfig
+      loadBalancerProvider: amphora
+      zone: az1
+    infrastructureConfig:
+      apiVersion: openstack.provider.extensions.gardener.cloud/v1alpha1
+      kind: InfrastructureConfig
+      networks:
+        workers: 10.250.0.0/16
+      floatingPoolName: ext01
+    workers:
+      - cri:
+          name: containerd
+        name: worker-p4pyl
+        machine:
+          type: SCS-4V:16:100
+          image:
+            name: ubuntu
+            version: 22.4.0
+          architecture: amd64
+        maximum: 4
+        minimum: 2
+        maxSurge: 1
+        maxUnavailable: 0
+        volume:
+          size: 50Gi
+        zones:
+          - az1
+        systemComponents:
+          allow: true
+      - cri:
+          name: containerd
+        name: worker-hv0jo
+        machine:
+          type: SCS-4V:16:100
+          image:
+            name: ubuntu
+            version: 22.4.0
+          architecture: amd64
+        maximum: 4
+        minimum: 2
+        maxSurge: 1
+        maxUnavailable: 0
+        volume:
+          size: 50Gi
+        zones:
+          - az1
+        systemComponents:
+          allow: true
+  purpose: production
+  region: prod1
+  secretBindingName: kd500770-gitrunner-shoot
+  seedName: cgn01
+  systemComponents:
+    coreDNS:
+      autoscaling:
+        mode: horizontal
+status:
+  conditions:
+    - type: APIServerAvailable
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:35:29Z'
+      lastUpdateTime: '2022-12-01T08:36:05Z'
+      reason: HealthzRequestSucceeded
+      message: API server /healthz endpoint responded with success status code.
+    - type: ControlPlaneHealthy
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:35:40Z'
+      lastUpdateTime: '2022-12-01T08:36:05Z'
+      reason: ControlPlaneRunning
+      message: All control plane components are healthy.
+    - type: EveryNodeReady
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:35:40Z'
+      lastUpdateTime: '2022-12-01T08:36:05Z'
+      reason: EveryNodeReady
+      message: All nodes are ready.
+    - type: SystemComponentsHealthy
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:40:54Z'
+      lastUpdateTime: '2022-12-01T08:40:54Z'
+      reason: SystemComponentsRunning
+      message: All system components are healthy.
+  constraints:
+    - type: HibernationPossible
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:35:29Z'
+      lastUpdateTime: '2022-12-01T08:32:39Z'
+      reason: NoProblematicWebhooks
+      message: All webhooks are properly configured.
+    - type: MaintenancePreconditionsSatisfied
+      status: 'True'
+      lastTransitionTime: '2022-12-01T08:35:29Z'
+      lastUpdateTime: '2022-12-01T08:32:39Z'
+      reason: NoProblematicWebhooks
+      message: All webhooks are properly configured.
+  gardener:
+    id: O08lpsAoyPsc2B5NF9S2y0f3agZJJ2fBFBfZkQ6LpfW0bhoDNtH4G8ITs37TnEm3
+    name: gardenlet-99d5877fb-sbzm7
+    version: v1.60.2
+  hibernated: false
+  lastOperation:
+    description: Shoot cluster has been successfully reconciled.
+    lastUpdateTime: '2022-12-01T08:36:05Z'
+    progress: 100
+    state: Succeeded
+    type: Reconcile
+  observedGeneration: 2
+  seedName: cgn01
+  technicalID: shoot--kd500770--k8s-cncf-conf
+  uid: 2497386e-4c06-4bcd-9d86-f7a58baa7efe
+  clusterIdentity: >-
+    shoot--kd500770--k8s-cncf-conf-2497386e-4c06-4bcd-9d86-f7a58baa7efe-gardener-prod
+  advertisedAddresses:
+    - name: external
+      url: https://api.k8s-cncf-conf.kd500770.projects.prod.gardener.get-cloud.io
+    - name: internal
+      url: https://api.k8s-cncf-conf.kd500770.internal.prod.gardener.get-cloud.io
+
