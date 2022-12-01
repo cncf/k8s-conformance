@@ -1,0 +1,43 @@
+name: check-conformance-test-suite-documentation
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 12 * * *"
+
+jobs:
+  check-conformance-test-suite-documentation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: configure system
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          gh auth login --with-token < <(echo ${{ secrets.GITHUB_TOKEN }})
+          gh auth status
+
+      - name: run docs/check-conformance-test-suite-docs
+        run: |
+          cd $(git rev-parse --show-toplevel)/docs
+          ./check-conformance-test-suite-docs.sh
+
+      - name: commit and push if there are changes
+        run: |
+          if { git ls-files --others --exclude-standard ; git diff-index --name-only --diff-filter=d HEAD ; } | grep --regexp='[.]md$'; then
+              echo changes detected
+            else
+              exit 0
+          fi
+          RELEASE_VERSION="$(cat /tmp/release-version)"
+          NEW_BRANCH="conformance-test-suite-doc-${RELEASE_VERSION}"
+          git add docs/*.md
+          git branch "${NEW_BRANCH}"
+          git checkout "${NEW_BRANCH}"
+          git commit -s -m "Add Conformance test suite documentation for ${RELEASE_VERSION}"
+          git push origin "${NEW_BRANCH}"
+          gh pr create --title "Add Conformance test suite documentation ${RELEASE_VERSION}" --body "Includes new Conformance test suite documentation for ${RELEASE_VERSION}"
