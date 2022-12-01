@@ -17,14 +17,31 @@ On the new kubernetes cluster run the Conformance tests using the following
 command:
 
 ```sh
-kubectl apply -f sonobuoy.yaml
+$ go install github.com/vmware-tanzu/sonobuoy@latest
+$ sonobuoy run --mode=certified-conformance
+INFO[0000] create request issued                         name=sonobuoy namespace= resource=namespaces
+INFO[0000] create request issued                         name=sonobuoy-serviceaccount namespace=sonobuoy resource=serviceaccounts
+INFO[0000] create request issued                         name=sonobuoy-serviceaccount-sonobuoy namespace= resource=clusterrolebindings
+INFO[0000] create request issued                         name=sonobuoy-serviceaccount-sonobuoy namespace= resource=clusterroles
+INFO[0000] create request issued                         name=sonobuoy-config-cm namespace=sonobuoy resource=configmaps
+INFO[0000] create request issued                         name=sonobuoy-plugins-cm namespace=sonobuoy resource=configmaps
+INFO[0000] create request issued                         name=sonobuoy namespace=sonobuoy resource=pods
+INFO[0000] create request issued                         name=sonobuoy-aggregator namespace=sonobuoy resource=services
 ```
 
-Watch Sonobuoy's logs with:
+Watch Sonobuoy's status with:
 
-```
-kubectl logs -f -n heptio-sonobuoy e2e sonobuoy
+```sh
+$ sonobuoy status
+         PLUGIN     STATUS   RESULT   COUNT                                PROGRESS
+            e2e   complete   passed       1   Passed:346, Failed:  0, Remaining:  0
+   systemd-logs   complete   passed       4                                        
+
+Sonobuoy has completed. Use `sonobuoy retrieve` to get results.
 ```
 
-Wait for the line `no-exit was specified, sonobuoy is now blocking`, and then
-copy the results using `kubectl cp`
+Check Sonobuoy's logs with:
+```sh
+$ sonobuoy retrieve
+202211190814_sonobuoy_efac74ed-8786-4b78-8726-113787958428.tar.gz
+```
