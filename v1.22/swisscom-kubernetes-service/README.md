@@ -21,6 +21,6 @@ $ sonobuoy results $results
 # untar the archive, then inspect plugins/e2e/results/global/{e2e.log,junit_01.xml}
 ```
 
-For more information, please refer 
+For more information, please check
 
 https://docs.entcloud.swisscom.com/guide/managed-services/managed-kubernetes/
