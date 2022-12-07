@@ -1,0 +1,9 @@
+vendor: Eric Ace
+name: Desktop Kubernetes
+version: v1.25.0
+website_url: https://github.com/aceeric/desktop-kubernetes
+repo_url: https://github.com/aceeric/desktop-kubernetes
+documentation_url: https://github.com/aceeric/desktop-kubernetes
+product_logo_url: https://raw.githubusercontent.com/aceeric/desktop-kubernetes/master/resources/desktop-kubernetes.svg
+type: distribution
+description: 'Stands up a three-VM Kubernetes development cluster on the desktop using VirtualBox, by running a single Bash script.'

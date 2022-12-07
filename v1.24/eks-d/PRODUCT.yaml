@@ -1,0 +1,9 @@
+vendor: Amazon Web Services
+name: Amazon Elastic Kubernetes Service Distro (Amazon EKS-D)
+version: v1.24.6
+website_url: https://aws.amazon.com/eks/eks-distro
+repo_url: https://github.com/aws/eks-distro
+documentation_url: https://distro.eks.amazonaws.com/
+product_logo_url: https://raw.githubusercontent.com/aws/eks-anywhere/main/docs/static/AWS_logo_RGB.svg
+type: distribution
+description: Amazon Elastic Kubernetes Service Distro (Amazon EKS-D) is a Kubernetes distribution based on and used by Amazon Elastic Kubernetes Service (EKS) to create reliable and secure Kubernetes clusters.

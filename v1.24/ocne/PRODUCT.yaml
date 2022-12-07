@@ -1,0 +1,8 @@
+vendor: Oracle
+name: Oracle Cloud Native Environment
+version: 1.5.7
+website_url: https://www.oracle.com/linux/cloudnative/
+documentation_url: https://docs.oracle.com/en/operating-systems/olcne/
+product_logo_url: https://opensource.oracle.com/docs/Oracle-Linux-Logo.svg
+type: distribution
+description: 'Oracle Cloud Native Environment is a fully integrated suite for the development and management of cloud-native applications that uses Kubernetes to orchestrate and schedule containers.'
