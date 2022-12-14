@@ -1,0 +1,10 @@
+vendor: ArcherOS
+name: ArcherKE
+version: v3.0
+website_url: https://www.archeros.com/
+documentation_url: https://www.archeros.com/product/ArcherKE
+product_logo_url: https://raw.githubusercontent.com/archeros-hmf/archeros-res/main/archeros_logo.svg
+type: distribution
+description: 'With kubernetes as the core, ArcherKE provide a reliable cloud native application building and running environment.'
+contact_email_address: cynthialiu@archeros.com
+
