@@ -1,0 +1,10 @@
+vendor: SAP
+name: Gardener (https://github.com/gardener/gardener) shoot cluster deployed on ALICLOUD
+version: v1.61.3
+website_url: https://gardener.cloud
+repo_url: https://github.com/gardener/
+documentation_url: https://github.com/gardener/documentation/wiki
+product_logo_url: https://raw.githubusercontent.com/gardener/documentation/master/images/logo_w_saplogo.svg
+type: installer
+description: The Gardener implements automated management and operation of Kubernetes clusters as a service and aims to support that service on multiple Cloud providers.
+contact_email_address: gardener-oq@listserv.sap.com
