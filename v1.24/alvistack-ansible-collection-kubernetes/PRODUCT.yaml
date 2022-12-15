@@ -1,8 +1,9 @@
 vendor: AlviStack
 name: AlviStack - Ansible Collection for Kubernetes
-version: 20220824.1.2
+version: 20221213.1.1
 website_url: https://github.com/alvistack/ansible-collection-kubernetes
 documentation_url: https://github.com/alvistack/ansible-collection-kubernetes/tree/master/docs
 product_logo_url: https://raw.githubusercontent.com/alvistack/ansible-collection-kubernetes/master/docs/images/alvistack/stacked/color/alvistack-stacked-color.svg
 type: distribution
 description: 'This Ansible collection provides Ansible playbooks and roles for the deployment and configuration of an Kubernetes environment.'
+contact_email_address: hswong3i@pantarei-design.com
