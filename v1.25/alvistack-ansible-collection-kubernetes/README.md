@@ -38,19 +38,19 @@ Install some basic pacakges for host:
 
     apt update
     apt full-upgrade
-    apt install aptitude git linux-generic-hwe-22.04 openssh-server python3 rsync vim
+    apt install -y aptitude git linux-generic-hwe-22.04 openssh-server python3 pwgen rsync vim
 
 Install Libvirt:
 
-    apt-get update
-    apt-get install -y binutils bridge-utils dnsmasq-base ebtables gcc libarchive-tools libguestfs-tools libvirt-clients libvirt-daemon-system libvirt-dev make qemu-system qemu-utils ruby-dev virt-manager
+    apt update
+    apt install -y binutils bridge-utils dnsmasq-base ebtables gcc libarchive-tools libguestfs-tools libvirt-clients libvirt-daemon-system libvirt-dev make qemu-system qemu-utils ruby-dev virt-manager
 
 Install Vagrant:
 
     echo "deb [arch=amd64] https://apt.releases.hashicorp.com jammy main" | tee /etc/apt/sources.list.d/hashicorp.list
     curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /etc/apt/trusted.gpg.d/hashicorp.gpg > /dev/null
-    apt-get update
-    apt-get install -y vagrant
+    apt update
+    apt install -y vagrant
     vagrant plugin install vagrant-libvirt
 
 ## Bootstrap Ansible
@@ -60,15 +60,15 @@ Install Ansible (see
 
     echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
     curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt-get update
-    apt-get install -y ansible python3-ansible-lint python3-docker python3-netaddr python3-vagrant
+    apt update
+    apt install -y ansible python3-ansible-lint python3-docker python3-netaddr python3-vagrant
 
 Install Molecule:
 
     echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
     curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt-get update
-    apt-get install -y python3-molecule python3-molecule-docker python3-molecule-vagrant
+    apt update
+    apt install -y python3-molecule python3-molecule-docker python3-molecule-vagrant
 
 GIT clone Ansible Collection for Kubernetes
 (<https://github.com/alvistack/ansible-collection-kubernetes>):
@@ -100,9 +100,9 @@ Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES                  AGE     VERSION
-    kube01   Ready    control-plane,master   9m38s   v1.25.0
-    kube02   Ready    control-plane,master   8m32s   v1.25.0
-    kube03   Ready    <none>                 8m14s   v1.25.0
+    kube01   Ready    control-plane,master   9m38s   v1.25.5
+    kube02   Ready    control-plane,master   8m32s   v1.25.5
+    kube03   Ready    <none>                 8m14s   v1.25.5
     
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE      NAME                             READY   STATUS    RESTARTS   AGE
