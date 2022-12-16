@@ -1,0 +1,10 @@
+vendor: Flant
+name: Deckhouse
+version: v1.42.0
+website_url: https://deckhouse.io/
+repo_url: https://github.com/deckhouse/deckhouse
+documentation_url: https://deckhouse.io/en/documentation/v1/
+product_logo_url: https://deckhouse.io/images/logos/deckhouse-platform.svg
+type: distribution
+description: 'Deckhouse Platform allows you to create homogeneous Kubernetes clusters anywhere and fully manages them.'
+contact_email_address: konstantin.aksenov@flant.com
