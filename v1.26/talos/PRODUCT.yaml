@@ -1,0 +1,10 @@
+vendor: Sidero Labs
+name: Talos Linux
+version: v1.3.0
+website_url: https://www.siderolabs.com/
+repo_url: https://github.com/siderolabs/talos
+documentation_url: https://www.talos.dev
+product_logo_url: https://www.talos.dev/images/Sidero_stacked_darkbkgd_RGB.svg
+type: installer
+description: Talos Linux is Linux designed for Kubernetes - secure, immutable, and minimal.
+contact_email_address: developers@siderolabs.com
