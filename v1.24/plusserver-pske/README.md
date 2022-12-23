@@ -11,13 +11,41 @@ You also benefit from high resilience and optimized costs through autoscaling an
 
 https://get.plusserver.com/en/managed-kubernetes-free-trial
 
-## Run Conformance Test
+
+## 1. Create an account
+Create a plusserver Kubernetes Engine (PSKE) Account on [https://get.plusserver.com/en/managed-kubernetes-free-trial](https://get.plusserver.com/en/managed-kubernetes-free-trial).
+
+## 2. Create Kubernetes Cluster
+
+Login to plusserver Kubernetes Engine (PSKE) Dashboard to create a Kubernetes Clusters on OpenStack (pluscloud-open) cloud provider.
+
+https://dashboard.prod.gardener.get-cloud.io/login
+
+In the "Clusters" menu, select the plus symbol for "Kubernetes Clusters". The input mask for cluster creation appears.
+- Select the infrastructure (we validated the conformance with pluscloud-open)
+- Choose the name of your cluster
+- Select the 1.24.7 version of Kubernetes
+- Select the region of your cluster
+- Select the networking type of your cluster (we validated the conformance with cilium)
+- Configure a worker pool (we validated the conformance with a pool of 2 "SCS-4V:16:100" worker types and "containerd" as container runtime)
+
+## 3. Get the kubeconfig
+
+From the clusters list, click on the cluster you just created and download the kubeconfig file from the top-right of the "Access" tab.
+
+## 4. Install Sonobuoy
 
 On the new kubernetes cluster run the Conformance tests using the following
 commands:
 
 ```sh
 $ go install github.com/vmware-tanzu/sonobuoy@latest
+
+```
+
+## 5. Run Conformance Test
+
+```sh
 $ sonobuoy run --mode=certified-conformance
 INFO[0000] create request issued                         name=sonobuoy namespace= resource=namespaces
 INFO[0000] create request issued                         name=sonobuoy-serviceaccount namespace=sonobuoy resource=serviceaccounts
