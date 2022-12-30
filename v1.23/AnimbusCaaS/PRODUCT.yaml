@@ -1,0 +1,8 @@
+vendor: 99cloud
+name: Animbus CaaS
+version: v4.3.1
+website_url: https://www.99cloud.net/animbuscaas
+documentation_url: https://www.99cloud.net/animbuscaas
+product_logo_url: logo.svg
+type: hosted
+description: 'Animbus Caas is a container service base on Kubernetes'
