@@ -1,8 +1,9 @@
 vendor: AlviStack
 name: AlviStack - Vagrant Box Packaging for Kubernetes
-version: 20220824.1.2
+version: 20221213.1.1
 website_url: https://github.com/alvistack/vagrant-kubernetes
 documentation_url: https://github.com/alvistack/ansible-collection-kubernetes/tree/master/docs
 product_logo_url: https://raw.githubusercontent.com/alvistack/ansible-collection-kubernetes/master/docs/images/alvistack/stacked/color/alvistack-stacked-color.svg
 type: installer
 description: 'This Vagrant Box provides Libvirt and VirtualBox image for running Kubernetes in single node All-in-one mode.'
+contact_email_address: hswong3i@pantarei-design.com
