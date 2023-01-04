@@ -1,0 +1,10 @@
+vendor: ASUS Cloud
+name: ASUS Cloud Infra 
+version: 5.0.0
+website_url: https://asuscloud.com
+repo_url: https://github.com/IrisChanTW/k8s-conformance
+documentation_url: https://drive.google.com/file/d/1-wGPIZhQGaNq1Lu2cg9Y2QPg4LPBMxXr/view?usp=share_link
+product_logo_url: https://landscape.cncf.io/logos/asus-cloud-infra.svg
+type: distribution
+description: 'helps you bootstrap a Kubernetes cluster'
+contact_email_address: iris.chan@asuscloud.com
