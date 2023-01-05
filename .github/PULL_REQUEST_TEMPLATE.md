@@ -8,4 +8,4 @@
 * [ ] If your product/project is open source, did you include the `repo_url`?
 * [ ] Did you copy and paste the [installation and configuration instructions](https://github.com/cncf/k8s-conformance/blob/master/faq.md#can-i-provide-a-link-to-the-installation-directions) into the README.md file in addition to linking to them?
 
-For a full list of requirements, please refer to these sections of the docs: [_content of the PR_](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#contents-of-the-pr), and [_requirements_](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#requirements).
+For a full list of requirements, please refer to these sections of the docs: [_Contents of the PR_](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#contents-of-the-pr), and [_Requirements_](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#requirements).
