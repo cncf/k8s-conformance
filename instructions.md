@@ -123,6 +123,7 @@ documentation_url: https://yoyo.dyne/turbo-encabulator/docs
 product_logo_url: https://yoyo.dyne/assets/turbo-encabulator.svg
 type: distribution
 description: "The Yoyodyne Turbo Encabulator is a superb Kubernetes distribution for all of your Encabulating needs."
+contact_email_address : yoyodyne@turbo-encabulator.org
 ```
 
 ### Requirements
