@@ -1,0 +1,9 @@
+vendor: Microsoft
+name: Azure aks-engine
+version: v0.74.0
+website_url: https://github.com/Azure/aks-engine
+documentation_url: https://github.com/Azure/aks-engine
+product_logo_url: https://raw.githubusercontent.com/cncf/landscape/master/cached_logos/azure-aks-engine.svg
+contact_email_address: lachlan.evenson@microsoft.com
+type: distribution
+description: 'This project is deprecated for Azure public cloud customers. Please consider using Azure Kubernetes Service (AKS) for managed Kubernetes or Cluster API Provider Azure for self-managed Kubernetes. There are no new features planned; this project will only be updated for CVEs & similar, with Kubernetes 1.24 as the final version to receive updates.'
