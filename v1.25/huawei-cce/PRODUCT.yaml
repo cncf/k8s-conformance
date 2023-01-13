@@ -1,0 +1,9 @@
+vendor: Huawei
+name: HUAWEI CLOUD Cloud Container Engine
+version: v1.25.2-r0-CCE22.12.1
+website_url: https://www.huaweicloud.com/intl/en-us/product/cce.html
+documentation_url: https://support.huaweicloud.com/intl/en-us/cce/
+product_logo_url: https://res.hc-cdn.com/cnpm-header-and-footer/2.0.6/base/header-china/components/images/logo.svg
+type: hosted
+description: 'Cloud Container Engine (CCE) is a high-performance, high-reliability service through which enterprises can manage containerized applications. CCE supports native Kubernetes applications and tools, allowing you to easily set up a container runtime environment on the cloud.'
+contact_email_address: renhongcai@huawei.com
