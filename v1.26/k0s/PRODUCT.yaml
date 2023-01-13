@@ -1,0 +1,10 @@
+vendor: Mirantis
+name: k0s
+version: v1.26.0+k0s.0
+website_url: https://k0sproject.io
+repo_url: https://github.com/k0sproject/k0s
+documentation_url: https://docs.k0sproject.io/
+product_logo_url: https://raw.githubusercontent.com/k0sproject/k0s/main/docs/img/k0s-logo-full-color-light.svg
+type: Distribution
+description: "k0s is a single binary all-inclusive Kubernetes distribution with all the required bells and whistles preconfigured to make building a Kubernetes clusters a matter of just copying an executable to every host and running it."
+contact_email_address: k0s@mirantis.com
