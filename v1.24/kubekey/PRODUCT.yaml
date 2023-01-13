@@ -1,0 +1,10 @@
+vendor: QingCloud Technologies Corp.
+name: kubekey
+version: v3.0.6
+website_url: https://kubesphere.io/docs/installing-on-linux/introduction/kubekey
+repo_url: https://github.com/kubesphere/kubekey
+documentation_url: https://kubesphere.io/docs/installing-on-linux/introduction/kubekey
+product_logo_url: https://raw.githubusercontent.com/kubesphere/kubekey/master/docs/img/kubekey-logo.svg
+type: installer
+description: Provides a flexible, rapid and convenient way to install Kubernetes only, both Kubernetes and KubeSphere, and related cloud-native add-ons. It is also an efficient tool to scale and upgrade your cluster.
+contact_email_address: calvinyu@yunify.com
