@@ -16,7 +16,7 @@ The “Cluster List” page will display all the created KCS cluster name/ID, st
 
 #### Create Cluster
 
-Create a Cluster in selected region, select the cluster Kubernetes version v1.23.1. Please Click “Create cluster” and enter the “Create cluster” page. Fill in cluster name and then fill in relevant configuration information according to your needs. For ssh to the nodes in the cluster, users need to enable FIP binding for the cluster nodes.
+Create a Cluster in selected region, select the cluster Kubernetes version v1.25.3. Please Click “Create cluster” and enter the “Create cluster” page. Fill in cluster name and then fill in relevant configuration information according to your needs. For ssh to the nodes in the cluster, users need to enable FIP binding for the cluster nodes.
 
 #### Access to Cluster
 
