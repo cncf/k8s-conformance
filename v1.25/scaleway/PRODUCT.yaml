@@ -1,0 +1,9 @@
+vendor: Scaleway
+name: Scaleway Kubernetes Kapsule
+version: v1.25.5
+website_url: https://www.scaleway.com/en/kubernetes-kapsule/
+documentation_url: https://developers.scaleway.com/en/products/k8s/api/
+product_logo_url: https://scwedicons.s3.fr-par.scw.cloud/Scaleway-main-logo-purple.svg
+contact_email_address: container-team+conformance@scaleway.com
+type: hosted
+description: 'Kubernetes Kapsule provides a simple way to deploy and manage your containerized applications in the cloud. Relax and focus on your software stack while we take care of your clusters.'
