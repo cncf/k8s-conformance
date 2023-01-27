@@ -1,0 +1,9 @@
+vendor: Mantech
+name: Accordion
+version: v2.4.0
+website_url: https://accordions.co.kr/kube_eng/
+documentation_url: https://demo.accordions.co.kr/docs/
+product_logo_url: https://training.accordions.co.kr/assets/images/mantech-accordion.svg
+type: distribution
+description: 'Accordion Kubernetes Platform help you to orchestrate containerized workloads for your DevOps practices & CI/CD pipelines, delivering enhanced developer productivity and accelerating time to market.'
+contact_email_address : ystae@mantech.co.kr
