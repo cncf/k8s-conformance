@@ -1,0 +1,11 @@
+vendor: Diamanti Inc
+name: Diamanti Spektra
+version: 3.6
+website_url: https://diamanti.com
+documentation_url: https://support.diamanti.com
+product_logo_url: https://diamanti.com/wp-content/uploads/2023/01/diamanti-logo-pms375-2.svg
+type: distribution
+description: "Diamanti Spektra is a pre-validated and pre-packaged Kubernetes distribution complete with integrated CSI and CNI plugins for modern, distributed applications across the hybrid cloud"
+contact_email_address: alex@diamanti.com
+
+
