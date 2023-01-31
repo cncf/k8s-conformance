@@ -1,0 +1,9 @@
+vendor: SUSE, LLC
+name: RKE Government
+version: v1.25.0+rke2r1
+website_url: https://docs.rke2.io/
+repo_url: https://github.com/rancher/rke2
+documentation_url: https://docs.rke2.io/
+product_logo_url: https://docs.rke2.io/assets/logo-horizontal-rke.svg
+type: distribution
+description: A Kubernetes distribution focused on enabling Federal government compliance-based use cases

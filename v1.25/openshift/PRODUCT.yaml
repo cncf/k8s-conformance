@@ -1,0 +1,10 @@
+vendor: Red Hat
+name: OpenShift Container Platform by Red Hat
+version: v4.12.0
+website_url: https://www.openshift.com
+repo_url: https://github.com/openshift/origin
+documentation_url: https://docs.openshift.com
+product_logo_url: https://cdn2.hubspot.net/hubfs/4305976/images/openshift-legacy/logos/openshift/Logotype_RH_OpenShift_wLogo_RGB_Black.svg
+type: Distribution
+description: 'OpenShift® helps organizations focus on building and scaling their business with fully supported enterprise Kubernetes by Red Hat®.'
+contact_email_address: maszulik@redhat.com
