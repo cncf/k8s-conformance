@@ -1,0 +1,9 @@
+vendor: acornsoft
+name: Cocktail Cloud
+version: v4.7.0
+website_url: https://www.cocktailcloud.io/cocktail/cloud.do
+documentation_url: https://cocktailcloud.gitbook.io/cocktail-cloud-en
+product_logo_url: https://cocktail-logo.s3.ap-northeast-2.amazonaws.com/cocktail-cloud.svg
+type: distribution
+description: "A cocktail cloud is a container application management platform that provides a continuous development/deployment/operating environment for container-based applications."
+contact_email_address : support@acornsoft.io

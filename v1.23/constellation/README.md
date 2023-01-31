@@ -2,23 +2,26 @@
 
 ## Prerequisites
 
-[Install & configure `gcloud` CLI](https://cloud.google.com/sdk/gcloud) for access to GCP.
-
-[Install WireGuard](https://www.wireguard.com/install/) for connecting to your cluster
+[Follow the docs on how to set up cloud credentials for GCP](https://docs.edgeless.systems/constellation/getting-started/install#set-up-cloud-credentials)
 
 [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) for working with Kubernetes
 
-For more information [follow our documentation.](https://constellation-docs.edgeless.systems/6c320851-bdd2-41d5-bf10-e27427398692/#/getting-started/install)
-
 Additionally, [Sonobuoy CLI is required.](https://github.com/vmware-tanzu/sonobuoy/releases)
-These tests results were produced using Sonobuoy v0.56.4.
+These tests results were produced using Sonobuoy v0.56.10
 
 ## Provision Constellation Cluster
 
 ```sh
-constellation create gcp 1 2 n2d-standard-2 -y
-constellation init
-wg-quick up ./wg0.conf
+constellation config generate gcp
+```
+
+Fill the config with the needed values for your cloud subscription.
+Set `kubernetesVersion: "1.23"`.
+
+```sh
+constellation config fetch-measurements
+constellation create -c3 -w2 -y
+constellation init --conformance
 export KUBECONFIG="$PWD/constellation-admin.conf"
 ```
 
@@ -50,7 +53,6 @@ cat plugins/e2e/results/global/junit_01.xml
 # Remove test deployments
 sonobuoy delete --wait
 # Or, shutdown cluster
-wg-quick down ./wg0.conf
-./constellation terminate
+constellation terminate
 rm constellation-mastersecret.base64
 ```

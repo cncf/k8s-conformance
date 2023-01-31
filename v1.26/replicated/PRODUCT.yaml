@@ -1,0 +1,14 @@
+vendor: Replicated, Inc.
+name: kURL
+version: v2023.01.13-1
+website_url: https://kurl.sh
+repo_url: https://github.com/replicatedhq/kurl
+documentation_url: https://kurl.sh/docs/introduction/
+product_logo_url: https://raw.githubusercontent.com/replicatedhq/community/main/assets/logos/kurl.svg
+type: distribution
+description: 'A custom Kubernetes distro creator and add-on manager.'
+description: 'A custom Kubernetes distro creator and add-on manager for online and airgapped clusters'
+description: 'A Kubeadm-based add-on manager for customizing upstream Kubernetes with standard and custom add-ons online and airgapped clusters.'
+description: 'A Kubernetes distro creator ideal for delivering K8s-based apps to on-prem or airgapped environments.'
+description: 'An embeddable Kubernetes distro manager, ideal for delivering K8s-based apps to on-prem or airgapped environments.'
+contact_email_address: rafael@replicated.com

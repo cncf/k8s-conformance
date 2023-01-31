@@ -1,0 +1,9 @@
+vendor: Canonical Ltd
+name: MicroK8s
+version: v1.26.0
+website_url: https://microk8s.io
+documentation_url: https://microk8s.io/docs/
+product_logo_url: https://assets.ubuntu.com/v1/9309d097-MicroK8s_SnapStore_icon.svg
+type: distribution
+description: 'A small, fast, single-package Kubernetes for developers, IoT and edge.'
+contact_email_address: kos.tsakalozos@canonical.com

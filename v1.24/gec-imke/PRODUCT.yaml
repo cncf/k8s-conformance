@@ -1,0 +1,8 @@
+vendor: German Edge Cloud GmbH
+name: iMKE
+version: v1.24.0
+website_url: https://gec.io/cloud-automation/gec-kubernetes-service/
+documentation_url: https://docs.gec.io
+product_logo_url: https://raw.githubusercontent.com/gecio/gec-logo/master/german-edge-cloud.svg
+type: hosted platform
+description: 'iMKE. The first choice for Industrial and Finance clients Kubernetes.'
