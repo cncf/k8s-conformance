@@ -1,0 +1,10 @@
+vendor: MacStadium,Inc.
+name: Orka
+version: 2.4.0
+website_url: http://macstadium.com/orka
+repo_url:
+documentation_url: http://orkadocs.macstadium.com
+product_logo_url: https://www2.macstadium.com/orka-logo.svg
+type: hosted platform
+description: 'Orka is a platform that allows Orchestatration via Kubernetes on Apple.  It allows MacOS on genuine Apple hardware to be used in Kubernetes.'
+contact_email_address: cchapman@macstadium.com
