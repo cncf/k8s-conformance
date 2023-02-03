@@ -1,0 +1,10 @@
+vendor: QingCloud Technologies Corp.
+name: QingCloud Kubernetes Engine (QKE)
+version: v3.1.0 - Kubernetes v1.24.3
+website_url: https://console.qingcloud.com/paas/qke/clusters
+repo_url: https://github.com/QingCloudAppcenter/QKE
+documentation_url: https://docsv3.qingcloud.com/container/qke_plus/
+product_logo_url: https://yunify-qingcloud-docs.pek3b.qingstor.com/images/QKE.svg
+type: hosted
+description: "QKE can provisioning a k8s/KubeSphere cluster in minutes automatically by just a few clicks and inputs."
+contact_email_address: qke_team_group@yunify.com
