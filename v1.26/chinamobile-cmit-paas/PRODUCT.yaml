@@ -6,3 +6,4 @@ documentation_url: https://renyijun-dev.github.io/PaasIntroduction/demo.html
 product_logo_url: https://landscape.cncf.io/logos/china-mobile-cmit-paa-s.svg
 type: distribution
 description: 'Cmit PaaS platform provide core services such as flexible cluster expansion and contraction, disaster tolerance and DevOps.'
+contact_email_address : yinxingyu@chinamobile.com
