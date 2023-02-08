@@ -2,11 +2,10 @@
 
 The Kubernetes Software Conformance Working Group operates under the aegis of CNCF.
 The charter of the working group is to define the process around certifying
-Kubernetes conformance. We collaborate with the Kubernetes [SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture) who owns 
-the conformance definition, and [SIG Testing](https://github.com/kubernetes/community/tree/master/sig-testing) who work on
+Kubernetes conformance. We collaborate with the Kubernetes [SIG Architecture](https://github.com/kubernetes/community/tree/master/sig-architecture) who owns the conformance definition, and [SIG Testing](https://github.com/kubernetes/community/tree/master/sig-testing) who work on
 the mechanics of the conformance tests. 
 
-The goal for the group is to create a software conformance program that any Kubernetes implementation can use to demonstrate that they are conformant and interoperable. Here is a [list](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0) of all known current implementations of Kubernetes.
+The goal for the group is to create a software conformance program that any Kubernetes implementation can use to demonstrate that they are conformant and interoperable. Here is a [list](https://docs.google.com/spreadsheets/d/1uF9BoDzzisHSQemXHIKegMhuythuq_GL3N1mlUUK2h0/edit#gid=0) of all known current implementations of Kubernetes.
 
 # Submitting Conformance Results
 

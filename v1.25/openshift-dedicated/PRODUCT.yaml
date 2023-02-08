@@ -1,0 +1,9 @@
+vendor: Red Hat
+name: Red Hat OpenShift Dedicated
+version: v4.12
+website_url: https://www.openshift.com/products/dedicated/
+documentation_url: https://docs.openshift.com/dedicated/welcome/index.html
+product_logo_url: https://www.openshift.com/hubfs/images/logos/Logo-Red_Hat-OpenShift_Dedicated-A-Standard-RGB.svg
+type: hosted
+description: 'OpenShift® Dedicated helps organizations focus on building and scaling their business with a private Kubernetes cluster fully-managed by Red Hat®.'
+contact_email_address: customerservice@redhat.com

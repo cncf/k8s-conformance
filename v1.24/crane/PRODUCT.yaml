@@ -1,0 +1,9 @@
+vendor: hotstone.io
+name: crane
+version: 1.24.1.2
+website_url: https://github.com/slzcc/crane
+repo_url: https://github.com/slzcc/crane
+documentation_url: https://github.com/slzcc/crane/blob/master/docs
+product_logo_url: https://raw.githubusercontent.com/slzcc/crane/master/logo/new-crane-logo.svg
+type: installer
+description: 'The Crane is a superb Kubernetes distribution for all of your Deploy needs.'

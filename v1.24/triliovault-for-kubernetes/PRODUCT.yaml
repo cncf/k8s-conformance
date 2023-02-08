@@ -1,0 +1,8 @@
+vendor: Trilio
+name: TrilioVault for Kubernetes
+version: v2.10.6
+website_url: https://trilio.io/products/triliovault-kubernetes/
+documentation_url: https://docs.trilio.io/kubernetes/getting-started-3/getting-started/install-and-configure
+product_logo_url: https://trilio.io/wp-content/uploads/2022/10/TRILIO_Logo_Green-Navy-pos_sRGB.svg
+type: installer
+description: 'TrilioVault for Kubernetes (TVK) is a cloud-native, application-centric data protection and management platform that was designed from the ground-up to support the scale, performance, and mobility requirements of Kubernetes container environments across any public or hybrid cloud environment.'

@@ -1,0 +1,9 @@
+vendor: SysEleven
+name: MetaKube
+version: 2022-12-09
+website_url: https://metakube.syseleven.de
+documentation_url: https://docs.syseleven.de/metakube
+product_logo_url: https://metakube.syseleven.de/assets/images/logo/conformance-logo-syseleven.svg
+type: hosted
+description: MetaKube offers carefree Multi Cloud Kubernetes as a Service on OpenStack Cloud, Amazon Web Services (AWS) and On-Premises. We provide you with SaaS solutions like a load balancer as well as solutions for backup and recovery, monitoring etc. and various types of support such as detailed documentation, tutorials and personal SRE-Support.
+contact_email_address: metakube-team@syseleven.de

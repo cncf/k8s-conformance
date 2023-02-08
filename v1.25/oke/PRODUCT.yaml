@@ -1,0 +1,9 @@
+vendor: Oracle
+name: Oracle Cloud Infrastructure Container Engine For Kubernetes (OKE)
+version: 1.48.5
+website_url: https://cloud.oracle.com/containers/kubernetes-engine
+documentation_url: https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengoverview.htm
+product_logo_url: https://landscape.cncf.io/logos/oracle-container-engine.svg
+type: hosted platform
+description: Oracle Managed Kubernetes
+contact_email_address: sachin.goel@oracle.com

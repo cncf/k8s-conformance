@@ -1,0 +1,9 @@
+vendor: TenxCloud
+name: TenxCloud Container Enterprise
+version: v5.6.0
+website_url: https://www.tenxcloud.com/tcap
+documentation_url: https://docs.tenxcloud.com
+product_logo_url: https://www.tenxcloud.com/assets/svg/logo.svg
+type: distribution
+description: TenxCloud Container Enterprise is a PaaS product based on Kubernetes
+contact_email_address: wang.lei10@neolink.com

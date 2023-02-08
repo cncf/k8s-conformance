@@ -1,0 +1,9 @@
+vendor: NHNCloud
+name: NHN Kubernetes Service NKS
+version: v1.25.4
+website_url: https://www.nhncloud.com/
+documentation_url: https://docs.toast.com/en/Container/NKS/en/overview/
+product_logo_url: https://static.toastoven.net/toast/nks/nks_cncf_logo.svg
+contact_email_address: support@nhncloud.com
+type: hosted platform
+description: 'NKS(NHN Kubernetes Service) is a managed Kubernetes service that allows you to easily deploy a Kubernetes cluster in NHN Cloud.'

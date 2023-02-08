@@ -1,0 +1,7 @@
+vendor: Volcano Engine
+name: veCompass
+version: v1.0.0
+website_url: https://www.volcengine.cn/product/compass
+documentation_url: https://www.volcengine.cn/product/compass
+type: distribution
+description: "veCompass is a Container Cloud Management Platform, deep integration with Kubernetes to provide users with the ability to manage resources, deploy applications, deliver services, and automate operations."

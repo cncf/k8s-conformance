@@ -1,0 +1,10 @@
+vendor: Flant
+name: Deckhouse Installer (DHCTL)
+version: v1.42.0
+website_url: https://github.com/deckhouse/deckhouse
+repo_url: https://github.com/deckhouse/deckhouse
+documentation_url: https://deckhouse.io/en/documentation/v1/installing/
+product_logo_url: https://deckhouse.io/images/logos/deckhouse-platform.svg
+type: installer
+description: 'Deckhouse Installer (DHCTL) is an application for creating Kubernetes clusters and configuring their infrastructure.'
+contact_email_address: konstantin.aksenov@flant.com
