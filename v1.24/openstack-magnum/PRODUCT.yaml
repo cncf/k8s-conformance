@@ -7,3 +7,4 @@ documentation_url: https://docs.openstack.org/magnum/zed/user/#kubernetes
 type: installer
 description: Magnum is an OpenStack API service developed by the OpenStack Containers Team making container orchestration engines such as Kubernetes available as a first class resources in OpenStack.
 product_logo_url: https://www.openstack.org/themes/openstack/images/project-mascots/Magnum/OpenStack_Project_Magnum_vertical.eps
+contact_email_address: kennelson11@gmail.com
