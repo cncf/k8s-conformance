@@ -4,7 +4,7 @@ VMware Tanzu Kubernetes Grid Integrated Edition (TKGI) is a production grade Kub
 
 ## Installing TKGI
 
-To get started, follow the guide [here](https://docs.pivotal.io/tkgi). The guide includes instructions on how to provision and manage the TKGI control plane.
+To get started, follow the guide [here](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid-Integrated-Edition/1.16/tkgi/GUID-index.html). The guide includes instructions on how to provision and manage the TKGI control plane.
 
 A summation of that guide is reproduced here starting from after you've deployed
 Ops Manager:
