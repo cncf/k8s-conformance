@@ -1,0 +1,9 @@
+vendor: China Telecom Cloud Technology Co., Ltd.
+name: Chinatelecom Cloud Container Cloud Service Engine
+version: 2.8.5
+website_url: https://www.ctyun.cn/products/10082691
+documentation_url: https://www.ctyun.cn/document/10083472
+product_logo_url: https://landscape.cncf.io/logos/china-telecom-cloud-technology-co-ltd-member.svg
+type: hosted
+description: "The Chinatelecom Container Cloud Service Engine is a offering to allow customers to create and operator Kubernetes cluster builds on top of Chinatelecom Cloud resources."
+contact_email_address: heyh20@chinatelecom.cn
