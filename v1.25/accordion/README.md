@@ -1,7 +1,7 @@
 # Accordion
 
 
-## Install Accordion v2.2.1 (based on Kubernetes v1.23.8) and create a cluster
+## Install Accordion v2.5.0 (based on Kubernetes v1.25.9) and create a cluster
 
 Use regular ansible playbook command to create a cluster.
 
@@ -39,7 +39,7 @@ acc-node2    Ready    worker          20h   v1.25.9   10.60.200.232   <none>    
 
 ## Run Conformance Tests
 ```
-$ k8s_version=v1.24
+$ k8s_version=v1.25
 $ prod_name=accordion
 
 $ go get -u -v github.com/vmware-tanzu/sonobuoy
