@@ -2,7 +2,7 @@
 
 ## Set up the cluster
 
-1. Login to https://dev.kubermatic.io/.
+1. Login to https://dev.kubermatic.io/ or any other KKP 2.22 instance.
 2. Press the "Create Cluster" button.
 3. Pick Kubernetes version v1.24.x.
 4. Complete the create cluster wizard with either DigitalOcean, Hetzner or AWS (setting the "Allowed IP Range for NodePorts" field to "`0.0.0.0/0`" to allow all inbound trafic).

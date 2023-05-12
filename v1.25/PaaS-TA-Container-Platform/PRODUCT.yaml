@@ -1,0 +1,10 @@
+vendor: NIA
+name: PaaS-TA Container-Platform
+version: v1.4.1
+website_url: https://paas-ta.kr/eng/
+repo_url: https://github.com/PaaS-TA
+documentation_url: https://paas-ta.kr/eng/intro/containerPlatformKubespray
+product_logo_url: https://paas-ta.kr/eng/resources/img/paas-ta.ai
+type: distribution
+description: 'The PaaS-TA container platform provides an independent Kubernetes environment, and developers can easily deploy Kubernetes clusters to build and manage the modern applications anywhere.'
+contact_email_address : mctlmk@gmail.com

@@ -1,0 +1,9 @@
+vendor: VMware
+name: VMware Tanzu Kubernetes Grid
+version: 2.1.0
+website_url: https://tanzu.vmware.com/kubernetes-grid
+documentation_url: https://docs.vmware.com
+product_logo_url: https://landscape.cncf.io/logos/v-mware-tanzu-kubernetes-grid.svg
+type: distribution
+description: VMware Tanzu Kubernetes Grid is VMware's Kubernetes distribution - built on open source technologies, packaged for enterprise adoption and supported 24x7 by VMware Global Support Services (GSS).
+contact_email_address: jdumars@vmware.com

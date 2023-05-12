@@ -1,0 +1,10 @@
+vendor: SUSE 
+name: Rancher Kubernetes
+version: v2.7.2-rc1
+website_url: https://rancher.com/kubernetes/
+repo_url: https://github.com/rancher/rancher
+documentation_url: https://ranchermanager.docs.rancher.com/
+product_logo_url: https://rancher.com/assets/img/logos/rancher-logo-horiz-color.svg
+type: distribution
+description: 'Deploy Rancher’s Kubernetes distro anywhere or launch cloud Kubernetes services from Google, Amazon or Microsoft.'
+contact_email_address: rancher-manager-qa@suse.com

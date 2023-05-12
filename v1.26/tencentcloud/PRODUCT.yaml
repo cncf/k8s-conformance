@@ -1,0 +1,9 @@
+vendor: Tencent Cloud
+name: Tencent Kubernetes Engine 
+version: v1.26.1
+website_url: https://intl.cloud.tencent.com/product/tke
+documentation_url: https://intl.cloud.tencent.com/document/product/457
+product_logo_url: https://landscape.cncf.io/logos/tencent-cloud-kcsp.svg
+type: hosted platform
+description: Tencent Kubernetes Engine (TKE) provides container-centric, highly scalable and high-performance container management services. Fully compatible with Kubernetes' native API and capable of expanding Tencent Cloud's Kubernetes plugins such as CBS and CLB
+contact_email_address : qiqiwwang@tencent.com

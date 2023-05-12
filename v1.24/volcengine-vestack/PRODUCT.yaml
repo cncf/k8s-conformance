@@ -1,0 +1,9 @@
+vendor: Volcano Engine
+name: vestack multi-cloud edition
+version: v1.24.7-vke.1
+website_url: https://www.volcengine.com/product/veStack
+documentation_url: https://www.volcengine.com/docs/6460/70611
+product_logo_url: https://portal.volccdn.com/obj/volcfe/logo/appbar_logo_dark.2.svg
+type: multi-cloud container platform
+description: 'veStack Multi-cloud Edition is an enterprise-level cloud-native platform developed by Volcano Engine. It provides Kubernetes-based multi-cluster, multi-tenant container orchestration and scheduling capabilities, blend modern architectures and development processes with DevOps and microservices.'
+contact_email_address: huangyuting.huangyt@bytedance.com
