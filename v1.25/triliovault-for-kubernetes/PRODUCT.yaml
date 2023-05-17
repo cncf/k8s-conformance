@@ -2,7 +2,6 @@ vendor: Trilio
 name: TrilioVault for Kubernetes
 version: v3.1.0
 website_url: https://trilio.io/products/triliovault-kubernetes/
-repo_url: http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
 documentation_url: https://docs.trilio.io/kubernetes/getting-started-3/install-and-configure
 product_logo_url: https://trilio.io/wp-content/uploads/2022/10/TRILIO_Logo_Green-Navy-pos_sRGB.svg
 type: installer
