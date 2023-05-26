@@ -1,0 +1,9 @@
+vendor: Nirmata Inc.
+name: Nirmata Managed Kubernetes
+version: 4.3.0
+website_url: https://www.nirmata.com/
+documentation_url: https://docs.nirmata.io/en/latest/Clusters.html#create-a-new-kubernetes-cluster
+product_logo_url: https://nirmata.com/wp-content/uploads/2022/10/vertical-monochrome-_-Nirmata-Kyverno.svg
+type: hosted platform
+description: Nirmata is a unified management plane for Kubernetes clusters and workloads.
+contact_email_address : anubhav@nirmata.com

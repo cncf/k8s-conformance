@@ -1,0 +1,9 @@
+vendor: Vultr
+name: Vultr Kubernetes Engine
+version: v1.25.4+1
+website_url: https://www.vultr.com/kubernetes/
+documentation_url: https://www.vultr.com/docs/vultr-kubernetes-engine
+product_logo_url: https://landscape.cncf.io/logos/the-constant-company-llc-vultr-member.svg
+type: hosted
+description: "Vultr Kubernetes Engine gives developers a simple way to deploy containerized workloads with predictable pricing on a fully-managed Kubernetes cluster that integrates with other Vultr managed services such as Load Balancers, Block Storage, and DNS."
+contact_email_address: opensource@vultr.com

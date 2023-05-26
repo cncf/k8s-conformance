@@ -1,0 +1,9 @@
+vendor: QBO LLC
+name: qbo
+version: home-prod-4.3.2-570ae108
+website_url: https://github.com/alexeadem/qbo-home
+repo_url: https://github.com/alexeadem/qbo-home
+documentation_url: https://github.com/alexeadem/qbo-home
+product_logo_url: https://raw.githubusercontent.com/alexeadem/qbo-home/master/qbo_250x150.svg
+type: distribution
+description: "QBO is the fastest and easiest k8s deployment out there. It uses https://kind.sigs.k8s.io/ node images to deploy k8s clusters everywhere. It has a web graphical interface and a Websockets API. It doesn't require virtual machines. It is written in C and runs in docker."

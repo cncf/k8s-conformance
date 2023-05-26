@@ -2,28 +2,20 @@
 
 ## Technical Requirements
 
-1. Verify that the list of files matches the
-[expected list](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#contents-of-the-pr).
+The technical requirements for a conformance submission are described in the [instructions.md](https://github.com/cncf/k8s-conformance/blob/master/instructions.md) file. The [prow.cncf.io bot](https://github.com/apps/prow-cncf-io) verifies conformance product submissions against these [requirements](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#requirements).
 
-2. Note the `vX.Y` subdirectory that the PR is in, this is the version of
-Kubernetes for which conformance is being claimed, referenced as the
-"Conformance Version" from hereon.
+If any of the requirements are not met the [prow.cncf.io bot](https://github.com/apps/prow-cncf-io) will add a `not-verifiable` label to the PR and comment with explanations for all requirements that have not been met. The bot will however add `labels` for all requirements that have been met along with the `not-verifiable` label.  The user can **force push** updated files to address the errors highlighted by bot.
 
-3. Verify that the Conformance Version is the current or previous two versions of Kubernetes.
+Once the bot finds all requirements have been met the `not-verifiable` label would be removed and applicable labels will be added.
 
-4. Look at `e2e.log`.  Verify that the `major.minor` component of the
-`kube-apiserver version:` log and `e2e test version:` both exactly match
-the Conformance Version. The patch version does not matter.
+A PR meeting all the technical requirement would have the following labels:
+- `conformance-product-submission`
+- `no-failed-tests-v1.xx`
+- `release-documents-checked`
+- `release-v1.xx`
+- `tests-verified-v1.xx`
 
-5. Verify that the last line of `e2e.log` says "SUCCESS! -- `N` Passed | 0
-Failed | 0 Pending | `M` Skipped PASS".  The exact value of `N` and `M` don't
-matter as long as we see `0 Failed | 0 Pending`. Also, there should be 0 tests
-listed as `Flaked`.
-
-6. Verify that no files outside of the submitted subdirectory are being modified.
-For example, if a submission is adding files to `https://github.com/cncf/k8s-conformance/tree/master/v1.18/coyote/`,
-ensure that it doesn't change `https://github.com/cncf/k8s-conformance/blob/master/README.md` or
-`https://github.com/cncf/k8s-conformance/tree/master/v1.18/roadrunner/`.
+If a PR does not have a `not-verifiable` label and all other required labels are present, the technical verification is complete.
 
 ## Policy Requirements
 

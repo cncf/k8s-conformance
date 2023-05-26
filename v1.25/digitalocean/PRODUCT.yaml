@@ -1,0 +1,9 @@
+vendor: DigitalOcean
+name: DigitalOcean Kubernetes
+version: v1.25.4-do.0
+website_url: https://www.digitalocean.com/products/kubernetes/
+documentation_url: https://www.digitalocean.com/docs/kubernetes/
+product_logo_url: https://assets.digitalocean.com/logos/DO_Logo_vertical_blue.svg
+type: hosted
+description: 'DigitalOcean Kubernetes is designed for developers who want a simple and cost effective way to deploy container workloads to a managed Kubernetes service.'
+contact_email_address: 'eng-container+cncf@digitalocean.com'

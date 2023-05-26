@@ -1,0 +1,10 @@
+vendor: Poseidon
+name: Typhoon
+version: v1.26.0
+website_url: https://typhoon.psdn.io/
+repo_url: https://github.com/poseidon/typhoon
+documentation_url: https://typhoon.psdn.io/
+product_logo_url: https://storage.googleapis.com/poseidon/typhoon.svg
+type: distro
+description: Minimal and free Kubernetes distribution via Terraform
+contact_email_address: opensource@psdn.io
