@@ -1,0 +1,9 @@
+vendor: Harmonycloud
+name: Harmonycloud PaaS Container Platform Install 
+version: v3.0.1
+website_url: http://harmonycloud.cn/products/rongqiyun/
+documentation_url: http://harmonycloud.cn/products/rongqiyun/
+product_logo_url: https://landscape.cncf.io/logos/harmony-cloud-container-platform.svg
+type: installer
+description: Harmonycloud PaaS Container Platform Install is an Offline install Platform-as-a-Service platform based on Kubernetes
+contact_email_address: shenzhe@harmonycloud.cn

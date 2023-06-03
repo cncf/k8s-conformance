@@ -1,0 +1,9 @@
+vendor: SAP
+name: Cloud Platform - Gardener (https://github.com/gardener/gardener) shoot cluster deployed on AWS
+version: v1.61.3
+website_url: https://cloudplatform.sap.com/index.html
+documentation_url: https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/
+product_logo_url: https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg
+type: hosted
+description: The Gardener implements automated management and operation of Kubernetes clusters as a service and aims to support that service on multiple Cloud providers.
+contact_email_address: gardener-oq@listserv.sap.com

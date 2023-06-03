@@ -1,0 +1,10 @@
+vendor: Netease
+name: KubeCube
+version: v1.8.0
+website_url: https://www.kubecube.io/
+repo_url: https://github.com/kubecube-io/KubeCube/
+documentation_url: https://www.kubecube.io/docs/
+product_logo_url: https://kubecube-assets.nos-eastchina1.126.net/icons/logo-kubecube.svg
+type: distribution
+description: 'KubeCube is an open source enterprise-level container platform that provides enterprises with visualized management of Kubernetes resources and unified multi-cluster-multi-tenant management functions. KubeCube can simplify application deployment, manage application life cycles and provide rich monitoring and log auditing functions, helping companies quickly build a powerful and feature-rich container cloud platform.'
+contact_email_address: echo_xidian@163.com

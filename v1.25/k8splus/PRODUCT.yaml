@@ -1,0 +1,9 @@
+vendor: Asiainfo Technology(China) Co., Ltd
+name: K8splus
+version: v1.2.9
+website_url: https://lionelpang.github.io/k8splus/
+documentation_url: https://lionelpang.github.io/k8splus/docs
+product_logo_url: https://lionelpang.github.io/k8splus/logo/k8spluslogo.svg
+type: distribution
+description: 'K8splus is an enhanced container scheduling platform based on kubernetes and enterprise development mode. On the basis of kubernetes, it provides a more convenient way to manage project release and control resources.'
+contact_email_address: wangam@asiainfo.com

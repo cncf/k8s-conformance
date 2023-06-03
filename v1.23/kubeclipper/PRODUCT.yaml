@@ -1,0 +1,10 @@
+vendor: 99cloud
+name: KubeClipper
+version: v1.2.1
+website_url: https://kubeclipper.io/
+repo_url: https://github.com/kubeclipper/kubeclipper
+documentation_url: https://kubeclipper.io/en/docs/
+product_logo_url: https://raw.githubusercontent.com/kubeclipper/community/main/logo/svg/kc_logo_2.svg
+type: installer
+description: 'Manage kubernetes in the most light and convenient way.'
+contact_email_address: contact@kubeclipper.io

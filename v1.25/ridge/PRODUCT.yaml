@@ -1,0 +1,9 @@
+vendor: Ridge
+name: Ridge Kubernetes Service
+version: v1.0
+website_url: https://ridge.co/
+documentation_url: https://dev.ridge.co
+product_logo_url: https://www.ridge.co/wp-content/themes/codejitsu-Ridge/assets/images/logo_black.svg
+type: hosted
+contact_email_address: support@ridge.co
+description: Ridge Kubernetes Service (RKS). RKS is a full k8s managed service that makes it possible to run Kubernetes across Ridge’s edge locations.

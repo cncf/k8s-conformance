@@ -1,0 +1,9 @@
+vendor: Microsoft
+name: Azure Kubernetes Service AKS
+version: v1.25.2
+website_url: https://docs.microsoft.com/en-us/azure/aks/
+documentation_url: https://docs.microsoft.com/en-us/azure/aks/
+product_logo_url: https://raw.githubusercontent.com/cncf/landscape/master/cached_logos/azure-kubernetes-service-aks.svg
+contact_email_address: lachlan.evenson@microsoft.com
+type: hosted platform
+description: 'AKS allows you to quickly deploy a production ready Kubernetes cluster in Azure.'
