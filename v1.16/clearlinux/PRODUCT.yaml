@@ -1,9 +1,0 @@
-vendor: Intel Corporation
-name: Clear Linux Project
-version: 31880
-website_url: https://clearlinux.org/
-repo_url: https://github.com/clearlinux/clr-bundles
-documentation_url: https://docs.01.org/clearlinux/latest/
-product_logo_url: https://drive.google.com/file/d/1s5V3yc6lVuGnOw1b86ahPsunFrv2cQBc/view?usp=sharing
-type: distribution
-description: 'The Clear Linux OS cloud-native-basic bundle installation of Kubernetes provides a quick single or multi-node Kubernetes cluster running on top of Clear Linux OS.'
