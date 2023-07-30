@@ -100,9 +100,9 @@ Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES           AGE    VERSION
-    kube01   Ready    control-plane   136m   v1.27.1
-    kube02   Ready    control-plane   135m   v1.27.1
-    kube03   Ready    <none>          135m   v1.27.1
+    kube01   Ready    control-plane   136m   v1.27.4
+    kube02   Ready    control-plane   135m   v1.27.4
+    kube03   Ready    <none>          135m   v1.27.4
 
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
