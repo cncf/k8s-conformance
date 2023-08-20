@@ -1,0 +1,8 @@
+vendor: SmartX
+name: SMTX Kubernetes Service
+version: v1.1.0
+website_url: https://www.smartx.com/global/smtx-kubernetes-service/
+documentation_url: https://www.smartx.com/resource/doc/sks-whitepaper/
+type: distribution
+description: 'With pre-loaded Kubernetes plug-ins, industry-leading SmartX virtualization, distributed storage, networking and security as well as other product components, SMTX Kubernetes Service helps IT operations teams easily deploy and manage production-ready Kubernetes clusters.'
+contact_email_address: hui.hu@smartx.com
