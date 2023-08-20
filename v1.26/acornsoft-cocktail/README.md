@@ -22,7 +22,7 @@ The following instructions will help you configure and create a Kubernetes clust
     ```sh
     $ vi cube.toml
     [cube]
-    version = "4.6.6"
+    version = "4.7.4"
     provider = false
     cluster-name = "conformance"
     cluster-description = "conformance test cluster"
@@ -32,7 +32,7 @@ The following instructions will help you configure and create a Kubernetes clust
     debug-mode = false
 
     [kubernetes]
-    version ="1.23.5"                    # Kubernete Version
+    version ="1.26.6"                    # Kubernete Version
     service-cidr = "172.0.0.0/16"        # Kubernete Service CIDR
     pod-cidr = "172.128.0.0/16"            # Kubernete Pod CIDR
     kube-proxy-mode = "iptables"             # kube-proxy mode [iptables(default) | ipvs]
