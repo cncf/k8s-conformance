@@ -1,0 +1,9 @@
+vendor: Wavecon
+name: Wavestack Kubernetes Engine (WKE)
+version: v1.25.10
+website_url: https://wavestack.cloud
+documentation_url: https://docs.wavestack.cloud/kubernetes/wke/
+product_logo_url: https://www.noris.de/wp-content/uploads/wavestack.svg
+type: hosted
+description: "Wavestack Kubernetes Engine is a managed service based on Gardener that makes it easy to run Kubernetes clusters on Wavestack and other cloud providers."
+contact_email_address: wwentland@wavecon.de
