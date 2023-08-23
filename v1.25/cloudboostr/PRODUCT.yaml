@@ -1,0 +1,9 @@
+vendor: Grape Up
+name: Cloudboostr
+version: 2.4.0
+website_url: https://cloudboostr.com
+documentation_url: https://docs.cloudboostr.com
+product_logo_url: https://docs.cloudboostr.com/assets/CB_Logo.svg
+type: distribution
+description: 'Cloudboostr is a unified platform that integrates upstream Kubernetes with proven open source components for automated cluster operations and application lifecycle management across multiple cloud and on-prem infrastructures. Cloudboostr enhances open source Kubernetes with ops automation, built-in monitoring system, hardened security and integrated workload management tools.'
+contact_email_address: clouboostr@grapeup.com

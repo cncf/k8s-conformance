@@ -1,0 +1,9 @@
+vendor: Beijing Baolande Software Corporation(北京宝兰德软件股份有限公司)
+name: CloudLink-CMP
+version: v4.4
+website_url: https://www.bessystem.com/product/31f9842c24e5441394b85bfdc7a9d7df/info
+documentation_url: https://www.bessystem.com/product/31f9842c24e5441394b85bfdc7a9d7df/info
+product_logo_url: https://landscape.cncf.io/logos/cloud-link.svg
+type: hosted
+description: CloudLink CMP is a kubernetes enabled enterprise-ready PaaS solution, consists of features like CICD、multi-tenant、rich micro-services and components support, integrated with an easy-to-use operation/maintenance interface.
+contact_email_address: gnolld@foxmail.com

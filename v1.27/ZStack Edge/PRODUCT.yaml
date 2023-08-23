@@ -1,0 +1,9 @@
+vendor: ZStack 
+name: ZStack Edge
+version: v2.8
+website_url: https://www.zstack.io/product/zstack_edge/
+documentation_url: https://www.zstack.io/product/zstack_edge/
+product_logo_url: https://www.zstack.io/templets/default/images/brand/product_info/product_logo_5.svg
+type: hosted platform
+description: ZStack Edge is a Cloud-Native application platform based on Kubernetes
+contact_email_address: ling.hu@zstack.io
