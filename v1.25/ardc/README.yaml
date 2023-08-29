@@ -1,0 +1,36 @@
+# Nectar Research Cloud Magnum Service
+
+## Creating your account and project
+
+1. Log in to the [Nectar Research Cloud
+dashboard](https://dashboard.rc.nectar.org.au/).
+
+2. Request for an allocation by following the [Allocation
+guide](https://tutorials.rc.nectar.org.au/allocation-management/).
+
+## Creating your cluster
+
+1. Log in to the [Nectar Research Cloud
+Dashboard](https://dashboard.rc.nectar.org.au/).
+
+2. Navigate to *Project* - *Container Infra* - *Clusters*.
+
+3.  Create a cluster with the 'CREATE CLUSTER' button.
+
+4. Wait a while for the cluster to reach the 'CREATE_COMPLETE' stage.
+
+5. Fetch your KUBECONFIG file using the OpenStack CLI client.
+    ```
+    openstack coe cluster config mycluster
+    ```
+		For more information, check out the [Kubernetes
+tutorial](https://tutorials.rc.nectar.org.au/kubernetes/).
+
+6. Set your KUBECONFIG environment variable.
+    ````
+    export KUBECONFIG=./config
+    ````
+
+7. Run the sonobuoy test suite following the instructions on the
+[k8s-conformance](https://github.com/cncf/k8s-conformance/blob/master/instructions.md)
+site.
