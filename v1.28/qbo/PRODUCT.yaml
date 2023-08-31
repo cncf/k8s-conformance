@@ -7,3 +7,4 @@ documentation_url: https://docs.qbo.io
 product_logo_url: https://raw.githubusercontent.com/alexeadem/qbo-home/master/qbo_250x150.svg
 type: distribution
 description: "Qbo is a pure containerized Kubernetes distribution delivering metal performance with zero virtualization. It brings a faster and simplified cloud experience for anyone, anywhere."
+contact_email_address: info@qbo.io
