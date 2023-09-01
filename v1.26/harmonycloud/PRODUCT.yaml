@@ -1,0 +1,9 @@
+vendor: Harmonycloud
+name: Harmonycloud Container Platform
+version: v3.0.1
+website_url: http://harmonycloud.cn/products/rongqiyun/
+documentation_url: http://harmonycloud.cn/products/rongqiyun/
+product_logo_url: https://landscape.cncf.io/logos/harmony-cloud-container-platform.svg
+type: distribution
+description: Harmonycloud Container Platform is an Enterprise Platform-as-a-Service based on Kubernetes
+contact_email_address: shenzhe@harmonycloud.cn

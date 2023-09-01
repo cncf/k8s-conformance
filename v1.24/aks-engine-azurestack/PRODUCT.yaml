@@ -1,0 +1,10 @@
+vendor: Microsoft
+name: AKS Engine for Azure Stack
+version: v0.75.3
+website_url: https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-kubernetes-aks-engine-overview?view=azs-2206
+repo_url: https://github.com/msazurestackworkloads/aks-engine
+documentation_url: https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md
+product_logo_url: https://landscape.cncf.io/logos/azure-aks-engine.svg
+contact_email_address: azsaks@microsoft.com 
+type: hosted platform
+description: AKS Engine provides convenient tooling to quickly bootstrap Kubernetes clusters on Azure Stack. By leveraging ARM (Azure Resource Manager), AKS Engine helps create, destroy and maintain clusters provisioned with basic IaaS resources in Azure Stack.

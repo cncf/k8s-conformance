@@ -1,0 +1,10 @@
+vendor: Cybozu
+name: CKE - Cybozu Kubernetes Engine
+version: v1.24.0
+website_url: https://github.com/cybozu-go/cke/
+repo_url: https://github.com/cybozu-go/cke/
+documentation_url: https://github.com/cybozu-go/cke/tree/main/docs
+product_logo_url: https://raw.githubusercontent.com/cybozu-go/cke/main/logo/cybozu_logo.svg
+type: Installer
+description: Cybozu Kubernetes Engine, a distributed service that automates Kubernetes cluster management.
+contact_email_address: neco@cybozu.com
