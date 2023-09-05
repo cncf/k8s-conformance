@@ -1,0 +1,475 @@
+Conformance test: not doing test setup.
+  I0904 11:28:07.641271    9489 e2e.go:117] Starting e2e run "f7530715-9edf-4922-9853-caa138201c8e" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /go/src/k8s.io/kubernetes/platforms/linux/amd64
+=====================================================================================
+Random Seed: 1693826887 - will randomize all specs
+
+Will run 378 of 7207 specs
+SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSS•S•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSS•SSSSSS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS••S•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSS•SSSS•SSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSS••SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSS•SS•SSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSS•SSSSSSSS•SSSSSSSSSSSSS•S•SSSS•SSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SS•••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSS•SSSSSSSS•••SSSS•SSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSS•SSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSS•SSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance] (Spec Runtime: 5m0.09s)
+      test/e2e/apps/statefulset.go:591
+      In [It] (Node Runtime: 5m0s)
+        test/e2e/apps/statefulset.go:591
+        At [By Step] Scaling down stateful set ss to 0 replicas and waiting until none of pods will run in namespacestatefulset-6810 (Step Runtime: 3m56.612s)
+          test/e2e/apps/statefulset.go:687
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          Sep  4 12:12:35.116: INFO: Running '/go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true'
+          Sep  4 12:12:35.256: INFO: rc: 1
+          Sep  4 12:12:35.256: INFO: Waiting 10s to retry failed RunHostCmd: error running /go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true:
+          Command stdout:
+          stderr:
+          Error from server (NotFound): pods "ss-2" not found
+          error:
+          exit status 1
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 17004 [sleep]
+          time.Sleep(0x2540be400)
+            /usr/local/go/src/runtime/time.go:195
+          k8s.io/kubernetes/test/e2e/framework/pod/output.RunHostCmdWithRetries({0xc004617790, 0x10}, {0xc00461775c, 0x4}, {0xc00357ac80, 0x38}, 0x3?, 0x45d964b800)
+            test/e2e/framework/pod/output/output.go:113
+          k8s.io/kubernetes/test/e2e/framework/statefulset.ExecInStatefulPods({0x7f31c43bca40?, 0xc004196bd0?}, {0x72c3b50?, 0xc00607f520?}, 0x1?, {0xc00357ac80, 0x38})
+            test/e2e/framework/statefulset/rest.go:240
+        > k8s.io/kubernetes/test/e2e/apps.restoreHTTPProbe({0x7f31c43bca40, 0xc004196bd0}, {0x72c3b50, 0xc00607f520}, 0x3?)
+            test/e2e/apps/statefulset.go:2006
+        > k8s.io/kubernetes/test/e2e/apps.glob..func11.2.10({0x7f31c43bca40?, 0xc004196bd0})
+            test/e2e/apps/statefulset.go:688
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004196bd0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance] (Spec Runtime: 5m20.092s)
+      test/e2e/apps/statefulset.go:591
+      In [It] (Node Runtime: 5m20.002s)
+        test/e2e/apps/statefulset.go:591
+        At [By Step] Scaling down stateful set ss to 0 replicas and waiting until none of pods will run in namespacestatefulset-6810 (Step Runtime: 4m16.614s)
+          test/e2e/apps/statefulset.go:687
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          Sep  4 12:12:55.404: INFO: Running '/go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true'
+          Sep  4 12:12:55.523: INFO: rc: 1
+          Sep  4 12:12:55.523: INFO: Waiting 10s to retry failed RunHostCmd: error running /go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true:
+          Command stdout:
+          stderr:
+          Error from server (NotFound): pods "ss-2" not found
+          error:
+          exit status 1
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 17004 [sleep]
+          time.Sleep(0x2540be400)
+            /usr/local/go/src/runtime/time.go:195
+          k8s.io/kubernetes/test/e2e/framework/pod/output.RunHostCmdWithRetries({0xc004617790, 0x10}, {0xc00461775c, 0x4}, {0xc00357ac80, 0x38}, 0x3?, 0x45d964b800)
+            test/e2e/framework/pod/output/output.go:113
+          k8s.io/kubernetes/test/e2e/framework/statefulset.ExecInStatefulPods({0x7f31c43bca40?, 0xc004196bd0?}, {0x72c3b50?, 0xc00607f520?}, 0x1?, {0xc00357ac80, 0x38})
+            test/e2e/framework/statefulset/rest.go:240
+        > k8s.io/kubernetes/test/e2e/apps.restoreHTTPProbe({0x7f31c43bca40, 0xc004196bd0}, {0x72c3b50, 0xc00607f520}, 0x3?)
+            test/e2e/apps/statefulset.go:2006
+        > k8s.io/kubernetes/test/e2e/apps.glob..func11.2.10({0x7f31c43bca40?, 0xc004196bd0})
+            test/e2e/apps/statefulset.go:688
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004196bd0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance] (Spec Runtime: 5m40.093s)
+      test/e2e/apps/statefulset.go:591
+      In [It] (Node Runtime: 5m40.004s)
+        test/e2e/apps/statefulset.go:591
+        At [By Step] Scaling down stateful set ss to 0 replicas and waiting until none of pods will run in namespacestatefulset-6810 (Step Runtime: 4m36.615s)
+          test/e2e/apps/statefulset.go:687
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          Sep  4 12:13:15.647: INFO: Running '/go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true'
+          Sep  4 12:13:15.768: INFO: rc: 1
+          Sep  4 12:13:15.768: INFO: Waiting 10s to retry failed RunHostCmd: error running /go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true:
+          Command stdout:
+          stderr:
+          Error from server (NotFound): pods "ss-2" not found
+          error:
+          exit status 1
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 17004 [sleep]
+          time.Sleep(0x2540be400)
+            /usr/local/go/src/runtime/time.go:195
+          k8s.io/kubernetes/test/e2e/framework/pod/output.RunHostCmdWithRetries({0xc004617790, 0x10}, {0xc00461775c, 0x4}, {0xc00357ac80, 0x38}, 0x3?, 0x45d964b800)
+            test/e2e/framework/pod/output/output.go:113
+          k8s.io/kubernetes/test/e2e/framework/statefulset.ExecInStatefulPods({0x7f31c43bca40?, 0xc004196bd0?}, {0x72c3b50?, 0xc00607f520?}, 0x1?, {0xc00357ac80, 0x38})
+            test/e2e/framework/statefulset/rest.go:240
+        > k8s.io/kubernetes/test/e2e/apps.restoreHTTPProbe({0x7f31c43bca40, 0xc004196bd0}, {0x72c3b50, 0xc00607f520}, 0x3?)
+            test/e2e/apps/statefulset.go:2006
+        > k8s.io/kubernetes/test/e2e/apps.glob..func11.2.10({0x7f31c43bca40?, 0xc004196bd0})
+            test/e2e/apps/statefulset.go:688
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004196bd0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance] (Spec Runtime: 6m0.094s)
+      test/e2e/apps/statefulset.go:591
+      In [It] (Node Runtime: 6m0.005s)
+        test/e2e/apps/statefulset.go:591
+        At [By Step] Scaling down stateful set ss to 0 replicas and waiting until none of pods will run in namespacestatefulset-6810 (Step Runtime: 4m56.617s)
+          test/e2e/apps/statefulset.go:687
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          Sep  4 12:13:35.905: INFO: Running '/go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true'
+          Sep  4 12:13:36.033: INFO: rc: 1
+          Sep  4 12:13:36.033: INFO: Waiting 10s to retry failed RunHostCmd: error running /go/src/k8s.io/kubernetes/platforms/linux/amd64/kubectl --server=https://api.tmoa0-93l.it.shoot.staging.k8s-hana.ondemand.com --kubeconfig=/tmp/tm/kubeconfig/shoot.config --namespace=statefulset-6810 exec ss-2 -- /bin/sh -x -c mv -v /tmp/index.html /usr/local/apache2/htdocs/ || true:
+          Command stdout:
+          stderr:
+          Error from server (NotFound): pods "ss-2" not found
+          error:
+          exit status 1
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 17004 [sleep]
+          time.Sleep(0x2540be400)
+            /usr/local/go/src/runtime/time.go:195
+          k8s.io/kubernetes/test/e2e/framework/pod/output.RunHostCmdWithRetries({0xc004617790, 0x10}, {0xc00461775c, 0x4}, {0xc00357ac80, 0x38}, 0x3?, 0x45d964b800)
+            test/e2e/framework/pod/output/output.go:113
+          k8s.io/kubernetes/test/e2e/framework/statefulset.ExecInStatefulPods({0x7f31c43bca40?, 0xc004196bd0?}, {0x72c3b50?, 0xc00607f520?}, 0x1?, {0xc00357ac80, 0x38})
+            test/e2e/framework/statefulset/rest.go:240
+        > k8s.io/kubernetes/test/e2e/apps.restoreHTTPProbe({0x7f31c43bca40, 0xc004196bd0}, {0x72c3b50, 0xc00607f520}, 0x3?)
+            test/e2e/apps/statefulset.go:2006
+        > k8s.io/kubernetes/test/e2e/apps.glob..func11.2.10({0x7f31c43bca40?, 0xc004196bd0})
+            test/e2e/apps/statefulset.go:688
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004196bd0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS••SS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•S•SSSSSS•SSSS•SSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule jobs when suspended [Slow] [Conformance] (Spec Runtime: 5m0.084s)
+      test/e2e/apps/cronjob.go:97
+      In [It] (Node Runtime: 5m0.001s)
+        test/e2e/apps/cronjob.go:97
+        At [By Step] Ensuring no jobs are scheduled (Step Runtime: 4m59.982s)
+          test/e2e/apps/cronjob.go:106
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0904 12:35:24.318934    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:25.319290    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:26.319631    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:27.319888    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:28.320554    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:29.320786    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:30.325690    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:31.326724    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:32.327325    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:35:33.327760    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 24801 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f31c43bca40, 0xc004fbc0c0}, 0xc004dc2d08, 0x2bcde0a?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f31c43bca40, 0xc004fbc0c0}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f31c43bca40, 0xc004fbc0c0}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForNoJobs({0x7f31c43bca40?, 0xc004fbc0c0?}, {0x72c3b50?, 0xc0040b6820?}, {0xc0049ddc00?, 0xc?}, {0xc002dd5110?, 0x5?}, 0x20?)
+            test/e2e/apps/cronjob.go:622
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.2({0x7f31c43bca40, 0xc004fbc0c0})
+            test/e2e/apps/cronjob.go:107
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004fbc0c0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSS•SSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS••SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSS••S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SS•SSS•S•SSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•S•SS•SS•SSS•SSSSSSSSSSSSSSS•S•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSS•SSS•SSSSS•SSSSS•S•SSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SS•SSSSSSS•SSSSSSSSSSSSSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-scheduling] SchedulerPredicates [Serial] validates that there exists conflict between pods with same hostPort and protocol but one using 0.0.0.0 hostIP [Conformance] (Spec Runtime: 5m0.159s)
+      test/e2e/scheduling/predicates.go:705
+      In [It] (Node Runtime: 5m0s)
+        test/e2e/scheduling/predicates.go:705
+        At [By Step] Trying to create another pod(pod5) with hostport 54322 but hostIP 10.250.0.3 on the node which pod4 resides and expect not scheduled (Step Runtime: 4m55.836s)
+          test/e2e/scheduling/predicates.go:724
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0904 12:50:06.841154    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:07.841310    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:08.841723    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:09.842642    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:10.842897    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:11.843306    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:12.843867    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:13.844379    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:14.845166    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 12:50:15.845797    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 31930 [select]
+          k8s.io/kubernetes/vendor/github.com/onsi/gomega/internal.(*AsyncAssertion).match(0xc0004d4230, {0x726ee90?, 0xc0015f4180}, 0x1, {0x0, 0x0, 0x0})
+            vendor/github.com/onsi/gomega/internal/async_assertion.go:538
+          k8s.io/kubernetes/vendor/github.com/onsi/gomega/internal.(*AsyncAssertion).Should(0xc0004d4230, {0x726ee90, 0xc0015f4180}, {0x0, 0x0, 0x0})
+            vendor/github.com/onsi/gomega/internal/async_assertion.go:145
+          k8s.io/kubernetes/test/e2e/framework.asyncAssertion.Should({{0x7f31c43bca40, 0xc004a2b8c0}, {0xc0015f4160, 0x1, 0x1}, 0x45d964b800, 0x77359400, 0x0}, {0x726ee90, 0xc0015f4180})
+            test/e2e/framework/expect.go:234
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodCondition({0x7f31c43bca40, 0xc004a2b8c0}, {0x72c3b50?, 0xc009fae000?}, {0xc006030a20, 0xf}, {0x6aaa80b, 0x4}, {0x6ac0c9d, 0xb}, ...)
+            test/e2e/framework/pod/wait.go:228
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodNotPending({0x7f31c43bca40?, 0xc004a2b8c0?}, {0x72c3b50?, 0xc009fae000?}, {0xc006030a20?, 0x0?}, {0x6aaa80b?, 0x0?})
+            test/e2e/framework/pod/wait.go:507
+        > k8s.io/kubernetes/test/e2e/scheduling.createHostPortPodOnNode({0x7f31c43bca40, 0xc004a2b8c0}, 0xc0008ab2c0, {0x6aaa80b, 0x4}, {0xc006030a20, 0xf}, {0xc0056ae740, 0xa}, 0xd432, ...)
+            test/e2e/scheduling/predicates.go:1150
+        > k8s.io/kubernetes/test/e2e/scheduling.glob..func4.13({0x7f31c43bca40, 0xc004a2b8c0})
+            test/e2e/scheduling/predicates.go:725
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc004a2b8c0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+
+        Begin Additional Progress Reports >>
+          expected pod to be not pending, got instead:
+              <*v1.Pod | 0xc003a00480>: 
+                  metadata:
+                    creationTimestamp: "2023-09-04T12:45:20Z"
+                    managedFields:
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:spec:
+                          f:containers:
+                            k:{"name":"agnhost"}:
+                              .: {}
+                              f:args: {}
+                              f:image: {}
+                              f:imagePullPolicy: {}
+                              f:name: {}
+                              f:ports:
+                                .: {}
+                                k:{"containerPort":8080,"protocol":"TCP"}:
+                                  .: {}
+                                  f:containerPort: {}
+                                  f:hostIP: {}
+                                  f:hostPort: {}
+                                  f:protocol: {}
+                              f:readinessProbe:
+                                .: {}
+                                f:failureThreshold: {}
+                                f:httpGet:
+                                  .: {}
+                                  f:path: {}
+                                  f:port: {}
+                                  f:scheme: {}
+                                f:periodSeconds: {}
+                                f:successThreshold: {}
+                                f:timeoutSeconds: {}
+                              f:resources: {}
+                              f:terminationMessagePath: {}
+                              f:terminationMessagePolicy: {}
+                          f:dnsPolicy: {}
+                          f:enableServiceLinks: {}
+                          f:nodeSelector: {}
+                          f:restartPolicy: {}
+                          f:schedulerName: {}
+                          f:securityContext: {}
+                          f:terminationGracePeriodSeconds: {}
+                      manager: e2e.test
+                      operation: Update
+                      time: "2023-09-04T12:45:20Z"
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:status:
+                          f:conditions:
+                            .: {}
+                            k:{"type":"PodScheduled"}:
+                              .: {}
+                              f:lastProbeTime: {}
+                              f:lastTransitionTime: {}
+                              f:message: {}
+                              f:reason: {}
+                              f:status: {}
+                              f:type: {}
+                      manager: kube-scheduler
+                      operation: Update
+                      subresource: status
+                      time: "2023-09-04T12:45:20Z"
+                    name: pod5
+                    namespace: sched-pred-3054
+                    resourceVersion: "42682"
+                    uid: f97abd05-6eff-43c8-81e0-0245c3e21180
+                  spec:
+                    containers:
+                    - args:
+                      - netexec
+                      - --http-port=8080
+                      - --udp-port=8080
+                      env:
+                      - name: KUBERNETES_SERVICE_HOST
+                        value: api.tmoa0-93l.it.internal.staging.k8s.ondemand.com
+                      image: registry.k8s.io/e2e-test-images/agnhost:2.43
+                      imagePullPolicy: IfNotPresent
+                      name: agnhost
+                      ports:
+                      - containerPort: 8080
+                        hostIP: 10.250.0.3
+                        hostPort: 54322
+                        protocol: TCP
+                      readinessProbe:
+                        failureThreshold: 3
+                        httpGet:
+                          path: /hostname
+                          port: 8080
+                          scheme: HTTP
+                        periodSeconds: 10
+                        successThreshold: 1
+                        timeoutSeconds: 1
+                      resources: {}
+                      terminationMessagePath: /dev/termination-log
+                      terminationMessagePolicy: File
+                      volumeMounts:
+                      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+                        name: kube-api-access-wnddl
+                        readOnly: true
+                    dnsPolicy: ClusterFirst
+                    enableServiceLinks: true
+                    nodeSelector:
+                      kubernetes.io/e2e-6688f491-f2bd-4a48-8992-8d8c54fdf431: "95"
+                    preemptionPolicy: PreemptLowerPriority
+                    priority: 0
+                    restartPolicy: Always
+                    schedulerName: default-scheduler
+                    securityContext: {}
+                    serviceAccount: default
+                    serviceAccountName: default
+                    terminationGracePeriodSeconds: 30
+                    tolerations:
+                    - effect: NoExecute
+                      key: node.kubernetes.io/not-ready
+                      operator: Exists
+                      tolerationSeconds: 300
+                    - effect: NoExecute
+                      key: node.kubernetes.io/unreachable
+                      operator: Exists
+                      tolerationSeconds: 300
+                    volumes:
+                    - name: kube-api-access-wnddl
+                      projected:
+                        defaultMode: 420
+                        sources:
+                        - serviceAccountToken:
+                            expirationSeconds: 3607
+                            path: token
+                        - configMap:
+                            items:
+                            - key: ca.crt
+                              path: ca.crt
+                            name: kube-root-ca.crt
+                        - downwardAPI:
+                            items:
+                            - fieldRef:
+                                apiVersion: v1
+                                fieldPath: metadata.namespace
+                              path: namespace
+                  status:
+                    conditions:
+                    - lastProbeTime: null
+                      lastTransitionTime: "2023-09-04T12:45:20Z"
+                      message: '0/2 nodes are available: 1 node(s) didn''t have free ports for the requested
+                        pod ports, 1 node(s) didn''t match Pod''s node affinity/selector. preemption:
+                        0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption
+                        is not helpful for scheduling..'
+                      reason: Unschedulable
+                      status: "False"
+                      type: PodScheduled
+                    phase: Pending
+                    qosClass: BestEffort
+        << End Additional Progress Reports
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule new jobs when ForbidConcurrent [Slow] [Conformance] (Spec Runtime: 5m0.083s)
+      test/e2e/apps/cronjob.go:125
+      In [It] (Node Runtime: 5m0s)
+        test/e2e/apps/cronjob.go:125
+        At [By Step] Ensuring no more jobs are scheduled (Step Runtime: 4m57.948s)
+          test/e2e/apps/cronjob.go:147
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0904 13:01:49.276720    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:50.277062    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:51.277217    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:52.277506    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:53.278464    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:54.278809    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:55.279948    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:56.280747    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:57.280992    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0904 13:01:58.282191    9489 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 33816 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f31c43bca40, 0xc003ff4d50}, 0xc004b9b8c0, 0x2bcde0a?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f31c43bca40, 0xc003ff4d50}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f31c43bca40, 0xc003ff4d50}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForActiveJobs({0x7f31c43bca40?, 0xc003ff4d50?}, {0x72c3b50?, 0xc004d2e4e0?}, {0xc002d8c8a0?, 0x0?}, {0xc002d8d708?, 0x0?}, 0x0?)
+            test/e2e/apps/cronjob.go:608
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.3({0x7f31c43bca40, 0xc003ff4d50})
+            test/e2e/apps/cronjob.go:148
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x728f280?, 0xc003ff4d50})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS••SSSS•SSSSSSSSSSSSS••SSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSS•S•SSSS•SSSSSSSSSSSSSS
+
+Ran 378 of 7207 Specs in 6195.699 seconds
+SUCCESS! -- 378 Passed | 0 Failed | 0 Pending | 6829 Skipped
+PASS
+[38;5;228mYou're using deprecated Ginkgo functionality:[0m
+[38;5;228m=============================================[0m
+  [38;5;11m--ginkgo.dryRun is deprecated, use --ginkgo.dry-run instead[0m
+  [1mLearn more at:[0m [38;5;14m[4mhttps://onsi.github.io/ginkgo/MIGRATING_TO_V2#changed-command-line-flags[0m
+  [38;5;11m--ginkgo.flakeAttempts is deprecated, use --ginkgo.flake-attempts instead[0m
+  [1mLearn more at:[0m [38;5;14m[4mhttps://onsi.github.io/ginkgo/MIGRATING_TO_V2#changed-command-line-flags[0m
+
+[38;5;243mTo silence deprecations that can be silenced set the following environment variable:[0m
+  [38;5;243mACK_GINKGO_DEPRECATIONS=2.9.1[0m
+
+
+Ginkgo ran 1 suite in 1h43m17.602865676s
+Test Suite Passed
