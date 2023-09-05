@@ -1,0 +1,9 @@
+vendor: Inspur
+name: InCloud OS
+version: v6
+website_url: https://www.inspur.com/lcjtww/2527835/2527836/2616084/index.html
+documentation_url: https://www.inspur.com/lcjtww/2527835/2527836/2616084/index.html
+product_logo_url: https://raw.githubusercontent.com/lilongfeng0902/k8s-conformance/inspur-lilf-branch/v1.23/inspur-incloudos-amd64/incloudoslogo.svg 
+type: hosted 
+description: InCloud OS, offering full lifecycle management services, is an application-centric platform which provides a High-available managed environment to simplify the development, CI/CD, deployment, scheduling and scaling of containerized applications.
+contact_email_address: hanzhiwen@inspur.com
