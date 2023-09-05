@@ -1,0 +1,399 @@
+Conformance test: not doing test setup.
+  I0827 11:33:14.564330    7729 e2e.go:117] Starting e2e run "b65d7ce2-a5bc-43f0-a1e6-3e868783d266" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /go/src/k8s.io/kubernetes/platforms/linux/amd64
+=====================================================================================
+Random Seed: 1693135994 - will randomize all specs
+
+Will run 378 of 7207 specs
+SSSSSSSSSSSSSS•SSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSS•SSS•SSSSS••SSS•SSSSSSSSSSSSS•SSSSSSSSS•S•SSS•SSSS•S•S•SS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSS•SSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS••SS•SSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSS•SSSSS•SSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SS•S•SSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSS•SSSSSSSSS•SSSSSSSS•SSSSSSSS•SSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSS••SS•SSSSSSSSSSSSSSS•SSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSS•SSSSSSSS•SS•SSSSSS•S•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S••SSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSS••SSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SS•SSSSSSSSSSS•SSSS•SSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSS•SSS•SS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•S•SS•SSSSSS••SSSSSS•SSSSSSSSSSSSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-scheduling] SchedulerPredicates [Serial] validates that there exists conflict between pods with same hostPort and protocol but one using 0.0.0.0 hostIP [Conformance] (Spec Runtime: 5m0.181s)
+      test/e2e/scheduling/predicates.go:705
+      In [It] (Node Runtime: 5m0.001s)
+        test/e2e/scheduling/predicates.go:705
+        At [By Step] Trying to create another pod(pod5) with hostport 54322 but hostIP 10.250.0.11 on the node which pod4 resides and expect not scheduled (Step Runtime: 4m55.818s)
+          test/e2e/scheduling/predicates.go:724
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0827 12:15:49.625447    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:50.625638    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:51.626311    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:52.626386    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:53.626548    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:54.627261    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:55.627410    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:56.627510    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:57.627685    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:15:58.628141    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 19582 [select]
+          k8s.io/kubernetes/vendor/github.com/onsi/gomega/internal.(*AsyncAssertion).match(0xc0002141c0, {0x72665d0?, 0xc0012ea850}, 0x1, {0x0, 0x0, 0x0})
+            vendor/github.com/onsi/gomega/internal/async_assertion.go:538
+          k8s.io/kubernetes/vendor/github.com/onsi/gomega/internal.(*AsyncAssertion).Should(0xc0002141c0, {0x72665d0, 0xc0012ea850}, {0x0, 0x0, 0x0})
+            vendor/github.com/onsi/gomega/internal/async_assertion.go:145
+          k8s.io/kubernetes/test/e2e/framework.asyncAssertion.Should({{0x7f759479d598, 0xc00704f650}, {0xc0012ea830, 0x1, 0x1}, 0x45d964b800, 0x77359400, 0x0}, {0x72665d0, 0xc0012ea850})
+            test/e2e/framework/expect.go:234
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodCondition({0x7f759479d598, 0xc00704f650}, {0x72bb290?, 0xc005653040?}, {0xc0060c9ad0, 0xf}, {0x6aa2b0b, 0x4}, {0x6ab8f80, 0xb}, ...)
+            test/e2e/framework/pod/wait.go:228
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodNotPending({0x7f759479d598?, 0xc00704f650?}, {0x72bb290?, 0xc005653040?}, {0xc0060c9ad0?, 0x0?}, {0x6aa2b0b?, 0x0?})
+            test/e2e/framework/pod/wait.go:507
+        > k8s.io/kubernetes/test/e2e/scheduling.createHostPortPodOnNode({0x7f759479d598, 0xc00704f650}, 0xc000abb3b0, {0x6aa2b0b, 0x4}, {0xc0060c9ad0, 0xf}, {0xc006196ba0, 0xb}, 0xd432, ...)
+            test/e2e/scheduling/predicates.go:1150
+        > k8s.io/kubernetes/test/e2e/scheduling.glob..func4.13({0x7f759479d598, 0xc00704f650})
+            test/e2e/scheduling/predicates.go:725
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x72869c0?, 0xc00704f650})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+
+        Begin Additional Progress Reports >>
+          expected pod to be not pending, got instead:
+              <*v1.Pod | 0xc001242480>: 
+                  metadata:
+                    creationTimestamp: "2023-08-27T12:11:03Z"
+                    managedFields:
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:spec:
+                          f:containers:
+                            k:{"name":"agnhost"}:
+                              .: {}
+                              f:args: {}
+                              f:image: {}
+                              f:imagePullPolicy: {}
+                              f:name: {}
+                              f:ports:
+                                .: {}
+                                k:{"containerPort":8080,"protocol":"TCP"}:
+                                  .: {}
+                                  f:containerPort: {}
+                                  f:hostIP: {}
+                                  f:hostPort: {}
+                                  f:protocol: {}
+                              f:readinessProbe:
+                                .: {}
+                                f:failureThreshold: {}
+                                f:httpGet:
+                                  .: {}
+                                  f:path: {}
+                                  f:port: {}
+                                  f:scheme: {}
+                                f:periodSeconds: {}
+                                f:successThreshold: {}
+                                f:timeoutSeconds: {}
+                              f:resources: {}
+                              f:terminationMessagePath: {}
+                              f:terminationMessagePolicy: {}
+                          f:dnsPolicy: {}
+                          f:enableServiceLinks: {}
+                          f:nodeSelector: {}
+                          f:restartPolicy: {}
+                          f:schedulerName: {}
+                          f:securityContext: {}
+                          f:terminationGracePeriodSeconds: {}
+                      manager: e2e.test
+                      operation: Update
+                      time: "2023-08-27T12:11:03Z"
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:status:
+                          f:conditions:
+                            .: {}
+                            k:{"type":"PodScheduled"}:
+                              .: {}
+                              f:lastProbeTime: {}
+                              f:lastTransitionTime: {}
+                              f:message: {}
+                              f:reason: {}
+                              f:status: {}
+                              f:type: {}
+                      manager: kube-scheduler
+                      operation: Update
+                      subresource: status
+                      time: "2023-08-27T12:11:03Z"
+                    name: pod5
+                    namespace: sched-pred-5233
+                    resourceVersion: "25340"
+                    uid: a1a45ded-2343-4ef7-bde9-fa3bcf4f5008
+                  spec:
+                    containers:
+                    - args:
+                      - netexec
+                      - --http-port=8080
+                      - --udp-port=8080
+                      env:
+                      - name: KUBERNETES_SERVICE_HOST
+                        value: api.tmdks-rkt.it.internal.staging.k8s.ondemand.com
+                      image: registry.k8s.io/e2e-test-images/agnhost:2.43
+                      imagePullPolicy: IfNotPresent
+                      name: agnhost
+                      ports:
+                      - containerPort: 8080
+                        hostIP: 10.250.0.11
+                        hostPort: 54322
+                        protocol: TCP
+                      readinessProbe:
+                        failureThreshold: 3
+                        httpGet:
+                          path: /hostname
+                          port: 8080
+                          scheme: HTTP
+                        periodSeconds: 10
+                        successThreshold: 1
+                        timeoutSeconds: 1
+                      resources: {}
+                      terminationMessagePath: /dev/termination-log
+                      terminationMessagePolicy: File
+                      volumeMounts:
+                      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+                        name: kube-api-access-dpl7k
+                        readOnly: true
+                    dnsPolicy: ClusterFirst
+                    enableServiceLinks: true
+                    nodeSelector:
+                      kubernetes.io/e2e-b20a81b6-b698-4e93-8622-e1f4764eb34d: "95"
+                    preemptionPolicy: PreemptLowerPriority
+                    priority: 0
+                    restartPolicy: Always
+                    schedulerName: default-scheduler
+                    securityContext: {}
+                    serviceAccount: default
+                    serviceAccountName: default
+                    terminationGracePeriodSeconds: 30
+                    tolerations:
+                    - effect: NoExecute
+                      key: node.kubernetes.io/not-ready
+                      operator: Exists
+                      tolerationSeconds: 300
+                    - effect: NoExecute
+                      key: node.kubernetes.io/unreachable
+                      operator: Exists
+                      tolerationSeconds: 300
+                    volumes:
+                    - name: kube-api-access-dpl7k
+                      projected:
+                        defaultMode: 420
+                        sources:
+                        - serviceAccountToken:
+                            expirationSeconds: 3607
+                            path: token
+                        - configMap:
+                            items:
+                            - key: ca.crt
+                              path: ca.crt
+                            name: kube-root-ca.crt
+                        - downwardAPI:
+                            items:
+                            - fieldRef:
+                                apiVersion: v1
+                                fieldPath: metadata.namespace
+                              path: namespace
+                  status:
+                    conditions:
+                    - lastProbeTime: null
+                      lastTransitionTime: "2023-08-27T12:11:03Z"
+                      message: '0/2 nodes are available: 1 node(s) didn''t have free ports for the requested
+                        pod ports, 1 node(s) didn''t match Pod''s node affinity/selector. preemption:
+                        0/2 nodes are available: 1 No preemption victims found for incoming pod, 1 Preemption
+                        is not helpful for scheduling..'
+                      reason: Unschedulable
+                      status: "False"
+                      type: PodScheduled
+                    phase: Pending
+                    qosClass: BestEffort
+        << End Additional Progress Reports
+  ------------------------------
+•SSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSS•SSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSS••SSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule new jobs when ForbidConcurrent [Slow] [Conformance] (Spec Runtime: 5m0.097s)
+      test/e2e/apps/cronjob.go:125
+      In [It] (Node Runtime: 5m0s)
+        test/e2e/apps/cronjob.go:125
+        At [By Step] Ensuring no more jobs are scheduled (Step Runtime: 4m1.944s)
+          test/e2e/apps/cronjob.go:147
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0827 12:24:53.843353    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:54.843737    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:55.844485    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:56.844670    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:57.845275    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:58.846219    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:24:59.846434    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:00.846582    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:01.847596    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:02.847704    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 22109 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f759479d598, 0xc003692210}, 0xc0054141c8, 0x2bc9baa?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForActiveJobs({0x7f759479d598?, 0xc003692210?}, {0x72bb290?, 0xc00361a4e0?}, {0xc003a9b280?, 0x0?}, {0xc002ec2470?, 0x0?}, 0x0?)
+            test/e2e/apps/cronjob.go:608
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.3({0x7f759479d598, 0xc003692210})
+            test/e2e/apps/cronjob.go:148
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x72869c0?, 0xc003692210})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule new jobs when ForbidConcurrent [Slow] [Conformance] (Spec Runtime: 5m20.098s)
+      test/e2e/apps/cronjob.go:125
+      In [It] (Node Runtime: 5m20.002s)
+        test/e2e/apps/cronjob.go:125
+        At [By Step] Ensuring no more jobs are scheduled (Step Runtime: 4m21.946s)
+          test/e2e/apps/cronjob.go:147
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0827 12:25:13.852024    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:14.852166    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:15.853087    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:16.853301    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:17.854156    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:18.854306    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:19.854680    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:20.854866    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:21.855504    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:22.855610    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 22109 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f759479d598, 0xc003692210}, 0xc0054141c8, 0x2bc9baa?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForActiveJobs({0x7f759479d598?, 0xc003692210?}, {0x72bb290?, 0xc00361a4e0?}, {0xc003a9b280?, 0x0?}, {0xc002ec2470?, 0x0?}, 0x0?)
+            test/e2e/apps/cronjob.go:608
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.3({0x7f759479d598, 0xc003692210})
+            test/e2e/apps/cronjob.go:148
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x72869c0?, 0xc003692210})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule new jobs when ForbidConcurrent [Slow] [Conformance] (Spec Runtime: 5m40.099s)
+      test/e2e/apps/cronjob.go:125
+      In [It] (Node Runtime: 5m40.003s)
+        test/e2e/apps/cronjob.go:125
+        At [By Step] Ensuring no more jobs are scheduled (Step Runtime: 4m41.947s)
+          test/e2e/apps/cronjob.go:147
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0827 12:25:33.859493    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:34.860029    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:35.860057    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:36.860193    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:37.860303    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:38.860402    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:39.860594    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:40.860777    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:41.861608    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:25:42.861700    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 22109 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f759479d598, 0xc003692210}, 0xc0054141c8, 0x2bc9baa?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f759479d598, 0xc003692210}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForActiveJobs({0x7f759479d598?, 0xc003692210?}, {0x72bb290?, 0xc00361a4e0?}, {0xc003a9b280?, 0x0?}, {0xc002ec2470?, 0x0?}, 0x0?)
+            test/e2e/apps/cronjob.go:608
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.3({0x7f759479d598, 0xc003692210})
+            test/e2e/apps/cronjob.go:148
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x72869c0?, 0xc003692210})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSS•SSSSSSS
+  ------------------------------
+  Automatically polling progress:
+    [sig-apps] CronJob should not schedule jobs when suspended [Slow] [Conformance] (Spec Runtime: 5m0.11s)
+      test/e2e/apps/cronjob.go:97
+      In [It] (Node Runtime: 5m0.001s)
+        test/e2e/apps/cronjob.go:97
+        At [By Step] Ensuring no jobs are scheduled (Step Runtime: 4m59.983s)
+          test/e2e/apps/cronjob.go:106
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E0827 12:38:14.137948    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:15.138178    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:16.138589    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:17.138779    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:18.138839    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:19.138965    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:20.139730    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:21.140575    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:22.140727    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+          E0827 12:38:23.140812    7729 retrywatcher.go:130] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 25805 [select]
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x7f759479d598, 0xc005efe5d0}, 0xc00345ea80, 0x2bc9baa?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:205
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.poll({0x7f759479d598, 0xc005efe5d0}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/kubernetes/vendor/k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x7f759479d598, 0xc005efe5d0}, 0x0?, 0x0?, 0x0?)
+            vendor/k8s.io/apimachinery/pkg/util/wait/poll.go:85
+        > k8s.io/kubernetes/test/e2e/apps.waitForNoJobs({0x7f759479d598?, 0xc005efe5d0?}, {0x72bb290?, 0xc005653040?}, {0xc003a9bea0?, 0xc?}, {0xc0040b02d0?, 0x5?}, 0xe0?)
+            test/e2e/apps/cronjob.go:622
+        > k8s.io/kubernetes/test/e2e/apps.glob..func2.2({0x7f759479d598, 0xc005efe5d0})
+            test/e2e/apps/cronjob.go:107
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x72869c0?, 0xc005efe5d0})
+            vendor/github.com/onsi/ginkgo/v2/internal/node.go:456
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:863
+          k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/v2/internal.(*Suite).runNode
+            vendor/github.com/onsi/ginkgo/v2/internal/suite.go:850
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•S•SSS••SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•S•SSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S••SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•S•SSSS•S•SSSSSSSSSSS•SSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS••SSS•SSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSS•S•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSS•SS••SSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+Ran 378 of 7207 Specs in 5993.325 seconds
+SUCCESS! -- 378 Passed | 0 Failed | 0 Pending | 6829 Skipped
+PASS
+[38;5;228mYou're using deprecated Ginkgo functionality:[0m
+[38;5;228m=============================================[0m
+  [38;5;11m--ginkgo.dryRun is deprecated, use --ginkgo.dry-run instead[0m
+  [1mLearn more at:[0m [38;5;14m[4mhttps://onsi.github.io/ginkgo/MIGRATING_TO_V2#changed-command-line-flags[0m
+  [38;5;11m--ginkgo.flakeAttempts is deprecated, use --ginkgo.flake-attempts instead[0m
+  [1mLearn more at:[0m [38;5;14m[4mhttps://onsi.github.io/ginkgo/MIGRATING_TO_V2#changed-command-line-flags[0m
+
+[38;5;243mTo silence deprecations that can be silenced set the following environment variable:[0m
+  [38;5;243mACK_GINKGO_DEPRECATIONS=2.9.1[0m
+
+
+Ginkgo ran 1 suite in 1h39m54.546081864s
+Test Suite Passed
