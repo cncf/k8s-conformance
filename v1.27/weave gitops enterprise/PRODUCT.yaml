@@ -1,0 +1,8 @@
+vendor: Weave.works
+name: Weave GitOps Enterprise
+version: Weave GitOps Enterprise 2023-08 0.31.0
+website_url: https://www.weave.works/product/gitops-enterprise/
+documentation_url: https://docs.gitops.weave.works/docs/enterprise/intro/index.html
+type: installer
+description: Weave GitOps Enterprise enables the management of clusters and applications on scale with GitOps.
+contact_email_address: eneko@weave.works
