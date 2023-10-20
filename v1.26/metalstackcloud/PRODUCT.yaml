@@ -1,0 +1,10 @@
+vendor: Metal Stack Cloud - x-cellent technologies GmbH
+name: Metal Stack Cloud Kubernetes
+version: v1.26.9
+website_url: https://metalstack.cloud
+repo_url: https://github.com/metal-stack-cloud
+documentation_url: https://metalstack.cloud/en/documentation
+product_logo_url: https://metalstack.cloud/images/combination-mark-primary_double-lockup.svg
+type: hosted platform
+description: "Metal Stack Cloud Kubernetes is a fully managed and scalable Kubernetes service for the deployment and management of Kubernetes clusters and containerized applications."
+contact_email_address: info@metalstack.cloud
