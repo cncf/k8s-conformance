@@ -52,3 +52,7 @@ HEAD is now at cb303e613a1 Release commit for Kubernetes v1.21.0
     vendor/github.com/onsi/ginkgo/ginkgo
     test/e2e/e2e.test
 ```
+## Relocating Historical Conformance Files
+
+In our ongoing effort to optimize repository size and enhance the user experience, we have relocated older conformance files to the [archive repository](https://github.com/cncf/k8s-conformance-archive). This ensures smoother navigation and access to current content.
+
