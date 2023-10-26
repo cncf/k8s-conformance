@@ -26,7 +26,7 @@ $ ibmcloud oc cluster create vpc-gen2 --name conformance --version 4.13_openshif
 
 Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog?category=containers#services)
 and select `Red Hat OpenShift on IBM Cloud` to create a cluster. From the
-cluster creation UI, select version 4.13.11 and choose either classic or VPC
+cluster creation UI, select version 4.13.15 and choose either classic or VPC
 infrastructure. Then choose an appropriate location and worker pool configuration.
 Finally, give the cluster a name, such as `conformance`, and select `Create`.
 
