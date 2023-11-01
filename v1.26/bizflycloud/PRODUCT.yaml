@@ -1,0 +1,9 @@
+vendor: BizflyCloud
+name: Bizfly Kubernetes Engine
+version: v1.26.9
+website_url: https://beta.manage.bizflycloud.vn/kubernetes-engine
+documentation_url: https://docs.bizflycloud.vn/kubernetes_engine/
+product_logo_url: https://bizflycloud.vn/footer/logo.svg
+type: hosted
+description: 'Bizfly Kubernetes Engine s a fully managed Kubernetes service that allows you to build and manage Kubernetes clusters with just a few clicks. .'
+contact_email_address: 'quanlm@vccloud.vn'
