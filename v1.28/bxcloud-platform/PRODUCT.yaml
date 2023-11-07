@@ -1,0 +1,9 @@
+vendor: Bankwareglobal Co., Ltd.
+name: BXCloud Platform
+version: v3.0.0
+website_url: https://bankwareglobal.com/platforms/cloud.php
+documentation_url: http://docs.bankwareglobal.io/docs/
+product_logo_url: https://s3.ap-northeast-2.amazonaws.com/docs.bankwareglobal.io/BXCloud+Platform.svg
+type: distribution
+description: BXCloud Platform can set up your kubernetes clusters and help you to orchestrate containerized workloads with useful rollout, buildpack for your DevOps practices CI/CD pipelines, delivering enhanced developer productivity.
+contact_email_address: infra-platform@bankwareglobal.com
