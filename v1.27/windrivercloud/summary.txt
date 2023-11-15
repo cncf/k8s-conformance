@@ -1,0 +1,14 @@
+Ran 378 of 7207 Specs in 5590.180 seconds
+SUCCESS! -- 378 Passed | 0 Failed | 0 Pending | 6829 Skipped
+PASS
+
+Ginkgo ran 1 suite in 1h33m10.497953885s
+Test Suite Passed
+[38;5;228mYou're using deprecated Ginkgo functionality:[0m
+[38;5;228m=============================================[0m
+  [38;5;11m--noColor is deprecated, use --no-color instead[0m
+  [1mLearn more at:[0m [38;5;14m[4mhttps://onsi.github.io/ginkgo/MIGRATING_TO_V2#changed-command-line-flags[0m
+
+[38;5;243mTo silence deprecations that can be silenced set the following environment variable:[0m
+  [38;5;243mACK_GINKGO_DEPRECATIONS=2.9.1[0m
+
