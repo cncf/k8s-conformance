@@ -8,7 +8,8 @@
 ## Environment
 
 [This repository](https://github.com/mia-platform/k8s-conformance-cluster) includes Terraform
-resources and steps to create a Kubernetes cluster hosted on GCP where you can apply the distribution.
+resources and steps to create a Kubernetes cluster hosted on GCP where you can apply the distribution.  
+To create a 1.26 version of kubernetes launch the plan with `-var 'cluster_version=1.26'`
 
 ## Deploy the distribution
 
@@ -16,8 +17,8 @@ Install the `vab` cli using the binary available [here](https://github.com/mia-p
 Presuming that your system is Linux on amd64 you can install it with something like:
 
 ```shell
-curl -fsSL https://github.com/mia-platform/vab/releases/download/v0.9.0/vab-linux-amd64 > /usr/local/bin/vab
-chmod +x /usr/local/bin/vab
+curl -fsSL https://github.com/mia-platform/vab/releases/download/v0.9.0/vab-linux-amd64 > /tmp/vab
+install -g root -o root /tmp/vab /usr/local/bin
 ````
 
 Create project and change the directory:
@@ -31,7 +32,7 @@ Download this `vab` configuration to overwrite the `config.yaml` and setting up 
 distribution.
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/mia-platform/distribution/v1.26.0/examples/base/config.yaml > config.yaml
+curl -fsSL https://raw.githubusercontent.com/mia-platform/distribution/v1.26.1/examples/base/config.yaml > config.yaml
 ```
 
 Synchronize the resources:
