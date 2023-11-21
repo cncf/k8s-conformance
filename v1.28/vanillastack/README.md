@@ -3,9 +3,11 @@
 
 Make sure, a valuable git client is installed as well as ansible 2.9. Clone the vanillastack project from github:
 
+```
 git clone https://github.com/vanillastack/vanillastack.git
 cd vanillastack/ansible
 git submodule update --init --recursive
+```
 
 1.2. Configure Vanillastack
 
