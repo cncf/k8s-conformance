@@ -1,0 +1,10 @@
+vendor: Cloudical Deutschland GmbH
+name: Vanillastack
+version: v4.3.0
+website_url: https://vanillastack.io/
+repo_url: https://github.com/vanillastack/vanillastack
+documentation_url: https://docs.vanillastack.io/userguide/21.01/overview/whats-vanillastack.html
+product_logo_url: https://vanillastack.io/wp-content/uploads/2020/08/vanilla-logo-xs.png
+type: application-stack
+description: "VanillaStack is an enterprise OpenSource CloudStack"
+contact_email_address: peter.hartmann@cloudical.io
