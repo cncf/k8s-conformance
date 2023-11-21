@@ -1,5 +1,5 @@
-1. Install from Commandline
-1.1. Preparations
+# 1. Install from Commandline
+## 1.1. Preparations
 
 Make sure, a valuable git client is installed as well as ansible 2.9. Clone the vanillastack project from github:
 
@@ -12,7 +12,7 @@ git submodule update --init --recursive
 To adapt Vanillastack to your environment, some changes are needed:
 
 $ mv inventory.testing inventory
-# Edit inventory and add information of your infrastructure to related groups.
+Edit inventory and add information of your infrastructure to related groups.
 mv group_vars.testing group_vars
 
 Adapt your inventory:
@@ -21,32 +21,32 @@ vi inventory
 
 [master]
 <full-master-master-1> ansible_host=<host-ip> ansible_user=<username>
-# if ha <full-hostname-master-2> ansible_host=<host-ip> ansible_user=<username>
-# if ha <full-hostname-master-3> ansible_host=<host-ip> ansible_user=<username>
-#...
+if ha <full-hostname-master-2> ansible_host=<host-ip> ansible_user=<username>
+if ha <full-hostname-master-3> ansible_host=<host-ip> ansible_user=<username>
+...
 
 [worker]
 <full-hostname-worker-1> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-2> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-3> ansible_host=<host-ip> ansible_user=<username>
-# ...
+ ...
 
-# Ceph Storage Nodes
+### Ceph Storage Nodes
 [storage]
 <full-hostname-worker-1> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-2> ansible_host=<host-ip> ansible_user=<username>
-# ...
+ ...
 
 [kube_cluster:children]
 master
 install_nodes
 
-# This group defines, where the private loadbalancer and virtual IP
-# should be installed. That can be changed to other systems as well.
+**This group defines, where the private loadbalancer and virtual IP
+hould be installed. That can be changed to other systems as well.**
 [haproxy]
 master
 
-# This group needs to be empty, as it is used to scale worker nodes
+**This group needs to be empty, as it is used to scale worker nodes**
 [install_nodes]
 [install_master]
 [update_nodes]
@@ -80,8 +80,9 @@ offline_install: false
 
 Be aware that the CIDR of your environment does not overlap with the cluster CIDR.
 
-For production environment please check all variables in the ansible-script!
-2. Run VanillaStack Playbook
+**For production environment please check all variables in the ansible-script!**
+
+### 2. Run VanillaStack Playbook
 
 First prepare the rollout:
 
@@ -91,6 +92,6 @@ Now we need to execute the Vanillastack Playbook:
 
 ansible-playbook -i inventory type_vanillastack_deploy.yaml
 
-3. Kubeconfig
+### 3. Kubeconfig
 
 Kubeconfig is located on Master-1 at your ansible_user homedirectory and can be used directly with kubectl On the Node you executed that playbook you can find the configuration under /tmp/ansible/<cluster-uuid>/admin.conf and can be used from any node which reaches kube-api
