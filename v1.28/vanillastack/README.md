@@ -24,20 +24,21 @@ Adapt your inventory:
 ```
 vi inventory
 ```
+
 ```
 [master]
 <full-master-master-1> ansible_host=<host-ip> ansible_user=<username>
 if ha <full-hostname-master-2> ansible_host=<host-ip> ansible_user=<username>
 if ha <full-hostname-master-3> ansible_host=<host-ip> ansible_user=<username>
-...
+# ...
 
 [worker]
 <full-hostname-worker-1> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-2> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-3> ansible_host=<host-ip> ansible_user=<username>
- ...
+# ...
 
-### Ceph Storage Nodes
+# Ceph Storage Nodes
 [storage]
 <full-hostname-worker-1> ansible_host=<host-ip> ansible_user=<username>
 <full-hostname-worker-2> ansible_host=<host-ip> ansible_user=<username>
@@ -47,12 +48,12 @@ if ha <full-hostname-master-3> ansible_host=<host-ip> ansible_user=<username>
 master
 install_nodes
 
-**This group defines, where the private loadbalancer and virtual IP
-hould be installed. That can be changed to other systems as well.**
+# This group defines, where the private loadbalancer and virtual IP
+# hould be installed. That can be changed to other systems as well.
 [haproxy]
 master
 
-**This group needs to be empty, as it is used to scale worker nodes**
+# This group needs to be empty, as it is used to scale worker nodes
 [install_nodes]
 [install_master]
 [update_nodes]
