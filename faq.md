@@ -20,7 +20,7 @@ You can certify the currently released version and the two versions before that.
 
 ## What is a distribution, hosted platform, and an installer?
 
-From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/spreadsheets/d/1LxSqBzjOxfGx3cmtZ4EbB_BGCxT_wlxW_xgHVVa23es/edit#gid=0):
+From the bottom of the Kubernetes Distributions & Platforms [spreadsheet](https://docs.google.com/spreadsheets/d/1uF9BoDzzisHSQemXHIKegMhuythuq_GL3N1mlUUK2h0/edit#gid=0):
 
 * A **vendor** is an organization providing a Kubernetes distribution, hosted platform, or installer.
 * A **product** is a distribution, hosted platform, or installer provided by a vendor.	
