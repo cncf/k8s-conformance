@@ -1,14 +1,14 @@
-ccordion
+# Accordion
 
 
-## Install Accordion v2.6.0 (based on Kubernetes v1.26.6) and create a cluster
+## Install Accordion v2.6.0 (based on Kubernetes v1.27.6) and create a cluster
 
 Use regular ansible playbook command to create a cluster.
 
 If you need an installation package, please request it by e-mail.
 
 ```
-$ vi group_vars/hostyml
+$ vi group_vars/host.yml
 
 
 # master isolation ( yes / no )
@@ -53,7 +53,7 @@ $ cp ./results/plugins/e2e/results/global/* ./${k8s_version}/${prod_name}/
 $ cat << EOF > ./${k8s_version}/${prod_name}/PRODUCT.yaml
 vendor: Mantech
 name: Accordion
-version: v2.6.0
+version: v2.0.0
 website_url: https://accordions.co.kr/kube_eng/
 documentation_url: https://demo.accordions.co.kr/docs/
 product_logo_url: https://training.accordions.co.kr/assets/images/mantech-accordion.svg
