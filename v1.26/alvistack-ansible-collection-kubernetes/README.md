@@ -68,7 +68,7 @@ Install Molecule:
     echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
     curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
     apt update
-    apt install -y python3-molecule python3-molecule-docker python3-molecule-vagrant
+    apt install -y python3-molecule python3-molecule-plugins
 
 GIT clone Ansible Collection for Kubernetes
 (<https://github.com/alvistack/ansible-collection-kubernetes>):
