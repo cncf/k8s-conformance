@@ -1,7 +1,7 @@
 # Accordion
 
 
-## Install Accordion v2.6.0 (based on Kubernetes v1.27.6) and create a cluster
+## Install Accordion v2.7.0 (based on Kubernetes v1.27.6) and create a cluster
 
 Use regular ansible playbook command to create a cluster.
 
