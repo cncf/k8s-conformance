@@ -87,7 +87,6 @@ If submitting test results for multiple versions, submit a PR for each product, 
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
-vX.Y/$dir/sonobuoy.tar.gz: Raw output from sonobuoy. (optional)
 vX.Y/$dir/e2e.log: Test log output (from Sonobuoy).
 vX.Y/$dir/junit_01.xml: Machine-readable test log (from Sonobuoy).
 vX.Y/$dir/PRODUCT.yaml: See below.
