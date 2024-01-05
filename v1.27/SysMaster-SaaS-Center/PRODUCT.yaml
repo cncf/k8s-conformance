@@ -1,0 +1,9 @@
+vendor: Infranics
+name: SysMaster SaaS Center
+version: v2.0
+website_url: https://portal.saas.sysmasterk8s.com
+documentation_url: https://docs.saas.sysmasterk8s.com/SysMaster SaaS Center Brochure_2023.pdf
+product_logo_url: https://docs.saas.sysmasterk8s.com/img/SysMasterSaascenter_logo.ai
+type: distribution
+description: 'SysMaster SaaS Center is a Kubernetes-based SaaSify Automation platform. It offers a one-stop solution for the entire process of transitioning to SaaS. AS Follows: SW Analysis is Environment analysis for SW and Visualization of SaaS migration plan. Cloudify is Cloud environment configuration for various CSP environments. PaaSify is Providing Kubernetes container execution environments. SaaSify is Onboarding service for SaaS migration and Deployment of SaaS applications. SaaS Operation Service is Support for integrated monitoring of SaaS services"
+contact_email_address : info@infranicsmail.com
