@@ -12,7 +12,7 @@ suite.
 The standard tool for running these tests are
 [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy) and [Hydrophone](https://github.com/kubernetes-sigs/hydrophone)
 
-### Using Sonobuoy
+### Sonobuoy
 Sonobuoy is regularly built and kept up to date to execute against all
 currently supported versions of kubernetes.
 
@@ -68,8 +68,8 @@ To clean up Kubernetes objects created by Sonobuoy, run:
 sonobuoy delete
 ```
 
-### Using Hydrophone
-Refer to the Readme.md[https://github.com/kubernetes-sigs/hydrophone/blob/main/README.md] for detailed instructions on how to use Hydrophone
+### Hydrophone
+Refer to the README.md [https://github.com/kubernetes-sigs/hydrophone/blob/main/README.md] for detailed instructions
 
 ## Uploading
 
