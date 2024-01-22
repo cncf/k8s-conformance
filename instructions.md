@@ -80,7 +80,7 @@ Description: `Conformance results for vX.Y/$dir`
 
 ### Contents of the PR
 
-For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission.
+Extract the relevant information from the tarball to compose your submission.
 
 If submitting test results for multiple versions, submit a PR for each product, ie. one PR for vX.Y results and a second PR for vX.Z
 
