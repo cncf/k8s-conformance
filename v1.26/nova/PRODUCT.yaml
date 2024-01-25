@@ -1,0 +1,9 @@
+vendor: Orionsoft
+name: Nova Container Platform
+version: v2.3.0
+website_url: https://nova-platform.io
+documentation_url: https://docs.nova-platform.io
+product_logo_url: https://docs.nova-platform.io/logo_nova.svg
+type: distribution
+description: "Nova Container Platform allows you to create secure and scalable Kubernetes clusters with all the necessary, integratable tools."
+contact_email_address: info@orionsoft.ru
