@@ -9,7 +9,7 @@ suite.
 
 ## Running
 
-The standard tool for running these tests are
+The standard tools for running these tests are
 [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy) and [Hydrophone](https://github.com/kubernetes-sigs/hydrophone)
 
 ### Sonobuoy
@@ -69,7 +69,7 @@ sonobuoy delete
 ```
 
 ### Hydrophone
-Refer to the README.md [https://github.com/kubernetes-sigs/hydrophone/blob/main/README.md] for detailed instructions
+Refer to the [hydrophone docs](https://github.com/kubernetes-sigs/hydrophone/blob/main/README.md) for detailed instructions
 
 ## Uploading
 
