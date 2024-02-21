@@ -1,5 +1,5 @@
 vendor: Exoscale
-name: Exoscale Simple Kubernetes Service
+name: Exoscale Scalable Kubernetes Service
 version: v1.29.0
 website_url: https://www.exoscale.com/sks/
 documentation_url: https://community.exoscale.com/documentation/sks/
