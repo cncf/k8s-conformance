@@ -1,0 +1,9 @@
+vendor: Coredge
+name: Coredge Kubernetes Platform
+version: v1.28.3-ckp
+website_url: https://coredge.io
+documentation_url: https://docs.cloudorbiter.io/ckp/
+product_logo_url: https://coredge.io/ckp-logo/CKP-Logo.html
+type: Distribution
+description: 'A custom Kubernetes distribution.'
+contact_email_address: abhimanyu@coredge.io
