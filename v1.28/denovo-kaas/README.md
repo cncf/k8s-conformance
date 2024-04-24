@@ -1,25 +1,22 @@
-# Conformance testing American Cloud Kubernetes Service
+# Conformance testing De Novo's Kubernetes as a Service
 
-## Ordering a cluster
+## Ordering Cloud resources 
 
-Sign up as an DeNovo Cloud customer by registering at my.denovo.ua - after registering you will get link with credentials to the CD , navigate to 'Services' using the nav bar on the left. Find the button for 'Create' under Kubernetes. Select a region, v1.27, 
-and appropriate cluster size.
-
-Choose hourly or monthly billing and then click the 'Deploy' button on the bottom right side of the portal and confirm your deployment.
+Sign up as an De Novo Cloud customer by registering at my.denovo.ua - after registering you will get the link with credentials to the CD organization.
+Log in to your CD organization, navigate to 'More > Kubernetes Container Clusters' using the nav bar on the top.
+Use the button 'NEW' to create Kubernetes cluster. Select v1.28 and appropriate cluster size.
 
 ## Running the conformance tests
 
-Once the cluster state says 'Running' click the button that says 'Download Config File' and save to <path to kubeconfig>
+Once the cluster state says 'Available' click the button that says 'Download Kube Config' and save to <path to kubeconfig>
 
 ```shell
 export KUBECONFIG=<path to kubeconfig>
 ```
 
-Install the appropriate Sonobuoy package
-
-```shell
-brew install sonobuoy
-```
+Download the latest release Sonobuoy package for your client platform.
+Extract the tarball: tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+Move the extracted sonobuoy executable to somewhere on your PATH.
 
 Run the conformance tests:
 
