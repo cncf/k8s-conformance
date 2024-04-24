@@ -15,7 +15,12 @@ export KUBECONFIG=<path to kubeconfig>
 ```
 
 Download the latest release Sonobuoy package for your client platform.
-Extract the tarball: tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+
+Extract the tarball:
+```shell
+tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+```
+
 Move the extracted sonobuoy executable to somewhere on your PATH.
 
 Run the conformance tests:
