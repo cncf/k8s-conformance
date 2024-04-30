@@ -1,0 +1,9 @@
+vendor: American Cloud
+name: American Cloud Kubernetes Service
+version: v1.0
+website_url: https://americancloud.com/products/kubernetes
+documentation_url: https://docs.americancloud.com/en/home/kubernetes-getting-started
+type: hosted platform
+description: "American Cloud Kubernetes Service (ACKS) is a fully-managed K8s container orchestration service; Deploy, Manage, and Scale
+containerized environments in minutes with ACKS!"
+contact_email_address : contact@americancloud.io
