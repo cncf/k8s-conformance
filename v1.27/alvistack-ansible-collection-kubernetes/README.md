@@ -12,21 +12,21 @@ requirement, e.g.
     -   32GB RAM
 -   `kube01`
     -   kubernetes master, etcd
-    -   cri-o, cilium
+    -   cri-o, flannel
     -   Ubuntu 22.04
     -   IP: 192.168.121.101/24
     -   2 CPUs
     -   8GB RAM
 -   `kube02`
     -   kubernetes master, etcd
-    -   cri-o, cilium
+    -   cri-o, flannel
     -   Ubuntu 22.04
     -   IP: 192.168.121.102/24
     -   2 CPUs
     -   8GB RAM
 -   `kube03`
     -   kubernetes node, etcd
-    -   cri-o, cilium
+    -   cri-o, flannel
     -   Ubuntu 22.04
     -   IP: 192.168.121.103/24
     -   2 CPUs
@@ -68,7 +68,7 @@ Install Molecule:
     echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
     curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
     apt update
-    apt install -y python3-molecule python3-molecule-docker python3-molecule-vagrant
+    apt install -y python3-molecule python3-molecule-plugins
 
 GIT clone Ansible Collection for Kubernetes
 (<https://github.com/alvistack/ansible-collection-kubernetes>):
@@ -100,32 +100,28 @@ Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES           AGE    VERSION
-    kube01   Ready    control-plane   136m   v1.27.5
-    kube02   Ready    control-plane   135m   v1.27.5
-    kube03   Ready    <none>          135m   v1.27.5
+    kube01   Ready    control-plane   179m   v1.27.12
+    kube02   Ready    control-plane   178m   v1.27.12
+    kube03   Ready    <none>          178m   v1.27.12
 
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
-    kube-system   cilium-75twk                     1/1     Running   0          133m
-    kube-system   cilium-k4ddn                     1/1     Running   0          133m
-    kube-system   cilium-l42z4                     1/1     Running   0          133m
-    kube-system   cilium-node-init-84p5z           1/1     Running   0          133m
-    kube-system   cilium-node-init-kskgt           1/1     Running   0          133m
-    kube-system   cilium-node-init-zqr5r           1/1     Running   0          133m
-    kube-system   cilium-operator-75c75bbcd9-9g5p6 1/1     Running   0          133m
-    kube-system   coredns-5d78c9869d-5dsws         1/1     Running   0          114m
-    kube-system   coredns-5d78c9869d-q6j8r         1/1     Running   0          131m
-    kube-system   kube-addon-manager-kube01        1/1     Running   0          133m
-    kube-system   kube-addon-manager-kube02        1/1     Running   0          133m
-    kube-system   kube-apiserver-kube01            1/1     Running   0          137m
-    kube-system   kube-apiserver-kube02            1/1     Running   0          136m
-    kube-system   kube-controller-manager-kube01   1/1     Running   0          137m
-    kube-system   kube-controller-manager-kube02   1/1     Running   0          136m
-    kube-system   kube-proxy-7rk7q                 1/1     Running   0          136m
-    kube-system   kube-proxy-9tjkc                 1/1     Running   0          136m
-    kube-system   kube-proxy-p7947                 1/1     Running   0          135m
-    kube-system   kube-scheduler-kube01            1/1     Running   0          137m
-    kube-system   kube-scheduler-kube02            1/1     Running   0          136m
+    kube-system   coredns-76f75df574-4529k         1/1     Running   1          3h
+    kube-system   coredns-76f75df574-kjr7r         1/1     Running   1          3h
+    kube-system   kube-addon-manager-kube01        1/1     Running   1          177m
+    kube-system   kube-addon-manager-kube02        1/1     Running   1          177m
+    kube-system   kube-apiserver-kube01            1/1     Running   1          3h
+    kube-system   kube-apiserver-kube02            1/1     Running   1          179m
+    kube-system   kube-controller-manager-kube01   1/1     Running   1          3h
+    kube-system   kube-controller-manager-kube02   1/1     Running   1          179m
+    kube-system   kube-flannel-ds-qldcz            1/1     Running   1          177m
+    kube-system   kube-flannel-ds-rlbz6            1/1     Running   0          58m
+    kube-system   kube-flannel-ds-znfxv            1/1     Running   1          177m
+    kube-system   kube-proxy-lh685                 1/1     Running   1          179m
+    kube-system   kube-proxy-q4vm6                 1/1     Running   1          179m
+    kube-system   kube-proxy-wp7g9                 1/1     Running   1          3h
+    kube-system   kube-scheduler-kube01            1/1     Running   1          3h
+    kube-system   kube-scheduler-kube02            1/1     Running   1          179m
 
 ## Run Sonobuoy
 
