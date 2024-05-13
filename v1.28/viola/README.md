@@ -1,14 +1,12 @@
 # Vilola - [ START GUIDE ]
-
----
+<br>
 
 ## **This guide is based on a closed network**
-
 ### CLOUD_DEV3 _ OKESTRO
+#
+<br>
 
 # **GUIDE INFO**
-
----
 
 ```
 K8S CLUSTER INFO  :  1.28.5
@@ -17,11 +15,10 @@ NEXUS VERSION     :  3.63.0-01
 SYSETM OS         :  Ubuntu 22.04
 
 ```
+#
+<br>
 
 ## **Upload Repo To Nexus(Docker Proxy)**
-
----
-
 - **cluster docker images list**
     - cilium:v1.13.4
     - operator:v1.13.4
@@ -99,11 +96,10 @@ done
 ```
 > # docker-push.sh
 ```
+#
+<br>
 
 ## **INSTALL & SETTING ANSIBLE**
-
----
-
 - **Install Ansible tmp**
 
 ```
@@ -137,11 +133,9 @@ inventory      = /etc/ansible/hosts
 ...
 
 ```
-
 <br>
 
 - **kubernetes.ini**
-
 ```
 # [Ansible Inventory Infomation] #
 #--------------------------------------------------
@@ -176,6 +170,9 @@ ansible_become_password=*****
 #--------------------------------------------------
 
 ```
+#
+
+<br>
 
 ## **Make PlayBook for Ansible Install [MAIN]**
 
