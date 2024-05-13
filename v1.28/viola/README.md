@@ -1,5 +1,3 @@
-# CSAP-readme.md
-
 # Vilola - [ START GUIDE ]
 
 ---
