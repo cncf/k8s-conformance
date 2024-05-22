@@ -1,0 +1,28 @@
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 * * * *'
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  verify-conformance:
+    runs-on: ubuntu-latest
+    jobs:
+      - name: write-config
+        run: |
+          curl -sSLv https://raw.githubusercontent.com/cncf-infra/verify-conformance/main/hack/local-dev/verify-conformance-config.yaml -o ./verify-conformance-config.yaml
+      - name: verify-conformance
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          docker run --rm \
+            -e GITHUB_TOKEN \
+            -v verify-conformance-config.yaml:/etc/plugin/config.yaml \
+            -v "$PWD:$PWD:ro" \
+            --workdir "$PWD" \
+            ghcr.io/cncf-infra/verify-conformance/action:latest \
+              -plugin-config=/etc/plugin/config.yaml
