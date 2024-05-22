@@ -11,7 +11,7 @@ permissions:
 jobs:
   verify-conformance:
     runs-on: ubuntu-latest
-    jobs:
+    steps:
       - name: write-config
         run: |
           curl -sSLv https://raw.githubusercontent.com/cncf-infra/verify-conformance/main/hack/local-dev/verify-conformance-config.yaml -o ./verify-conformance-config.yaml
