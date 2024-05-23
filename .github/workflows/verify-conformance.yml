@@ -27,8 +27,8 @@ jobs:
             --workdir "$PWD" \
             ghcr.io/cncf-infra/verify-conformance/action:latest \
               -plugin-config="$PWD/verify-conformance-config.yaml" \
-              -github-app-id="$GH_APP_ID" \
-              -github-app-private-key-path=./tmp/github-app-private-key
+              -github-app-id="${{ env.GH_APP_ID }}" \
+              -github-app-private-key-path="$PWD/tmp/github-app-private-key"
       - name: cleanup
         if: ${{ always() }}
         run: |
