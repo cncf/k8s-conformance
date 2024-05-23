@@ -13,15 +13,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: write-config
-        run: |
-          curl -sSLv https://raw.githubusercontent.com/cncf-infra/verify-conformance/main/hack/local-dev/verify-conformance-config.yaml -o ./verify-conformance-config.yaml
-      - name: verify-conformance
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          GH_APP_ID: ${{ secrets.GH_APP_ID }}
+        run: |
+          mkdir -p ./tmp/
+          curl -sSLv https://raw.githubusercontent.com/cncf-infra/verify-conformance/main/hack/local-dev/verify-conformance-config.yaml -o ./verify-conformance-config.yaml
+          echo '${{ env.GH_APP_PRIVATE_KEY }}' > ./tmp/github-app-private-key
+      - name: verify-conformance
         run: |
           docker run --rm \
-            -e GITHUB_TOKEN \
             -v "$PWD:$PWD:ro" \
             --workdir "$PWD" \
             ghcr.io/cncf-infra/verify-conformance/action:latest \
-              -plugin-config="$PWD/verify-conformance-config.yaml"
+              -plugin-config="$PWD/verify-conformance-config.yaml" \
+              -github-app-id="$GH_APP_ID" \
+              -github-app-private-key-path=./tmp/github-app-private-key
+      - name: cleanup
+        if: ${{ always() }}
+        run: |
+          rm -rf ./tmp/
