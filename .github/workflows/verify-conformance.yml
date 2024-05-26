@@ -19,24 +19,24 @@ jobs:
           GH_APP_HMAC: ${{ secrets.GH_APP_HMAC }}
         run: |
           mkdir -p ./tmp/
-          curl -sSLv https://raw.githubusercontent.com/cncf-infra/verify-conformance/main/hack/local-dev/verify-conformance-config.yaml -o ./verify-conformance-config.yaml
           echo '${{ env.GH_APP_PRIVATE_KEY }}' | base64 -d > ./tmp/github-app-private-key
           echo '${{ env.GH_APP_HMAC }}' > ./tmp/hmac
       - name: verify-conformance
         env:
           GH_APP_ID: ${{ secrets.GH_APP_ID }}
+          REPO: ${{ github.repository }}
         run: |
           set -x
           docker run --rm \
             -v "$PWD:$PWD:ro" \
             --workdir "$PWD" \
-            ghcr.io/cncf-infra/verify-conformance/action:latest \
+            ghcr.io/cncf-infra/verify-conformance@sha256:183ed502367f0e0442798935247888077478192120efc753a9d53adf646d97ad \
               --github-endpoint=https://api.github.com \
               --dry-run=false \
-              --plugin-config="$PWD/verify-conformance-config.yaml" \
               --github-app-id="${{ env.GH_APP_ID }}" \
               --github-app-private-key-path="$PWD/tmp/github-app-private-key" \
-              --hmac-secret-file=$PWD/tmp/hmac
+              --hmac-secret-file=$PWD/tmp/hmac \
+              --repo="$REPO"
       - name: cleanup
         if: ${{ always() }}
         run: |
