@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '0 * * * *'
 
+# NOTE: docs available at
+#       https://github.com/cncf-infra/verify-conformance/blob/main/docs/maintainance.md#deployment
+
 jobs:
   verify-conformance:
     runs-on: ubuntu-latest
@@ -25,7 +28,7 @@ jobs:
           docker run --rm \
             -v "$PWD:$PWD:ro" \
             --workdir "$PWD" \
-            ghcr.io/cncf-infra/verify-conformance@sha256:183ed502367f0e0442798935247888077478192120efc753a9d53adf646d97ad \
+            ghcr.io/cncf-infra/verify-conformance:2024-05-28-0910 \
               --github-endpoint=https://api.github.com \
               --dry-run=false \
               --github-app-id="${{ env.GH_APP_ID }}" \
