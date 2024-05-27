@@ -38,6 +38,13 @@ ibmcloud oc cluster get --cluster conformance
 ibmcloud oc workers --cluster conformance
 ```
 
+If you created a cluster on VPC infrastructure, you must disable outbound traffic
+protection in order to run the conformance tests.
+
+```
+ibmcloud oc vpc outbound-traffic-protection disable -f --cluster conformance
+```
+
 Wait for the OpenShift cluster operators to become available.
 
 ```
