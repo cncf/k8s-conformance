@@ -30,7 +30,7 @@ jobs:
           docker run --rm \
             -v "$PWD:$PWD:ro" \
             --workdir "$PWD" \
-            ghcr.io/cncf-infra/verify-conformance:2024-05-28-0910 \
+            ghcr.io/cncf-infra/verify-conformance:2024-05-30-1057 \
               --github-endpoint=https://api.github.com \
               --dry-run=false \
               --github-app-id="${{ env.GH_APP_ID }}" \
