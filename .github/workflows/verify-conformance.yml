@@ -10,6 +10,7 @@ on:
 
 jobs:
   verify-conformance:
+    if: ${{ github.repository == 'cncf/k8s-conformance' }}
     runs-on: ubuntu-latest
     steps:
       - name: write-config
