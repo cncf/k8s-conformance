@@ -1,0 +1,10 @@
+vendor: SK Telecom
+name: TKS Enterprise Solution
+version: v3.2.0
+website_url: https://tks.sktenterprise.com/en
+repo_url: https://github.com/openinfradev/
+documentation_url: https://openinfradev.github.io/tks-service-info/intro/tks/
+product_logo_url: https://tks-logo.s3.ap-northeast-2.amazonaws.com/tks-logo.ai
+type: distribution
+description: "TKS Enterprise Solution is a All-in-One Package that provides all-in-one add-ons (CNI, CSI, Ingress Controller, etc.) and services (Monitoring, Service Mesh, Policy, MLOps, etc.) for running Kubernetes Cluster and Kubernetes in a public cloud environment."
+contact_email_address: jugwan.eom@sktelecom.com
