@@ -1,6 +1,6 @@
 vendor: Red Hat
 name: OpenShift Container Platform by Red Hat
-version: 4.16.0-ec.2
+version: 4.16.0
 website_url: https://www.openshift.com
 repo_url: https://github.com/openshift/origin
 documentation_url: https://docs.openshift.com
