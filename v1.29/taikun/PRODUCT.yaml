@@ -1,0 +1,9 @@
+vendor: taikun.cloud a.s
+name: Taikun
+version: v0.10.6
+website_url: https://taikun.cloud
+documentation_url: https://itera.gitbook.io/taikun
+product_logo_url: https://rgw.cloudpoint.tcpro.cz/newtaikunprods3/logo/Itera.svg
+type: distribution
+description: Taikun is a hybrid cloud management orchestration platform
+contact_email_address : pawan.dwivedi@taikun.cloud
