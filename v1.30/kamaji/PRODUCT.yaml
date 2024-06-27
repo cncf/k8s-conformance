@@ -1,0 +1,10 @@
+vendor: Clastix
+name: Kamaji
+version: v0.6.1
+website_url: https://github.com/clastix/kamaji
+repo_url: https://github.com/clastix/kamaji
+documentation_url: https://kamaji.clastix.io
+product_logo_url: https://raw.githubusercontent.com/clastix/kamaji/master/assets/logo.svg
+type: distribution
+description: "Kamaji is the Kubernetes Control Plane Manager. Build and operate Kubernetes at scale with a fraction of operational burden."
+contact_email_address: 'hello@clastix.io'
