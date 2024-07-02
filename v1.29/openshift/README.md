@@ -30,17 +30,13 @@ oc adm policy add-scc-to-group privileged system:authenticated system:serviceacc
 oc adm policy add-scc-to-group anyuid system:authenticated system:serviceaccounts
 ```
 
-2. Follow the [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#running)
-   to run the conformance tests. You will need to add the `--dns-namespace=openshift-dns`
-   and `--dns-pod-labels=dns.operator.openshift.io/daemonset-dns=default`
-   options so `sonobuoy` can find the cluster DNS pods. Additionally, OpenShift
-   cluster disables [scheduling on control plane nodes](https://docs.openshift.com/container-platform/4.14/nodes/nodes/nodes-nodes-managing.html#nodes-nodes-working-master-schedulable_nodes-nodes-managing)
-   in the default installation, so you need to pass
-   `--plugin-env=e2e.E2E_EXTRA_ARGS="--allowed-not-ready-nodes=3"`
+2. Follow the [test instructions](https://github.com/cncf/k8s-conformance/blob/master/instructions.md#hydrophone)
+   to run the conformance tests. OpenShift cluster disables [scheduling on control plane nodes](https://docs.openshift.com/container-platform/4.16/nodes/nodes/nodes-nodes-managing.html#nodes-nodes-working-master-schedulable_nodes-nodes-managing)
+   in the default installation, so you need to pass `--extra-args="--allowed-not-ready-nodes=3"`
    to inform testing framework it should take that into account.
 
 ```
-hydrophone --conformance --conformance-image registry.k8s.io/conformance:v1.29.1 --extra-args="--allowed-not-ready-nodes=3"
+hydrophone --conformance --conformance-image registry.k8s.io/conformance:v1.29.5 --extra-args="--allowed-not-ready-nodes=3"
 ```
 
 3. Once conformance testing is completed, restore the default security rules:
