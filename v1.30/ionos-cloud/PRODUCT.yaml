@@ -1,0 +1,9 @@
+vendor: IONOS
+name: IONOS Cloud Managed Kubernetes
+version: v1.30.2
+website_url: https://cloud.ionos.com/managed/kubernetes
+documentation_url: https://docs.ionos.com/cloud/managed-services/managed-kubernetes
+product_logo_url: https://ce1.uicdn.net/b10/274d57960c4619c4ea40ecc9c08ed/frontend-applications-common/logo-invert.svg
+type: hosted
+description: "IONOS Cloud Managed Kubernetes is the ideal platform for automating the deployment, scaling and management of highly scalable and demanding containerized applications."
+contact_email_address: managed.kubernetes.cncf@ionos.com
