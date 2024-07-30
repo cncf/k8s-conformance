@@ -1,0 +1,9 @@
+vendor: Lenovo
+name: Lenovo xCloud Container Platform
+version: v5.0
+website_url: https://xcloud.lenovo.com.cn/zh-cn/pages/paas.html
+documentation_url: https://xcloud.k8scloud.cn/earth/doc/manual/
+product_logo_url: https://landscape.cncf.io/logos/lenovo-member.svg
+type: distribution
+description: 'Lenovo Container Cloud is a platform born out of container and kubernetes, which fully compatible with massive types of infrastructure and full sets of devops tool chain. It enables enterprises to deploy and manage applications in a low-cost, flexible, automated, safe and controllable manner with unified service template, and ensure business stability and iterate efficiency as well, to help enterprises reduce the overall cost of infrastructure operation and DevOps.'
+contact_email_address: zhangwj9@lenovo.com
