@@ -32,7 +32,7 @@ Download this `vab` configuration to overwrite the `config.yaml` and setting up 
 distribution.
 
 ```shell
-curl -fsSL https://raw.githubusercontent.com/mia-platform/distribution/v1.27.0/examples/base/config.yaml > config.yaml
+curl -fsSL https://raw.githubusercontent.com/mia-platform/distribution/v1.27.2/examples/base/config.yaml > config.yaml
 ```
 
 Synchronize the resources:

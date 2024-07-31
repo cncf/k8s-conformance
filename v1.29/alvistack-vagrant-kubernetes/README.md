@@ -7,27 +7,27 @@ requirement, e.g.
 -   host
     -   libvirt
     -   nested virtualization enabled
-    -   Ubuntu 22.04
+    -   Ubuntu 24.04
     -   8 CPUs
     -   32GB RAM
 -   `kube01`
     -   kubernetes master, etcd
     -   cri-o, flannel
-    -   Ubuntu 22.04
+    -   Ubuntu 24.04
     -   IP: 192.168.121.101/24
     -   2 CPUs
     -   8GB RAM
 -   `kube02`
     -   kubernetes master, etcd
     -   cri-o, flannel
-    -   Ubuntu 22.04
+    -   Ubuntu 24.04
     -   IP: 192.168.121.102/24
     -   2 CPUs
     -   8GB RAM
 -   `kube03`
     -   kubernetes node, etcd
     -   cri-o, flannel
-    -   Ubuntu 22.04
+    -   Ubuntu 24.04
     -   IP: 192.168.121.103/24
     -   2 CPUs
     -   8GB RAM
@@ -38,7 +38,7 @@ Install some basic pacakges for host:
 
     apt update
     apt full-upgrade
-    apt install -y aptitude git linux-generic-hwe-22.04 openssh-server python3 pwgen rsync vim
+    apt install -y aptitude git linux-generic-hwe-24.04 openssh-server python3 pwgen rsync vim
 
 Install Libvirt:
 
@@ -47,10 +47,10 @@ Install Libvirt:
 
 Install Vagrant:
 
-    echo "deb [arch=amd64] https://apt.releases.hashicorp.com jammy main" | tee /etc/apt/sources.list.d/hashicorp.list
-    curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /etc/apt/trusted.gpg.d/hashicorp.gpg > /dev/null
-    apt update
-    apt install -y vagrant
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y vagrant
     vagrant plugin install vagrant-libvirt
 
 ## Bootstrap Ansible
@@ -58,17 +58,17 @@ Install Vagrant:
 Install Ansible (see
 <https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack>):
 
-    echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
-    curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt update
-    apt install -y ansible python3-ansible-lint python3-docker python3-netaddr python3-vagrant
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y ansible ansible-lint python3-docker python3-netaddr python3-vagrant
 
 Install Molecule:
 
-    echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
-    curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt update
-    apt install -y python3-molecule python3-molecule-plugins
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y python3-molecule python3-molecule-plugins
 
 GIT clone Vagrant Box Packaging for Kubernetes
 (<https://github.com/alvistack/vagrant-kubernetes>):
@@ -100,9 +100,9 @@ Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES           AGE    VERSION
-    kube01   Ready    control-plane   179m   v1.29.0
-    kube02   Ready    control-plane   178m   v1.29.0
-    kube03   Ready    <none>          178m   v1.29.0
+    kube01   Ready    control-plane   179m   v1.29.4
+    kube02   Ready    control-plane   178m   v1.29.4
+    kube03   Ready    <none>          178m   v1.29.4
 
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
