@@ -1,0 +1,11 @@
+vendor: VMware by Broadcom
+name: VMware vSphere Kubernetes Service
+version: v1.30.1
+website_url: https://www.vmware.com/products/cloud-foundation.html
+documentation_url: https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-releases/services/rn/vmware-tanzu-kubernetes-releases-release-notes/index.html
+product_logo_url: https://landscape.cncf.io/logos/4680e2d4f0ce002970adb755ce62cd8796b506d347357d43f2d8a651110a8019.svg
+type: distribution
+description: VMware vSphere Kubernetes Service is VMware's Kubernetes distribution
+  - built on open source technologies, packaged for enterprise adoption and supported
+  24x7 by VMware Global Support Services (GSS).
+contact_email_address: cncf.pdl@broadcom.com
