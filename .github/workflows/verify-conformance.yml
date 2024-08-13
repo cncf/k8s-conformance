@@ -5,13 +5,15 @@ on:
     - cron: '0 * * * *'
 
 # NOTE: docs available at
-#       https://github.com/cncf-infra/verify-conformance/blob/main/docs/maintainance.md#deployment
+#       https://github.com/kubernetes-sigs/verify-conformance/blob/main/docs/maintainance.md#deployment
 
 # TODO(BobyMCbobs): auto update image, but don't use latest tag
 
 jobs:
   verify-conformance:
     if: ${{ github.repository == 'cncf/k8s-conformance' }}
+    env:
+      IMAGE: ghcr.io/kubernetes-sigs/verify-conformance:2024-08-14-1030
     runs-on: ubuntu-latest
     steps:
       - name: write-config
@@ -32,7 +34,7 @@ jobs:
           docker run --rm \
             -v "$PWD:$PWD:ro" \
             --workdir "$PWD" \
-            ghcr.io/cncf-infra/verify-conformance:2024-05-30-1057 \
+            "{{ env.IMAGE }}" \
               --github-endpoint=https://api.github.com \
               --dry-run=false \
               --github-app-id="${{ env.GH_APP_ID }}" \
