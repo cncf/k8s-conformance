@@ -1,0 +1,10 @@
+vendor: ALASCA - Verband für betriebsfähige, offene Cloud-Infrastrukturen e.V.
+name: YAOOK/k8s
+version: v6.1.2
+website_url: https://yaook.cloud/
+repo_url: https://gitlab.com/yaook/k8s
+documentation_url: https://yaook.gitlab.io/k8s/release/v6.1/index.html
+product_logo_url: https://alasca.cloud/wp-content/uploads/2024/05/2021-CloudHeat-yaook-husky-Brand-grey1.svg
+type: distribution
+description: "Customizable, highly available, scalable and flexible Kubernetes clusters installed and managed on OpenStack or bare metal"
+contact_email_address: hello@alasca.cloud
