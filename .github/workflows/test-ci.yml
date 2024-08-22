@@ -1,0 +1,11 @@
+name: verify-conformance
+on:
+  pull_request:
+
+jobs:
+  verify-conformance:
+    runs-on: openeuler-6cpu-14gb
+    steps:
+      - name: test openEuler ci
+        run: |
+          cat /etc/os-release
