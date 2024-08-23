@@ -7,6 +7,7 @@ on:
 
 jobs:
   check-conformance-test-suite-documentation:
+    if: ${{ github.repository == 'cncf/k8s-conformance' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
