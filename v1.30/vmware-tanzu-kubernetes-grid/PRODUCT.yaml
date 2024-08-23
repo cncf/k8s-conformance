@@ -1,0 +1,9 @@
+vendor: VMware by Broadcom
+name: VMware Tanzu Kubernetes Grid
+version: 2.5.2
+website_url: https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/2.5/tkg-deploy-mc/mgmt-release-notes.html
+documentation_url: https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html
+product_logo_url: https://landscape.cncf.io/logos/4680e2d4f0ce002970adb755ce62cd8796b506d347357d43f2d8a651110a8019.svg
+type: distribution
+description: VMware Tanzu Kubernetes Grid is VMware's Kubernetes distribution - built on open source technologies, packaged for enterprise adoption and supported 24x7 by VMware Global Support Services (GSS).
+contact_email_address: nikhita.raghunath@broadcom.com
