@@ -7,27 +7,27 @@ requirement, e.g.
 -   host
     -   libvirt
     -   nested virtualization enabled
-    -   Ubuntu 22.04
+    -   Ubuntu 24.04
     -   8 CPUs
     -   32GB RAM
 -   `kube01`
     -   kubernetes master, etcd
-    -   cri-o, cilium
-    -   Ubuntu 22.04
+    -   cri-o, flannel
+    -   Ubuntu 24.04
     -   IP: 192.168.121.101/24
     -   2 CPUs
     -   8GB RAM
 -   `kube02`
     -   kubernetes master, etcd
-    -   cri-o, cilium
-    -   Ubuntu 22.04
+    -   cri-o, flannel
+    -   Ubuntu 24.04
     -   IP: 192.168.121.102/24
     -   2 CPUs
     -   8GB RAM
 -   `kube03`
     -   kubernetes node, etcd
-    -   cri-o, cilium
-    -   Ubuntu 22.04
+    -   cri-o, flannel
+    -   Ubuntu 24.04
     -   IP: 192.168.121.103/24
     -   2 CPUs
     -   8GB RAM
@@ -38,7 +38,7 @@ Install some basic pacakges for host:
 
     apt update
     apt full-upgrade
-    apt install -y aptitude git linux-generic-hwe-22.04 openssh-server python3 pwgen rsync vim
+    apt install -y aptitude git linux-generic-hwe-24.04 openssh-server python3 pwgen rsync vim
 
 Install Libvirt:
 
@@ -47,10 +47,10 @@ Install Libvirt:
 
 Install Vagrant:
 
-    echo "deb [arch=amd64] https://apt.releases.hashicorp.com jammy main" | tee /etc/apt/sources.list.d/hashicorp.list
-    curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /etc/apt/trusted.gpg.d/hashicorp.gpg > /dev/null
-    apt update
-    apt install -y vagrant
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y vagrant
     vagrant plugin install vagrant-libvirt
 
 ## Bootstrap Ansible
@@ -58,17 +58,17 @@ Install Vagrant:
 Install Ansible (see
 <https://software.opensuse.org/download/package?package=ansible&project=home%3Aalvistack>):
 
-    echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
-    curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt update
-    apt install -y ansible python3-ansible-lint python3-docker python3-netaddr python3-vagrant
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y ansible ansible-lint python3-docker python3-netaddr python3-vagrant
 
 Install Molecule:
 
-    echo "deb http://download.opensuse.org/repositories/home:/alvistack/xUbuntu_22.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
-    curl -fsSL https://download.opensuse.org/repositories/home:alvistack/xUbuntu_22.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
-    apt update
-    apt install -y python3-molecule python3-molecule-docker python3-molecule-vagrant
+    echo "deb http://downloadcontent.opensuse.org/repositories/home:/alvistack/xUbuntu_24.04/ /" | tee /etc/apt/sources.list.d/home:alvistack.list
+    curl -fsSL https://downloadcontent.opensuse.org/repositories/home:alvistack/xUbuntu_24.04/Release.key | gpg --dearmor | tee /etc/apt/trusted.gpg.d/home_alvistack.gpg > /dev/null
+    apt-get update
+    apt-get install -y python3-molecule python3-molecule-plugins
 
 GIT clone Ansible Collection for Kubernetes
 (<https://github.com/alvistack/ansible-collection-kubernetes>):
@@ -88,44 +88,40 @@ Deploy kubernetes:
 
     cd /opt/ansible-collection-kubernetes
     export _MOLECULE_INSTANCE_NAME="$(pwgen -1AB 12)"
-    molecule converge -s ubuntu-22.04-libvirt -- -e 'kube_release=1.28'
-    molecule verify -s ubuntu-22.04-libvirt
+    molecule converge -s ubuntu-24.04-libvirt -- -e 'kube_release=1.28'
+    molecule verify -s ubuntu-24.04-libvirt
 
 All instances could be SSH and switch as root with `sudo su -`, e.g.
 
     cd /opt/ansible-collection-kubernetes
-    molecule login -s ubuntu-22.04-libvirt -h $_MOLECULE_INSTANCE_NAME-1
+    molecule login -s ubuntu-24.04-libvirt -h $_MOLECULE_INSTANCE_NAME-1
 
 Check result:
 
     root@kube01:~# kubectl get node
     NAME     STATUS   ROLES           AGE    VERSION
-    kube01   Ready    control-plane   136m   v1.28.1
-    kube02   Ready    control-plane   135m   v1.28.1
-    kube03   Ready    <none>          135m   v1.28.1
+    kube01   Ready    control-plane   179m   v1.28.9
+    kube02   Ready    control-plane   178m   v1.28.9
+    kube03   Ready    <none>          178m   v1.28.9
 
     root@kube01:~# kubectl get pod --all-namespaces
     NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE
-    kube-system   cilium-75twk                     1/1     Running   0          133m
-    kube-system   cilium-k4ddn                     1/1     Running   0          133m
-    kube-system   cilium-l42z4                     1/1     Running   0          133m
-    kube-system   cilium-node-init-84p5z           1/1     Running   0          133m
-    kube-system   cilium-node-init-kskgt           1/1     Running   0          133m
-    kube-system   cilium-node-init-zqr5r           1/1     Running   0          133m
-    kube-system   cilium-operator-75c75bbcd9-9g5p6 1/1     Running   0          133m
-    kube-system   coredns-5d78c9869d-5dsws         1/1     Running   0          114m
-    kube-system   coredns-5d78c9869d-q6j8r         1/1     Running   0          131m
-    kube-system   kube-addon-manager-kube01        1/1     Running   0          133m
-    kube-system   kube-addon-manager-kube02        1/1     Running   0          133m
-    kube-system   kube-apiserver-kube01            1/1     Running   0          137m
-    kube-system   kube-apiserver-kube02            1/1     Running   0          136m
-    kube-system   kube-controller-manager-kube01   1/1     Running   0          137m
-    kube-system   kube-controller-manager-kube02   1/1     Running   0          136m
-    kube-system   kube-proxy-7rk7q                 1/1     Running   0          136m
-    kube-system   kube-proxy-9tjkc                 1/1     Running   0          136m
-    kube-system   kube-proxy-p7947                 1/1     Running   0          135m
-    kube-system   kube-scheduler-kube01            1/1     Running   0          137m
-    kube-system   kube-scheduler-kube02            1/1     Running   0          136m
+    kube-system   coredns-76f75df574-4529k         1/1     Running   1          3h
+    kube-system   coredns-76f75df574-kjr7r         1/1     Running   1          3h
+    kube-system   kube-addon-manager-kube01        1/1     Running   1          177m
+    kube-system   kube-addon-manager-kube02        1/1     Running   1          177m
+    kube-system   kube-apiserver-kube01            1/1     Running   1          3h
+    kube-system   kube-apiserver-kube02            1/1     Running   1          179m
+    kube-system   kube-controller-manager-kube01   1/1     Running   1          3h
+    kube-system   kube-controller-manager-kube02   1/1     Running   1          179m
+    kube-system   kube-flannel-ds-qldcz            1/1     Running   1          177m
+    kube-system   kube-flannel-ds-rlbz6            1/1     Running   0          58m
+    kube-system   kube-flannel-ds-znfxv            1/1     Running   1          177m
+    kube-system   kube-proxy-lh685                 1/1     Running   1          179m
+    kube-system   kube-proxy-q4vm6                 1/1     Running   1          179m
+    kube-system   kube-proxy-wp7g9                 1/1     Running   1          3h
+    kube-system   kube-scheduler-kube01            1/1     Running   1          3h
+    kube-system   kube-scheduler-kube02            1/1     Running   1          179m
 
 ## Run Sonobuoy
 

@@ -1,0 +1,9 @@
+vendor: Whitestack
+name: Whitemist
+version: monsoon
+website_url: https://whitestack.com/products/kubernetes-based-containers-orchestration
+documentation_url: https://docu.whitestack.com/whitemist/hurricane/index.html
+product_logo_url: https://storage.googleapis.com/storage.whitestack.com/marketing/whitestack.svg 
+type: distribution
+description: "WhiteMist is Whitestack's own Kubernetes distribution, geared at accelerating the adoption of containers in Cloud providers, E-commerce providers, Large organizations and Telecom Operators."
+contact_email_address: srojas@whitestack.com

@@ -1,0 +1,47 @@
+name: verify-conformance
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 * * * *'
+
+# NOTE: docs available at
+#       https://github.com/kubernetes-sigs/verify-conformance/blob/main/docs/maintainance.md#deployment
+
+# TODO(BobyMCbobs): auto update image, but don't use latest tag
+
+jobs:
+  verify-conformance:
+    if: ${{ github.repository == 'cncf/k8s-conformance' }}
+    env:
+      IMAGE: gcr.io/k8s-staging-apisnoop/verify-conformance:v20240827-2024-08-14-1030-10-geb491d2@sha256:2e72da246c6701d6ee7605b59f688849bb0d2171d208a8469d6ec8258ac9fc7a
+    runs-on: ubuntu-latest
+    steps:
+      - name: write-config
+        env:
+          GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          GH_APP_ID: ${{ secrets.GH_APP_ID }}
+          GH_APP_HMAC: ${{ secrets.GH_APP_HMAC }}
+        run: |
+          mkdir -p ./tmp/
+          echo '${{ env.GH_APP_PRIVATE_KEY }}' | base64 -d > ./tmp/github-app-private-key
+          echo '${{ env.GH_APP_HMAC }}' > ./tmp/hmac
+      - name: verify-conformance
+        env:
+          GH_APP_ID: ${{ secrets.GH_APP_ID }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -x
+          docker run --rm \
+            -v "$PWD:$PWD:ro" \
+            --workdir "$PWD" \
+            "${{ env.IMAGE }}" \
+              --github-endpoint=https://api.github.com \
+              --dry-run=false \
+              --github-app-id="${{ env.GH_APP_ID }}" \
+              --github-app-private-key-path="$PWD/tmp/github-app-private-key" \
+              --hmac-secret-file=$PWD/tmp/hmac \
+              --repo="$REPO"
+      - name: cleanup
+        if: ${{ always() }}
+        run: |
+          rm -rf ./tmp/

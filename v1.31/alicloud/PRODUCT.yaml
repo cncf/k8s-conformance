@@ -1,0 +1,9 @@
+vendor: Alibaba Cloud
+name: Alibaba Cloud Container Service for Kubernetes
+version: v1.31.0
+website_url: https://www.aliyun.com/product/kubernetes
+documentation_url: https://help.aliyun.com/zh/ack/ack-managed-and-ack-dedicated/product-overview/what-is-ack
+product_logo_url: https://img.alicdn.com/imgextra/i2/O1CN01NI8uTF1qxRgoTfCsv_!!6000000005562-55-tps-200-200.svg
+type: platform
+description: Alibaba Cloud Container Service for Kubernetes (ACK) is a fully-managed service compatible with Kubernetes to help users focus on their applications rather than managing container infrastructure.
+contact_email_address: gujiu.fsd@alibaba-inc.com

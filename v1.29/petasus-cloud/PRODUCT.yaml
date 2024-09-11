@@ -1,0 +1,10 @@
+vendor: SK Telecom
+name: PetasusCloud
+version: v1.0.0
+website_url: http://petasuscloud.sktenterprise.com/
+repo_url: https://github.com/edgestack
+documentation_url: http://petasuscloud.sktenterprise.com/resources/
+product_logo_url: http://petasuscloud.sktenterprise.com/images/PetasusCloud_logo.svg
+type: distribution
+description: "PetasusCloud is a high-performance AI Cloud Platform Solution that offers efficient GPU management (including clustering, partitioning, and virtualization), cloud-native virtual resource management (VMs, containers), and high-performance virtual networks. It also features a user-friendly GUI for operators and developers, enabling self-service virtual resource management."
+contact_email_address: petasuscloud-support@sktelecom.com

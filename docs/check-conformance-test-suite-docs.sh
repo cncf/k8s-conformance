@@ -60,18 +60,20 @@ function build_deps() {
   sudo apt-get update
   sudo apt-get install -y gcc
   cd "${KUBE_ROOT}"
-  ./hack/make-rules/build.sh vendor/github.com/onsi/ginkgo/ginkgo test/e2e/e2e.test
+  DBG=1 hack/make-rules/build.sh vendor/github.com/onsi/ginkgo/v2/ginkgo test/e2e/e2e.test
 }
 
 function build_release_documentation() {
   cd "${KUBE_ROOT}"
-  ./_output/bin/ginkgo --dry-run=true --focus='[Conformance]' ./_output/bin/e2e.test -- --spec-dump "${KUBE_ROOT}/_output/specsummaries.json" > /dev/null
+  test/conformance/gen-specsummaries.sh
 
   DOC_VERSION="$(echo "$STABLE_VERSION" | awk -F '.' '{print $1 "." $2}' | sed 's/v//')"
   go run ./test/conformance/walk.go --version="$DOC_VERSION" \
+                                  --source "${KUBE_ROOT}" \
                                   --url https://github.com/kubernetes/kubernetes/tree/release-"${DOC_VERSION}"/ \
                                   --docs ./_output/specsummaries.json > ./_output/KubeConformance-"${DOC_VERSION}".md
-  sed "s|tree/release-${DOC_VERSION}.*/test/e2e|tree/release-${DOC_VERSION}/test/e2e|g" ./_output/KubeConformance-"${DOC_VERSION}".md > "${GITHUB_WORKSPACE}"/docs/KubeConformance-"${DOC_VERSION}".md
+  cp ./_output/KubeConformance-"${DOC_VERSION}".md "${GITHUB_WORKSPACE}"/docs/KubeConformance-"${DOC_VERSION}".md
+
   echo "${RELEASE_VERSION}" > /tmp/release-version
   echo "Conformance test suite documention for $(< /tmp/release-version) has been created"
 }

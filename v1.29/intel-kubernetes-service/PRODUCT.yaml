@@ -1,0 +1,9 @@
+vendor: Intel
+name: Intel Kubernetes Service
+version: v1.0
+website_url: https://console.cloud.intel.com/
+documentation_url: https://console.cloud.intel.com/docs/guides/k8s_guide.html
+type: hosted platform
+description: Intel Kubernetes service a fully managed container service that helps customers run GPU-Accelerated Kubernetes workloads at scale using Intel Max GPU's and Intel Habana Gaudi  
+contact_email_address: sachin.ashtikar@intel.com 
+
