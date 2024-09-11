@@ -1,0 +1,9 @@
+vendor: Chislitel Lab
+name: Shturval
+version: v2.6.1
+website_url: https://shturval.tech/
+documentation_url: https://docs.shturval.tech/
+product_logo_url: https://public.shturval.tech/logo/colored-with-name.svg
+type: distribution
+description: The Shturval platform is engineered for complex air-gapped Enterprise environments with the highest security and automation requirements.
+contact_email_address: platform@shturval.tech
