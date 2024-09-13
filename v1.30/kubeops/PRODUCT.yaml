@@ -1,0 +1,9 @@
+vendor: KubeOps
+name: KubeOps
+version: 1.6.0_Beta-1
+website_url: https://kubeops.net/
+documentation_url: https://kubeops.net/docs/
+product_logo_url: https://kubeops.net/images/template/KubeOps.svg
+type: Certified Kubernetes - Installer
+description: KubeOps Platform involves all the activities required to run, manage and maintain Kubernetes clusters in production environments, including our best practices, self-deployed tools, and strategies.
+contact_email_address: info@kubeops.net
