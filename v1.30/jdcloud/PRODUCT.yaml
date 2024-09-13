@@ -1,0 +1,9 @@
+vendor: JD Cloud
+name: JCS for Kubernetes
+version: v1.28.2
+website_url: https://www.jdcloud.com/en/products/jcs-for-kubernetes
+documentation_url: https://docs.jdcloud.com/en/jcs-for-kubernetes/product-overview
+product_logo_url: https://img1.jcloudcs.com/portal/header/jdcloud-logo-2021.svg
+type: hosted
+description: By adopting fully-hosted management node, JCS for Kubernetes offers simple, easy-to-use, high-reliable and powerful container management service to users. Compatible with Kubernetes API, integrating network, storage and other JD Cloud plug-ins.
+contact_email_address: yangyefei@jd.com
