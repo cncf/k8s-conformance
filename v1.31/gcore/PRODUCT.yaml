@@ -1,0 +1,9 @@
+vendor: G-Core Labs S.A.
+name: Gcore Managed Kubernetes
+version: v1.31.1
+website_url: https://gcore.com/cloud/managed-kubernetes
+documentation_url: https://gcore.com/docs/cloud/kubernetes/about-gcore-kubernetes
+product_logo_url: https://gcore.com/assets/images/mkaas/gcore.svg
+type: hosted
+description: Gcore Managed Kubernetes is a service that lets you deploy Kubernetes clusters without the complexities of handling the control plane and containerized infrastructure.
+contact_email_address: vsevolod.vayner@gcore.com
