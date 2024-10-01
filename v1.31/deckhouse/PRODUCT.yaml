@@ -1,0 +1,10 @@
+vendor: Flant
+name: Deckhouse
+version: v1.65.0
+website_url: https://deckhouse.io/
+repo_url: https://github.com/deckhouse/deckhouse
+documentation_url: https://deckhouse.io/documentation/v1/
+product_logo_url: https://deckhouse.io/images/logos/deckhouse-platform.svg
+type: distribution
+description: 'Deckhouse is a comprehensive product ecosystem designed to securely manage the lifecycle of Kubernetes clusters on any infrastructure while reducing the time to set up a development environment by up to 15x, delivering the highest SLA of 99.99%, and automating up to 80% of activities that previously required manual operator intervention.'
+contact_email_address: konstantin.aksenov@flant.com
