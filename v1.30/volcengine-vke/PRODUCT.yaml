@@ -1,0 +1,9 @@
+vendor: Volcano Engine
+name: Volcengine Kubernetes Engine
+version: v1.30.4-vke.1-beta.1
+website_url: https://www.volcengine.com/product/vke
+documentation_url: https://www.volcengine.com/docs/6460/70611
+product_logo_url: https://portal.volccdn.com/obj/volcfe/logo/appbar_logo_dark.2.svg
+type: container platform
+description: 'Volcengine Kubernetes Engine(VKE) is a Kubernetes-based service that provides high-performance container cluster management. By deeply integrating the new generation of cloud-native technologies, VKE ensures high efficiency for enterprises through running containerized applications on the cloud'
+contact_email_address: huangyuting.huangyt@bytedance.com
