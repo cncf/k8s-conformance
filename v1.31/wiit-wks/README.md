@@ -1,6 +1,6 @@
 To create the cluster:
 
-We take full responsibility for creating, updating, and managing your Kubernetes clusters. Once the cluster is set up, we provide you with a kubeconfig file that grants you secure access to the cluster.
+We take full responsibility for creating, updating, and managing your Kubernetes clusters. Once the cluster is set up, we provide you with a kubeconfig file that grants you secure access to the cluster. 
 
 Please send an e-mail to sales-staff.de@wiit.cloud to create a Kubernetes cluster.
 
