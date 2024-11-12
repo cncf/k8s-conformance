@@ -1,0 +1,11 @@
+vendor: Oracle
+name: Oracle Cloud Native Environment
+version: 2.0
+website_url: https://www.oracle.com/linux/cloudnative/
+repo_url: https://github.com/oracle-cne/ocne
+documentation_url: https://docs.oracle.com/en/operating-systems/olcne/
+product_logo_url: https://opensource.oracle.com/docs/Oracle-Linux-Logo.svg
+type: distribution
+description: 'Release 2.0 of Oracle Cloud Native Environment provides a new way of creating and managing Kubernetes clusters, compared to previous releases. 
+Oracle Cloud Native Environment includes a CLI that can manage the life cycle of Kubernetes clusters, using OSTree based container images. The container image includes both the host Oracle Linux OS, and the Kubernetes software distribution. The image is deployed to hosts or Virtual Machines (VMs) to create nodes in a Kubernetes cluster.'
+contact_email_address: simon.coter@oracle.com 
