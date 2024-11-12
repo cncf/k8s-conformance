@@ -1,0 +1,9 @@
+vendor: Wiit AG
+name: WKS - Wiit Kubernetes Service
+version: v1.31.1
+website_url: https://www.wiit.cloud/en/platform/cloud-technology/kubernetes/#jump-k8s
+documentation_url: https://docs.wiit-cloud.io/
+product_logo_url: https://raw.githubusercontent.com/wiit-cloud/docs/main/_includes/LogoWiit2024.svg
+type: hosted platform
+description: 'The reliable container platform managed by WIIT.​'
+contact_email_address: sales-staff.de@wiit.cloud
