@@ -1,0 +1,10 @@
+vendor: SK Telecom
+name: Petasus KaaS
+version: v1.0.0
+website_url: http://petasuscloud.sktenterprise.com/
+repo_url: https://github.com/edgestack
+documentation_url: http://petasuscloud.sktenterprise.com/resources/
+product_logo_url: http://petasuscloud.sktenterprise.com/images/PetasusCloud_logo.svg
+type: hosted
+description: "Petasus KaaS (Kubernetes as a Service) from PetasusCloud enables the deployment and management of Kubernetes on virtual machines, providing a high-performance network for seamless and efficient container orchestration. This service allows users to easily manage and deploy cloud-native applications while benefiting from flexible scalability and robust performance."
+contact_email_address: petasuscloud-support@sktelecom.com
