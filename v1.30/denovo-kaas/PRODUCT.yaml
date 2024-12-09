@@ -1,0 +1,9 @@
+vendor: DE NOVO LLC
+name: Kubernetes as a Service (KaaS)
+version: v1.0
+website_url: https://denovo.ua/en/kaas
+documentation_url: https://doc.cloud.de-novo.biz/%D0%A5%D0%BC%D0%B0%D1%80%D0%B0%20De%20Novo%20TS-105%20-%20%D0%9A%D0%B5%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D1%86%D1%82%D0%B2%D0%BE%20%D0%B0%D0%B4%D0%BC%D1%96%D0%BD%D1%96%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0%20-%205%20-%20Cloud%20for%20Developers%20and%20AI-ML.pdf
+product_logo_url: https://denovo.ua/images/denovo-logo.svg
+type: hosted platform
+description: "De Novo's Kubernetes as a Service (KaaS) is a fully-managed K8s container orchestration service; Deploy, Manage, and Scale containerized environments in minutes with KaaS!"
+contact_email_address : h-cloud-support@de-novo.biz
