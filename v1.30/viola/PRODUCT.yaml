@@ -1,0 +1,9 @@
+vendor: Okestro
+name: VIOLA
+version: v3.0.2
+website_url: https://www.okestro.com/product/viola.php
+documentation_url: https://www.okestro.com/product/viola.php
+product_logo_url: https://okekr-my.sharepoint.com/:u:/g/personal/si_han2_okekr_onmicrosoft_com/Ed3Q5vhRnPBPht8Sen8Ure0B26yfEM6qkpH6Bwt4nvxnAA?e=dN9rn1
+type: hosted platform
+description: VIOLA is a managed Kubernetes service that allows you to easily deploy a Kubernetes cluster in Okestro.
+contact_email_address: si.han2@okestro.com
