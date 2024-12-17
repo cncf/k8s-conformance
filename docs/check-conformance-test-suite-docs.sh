@@ -12,7 +12,7 @@ echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
 function init_settings() {
   TEST_SUITE_DOCUMENT="unchecked"
 
-  STABLE_VERSION="$(curl -s https://dl.k8s.io/release/stable.txt)"
+  STABLE_VERSION="$(curl -sSL https://dl.k8s.io/release/stable.txt)"
   echo "STABLE_VERSION: $STABLE_VERSION"
   
   RELEASE_VERSION="$(echo "$STABLE_VERSION" | awk -F '.' '{print $1 "." $2}').0"
