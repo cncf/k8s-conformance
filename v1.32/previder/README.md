@@ -10,7 +10,7 @@
    - Any type
    - High available control plane off
    - At least medium worker node size
-   - Any number of worker nodes
+   - At least 2 worker nodes
 2. Choose a cluster name e.g. "Conformance 1.32"
 2. Disable the automatic updates option and select Kubernetes version v1.32.x.
 2. Choose Calico as pre-installed CNI because Cilium fails to pass the conformance tests.([Github issue](https://github.com/cilium/cilium/issues/9207))
