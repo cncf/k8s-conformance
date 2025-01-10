@@ -1,0 +1,8 @@
+vendor: ARDC
+name: Nectar Research Cloud Magnum Service
+version: v1.4
+website_url: https://dashboard.rc.nectar.org.au/
+documentation_url: https://tutorials.rc.nectar.org.au/kubernetes/
+type: hosted platform
+description: "Get started with Kubernetes easily with Nectar Research Cloud Magnum Service."
+contact_email_address: support@ehelp.edu.au

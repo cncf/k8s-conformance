@@ -1,0 +1,10 @@
+vendor: NIA
+name: K-PaaS Container-Platform
+version: v1.5.2
+website_url: https://www.k-paas.or.kr/eng/
+repo_url: https://github.com/K-PaaS
+documentation_url: https://www.k-paas.or.kr/eng/intro/containerPlatformKubespray
+product_logo_url: https://www.k-paas.or.kr/eng/resources/img/k-paas.ai
+type: distribution
+description: 'The K-PaaS Container Platform provides an independent Kubernetes environment, and developers can easily deploy Kubernetes clusters to build and manage the modern applications anywhere.'
+contact_email_address : mctlmk@gmail.com

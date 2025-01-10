@@ -1,0 +1,10 @@
+vendor: Inspur Cloud Creation
+name: Cloud Naive Platform for AMD64
+version: 6.3.0
+repo_url:
+website_url: https://cloud.inspur.com/product/
+documentation_url: https://console1.cloud.inspur.com/document/cks/index.html
+product_logo_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Inspur.svg
+type: hosted
+description: Cloud Naive Platform for AMD64, as a key technology of the Inspur distributed cloud platform ICP, provides a standardized, highly reliable, and highly elastic enterprise level container Kubernetes operating environment for container applications. It can shield heterogeneous infrastructure differences, support multi cluster mixed management, achieve unified resource supply across IaaS resources, reduce basic resource consumption, achieve optimal resource allocation, and ensure continuity of service capabilities.
+contact_email_address: tangxiaodong@inspur.com

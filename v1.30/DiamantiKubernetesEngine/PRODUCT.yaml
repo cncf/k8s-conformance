@@ -1,0 +1,10 @@
+vendor: Diamanti Inc
+name: DKE - Diamanti Kubernetes Engine
+version: v4.0.0
+website_url: https://diamanti.com
+documentation_url: https://docs.diamanti.com
+product_logo_url: https://diamanti.com/wp-content/uploads/2023/05/diamanti-logo-pms375.svg
+type: distribution
+description: "Diamanti Kubernetes Engine is a pre-validated and pre-packaged Kubernetes distribution complete with integrated CSI and CNI plugins for modern, distributed applications across the hybrid cloud"
+contact_email_address: alex@diamanti.com
+

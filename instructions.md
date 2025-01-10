@@ -9,15 +9,17 @@ suite.
 
 ## Running
 
-The standard tool for running these tests is
-[Sonobuoy](https://github.com/vmware-tanzu/sonobuoy).  Sonobuoy is
-regularly built and kept up to date to execute against all
+The standard tools for running these tests are
+[Sonobuoy](https://github.com/vmware-tanzu/sonobuoy) and [Hydrophone](https://github.com/kubernetes-sigs/hydrophone)
+
+### Sonobuoy
+Sonobuoy is regularly built and kept up to date to execute against all
 currently supported versions of kubernetes.
 
 Download a [binary release](https://github.com/vmware-tanzu/sonobuoy/releases) of the CLI, or build it yourself by running:
 
 ```
-go get -u -v github.com/vmware-tanzu/sonobuoy
+go install github.com/vmware-tanzu/sonobuoy@latest
 ```
 
 Deploy a Sonobuoy pod to your cluster with:
@@ -66,6 +68,9 @@ To clean up Kubernetes objects created by Sonobuoy, run:
 sonobuoy delete
 ```
 
+### Hydrophone
+Refer to the [hydrophone docs](https://github.com/kubernetes-sigs/hydrophone/blob/main/README.md) for detailed instructions
+
 ## Uploading
 
 Prepare a PR to
@@ -80,14 +85,13 @@ Description: `Conformance results for vX.Y/$dir`
 
 ### Contents of the PR
 
-For simplicity you can submit the tarball or extract the relevant information from the tarball to compose your submission.
+Extract the relevant information from the tarball to compose your submission.
 
 If submitting test results for multiple versions, submit a PR for each product, ie. one PR for vX.Y results and a second PR for vX.Z
 
 ```
 vX.Y/$dir/README.md: A script or human-readable description of how to reproduce
 your results.
-vX.Y/$dir/sonobuoy.tar.gz: Raw output from sonobuoy. (optional)
 vX.Y/$dir/e2e.log: Test log output (from Sonobuoy).
 vX.Y/$dir/junit_01.xml: Machine-readable test log (from Sonobuoy).
 vX.Y/$dir/PRODUCT.yaml: See below.
@@ -143,8 +147,8 @@ contact_email_address: yoyodyne@turbo-encabulator.org
 | 11  | all required conformance tests in the junit_01.xml are present                   | it appears that some tests are missing from the product submission                                                                                                                                                                                | not-verifiable | tests-verified-+KubernetesReleaseVersion                                                       |                                                                                                                                    |
 | 12  | all tests pass in e2e.log                                                        | it appears that some tests failed in the product submission                                                                                                                                                                                       | not-verifiable | no-failed-tests-+KubernetesReleaseVersion                                                      |                                                                                                                                    |
 | 13  | there is only one commit                                                         | it appears that there is not exactly one commit. Please rebase and squash with `git rebase -i HEAD` (https://git-scm.com/docs/git-rebase)                                                                                                         | not-verifiable |                                                                                                | squash your commits and rebase                                                                                                     |
-| 14  | only required files are in submission                                            | it appears that there are N non-required file(s) included in the submission: FILE1, FILE2, FILE3                                                                                                                                                                      |                |                                                                                                | remove listed files from the submission commit                                                                                     |
-|     |                                                                                  |                                                                                                                                                                                                                                                   |                |                                                                                                |                                                                                                                                    |
+| 14  | only required files are in submission                                            | it appears that there are N non-required file(s) included in the submission: FILE1, FILE2, FILE3                                                                                                                                                  | not-verifiable |                                                                                                | remove listed files from the submission commit                                                                                     |
+| 15  | the type field in PRODUCT.yaml is valid                                          | it appears that the type field does not match either "distribution", "hosted platform" or "installer"                                                                                                                                             | not-verifiable |                                                                                                | set the type field to a valid value                                                                                                |
 |     | All requirements ($NUMBER) have passed for the submission!                       |                                                                                                                                                                                                                                                   | not-verifiable | - release-+KubernetesReleaseVersion, release-documents-checked, conformance-product-submission | The step will add the release+version & release-documents-checked labels once all $NUMBER check have passed                        |
 
 ## Amendment for Private Review
@@ -166,7 +170,7 @@ Combining the steps provided here, the process looks like this:
 $ k8s_version=vX.Y
 $ prod_name=example
 
-$ go get -u -v github.com/vmware-tanzu/sonobuoy
+$ go install github.com/vmware-tanzu/sonobuoy@latest
 
 $ sonobuoy run --mode=certified-conformance --wait
 $ outfile=$(sonobuoy retrieve)
