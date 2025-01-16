@@ -51,7 +51,7 @@ Refer to [SIG-Architecture: Conformance Testing in Kubernetes](https://github.co
 
 ### [Verify conformance bot](https://github.com/cncf-infra/verify-conformance)
 
-The bot currently checks 14 [scenarios](https://github.com/cncf-infra/verify-conformance/blob/main/kodata/features/verify-conformance-release.feature) and updates the PR with the results.
+The bot checks several [scenarios](https://github.com/cncf-infra/verify-conformance/blob/main/kodata/features/verify-conformance.feature) and updates the PR with the results.
 This automation provides timely feedback and reduces the time required by the CNCF to confirm that the PR meets all policy requirements.
 
 ### [APIsnoop](https://apisnoop.cncf.io/about)

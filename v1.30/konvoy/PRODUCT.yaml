@@ -1,0 +1,9 @@
+vendor: Nutanix
+name: NKP
+version: v2.13.0-dev.2
+website_url: https://www.nutanix.com/products/kubernetes-management-platform
+documentation_url: https://portal.nutanix.com/page/documents/list?type=software&filterKey=software&filterVal=Nutanix%20Kubernetes%20Platform
+product_logo_url: https://landscape.cncf.io/logos/e431a53fad410e45d90fce820e01c56269b184f24b5b97b190ba65ce7fbfd51a.svg
+type: distribution
+description: 'NKP includes a standalone distribution of Kubernetes that includes a native Kubernetes cluster pre-packaged for deployment with a complement of best-in-class add-on services enabled by default and ready for immediate use.'
+contact_email_address: nkp@nutanix.com
