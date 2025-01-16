@@ -1,0 +1,9 @@
+vendor: Digital China Data Cloud Technology Co., Ltd.
+name: DigitalChina DataCloud PaaS
+version: V2024.12
+website_url: https://www.navimentum.com
+documentation_url: https://www.navimentum.com/nv/product/detail/1258262267811549186
+product_logo_url: https://landscape.cncf.io/logos/navimentum-kcsp.svg
+type: distribution
+description: 'K8M is a production level PaaS platform that can be used for enterprise and internet application deployment and management.'
+contact_email_address: zhaoqg@digitalchina.com
