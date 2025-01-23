@@ -1,0 +1,10 @@
+vendor: QBO LLC
+name: qbo
+version: api:stage.cf6cb385
+website_url: https://www.qbo.io
+repo_url: https://github.com/alexeadem/qbo-docs
+documentation_url: https://docs.qbo.io
+product_logo_url: https://raw.githubusercontent.com/alexeadem/qbo-docs/main/docs/img/qbo_250x150.svg
+type: distribution
+description: "QBO Kubernetes Engine (QKE) redefines the concept of a Kubernetes node as a container using Kubernetes-in-Docker technology. Streamline the deployment and management of Kubernetes clusters in seconds with QKE and unlock bare-metal performance without virtualization overhead." 
+contact_email_address: info@qbo.io
