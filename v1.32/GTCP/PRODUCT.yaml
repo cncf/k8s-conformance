@@ -1,0 +1,10 @@
+vendor: GienTech
+name: GienTech Container Cloud Platform (GTCP)
+version: v2.2
+website_url: https://www.gientech.com
+documentation_url: https://www.gientech.com/product/Basic-Runtime-Platform.html
+product_logo_url: https://raw.githubusercontent.com/KevinLiangX/KubeGeinLogo/master/YQ-logo.svg
+type: distribution
+description: ' GienTech Container Cloud Platform (GTCP) provides financial level, high availability, 
+and high security container service platform. GTCP fully follows the conformance with Kubernetes and is flexible to extend more other services with GienTech PAAS products. '
+contact_email_address: hua.liang@gientech.com
