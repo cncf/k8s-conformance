@@ -66,7 +66,8 @@ Throuth the following steps helps to create a GienTech Container Cloud Platform 
    enabled_mount_path: false
    data_dir: /var/lib/etcd
    diskName: 
-   fstype: "ext4"  
+   fstype: "ext4"
+``` 
 - Execute the installation script.
   
    `sh /data/tools/deploy/deploy_k8s.sh`
