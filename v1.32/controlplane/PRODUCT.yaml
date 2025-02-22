@@ -1,0 +1,9 @@
+vendor: Control Plane Corporation
+name: Control Plane Managed Kubernetes
+version: v1.32.1
+website_url: https://controlplane.com
+documentation_url: https://docs.controlplane.com/whatis
+product_logo_url: https://cpln-public-bucket.s3.us-east-1.amazonaws.com/Control_Plane_logo_full_dark.svg
+type: hosted
+description: Control Plane Managed Kubernetes is a service that creates and manages Kubernetes clusters across multiple cloud platforms and on-prem environments
+contact_email_address: support@controlplane.com
