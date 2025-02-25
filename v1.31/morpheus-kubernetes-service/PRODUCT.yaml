@@ -1,0 +1,10 @@
+vendor:  Morpheus Data, LLC
+name: Morpheus Kubernetes Service (MKS)
+version: v1.31.0
+website_url: https://www.morpheusdata.com/
+repo_url:
+documentation_url: https://docs.morpheusdata.com/en/latest/infrastructure/clusters/clusters.html#kubernetes-clusters
+product_logo_url: https://morpheusdata.com/wp-content/uploads/2020/04/morpheus-logo-v2.svg
+type: distribution
+description: Morpheus Kubernetes Services (MKS) is an embedded Kubernetes distribution provisioned and managed via the Morpehus Cloud Management Platform (CMP)
+contact_email_address: martez.reed@hpe.com
