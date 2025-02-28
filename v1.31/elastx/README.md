@@ -32,9 +32,9 @@ tar xvzf sonobuoy_*.tar.gz
 Run the conformance tests:
 
 ```shell
-./sonobuoy run --mode=certified-conformance --wait
+./sonobuoy run --mode=certified-conformance
 outfile=$(./sonobuoy retrieve)
 tar xvzf $outfile
 ```
 
-Check the results in: `plugins/e2e/results/global/{e2e.log,junit_01.xml}`.
+Check the results in: `plugins/e2e/results/global/{e2e.log,junit_01.xml}`..
