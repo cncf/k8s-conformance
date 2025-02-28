@@ -1,0 +1,9 @@
+vendor: ELASTX
+name: ELASTX Private Kubernetes
+version: 1.31.0-elx1
+website_url: https://elastx.se/en/kubernetes/
+documentation_url: https://docs.elastx.cloud/docs/kubernetes/
+product_logo_url: https://landscape.cncf.io/logos/d0fbe1e64b42044b2cc658794915b0d8ce918147fe674c3d550504fa841546e9.svg
+type: hosted
+description: "ELASTX Private Kubernetes is fully managed and runs on top of our OpenStack platform in your own tenant."
+contact_email_address: johan.suurkula@elastx.se
