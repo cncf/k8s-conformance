@@ -32,7 +32,7 @@ tar xvzf sonobuoy_*.tar.gz
 Run the conformance tests:
 
 ```shell
-./sonobuoy run --mode=certified-conformance --plugin-env=e2e.E2E_PARALLEL=true
+./sonobuoy run --mode=certified-conformance
 outfile=$(./sonobuoy retrieve)
 tar xvzf $outfile
 ```
