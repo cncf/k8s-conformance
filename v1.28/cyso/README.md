@@ -1,15 +1,15 @@
-# Conformance tests for Fuga Cloud Enterprise Managed Kubernetes (EMK)
+# Conformance tests for Cyso Managed Kubernetes
 
-## Enterprise Managed Kubernetes (EMK) (based on Kubernetes v1.29)
+## Managed Kubernetes (based on Kubernetes v1.28)
 
-Fuga Cloud's Enterprise Managed Kubernetes (EMK) is a GDPR-compliant solution for managing Kubernetes clusters. It offers self-service orchestration, centralized management, and optional professional services. Create clusters using cloud-native tools, and benefit from high resilience and optimized costs through autoscaling and hibernation. EMK is a robust and reliable solution with a touch of Dutch innovation.
+Cyso's Managed Kubernetes is a GDPR-compliant solution for managing Kubernetes clusters. It offers self-service orchestration, centralized management, and optional professional services. Create clusters using cloud-native tools, and benefit from high resilience and optimized costs through autoscaling and hibernation. Managed Kubernetes is a robust and reliable solution with a touch of Dutch innovation.
 
 ## 1. Create an account
-Create a Fuga Cloud Account on [https://my.fuga.cloud](https://my.fuga.cloud).
+Create a Cyso Cloud Account on [https://my.cyso.cloud](https://my.cyso.cloud).
 
 ## 2. Create Kubernetes Cluster
 
-Login to the Fuga Cloud Dashboard to create a Kubernetes Clusters on OpenStack. To do this navigate to "EMK" in the sidebar or follow this link [https://my.fuga.cloud/managed-kubernetes](https://my.fuga.cloud/managed-kubernetes).
+Login to the Cyso Cloud Dashboard to create Kubernetes Clusters on OpenStack. To do this navigate to "EMK" in the sidebar or follow this link [https://my.cyso.cloud/managed-kubernetes](https://my.cyso.cloud/managed-kubernetes).
 
 In the "Clusters" menu, select the "Create cluster +". A new page appears to create a new Kubernetes cluster.
 - Select the region of your cluster
@@ -89,7 +89,7 @@ Watch Sonobuoy's status with:
 ```sh
 $ sonobuoy status
          PLUGIN     STATUS   RESULT   COUNT                                PROGRESS
-            e2e   complete   passed       1   Passed:388, Failed:  0, Remaining:  0
+            e2e   complete   passed       1   Passed:380, Failed:  0, Remaining:  0
    systemd-logs   complete   passed       6                                        
 
 Sonobuoy has completed. Use `sonobuoy retrieve` to get results.

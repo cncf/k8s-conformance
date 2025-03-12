@@ -1,0 +1,9 @@
+vendor: "Cyso"
+name: "Managed Kubernetes"
+version: 20240429_v1289
+website_url: "https://cyso.cloud/managed-kubernetes/"
+product_logo_url: "https://core.fuga.cloud:8080/59c68dc2d687469ab90a0e0f0688f382:fuga_marketing/cncf_cyso_loga.svg"
+documentation_url: "https://docs.cyso.cloud"
+type: "hosted platform"
+description: "Simplify your cloud-native journey with Managed Kubernetes. Powered by Gardener, deploy, manage, and scale your containerized apps effortlessly on Cyso Cloud and beyond—all GDPR compliant."
+contact_email_address: "info@cyso.cloud"
