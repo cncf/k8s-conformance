@@ -9,7 +9,7 @@
 ## **GUIDE INFO**
 
 ```
-K8S CLUSTER INFO  :  1.30.4
+K8S CLUSTER INFO  :  1.32.2
 NEXUS VERSION     :  3.63.0-01
 SYSETM OS         :  Ubuntu 22.04
 ```
@@ -18,43 +18,47 @@ SYSETM OS         :  Ubuntu 22.04
 
 ## **Upload Repo To Nexus(Docker Proxy)**
 - **cluster docker images list**
-    - cilium/cilium:v1.15.4
-    - cilium/operator:v1.15.4
-    - coredns/coredns:v1.11.1
+    - cilium/cilium:v1.17.2
+    - cilium/operator:v1.17.2
+    - coredns/coredns:v1.11.3
     - cpa/cluster-proportional-autoscaler:v1.8.8
-    - kube-apiserver:v1.30.4
-    - kube-controller-manager:v1.30.4
-    - kube-proxy:v1.30.4
-    - kube-scheduler:v1.30.4
+    - kube-apiserver:v1.32.2
+    - kube-controller-manager:v1.32.2
+    - kube-proxy:v1.32.2
+    - kube-scheduler:v1.32.2
     - nginx 1.25.2-alpine
     - pause:3.9
     - nfs-subdir-external-provisioner:v4.0.2
-    - redis:latest
+    - redis:7.4.2
     - vault:1.14.1
-    - istio/proxyv2:1.19.6
-    - Istio/pilot:1.22.3
-    - mariadb:latest
+    - istio/proxyv2:1.25.0
+    - Istio/pilot:1.25.0
+    - mariadb:11.3.2
     - maxscale:2.5.28
     - busybox:1.28
-    - kafka:0.36.1-kafka-3.5.1
+    - kafka:0.45.0-kafka-3.9.0
+    - kafka-bridge:0.31.1
+    - kaniko-executor:0.45.0
+    - maven-builder:0.45.0
+    - operator:0.45.0
     - keycloak:version-3.0.4
-    - mariadb-keycloak:10.7
-    - oauth2-proxy:v7.4.0
+    - mariadb-keycloak:11.3.2
+    - oauth2-proxy:7.5.1
     - ingress-nginx/controller:v1.11.2
     - ingress-nginx/kube-webhook-certgen:v1.4.3
-    - maestro/cloud-service-api:v1.0.0
-    - maestro/cloud-service-collector:v1.0.0
-    - maestro/maestro-auth-gateway:v1.0.0
-    - maestro/maestro-common-api:v1.0.0
-    - maestro/maestro-event-pusher:v1.0.0
-    - maestro/maestro-host-app:v1.0.0
-    - maestro/maestro-iam-adapter-api:v1.0.0
-    - maestro/maestro-remote-app:v1.0.0
-    - maestro/notification-adapter-api:v1.0.0
-    - maestro/trombone-pipeline-api:v1.0.0
-    - maestro/trombone-remote-app:v1.0.0
-    - maestro/viola-api:v1.0.0
-    - maestro/viola-remote-app:v1.0.0
+    - maestro/cloud-service-api:v3.0.0
+    - maestro/cloud-service-collector:v3.0.0
+    - maestro/maestro-auth-gateway:v3.0.0
+    - maestro/maestro-common-api:v3.0.0
+    - maestro/maestro-event-pusher:v3.0.0
+    - maestro/maestro-host-app:v3.0.0
+    - maestro/maestro-iam-adapter-api:v3.0.0
+    - maestro/maestro-remote-app:v3.0.0
+    - maestro/notification-adapter-api:v3.0.0
+    - maestro/trombone-pipeline-api:v3.0.0
+    - maestro/trombone-remote-app:v3.0.0
+    - maestro/viola-api:v3.0.0
+    - maestro/viola-remote-app:v3.0.0
 <br>
 
 ## **INSTALL & SETTING ANSIBLE**
@@ -72,7 +76,6 @@ cd  viola-paas-install
 [ssh_connection]
 pipelining=True
 ssh_args = -o ControlMaster=auto -o ControlPersist=30m -o ConnectionAttempts=100 -o UserKnownHostsFile=/dev/null
-
 [defaults]
 force_valid_group_names = ignore
 
@@ -81,6 +84,7 @@ gathering = smart
 fact_caching = jsonfile
 fact_caching_connection = /tmp
 fact_caching_timeout = 86400
+timeout = 300
 stdout_callback = default
 display_skipped_hosts = no
 library = ./library
@@ -96,31 +100,30 @@ ignore_patterns = artifacts, credentials
 
 ```
 
-  _     ___        __   ____   ___  _  _     _          _                 
- | |   / _ \      /_ | |___ \ / _ \| || |   | |        | |                
- | | _| (_) |___   | |   __) | | | | || |_  | |__   ___| |_ __   ___ _ __ 
- | |/ /> _ </ __|  | |  |__ <| | | |__   _| | '_ \ / _ \ | '_ \ / _ \ '__|
- |   <| (_) \__ \  | |_ ___) | |_| |  | |   | | | |  __/ | |_) |  __/ |   
- |_|\_\\___/|___/  |_(_)____/ \___(_) |_|   |_| |_|\___|_| .__/ \___|_|   
-                                                         | |              
-                                                         |_|       
+  _     ___        __   ____ ___    ___    _          _                 
+ | |   / _ \      /_ | |___ \__ \  |__ \  | |        | |                
+ | | _| (_) |___   | |   __) | ) |    ) | | |__   ___| |_ __   ___ _ __ 
+ | |/ /> _ </ __|  | |  |__ < / /    / /  | '_ \ / _ \ | '_ \ / _ \ '__|
+ |   <| (_) \__ \  | |_ ___) / /_ _ / /_  | | | |  __/ | |_) |  __/ |   
+ |_|\_\\___/|___/  |_(_)____/____(_)____| |_| |_|\___|_| .__/ \___|_|   
+                                                       | |              
+                                                       |_|                   
 ------------------------------------Notification------------------------------------
 Before working, please check the hostname of all nodes and modify all list.txt in the deploy_server_script folder before proceeding.
 
-Workflow : [0] -> [1] -> [2] -> [---] -> [7]
-------------------------------------------------------------------------------------
 
+Workflow : [0] -> [1] -> [2] -> [---] -> [6]
+------------------------------------------------------------------------------------
 [Select_Num.] [Task_Name] [Target Server]
 0. OS Install mandatory packages [Deploy Server]
 1. SSH key & resolve.conf [Deploy Server]
-2. /etx/hosts [Deploy Server]
+2. /etc/hosts [Deploy Server]
 3. Haproxy.cfg [Deploy Server]
 4. Set conatinerd & Configure Nexus [Deploy Server]
-5. Basic configuragion for K8s Node [K8s All Node]
-6. Kubespray [Deploy Server]
-7. ansible, istio, nginx [Deploy Server]
+5. Kubespray [Deploy Server]
+6. istio,ingress-nginx [Deploy Server]
 
-Input the task number you want [0 - 7]:
+Input the task number you want [0 - 6]:
 ```
 
 * 00_deploy_task.sh - Step 4
@@ -417,9 +420,9 @@ kubernetes/preinstall : Ensure kubelet expected parameters are set -------------
 ```
 root@cncf-1:~# kubectl get nodes
 NAME     STATUS   ROLES           AGE    VERSION
-cncf-1   Ready    control-plane   3d3h   v1.30.4
-cncf-2   Ready    control-plane   3d3h   v1.30.4
-cncf-3   Ready    control-plane   3d3h   v1.30.4
+cncf-1   Ready    control-plane   3d3h   v1.32.2
+cncf-2   Ready    control-plane   3d3h   v1.32.2
+cncf-3   Ready    control-plane   3d3h   v1.32.2
 
 ```
 
