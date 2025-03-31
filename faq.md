@@ -4,7 +4,7 @@
 
 For [members](https://www.cncf.io/about/members/) of the Cloud Native Computing Foundation, there is no charge for
 certification. There is also no charge for non-profit organizations. For commercial organizations that wish to
-certify but don't want to become a CNCF member, the annual fee is the same as [joining](https://www.cncf.io/about/join/) the CNCF and The Linux Foundation.
+certify but don't want to become a CNCF member, the annual fee is the same as [joining](https://www.cncf.io/about/join/) CNCF and the Linux Foundation.
 
 ## What about community distributions?
 
