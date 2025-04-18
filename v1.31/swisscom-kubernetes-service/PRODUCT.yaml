@@ -1,0 +1,9 @@
+vendor: Swisscom
+name: Swisscom Kubernetes Service
+version: v1.0.0
+website_url: https://www.swisscom.ch/en/business/enterprise/offer/cloud/cloudnative/container-services.html
+documentation_url: https://www.swisscom.ch/en/business/enterprise/offer/cloud/cloudnative/container-services.html
+product_logo_url: https://brand.swisscom.com/d/z3adnpWykoEe/logo-1/show/eyJpZCI6MTAxNjc2LCJzY29wZSI6ImFzc2V0OnZpZXciLCJ0aW1lc3RhbXAiOiIxNzQ0MzU4MjY1In0:swisscom:WCeu6sd_GkCkD9joamit9vxbNxc01E_ILP3GPrwhHVw
+type: hosted platform
+description: Kubernetes Service is a managed Kubernetes offering in Swisscom’s Private Cloud, based on open-source technology and CNCF tools.
+contact_email_address: marius.munteanu@swisscom.com
