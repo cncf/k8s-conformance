@@ -1,0 +1,9 @@
+vendor: Mirantis
+name: Mirantis Kubernetes Engine
+version: 4.1.0
+website_url: https://www.mirantis.com/software/mirantis-kubernetes-engine/
+documentation_url: https://docs.mirantis.com/mke/
+product_logo_url: https://a.storyblok.com/f/146871/x/7b4973ea83/mirantis-logo-two-color.svg
+type: distribution
+description: Mirantis Kubernetes Engine Kubernetes distribution.
+contact_email_address: vsingh@mirantis.com 
