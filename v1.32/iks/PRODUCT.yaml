@@ -1,6 +1,6 @@
 vendor: IBM
 name: IBM Cloud Kubernetes Service
-version: 1.32.4
+version: 1.32.5
 website_url: https://www.ibm.com/products/kubernetes-service
 documentation_url: https://cloud.ibm.com/docs/containers
 product_logo_url: https://raw.githubusercontent.com/ibm-cloud-docs/containers/master/images/logo-ibm-cloud-kubernetes-service-light.svg
