@@ -1,4 +1,4 @@
-# Conformance tests for Fury Kubernetes cluster
+# Conformance tests for SIGHUP Distribution
 
 ## Cluster Provisioning
 
@@ -210,7 +210,7 @@ ip-10-0-101-102   NotReady   control-plane   2m30s   v1.25.6   10.0.101.102   <n
 
 The cluster should be composed by *(at least)* three worker nodes in `NotReady` status.
 
-## Install Fury Distribution
+## Install SIGHUP Distribution
 
 > Install requirements and run commands in the master node.
 
