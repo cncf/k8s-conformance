@@ -1,0 +1,10 @@
+vendor: Inspur Cloud 
+name: Inspur Container Engine
+version: 6.4.0
+repo_url:
+website_url: https://cloud.inspur.com/product/
+documentation_url: https://console1.cloud.inspur.com/document/cks/index.html
+product_logo_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Inspur.svg
+type: hosted
+description: ICE is an application-oriented container management platform that provides high-performance and scalable kubernetes clusters and supports full lifecycle management of enterprise-level containerized applications; The extended container deeply integrates Docker and service grid technology, and supports microservice governance of functional container applications such as fault self-healing, upgrade rollback, and gray release.
+contact_email_address: yanbingtai@inspur.com
