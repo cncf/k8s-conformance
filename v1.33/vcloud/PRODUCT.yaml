@@ -1,0 +1,9 @@
+vendor: VNETWORK
+name: vCloud Kubernetes Engine
+version: v1.33.2
+website_url: https://www.vnetwork.vn
+documentation_url: https://docs.vnetwork.vn/vcloud/kubernetes
+product_logo_url: https://upload.vnetwork.vn/assets/marketplaces/vcloud.svg
+type: hosted
+description: 'vCloud Kubernetes Engine (VCKE) is a fully-managed Kubernetes platform hosted by VNETWORK, designed for high-availability, secure, and scalable enterprise workloads. It is built on top of internal vCloud infrastructure, with integrated HAProxy, Cilium CNI, and certificate lifecycle automation.'
+contact_email_address: support@vnetwork.vn
