@@ -38,5 +38,5 @@ sonobuoy delete
 - vCloud Kubernetes Engine (VCKE) version: v1.33
 - Kubernetes version: 1.33.2
 - Infrastructure: VNETWORK vCloud
-- Node count: 3
+- Node count: 2 (scalable to 5)
 - Node OS: Ubuntu 22.04
