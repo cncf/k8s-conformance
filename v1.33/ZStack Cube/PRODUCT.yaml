@@ -1,0 +1,9 @@
+vendor: ZStack 
+name: ZStack Cube
+version: v2.14
+website_url: https://www.zstack.io/product/zstack_cube/
+documentation_url: https://www.zstack.io/help/zstack_cube/product_manuals/
+product_logo_url: https://www.zstack.io/assets/images/brand/product_info/product_logo_3.svg
+type: distribution
+description: ZStack Cube is a Cloud-Native application platform based on Kubernetes
+contact_email_address: ling.hu@zstack.io
