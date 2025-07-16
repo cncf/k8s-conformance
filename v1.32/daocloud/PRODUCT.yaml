@@ -1,0 +1,9 @@
+vendor: DaoCloud
+name: DaoCloud Enterprise
+version: v5.0
+website_url: https://docs.daocloud.io/
+documentation_url: https://download.daocloud.io/DaoCloud_Enterprise/DaoCloud_Enterprise
+product_logo_url: https://raw.githubusercontent.com/DaoCloud/DaoCloud-docs/main/docs/en/docs/images/DaoCloud.svg
+type: distribution
+description: 'Daocloud helps you provide a reliable and consistent basic support environment to meet the high SLA requirements of enterprise critical applications.'
+contact_email_address: wen.rui@daocloud.io
