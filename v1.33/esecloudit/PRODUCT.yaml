@@ -1,0 +1,9 @@
+vendor: 'Esecloud'
+name: 'Esecloudit'
+version: '1.0.1'
+website_url: https://www.esecloudit.com/
+documentation_url: 'https://www.esecloudit.com/docs/user-guide/'
+product_logo_url: 'https://www.esecloudit.com/wp-content/tmp/ese.ai'
+type: distribution
+description: 'platform designed to simplify complexity and in a cloud-native environment based on Kubernetes. It maximizes the benefits of Kubernetes adoption for enterprises while minimizing operational costs and risks.''
+contact_email_address: 'chicker94@gmail.com'
