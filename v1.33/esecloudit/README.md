@@ -1,6 +1,6 @@
 # Sonobuoy Installation & Certified Conformance Test Guide
 
-This guide walks you through installing Sonobuoy, running a conformance test, retrieving results, and cleaning up..
+This guide walks you through installing Sonobuoy,   running a conformance test, retrieving results, and cleaning up..
 
 ---
 
