@@ -1,4 +1,4 @@
-# Conformance tests for Fury Kubernetes cluster
+# Conformance tests for SIGHUP Distribution
 
 ## Cluster Provisioning
 
