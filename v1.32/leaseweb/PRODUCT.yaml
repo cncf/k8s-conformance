@@ -1,0 +1,8 @@
+vendor: Leaseweb
+name: Leaseweb Managed Kubernetes
+version: v1.32.5
+website_url: https://www.leaseweb.com/en/products-services/cloud/kubernetes
+documentation_url: https://kb.leaseweb.com/kb/kubernetes/getting-started-with-kubernetes-overview/
+type: hosted platform
+description: 'Leaseweb Managed Kubernetes takes care of the Installation, Monitoring, and Maintenance of the Kubernetes control plane. Leaseweb also manages the underlying equipment and network infrastructure, making Kubernetes easy and efficient.'
+contact_email_address: cncf@leaseweb.com
