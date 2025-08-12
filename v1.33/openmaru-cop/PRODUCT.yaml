@@ -1,0 +1,9 @@
+vendor: 'OPENMARU, Inc.'
+name: 'OPENMARU COP'
+version: '1.0.1.33.0'
+website_url: https://www.openmaru.io/
+documentation_url: 'https://docs.openmaru.io/docs/cop-user-guide/cop-console-user-guide/'
+product_logo_url: 'https://www.openmaru.io/logo/openmaru_cop.svg'
+type: distribution
+description: 'OPENMARU COP(Container Orchestration Platform) is a next-generation application operations platform that simplify complexity and support business innovation in cloud-native environment built on Kubernetes. It maximizes the value of Kubernetes adoption for enterprises while minimizing operational costs.'
+contact_email_address: 'cloudnative@openmaru.io'
