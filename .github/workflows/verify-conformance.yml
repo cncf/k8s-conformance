@@ -13,7 +13,7 @@ jobs:
   verify-conformance:
     if: ${{ github.repository == 'cncf/k8s-conformance' }}
     env:
-      IMAGE: gcr.io/k8s-staging-apisnoop/verify-conformance:v20250828-2024-08-14-1030-31-gcff082f@sha256:f52059dd5a229be1d212d58c56fe9a315ff141ff7d3bc715105943322717dac1
+      IMAGE: gcr.io/k8s-staging-apisnoop/verify-conformance:v20250903-2024-08-14-1030-37-ga185ca4@sha256:4ff88c693cd060bac9052e2837bd8ae5d2cd886e0b46a2fec3ca1cf764e24524
     runs-on: ubuntu-latest
     steps:
       - name: write-config
