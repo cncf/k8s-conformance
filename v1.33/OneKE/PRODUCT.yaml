@@ -1,0 +1,10 @@
+vendor: OpenNebula Systems
+name: OpenNebula Kubernetes Engine
+version: v1.33
+website_url: https://marketplace.opennebula.io/appliance/77ad67d3-018d-4d46-a555-ecac429bfc13
+repo_url: https://github.com/OpenNebula/one-apps/tree/master/appliances/OneKE
+documentation_url: https://github.com/OpenNebula/one-apps/wiki/oneke_quick
+product_logo_url: https://opennebula.io/logo-blue.svg
+type: installer
+description: Virtual Appliance for KVM with preinstalled Kubernetes service available from OpenNebula's Public Marketplace.
+contact_email_address: contact@opennebula.io
