@@ -1,6 +1,6 @@
 vendor: Scaleway
 name: Scaleway Kubernetes Kapsule
-version: v1.33.0
+version: v1.34.0
 website_url: https://www.scaleway.com/en/kubernetes-kapsule/
 documentation_url: https://developers.scaleway.com/en/products/k8s/api/
 product_logo_url: https://scwedicons.s3.fr-par.scw.cloud/Scaleway-main-logo-purple.svg

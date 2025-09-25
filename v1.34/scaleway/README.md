@@ -2,11 +2,11 @@
 
 ## Setup the Scaleway Kubernetes cluster
 
-We'll use the [Scaleway CLI](https://github.com/scaleway/scaleway-cli/) to create the cluster. Please be sure to have at least version `v2.42.0`.
+We'll use the [Scaleway CLI](https://github.com/scaleway/scaleway-cli/) to create the cluster. Please be sure to have at least version `v2.43.0`.
 Once the CLI is configured (typing `scw init` and following the questions), you can type:
 
 ```bash
-scw k8s cluster create cni=cilium name=conformance pools.0.name=default pools.0.size=2 pools.0.node-type=dev1_l version=1.33.0 --wait
+scw k8s cluster create cni=cilium name=conformance pools.0.name=default pools.0.size=2 pools.0.node-type=dev1_l version=1.34.0 --wait
 ```
 
 Once the command returns, install the Kubeconfig by typing:
