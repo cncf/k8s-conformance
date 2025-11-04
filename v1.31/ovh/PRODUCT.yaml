@@ -1,0 +1,9 @@
+vendor: OVHcloud
+name: OVHcloud Managed Kubernetes Service
+version: 1.0
+website_url: https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/
+documentation_url: https://docs.ovh.com/gb/en/kubernetes/
+product_logo_url: https://www.ovh.com/fr/images/logo/logo-ovh-long-baseline-blue.ai
+type: hosted platform
+description: 'Benefit from free HA managed Kubernetes service, by hosting your nodes and services on OVH Public Cloud'
+contact_email_address: platform_group@ml.ovh.net

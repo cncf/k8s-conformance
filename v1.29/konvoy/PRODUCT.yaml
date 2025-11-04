@@ -1,9 +1,9 @@
 vendor: Nutanix
-name: Konvoy
-version: v2.12.0-beta.1
-website_url: https://d2iq.com/products/konvoy
-documentation_url: https://d2iq.com/products/konvoy
-product_logo_url: https://assets.d2iq.com/production/assets/D2iQ-logo.svg
+name: NKP
+version: v2.12.0
+website_url: https://www.nutanix.com/products/kubernetes-management-platform
+documentation_url: https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Kubernetes-Platform-v2_12:Nutanix-Kubernetes-Platform-v2_12
+product_logo_url: https://landscape.cncf.io/logos/e431a53fad410e45d90fce820e01c56269b184f24b5b97b190ba65ce7fbfd51a.svg
 type: distribution
-description: 'Konvoy is a standalone distribution of Kubernetes that includes a native Kubernetes cluster pre-packaged for deployment with a complement of best-in-class add-on services enabled by default and ready for immediate use.'
+description: 'NKP includes a standalone distribution of Kubernetes that includes a native Kubernetes cluster pre-packaged for deployment with a complement of best-in-class add-on services enabled by default and ready for immediate use.'
 contact_email_address: nkp@nutanix.com

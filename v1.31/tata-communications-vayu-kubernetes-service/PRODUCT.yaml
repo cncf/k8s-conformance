@@ -1,0 +1,9 @@
+vendor: Tata Communications Ltd.
+name: Tata Communications Vayu Kubernetes Service
+version: v2.7
+website_url: https://www.tatacommunications.com/solutions/cloud/vayu-cloud-platform-services/vayu-cloud-platform-for-kubernetes-solutions/
+documentation_url: https://www.tatacommunications.com/resourcehub/cloud/ushering-kubernetes-adoption-into-a-new-era
+product_logo_url: https://raw.githubusercontent.com/ParikshitTCL/ProductCollaterals/d649ae00bde354bdb09b514071c7c1c6eb649953/tata-communications-vayu-kubernetes-service/tata-communications-vayu-cloud-logo.svg
+type: hosted
+description: Tata Communications Vayu Kubernetes Service is an enterprise-grade managed service that makes it easy for you to run Kubernetes on Tata Communications Vayu Cloud platform without needing to install and operate your own Kubernetes clusters, for running containerized applications, including stateful and stateless, AI and ML, complex and simple web apps, API, and backend services. Service is available only India for consumption.
+contact_email_address: parikshit.chalke@tatacommunications.com

@@ -1,0 +1,8 @@
+vendor: UpCloud
+name: UpCloud Managed Kubernetes
+version: v1.29.1
+website_url: https://upcloud.com/products/managed-kubernetes
+documentation_url: https://upcloud.com/resources/docs/managed-kubernetes
+type: hosted
+description: "UpCloud Managed Kubernetes automates the deployment, scaling and management of container workloads."
+contact_email_address: cncf@upcloud.com
