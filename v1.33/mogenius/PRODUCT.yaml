@@ -1,0 +1,10 @@
+vendor: mogenius
+name: mogenius Kubernetes platform
+version: v2.5.7
+website_url: https://mogenius.com/platform
+repo_url: 
+documentation_url: https://docs.mogenius.com/
+product_logo_url: https://tinyurl.com/2chhn7hy
+type: distribution
+description: "mogenius combines comprehensive Kubernetes management with developer‑focused platform Services."
+contact_email_address: gerrit@mogenius.com
