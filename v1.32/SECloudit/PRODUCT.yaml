@@ -1,0 +1,9 @@
+vendor: Innogrid
+name: SECloudit
+version: v2.2.0
+website_url: https://www.innogrid.com/secloudit
+documentation_url: https://pms-innogrid.atlassian.net/wiki/spaces/CS/overview
+product_logo_url: https://www.innogrid.com/lib/doc/secloudit_BI.ai
+type: distribution
+description: 'SECloudit is a container application management solution, provides improvement of container environment operational capability and manageability by providing multiple Kubernetes-based cluster management, CI/CD management, and a user-friendly GUI portal.'
+contact_email_address: dev.secloudit@innogrid.com

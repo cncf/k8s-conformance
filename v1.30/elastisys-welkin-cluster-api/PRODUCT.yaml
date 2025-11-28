@@ -1,0 +1,9 @@
+vendor: Elastisys
+name: Welkin based on Cluster API
+version: v0.4.0
+website_url: https://elastisys.io/welkin/
+documentation_url: https://elastisys.io/welkin/
+product_logo_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/welkin.svg
+type: distribution
+description: Welkin is a security-hardened Kubernetes distribution, designed to meet the tough demands on security and compliance of regulated industries.
+contact_email_address: contact@elastisys.com

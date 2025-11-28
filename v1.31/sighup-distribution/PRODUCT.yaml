@@ -1,0 +1,10 @@
+vendor: ReeVo
+name: SIGHUP Distribution
+version: v1.31.0-rc.4
+website_url: https://docs.sighup.io
+repo_url: https://github.com/sighupio/distribution
+documentation_url: https://docs.sighup.io
+product_logo_url: https://raw.githubusercontent.com/sighupio/distribution/refs/heads/main/docs/assets/logo_only.svg
+contact_email_address: samuele.chiocca@reevo.it
+type: distribution
+description: 'SIGHUP Distribution is a battle-tested distribution purely based on upstream Kubernetes. Deploy and manage a stable and production grade Kubernetes Cluster at scale with a comprehensive Cloud Native stack implemented with top notch CNCF components.'

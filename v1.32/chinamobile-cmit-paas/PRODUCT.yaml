@@ -1,0 +1,9 @@
+vendor: China Mobile Information Technology Company Limited
+name: China Mobile CMIT PaaS
+version: V2024.06
+website_url: https://it.10086.cn/services/paas/
+documentation_url: https://renyijun-dev.github.io/PaasIntroduction/demo.html
+product_logo_url: https://github.com/cncf/landscape/blob/master/hosted_logos/china-mobile-cmit.svg
+type: distribution
+description: 'Cmit PaaS platform provide core services such as flexible cluster expansion and contraction, disaster tolerance and DevOps.'
+contact_email_address: chaizhuang@chinamobile.com
