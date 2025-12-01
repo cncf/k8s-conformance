@@ -11,7 +11,7 @@ and create a Kubernetes cluster
 
 - Prepare for Conformance test
     * You can [obtain the kubeconfig file of the cluster and use kubectl to connect to the cluster](https://support.cucloud.cn/document/127/581/900.html?id=900&arcid=2933), and run the kubectl get node command to view the node information of the cluster.
-    * We have sonobuoy need mirror all pushed to the vpc-nmhhht2-registry.cucloud.cn/e2etest, you just need to point the image configuration to vpc-nmhhht2-registry.cucloud.cn/e2etest, for example: vpc-nmhhht2-registry.cucloud.cn/e2etest/sonobuoy:v0.57.3
+    * We have already pushed sonobuoy image to the repository vpc-nmhhht2-registry.cucloud.cn/e2etest, you just need to point the image configuration to vpc-nmhhht2-registry.cucloud.cn/e2etest, for example: vpc-nmhhht2-registry.cucloud.cn/e2etest/sonobuoy:v0.57.3
 
 #### Deploy sonobuoy Conformance test 
 
