@@ -1,0 +1,10 @@
+vendor: Mia-Platform
+name: Magellano
+version: v1.33.0
+website_url: https://mia-platform.eu
+repo_url: https://github.com/mia-platform/distribution
+documentation_url: https://github.com/mia-platform/distribution
+product_logo_url: https://raw.githubusercontent.com/mia-platform/distribution/main/artworks/stacked/color/magellano-stacked-color.svg
+type: distribution
+description: "Magellano is a Kubernetes distribution that adds day two operations capabilities to your Kubernetes cluster."
+contact_email_address : info@mia-platform.eu

@@ -1,0 +1,8 @@
+vendor: Avisi Cloud Services B.V.
+name: AME
+version: v2.27.0
+website_url: https://docs.avisi.cloud
+documentation_url: https://docs.avisi.cloud/docs/product
+type: hosted platform
+description: "AME provides a managed Kubernetes platform that delivers seamless, easy, and secure production-ready cluster management across public, private, and hybrid cloud environments."
+contact_email_address: info@avisi.cloud

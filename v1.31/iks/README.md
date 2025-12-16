@@ -21,7 +21,7 @@ ibmcloud ks cluster create vpc-gen2 --name conformance --version 1.31 --zone ZON
 
 Go to [IBM Cloud catalog](https://cloud.ibm.com/catalog?category=containers#services)
 and select `Kubernetes Service` to create a cluster. From the cluster creation
-UI, select version 1.31.7 and choose the appropriate infrastructure, location, and
+UI, select version 1.31.9 and choose the appropriate infrastructure, location, and
 worker pool configuration. Finally, give the cluster a name, such as `conformance`,
 and select `Create`.
 

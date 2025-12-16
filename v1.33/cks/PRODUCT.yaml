@@ -1,0 +1,8 @@
+vendor: CoreWeave
+name: CoreWeave Kubernetes Service (CKS)
+version: v1beta1
+website_url: https://www.coreweave.com/products/coreweave-kubernetes-service
+documentation_url: https://docs.coreweave.com/docs/products/cks
+type: hosted platform
+description: "CKS is a managed Kubernetes environment purpose-built for building, training, and deploying AI applications."
+contact_email_address: skrutiy@coreweave.com
