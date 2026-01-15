@@ -1,0 +1,10 @@
+vendor: Kubermatic
+name: KubeOne
+version: v1.9.2
+website_url: https://kubeone.io
+repo_url: https://github.com/kubermatic/kubeone
+documentation_url: https://docs.kubermatic.com/kubeone/v1.9/
+product_logo_url: https://raw.githubusercontent.com/kubermatic/kubeone/master/docs/img/kubeone-stacked.svg
+type: installer
+description: "Kubermatic KubeOne automate cluster operations on all your cloud, on-prem, edge, and IoT environments."
+contact_email_address: support@kubermatic.com

@@ -1,0 +1,9 @@
+vendor: JD.com
+name: JDOS
+version: v3.0
+website_url: http://tig.jd.com/en/products/jdos
+documentation_url: http://tig.jd.com/docs/jdos
+product_logo_url: https://landscape.cncf.io/logos/jd-cloud-member.svg
+type: Distribution
+description: "JDOS is Jingdong Datacenter OS for automated management of shared container clusters and containerized applications in a scalable and elastic manner. The key systems include ContainerFS, ContainerDNS and ContainerLB."
+contact_email_address: yangyefei@jd.com

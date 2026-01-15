@@ -1,0 +1,10 @@
+vendor: OpenAtom Foundation
+name: NestOS Kubernetes deployer
+version: v0.3.0
+website_url: https://gitee.com/openeuler/nestos-kubernetes-deployer
+repo_url: https://github.com/openeuler-mirror/nestos-kubernetes-deployer
+documentation_url: https://gitee.com/openeuler/nestos-kubernetes-deployer/tree/master/docs/en
+product_logo_url: https://gitee.com/openeuler/nestos-kubernetes-deployer/blob/master/docs/logo/nkd-logo.svg
+type: installer
+description: NKD (NestOS Kubernetes Deployer) is a solution specially built for deploying and maintaining Kubernetes clusters on NestOS. Its design goal is to provide a convenient cluster operation experience, allowing users to easily complete complex management tasks, thereby improving the efficiency of overall deployment and maintenance.
+contact_email_address: duyiwei7w@163.com
