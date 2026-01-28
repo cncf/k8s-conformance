@@ -1,0 +1,9 @@
+vendor: Dembach Goo Informatik
+name: DG-i Kubernetes Platform
+version: v18.2.0
+website_url: https://www.dg-i.net/hosting/kubernetes/
+documentation_url: https://www.dg-i.net/hosting/kubernetes/
+product_logo_url: https://www.dg-i.net/dg-i_logo_blue_rgb.svg
+type: hosted platform
+description: The DG-i Kubernetes Platform is a curated and production-proven solution for our fully managed service for regulated environments including monitoring, logging and audit-ready operations across the DG-i private cloud, on-premise installations or in a multi-cloud environment.
+contact_email_address: k8s-conformance@dg-i.net
