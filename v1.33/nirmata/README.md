@@ -18,7 +18,7 @@ To reproduce the test results, follow the steps to create a new Kubernetes clust
   - Replace ~/.kube/config, export KUBECONFIG=/wherever/kubeconfig.yaml, or use --kubeconfig.
   - You will need to use a system able to connect to the cluster endpoint.
 
-## Running Conformance Tests
+## For Running Conformance Tests
 
 ```bash
 # Download and install Sonobuoy
