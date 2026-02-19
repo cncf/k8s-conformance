@@ -3,7 +3,7 @@ To reproduce the test results, follow the steps to create a new Kubernetes clust
 - On board your cloud resources to Nirmata using VMware vSphere Host Groups or by creating a cloud provider host group.
 
 - Wait for all hosts to connect.
-- If no cluster type exists for your cloud provider or generic create a cluster type for v1.33.0
+- If no cluster type exists for your cloud provider or generic create a cluster type for v1.33.1
   - Remove any addons.
 - Go to the Clusters panel and click on the Add Cluster button to launch the wizard.
   - Select Install and Manage Kubernetes.
