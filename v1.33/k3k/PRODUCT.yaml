@@ -1,0 +1,10 @@
+vendor: SUSE, LLC
+name: k3k
+version: v0.3.4-rc1
+website_url: https://github.com/rancher/k3k
+repo_url: https://github.com/rancher/k3k
+documentation_url: https://github.com/rancher/k3k/tree/main/docs
+product_logo_url: https://raw.githubusercontent.com/rancher/project-assets/refs/heads/master/logos/k3k/logo-horizontal-positive-k3k.svg 
+type: distribution
+description: Virtual kubernetes cluster 
+contact_email_address: chris.wayne@suse.com

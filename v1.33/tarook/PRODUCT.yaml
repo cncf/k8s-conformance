@@ -1,0 +1,10 @@
+vendor: ALASCA - Verband für betriebsfähige, offene Cloud-Infrastrukturen e.V.
+name: Tarook
+version: v10.1.1
+website_url: https://tarook.cloud/en/
+repo_url: https://github.com/alasca-association/tarook
+documentation_url: https://docs.tarook.cloud/release/v10.1/index.html
+product_logo_url: https://docs.tarook.cloud/release/v10.1/_static/2024-alasca-Tarook-light-blue.svg
+type: distribution
+description: "Holistic life cycle management of Kubernetes clusters on bare metal or OpenStack"
+contact_email_address: hello@alasca.cloud

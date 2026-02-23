@@ -1,0 +1,9 @@
+vendor: NETWAYS Managed Services GmbH
+name: NETWAYS Managed Kubernetes
+version: 1.1
+website_url: https://nws.netways.de/en/managed-kubernetes
+documentation_url: https://docs.nws.netways.de/kubernetes/
+type: hosted
+description: Build, deploy, and scale flexibly with NETWAYS Managed Kubernetes powered by OpenStack.
+contact_email_address: nws@netways.de
+

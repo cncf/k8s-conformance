@@ -6,4 +6,4 @@ documentation_url: https://techdocs.akamai.com/cloud-computing/docs/linode-kuber
 product_logo_url: https://www.linode.com/media/images/logos/diagonal/light/linode-logo_diagonal_light.eps
 type: hosted
 description: "Linode Kubernetes Engine is a fast and simple way to deploy, scale, and manage Kubernetes clusters running on Linode's global infrastructure."
-contact_email_address: "cbond@akamai.com"
+contact_email_address: "dl-lke-team@akamai.com"

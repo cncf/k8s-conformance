@@ -1,0 +1,10 @@
+vendor: e-byte
+name: kubeaver
+version: 1.0.0
+website_url: https://github.com/eb-k8s/kubeaver
+repo_url: https://github.com/eb-k8s/kubeaver
+documentation_url: https://github.com/eb-k8s/kubeaver/tree/main/docs
+product_logo_url: https://github.com/eb-k8s/kubeaver/blob/main/docs/imgs/logo.svg
+type: installer
+description: 'Deploy a highly available Kubernetes cluster in offline environments'
+contact_email_address: lj0701@gmail.com
