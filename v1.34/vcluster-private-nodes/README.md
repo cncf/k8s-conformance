@@ -11,16 +11,7 @@ We executed the test on a minikube instance with docker driver
 minikube start --kubernetes-version 1.34.0 --nodes=2
 ```
 
-## 2. Start vcluster platform
-
-Start vcluster platform using `vcluster version 0.30.0` (latest) using
-the following command:
-
-```bash
-vcluster platform start
-```
-
-## 3. Create the vcluster
+## 2. Create the vcluster
 
 Create a file called `vcluster.yaml` with the following content:
 
@@ -56,12 +47,12 @@ the following command:
 vcluster create vcluster -n vcluster -f vcluster.yaml
 ```
 
-## 4. Add private nodes to vcluster
+## 3. Add private nodes to vcluster
 
 Follow the [private nodes](https://www.vcluster.com/docs/vcluster/deploy/worker-nodes/private-nodes/join) documentation to
 add 2 private nodes to vcluster.
 
-## 5. Run Tests
+## 4. Run Tests
 
 Download a binary release of the CLI, or build it yourself by running:
 
