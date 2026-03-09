@@ -1,0 +1,9 @@
+vendor: Samsung SDS
+name: Samsung Kubernetes Engine (SKE)
+version: v1.34.3
+website_url: https://cloud.samsungsds.com/serviceportal/index.html
+documentation_url: https://cloud.samsungsds.com/serviceportal/services/container/k8sEngine.html
+product_logo_url: https://cloud.samsungsds.com/serviceportal/assets/images/img/logo.svg
+type: hosted
+description: SKE allows you to quickly deploy a production ready Kubernetes cluster in Samsung Cloud Platform (SCP).
+contact_email_address: jmnote.kim@samsung.com
