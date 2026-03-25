@@ -1,0 +1,8 @@
+vendor: Viettel
+name: Viettel Cloud Kubernetes Platform
+version: v1.0.0
+website_url: https://viettelcloud.vn/
+documentation_url: https://docs.viettelcloud.vn/documentation
+type: distribution
+description: 'Viettel Cloud Kubernetes platform provides container management and orchestration for the applications that based on Cloud Native Architecture and run in a container environment.'
+contact_email_address: sdn@viettel.com.vn
