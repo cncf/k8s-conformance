@@ -1,0 +1,9 @@
+vendor: Hewlett Packard Enterprise (HPE)
+name: HPE Kubernetes Service (HKS)
+version: v1.34.6
+website_url: https://www.hpe.com/us/en/morpheus-enterprise-software.html
+documentation_url: https://support.hpe.com/hpesc/public/docDisplay?docId=sd00007510en_us&page=GUID-3159C5BA-04D5-4035-9842-86197618F7D2.html
+product_logo_url: https://design-system.hpe.design/HPE_logo_full-clr_pos_rgb.svg
+type: distribution
+description: "HPE Morpheus Enterprise Software for Kubernetes (HKS) delivers an enterprise-grade Kubernetes platform to provision and manage container workload across your hybrid cloud environments."
+contact_email_address: ajay.bansal@hpe.com
