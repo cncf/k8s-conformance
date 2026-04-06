@@ -1,0 +1,67 @@
+name: Conformance Contact Email Extraction
+
+on:
+  workflow_dispatch:
+    inputs:
+      current_version:
+        description: 'Target Version (e.g., 1.33)'
+        required: true
+        default: '1.33'
+
+jobs:
+  extract-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Process and Filter Data
+        id: collector
+        run: |
+          # 1. Setup Versioning logic
+          V_CURR="${{ github.event.inputs.current_version }}"
+          V_NEXT1=$(echo $V_CURR | awk -F. '{$NF = $NF + 1;} 1' OFS=.)
+          V_NEXT2=$(echo $V_CURR | awk -F. '{$NF = $NF + 2;} 1' OFS=.)
+          
+          echo "Targeting version: v$V_CURR"
+          echo "Excluding companies found in: v$V_NEXT1 and v$V_NEXT2"
+          
+          OUTPUT_FILE="conformance_contacts_v$V_CURR.csv"
+          
+          # Create CSV headers
+          echo "directory,vendor,name,type,contact_email_address" > "$OUTPUT_FILE"
+
+          # 2. Identify companies already in future versions
+          FUTURE_COMPANIES=$(find "k8s-conformance/v$V_NEXT1" "k8s-conformance/v$V_NEXT2" -maxdepth 1 -type d -exec basename {} \; 2>/dev/null || true)
+          
+          # 3. Iterate through the target version
+          TARGET_PATH="k8s-conformance/v$V_CURR"
+          
+          find "$TARGET_PATH" -maxdepth 2 -iname "PRODUCT.yaml" | while read -r file; do
+            COMPANY=$(basename $(dirname "$file"))
+            
+            # Skip if the company directory name exists in our 'future' list
+            if echo "$FUTURE_COMPANIES" | grep -qx "$COMPANY"; then
+              echo "Skipping $COMPANY: already submitted for a newer version."
+              continue
+            fi
+            
+            # Extract fields: vendor, name, type, contact_email_address
+            DATA=$(yq -r '[.vendor, .name, .type, .contact_email_address] | @csv' "$file")
+            
+            echo "\"$COMPANY\",$DATA" >> "$OUTPUT_FILE"
+          done
+          
+          echo "output_path=$OUTPUT_FILE" >> $GITHUB_OUTPUT
+
+      - name: Upload CSV Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: contact-report-v${{ github.event.inputs.current_version }}
+          path: ${{ steps.collector.outputs.output_path }}
+
+      - name: Summary Report
+        run: |
+          echo "### Extraction Complete 📧" >> $GITHUB_STEP_SUMMARY
+          echo "Generated contact list for version **v${{ github.event.inputs.current_version }}**." >> $GITHUB_STEP_SUMMARY
+          echo "Excluded companies already present in the next two subdirectories." >> $GITHUB_STEP_SUMMARY
