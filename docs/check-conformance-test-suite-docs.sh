@@ -46,7 +46,7 @@ function setup_k8s_repo() {
 
 function install_go() {
   cd ${KUBE_ROOT}
-  GO_VERSION=$(grep -A1 "golang: upstream version" build/dependencies.yaml | tail -1 | awk -F ':' '{print $2}' | sed 's/^ *//')
+  GO_VERSION=$(grep -A1 "golang: 1\." build/dependencies.yaml | tail -1 | awk -F ':' '{print $2}' | sed 's/^ *//')
   echo "GO_VERSION: $GO_VERSION"
   if [ "$(/usr/local/go/bin/go version | cut -d' ' -f 3 | sed 's/go1/1/')" != "${GO_VERSION}" ]; then
     curl -L https://dl.google.com/go/go"${GO_VERSION}".linux-amd64.tar.gz \
