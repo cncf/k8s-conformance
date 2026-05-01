@@ -1,0 +1,9 @@
+vendor: Spectro Cloud
+name: Palette
+version: v4.8.21
+website_url: https://spectrocloud.com
+documentation_url: https://docs.spectrocloud.com
+product_logo_url: https://software.spectrocloud.com/logos/palette.svg
+type: distribution
+description: Keep control of your Kubernetes infrastructure stack with Spectro Cloud’s as-a-Service experience for public clouds, private clouds, and bare metal environments
+contact_email_address: vishwanaths@spectrocloud.com
