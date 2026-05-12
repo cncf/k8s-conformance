@@ -1,0 +1,9 @@
+vendor: AGB
+name: AGB Kubernetes 
+version: v1.35.2
+website_url: https://www.agbc.cloud/
+documentation_url: https://docs.agbc.cloud/
+product_logo_url: https://www.agbc.cloud/images/AGB_logo.svg
+type: hosted
+description: >
+  AGB Kubernetes is a managed service that makes it easy for you to run Kubernetes on AGB without needing to install and operate cost effective way to deploy container workloads to a managed own Kubernetes service.
