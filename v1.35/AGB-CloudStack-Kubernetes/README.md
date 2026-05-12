@@ -1,7 +1,7 @@
 # AGB Kubernetes Managed Service
 
 ## Kubernetes Version
-v1.35.2
+v1.35
 
 **Cluster topology:**
 - 3 control plane nodes (HA)
