@@ -9,6 +9,10 @@ on:
 
 # TODO(BobyMCbobs): auto update image, but don't use latest tag
 
+# Authentication uses a GitHub App (GH_APP_ID + GH_APP_PRIVATE_KEY + GH_APP_HMAC);
+# default GITHUB_TOKEN is unused. No checkout step.
+permissions: {}
+
 jobs:
   verify-conformance:
     if: ${{ github.repository == 'cncf/k8s-conformance' }}
