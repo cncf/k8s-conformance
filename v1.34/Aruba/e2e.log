@@ -1,0 +1,898 @@
+  I0520 07:27:16.934063      26 e2e.go:109] Starting e2e run "656243d3-0213-4431-aaee-548d593548fb" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /usr/local/bin
+====================================================
+Random Seed: 1779262035 - will randomize all specs
+
+Will run 424 of 7137 specs
+S•SSSSSSSSSSSS•SSS•SSSSS•SSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSS•S•SSSSSSSS•SS•SSSSSSSSSSSSSSS••SSS•SSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSS•SSSSSSSSS•SS•SSS•SSSSSSSS•SSSSSS•SSSSSSSS•SSSSSSSSSSSS••SSSS•S•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•S•S•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•••SSS•S•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS••SSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•S•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSS•S•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSS•SSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSS•SS•SSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSS•SSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSS•S•SSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSS••SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSS
+------------------------------
+• [FAILED] [3.514 seconds]
+[sig-api-machinery] Watchers [It] should be able to restart watching from the last resource version observed by the previous watch [Conformance] [sig-api-machinery, Conformance]
+k8s.io/kubernetes/test/e2e/apimachinery/watch.go:191
+
+  Timeline >>
+  STEP: Creating a kubernetes client @ 05/20/26 08:05:43.011
+  I0520 08:05:43.011644 26 util.go:454] >>> kubeConfig: /tmp/kubeconfig-4092330408
+  STEP: Building a namespace api object, basename watch @ 05/20/26 08:05:43.012
+  STEP: Waiting for a default service account to be provisioned in namespace @ 05/20/26 08:05:43.05
+  STEP: Waiting for kube-root-ca.crt to be provisioned in namespace @ 05/20/26 08:05:43.055
+  STEP: creating a watch on configmaps @ 05/20/26 08:05:43.061
+  E0520 08:05:43.197274      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:05:44.198030      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:05:45.198214      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  STEP: creating a new configmap @ 05/20/26 08:05:46.065
+  STEP: modifying the configmap once @ 05/20/26 08:05:46.089
+  STEP: closing the watch once it receives two notifications @ 05/20/26 08:05:46.129
+  I0520 08:05:46.129282 26 watch.go:426] Got : ERROR &Status{ListMeta:ListMeta{SelfLink:,ResourceVersion:,Continue:,RemainingItemCount:nil,},Status:Failure,Message:Timeout: Too large resource version: 18342, current: 18339,Reason:Timeout,Details:&StatusDetails{Name:,Group:,Kind:,Causes:[]StatusCause{StatusCause{Type:ResourceVersionTooLarge,Message:Too large resource version,Field:,},},RetryAfterSeconds:1,UID:,},Code:504,}
+  [FAILED] in [It] - k8s.io/kubernetes/test/e2e/apimachinery/watch.go:428 @ 05/20/26 08:05:46.129
+  I0520 08:05:46.130080 26 helper.go:125] Waiting up to 7m0s for all (but 0) nodes to be ready
+  STEP: dump namespace information after failure @ 05/20/26 08:05:46.136
+  STEP: Collecting events from namespace "watch-6904". @ 05/20/26 08:05:46.136
+  STEP: Found 0 events. @ 05/20/26 08:05:46.162
+  I0520 08:05:46.168622 26 resource.go:151] POD  NODE  PHASE  GRACE  CONDITIONS
+  I0520 08:05:46.168671 26 resource.go:161] 
+  I0520 08:05:46.187012 26 dump.go:109] 
+  Logging node info for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:05:46.191507 26 dump.go:114] Node Info: &Node{ObjectMeta:{6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55    f2ae5810-b699-4d4f-a17d-eee05c48edba 16314 0 2026-05-20 07:20:56 +0000 UTC <nil> <nil> map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/instance-type:K8A16 beta.kubernetes.io/os:linux csi.cloud.it/dc:ITBG-1 csi.cloud.it/region:ITBG-Bergamo failure-domain.beta.kubernetes.io/region:RegionOne failure-domain.beta.kubernetes.io/zone:az1 kubernetes.io/arch:amd64 kubernetes.io/hostname:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55 kubernetes.io/os:linux node.kubernetes.io/instance-type:K8A16 topology.kubernetes.io/region:RegionOne topology.kubernetes.io/zone:az1] map[cluster.x-k8s.io/annotations-from-machine: cluster.x-k8s.io/cluster-name:6a0d5ddc0c0acb2ddfd45f7f--cl cluster.x-k8s.io/cluster-namespace:6639fa7d970e9f9277d0fcfe cluster.x-k8s.io/labels-from-machine: cluster.x-k8s.io/machine:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55 cluster.x-k8s.io/owner-kind:MachineSet cluster.x-k8s.io/owner-name:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq csi.volume.kubernetes.io/nodeid:{"csi.cloud.it":"certpool/3b2149c8-53de-46e4-916e-740d956b4830"} node.alpha.kubernetes.io/ttl:0 projectcalico.org/IPv4Address:172.16.188.250/24 projectcalico.org/IPv4IPIPTunnelAddr:192.168.195.128 volumes.kubernetes.io/controller-managed-attach-detach:true] [] [] [{kubelet Update v1 2026-05-20 07:20:56 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{".":{},"f:volumes.kubernetes.io/controller-managed-attach-detach":{}},"f:labels":{".":{},"f:beta.kubernetes.io/arch":{},"f:beta.kubernetes.io/os":{},"f:kubernetes.io/arch":{},"f:kubernetes.io/hostname":{},"f:kubernetes.io/os":{}}}} } {kube-controller-manager Update v1 2026-05-20 07:21:38 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:node.alpha.kubernetes.io/ttl":{}}},"f:spec":{"f:podCIDR":{},"f:podCIDRs":{".":{},"v:\"192.168.1.0/24\"":{}}}} } {manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:cluster.x-k8s.io/annotations-from-machine":{},"f:cluster.x-k8s.io/cluster-name":{},"f:cluster.x-k8s.io/cluster-namespace":{},"f:cluster.x-k8s.io/labels-from-machine":{},"f:cluster.x-k8s.io/machine":{},"f:cluster.x-k8s.io/owner-kind":{},"f:cluster.x-k8s.io/owner-name":{}}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:metadata":{"f:labels":{"f:beta.kubernetes.io/instance-type":{},"f:failure-domain.beta.kubernetes.io/region":{},"f:failure-domain.beta.kubernetes.io/zone":{},"f:node.kubernetes.io/instance-type":{},"f:topology.kubernetes.io/region":{},"f:topology.kubernetes.io/zone":{}}},"f:spec":{"f:providerID":{}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:status":{"f:addresses":{"k:{\"type\":\"InternalIP\"}":{".":{},"f:address":{},"f:type":{}}}}} status} {calico-node Update v1 2026-05-20 07:22:34 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:projectcalico.org/IPv4Address":{},"f:projectcalico.org/IPv4IPIPTunnelAddr":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"NetworkUnavailable\"}":{".":{},"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}}}}} status} {kubelet Update v1 2026-05-20 08:04:08 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:csi.volume.kubernetes.io/nodeid":{}},"f:labels":{"f:csi.cloud.it/dc":{},"f:csi.cloud.it/region":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"DiskPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"MemoryPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"PIDPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"Ready\"}":{"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{}}},"f:images":{}}} status}]},Spec:NodeSpec{PodCIDR:192.168.1.0/24,DoNotUseExternalID:,ProviderID:openstack:///3b2149c8-53de-46e4-916e-740d956b4830,Unschedulable:false,Taints:[]Taint{},ConfigSource:nil,PodCIDRs:[192.168.1.0/24],},Status:NodeStatus{Capacity:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{126712463360 0} {<nil>}  BinarySI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16768667648 0} {<nil>} 16375652Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Allocatable:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{114041216836 0} {<nil>} 114041216836 DecimalSI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16663810048 0} {<nil>} 16273252Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Phase:,Conditions:[]NodeCondition{NodeCondition{Type:NetworkUnavailable,Status:False,LastHeartbeatTime:2026-05-20 07:22:34 +0000 UTC,LastTransitionTime:2026-05-20 07:22:34 +0000 UTC,Reason:CalicoIsUp,Message:Calico is running on this node,},NodeCondition{Type:MemoryPressure,Status:False,LastHeartbeatTime:2026-05-20 08:04:08 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasSufficientMemory,Message:kubelet has sufficient memory available,},NodeCondition{Type:DiskPressure,Status:False,LastHeartbeatTime:2026-05-20 08:04:08 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasNoDiskPressure,Message:kubelet has no disk pressure,},NodeCondition{Type:PIDPressure,Status:False,LastHeartbeatTime:2026-05-20 08:04:08 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasSufficientPID,Message:kubelet has sufficient PID available,},NodeCondition{Type:Ready,Status:True,LastHeartbeatTime:2026-05-20 08:04:08 +0000 UTC,LastTransitionTime:2026-05-20 07:21:38 +0000 UTC,Reason:KubeletReady,Message:kubelet is posting ready status,},},Addresses:[]NodeAddress{NodeAddress{Type:InternalIP,Address:172.16.188.250,},NodeAddress{Type:Hostname,Address:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55,},},DaemonEndpoints:NodeDaemonEndpoints{KubeletEndpoint:DaemonEndpoint{Port:10250,},},NodeInfo:NodeSystemInfo{MachineID:3b2149c853de46e4916e740d956b4830,SystemUUID:3b2149c8-53de-46e4-916e-740d956b4830,BootID:6eabd180-e6ed-4baf-ae90-a147059b589b,KernelVersion:6.8.0-87-generic,OSImage:Ubuntu 24.04.3 LTS,ContainerRuntimeVersion:containerd://1.7.20,KubeletVersion:v1.34.1,KubeProxyVersion:,OperatingSystem:linux,Architecture:amd64,Swap:nil,},Images:[]ContainerImage{ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/node@sha256:a819b2cb3dbeaa3849e99f40a5af60641bedc4d063456a718ad089ef38250389 registry01-dc07.foundation.intra.cloud.it/calico/node:v3.29.1],SizeBytes:142742492,},ContainerImage{Names:[docker.io/sonobuoy/systemd-logs@sha256:0b8b2b7b43b03f7db26e7e4b99be402495b77b496f5a5b0425b3c226bc1e9cbd docker.io/sonobuoy/systemd-logs:v0.4],SizeBytes:127795048,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/cni@sha256:fb35441ca9be59ebc2a3a00e6951f879d0edbecb3c1314defa3c4e927f4628c1 registry01-dc07.foundation.intra.cloud.it/calico/cni:v3.29.1],SizeBytes:97647856,},ContainerImage{Names:[registry.k8s.io/etcd@sha256:e36c081683425b5b3bc1425bc508b37e7107bb65dfa9367bf5a80125d431fa19 registry.k8s.io/etcd:3.6.4-0],SizeBytes:74311308,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/agnhost@sha256:352a050380078cb2a1c246357a0dfa2fcf243ee416b92ff28b44a01d1b4b0294 registry.k8s.io/e2e-test-images/agnhost:2.56],SizeBytes:55898458,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nautilus@sha256:80ba6c8c44f9623f06e868a1aa66026c8ec438ad814f9ec95e9333b415fe3550 registry.k8s.io/e2e-test-images/nautilus:1.7],SizeBytes:49641698,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:3fe7acf013d1264ffded116b80a73dc129a449b0fccdb8d21af8279f2233f36e registry.k8s.io/e2e-test-images/httpd:2.4.39-4],SizeBytes:41901587,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:148b022f5c5da426fc2f3c14b5c0867e58ef05961510c84749ac1fddcb0fef22 registry.k8s.io/e2e-test-images/httpd:2.4.38-4],SizeBytes:40764257,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/kube-controllers@sha256:44acab15d22ed702aec4deca59bdc15fdddc1da49b865a370d3978fcf5730569 registry01-dc07.foundation.intra.cloud.it/calico/kube-controllers:v3.29.1],SizeBytes:35634862,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-provisioner@sha256:d5e46da8aff7d73d6f00c761dae94472bcda6e78f4f17b3802dc89d44de0111b registry.k8s.io/sig-storage/csi-provisioner:v5.2.0],SizeBytes:34139327,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-resizer@sha256:8ddd178ba5d08973f1607f9b84619b58320948de494b31c9d7cd5375b316d6d4 registry.k8s.io/sig-storage/csi-resizer:v1.13.2],SizeBytes:32421536,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-attacher@sha256:69888dba58159c8bc0d7c092b9fb97900c9ca8710d088b0b7ea7bd9052df86f6 registry.k8s.io/sig-storage/csi-attacher:v4.8.1],SizeBytes:32251715,},ContainerImage{Names:[registry.k8s.io/kas-network-proxy/proxy-agent@sha256:8cc86d24691c4145d1c364eb0846e8865f98b5beab1e6e21b96ceb4dff6fce54 registry.k8s.io/kas-network-proxy/proxy-agent:v0.34.0],SizeBytes:31418333,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/typha@sha256:a850b03ff45c6f63f0f52a068e932595123dae422ae30c212a1e06072ce592c6 registry01-dc07.foundation.intra.cloud.it/calico/typha:v3.29.1],SizeBytes:31343835,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-snapshotter@sha256:dd788d79cf4c1b8edee6d9b80b8a1ebfc51a38a365c5be656986b129be9ac784 registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0],SizeBytes:31143055,},ContainerImage{Names:[registry.k8s.io/sig-storage/snapshot-controller@sha256:472fa35a89dadb5a715454fad576ec11aa6f2e8378fc09ae26473d139b77c437 registry.k8s.io/sig-storage/snapshot-controller:v8.2.1],SizeBytes:29947362,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba@sha256:793dbfa10c9c03994a283306ea52ae1c2169a2a4af3abbeb782c2f6c6e55f33a registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba:v2],SizeBytes:27198401,},ContainerImage{Names:[registry.k8s.io/kube-apiserver@sha256:b9d7c117f8ac52bed4b13aeed973dc5198f9d93a926e6fe9e0b384f155baa902 registry.k8s.io/kube-apiserver:v1.34.1],SizeBytes:27061991,},ContainerImage{Names:[registry.k8s.io/kube-proxy@sha256:913cc83ca0b5588a81d86ce8eedeb3ed1e9c1326e81852a1ea4f622b74ff749a registry.k8s.io/kube-proxy:v1.34.1],SizeBytes:25963718,},ContainerImage{Names:[docker.io/sonobuoy/sonobuoy@sha256:69d1ddf7bf84deb02807a415c0ff469358046aaf9c69409ef4c4a943d663201f docker.io/sonobuoy/sonobuoy:v0.57.3],SizeBytes:25625368,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6 registry.k8s.io/coredns/coredns:v1.13.1],SizeBytes:23553139,},ContainerImage{Names:[registry.k8s.io/kube-controller-manager@sha256:2bf47c1b01f51e8963bf2327390883c9fa4ed03ea1b284500a2cba17ce303e89 registry.k8s.io/kube-controller-manager:v1.34.1],SizeBytes:22820214,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:e8c262566636e6bc340ece6473b0eed193cad045384401529721ddbe6463d31c registry.k8s.io/coredns/coredns:v1.12.1],SizeBytes:22384805,},ContainerImage{Names:[registry.k8s.io/provider-os/openstack-cloud-controller-manager@sha256:b72070e1b48180e949ccd549a4c25e102b0d19bb8d5d143ceaa0630acd97e043 registry.k8s.io/provider-os/openstack-cloud-controller-manager:v1.31.2],SizeBytes:19817381,},ContainerImage{Names:[registry.k8s.io/metrics-server/metrics-server@sha256:ffcb2bf004d6aa0a17d90e0247cf94f2865c8901dcab4427034c341951c239f9 registry.k8s.io/metrics-server/metrics-server:v0.7.2],SizeBytes:19494617,},ContainerImage{Names:[registry.k8s.io/kube-scheduler@sha256:6e9fbc4e25a576483e6a233976353a66e4d77eb5d0530e9118e94b7d46fb3500 registry.k8s.io/kube-scheduler:v1.34.1],SizeBytes:17385568,},ContainerImage{Names:[registry.k8s.io/sig-storage/livenessprobe@sha256:2c5f9dc4ea5ac5509d93c664ae7982d4ecdec40ca7b0638c24e5b16243b8360f registry.k8s.io/sig-storage/livenessprobe:v2.15.0],SizeBytes:14996438,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-node-driver-registrar@sha256:d7138bcc3aa5f267403d45ad4292c95397e421ea17a0035888850f424c7de25d registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0],SizeBytes:14781503,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nginx@sha256:5c99cf6a02adda929b10321dbf4ecfa00d87be9ba4fb456006237d530ab4baa1 registry.k8s.io/e2e-test-images/nginx:1.14-4],SizeBytes:6978614,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol@sha256:b39582ca0014605e8887a70e2f2fb103c8149d28d1aa6482fb5589e3c7c06197 registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol:v3.29.1],SizeBytes:6855783,},ContainerImage{Names:[registry.k8s.io/pause@sha256:7031c1b283388d2c2e09b57badb803c05ebed362dc88d84b480cc47f72a21097 registry.k8s.io/pause:3.9],SizeBytes:321520,},ContainerImage{Names:[registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c registry.k8s.io/pause:3.10.1],SizeBytes:320448,},},VolumesInUse:[],VolumesAttached:[]AttachedVolume{},Config:nil,RuntimeHandlers:[]NodeRuntimeHandler{},Features:nil,},}
+  I0520 08:05:46.191557 26 dump.go:116] 
+  Logging kubelet events for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  E0520 08:05:46.198916      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:05:46.206612 26 dump.go:121] 
+  Logging pods the kubelet thinks are on node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:05:46.284130 26 dump.go:128] kube-system/konnectivity-agent-gqvmn started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284190 26 dump.go:134] 	Container konnectivity-agent ready: true, restart count 0
+  I0520 08:05:46.284235 26 dump.go:128] kube-system/snapshot-controller-5b7776766f-qf2nx started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284269 26 dump.go:134] 	Container snapshot-controller ready: true, restart count 0
+  I0520 08:05:46.284307 26 dump.go:128] kube-system/coredns-6969d6d686-zfh88 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284335 26 dump.go:134] 	Container coredns ready: true, restart count 0
+  I0520 08:05:46.284373 26 dump.go:128] metrics-server/metrics-server-75599689b4-d9jm9 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284401 26 dump.go:134] 	Container metrics-server ready: true, restart count 0
+  I0520 08:05:46.284423 26 dump.go:128] calico-system/calico-kube-controllers-6459bd9675-pppvf started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284442 26 dump.go:134] 	Container calico-kube-controllers ready: true, restart count 0
+  I0520 08:05:46.284464 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-controller-646448bf98-ps6tm started at 2026-05-20 07:21:45 +0000 UTC (0+6 container statuses recorded)
+  I0520 08:05:46.284483 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:05:46.284502 26 dump.go:134] 	Container csi-attacher ready: true, restart count 0
+  I0520 08:05:46.284520 26 dump.go:134] 	Container csi-provisioner ready: true, restart count 0
+  I0520 08:05:46.284538 26 dump.go:134] 	Container csi-resizer ready: true, restart count 0
+  I0520 08:05:46.284556 26 dump.go:134] 	Container external-snapshotter ready: true, restart count 0
+  I0520 08:05:46.284575 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:05:46.284603 26 dump.go:128] kube-system/coredns-6969d6d686-5mmnf started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284630 26 dump.go:134] 	Container coredns ready: true, restart count 0
+  I0520 08:05:46.284666 26 dump.go:128] calico-system/calico-node-7dfbd started at 2026-05-20 07:22:30 +0000 UTC (2+1 container statuses recorded)
+  I0520 08:05:46.284699 26 dump.go:130] 	Init container flexvol-driver ready: true, restart count 0
+  I0520 08:05:46.284757 26 dump.go:130] 	Init container install-cni ready: true, restart count 0
+  I0520 08:05:46.284772 26 dump.go:134] 	Container calico-node ready: true, restart count 0
+  I0520 08:05:46.284794 26 dump.go:128] kube-system/kube-proxy-45rwx started at 2026-05-20 07:20:58 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284813 26 dump.go:134] 	Container kube-proxy ready: true, restart count 0
+  I0520 08:05:46.284835 26 dump.go:128] kube-system/openstack-cloud-controller-manager-xvmm2 started at 2026-05-20 07:21:38 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284854 26 dump.go:134] 	Container openstack-cloud-controller-manager ready: true, restart count 0
+  I0520 08:05:46.284871 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-node-fmcmb started at 2026-05-20 07:21:45 +0000 UTC (0+3 container statuses recorded)
+  I0520 08:05:46.284890 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:05:46.284910 26 dump.go:134] 	Container csi-node-driver-registrar ready: true, restart count 0
+  I0520 08:05:46.284929 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:05:46.284950 26 dump.go:128] calico-system/calico-typha-75ddd8d996-lbmcs started at 2026-05-20 07:21:27 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.284968 26 dump.go:134] 	Container calico-typha ready: true, restart count 0
+  I0520 08:05:46.284989 26 dump.go:128] kube-system/snapshot-controller-5b7776766f-m4j42 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.285008 26 dump.go:134] 	Container snapshot-controller ready: true, restart count 0
+  I0520 08:05:46.285026 26 dump.go:128] sonobuoy/sonobuoy-systemd-logs-daemon-set-20038d42793c42a5-65f9p started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:05:46.285044 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:05:46.285062 26 dump.go:134] 	Container systemd-logs ready: true, restart count 0
+  I0520 08:05:46.363444 26 kubelet_metrics.go:206] 
+  Latency metrics for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:05:46.363498 26 dump.go:109] 
+  Logging node info for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:05:46.379475 26 dump.go:114] Node Info: &Node{ObjectMeta:{6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll    6aad4d9a-9ed5-4f7f-9bb4-980a66173150 16213 0 2026-05-20 07:20:46 +0000 UTC <nil> <nil> map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/instance-type:K8A16 beta.kubernetes.io/os:linux csi.cloud.it/dc:ITBG-1 csi.cloud.it/region:ITBG-Bergamo failure-domain.beta.kubernetes.io/region:RegionOne failure-domain.beta.kubernetes.io/zone:az1 kubernetes.io/arch:amd64 kubernetes.io/hostname:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll kubernetes.io/os:linux node.kubernetes.io/instance-type:K8A16 topology.kubernetes.io/region:RegionOne topology.kubernetes.io/zone:az1] map[cluster.x-k8s.io/annotations-from-machine: cluster.x-k8s.io/cluster-name:6a0d5ddc0c0acb2ddfd45f7f--cl cluster.x-k8s.io/cluster-namespace:6639fa7d970e9f9277d0fcfe cluster.x-k8s.io/labels-from-machine: cluster.x-k8s.io/machine:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll cluster.x-k8s.io/owner-kind:MachineSet cluster.x-k8s.io/owner-name:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq csi.volume.kubernetes.io/nodeid:{"csi.cloud.it":"certpool/970cef5e-c183-42e5-96a7-11358a40e52d"} node.alpha.kubernetes.io/ttl:0 projectcalico.org/IPv4Address:172.16.188.189/24 projectcalico.org/IPv4IPIPTunnelAddr:192.168.208.192 volumes.kubernetes.io/controller-managed-attach-detach:true] [] [] [{kubelet Update v1 2026-05-20 07:20:46 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{".":{},"f:volumes.kubernetes.io/controller-managed-attach-detach":{}},"f:labels":{".":{},"f:beta.kubernetes.io/arch":{},"f:beta.kubernetes.io/os":{},"f:kubernetes.io/arch":{},"f:kubernetes.io/hostname":{},"f:kubernetes.io/os":{}}}} } {kube-controller-manager Update v1 2026-05-20 07:21:36 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:node.alpha.kubernetes.io/ttl":{}}},"f:spec":{"f:podCIDR":{},"f:podCIDRs":{".":{},"v:\"192.168.0.0/24\"":{}}}} } {manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:cluster.x-k8s.io/annotations-from-machine":{},"f:cluster.x-k8s.io/cluster-name":{},"f:cluster.x-k8s.io/cluster-namespace":{},"f:cluster.x-k8s.io/labels-from-machine":{},"f:cluster.x-k8s.io/machine":{},"f:cluster.x-k8s.io/owner-kind":{},"f:cluster.x-k8s.io/owner-name":{}}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:metadata":{"f:labels":{"f:beta.kubernetes.io/instance-type":{},"f:failure-domain.beta.kubernetes.io/region":{},"f:failure-domain.beta.kubernetes.io/zone":{},"f:node.kubernetes.io/instance-type":{},"f:topology.kubernetes.io/region":{},"f:topology.kubernetes.io/zone":{}}},"f:spec":{"f:providerID":{}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:status":{"f:addresses":{"k:{\"type\":\"InternalIP\"}":{".":{},"f:address":{},"f:type":{}}}}} status} {calico-node Update v1 2026-05-20 07:22:32 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:projectcalico.org/IPv4Address":{},"f:projectcalico.org/IPv4IPIPTunnelAddr":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"NetworkUnavailable\"}":{".":{},"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}}}}} status} {kubelet Update v1 2026-05-20 08:03:55 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:csi.volume.kubernetes.io/nodeid":{}},"f:labels":{"f:csi.cloud.it/dc":{},"f:csi.cloud.it/region":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"DiskPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"MemoryPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"PIDPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"Ready\"}":{"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{}}},"f:images":{}}} status}]},Spec:NodeSpec{PodCIDR:192.168.0.0/24,DoNotUseExternalID:,ProviderID:openstack:///970cef5e-c183-42e5-96a7-11358a40e52d,Unschedulable:false,Taints:[]Taint{},ConfigSource:nil,PodCIDRs:[192.168.0.0/24],},Status:NodeStatus{Capacity:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{126712463360 0} {<nil>}  BinarySI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16768667648 0} {<nil>} 16375652Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Allocatable:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{114041216836 0} {<nil>} 114041216836 DecimalSI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16663810048 0} {<nil>} 16273252Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Phase:,Conditions:[]NodeCondition{NodeCondition{Type:NetworkUnavailable,Status:False,LastHeartbeatTime:2026-05-20 07:22:32 +0000 UTC,LastTransitionTime:2026-05-20 07:22:32 +0000 UTC,Reason:CalicoIsUp,Message:Calico is running on this node,},NodeCondition{Type:MemoryPressure,Status:False,LastHeartbeatTime:2026-05-20 08:03:55 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasSufficientMemory,Message:kubelet has sufficient memory available,},NodeCondition{Type:DiskPressure,Status:False,LastHeartbeatTime:2026-05-20 08:03:55 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasNoDiskPressure,Message:kubelet has no disk pressure,},NodeCondition{Type:PIDPressure,Status:False,LastHeartbeatTime:2026-05-20 08:03:55 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasSufficientPID,Message:kubelet has sufficient PID available,},NodeCondition{Type:Ready,Status:True,LastHeartbeatTime:2026-05-20 08:03:55 +0000 UTC,LastTransitionTime:2026-05-20 07:21:36 +0000 UTC,Reason:KubeletReady,Message:kubelet is posting ready status,},},Addresses:[]NodeAddress{NodeAddress{Type:InternalIP,Address:172.16.188.189,},NodeAddress{Type:Hostname,Address:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll,},},DaemonEndpoints:NodeDaemonEndpoints{KubeletEndpoint:DaemonEndpoint{Port:10250,},},NodeInfo:NodeSystemInfo{MachineID:970cef5ec18342e596a711358a40e52d,SystemUUID:970cef5e-c183-42e5-96a7-11358a40e52d,BootID:a5759ca5-982b-4b2d-a155-95c9305db600,KernelVersion:6.8.0-87-generic,OSImage:Ubuntu 24.04.3 LTS,ContainerRuntimeVersion:containerd://1.7.20,KubeletVersion:v1.34.1,KubeProxyVersion:,OperatingSystem:linux,Architecture:amd64,Swap:nil,},Images:[]ContainerImage{ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/node@sha256:a819b2cb3dbeaa3849e99f40a5af60641bedc4d063456a718ad089ef38250389 registry01-dc07.foundation.intra.cloud.it/calico/node:v3.29.1],SizeBytes:142742492,},ContainerImage{Names:[docker.io/sonobuoy/systemd-logs@sha256:0b8b2b7b43b03f7db26e7e4b99be402495b77b496f5a5b0425b3c226bc1e9cbd docker.io/sonobuoy/systemd-logs:v0.4],SizeBytes:127795048,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/jessie-dnsutils@sha256:24aaf2626d6b27864c29de2097e8bbb840b3a414271bf7c8995e431e47d8408e registry.k8s.io/e2e-test-images/jessie-dnsutils:1.7],SizeBytes:112030336,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/cni@sha256:fb35441ca9be59ebc2a3a00e6951f879d0edbecb3c1314defa3c4e927f4628c1 registry01-dc07.foundation.intra.cloud.it/calico/cni:v3.29.1],SizeBytes:97647856,},ContainerImage{Names:[registry.k8s.io/conformance@sha256:b4e4301d1975c2506b966d5d9e81772623f67b87dc843399619fb93b942f8c7f registry.k8s.io/conformance:v1.34.1],SizeBytes:90336186,},ContainerImage{Names:[registry.k8s.io/etcd@sha256:e36c081683425b5b3bc1425bc508b37e7107bb65dfa9367bf5a80125d431fa19 registry.k8s.io/etcd:3.6.4-0],SizeBytes:74311308,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/agnhost@sha256:352a050380078cb2a1c246357a0dfa2fcf243ee416b92ff28b44a01d1b4b0294 registry.k8s.io/e2e-test-images/agnhost:2.56],SizeBytes:55898458,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nautilus@sha256:80ba6c8c44f9623f06e868a1aa66026c8ec438ad814f9ec95e9333b415fe3550 registry.k8s.io/e2e-test-images/nautilus:1.7],SizeBytes:49641698,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:3fe7acf013d1264ffded116b80a73dc129a449b0fccdb8d21af8279f2233f36e registry.k8s.io/e2e-test-images/httpd:2.4.39-4],SizeBytes:41901587,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:148b022f5c5da426fc2f3c14b5c0867e58ef05961510c84749ac1fddcb0fef22 registry.k8s.io/e2e-test-images/httpd:2.4.38-4],SizeBytes:40764257,},ContainerImage{Names:[registry.k8s.io/kas-network-proxy/proxy-agent@sha256:8cc86d24691c4145d1c364eb0846e8865f98b5beab1e6e21b96ceb4dff6fce54 registry.k8s.io/kas-network-proxy/proxy-agent:v0.34.0],SizeBytes:31418333,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba@sha256:793dbfa10c9c03994a283306ea52ae1c2169a2a4af3abbeb782c2f6c6e55f33a registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba:v2],SizeBytes:27198401,},ContainerImage{Names:[registry.k8s.io/kube-apiserver@sha256:b9d7c117f8ac52bed4b13aeed973dc5198f9d93a926e6fe9e0b384f155baa902 registry.k8s.io/kube-apiserver:v1.34.1],SizeBytes:27061991,},ContainerImage{Names:[registry.k8s.io/kube-proxy@sha256:913cc83ca0b5588a81d86ce8eedeb3ed1e9c1326e81852a1ea4f622b74ff749a registry.k8s.io/kube-proxy:v1.34.1],SizeBytes:25963718,},ContainerImage{Names:[docker.io/sonobuoy/sonobuoy@sha256:69d1ddf7bf84deb02807a415c0ff469358046aaf9c69409ef4c4a943d663201f docker.io/sonobuoy/sonobuoy:v0.57.3],SizeBytes:25625368,},ContainerImage{Names:[registry.k8s.io/kube-controller-manager@sha256:2bf47c1b01f51e8963bf2327390883c9fa4ed03ea1b284500a2cba17ce303e89 registry.k8s.io/kube-controller-manager:v1.34.1],SizeBytes:22820214,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:e8c262566636e6bc340ece6473b0eed193cad045384401529721ddbe6463d31c registry.k8s.io/coredns/coredns:v1.12.1],SizeBytes:22384805,},ContainerImage{Names:[quay.io/tigera/operator@sha256:fc9ea45f2475fd99db1b36d2ff180a50017b1a5ea0e82a171c6b439b3a620764 quay.io/tigera/operator:v1.36.2],SizeBytes:21758492,},ContainerImage{Names:[registry.k8s.io/provider-os/openstack-cloud-controller-manager@sha256:b72070e1b48180e949ccd549a4c25e102b0d19bb8d5d143ceaa0630acd97e043 registry.k8s.io/provider-os/openstack-cloud-controller-manager:v1.31.2],SizeBytes:19817381,},ContainerImage{Names:[registry.k8s.io/kube-scheduler@sha256:6e9fbc4e25a576483e6a233976353a66e4d77eb5d0530e9118e94b7d46fb3500 registry.k8s.io/kube-scheduler:v1.34.1],SizeBytes:17385568,},ContainerImage{Names:[registry.k8s.io/sig-storage/livenessprobe@sha256:2c5f9dc4ea5ac5509d93c664ae7982d4ecdec40ca7b0638c24e5b16243b8360f registry.k8s.io/sig-storage/livenessprobe:v2.15.0],SizeBytes:14996438,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-node-driver-registrar@sha256:d7138bcc3aa5f267403d45ad4292c95397e421ea17a0035888850f424c7de25d registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0],SizeBytes:14781503,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nginx@sha256:5c99cf6a02adda929b10321dbf4ecfa00d87be9ba4fb456006237d530ab4baa1 registry.k8s.io/e2e-test-images/nginx:1.14-4],SizeBytes:6978614,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol@sha256:b39582ca0014605e8887a70e2f2fb103c8149d28d1aa6482fb5589e3c7c06197 registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol:v3.29.1],SizeBytes:6855783,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/busybox@sha256:0ffbe172f8d245c83f285c6992b452c53d085661e03ddfd3b484332026e6c8bb registry.k8s.io/e2e-test-images/busybox:1.37.0-1],SizeBytes:2148750,},ContainerImage{Names:[registry.k8s.io/pause@sha256:7031c1b283388d2c2e09b57badb803c05ebed362dc88d84b480cc47f72a21097 registry.k8s.io/pause:3.9],SizeBytes:321520,},ContainerImage{Names:[registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c registry.k8s.io/pause:3.10.1],SizeBytes:320448,},},VolumesInUse:[],VolumesAttached:[]AttachedVolume{},Config:nil,RuntimeHandlers:[]NodeRuntimeHandler{},Features:nil,},}
+  I0520 08:05:46.379512 26 dump.go:116] 
+  Logging kubelet events for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:05:46.393518 26 dump.go:121] 
+  Logging pods the kubelet thinks are on node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:05:46.422401 26 dump.go:128] calico-system/calico-node-99kcg started at 2026-05-20 07:22:29 +0000 UTC (2+1 container statuses recorded)
+  I0520 08:05:46.422465 26 dump.go:130] 	Init container flexvol-driver ready: true, restart count 0
+  I0520 08:05:46.422496 26 dump.go:130] 	Init container install-cni ready: true, restart count 0
+  I0520 08:05:46.422528 26 dump.go:134] 	Container calico-node ready: true, restart count 0
+  I0520 08:05:46.422565 26 dump.go:128] kube-system/kube-proxy-4jnqc started at 2026-05-20 07:20:47 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.422608 26 dump.go:134] 	Container kube-proxy ready: true, restart count 0
+  I0520 08:05:46.422643 26 dump.go:128] kube-system/konnectivity-agent-55g8k started at 2026-05-20 07:21:46 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.422668 26 dump.go:134] 	Container konnectivity-agent ready: true, restart count 0
+  I0520 08:05:46.422701 26 dump.go:128] tigera-operator/tigera-operator-7dd487654-k9zcv started at 2026-05-20 07:20:49 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.422759 26 dump.go:134] 	Container tigera-operator ready: true, restart count 0
+  I0520 08:05:46.422793 26 dump.go:128] sonobuoy/sonobuoy-systemd-logs-daemon-set-20038d42793c42a5-spwgd started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:05:46.422824 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:05:46.422873 26 dump.go:134] 	Container systemd-logs ready: true, restart count 0
+  I0520 08:05:46.422906 26 dump.go:128] sonobuoy/sonobuoy-e2e-job-d517921b69e24416 started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:05:46.422938 26 dump.go:134] 	Container e2e ready: true, restart count 0
+  I0520 08:05:46.422968 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:05:46.423000 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-node-m8dst started at 2026-05-20 07:21:46 +0000 UTC (0+3 container statuses recorded)
+  I0520 08:05:46.423031 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:05:46.423062 26 dump.go:134] 	Container csi-node-driver-registrar ready: true, restart count 0
+  I0520 08:05:46.423091 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:05:46.423123 26 dump.go:128] sonobuoy/sonobuoy started at 2026-05-20 07:26:57 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.423151 26 dump.go:134] 	Container kube-sonobuoy ready: true, restart count 0
+  I0520 08:05:46.423188 26 dump.go:128] kube-system/openstack-cloud-controller-manager-zvjvn started at 2026-05-20 07:21:36 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:05:46.423221 26 dump.go:134] 	Container openstack-cloud-controller-manager ready: true, restart count 0
+  I0520 08:05:46.500102 26 kubelet_metrics.go:206] 
+  Latency metrics for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  STEP: Destroying namespace "watch-6904" for this suite. @ 05/20/26 08:05:46.5
+  << Timeline
+
+  [FAILED] Watch closed unexpectedly
+  In [It] at: k8s.io/kubernetes/test/e2e/apimachinery/watch.go:428 @ 05/20/26 08:05:46.129
+------------------------------
+SSSSSSSSS•SSSSSSSSSSSSSSSS•SSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSS•SS•SSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSS•SS•SS•SSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSS
+------------------------------
+• [FAILED] [618.109 seconds]
+[sig-api-machinery] Servers with support for API chunking [It] should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance] [sig-api-machinery, Slow, Conformance]
+k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:144
+
+  Timeline >>
+  STEP: Creating a kubernetes client @ 05/20/26 08:14:18.336
+  I0520 08:14:18.336501 26 util.go:454] >>> kubeConfig: /tmp/kubeconfig-4092330408
+  STEP: Building a namespace api object, basename chunking @ 05/20/26 08:14:18.337
+  STEP: Waiting for a default service account to be provisioned in namespace @ 05/20/26 08:14:18.354
+  STEP: Waiting for kube-root-ca.crt to be provisioned in namespace @ 05/20/26 08:14:18.36
+  STEP: creating a large number of resources @ 05/20/26 08:14:18.366
+  E0520 08:14:18.446608      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:19.446704      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:20.447369      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:21.447653      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:22.447689      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:23.448020      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:24.448841      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:25.449338      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:26.449881      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:27.450490      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:28.450893      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:29.451936      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:30.452935      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:31.454043      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:32.454157      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:33.454301      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:34.454661      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:35.455310      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  STEP: retrieving the first page @ 05/20/26 08:14:36.046
+  I0520 08:14:36.096621 26 chunking.go:163] Retrieved 40/40 results with rv 24217 and continue eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9
+  STEP: retrieving the second page until the token expires @ 05/20/26 08:14:36.096
+  E0520 08:14:36.455790      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:37.456015      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:38.456471      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:39.456834      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:40.457141      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:41.457502      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:42.458003      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:43.458355      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:44.458759      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:45.459144      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:46.459517      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:47.459973      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:48.460290      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:49.460653      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:50.461060      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:51.461439      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:52.463078      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:53.462609      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:54.463165      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:55.463292      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:14:56.104015 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:14:56.463581      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:57.463915      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:58.464307      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:14:59.464821      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:00.465239      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:01.465655      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:02.466010      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:03.469804      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:04.467102      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:05.468233      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:06.468501      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:07.468960      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:08.469361      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:09.469746      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:10.470089      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:11.470434      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:12.470812      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:13.471175      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:14.471544      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:15.471978      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:15:16.105254 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:15:16.472160      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:17.472289      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:18.472763      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:19.473154      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:20.473695      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:21.474144      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:22.474427      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:23.474685      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:24.475032      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:25.475366      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:26.475764      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:27.476043      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:28.477040      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:29.477049      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:30.477499      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:31.477881      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:32.478132      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:33.478491      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:34.478863      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:35.479193      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:15:36.102359 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:15:36.480366      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:37.480381      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:38.480799      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:39.481187      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:40.481561      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:41.481852      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:42.482131      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:43.482519      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:44.482974      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:45.483978      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:46.484339      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:47.484876      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:48.485311      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:49.485689      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:50.486174      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:51.486549      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:52.486947      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:53.487267      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:54.487608      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:55.487981      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:15:56.105327 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:15:56.488106      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:57.488472      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:58.488889      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:15:59.489267      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:00.489558      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:01.489955      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:02.490139      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:03.490587      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:04.490965      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:05.491324      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:06.491690      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:07.491952      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:08.492345      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:09.492779      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:10.492929      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:11.493281      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:12.493477      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:13.493892      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:14.494009      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:15.494382      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:16:16.102336 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:16:16.495385      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:17.495576      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:18.495924      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:19.496101      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:20.496498      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:21.496685      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:22.497091      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:23.497209      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:24.497526      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:25.497879      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:26.498625      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:27.498921      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:28.499282      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:29.499640      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:30.500039      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:31.500403      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:32.500787      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:33.501034      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:34.501261      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:35.501602      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:16:36.102074 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:16:36.502463      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:37.503490      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:38.503890      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:39.504247      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:40.504572      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:41.504983      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:42.505260      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:43.505691      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:44.506165      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:45.507268      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:46.507622      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:47.507951      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:48.508377      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:49.508890      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:50.509251      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:51.509589      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:52.509954      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:53.510323      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:54.510642      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:55.511122      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:16:56.105587 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:16:56.511079      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:57.511563      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:58.511953      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:16:59.512346      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:00.512783      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:01.513136      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:02.513302      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:03.513633      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:04.514086      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:05.514406      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:06.514665      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:07.514982      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:08.515240      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:09.515586      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:10.515941      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:11.516263      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:12.516620      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:13.516938      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:14.517301      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:15.517680      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:17:16.102836 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:17:16.517866      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:17.518198      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:18.518612      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:19.519030      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:20.519419      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:21.519784      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:22.520383      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:23.520873      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:24.521252      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:25.521668      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:26.521812      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:27.523245      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:28.523647      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:29.523135      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:30.524035      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:31.524466      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:32.524910      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:33.525307      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:34.525639      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:35.525937      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:17:36.103847 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:17:36.526774      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:37.527163      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:38.527555      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:39.527946      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:40.528401      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:41.528836      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:42.529120      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:43.529456      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:44.529851      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:45.530183      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:46.530516      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:47.531206      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:48.531594      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:49.531876      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:50.532099      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:51.532504      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:52.532731      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:53.533141      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:54.533295      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:55.533819      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:17:56.102651 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:17:56.534668      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:57.535012      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:58.535427      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:17:59.535951      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:00.536425      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:01.536836      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:02.536945      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:03.537265      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:04.537597      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:05.537961      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:06.539066      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:07.539315      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:08.540074      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:09.540338      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:10.540651      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:11.541005      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:12.541387      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:13.541769      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:14.542127      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:15.542510      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:18:16.103170 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:18:16.543098      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:17.543360      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:18.543761      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:19.544169      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:20.544571      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:21.545036      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:22.545308      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:23.545665      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:24.546007      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:25.546349      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:26.546699      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:27.547004      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:28.547262      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:29.547493      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:30.547887      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:31.548279      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:32.548863      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:33.549243      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:34.549643      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:35.550053      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:18:36.103270 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:18:36.551106      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:37.551430      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:38.551847      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:39.552337      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:40.552767      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:41.553076      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:42.553426      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:43.553845      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:44.554175      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:45.554479      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:46.554825      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:47.555001      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:48.555302      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:49.555526      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:50.555884      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:51.556338      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:52.556643      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:53.556977      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:54.557372      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:55.557828      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:18:56.101622 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:18:56.557898      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:57.558171      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:58.558505      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:18:59.558782      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:00.558999      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:01.559334      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:02.559621      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:03.559938      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:04.560310      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:05.560701      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:06.561119      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:07.561439      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:08.561848      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:09.562210      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:10.562453      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:11.562819      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:12.563164      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:13.563616      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:14.563943      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:15.564165      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:19:16.102413 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:19:16.564419      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:17.565000      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:18.565837      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:19.566182      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:20.566440      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:21.566842      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:22.567074      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:23.567439      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:24.567804      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:25.568150      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:26.568439      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:27.568959      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:28.570106      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:29.570323      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:30.570663      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:31.571069      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:32.572126      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:33.572556      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:34.573024      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:35.573209      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:19:36.104109 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:19:36.574087      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:37.574333      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:38.574578      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:39.575013      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:40.575172      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:41.575489      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:42.575690      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:43.576029      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:44.576120      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:45.576506      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:46.576792      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:47.576963      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:48.577084      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:49.577313      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:50.577568      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:51.577960      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:52.578116      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:53.578463      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:54.578959      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:55.579055      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:19:56.103838 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:19:56.579879      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:57.581267      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:58.580506      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:19:59.580914      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:00.580918      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:01.581108      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:02.582428      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:03.582884      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:04.582951      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:05.583311      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:06.583628      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:07.583968      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:08.584324      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:09.584639      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:10.585083      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:11.585486      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:12.585495      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:13.586113      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:14.586475      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:15.586830      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:20:16.104996 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:20:16.587933      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:17.588264      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:18.588648      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:19.591481      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:20.589910      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:21.591092      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:22.590442      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:23.590895      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:24.591220      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:25.591600      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:26.591899      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:27.592407      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:28.592834      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:29.593194      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:30.593581      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:31.593952      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:32.594138      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:33.594448      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:34.594855      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:35.595232      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:20:36.103317 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:20:36.596157      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:37.596681      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:38.597056      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:39.597412      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:40.597657      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:41.598001      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:42.598349      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:43.598704      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:44.599097      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:45.599457      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:46.599780      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:47.600088      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:48.600472      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:49.600766      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:50.601098      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:51.601478      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:52.601836      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:53.602189      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:54.602462      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:55.602864      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:20:56.102882 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:20:56.603862      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:57.604298      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:58.604667      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:20:59.605012      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:00.605366      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:01.605827      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:02.606138      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:03.606461      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:04.606863      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:05.607217      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:06.607578      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:07.608074      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:08.608453      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:09.608879      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:10.609271      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:11.609781      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:12.610073      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:13.610441      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:14.611371      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:15.611643      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:21:16.105069 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:21:16.612080      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:17.612315      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:18.612544      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:19.612932      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:20.613241      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:21.613628      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:22.613943      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:23.614312      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:24.614515      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:25.614775      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:26.615022      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:27.615373      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:28.616282      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:29.616508      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:30.616892      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:31.617220      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:32.617679      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:33.618089      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:34.618349      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:35.618839      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:21:36.102428 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:21:36.619326      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:37.619457      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:38.619800      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:39.620154      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:40.621286      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:41.621674      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:42.622626      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:43.623031      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:44.623380      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:45.623681      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:46.624423      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:47.624811      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:48.625125      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:49.625455      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:50.626098      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:51.626493      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:52.626986      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:53.627353      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:54.627577      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:55.627916      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:21:56.103824 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:21:56.628941      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:57.629221      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:58.629570      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:21:59.629947      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:00.631034      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:01.631345      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:02.631611      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:03.631931      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:04.632345      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:05.632450      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:06.632769      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:07.633550      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:08.633873      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:09.634108      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:10.634417      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:11.634816      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:12.635047      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:13.635396      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:14.635820      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:15.636241      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:22:16.105798 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:22:16.636692      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:17.637034      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:18.637555      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:19.637782      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:20.638120      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:21.638348      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:22.638497      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:23.638857      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:24.639027      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:25.639256      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:26.639480      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:27.639979      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:28.640200      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:29.640576      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:30.640872      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:31.641101      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:32.641941      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:33.642212      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:34.642598      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:35.642728      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:22:36.102494 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:22:36.643648      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:37.643952      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:38.645428      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:39.644891      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:40.645268      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:41.646034      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:42.646271      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:43.647951      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:44.648352      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:45.648847      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:46.649160      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:47.649669      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:48.650168      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:49.650572      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:50.651028      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:51.651466      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:52.651755      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:53.652141      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:54.652380      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:55.652832      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:22:56.105075 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:22:56.653842      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:57.654170      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:58.654555      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:22:59.654941      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:00.655303      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:01.655550      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:02.655954      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:03.656359      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:04.656791      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:05.657203      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:06.657572      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:07.657984      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:08.658332      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:09.658638      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:10.658985      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:11.659169      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:12.659636      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:13.659896      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:14.660144      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:15.660452      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:23:16.105037 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:23:16.660767      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:17.661010      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:18.661269      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:19.661640      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:20.662027      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:21.662411      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:22.662901      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:23.663364      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:24.663863      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:25.664266      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:26.664565      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:27.665056      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:28.665313      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:29.665608      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:30.666013      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:31.666389      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:32.666855      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:33.667248      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:34.667580      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:35.667976      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:23:36.102800 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:23:36.669002      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:37.669370      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:38.669797      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:39.670194      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:40.670571      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:41.670944      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:42.671304      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:43.671651      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:44.672356      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:45.672736      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:46.673570      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:47.673974      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:48.674316      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:49.674688      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:50.675157      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:51.675556      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:52.675942      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:53.676309      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:54.676656      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:55.677002      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:23:56.104038 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:23:56.677042      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:57.677366      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:58.677795      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:23:59.677995      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:00.678353      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:01.678694      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:02.678917      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:03.679274      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:04.679494      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:05.679821      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:06.680044      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:07.680323      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:08.680651      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:09.681041      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:10.681361      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:11.681771      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:12.682101      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:13.682375      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:14.682868      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:15.683514      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:24:16.102472 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  E0520 08:24:16.683593      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:17.683921      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:18.684305      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:19.684682      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:20.685090      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:21.685440      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:22.685891      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:23.686221      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:24.686634      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:25.687071      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:26.687450      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:27.687966      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:28.688310      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:29.688686      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:30.689153      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:31.689555      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:32.689985      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:33.690396      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:34.690825      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  E0520 08:24:35.691186      26 retrywatcher.go:169] "Watch failed" err="context canceled"
+  I0520 08:24:36.102788 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  I0520 08:24:36.106455 26 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MjQyMTcsInN0YXJ0IjoidGVtcGxhdGUtMDAzOVx1MDAwMCJ9 has not expired yet
+  STEP: retrieving the second page again with the token received with the error message @ 05/20/26 08:24:36.106
+  [FAILED] in [It] - k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:202 @ 05/20/26 08:24:36.123
+  I0520 08:24:36.123626 26 helper.go:125] Waiting up to 7m0s for all (but 0) nodes to be ready
+  STEP: dump namespace information after failure @ 05/20/26 08:24:36.128
+  STEP: Collecting events from namespace "chunking-4636". @ 05/20/26 08:24:36.128
+  STEP: Found 0 events. @ 05/20/26 08:24:36.131
+  I0520 08:24:36.137198 26 resource.go:151] POD  NODE  PHASE  GRACE  CONDITIONS
+  I0520 08:24:36.137238 26 resource.go:161] 
+  I0520 08:24:36.142139 26 dump.go:109] 
+  Logging node info for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:24:36.146401 26 dump.go:114] Node Info: &Node{ObjectMeta:{6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55    f2ae5810-b699-4d4f-a17d-eee05c48edba 25786 0 2026-05-20 07:20:56 +0000 UTC <nil> <nil> map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/instance-type:K8A16 beta.kubernetes.io/os:linux csi.cloud.it/dc:ITBG-1 csi.cloud.it/region:ITBG-Bergamo failure-domain.beta.kubernetes.io/region:RegionOne failure-domain.beta.kubernetes.io/zone:az1 kubernetes.io/arch:amd64 kubernetes.io/hostname:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55 kubernetes.io/os:linux node.kubernetes.io/instance-type:K8A16 topology.kubernetes.io/region:RegionOne topology.kubernetes.io/zone:az1] map[cluster.x-k8s.io/annotations-from-machine: cluster.x-k8s.io/cluster-name:6a0d5ddc0c0acb2ddfd45f7f--cl cluster.x-k8s.io/cluster-namespace:6639fa7d970e9f9277d0fcfe cluster.x-k8s.io/labels-from-machine: cluster.x-k8s.io/machine:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55 cluster.x-k8s.io/owner-kind:MachineSet cluster.x-k8s.io/owner-name:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq csi.volume.kubernetes.io/nodeid:{"csi.cloud.it":"certpool/3b2149c8-53de-46e4-916e-740d956b4830"} node.alpha.kubernetes.io/ttl:0 projectcalico.org/IPv4Address:172.16.188.250/24 projectcalico.org/IPv4IPIPTunnelAddr:192.168.195.128 volumes.kubernetes.io/controller-managed-attach-detach:true] [] [] [{kubelet Update v1 2026-05-20 07:20:56 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{".":{},"f:volumes.kubernetes.io/controller-managed-attach-detach":{}},"f:labels":{".":{},"f:beta.kubernetes.io/arch":{},"f:beta.kubernetes.io/os":{},"f:kubernetes.io/arch":{},"f:kubernetes.io/hostname":{},"f:kubernetes.io/os":{}}}} } {kube-controller-manager Update v1 2026-05-20 07:21:38 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:node.alpha.kubernetes.io/ttl":{}}},"f:spec":{"f:podCIDR":{},"f:podCIDRs":{".":{},"v:\"192.168.1.0/24\"":{}}}} } {manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:cluster.x-k8s.io/annotations-from-machine":{},"f:cluster.x-k8s.io/cluster-name":{},"f:cluster.x-k8s.io/cluster-namespace":{},"f:cluster.x-k8s.io/labels-from-machine":{},"f:cluster.x-k8s.io/machine":{},"f:cluster.x-k8s.io/owner-kind":{},"f:cluster.x-k8s.io/owner-name":{}}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:metadata":{"f:labels":{"f:beta.kubernetes.io/instance-type":{},"f:failure-domain.beta.kubernetes.io/region":{},"f:failure-domain.beta.kubernetes.io/zone":{},"f:node.kubernetes.io/instance-type":{},"f:topology.kubernetes.io/region":{},"f:topology.kubernetes.io/zone":{}}},"f:spec":{"f:providerID":{}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:44 +0000 UTC FieldsV1 {"f:status":{"f:addresses":{"k:{\"type\":\"InternalIP\"}":{".":{},"f:address":{},"f:type":{}}}}} status} {calico-node Update v1 2026-05-20 07:22:34 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:projectcalico.org/IPv4Address":{},"f:projectcalico.org/IPv4IPIPTunnelAddr":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"NetworkUnavailable\"}":{".":{},"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}}}}} status} {kubelet Update v1 2026-05-20 08:24:32 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:csi.volume.kubernetes.io/nodeid":{}},"f:labels":{"f:csi.cloud.it/dc":{},"f:csi.cloud.it/region":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"DiskPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"MemoryPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"PIDPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"Ready\"}":{"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{}}},"f:images":{}}} status}]},Spec:NodeSpec{PodCIDR:192.168.1.0/24,DoNotUseExternalID:,ProviderID:openstack:///3b2149c8-53de-46e4-916e-740d956b4830,Unschedulable:false,Taints:[]Taint{},ConfigSource:nil,PodCIDRs:[192.168.1.0/24],},Status:NodeStatus{Capacity:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{126712463360 0} {<nil>}  BinarySI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16768667648 0} {<nil>} 16375652Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Allocatable:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{114041216836 0} {<nil>} 114041216836 DecimalSI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16663810048 0} {<nil>} 16273252Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Phase:,Conditions:[]NodeCondition{NodeCondition{Type:NetworkUnavailable,Status:False,LastHeartbeatTime:2026-05-20 07:22:34 +0000 UTC,LastTransitionTime:2026-05-20 07:22:34 +0000 UTC,Reason:CalicoIsUp,Message:Calico is running on this node,},NodeCondition{Type:MemoryPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:32 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasSufficientMemory,Message:kubelet has sufficient memory available,},NodeCondition{Type:DiskPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:32 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasNoDiskPressure,Message:kubelet has no disk pressure,},NodeCondition{Type:PIDPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:32 +0000 UTC,LastTransitionTime:2026-05-20 07:20:56 +0000 UTC,Reason:KubeletHasSufficientPID,Message:kubelet has sufficient PID available,},NodeCondition{Type:Ready,Status:True,LastHeartbeatTime:2026-05-20 08:24:32 +0000 UTC,LastTransitionTime:2026-05-20 07:21:38 +0000 UTC,Reason:KubeletReady,Message:kubelet is posting ready status,},},Addresses:[]NodeAddress{NodeAddress{Type:InternalIP,Address:172.16.188.250,},NodeAddress{Type:Hostname,Address:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55,},},DaemonEndpoints:NodeDaemonEndpoints{KubeletEndpoint:DaemonEndpoint{Port:10250,},},NodeInfo:NodeSystemInfo{MachineID:3b2149c853de46e4916e740d956b4830,SystemUUID:3b2149c8-53de-46e4-916e-740d956b4830,BootID:6eabd180-e6ed-4baf-ae90-a147059b589b,KernelVersion:6.8.0-87-generic,OSImage:Ubuntu 24.04.3 LTS,ContainerRuntimeVersion:containerd://1.7.20,KubeletVersion:v1.34.1,KubeProxyVersion:,OperatingSystem:linux,Architecture:amd64,Swap:nil,},Images:[]ContainerImage{ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/node@sha256:a819b2cb3dbeaa3849e99f40a5af60641bedc4d063456a718ad089ef38250389 registry01-dc07.foundation.intra.cloud.it/calico/node:v3.29.1],SizeBytes:142742492,},ContainerImage{Names:[docker.io/sonobuoy/systemd-logs@sha256:0b8b2b7b43b03f7db26e7e4b99be402495b77b496f5a5b0425b3c226bc1e9cbd docker.io/sonobuoy/systemd-logs:v0.4],SizeBytes:127795048,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/cni@sha256:fb35441ca9be59ebc2a3a00e6951f879d0edbecb3c1314defa3c4e927f4628c1 registry01-dc07.foundation.intra.cloud.it/calico/cni:v3.29.1],SizeBytes:97647856,},ContainerImage{Names:[registry.k8s.io/etcd@sha256:e36c081683425b5b3bc1425bc508b37e7107bb65dfa9367bf5a80125d431fa19 registry.k8s.io/etcd:3.6.4-0],SizeBytes:74311308,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/agnhost@sha256:352a050380078cb2a1c246357a0dfa2fcf243ee416b92ff28b44a01d1b4b0294 registry.k8s.io/e2e-test-images/agnhost:2.56],SizeBytes:55898458,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nautilus@sha256:80ba6c8c44f9623f06e868a1aa66026c8ec438ad814f9ec95e9333b415fe3550 registry.k8s.io/e2e-test-images/nautilus:1.7],SizeBytes:49641698,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:3fe7acf013d1264ffded116b80a73dc129a449b0fccdb8d21af8279f2233f36e registry.k8s.io/e2e-test-images/httpd:2.4.39-4],SizeBytes:41901587,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:148b022f5c5da426fc2f3c14b5c0867e58ef05961510c84749ac1fddcb0fef22 registry.k8s.io/e2e-test-images/httpd:2.4.38-4],SizeBytes:40764257,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/kube-controllers@sha256:44acab15d22ed702aec4deca59bdc15fdddc1da49b865a370d3978fcf5730569 registry01-dc07.foundation.intra.cloud.it/calico/kube-controllers:v3.29.1],SizeBytes:35634862,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-provisioner@sha256:d5e46da8aff7d73d6f00c761dae94472bcda6e78f4f17b3802dc89d44de0111b registry.k8s.io/sig-storage/csi-provisioner:v5.2.0],SizeBytes:34139327,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-resizer@sha256:8ddd178ba5d08973f1607f9b84619b58320948de494b31c9d7cd5375b316d6d4 registry.k8s.io/sig-storage/csi-resizer:v1.13.2],SizeBytes:32421536,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-attacher@sha256:69888dba58159c8bc0d7c092b9fb97900c9ca8710d088b0b7ea7bd9052df86f6 registry.k8s.io/sig-storage/csi-attacher:v4.8.1],SizeBytes:32251715,},ContainerImage{Names:[registry.k8s.io/kas-network-proxy/proxy-agent@sha256:8cc86d24691c4145d1c364eb0846e8865f98b5beab1e6e21b96ceb4dff6fce54 registry.k8s.io/kas-network-proxy/proxy-agent:v0.34.0],SizeBytes:31418333,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/typha@sha256:a850b03ff45c6f63f0f52a068e932595123dae422ae30c212a1e06072ce592c6 registry01-dc07.foundation.intra.cloud.it/calico/typha:v3.29.1],SizeBytes:31343835,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-snapshotter@sha256:dd788d79cf4c1b8edee6d9b80b8a1ebfc51a38a365c5be656986b129be9ac784 registry.k8s.io/sig-storage/csi-snapshotter:v8.2.0],SizeBytes:31143055,},ContainerImage{Names:[registry.k8s.io/sig-storage/snapshot-controller@sha256:472fa35a89dadb5a715454fad576ec11aa6f2e8378fc09ae26473d139b77c437 registry.k8s.io/sig-storage/snapshot-controller:v8.2.1],SizeBytes:29947362,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba@sha256:793dbfa10c9c03994a283306ea52ae1c2169a2a4af3abbeb782c2f6c6e55f33a registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba:v2],SizeBytes:27198401,},ContainerImage{Names:[registry.k8s.io/kube-apiserver@sha256:b9d7c117f8ac52bed4b13aeed973dc5198f9d93a926e6fe9e0b384f155baa902 registry.k8s.io/kube-apiserver:v1.34.1],SizeBytes:27061991,},ContainerImage{Names:[registry.k8s.io/kube-proxy@sha256:913cc83ca0b5588a81d86ce8eedeb3ed1e9c1326e81852a1ea4f622b74ff749a registry.k8s.io/kube-proxy:v1.34.1],SizeBytes:25963718,},ContainerImage{Names:[docker.io/sonobuoy/sonobuoy@sha256:69d1ddf7bf84deb02807a415c0ff469358046aaf9c69409ef4c4a943d663201f docker.io/sonobuoy/sonobuoy:v0.57.3],SizeBytes:25625368,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6 registry.k8s.io/coredns/coredns:v1.13.1],SizeBytes:23553139,},ContainerImage{Names:[registry.k8s.io/kube-controller-manager@sha256:2bf47c1b01f51e8963bf2327390883c9fa4ed03ea1b284500a2cba17ce303e89 registry.k8s.io/kube-controller-manager:v1.34.1],SizeBytes:22820214,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:e8c262566636e6bc340ece6473b0eed193cad045384401529721ddbe6463d31c registry.k8s.io/coredns/coredns:v1.12.1],SizeBytes:22384805,},ContainerImage{Names:[registry.k8s.io/provider-os/openstack-cloud-controller-manager@sha256:b72070e1b48180e949ccd549a4c25e102b0d19bb8d5d143ceaa0630acd97e043 registry.k8s.io/provider-os/openstack-cloud-controller-manager:v1.31.2],SizeBytes:19817381,},ContainerImage{Names:[registry.k8s.io/metrics-server/metrics-server@sha256:ffcb2bf004d6aa0a17d90e0247cf94f2865c8901dcab4427034c341951c239f9 registry.k8s.io/metrics-server/metrics-server:v0.7.2],SizeBytes:19494617,},ContainerImage{Names:[registry.k8s.io/kube-scheduler@sha256:6e9fbc4e25a576483e6a233976353a66e4d77eb5d0530e9118e94b7d46fb3500 registry.k8s.io/kube-scheduler:v1.34.1],SizeBytes:17385568,},ContainerImage{Names:[registry.k8s.io/sig-storage/livenessprobe@sha256:2c5f9dc4ea5ac5509d93c664ae7982d4ecdec40ca7b0638c24e5b16243b8360f registry.k8s.io/sig-storage/livenessprobe:v2.15.0],SizeBytes:14996438,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-node-driver-registrar@sha256:d7138bcc3aa5f267403d45ad4292c95397e421ea17a0035888850f424c7de25d registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0],SizeBytes:14781503,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nginx@sha256:5c99cf6a02adda929b10321dbf4ecfa00d87be9ba4fb456006237d530ab4baa1 registry.k8s.io/e2e-test-images/nginx:1.14-4],SizeBytes:6978614,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol@sha256:b39582ca0014605e8887a70e2f2fb103c8149d28d1aa6482fb5589e3c7c06197 registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol:v3.29.1],SizeBytes:6855783,},ContainerImage{Names:[registry.k8s.io/pause@sha256:7031c1b283388d2c2e09b57badb803c05ebed362dc88d84b480cc47f72a21097 registry.k8s.io/pause:3.9],SizeBytes:321520,},ContainerImage{Names:[registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c registry.k8s.io/pause:3.10.1],SizeBytes:320448,},},VolumesInUse:[],VolumesAttached:[]AttachedVolume{},Config:nil,RuntimeHandlers:[]NodeRuntimeHandler{},Features:nil,},}
+  I0520 08:24:36.146434 26 dump.go:116] 
+  Logging kubelet events for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:24:36.149935 26 dump.go:121] 
+  Logging pods the kubelet thinks are on node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:24:36.209671 26 dump.go:128] calico-system/calico-typha-75ddd8d996-lbmcs started at 2026-05-20 07:21:27 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209728 26 dump.go:134] 	Container calico-typha ready: true, restart count 0
+  I0520 08:24:36.209751 26 dump.go:128] kube-system/snapshot-controller-5b7776766f-m4j42 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209769 26 dump.go:134] 	Container snapshot-controller ready: true, restart count 0
+  I0520 08:24:36.209788 26 dump.go:128] sonobuoy/sonobuoy-systemd-logs-daemon-set-20038d42793c42a5-65f9p started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:24:36.209804 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:24:36.209820 26 dump.go:134] 	Container systemd-logs ready: true, restart count 0
+  I0520 08:24:36.209838 26 dump.go:128] kube-system/konnectivity-agent-gqvmn started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209854 26 dump.go:134] 	Container konnectivity-agent ready: true, restart count 0
+  I0520 08:24:36.209872 26 dump.go:128] kube-system/snapshot-controller-5b7776766f-qf2nx started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209890 26 dump.go:134] 	Container snapshot-controller ready: true, restart count 0
+  I0520 08:24:36.209908 26 dump.go:128] kube-system/coredns-6969d6d686-zfh88 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209924 26 dump.go:134] 	Container coredns ready: true, restart count 0
+  I0520 08:24:36.209946 26 dump.go:128] metrics-server/metrics-server-75599689b4-d9jm9 started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.209971 26 dump.go:134] 	Container metrics-server ready: true, restart count 0
+  I0520 08:24:36.209999 26 dump.go:128] calico-system/calico-kube-controllers-6459bd9675-pppvf started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.210021 26 dump.go:134] 	Container calico-kube-controllers ready: true, restart count 0
+  I0520 08:24:36.210049 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-controller-646448bf98-ps6tm started at 2026-05-20 07:21:45 +0000 UTC (0+6 container statuses recorded)
+  I0520 08:24:36.210080 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:24:36.210111 26 dump.go:134] 	Container csi-attacher ready: true, restart count 0
+  I0520 08:24:36.210135 26 dump.go:134] 	Container csi-provisioner ready: true, restart count 0
+  I0520 08:24:36.210161 26 dump.go:134] 	Container csi-resizer ready: true, restart count 0
+  I0520 08:24:36.210184 26 dump.go:134] 	Container external-snapshotter ready: true, restart count 0
+  I0520 08:24:36.210212 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:24:36.210242 26 dump.go:128] kube-system/coredns-6969d6d686-5mmnf started at 2026-05-20 07:21:45 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.210269 26 dump.go:134] 	Container coredns ready: true, restart count 0
+  I0520 08:24:36.210301 26 dump.go:128] calico-system/calico-node-7dfbd started at 2026-05-20 07:22:30 +0000 UTC (2+1 container statuses recorded)
+  I0520 08:24:36.210328 26 dump.go:130] 	Init container flexvol-driver ready: true, restart count 0
+  I0520 08:24:36.210358 26 dump.go:130] 	Init container install-cni ready: true, restart count 0
+  I0520 08:24:36.210380 26 dump.go:134] 	Container calico-node ready: true, restart count 0
+  I0520 08:24:36.210412 26 dump.go:128] kube-system/kube-proxy-45rwx started at 2026-05-20 07:20:58 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.210441 26 dump.go:134] 	Container kube-proxy ready: true, restart count 0
+  I0520 08:24:36.210470 26 dump.go:128] kube-system/openstack-cloud-controller-manager-xvmm2 started at 2026-05-20 07:21:38 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.210497 26 dump.go:134] 	Container openstack-cloud-controller-manager ready: true, restart count 0
+  I0520 08:24:36.210527 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-node-fmcmb started at 2026-05-20 07:21:45 +0000 UTC (0+3 container statuses recorded)
+  I0520 08:24:36.210552 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:24:36.210572 26 dump.go:134] 	Container csi-node-driver-registrar ready: true, restart count 0
+  I0520 08:24:36.210596 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:24:36.284085 26 kubelet_metrics.go:206] 
+  Latency metrics for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-c6m55
+  I0520 08:24:36.284108 26 dump.go:109] 
+  Logging node info for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:24:36.288915 26 dump.go:114] Node Info: &Node{ObjectMeta:{6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll    6aad4d9a-9ed5-4f7f-9bb4-980a66173150 25755 0 2026-05-20 07:20:46 +0000 UTC <nil> <nil> map[beta.kubernetes.io/arch:amd64 beta.kubernetes.io/instance-type:K8A16 beta.kubernetes.io/os:linux csi.cloud.it/dc:ITBG-1 csi.cloud.it/region:ITBG-Bergamo failure-domain.beta.kubernetes.io/region:RegionOne failure-domain.beta.kubernetes.io/zone:az1 kubernetes.io/arch:amd64 kubernetes.io/hostname:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll kubernetes.io/os:linux node.kubernetes.io/instance-type:K8A16 topology.kubernetes.io/region:RegionOne topology.kubernetes.io/zone:az1] map[cluster.x-k8s.io/annotations-from-machine: cluster.x-k8s.io/cluster-name:6a0d5ddc0c0acb2ddfd45f7f--cl cluster.x-k8s.io/cluster-namespace:6639fa7d970e9f9277d0fcfe cluster.x-k8s.io/labels-from-machine: cluster.x-k8s.io/machine:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll cluster.x-k8s.io/owner-kind:MachineSet cluster.x-k8s.io/owner-name:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq csi.volume.kubernetes.io/nodeid:{"csi.cloud.it":"certpool/970cef5e-c183-42e5-96a7-11358a40e52d"} node.alpha.kubernetes.io/ttl:0 projectcalico.org/IPv4Address:172.16.188.189/24 projectcalico.org/IPv4IPIPTunnelAddr:192.168.208.192 volumes.kubernetes.io/controller-managed-attach-detach:true] [] [] [{kubelet Update v1 2026-05-20 07:20:46 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{".":{},"f:volumes.kubernetes.io/controller-managed-attach-detach":{}},"f:labels":{".":{},"f:beta.kubernetes.io/arch":{},"f:beta.kubernetes.io/os":{},"f:kubernetes.io/arch":{},"f:kubernetes.io/hostname":{},"f:kubernetes.io/os":{}}}} } {kube-controller-manager Update v1 2026-05-20 07:21:36 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:node.alpha.kubernetes.io/ttl":{}}},"f:spec":{"f:podCIDR":{},"f:podCIDRs":{".":{},"v:\"192.168.0.0/24\"":{}}}} } {manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:cluster.x-k8s.io/annotations-from-machine":{},"f:cluster.x-k8s.io/cluster-name":{},"f:cluster.x-k8s.io/cluster-namespace":{},"f:cluster.x-k8s.io/labels-from-machine":{},"f:cluster.x-k8s.io/machine":{},"f:cluster.x-k8s.io/owner-kind":{},"f:cluster.x-k8s.io/owner-name":{}}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:metadata":{"f:labels":{"f:beta.kubernetes.io/instance-type":{},"f:failure-domain.beta.kubernetes.io/region":{},"f:failure-domain.beta.kubernetes.io/zone":{},"f:node.kubernetes.io/instance-type":{},"f:topology.kubernetes.io/region":{},"f:topology.kubernetes.io/zone":{}}},"f:spec":{"f:providerID":{}}} } {openstack-cloud-controller-manager Update v1 2026-05-20 07:21:45 +0000 UTC FieldsV1 {"f:status":{"f:addresses":{"k:{\"type\":\"InternalIP\"}":{".":{},"f:address":{},"f:type":{}}}}} status} {calico-node Update v1 2026-05-20 07:22:32 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:projectcalico.org/IPv4Address":{},"f:projectcalico.org/IPv4IPIPTunnelAddr":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"NetworkUnavailable\"}":{".":{},"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{},"f:type":{}}}}} status} {kubelet Update v1 2026-05-20 08:24:21 +0000 UTC FieldsV1 {"f:metadata":{"f:annotations":{"f:csi.volume.kubernetes.io/nodeid":{}},"f:labels":{"f:csi.cloud.it/dc":{},"f:csi.cloud.it/region":{}}},"f:status":{"f:conditions":{"k:{\"type\":\"DiskPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"MemoryPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"PIDPressure\"}":{"f:lastHeartbeatTime":{}},"k:{\"type\":\"Ready\"}":{"f:lastHeartbeatTime":{},"f:lastTransitionTime":{},"f:message":{},"f:reason":{},"f:status":{}}},"f:images":{}}} status}]},Spec:NodeSpec{PodCIDR:192.168.0.0/24,DoNotUseExternalID:,ProviderID:openstack:///970cef5e-c183-42e5-96a7-11358a40e52d,Unschedulable:false,Taints:[]Taint{},ConfigSource:nil,PodCIDRs:[192.168.0.0/24],},Status:NodeStatus{Capacity:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{126712463360 0} {<nil>}  BinarySI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16768667648 0} {<nil>} 16375652Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Allocatable:ResourceList{cpu: {{8 0} {<nil>} 8 DecimalSI},ephemeral-storage: {{114041216836 0} {<nil>} 114041216836 DecimalSI},hugepages-1Gi: {{0 0} {<nil>} 0 DecimalSI},hugepages-2Mi: {{0 0} {<nil>} 0 DecimalSI},memory: {{16663810048 0} {<nil>} 16273252Ki BinarySI},pods: {{110 0} {<nil>} 110 DecimalSI},},Phase:,Conditions:[]NodeCondition{NodeCondition{Type:NetworkUnavailable,Status:False,LastHeartbeatTime:2026-05-20 07:22:32 +0000 UTC,LastTransitionTime:2026-05-20 07:22:32 +0000 UTC,Reason:CalicoIsUp,Message:Calico is running on this node,},NodeCondition{Type:MemoryPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:21 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasSufficientMemory,Message:kubelet has sufficient memory available,},NodeCondition{Type:DiskPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:21 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasNoDiskPressure,Message:kubelet has no disk pressure,},NodeCondition{Type:PIDPressure,Status:False,LastHeartbeatTime:2026-05-20 08:24:21 +0000 UTC,LastTransitionTime:2026-05-20 07:20:45 +0000 UTC,Reason:KubeletHasSufficientPID,Message:kubelet has sufficient PID available,},NodeCondition{Type:Ready,Status:True,LastHeartbeatTime:2026-05-20 08:24:21 +0000 UTC,LastTransitionTime:2026-05-20 07:21:36 +0000 UTC,Reason:KubeletReady,Message:kubelet is posting ready status,},},Addresses:[]NodeAddress{NodeAddress{Type:InternalIP,Address:172.16.188.189,},NodeAddress{Type:Hostname,Address:6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll,},},DaemonEndpoints:NodeDaemonEndpoints{KubeletEndpoint:DaemonEndpoint{Port:10250,},},NodeInfo:NodeSystemInfo{MachineID:970cef5ec18342e596a711358a40e52d,SystemUUID:970cef5e-c183-42e5-96a7-11358a40e52d,BootID:a5759ca5-982b-4b2d-a155-95c9305db600,KernelVersion:6.8.0-87-generic,OSImage:Ubuntu 24.04.3 LTS,ContainerRuntimeVersion:containerd://1.7.20,KubeletVersion:v1.34.1,KubeProxyVersion:,OperatingSystem:linux,Architecture:amd64,Swap:nil,},Images:[]ContainerImage{ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/node@sha256:a819b2cb3dbeaa3849e99f40a5af60641bedc4d063456a718ad089ef38250389 registry01-dc07.foundation.intra.cloud.it/calico/node:v3.29.1],SizeBytes:142742492,},ContainerImage{Names:[docker.io/sonobuoy/systemd-logs@sha256:0b8b2b7b43b03f7db26e7e4b99be402495b77b496f5a5b0425b3c226bc1e9cbd docker.io/sonobuoy/systemd-logs:v0.4],SizeBytes:127795048,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/jessie-dnsutils@sha256:24aaf2626d6b27864c29de2097e8bbb840b3a414271bf7c8995e431e47d8408e registry.k8s.io/e2e-test-images/jessie-dnsutils:1.7],SizeBytes:112030336,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/cni@sha256:fb35441ca9be59ebc2a3a00e6951f879d0edbecb3c1314defa3c4e927f4628c1 registry01-dc07.foundation.intra.cloud.it/calico/cni:v3.29.1],SizeBytes:97647856,},ContainerImage{Names:[registry.k8s.io/conformance@sha256:b4e4301d1975c2506b966d5d9e81772623f67b87dc843399619fb93b942f8c7f registry.k8s.io/conformance:v1.34.1],SizeBytes:90336186,},ContainerImage{Names:[registry.k8s.io/etcd@sha256:e36c081683425b5b3bc1425bc508b37e7107bb65dfa9367bf5a80125d431fa19 registry.k8s.io/etcd:3.6.4-0],SizeBytes:74311308,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/agnhost@sha256:352a050380078cb2a1c246357a0dfa2fcf243ee416b92ff28b44a01d1b4b0294 registry.k8s.io/e2e-test-images/agnhost:2.56],SizeBytes:55898458,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nautilus@sha256:80ba6c8c44f9623f06e868a1aa66026c8ec438ad814f9ec95e9333b415fe3550 registry.k8s.io/e2e-test-images/nautilus:1.7],SizeBytes:49641698,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:3fe7acf013d1264ffded116b80a73dc129a449b0fccdb8d21af8279f2233f36e registry.k8s.io/e2e-test-images/httpd:2.4.39-4],SizeBytes:41901587,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/httpd@sha256:148b022f5c5da426fc2f3c14b5c0867e58ef05961510c84749ac1fddcb0fef22 registry.k8s.io/e2e-test-images/httpd:2.4.38-4],SizeBytes:40764257,},ContainerImage{Names:[registry.k8s.io/kas-network-proxy/proxy-agent@sha256:8cc86d24691c4145d1c364eb0846e8865f98b5beab1e6e21b96ceb4dff6fce54 registry.k8s.io/kas-network-proxy/proxy-agent:v0.34.0],SizeBytes:31418333,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba@sha256:793dbfa10c9c03994a283306ea52ae1c2169a2a4af3abbeb782c2f6c6e55f33a registry01-dc07.foundation.intra.cloud.it/ingegneria-cmp-cloud-provider-aruba:v2],SizeBytes:27198401,},ContainerImage{Names:[registry.k8s.io/kube-apiserver@sha256:b9d7c117f8ac52bed4b13aeed973dc5198f9d93a926e6fe9e0b384f155baa902 registry.k8s.io/kube-apiserver:v1.34.1],SizeBytes:27061991,},ContainerImage{Names:[registry.k8s.io/kube-proxy@sha256:913cc83ca0b5588a81d86ce8eedeb3ed1e9c1326e81852a1ea4f622b74ff749a registry.k8s.io/kube-proxy:v1.34.1],SizeBytes:25963718,},ContainerImage{Names:[docker.io/sonobuoy/sonobuoy@sha256:69d1ddf7bf84deb02807a415c0ff469358046aaf9c69409ef4c4a943d663201f docker.io/sonobuoy/sonobuoy:v0.57.3],SizeBytes:25625368,},ContainerImage{Names:[registry.k8s.io/kube-controller-manager@sha256:2bf47c1b01f51e8963bf2327390883c9fa4ed03ea1b284500a2cba17ce303e89 registry.k8s.io/kube-controller-manager:v1.34.1],SizeBytes:22820214,},ContainerImage{Names:[registry.k8s.io/coredns/coredns@sha256:e8c262566636e6bc340ece6473b0eed193cad045384401529721ddbe6463d31c registry.k8s.io/coredns/coredns:v1.12.1],SizeBytes:22384805,},ContainerImage{Names:[quay.io/tigera/operator@sha256:fc9ea45f2475fd99db1b36d2ff180a50017b1a5ea0e82a171c6b439b3a620764 quay.io/tigera/operator:v1.36.2],SizeBytes:21758492,},ContainerImage{Names:[registry.k8s.io/provider-os/openstack-cloud-controller-manager@sha256:b72070e1b48180e949ccd549a4c25e102b0d19bb8d5d143ceaa0630acd97e043 registry.k8s.io/provider-os/openstack-cloud-controller-manager:v1.31.2],SizeBytes:19817381,},ContainerImage{Names:[registry.k8s.io/kube-scheduler@sha256:6e9fbc4e25a576483e6a233976353a66e4d77eb5d0530e9118e94b7d46fb3500 registry.k8s.io/kube-scheduler:v1.34.1],SizeBytes:17385568,},ContainerImage{Names:[registry.k8s.io/sig-storage/livenessprobe@sha256:2c5f9dc4ea5ac5509d93c664ae7982d4ecdec40ca7b0638c24e5b16243b8360f registry.k8s.io/sig-storage/livenessprobe:v2.15.0],SizeBytes:14996438,},ContainerImage{Names:[registry.k8s.io/sig-storage/csi-node-driver-registrar@sha256:d7138bcc3aa5f267403d45ad4292c95397e421ea17a0035888850f424c7de25d registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.13.0],SizeBytes:14781503,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/nginx@sha256:5c99cf6a02adda929b10321dbf4ecfa00d87be9ba4fb456006237d530ab4baa1 registry.k8s.io/e2e-test-images/nginx:1.14-4],SizeBytes:6978614,},ContainerImage{Names:[registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol@sha256:b39582ca0014605e8887a70e2f2fb103c8149d28d1aa6482fb5589e3c7c06197 registry01-dc07.foundation.intra.cloud.it/calico/pod2daemon-flexvol:v3.29.1],SizeBytes:6855783,},ContainerImage{Names:[registry.k8s.io/e2e-test-images/busybox@sha256:0ffbe172f8d245c83f285c6992b452c53d085661e03ddfd3b484332026e6c8bb registry.k8s.io/e2e-test-images/busybox:1.37.0-1],SizeBytes:2148750,},ContainerImage{Names:[registry.k8s.io/pause@sha256:7031c1b283388d2c2e09b57badb803c05ebed362dc88d84b480cc47f72a21097 registry.k8s.io/pause:3.9],SizeBytes:321520,},ContainerImage{Names:[registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c registry.k8s.io/pause:3.10.1],SizeBytes:320448,},},VolumesInUse:[],VolumesAttached:[]AttachedVolume{},Config:nil,RuntimeHandlers:[]NodeRuntimeHandler{},Features:nil,},}
+  I0520 08:24:36.288942 26 dump.go:116] 
+  Logging kubelet events for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:24:36.293360 26 dump.go:121] 
+  Logging pods the kubelet thinks are on node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  I0520 08:24:36.345853 26 dump.go:128] kube-system/kube-proxy-4jnqc started at 2026-05-20 07:20:47 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.345902 26 dump.go:134] 	Container kube-proxy ready: true, restart count 0
+  I0520 08:24:36.345930 26 dump.go:128] kube-system/konnectivity-agent-55g8k started at 2026-05-20 07:21:46 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.345950 26 dump.go:134] 	Container konnectivity-agent ready: true, restart count 0
+  I0520 08:24:36.345973 26 dump.go:128] tigera-operator/tigera-operator-7dd487654-k9zcv started at 2026-05-20 07:20:49 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.345993 26 dump.go:134] 	Container tigera-operator ready: true, restart count 0
+  I0520 08:24:36.346014 26 dump.go:128] sonobuoy/sonobuoy-systemd-logs-daemon-set-20038d42793c42a5-spwgd started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:24:36.346035 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:24:36.346054 26 dump.go:134] 	Container systemd-logs ready: true, restart count 0
+  I0520 08:24:36.346072 26 dump.go:128] sonobuoy/sonobuoy-e2e-job-d517921b69e24416 started at 2026-05-20 07:27:02 +0000 UTC (0+2 container statuses recorded)
+  I0520 08:24:36.346091 26 dump.go:134] 	Container e2e ready: true, restart count 0
+  I0520 08:24:36.346110 26 dump.go:134] 	Container sonobuoy-worker ready: true, restart count 0
+  I0520 08:24:36.346126 26 dump.go:128] acloud-csi/acloud-csi-aruba-cloud-csi-node-m8dst started at 2026-05-20 07:21:46 +0000 UTC (0+3 container statuses recorded)
+  I0520 08:24:36.346145 26 dump.go:134] 	Container acloud-csi-driver ready: true, restart count 0
+  I0520 08:24:36.346164 26 dump.go:134] 	Container csi-node-driver-registrar ready: true, restart count 0
+  I0520 08:24:36.346182 26 dump.go:134] 	Container liveness-probe ready: true, restart count 0
+  I0520 08:24:36.346199 26 dump.go:128] sonobuoy/sonobuoy started at 2026-05-20 07:26:57 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.346218 26 dump.go:134] 	Container kube-sonobuoy ready: true, restart count 0
+  I0520 08:24:36.346238 26 dump.go:128] kube-system/openstack-cloud-controller-manager-zvjvn started at 2026-05-20 07:21:36 +0000 UTC (0+1 container statuses recorded)
+  I0520 08:24:36.346256 26 dump.go:134] 	Container openstack-cloud-controller-manager ready: true, restart count 0
+  I0520 08:24:36.346277 26 dump.go:128] calico-system/calico-node-99kcg started at 2026-05-20 07:22:29 +0000 UTC (2+1 container statuses recorded)
+  I0520 08:24:36.346296 26 dump.go:130] 	Init container flexvol-driver ready: true, restart count 0
+  I0520 08:24:36.346315 26 dump.go:130] 	Init container install-cni ready: true, restart count 0
+  I0520 08:24:36.346333 26 dump.go:134] 	Container calico-node ready: true, restart count 0
+  I0520 08:24:36.436105 26 kubelet_metrics.go:206] 
+  Latency metrics for node 6a0d5ddc0c0acb2ddfd45f7f--md-certpool-9pfjq-rcpll
+  STEP: Destroying namespace "chunking-4636" for this suite. @ 05/20/26 08:24:36.436
+  << Timeline
+
+  [FAILED] Expected
+      <int>: 440
+  to be ==
+      <int>: 400
+  In [It] at: k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:202 @ 05/20/26 08:24:36.123
+------------------------------
+SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSS•SSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSS•S•SSS•SSSSSSSSSS•SSSSSS•SSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSS•SSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S••SSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSSS•SSSSSSS••SS•SSSSSSSSSSSS•S•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSS•SSSSSSSSSS•SSSS•SSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSS•S•SSSSSSS•SSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSS•S•SSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSS•S•SSSSSSSS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSS•SSS•SSSSSSSSSSSS•SSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SS•SSS•S••SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSS•SSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SS•SSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSS•SSSSSSSSSSSS•SSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•S•SSS•SSSSSSS•S•SSSSS•SSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSS•S•S•SSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSS•SSSSSSSS•SSS•SSSSSSSSS•SSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•S••SSSSSSSSSSSSSSSSSSSSS•SSS•SS•SSSS•SS
+
+Summarizing 2 Failures:
+  [FAIL] [sig-api-machinery] Servers with support for API chunking [It] should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance] [sig-api-machinery, Slow, Conformance]
+  k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:202
+  [FAIL] [sig-api-machinery] Watchers [It] should be able to restart watching from the last resource version observed by the previous watch [Conformance] [sig-api-machinery, Conformance]
+  k8s.io/kubernetes/test/e2e/apimachinery/watch.go:428
+
+Ran 424 of 7137 Specs in 6602.606 seconds
+FAIL! -- 422 Passed | 2 Failed | 0 Pending | 6713 Skipped
+--- FAIL: TestE2E (6603.35s)
+FAIL
+
+Ginkgo ran 1 suite in 1h50m4.593943586s
+
+Test Suite Failed
