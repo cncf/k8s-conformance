@@ -1,0 +1,9 @@
+vendor: Infrinia
+name: Infrinia AI Cloud OS
+version: v1.0.0
+website_url: https://www.infrinia.ai
+documentation_url: https://www.infrinia.ai
+product_logo_url: https://gist.githubusercontent.com/tdiallo29/bc1ea857335339fff15941dddba2b4b4/raw/abfd30f3f00853182a8ecb69e430f8c2dfb0c061/infrinia-logo.svg
+type: hosted platform
+description: "Infrinia AI Cloud OS is a GPU-native managed Kubernetes platform purpose-built for AI and ML workloads, providing automated GPU infrastructure provisioning, Kubernetes cluster orchestration, and MLOps tooling on NVIDIA GB200 NVL72 and other high-end GPU hardware."
+contact_email_address: thierno.diallo@infrinia.ai
