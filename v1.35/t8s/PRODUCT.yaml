@@ -1,0 +1,8 @@
+vendor: teuto.net Netzdienste GmbH
+name: teuto.net managed kubernetes
+version: x.x.x
+website_url: https://teuto.net/products-services/kubernetes?lang=en
+documentation_url: https://teuto.net/k8s/docs/managed-kubernetes
+type: hosted platform
+description: teuto.net quickly deploys and manages production-ready kubernetes clusters for you.
+contact_email_address: kubernetes@teuto.net
