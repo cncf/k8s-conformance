@@ -1,0 +1,9 @@
+vendor: GoldenRay (Ravit Technologies Pvt. Ltd.)
+name: GoldenRay Cloud & AI Platform
+version: v1.0.0
+website_url: https://www.goldenray.cloud
+repo_url: https://github.com/puravchokshi/k8s-conformance
+documentation_url: https://www.goldenray.cloud/resources
+type: distribution
+description: Enterprise-grade cloud-native AI platform built on composable CNCF components, providing GPU-accelerated model serving, MLOps pipelines, agentic workloads, and multi-tenant observability on upstream Kubernetes.
+contact_email_address: purav.chokshi@goldenray.cloud
