@@ -1,4 +1,4 @@
-# Infrinia AI Cloud OS v1.0.1-rc (K8S 1.34) 
+# Infrinia AI Cloud OS v1.0.1-rc (K8S 1.36) 
 
 Softbank's Infrinia AI Cloud OS is a GPU-native managed Kubernetes platform built for AI/ML workloads.
 
