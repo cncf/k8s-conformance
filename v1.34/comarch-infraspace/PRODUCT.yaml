@@ -1,0 +1,9 @@
+vendor: Comarch
+name: Container Platform by Comarch Infraspace
+version: v0.36.7
+website_url: https://www.comarch.com/trade-and-services/ict/comarch-infraspace-cloud/
+documentation_url: https://www.comarch.com/trade-and-services/ict/comarch-infraspace-cloud/
+product_logo_url: https://www.comarch.com/files-com/file_963/Logo-Infraspace-Cloud.png
+type: hosted platform
+description: 'OpenStack-powered fully open source Kuberentes service, with no vendor lock-in'
+contact_email_address: leszek.malinowski@comarch.com
