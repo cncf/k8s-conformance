@@ -1,0 +1,10 @@
+vendor: Ænix
+name: Cozystack
+version: v1.6.1-rc.1
+website_url: https://cozystack.io/
+repo_url: https://github.com/cozystack/cozystack
+documentation_url: https://cozystack.io/docs/
+product_logo_url: https://raw.githubusercontent.com/cozystack/cozystack/main/img/cozystack-logo-black.svg
+type: distribution
+description: 'Cozystack is a free PaaS platform and framework for building public and private clouds, providing managed Kubernetes clusters, virtual machines, and managed databases on top of bare metal.'
+contact_email_address: 'info@aenix.io'
