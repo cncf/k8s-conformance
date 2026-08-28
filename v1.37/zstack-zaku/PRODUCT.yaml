@@ -1,0 +1,9 @@
+vendor: ZStack 
+name: ZStack Zaku
+version: v3.10
+website_url: https://www.zstack.io/product/cloud_native/zaku/
+documentation_url: https://docs.zstack.io/zh/zcf/zaku/user-guide
+product_logo_url: https://www.zstack.io/static/skin/images/aboutus/brand/product_info/product_logo_6.svg
+type: distribution
+description: ZStack Zaku is a Cloud-Native application platform based on Kubernetes
+contact_email_address: ling.hu@zstack.io
