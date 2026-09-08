@@ -1,0 +1,9 @@
+vendor: Breqwatr
+name: BKS
+version: v1.0
+website_url: https://www.breqwatr.com/product
+documentation_url: https://breqwatr.github.io/docs/kubernetes/creating-a-kubernetes-cluster/
+product_logo_url: https://my.breqwatr.cloud/img/breqwatr-logo.svg
+type: hosted platform
+description: BKS is a hosted Kubernetes service on OpenStack, leveraging Cluster API to manage Kubernetes cluster lifecycle.
+contact_email_address: support@breqwatr.com

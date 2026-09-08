@@ -1,0 +1,10 @@
+vendor: vCluster Labs
+name: vCluster with private nodes
+version: v0.32.0
+website_url: https://www.vcluster.com/
+repo_url: https://github.com/loft-sh/vcluster
+documentation_url: https://www.vcluster.com/docs
+product_logo_url: https://static.loft.sh/branding/logos/vcluster/square/vcluster_square.svg
+type: distribution
+description: Private Nodes is a tenancy model for vCluster where, instead of sharing the host cluster's worker nodes, individual worker nodes are joined to a vCluster.
+contact_email_address: cncf@vcluster.com

@@ -1,0 +1,10 @@
+vendor: vCluster Labs
+name: vCluster Standalone
+version: v0.32.0
+website_url: https://www.vcluster.com/
+repo_url: https://github.com/loft-sh/vcluster
+documentation_url: https://www.vcluster.com/docs
+product_logo_url: https://static.loft.sh/branding/logos/vcluster/square/vcluster_square.svg
+type: distribution
+description: 'vCluster Standalone is a different architecture model for vCluster for the control plane and node as there is no requirement of a host cluster. vCluster is deployed directly onto nodes like other Kubernetes distribution. vCluster Standalone can run on any type of node, whether that is a bare-metal node or VM.'
+contact_email_address: cncf@vcluster.com

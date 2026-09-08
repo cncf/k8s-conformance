@@ -1,0 +1,1871 @@
+Activated service account credentials for: [prow-build@k8s-infra-prow-build.iam.gserviceaccount.com]
++ WRAPPED_COMMAND_PID=28
++ wait 28
++ bash -c 'make test-e2e-install
+kubetest2 kops \
+  -v 2 \
+  --up --down \
+  --cloud-provider=aws \
+  --create-args="--image='\''099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260714'\'' --channel=alpha --networking=calico --node-size=t3.large --control-plane-size=t3.large" \
+  --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci-updown-green.txt \
+  --kubernetes-version=https://dl.k8s.io/ci/latest-1.36.txt \
+  --test=kops \
+  -- \
+  --test-args="-test.timeout=150m" \
+  --test-package-url=https://dl.k8s.io \
+  --test-package-dir=ci \
+  --test-package-marker=latest-1.36.txt \
+  --focus-regex="\[Conformance\]" \
+  --skip-regex="\[NoSkip\]" \
+  --parallel=1
+'
+go: downloading go1.26.6 (linux/amd64)
+cd /home/prow/go/src/k8s.io/kops/tests/e2e && \
+	go install ./kubetest2-tester-kops && \
+	go install ./kubetest2-kops
+go: downloading k8s.io/apimachinery v0.36.3
+go: downloading github.com/urfave/sflags v0.4.1
+go: downloading k8s.io/klog/v2 v2.140.0
+go: downloading sigs.k8s.io/kubetest2 v0.0.0-20260227131255-e6d5899c1426
+go: downloading github.com/blang/semver/v4 v4.0.0
+go: downloading k8s.io/api v0.36.3
+go: downloading github.com/blang/semver v3.5.1+incompatible
+go: downloading sigs.k8s.io/yaml v1.6.0
+go: downloading cloud.google.com/go/storage v1.64.0
+go: downloading golang.org/x/oauth2 v0.36.0
+go: downloading google.golang.org/api v0.293.0
+go: downloading cloud.google.com/go v0.123.0
+go: downloading github.com/spf13/pflag v1.0.10
+go: downloading github.com/go-logr/logr v1.4.4
+go: downloading github.com/go-resty/resty/v2 v2.17.2
+go: downloading github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51
+go: downloading github.com/octago/sflags v0.3.1
+go: downloading k8s.io/kube-openapi v0.0.0-20260501160325-927ab1f70cd6
+go: downloading sigs.k8s.io/structured-merge-diff/v6 v6.4.2
+go: downloading sigs.k8s.io/randfill v1.0.0
+go: downloading gopkg.in/inf.v0 v0.9.1
+go: downloading k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3
+go: downloading github.com/apparentlymart/go-cidr v1.1.1
+go: downloading k8s.io/client-go v0.36.3
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/azcore v1.23.0
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.14.0
+go: downloading github.com/Azure/azure-sdk-for-go v68.0.0+incompatible
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.8.0
+go: downloading github.com/aws/aws-sdk-go-v2 v1.43.6
+go: downloading github.com/aws/aws-sdk-go-v2/config v1.32.37
+go: downloading github.com/aws/aws-sdk-go-v2/credentials v1.19.36
+go: downloading github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.18.37
+go: downloading github.com/aws/aws-sdk-go-v2/service/s3 v1.107.2
+go: downloading github.com/aws/smithy-go v1.27.8
+go: downloading github.com/go-ini/ini v1.67.0
+go: downloading github.com/gophercloud/gophercloud/v2 v2.13.0
+go: downloading github.com/pkg/sftp v1.13.11
+go: downloading go.opentelemetry.io/otel v1.45.0
+go: downloading go.opentelemetry.io/otel/trace v1.45.0
+go: downloading golang.org/x/crypto v0.55.0
+go: downloading go.yaml.in/yaml/v2 v2.4.4
+go: downloading cloud.google.com/go/compute/metadata v0.9.0
+go: downloading cloud.google.com/go/auth v0.23.0
+go: downloading cloud.google.com/go/iam v1.13.0
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/exporter/metric v0.57.0
+go: downloading github.com/google/uuid v1.6.0
+go: downloading github.com/googleapis/gax-go/v2 v2.23.0
+go: downloading go.opentelemetry.io/contrib/detectors/gcp v1.44.0
+go: downloading go.opentelemetry.io/otel/metric v1.45.0
+go: downloading go.opentelemetry.io/otel/sdk/metric v1.45.0
+go: downloading go.opentelemetry.io/otel/sdk v1.45.0
+go: downloading golang.org/x/sync v0.22.0
+go: downloading google.golang.org/genproto v0.0.0-20260519071638-aa98bba5eb94
+go: downloading google.golang.org/grpc v1.83.0
+go: downloading google.golang.org/protobuf v1.36.12
+go: downloading gopkg.in/gcfg.v1 v1.2.3
+go: downloading k8s.io/release v0.21.1
+go: downloading sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730
+go: downloading golang.org/x/net v0.58.0
+go: downloading github.com/json-iterator/go v1.1.12
+go: downloading github.com/Azure/azure-sdk-for-go/sdk/internal v1.12.0
+go: downloading github.com/AzureAD/microsoft-authentication-library-for-go v1.7.2
+go: downloading github.com/aws/aws-sdk-go-v2/service/signin v1.5.6
+go: downloading github.com/aws/aws-sdk-go-v2/service/ssooidc v1.38.6
+go: downloading github.com/aws/aws-sdk-go-v2/service/sso v1.33.6
+go: downloading github.com/aws/aws-sdk-go-v2/service/sts v1.45.6
+go: downloading github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.7.18
+go: downloading github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.37
+go: downloading github.com/aws/aws-sdk-go-v2/internal/v4a v1.4.38
+go: downloading github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.17
+go: downloading github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.9.30
+go: downloading github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.13.37
+go: downloading github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.19.38
+go: downloading github.com/kr/fs v0.1.0
+go: downloading golang.org/x/exp v0.0.0-20260813180055-c1d0aacb2297
+go: downloading google.golang.org/genproto/googleapis/api v0.0.0-20260720211330-0afa2a65878a
+go: downloading google.golang.org/genproto/googleapis/rpc v0.0.0-20260807164820-c8921c73eeea
+go: downloading cloud.google.com/go/monitoring v1.29.0
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/internal/resourcemapping v0.57.0
+go: downloading github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v1.33.0
+go: downloading go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.70.0
+go: downloading cloud.google.com/go/auth/oauth2adapt v0.2.8
+go: downloading golang.org/x/sys v0.47.0
+go: downloading github.com/google/s2a-go v0.1.9
+go: downloading github.com/sergi/go-diff v1.4.0
+go: downloading github.com/fxamacker/cbor/v2 v2.9.1
+go: downloading gopkg.in/warnings.v0 v0.1.2
+go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
+go: downloading github.com/modern-go/reflect2 v1.0.3-0.20250322232337-35a7c28c31ee
+go: downloading github.com/sirupsen/logrus v1.9.4
+go: downloading sigs.k8s.io/release-sdk v0.12.6
+go: downloading sigs.k8s.io/release-utils v0.12.4
+go: downloading github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c
+go: downloading github.com/kylelemons/godebug v1.1.0
+go: downloading github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.37
+go: downloading github.com/go-logr/stdr v1.2.2
+go: downloading go.opentelemetry.io/auto/sdk v1.2.1
+go: downloading github.com/cespare/xxhash/v2 v2.3.0
+go: downloading go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.68.0
+go: downloading golang.org/x/time v0.15.0
+go: downloading github.com/googleapis/enterprise-certificate-proxy v0.3.20
+go: downloading github.com/felixge/httpsnoop v1.1.0
+go: downloading github.com/envoyproxy/go-control-plane/envoy v1.37.0
+go: downloading github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
+go: downloading github.com/x448/float16 v0.8.4
+go: downloading github.com/fastly/go-fastly/v13 v13.1.2
+go: downloading github.com/google/go-containerregistry v0.21.9
+go: downloading github.com/in-toto/in-toto-golang v0.11.0
+go: downloading github.com/shirou/gopsutil/v3 v3.24.5
+go: downloading sigs.k8s.io/bom v0.7.1
+go: downloading sigs.k8s.io/promo-tools/v4 v4.4.1
+go: downloading github.com/go-git/go-git/v5 v5.19.2
+go: downloading github.com/golang-jwt/jwt/v5 v5.3.1
+go: downloading github.com/olekukonko/tablewriter v1.1.4
+go: downloading golang.org/x/text v0.41.0
+go: downloading github.com/spiffe/go-spiffe/v2 v2.7.0
+go: downloading github.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2
+go: downloading gopkg.in/evanphx/json-patch.v4 v4.13.0
+go: downloading golang.org/x/term v0.45.0
+go: downloading github.com/in-toto/attestation v1.2.0
+go: downloading github.com/secure-systems-lab/go-securesystemslib v0.11.0
+go: downloading github.com/shibumi/go-pathspec v1.3.0
+go: downloading github.com/dnaeon/go-vcr v1.2.0
+go: downloading github.com/google/go-querystring v1.2.0
+go: downloading github.com/google/jsonapi v1.0.0
+go: downloading github.com/hashicorp/go-cleanhttp v0.5.2
+go: downloading github.com/mitchellh/mapstructure v1.5.1-0.20231216201459-8508981c8b6c
+go: downloading github.com/peterhellberg/link v1.2.0
+go: downloading github.com/envoyproxy/protoc-gen-validate v1.3.3
+go: downloading github.com/google/licenseclassifier/v2 v2.0.0
+go: downloading github.com/google/go-github/v84 v84.0.0
+go: downloading github.com/jellydator/ttlcache/v3 v3.4.0
+go: downloading github.com/nozzle/throttler v0.0.0-20180817012639-2ea982251481
+go: downloading github.com/sigstore/cosign/v2 v2.6.2
+go: downloading github.com/sigstore/rekor v1.5.2
+go: downloading github.com/sigstore/sigstore v1.10.6
+go: downloading github.com/package-url/packageurl-go v0.1.3
+go: downloading golang.org/x/mod v0.40.0
+go: downloading golang.org/x/tools/go/vcs v0.1.0-deprecated
+go: downloading dario.cat/mergo v1.0.1
+go: downloading github.com/ProtonMail/go-crypto v1.1.6
+go: downloading github.com/go-git/go-billy/v5 v5.9.0
+go: downloading github.com/emirpasic/gods v1.18.1
+go: downloading github.com/mattn/go-runewidth v0.0.19
+go: downloading github.com/olekukonko/errors v1.2.0
+go: downloading github.com/olekukonko/ll v0.1.6
+go: downloading github.com/fatih/color v1.19.0
+go: downloading github.com/go-jose/go-jose/v4 v4.1.4
+go: downloading cel.dev/expr v0.25.2
+go: downloading github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
+go: downloading github.com/docker/cli v29.6.2+incompatible
+go: downloading github.com/opencontainers/go-digest v1.0.0
+go: downloading gopkg.in/yaml.v2 v2.4.0
+go: downloading github.com/avast/retry-go/v4 v4.7.0
+go: downloading github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.10.1
+go: downloading github.com/chrismellard/docker-credential-acr-env v0.0.0-20230304212654-82a0ddb27589
+go: downloading github.com/mozillazg/docker-credential-acr-helper v0.4.0
+go: downloading github.com/sigstore/sigstore-go v1.1.4
+go: downloading github.com/spf13/cobra v1.10.2
+go: downloading github.com/spf13/viper v1.21.0
+go: downloading github.com/cyberphone/json-canonicalization v0.0.0-20241213102144-19d51d7fe467
+go: downloading github.com/digitorus/timestamp v0.0.0-20231217203849-220c5c2851b7
+go: downloading github.com/go-openapi/runtime v0.31.0
+go: downloading github.com/go-openapi/strfmt v0.26.2
+go: downloading github.com/go-openapi/swag v0.26.0
+go: downloading github.com/google/certificate-transparency-go v1.3.2
+go: downloading github.com/sigstore/protobuf-specs v0.5.1
+go: downloading github.com/sigstore/timestamp-authority/v2 v2.1.0
+go: downloading github.com/transparency-dev/merkle v0.0.2
+go: downloading github.com/glebarez/go-sqlite v1.22.0
+go: downloading github.com/knqyf263/go-rpmdb v0.1.1
+go: downloading gitlab.alpinelinux.org/alpine/go v0.10.1
+go: downloading github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
+go: downloading github.com/go-openapi/errors v0.22.7
+go: downloading github.com/go-openapi/validate v0.25.2
+go: downloading github.com/go-git/gcfg v1.5.1-0.20230307220236-3a3c6141e376
+go: downloading github.com/pjbgf/sha1cd v0.6.0
+go: downloading github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99
+go: downloading github.com/cyphar/filepath-securejoin v0.6.1
+go: downloading github.com/clipperhouse/uax29/v2 v2.6.0
+go: downloading github.com/clipperhouse/displaywidth v0.10.0
+go: downloading github.com/olekukonko/cat v0.0.0-20250911104152-50322a0618f6
+go: downloading github.com/google/gnostic-models v0.7.1
+go: downloading go.yaml.in/yaml/v3 v3.0.4
+go: downloading github.com/go-openapi/jsonreference v0.21.5
+go: downloading github.com/mattn/go-colorable v0.1.14
+go: downloading github.com/mattn/go-isatty v0.0.21
+go: downloading github.com/klauspost/compress v1.19.1
+go: downloading github.com/opencontainers/image-spec v1.1.1
+go: downloading github.com/docker/docker-credential-helpers v0.9.3
+go: downloading github.com/theupdateframework/go-tuf v0.7.0
+go: downloading github.com/Azure/go-autorest/autorest/azure/auth v0.5.13
+go: downloading github.com/hashicorp/go-retryablehttp v0.7.8
+go: downloading github.com/Azure/go-autorest/autorest v0.11.30
+go: downloading gitlab.com/gitlab-org/api/client-go v0.143.3
+go: downloading github.com/Azure/go-autorest v14.2.0+incompatible
+go: downloading github.com/fsnotify/fsnotify v1.9.0
+go: downloading github.com/go-viper/mapstructure/v2 v2.5.0
+go: downloading github.com/sagikazarmark/locafero v0.11.0
+go: downloading github.com/spf13/afero v1.15.0
+go: downloading github.com/spf13/cast v1.10.0
+go: downloading github.com/digitorus/pkcs7 v0.0.0-20230818184609-3a137a874352
+go: downloading github.com/oklog/ulid/v2 v2.1.1
+go: downloading github.com/go-openapi/swag/cmdutils v0.26.0
+go: downloading github.com/go-openapi/swag/conv v0.26.0
+go: downloading github.com/go-openapi/swag/fileutils v0.26.0
+go: downloading github.com/go-openapi/swag/jsonname v0.26.0
+go: downloading github.com/go-openapi/swag/jsonutils v0.26.0
+go: downloading github.com/go-openapi/swag/loading v0.26.0
+go: downloading github.com/go-openapi/swag/mangling v0.26.0
+go: downloading github.com/go-openapi/swag/netutils v0.26.0
+go: downloading github.com/go-openapi/swag/stringutils v0.26.0
+go: downloading github.com/go-openapi/swag/typeutils v0.26.0
+go: downloading github.com/go-openapi/swag/yamlutils v0.26.0
+go: downloading github.com/moby/term v0.5.2
+go: downloading github.com/sigstore/rekor-tiles/v2 v2.0.1
+go: downloading github.com/theupdateframework/go-tuf/v2 v2.4.1
+go: downloading github.com/letsencrypt/boulder v0.20260223.0
+go: downloading github.com/sigstore/fulcio v1.8.5
+go: downloading github.com/dustin/go-humanize v1.0.1
+go: downloading cuelang.org/go v0.14.1
+go: downloading github.com/open-policy-agent/opa v1.8.0
+go: downloading modernc.org/libc v1.66.10
+go: downloading modernc.org/sqlite v1.40.1
+go: downloading github.com/pkg/errors v0.9.1
+go: downloading github.com/go-openapi/runtime/server-middleware v0.30.0
+go: downloading github.com/MakeNowJust/heredoc/v2 v2.0.1
+go: downloading gopkg.in/ini.v1 v1.67.3
+go: downloading github.com/cloudflare/circl v1.6.3
+go: downloading github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8
+go: downloading github.com/kevinburke/ssh_config v1.2.0
+go: downloading github.com/skeema/knownhosts v1.3.1
+go: downloading github.com/xanzy/ssh-agent v0.3.3
+go: downloading github.com/go-openapi/analysis v0.25.0
+go: downloading github.com/go-openapi/jsonpointer v0.23.1
+go: downloading github.com/go-openapi/loads v0.23.3
+go: downloading github.com/go-openapi/spec v0.22.4
+go: downloading github.com/klauspost/cpuid/v2 v2.3.0
+go: downloading github.com/AliyunContainerService/ack-ram-tool/pkg/credentials/provider v0.16.1
+go: downloading github.com/alibabacloud-go/cr-20160607 v1.0.1
+go: downloading github.com/alibabacloud-go/cr-20181201 v1.0.10
+go: downloading github.com/alibabacloud-go/darabonba-openapi v0.2.1
+go: downloading github.com/alibabacloud-go/tea-utils v1.4.5
+go: downloading github.com/alibabacloud-go/tea v1.3.2
+go: downloading github.com/aliyun/credentials-go v1.4.3
+go: downloading github.com/syndtr/goleveldb v1.0.1-0.20220721030215-126854af5e6d
+go: downloading github.com/Azure/go-autorest/autorest/adal v0.9.24
+go: downloading github.com/aws/aws-sdk-go-v2/service/ecr v1.49.2
+go: downloading github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.33.2
+go: downloading github.com/google/go-github/v73 v73.0.0
+go: downloading github.com/Azure/go-autorest/autorest/azure/cli v0.4.7
+go: downloading github.com/Azure/go-autorest/logger v0.2.2
+go: downloading github.com/dimchansky/utfbom v1.1.1
+go: downloading github.com/sourcegraph/conc v0.3.1-0.20240121214520-5f936abd7ae8
+go: downloading github.com/subosito/gotenv v1.6.0
+go: downloading github.com/pelletier/go-toml/v2 v2.2.4
+go: downloading github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2
+go: downloading github.com/go-chi/chi/v5 v5.2.5
+go: downloading go.uber.org/zap v1.28.0
+go: downloading github.com/jedisct1/go-minisign v0.0.0-20241212093149-d2f9f49435c7
+go: downloading github.com/grpc-ecosystem/grpc-gateway/v2 v2.29.0
+go: downloading github.com/transparency-dev/formats v0.0.0-20251017110053-404c0d5b696c
+go: downloading github.com/cenkalti/backoff/v5 v5.0.3
+go: downloading github.com/coreos/go-oidc/v3 v3.17.0
+go: downloading github.com/buildkite/agent/v3 v3.104.0
+go: downloading github.com/titanous/rocacheck v0.0.0-20171023193734-afe73141d399
+go: downloading golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
+go: downloading modernc.org/mathutil v1.7.1
+go: downloading modernc.org/memory v1.11.0
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go: downloading github.com/alibabacloud-go/endpoint-util v1.1.1
+go: downloading github.com/alibabacloud-go/openapi-util v0.1.1
+go: downloading github.com/alibabacloud-go/alibabacloud-gateway-spi v0.0.5
+go: downloading github.com/alibabacloud-go/tea-xml v1.1.3
+go: downloading github.com/alibabacloud-go/debug v1.0.1
+go: downloading github.com/Azure/go-autorest/tracing v0.6.1
+go: downloading github.com/Azure/go-autorest/autorest/date v0.3.1
+go: downloading github.com/golang-jwt/jwt/v4 v4.5.2
+go: downloading github.com/mitchellh/go-homedir v1.1.0
+go: downloading github.com/sassoftware/relic v7.2.1+incompatible
+go: downloading go.uber.org/multierr v1.11.0
+go: downloading github.com/cockroachdb/apd/v3 v3.2.1
+go: downloading cuelabs.dev/go/oci/ociregistry v0.0.0-20250715075730-49cab49c8e9d
+go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
+go: downloading github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415
+go: downloading github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475
+go: downloading github.com/buildkite/go-pipeline v0.15.0
+go: downloading github.com/buildkite/roko v1.4.0
+go: downloading github.com/pborman/uuid v1.2.1
+go: downloading github.com/gobwas/glob v0.2.3
+go: downloading github.com/lestrrat-go/jwx/v3 v3.0.10
+go: downloading github.com/prometheus/client_golang v1.24.1
+go: downloading github.com/tchap/go-patricia/v2 v2.3.3
+go: downloading github.com/vektah/gqlparser/v2 v2.5.30
+go: downloading github.com/yashtewari/glob-intersection v0.2.0
+go: downloading github.com/alibabacloud-go/tea-utils/v2 v2.0.7
+go: downloading github.com/tjfoc/gmsm v1.4.1
+go: downloading github.com/golang/snappy v0.0.4
+go: downloading github.com/clbanning/mxj/v2 v2.7.0
+go: downloading github.com/emicklei/proto v1.14.2
+go: downloading github.com/protocolbuffers/txtpbfmt v0.0.0-20250627152318-f293424e46b5
+go: downloading github.com/rogpeppe/go-internal v1.14.1
+go: downloading github.com/xeipuuv/gojsonpointer v0.0.0-20190905194746-02993c407bfb
+go: downloading github.com/buildkite/interpolate v0.1.5
+go: downloading github.com/oleiade/reflections v1.1.0
+go: downloading github.com/lestrrat-go/option/v2 v2.0.0
+go: downloading github.com/lestrrat-go/blackmagic v1.0.4
+go: downloading github.com/lestrrat-go/httprc/v3 v3.0.0
+go: downloading github.com/lestrrat-go/option v1.0.1
+go: downloading github.com/valyala/fastjson v1.6.4
+go: downloading github.com/beorn7/perks v1.0.1
+go: downloading github.com/prometheus/client_model v0.6.2
+go: downloading github.com/prometheus/common v0.70.1
+go: downloading github.com/prometheus/procfs v0.21.1
+go: downloading github.com/google/go-cmp v0.7.0
+go: downloading github.com/lestrrat-go/httpcc v1.0.1
+go: downloading github.com/agnivade/levenshtein v1.2.1
+go: downloading github.com/emicklei/go-restful/v3 v3.13.0
+go: downloading github.com/mitchellh/go-wordwrap v1.0.1
+go: downloading github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
+go: downloading sigs.k8s.io/boskos v0.0.0-20260730151943-11fb0c84248b
+go: downloading github.com/aws/aws-sdk-go-v2/service/ec2 v1.321.3
+go: downloading github.com/hashicorp/go-multierror v1.1.1
+go: downloading sigs.k8s.io/prow v0.0.0-20240619181241-cfb8754e0459
+go: downloading github.com/hashicorp/errwrap v1.1.0
+go: downloading github.com/bombsimon/logrusr/v4 v4.1.0
+go: downloading sigs.k8s.io/controller-runtime v0.24.1
+go: downloading go4.org v0.0.0-20230225012048-214862532bf5
+I0820 05:18:33.360355   12931 app.go:62] The files in RunDir shall not be part of Artifacts
+I0820 05:18:33.360475   12931 app.go:63] pass rundir-in-artifacts flag True for RunDir to be part of Artifacts
+I0820 05:18:33.360502   12931 app.go:65] RunDir for this run: "/home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5"
+I0820 05:18:33.364049   12931 app.go:137] ID for this run: "9ebb3d78-a10c-44be-8d80-15671ce770b5"
+I0820 05:18:33.364089   12931 common.go:316] Using cluster name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+I0820 05:18:33.364120   12931 http.go:37] curl https://dl.k8s.io/ci/latest-1.36.txt
+I0820 05:18:33.726750   12931 local.go:42] ⚙️ ssh-keygen -t ed25519 -N  -q -f /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519
+I0820 05:18:33.731662   12931 common.go:114] Using SSH keypair: [/tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519,/tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519.pub]
+I0820 05:18:33.731685   12931 common.go:143] Using SSH user: [ubuntu]
+I0820 05:18:33.731745   12931 http.go:37] curl https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci-updown-green.txt
+I0820 05:18:33.903839   12931 http.go:37] curl https://storage.googleapis.com/k8s-staging-kops/kops/releases/1.37.0-alpha.2+v1.37.0-alpha.1-262-g8e2ef91f59/linux/amd64/kops
+I0820 05:18:35.244780   12931 up.go:77] Cleaning up any leaked resources from previous cluster
+I0820 05:18:35.244802   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -ojson
+W0820 05:18:40.369483   12931 state.go:46] failed to run /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -ojson; stderr=Error: error reading cluster configuration "e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io": error reading s3://k8s-infra-kops-state-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/config: getting location for bucket "k8s-infra-kops-state-20903067212211": operation error S3: HeadBucket, https response error StatusCode: 404, RequestID: 650KRGE4K3T8HM76, HostID: WT2Xpuv8gNNzYvbE/dSofZbLWI3psQWiqsYzMVnVBxpgGzaFAm2Som9o2D4bOQEQ5Wj3W0xV8/tnyN5/gFXwJe43krJ/Z2Ic, NotFound: 
+I0820 05:18:40.369530   12931 s3.go:104] Creating bucket k8s-infra-kops-state-20903067212211 in region eu-central-1
+I0820 05:18:41.251084   12931 s3.go:137] Bucket k8s-infra-kops-state-20903067212211 created successfully
+I0820 05:18:41.251117   12931 s3.go:104] Creating bucket k8s-infra-kops-discovery-20903067212211 in region eu-central-1
+I0820 05:18:42.137898   12931 s3.go:137] Bucket k8s-infra-kops-discovery-20903067212211 created successfully
+I0820 05:18:53.091162   12931 s3.go:157] Public read policy set on bucket k8s-infra-kops-discovery-20903067212211
+I0820 05:18:53.091181   12931 http.go:37] curl https://ip.jsb.workers.dev
+I0820 05:18:53.123886   12931 up.go:174] "no env file specified, skipping write of env file"
+I0820 05:18:53.123991   12931 up.go:314] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops create cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --cloud aws --kubernetes-version https://dl.k8s.io/ci/v1.36.3-17+e460e27c50dd60 --ssh-public-key /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519.pub --set cluster.spec.nodePortAccess=0.0.0.0/0 --set spec.containerd.configAdditions=plugins."io.containerd.grpc.v1.cri".containerd.runtimes.test-handler.runtime_type=io.containerd.runc.v2 --set spec.containerd.configAdditions=plugins."io.containerd.cri.v1.runtime".containerd.runtimes.test-handler.runtime_type=io.containerd.runc.v2 --discovery-store s3://k8s-infra-kops-discovery-20903067212211 --cloud-labels group=sig-cluster-lifecycle,subproject=kops,prow.k8s.io/job=e2e-kops-aws-conformance-1-36 --image=099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260714 --channel=alpha --networking=calico --node-size=t3.large --control-plane-size=t3.large --admin-access 18.118.175.62/32 --control-plane-count 1 --control-plane-volume-size 48 --node-count 4 --node-volume-size 48 --zones eu-central-1b
+I0820 05:18:53.124005   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops create cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --cloud aws --kubernetes-version https://dl.k8s.io/ci/v1.36.3-17+e460e27c50dd60 --ssh-public-key /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519.pub --set cluster.spec.nodePortAccess=0.0.0.0/0 --set spec.containerd.configAdditions=plugins."io.containerd.grpc.v1.cri".containerd.runtimes.test-handler.runtime_type=io.containerd.runc.v2 --set spec.containerd.configAdditions=plugins."io.containerd.cri.v1.runtime".containerd.runtimes.test-handler.runtime_type=io.containerd.runc.v2 --discovery-store s3://k8s-infra-kops-discovery-20903067212211 --cloud-labels group=sig-cluster-lifecycle,subproject=kops,prow.k8s.io/job=e2e-kops-aws-conformance-1-36 --image=099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260714 --channel=alpha --networking=calico --node-size=t3.large --control-plane-size=t3.large --admin-access 18.118.175.62/32 --control-plane-count 1 --control-plane-volume-size 48 --node-count 4 --node-volume-size 48 --zones eu-central-1b
+I0820 05:18:53.158433   12954 create_cluster.go:975] Using SSH public key: /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519.pub
+I0820 05:18:58.579015   12954 new_cluster.go:1546] Cloud Provider ID: "aws"
+I0820 05:18:59.007476   12954 subnets.go:248] Assigned CIDR 172.20.0.0/16 to subnet eu-central-1b
+Previewing changes that will be made:
+
+
+*********************************************************************************
+
+A new kubernetes version is available: 1.36.3
+Upgrading is recommended (try kops upgrade cluster)
+
+More information: https://github.com/kubernetes/kops/blob/master/permalinks/upgrade_k8s.md#1.36.3
+
+*********************************************************************************
+
+W0820 05:19:07.250959   12954 kopsassets.go:63] Using base url from env var: KOPS_BASE_URL="https://storage.googleapis.com/k8s-staging-kops/kops/releases/1.37.0-alpha.2+v1.37.0-alpha.1-262-g8e2ef91f59"
+I0820 05:19:09.464296   12954 executor.go:113] Tasks: 0 done / 128 total; 40 can run
+W0820 05:19:09.789295   12954 vfs_keystorereader.go:163] CA private key was not found
+I0820 05:19:10.246834   12954 executor.go:113] Tasks: 40 done / 128 total; 26 can run
+I0820 05:19:10.566552   12954 executor.go:113] Tasks: 66 done / 128 total; 33 can run
+I0820 05:19:10.917660   12954 executor.go:113] Tasks: 99 done / 128 total; 4 can run
+I0820 05:19:11.433161   12954 executor.go:113] Tasks: 103 done / 128 total; 6 can run
+I0820 05:19:11.717880   12954 executor.go:113] Tasks: 109 done / 128 total; 2 can run
+I0820 05:19:12.108687   12954 executor.go:113] Tasks: 111 done / 128 total; 4 can run
+I0820 05:19:12.431364   12954 executor.go:113] Tasks: 115 done / 128 total; 2 can run
+I0820 05:19:12.572725   12954 executor.go:113] Tasks: 117 done / 128 total; 10 can run
+I0820 05:19:12.765692   12954 executor.go:113] Tasks: 127 done / 128 total; 1 can run
+I0820 05:19:12.874103   12954 executor.go:113] Tasks: 128 done / 128 total; 0 can run
+Will create resources:
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-aws-cloud-controller.addons.k8s.io-k8s-1.18
+  	Location            	addons/aws-cloud-controller.addons.k8s.io/k8s-1.18.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-aws-ebs-csi-driver.addons.k8s.io-k8s-1.17
+  	Location            	addons/aws-ebs-csi-driver.addons.k8s.io/k8s-1.17.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-coredns.addons.k8s.io-k8s-1.12
+  	Location            	addons/coredns.addons.k8s.io/k8s-1.12.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-dns-controller.addons.k8s.io-k8s-1.12
+  	Location            	addons/dns-controller.addons.k8s.io/k8s-1.12.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-kops-controller.addons.k8s.io-k8s-1.16
+  	Location            	addons/kops-controller.addons.k8s.io/k8s-1.16.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-kubelet-api.rbac.addons.k8s.io-k8s-1.9
+  	Location            	addons/kubelet-api.rbac.addons.k8s.io/k8s-1.9.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-limit-range.addons.k8s.io
+  	Location            	addons/limit-range.addons.k8s.io/v1.5.0.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-networking.projectcalico.org-k8s-1.25
+  	Location            	addons/networking.projectcalico.org/k8s-1.25.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-node-termination-handler.aws-k8s-1.11
+  	Location            	addons/node-termination-handler.aws/k8s-1.11.yaml
+
+  AddonManifest/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-storage-aws.addons.k8s.io-v1.15.0
+  	Location            	addons/storage-aws.addons.k8s.io/v1.15.0.yaml
+
+  AutoscalingGroup/control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Granularity         	1Minute
+  	InstanceProtection  	false
+  	LaunchTemplate      	name:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	LoadBalancers       	[]
+  	MaxInstanceLifetime 	0
+  	MaxSize             	1
+  	Metrics             	[GroupDesiredCapacity, GroupInServiceInstances, GroupMaxSize, GroupMinSize, GroupPendingInstances, GroupStandbyInstances, GroupTerminatingInstances, GroupTotalInstances]
+  	MinSize             	1
+  	Subnets             	[name:eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io]
+  	SuspendProcesses    	[]
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, aws-node-termination-handler/managed: , k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/kops-controller-pki: , k8s.io/role/master: 1, kops.k8s.io/instancegroup: control-plane-eu-central-1b, Name: control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, group: sig-cluster-lifecycle, k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: control-plane-eu-central-1b, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/control-plane: , k8s.io/cluster-autoscaler/node-template/label/node.kubernetes.io/exclude-from-external-load-balancers: , k8s.io/role/control-plane: 1, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+  	TargetGroups        	[name:kops-controller-e2e-e2e-k-cgu13v id:kops-controller-e2e-e2e-k-cgu13v, name:tcp-e2e-e2e-kops-aws-conf-a4412c id:tcp-e2e-e2e-kops-aws-conf-a4412c]
+
+  AutoscalingGroup/nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Granularity         	1Minute
+  	InstanceProtection  	false
+  	LaunchTemplate      	name:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	LoadBalancers       	[]
+  	MaxInstanceLifetime 	0
+  	MaxSize             	4
+  	Metrics             	[GroupDesiredCapacity, GroupInServiceInstances, GroupMaxSize, GroupMinSize, GroupPendingInstances, GroupStandbyInstances, GroupTerminatingInstances, GroupTotalInstances]
+  	MinSize             	4
+  	Subnets             	[name:eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io]
+  	SuspendProcesses    	[]
+  	Tags                	{k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: nodes-eu-central-1b, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/node: , k8s.io/role/node: 1, kops.k8s.io/instancegroup: nodes-eu-central-1b, Name: nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, aws-node-termination-handler/managed: }
+  	TargetGroups        	[]
+
+  AutoscalingLifecycleHook/control-plane-eu-central-1b-NTHLifecycleHook
+  	ID                  	control-plane-eu-central-1b-NTHLifecycleHook
+  	AutoscalingGroup    	name:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	DefaultResult       	CONTINUE
+  	HeartbeatTimeout    	300
+  	LifecycleTransition 	autoscaling:EC2_INSTANCE_TERMINATING
+  	Enabled             	true
+
+  AutoscalingLifecycleHook/nodes-eu-central-1b-NTHLifecycleHook
+  	ID                  	nodes-eu-central-1b-NTHLifecycleHook
+  	AutoscalingGroup    	name:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	DefaultResult       	CONTINUE
+  	HeartbeatTimeout    	300
+  	LifecycleTransition 	autoscaling:EC2_INSTANCE_TERMINATING
+  	Enabled             	true
+
+  BootstrapChannel/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-addons-bootstrap
+  	Location            	addons/bootstrap-channel.yaml
+
+  DHCPOptions/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	DomainName          	eu-central-1.compute.internal
+  	DomainNameServers   	AmazonProvidedDNS
+  	Shared              	false
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  EBSVolume/b.etcd-events.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AvailabilityZone    	eu-central-1b
+  	Encrypted           	true
+  	SizeGB              	20
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, k8s.io/role/master: 1, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, Name: b.etcd-events.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, k8s.io/etcd/events: b/b, k8s.io/role/control-plane: 1}
+  	VolumeIops          	3000
+  	VolumeThroughput    	125
+  	VolumeType          	gp3
+
+  EBSVolume/b.etcd-main.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AvailabilityZone    	eu-central-1b
+  	Encrypted           	true
+  	SizeGB              	20
+  	Tags                	{KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, subproject: kops, group: sig-cluster-lifecycle, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, Name: b.etcd-main.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, k8s.io/etcd/main: b/b, k8s.io/role/control-plane: 1, k8s.io/role/master: 1}
+  	VolumeIops          	3000
+  	VolumeThroughput    	125
+  	VolumeType          	gp3
+
+  EventBridgeRule/e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle
+  	EventPattern        	{"source":["aws.autoscaling"],"detail-type":["EC2 Instance-terminate Lifecycle Action"]}
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  EventBridgeRule/e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange
+  	EventPattern        	{"source": ["aws.health"],"detail-type": ["AWS Health Event"],"detail": {"service": ["EC2"],"eventTypeCategory": ["scheduledChange"]}}
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+  	Tags                	{subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36}
+
+  EventBridgeRule/e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange
+  	EventPattern        	{"source": ["aws.ec2"],"detail-type": ["EC2 Instance State-change Notification"]}
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  EventBridgeRule/e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption
+  	EventPattern        	{"source": ["aws.ec2"],"detail-type": ["EC2 Spot Instance Interruption Warning"]}
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  EventBridgeTarget/e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle-Target
+  	Rule                	name:e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle id:e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+
+  EventBridgeTarget/e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange-Target
+  	Rule                	name:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange id:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+
+  EventBridgeTarget/e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange-Target
+  	Rule                	name:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange id:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+
+  EventBridgeTarget/e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption-Target
+  	Rule                	name:e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption id:e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption
+  	SQSQueue            	name:e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+
+  IAMInstanceProfile/masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+  	Shared              	false
+
+  IAMInstanceProfile/nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, group: sig-cluster-lifecycle, Name: nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+  	Shared              	false
+
+  IAMInstanceProfileRole/masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	InstanceProfile     	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Role                	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  IAMInstanceProfileRole/nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	InstanceProfile     	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Role                	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  IAMOIDCProvider/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	ClientIDs           	[amazonaws.com]
+  	Thumbprints         	[9e99a48a9960b14926bb7f3b02e22da2b0ab7280, a9d53002e97e00e043244f3d170d6f4c414104fd]
+  	URL                 	https://k8s-infra-kops-discovery-20903067212211.s3.eu-central-1.amazonaws.com/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  IAMRole/aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc
+  	Tags                	{service-account.kops.k8s.io/namespace: kube-system, Name: aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, service-account.kops.k8s.io/name: aws-cloud-controller-manager}
+  	ExportWithID        	kube-system-aws-cloud-controller-manager
+
+  IAMRole/aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, service-account.kops.k8s.io/name: aws-node-termination-handler, service-account.kops.k8s.io/namespace: kube-system, Name: aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle}
+  	ExportWithID        	kube-system-aws-node-termination-handler
+
+  IAMRole/ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0
+  	Tags                	{service-account.kops.k8s.io/namespace: kube-system, Name: ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, service-account.kops.k8s.io/name: ebs-csi-controller-sa}
+  	ExportWithID        	kube-system-ebs-csi-controller-sa
+
+  IAMRole/masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+  	ExportWithID        	masters
+
+  IAMRole/nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{Name: nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36}
+  	ExportWithID        	nodes
+
+  IAMRolePolicy/aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc
+  	Role                	name:aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc
+  	Managed             	false
+
+  IAMRolePolicy/aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m
+  	Role                	name:aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m
+  	Managed             	false
+
+  IAMRolePolicy/ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0
+  	Role                	name:ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0
+  	Managed             	false
+
+  IAMRolePolicy/master-policyoverride
+  	Role                	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Managed             	true
+
+  IAMRolePolicy/masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Role                	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Managed             	false
+
+  IAMRolePolicy/node-policyoverride
+  	Role                	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Managed             	true
+
+  IAMRolePolicy/nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Role                	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Managed             	false
+
+  InternetGateway/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Shared              	false
+  	Tags                	{Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  Keypair/apiserver-aggregator-ca
+  	Subject             	cn=apiserver-aggregator-ca
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-clients-ca
+  	Subject             	cn=etcd-clients-ca
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-manager-ca-events
+  	Subject             	cn=etcd-manager-ca-events
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-manager-ca-main
+  	Subject             	cn=etcd-manager-ca-main
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-peers-ca-events
+  	Subject             	cn=etcd-peers-ca-events
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-peers-ca-main
+  	Subject             	cn=etcd-peers-ca-main
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/kubernetes-ca
+  	Subject             	cn=kubernetes-ca
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/service-account
+  	Subject             	cn=service-account
+  	Issuer              	
+  	Type                	ca
+  	LegacyFormat        	false
+
+  LaunchTemplate/control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AssociatePublicIP   	true
+  	CPUCredits          	
+  	HTTPPutResponseHopLimit	1
+  	HTTPTokens          	required
+  	HTTPProtocolIPv6    	disabled
+  	IAMInstanceProfile  	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	ImageID             	099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260714
+  	InstanceMonitoring  	false
+  	InstanceType        	t3.large
+  	IPv6AddressCount    	0
+  	RootVolumeIops      	3000
+  	RootVolumeSize      	48
+  	RootVolumeThroughput	125
+  	RootVolumeType      	gp3
+  	RootVolumeEncryption	true
+  	RootVolumeKmsKey    	
+  	SSHKey              	name:kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc id:kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc
+  	SecurityGroups      	[name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io]
+  	SpotPrice           	
+  	Tags                	{kops.k8s.io/instancegroup: control-plane-eu-central-1b, Name: control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/kops-controller-pki: , k8s.io/cluster-autoscaler/node-template/label/node.kubernetes.io/exclude-from-external-load-balancers: , k8s.io/role/master: 1, k8s.io/role/control-plane: 1, subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, aws-node-termination-handler/managed: , k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: control-plane-eu-central-1b, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/control-plane: }
+
+  LaunchTemplate/nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AssociatePublicIP   	true
+  	CPUCredits          	
+  	HTTPPutResponseHopLimit	1
+  	HTTPTokens          	required
+  	HTTPProtocolIPv6    	disabled
+  	IAMInstanceProfile  	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	ImageID             	099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20260714
+  	InstanceMonitoring  	false
+  	InstanceType        	t3.large
+  	IPv6AddressCount    	0
+  	RootVolumeIops      	3000
+  	RootVolumeSize      	48
+  	RootVolumeThroughput	125
+  	RootVolumeType      	gp3
+  	RootVolumeEncryption	true
+  	RootVolumeKmsKey    	
+  	SSHKey              	name:kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc id:kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc
+  	SecurityGroups      	[name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io]
+  	SpotPrice           	
+  	Tags                	{kops.k8s.io/instancegroup: nodes-eu-central-1b, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, aws-node-termination-handler/managed: , k8s.io/role/node: 1, Name: nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/node: , k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: nodes-eu-central-1b}
+
+  ManagedFile/cluster-completed.spec
+  	Base                	s3://k8s-infra-kops-state-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Location            	cluster-completed.spec
+
+  ManagedFile/discovery.json
+  	Base                	s3://k8s-infra-kops-discovery-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Location            	.well-known/openid-configuration
+
+  ManagedFile/etcd-cluster-spec-events
+  	Base                	s3://k8s-infra-kops-state-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/backups/etcd/events
+  	Location            	/control/etcd-cluster-spec
+
+  ManagedFile/etcd-cluster-spec-main
+  	Base                	s3://k8s-infra-kops-state-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/backups/etcd/main
+  	Location            	/control/etcd-cluster-spec
+
+  ManagedFile/keys.json
+  	Base                	s3://k8s-infra-kops-discovery-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Location            	openid/v1/jwks
+
+  ManagedFile/kops-version.txt
+  	Base                	s3://k8s-infra-kops-state-20903067212211/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Location            	kops-version.txt
+
+  ManagedFile/manifests-channels-kops-channels
+  	Location            	manifests/channels/kops-channels.yaml
+
+  ManagedFile/manifests-etcdmanager-events-control-plane-eu-central-1b
+  	Location            	manifests/etcd/events-control-plane-eu-central-1b.yaml
+
+  ManagedFile/manifests-etcdmanager-main-control-plane-eu-central-1b
+  	Location            	manifests/etcd/main-control-plane-eu-central-1b.yaml
+
+  ManagedFile/manifests-static-kube-apiserver-healthcheck
+  	Location            	manifests/static/kube-apiserver-healthcheck.yaml
+
+  ManagedFile/nodeupconfig-control-plane-eu-central-1b
+  	Location            	igconfig/control-plane/control-plane-eu-central-1b/nodeupconfig.yaml
+
+  ManagedFile/nodeupconfig-nodes-eu-central-1b
+  	Location            	igconfig/node/nodes-eu-central-1b/nodeupconfig.yaml
+
+  NetworkLoadBalancer/api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	LoadBalancerBaseName	api-e2e-e2e-kops-aws-conf-osiemt
+  	SubnetMappings      	[{"Subnet":{"Name":"eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","ShortName":"eu-central-1b","Lifecycle":"Sync","ID":null,"VPC":{"Name":"e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","Lifecycle":"Sync","ID":null,"CIDR":"172.20.0.0/16","AmazonIPv6":true,"IPv6CIDR":null,"EnableDNSHostnames":true,"EnableDNSSupport":true,"Shared":false,"Tags":{"KubernetesCluster":"e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","Name":"e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","group":"sig-cluster-lifecycle","kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io":"owned","prow.k8s.io/job":"e2e-kops-aws-conformance-1-36","subproject":"kops"},"AssociateExtraCIDRBlocks":null},"VPCCIDRBlock":null,"AmazonIPv6CIDR":null,"AvailabilityZone":"eu-central-1b","CIDR":"172.20.0.0/16","IPv6CIDR":null,"ResourceBasedNaming":true,"AssignIPv6AddressOnCreation":false,"Shared":false,"Tags":{"KubernetesCluster":"e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","Name":"eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io","SubnetType":"Public","group":"sig-cluster-lifecycle","kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io":"owned","kubernetes.io/role/elb":"1","kubernetes.io/role/internal-elb":"1","prow.k8s.io/job":"e2e-kops-aws-conformance-1-36","subproject":"kops"}},"PrivateIPv4Address":null,"AllocationID":null}]
+  	SecurityGroups      	[name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io]
+  	Scheme              	internet-facing
+  	CrossZoneLoadBalancing	true
+  	IpAddressType       	ipv4
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+  	Type                	network
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AccessLog           	{"Enabled":false,"S3BucketName":null,"S3BucketPrefix":null}
+  	WellKnownServices   	[kube-apiserver, kops-controller]
+
+  NetworkLoadBalancerListener/api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-3988
+  	NetworkLoadBalancer 	name:api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Port                	3988
+  	TargetGroup         	name:kops-controller-e2e-e2e-k-cgu13v id:kops-controller-e2e-e2e-k-cgu13v
+  	SSLCertificateID    	
+  	SSLPolicy           	
+
+  NetworkLoadBalancerListener/api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-443
+  	NetworkLoadBalancer 	name:api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:api.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Port                	443
+  	TargetGroup         	name:tcp-e2e-e2e-kops-aws-conf-a4412c id:tcp-e2e-e2e-kops-aws-conf-a4412c
+  	SSLCertificateID    	
+  	SSLPolicy           	
+
+  Route/0.0.0.0/0
+  	RouteTable          	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	InternetGateway     	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  Route/::/0
+  	RouteTable          	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	IPv6CIDR            	::/0
+  	InternetGateway     	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  RouteTable/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Shared              	false
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, kubernetes.io/kops/role: public, Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  RouteTableAssociation/eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	RouteTable          	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Subnet              	name:eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SQS/e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+  	MessageRetentionPeriod	300
+  	Tags                	{subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36}
+
+  SSHKey/kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc
+  	Shared              	false
+  	KeyFingerprint      	SHA256:+k8OZUyFBAN9tuFAtyDLw0jS/bwmdy9abU/0PqTAaCM
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  Secret/admin
+
+  Secret/kube
+
+  Secret/kube-proxy
+
+  Secret/kubelet
+
+  Secret/system:controller_manager
+
+  Secret/system:dns
+
+  Secret/system:logging
+
+  Secret/system:monitoring
+
+  Secret/system:scheduler
+
+  SecurityGroup/api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Description         	Security group for api ELB
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	RemoveExtraRules    	[port=443]
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle}
+
+  SecurityGroup/masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Description         	Security group for masters
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	RemoveExtraRules    	[port=22, port=443, port=2380, port=2381, port=3988, port=4001, port=4002, port=4789, port=179, port=8443, port=3:4, port=-1]
+  	Tags                	{subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  SecurityGroup/nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Description         	Security group for nodes
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	RemoveExtraRules    	[port=22]
+  	Tags                	{Name: nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  SecurityGroupRule/from-18.118.175.62/32-ingress-tcp-22to22-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	18.118.175.62/32
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+  	Tags                	{Name: from-18.118.175.62/32-ingress-tcp-22to22-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  SecurityGroupRule/from-18.118.175.62/32-ingress-tcp-22to22-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	18.118.175.62/32
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-18.118.175.62/32-ingress-tcp-22to22-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  SecurityGroupRule/from-18.118.175.62/32-ingress-tcp-443to443-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	18.118.175.62/32
+  	Protocol            	tcp
+  	FromPort            	443
+  	ToPort              	443
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-18.118.175.62/32-ingress-tcp-443to443-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle}
+
+  SecurityGroupRule/from-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  SecurityGroupRule/from-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	IPv6CIDR            	::/0
+  	Egress              	true
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  SecurityGroupRule/from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle}
+
+  SecurityGroupRule/from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	IPv6CIDR            	::/0
+  	Egress              	true
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  SecurityGroupRule/from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SourceGroup         	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  SecurityGroupRule/from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SourceGroup         	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+  	Tags                	{KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-0.0.0.0/0}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	IPv6CIDR            	::/0
+  	Egress              	true
+  	Tags                	{Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-egress-all-0to0-::/0, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-4-0to0-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	4
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-4-0to0-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-all-0to0-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-1to2379-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	tcp
+  	FromPort            	1
+  	ToPort              	2379
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-1to2379-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-2382to4000-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	tcp
+  	FromPort            	2382
+  	ToPort              	4000
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-2382to4000-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops, group: sig-cluster-lifecycle}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-4003to65535-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	tcp
+  	FromPort            	4003
+  	ToPort              	65535
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{subproject: kops, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-tcp-4003to65535-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  SecurityGroupRule/from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-udp-1to65535-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	udp
+  	FromPort            	1
+  	ToPort              	65535
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, Name: from-nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-ingress-udp-1to65535-masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, subproject: kops}
+
+  SecurityGroupRule/https-elb-to-master
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	tcp
+  	FromPort            	443
+  	ToPort              	443
+  	SourceGroup         	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SecurityGroupRule/icmp-pmtu-api-elb-18.118.175.62/32
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	18.118.175.62/32
+  	Protocol            	icmp
+  	FromPort            	3
+  	ToPort              	4
+
+  SecurityGroupRule/icmp-pmtu-cp-to-elb
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	icmp
+  	FromPort            	3
+  	ToPort              	4
+  	SourceGroup         	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SecurityGroupRule/icmp-pmtu-elb-to-cp
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	icmp
+  	FromPort            	3
+  	ToPort              	4
+  	SourceGroup         	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SecurityGroupRule/kops-controller-elb-to-cp
+  	SecurityGroup       	name:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Protocol            	tcp
+  	FromPort            	3988
+  	ToPort              	3988
+  	SourceGroup         	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SecurityGroupRule/node-to-elb
+  	SecurityGroup       	name:api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	SourceGroup         	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  SecurityGroupRule/nodeport-tcp-external-to-node-0.0.0.0/0
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	Protocol            	tcp
+  	FromPort            	30000
+  	ToPort              	32767
+
+  SecurityGroupRule/nodeport-udp-external-to-node-0.0.0.0/0
+  	SecurityGroup       	name:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	0.0.0.0/0
+  	Protocol            	udp
+  	FromPort            	30000
+  	ToPort              	32767
+
+  Subnet/eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	ShortName           	eu-central-1b
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	AvailabilityZone    	eu-central-1b
+  	CIDR                	172.20.0.0/16
+  	ResourceBasedNaming 	true
+  	AssignIPv6AddressOnCreation	false
+  	Shared              	false
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, SubnetType: Public, kubernetes.io/role/internal-elb: 1, Name: eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/role/elb: 1, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+
+  TargetGroup/kops-controller-e2e-e2e-k-cgu13v
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{Name: kops-controller-e2e-e2e-k-cgu13v, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, group: sig-cluster-lifecycle}
+  	Port                	3988
+  	Protocol            	TCP
+  	Shared              	false
+  	Attributes          	{deregistration_delay.connection_termination.enabled: true, deregistration_delay.timeout_seconds: 30}
+  	Interval            	10
+  	HealthyThreshold    	2
+  	UnhealthyThreshold  	2
+  	HealthCheckProtocol 	HTTPS
+  	HealthCheckPath     	/healthz
+
+  TargetGroup/tcp-e2e-e2e-kops-aws-conf-a4412c
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Tags                	{group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops, Name: tcp-e2e-e2e-kops-aws-conf-a4412c, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned}
+  	Port                	443
+  	Protocol            	TCP
+  	Shared              	false
+  	Attributes          	{deregistration_delay.timeout_seconds: 30, deregistration_delay.connection_termination.enabled: true}
+  	Interval            	10
+  	HealthyThreshold    	2
+  	UnhealthyThreshold  	2
+  	HealthCheckProtocol 	TCP
+
+  VPC/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	CIDR                	172.20.0.0/16
+  	AmazonIPv6          	true
+  	EnableDNSHostnames  	true
+  	EnableDNSSupport    	true
+  	Shared              	false
+  	Tags                	{Name: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, KubernetesCluster: e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io, kubernetes.io/cluster/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io: owned, group: sig-cluster-lifecycle, prow.k8s.io/job: e2e-kops-aws-conformance-1-36, subproject: kops}
+
+  VPCAmazonIPv6CIDRBlock/AmazonIPv6
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Shared              	false
+
+  VPCDHCPOptionsAssociation/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	VPC                 	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	DHCPOptions         	name:e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  WarmPool/control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Enabled             	false
+  	MinSize             	0
+  	AutoscalingGroup    	name:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+  WarmPool/nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+  	Enabled             	false
+  	MinSize             	0
+  	AutoscalingGroup    	name:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io id:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+Must specify --yes to apply changes
+
+Cluster configuration has been created.
+
+Suggestions:
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+ * edit your node instance group: kops edit ig --name=e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io nodes-eu-central-1b
+ * edit your control-plane instance group: kops edit ig --name=e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io control-plane-eu-central-1b
+
+Finally configure your cluster with: kops update cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --yes --admin
+
+I0820 05:19:12.886078   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get instancegroups --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -ojson
+I0820 05:19:18.684554   12931 up.go:367] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops update cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --admin --yes
+I0820 05:19:18.684580   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops update cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --admin --yes
+
+*********************************************************************************
+
+A new kubernetes version is available: 1.36.3
+Upgrading is recommended (try kops upgrade cluster)
+
+More information: https://github.com/kubernetes/kops/blob/master/permalinks/upgrade_k8s.md#1.36.3
+
+*********************************************************************************
+
+W0820 05:19:31.449648   12967 kopsassets.go:63] Using base url from env var: KOPS_BASE_URL="https://storage.googleapis.com/k8s-staging-kops/kops/releases/1.37.0-alpha.2+v1.37.0-alpha.1-262-g8e2ef91f59"
+I0820 05:19:33.562625   12967 executor.go:113] Tasks: 0 done / 128 total; 40 can run
+W0820 05:19:33.876546   12967 vfs_keystorereader.go:163] CA private key was not found
+I0820 05:19:33.980045   12967 keypair.go:296] Issuing new certificate: "etcd-manager-ca-events"
+I0820 05:19:33.982002   12967 keypair.go:296] Issuing new certificate: "etcd-clients-ca"
+I0820 05:19:33.982402   12967 keypair.go:296] Issuing new certificate: "etcd-peers-ca-main"
+I0820 05:19:33.986331   12967 keypair.go:296] Issuing new certificate: "apiserver-aggregator-ca"
+I0820 05:19:33.999905   12967 keypair.go:296] Issuing new certificate: "etcd-manager-ca-main"
+I0820 05:19:34.003054   12967 keypair.go:296] Issuing new certificate: "etcd-peers-ca-events"
+W0820 05:19:34.087094   12967 vfs_keystorereader.go:163] CA private key was not found
+I0820 05:19:34.192024   12967 keypair.go:296] Issuing new certificate: "kubernetes-ca"
+I0820 05:19:34.229144   12967 keypair.go:296] Issuing new certificate: "service-account"
+I0820 05:19:35.987381   12967 executor.go:113] Tasks: 40 done / 128 total; 26 can run
+I0820 05:19:37.870341   12967 executor.go:113] Tasks: 66 done / 128 total; 33 can run
+I0820 05:19:39.265290   12967 network_load_balancer.go:542] Waiting for load balancer "api-e2e-e2e-kops-aws-conf-osiemt" to be created...
+I0820 05:21:53.289035   12967 executor.go:113] Tasks: 99 done / 128 total; 4 can run
+I0820 05:21:54.304921   12967 executor.go:113] Tasks: 103 done / 128 total; 6 can run
+I0820 05:21:55.668789   12967 executor.go:113] Tasks: 109 done / 128 total; 2 can run
+I0820 05:21:57.357822   12967 executor.go:113] Tasks: 111 done / 128 total; 4 can run
+I0820 05:21:57.754658   12967 executor.go:113] Tasks: 115 done / 128 total; 2 can run
+I0820 05:21:57.903168   12967 executor.go:113] Tasks: 117 done / 128 total; 10 can run
+I0820 05:21:58.825650   12967 executor.go:113] Tasks: 127 done / 128 total; 1 can run
+I0820 05:21:59.159402   12967 executor.go:113] Tasks: 128 done / 128 total; 0 can run
+I0820 05:21:59.159618   12967 update_cluster.go:419] Exporting kubeconfig for cluster
+kOps has set your kubectl context to e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+Cluster is starting.  It should be ready in a few minutes.
+
+Suggestions:
+ * validate cluster: kops validate cluster --wait 10m
+ * list nodes: kubectl get nodes --show-labels
+ * ssh to a control-plane node: ssh -i ~/.ssh/id_rsa ubuntu@
+ * the ubuntu user is specific to Ubuntu. If not using Ubuntu please use the appropriate user based on your OS.
+ * read about installing addons at: https://kops.sigs.k8s.io/addons.
+
+I0820 05:22:09.580204   12931 up.go:154] Using SSH user: [ubuntu]
+I0820 05:22:09.580268   12931 up.go:398] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops validate cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --count 10 --wait 20m0s
+I0820 05:22:09.580278   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops validate cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --count 10 --wait 20m0s
+Validating cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+W0820 05:22:46.602461   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": dial tcp 51.102.199.57:443: i/o timeout
+W0820 05:23:26.604122   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": dial tcp 51.102.199.57:443: i/o timeout
+W0820 05:24:06.605869   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": dial tcp 51.102.199.57:443: i/o timeout
+W0820 05:24:46.607419   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": dial tcp 51.102.199.57:443: i/o timeout
+W0820 05:25:06.715413   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": net/http: TLS handshake timeout
+W0820 05:25:16.823354   12974 validate_cluster.go:197] (will retry): unexpected error during validation: error listing nodes: Get "https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com/api/v1/nodes": dial tcp 51.102.199.57:443: connect: connection refused
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME	ROLE	READY
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-01ef5381b10074e17					machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-064daf22ed9fc802c					machine "i-064daf22ed9fc802c" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae					machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f					machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Pod	kube-system/kops-channels-i-064daf22ed9fc802c		system-node-critical pod "kops-channels-i-064daf22ed9fc802c" is not ready (kops-channels)
+Pod	kube-system/kube-controller-manager-i-064daf22ed9fc802c	system-cluster-critical pod "kube-controller-manager-i-064daf22ed9fc802c" is pending
+Pod	kube-system/kube-scheduler-i-064daf22ed9fc802c		system-cluster-critical pod "kube-scheduler-i-064daf22ed9fc802c" is pending
+
+Validation Failed
+W0820 05:25:32.470649   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-01ef5381b10074e17					machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae					machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f					machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c					node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+Pod	kube-system/kops-channels-i-064daf22ed9fc802c		system-node-critical pod "kops-channels-i-064daf22ed9fc802c" is not ready (kops-channels)
+Pod	kube-system/kube-controller-manager-i-064daf22ed9fc802c	system-cluster-critical pod "kube-controller-manager-i-064daf22ed9fc802c" is not ready (kube-controller-manager)
+Pod	kube-system/kube-scheduler-i-064daf22ed9fc802c		system-cluster-critical pod "kube-scheduler-i-064daf22ed9fc802c" is not ready (kube-scheduler)
+
+Validation Failed
+W0820 05:25:44.156816   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-01ef5381b10074e17					machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae					machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f					machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c					node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+Pod	kube-system/etcd-manager-main-i-064daf22ed9fc802c	system-cluster-critical pod "etcd-manager-main-i-064daf22ed9fc802c" is pending
+Pod	kube-system/kops-channels-i-064daf22ed9fc802c		system-node-critical pod "kops-channels-i-064daf22ed9fc802c" is not ready (kops-channels)
+Pod	kube-system/kube-controller-manager-i-064daf22ed9fc802c	system-cluster-critical pod "kube-controller-manager-i-064daf22ed9fc802c" is not ready (kube-controller-manager)
+Pod	kube-system/kube-proxy-i-064daf22ed9fc802c		system-node-critical pod "kube-proxy-i-064daf22ed9fc802c" is pending
+Pod	kube-system/kube-scheduler-i-064daf22ed9fc802c		system-cluster-critical pod "kube-scheduler-i-064daf22ed9fc802c" is not ready (kube-scheduler)
+
+Validation Failed
+W0820 05:25:55.983904   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-01ef5381b10074e17					machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae					machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f					machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c					node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+Pod	kube-system/kube-controller-manager-i-064daf22ed9fc802c	system-cluster-critical pod "kube-controller-manager-i-064daf22ed9fc802c" is not ready (kube-controller-manager)
+Pod	kube-system/kube-scheduler-i-064daf22ed9fc802c		system-cluster-critical pod "kube-scheduler-i-064daf22ed9fc802c" is not ready (kube-scheduler)
+
+Validation Failed
+W0820 05:26:07.590251   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-01ef5381b10074e17					machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae					machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f					machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c					node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+Pod	kube-system/kube-controller-manager-i-064daf22ed9fc802c	system-cluster-critical pod "kube-controller-manager-i-064daf22ed9fc802c" is not ready (kube-controller-manager)
+
+Validation Failed
+W0820 05:26:19.390543   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME			MESSAGE
+Machine	i-01ef5381b10074e17	machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3	machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae	machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f	machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c	node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+
+Validation Failed
+W0820 05:26:31.119668   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	False
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-01ef5381b10074e17						machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae						machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f						machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-064daf22ed9fc802c						node "i-064daf22ed9fc802c" of role "control-plane" is not ready
+Pod	kube-system/aws-cloud-controller-manager-cpfkj			system-cluster-critical pod "aws-cloud-controller-manager-cpfkj" is pending
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is pending
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+
+Validation Failed
+W0820 05:26:42.802103   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	True
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-01ef5381b10074e17						machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae						machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f						machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is pending
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+
+Validation Failed
+W0820 05:26:54.578286   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	True
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-01ef5381b10074e17						machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae						machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f						machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is pending
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+Pod	kube-system/ebs-csi-node-j855b					system-node-critical pod "ebs-csi-node-j855b" is pending
+
+Validation Failed
+W0820 05:27:06.348438   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-064daf22ed9fc802c	control-plane	True
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-01ef5381b10074e17						machine "i-01ef5381b10074e17" has not yet joined cluster
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0724cfb0d8b84c9ae						machine "i-0724cfb0d8b84c9ae" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f						machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is pending
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+Pod	kube-system/ebs-csi-node-j855b					system-node-critical pod "ebs-csi-node-j855b" is pending
+
+Validation Failed
+W0820 05:27:18.142634   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		False
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Machine	i-0728aa3e09ea22f5f						machine "i-0728aa3e09ea22f5f" has not yet joined cluster
+Node	i-0724cfb0d8b84c9ae						node "i-0724cfb0d8b84c9ae" of role "node" is not ready
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-52zxb					system-node-critical pod "calico-node-52zxb" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is not ready (calico-node)
+Pod	kube-system/calico-node-xt7tg					system-node-critical pod "calico-node-xt7tg" is pending
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+Pod	kube-system/ebs-csi-node-6jphv					system-node-critical pod "ebs-csi-node-6jphv" is pending
+Pod	kube-system/ebs-csi-node-9s7hk					system-node-critical pod "ebs-csi-node-9s7hk" is pending
+Pod	kube-system/ebs-csi-node-j855b					system-node-critical pod "ebs-csi-node-j855b" is pending
+
+Validation Failed
+W0820 05:27:31.283775   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		False
+
+VALIDATION ERRORS
+KIND	NAME								MESSAGE
+Machine	i-061be5501a76170e3						machine "i-061be5501a76170e3" has not yet joined cluster
+Node	i-0728aa3e09ea22f5f						node "i-0728aa3e09ea22f5f" of role "node" is not ready
+Pod	kube-system/aws-node-termination-handler-6d796d484-vn2tl	system-cluster-critical pod "aws-node-termination-handler-6d796d484-vn2tl" is pending
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf		system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is pending
+Pod	kube-system/calico-node-52zxb					system-node-critical pod "calico-node-52zxb" is pending
+Pod	kube-system/calico-node-6bwp6					system-node-critical pod "calico-node-6bwp6" is pending
+Pod	kube-system/calico-node-c9gmz					system-node-critical pod "calico-node-c9gmz" is not ready (calico-node)
+Pod	kube-system/calico-node-xt7tg					system-node-critical pod "calico-node-xt7tg" is not ready (calico-node)
+Pod	kube-system/coredns-77677dfb9c-bngrf				system-cluster-critical pod "coredns-77677dfb9c-bngrf" is pending
+Pod	kube-system/coredns-autoscaler-86577cc9cf-vplkp			system-cluster-critical pod "coredns-autoscaler-86577cc9cf-vplkp" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms			system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+Pod	kube-system/ebs-csi-node-6jphv					system-node-critical pod "ebs-csi-node-6jphv" is pending
+Pod	kube-system/ebs-csi-node-9s7hk					system-node-critical pod "ebs-csi-node-9s7hk" is pending
+Pod	kube-system/ebs-csi-node-cjwf4					system-node-critical pod "ebs-csi-node-cjwf4" is pending
+
+Validation Failed
+W0820 05:27:43.199861   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME							MESSAGE
+Machine	i-061be5501a76170e3					machine "i-061be5501a76170e3" has not yet joined cluster
+Pod	kube-system/calico-kube-controllers-585b56bbdd-h25tf	system-cluster-critical pod "calico-kube-controllers-585b56bbdd-h25tf" is not ready (calico-kube-controllers)
+Pod	kube-system/calico-node-52zxb				system-node-critical pod "calico-node-52zxb" is not ready (calico-node)
+Pod	kube-system/calico-node-6bwp6				system-node-critical pod "calico-node-6bwp6" is pending
+Pod	kube-system/coredns-77677dfb9c-ct884			system-cluster-critical pod "coredns-77677dfb9c-ct884" is pending
+Pod	kube-system/ebs-csi-controller-645b9477b6-bwtms		system-cluster-critical pod "ebs-csi-controller-645b9477b6-bwtms" is pending
+Pod	kube-system/ebs-csi-node-6jphv				system-node-critical pod "ebs-csi-node-6jphv" is pending
+Pod	kube-system/ebs-csi-node-9s7hk				system-node-critical pod "ebs-csi-node-9s7hk" is pending
+Pod	kube-system/ebs-csi-node-cjwf4				system-node-critical pod "ebs-csi-node-cjwf4" is pending
+
+Validation Failed
+W0820 05:27:54.977669   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		False
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME					MESSAGE
+Node	i-061be5501a76170e3			node "i-061be5501a76170e3" of role "node" is not ready
+Pod	kube-system/calico-node-52zxb		system-node-critical pod "calico-node-52zxb" is not ready (calico-node)
+Pod	kube-system/calico-node-6bwp6		system-node-critical pod "calico-node-6bwp6" is not ready (calico-node)
+Pod	kube-system/calico-node-prv5t		system-node-critical pod "calico-node-prv5t" is pending
+Pod	kube-system/coredns-77677dfb9c-ct884	system-cluster-critical pod "coredns-77677dfb9c-ct884" is pending
+Pod	kube-system/ebs-csi-node-6jphv		system-node-critical pod "ebs-csi-node-6jphv" is pending
+Pod	kube-system/ebs-csi-node-bb5x5		system-node-critical pod "ebs-csi-node-bb5x5" is pending
+Pod	kube-system/ebs-csi-node-cjwf4		system-node-critical pod "ebs-csi-node-cjwf4" is pending
+
+Validation Failed
+W0820 05:28:06.795837   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME				MESSAGE
+Pod	kube-system/calico-node-prv5t	system-node-critical pod "calico-node-prv5t" is pending
+Pod	kube-system/ebs-csi-node-bb5x5	system-node-critical pod "ebs-csi-node-bb5x5" is pending
+
+Validation Failed
+W0820 05:28:18.628497   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME				MESSAGE
+Pod	kube-system/calico-node-prv5t	system-node-critical pod "calico-node-prv5t" is pending
+Pod	kube-system/ebs-csi-node-bb5x5	system-node-critical pod "ebs-csi-node-bb5x5" is pending
+
+Validation Failed
+W0820 05:28:30.177579   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME				MESSAGE
+Pod	kube-system/calico-node-prv5t	system-node-critical pod "calico-node-prv5t" is not ready (calico-node)
+Pod	kube-system/ebs-csi-node-bb5x5	system-node-critical pod "ebs-csi-node-bb5x5" is pending
+
+Validation Failed
+W0820 05:28:41.875282   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+VALIDATION ERRORS
+KIND	NAME				MESSAGE
+Pod	kube-system/ebs-csi-node-bb5x5	system-node-critical pod "ebs-csi-node-bb5x5" is pending
+
+Validation Failed
+W0820 05:28:53.675344   12974 validate_cluster.go:245] (will retry): cluster not yet healthy
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:29:05.471345   12974 validate_cluster.go:233] (will retry): cluster passed validation 1 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:29:17.276259   12974 validate_cluster.go:233] (will retry): cluster passed validation 2 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:29:29.257670   12974 validate_cluster.go:233] (will retry): cluster passed validation 3 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:29:40.875718   12974 validate_cluster.go:233] (will retry): cluster passed validation 4 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:29:52.538892   12974 validate_cluster.go:233] (will retry): cluster passed validation 5 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:30:04.233162   12974 validate_cluster.go:233] (will retry): cluster passed validation 6 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:30:15.834355   12974 validate_cluster.go:233] (will retry): cluster passed validation 7 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:30:27.416298   12974 validate_cluster.go:233] (will retry): cluster passed validation 8 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:30:39.089878   12974 validate_cluster.go:233] (will retry): cluster passed validation 9 consecutive times
+INSTANCE GROUPS
+NAME				ROLE		MACHINETYPE	MIN	MAX	SUBNETS
+control-plane-eu-central-1b	ControlPlane	t3.large	1	1	eu-central-1b
+nodes-eu-central-1b		Node		t3.large	4	4	eu-central-1b
+
+NODE STATUS
+NAME			ROLE		READY
+i-01ef5381b10074e17	node		True
+i-061be5501a76170e3	node		True
+i-064daf22ed9fc802c	control-plane	True
+i-0724cfb0d8b84c9ae	node		True
+i-0728aa3e09ea22f5f	node		True
+
+Your cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io is ready
+I0820 05:30:50.902651   12931 up.go:161] cluster reported as up
+I0820 05:30:50.902759   12931 local.go:42] ⚙️ /home/prow/go/bin/kubetest2-tester-kops --test-args=-test.timeout=150m --test-package-url=https://dl.k8s.io --test-package-dir=ci --test-package-marker=latest-1.36.txt --focus-regex=\[Conformance\] --skip-regex=\[NoSkip\] --parallel=1
+I0820 05:30:50.961961   12980 tester.go:77] Adding --host=https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com
+I0820 05:30:56.564253   12980 tester.go:160] Setting --provider=aws
+I0820 05:31:02.391819   12980 tester.go:179] Setting --gce-zone=eu-central-1b
+I0820 05:31:08.211552   12980 tester.go:204] Setting -num-nodes=4
+I0820 05:31:08.211576   12980 tester.go:280] Setting --cluster-tag=e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+I0820 05:31:08.211584   12980 tester.go:264] Setting --gce-region=eu-central-1
+I0820 05:31:08.211593   12980 tester.go:233] Setting --gce-multizone=false
+I0820 05:31:08.211602   12980 tester.go:412] Setting --non-blocking-taints=node-role.kubernetes.io/master,node-role.kubernetes.io/api-server,node-role.kubernetes.io/control-plane
+I0820 05:31:08.211897   12980 tester.go:482] Setting  --storage.testdriver=/tmp/csi-manifests-2672237531/driver.yaml
+I0820 05:31:08.211909   12980 ginkgo.go:135] Using kubeconfig at /root/.kube/config
+I0820 05:31:08.245965   12980 package.go:51] Test package version was not specified. Defaulting to version from latest-1.36.txt: v1.36.3-17+e460e27c50dd60
+I0820 05:31:08.246003   12980 package.go:201] Downloading test tar ball from: https://dl.k8s.io/ci/v1.36.3-17+e460e27c50dd60/kubernetes-test-linux-amd64.tar.gz
+I0820 05:31:11.182607   12980 ginkgo.go:104] Running ginkgo test as /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/ginkgo [--nodes=1 /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/e2e.test -- --kubeconfig=/root/.kube/config --kubectl-path=/home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kubectl --ginkgo.skip=\[NoSkip\] --ginkgo.focus=\[Conformance\] --ginkgo.label-filter= --provider= --report-dir=/logs/artifacts --ginkgo.timeout=24h0m0s -test.timeout=150m --host=https://api-e2e-e2e-kops-aws-conf-osiemt-a3e73b9fdb79a74d.elb.eu-central-1.amazonaws.com --provider=aws --gce-zone=eu-central-1b -num-nodes=4 --cluster-tag=e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --gce-region=eu-central-1 --gce-multizone=false --non-blocking-taints=node-role.kubernetes.io/master,node-role.kubernetes.io/api-server,node-role.kubernetes.io/control-plane --storage.testdriver=/tmp/csi-manifests-2672237531/driver.yaml --disable-log-dump]
+  I0820 05:31:11.267403   13038 external.go:212] Driver loaded from path [/tmp/csi-manifests-2672237531/driver.yaml]: &{DriverInfo:{Name:ebs.csi.aws.com InTreePluginName: TestTags:[] MaxFileSize:0 SupportedSizeRange:{Max:16Ti Min:1Gi Step:} SupportedFsType:map[:{} ext4:{} xfs:{}] SupportedMountOption:map[dirsync:{}] RequiredMountOption:map[] Capabilities:map[block:true controllerExpansion:true exec:true fsGroup:true multipods:true nodeExpansion:true offlineExpansion:true onlineExpansion:true persistence:true pvcDataSource:false snapshotDataSource:true topology:true volumeLimits:true] RequiredAccessModes:[] TopologyKeys:[topology.ebs.csi.aws.com/zone] NumAllowedTopologies:0 StressTestOptions:<nil> VolumeSnapshotStressTestOptions:<nil> VolumeModifyStressTestOptions:<nil> PerformanceTestOptions:<nil> VolumeGroupSnapshotStressTestOptions:<nil>} StorageClass:{FromName:false FromFile:/tmp/csi-manifests-2672237531/sc.yaml FromExistingClassName:} VolumeAttributesClass:{FromFile: FromExistingClassName:} SnapshotClass:{FromName:false FromFile: FromExistingClassName:} GroupSnapshotClass:{FromName:false FromFile: FromExistingClassName:} InlineVolumes:[] ClientNodeName: NodeSelectors:map[] Timeouts:map[]}
+  I0820 05:31:11.774953   13038 e2e.go:109] Starting e2e run "30fffaa9-26bd-4474-aee8-aa8a0d66272d" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5
+================================================================================================================
+Random Seed: 1787203871 - will randomize all specs
+
+Will run 446 of 7907 specs
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSS•SSSSS••SSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSS•SSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•S•SS•SSSSSSSSS•SS•SSSSS•SSSS•SSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS••SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSS•SS•SSSSSS•SSSSS•SSSSSSS•SS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SS•SSSS•S•SSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•S•S•SSS•S•SSSSSSSS•SSSSS•SSS•SSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSS•SSSS•SSS•SS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSS•••SSSSSSS•SSSSS••SSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSS••SSS•SSSSS••SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSS•SSSSSSSSSSS•SSSSSSS•SSSSSSSSS••SSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSS•SSSSSSSSSSSS•S•SSSSSSSSSSSSSS••SSSSSSSSS••SSSSSSSSSS•SSS•SSSSS•SSSSSSSSSSSSSS••SS•SSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•S•SSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSS•S••S••SSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSS•SS•S•SSSSSSS••SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSS•SSSSSSSSSSS•SSSS•SSSSS•SSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSS•S•S•SSSSSSSSSSSSSS•SSSSSSSSS•SS••SSSSSSSSSSSSSSSSS•SSSSS•SS•SSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSS•S••SSSSSSSSS•SSSSSSSSSSSSSS•S•SSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSS••SSS•SSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS••SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSS•S•SS•SSSSSSS••SSS•SSSS••SSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSS•SS•SSSSSSSSSSS•S•S•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSS•SSSSS•SSSSSSSSSSSSSSS•SSS•SSSSSSSS•SSSSSS•SSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•S•SSSSS•S•SSS•SSS•S•SSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SS••SSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•S••SSSS•SSS•SSSSSSSS•SSSSSSSSSSSS••SS•SSSSSSSSSSSSSS•SSSSSSSSS•S••SSSSSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSS•SS•SSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•S•SS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SS•SSS•SSSSS•SSSSSSSSSSSS•SSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•S•SSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSS•SS•SSSS•SSSSSSSS•SSSSSSSSSS•S•SS•SSSSSSSSSSSSS•SSSSSSS•SSSSSSSSSSSS•SSSSSS•SSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSS•S•SSSSSSSSSSSSS••SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSS•SS•SSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSS•SSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSS•••SSSSSSSSSSSSS•SSSSS•SS•••SSSS•SSSSSSSSSSSSS•SSSSSSS•SS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSSS•SSSSSSSSSSS•SSSSS•SSSSSSSS•SSS•SSSSSSSSSSS•SSSSSSSS•SSSSS•SS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSS•SSSS•SSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•S•SS•SSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSS•SSSSSSS•S•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSS•SS•SSSSSSS•SSSSS•SSSSSSSSSSSS•SSSSSSSSS•SS•SSSSSS•SSSSSS•SSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSS•S
+
+Ran 446 of 7907 Specs in 8189.204 seconds
+SUCCESS! -- 446 Passed | 0 Failed | 0 Pending | 7461 Skipped
+PASS
+
+Ginkgo ran 1 suite in 2h16m30.089579693s
+Test Suite Passed
+I0820 07:47:41.298045   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get cluster e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -ojson
+I0820 07:47:46.764525   12931 dumplogs.go:59] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops toolbox dump --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --dir /logs/artifacts --private-key /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519 --ssh-user ubuntu
+I0820 07:47:46.764544   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops toolbox dump --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --dir /logs/artifacts --private-key /tmp/kops/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io/id_ed25519 --ssh-user ubuntu
+W0820 07:48:00.402165   14341 aws.go:2007] could not find role "aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--u65fkk". Resource may already have been deleted: operation error IAM: GetRole, https response error StatusCode: 404, RequestID: 24d16065-e3cf-4266-8099-5f5e5f7a1f89, NoSuchEntity: The role with name aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--u65fkk cannot be found.
+W0820 07:48:02.171032   14341 aws.go:2007] could not find role "ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-grid-ku-t9632h". Resource may already have been deleted: operation error IAM: GetRole, https response error StatusCode: 404, RequestID: c7259ea4-eb0a-474e-acd3-0178ec05e13a, NoSuchEntity: The role with name ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-grid-ku-t9632h cannot be found.
+W0820 07:48:02.908363   14341 aws.go:2007] could not find role "masters.e2e-e2e-kops-aws-distro-u2510arm64.tests-kops-aws.k8s.io". Resource may already have been deleted: operation error IAM: GetRole, https response error StatusCode: 404, RequestID: 58d54074-cc8c-4a91-ab12-5f7a2284dfc4, NoSuchEntity: The role with name masters.e2e-e2e-kops-aws-distro-u2510arm64.tests-kops-aws.k8s.io cannot be found.
+I0820 07:48:06.800927   14341 toolbox_dump.go:211] will SSH using username "ubuntu"
+I0820 07:48:06.800951   14341 toolbox_dump.go:212] ssh auth methods [0x579d120]
+I0820 07:48:06.801006   14341 dumper.go:189] starting to dump 1 control plane nodes fetched through the Kubernetes APIs
+I0820 07:48:06.801013   14341 dumper.go:296] Dumping node i-064daf22ed9fc802c
+I0820 07:48:16.655413   14341 dumper.go:296] Dumping node i-01ef5381b10074e17
+I0820 07:48:26.088796   14341 dumper.go:296] Dumping node i-061be5501a76170e3
+I0820 07:48:35.678346   14341 dumper.go:296] Dumping node i-0724cfb0d8b84c9ae
+I0820 07:48:45.229789   14341 dumper.go:296] Dumping node i-0728aa3e09ea22f5f
+I0820 07:48:54.240518   14341 resourcedumper.go:97] Dumping k8s resources
+I0820 07:48:55.130961   14341 warnings.go:107] "Warning: v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice"
+I0820 07:48:55.131771   14341 warnings.go:107] "Warning: v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice"
+I0820 07:48:55.132009   14341 warnings.go:107] "Warning: v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice"
+I0820 07:48:55.132112   14341 warnings.go:107] "Warning: v1 Endpoints is deprecated in v1.33+; use discovery.k8s.io/v1 EndpointSlice"
+I0820 07:48:56.449013   14341 podlogs.go:61] Dumping k8s pod logs
+I0820 07:48:58.190294   12931 dumplogs.go:94] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -o yaml
+I0820 07:48:58.190321   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -o yaml
+I0820 07:49:03.630745   12931 dumplogs.go:94] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get instancegroups --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -o yaml
+I0820 07:49:03.630764   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops get instancegroups --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io -o yaml
+I0820 07:49:09.416390   12931 down.go:61] /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops delete cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --yes --interval=60s --wait=60m
+I0820 07:49:09.416418   12931 local.go:42] ⚙️ /home/prow/go/src/k8s.io/kops/_rundir/9ebb3d78-a10c-44be-8d80-15671ce770b5/kops delete cluster --name e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io --yes --interval=60s --wait=60m
+I0820 07:49:15.402375   14360 delete_cluster.go:143] Looking for cloud resources to delete
+TYPE			NAME																					ID
+autoscaling-config	control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io										lt-0d1b0319d4799d830
+autoscaling-config	nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												lt-0c5cc18ad8731a12c
+autoscaling-group	control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io										control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+autoscaling-group	nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+dhcp-options		e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io															dopt-0e778020dcd0d876f
+eventbridge-rule	e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle															e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle
+eventbridge-rule	e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange													e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange
+eventbridge-rule	e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange														e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange
+eventbridge-rule	e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption														e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption
+iam-instance-profile	masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+iam-instance-profile	nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+iam-role		aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc													aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc
+iam-role		aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m													aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m
+iam-role		ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0													ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0
+iam-role		masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+iam-role		nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+instance		control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io										i-064daf22ed9fc802c
+instance		nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												i-01ef5381b10074e17
+instance		nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												i-061be5501a76170e3
+instance		nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												i-0724cfb0d8b84c9ae
+instance		nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io												i-0728aa3e09ea22f5f
+internet-gateway	e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io															igw-0ad867adb22f37404
+keypair			kubernetes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io-1f:08:f8:6a:99:db:92:35:18:71:af:2f:7a:dd:1d:bc							key-06009dc99e8d1a6e9
+load-balancer		api-e2e-e2e-kops-aws-conf-osiemt																	arn:aws:elasticloadbalancing:eu-central-1:808842816990:loadbalancer/net/api-e2e-e2e-kops-aws-conf-osiemt/a3e73b9fdb79a74d
+oidc-provider		arn:aws:iam::808842816990:oidc-provider/k8s-infra-kops-discovery-20903067212211.s3.eu-central-1.amazonaws.com/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	arn:aws:iam::808842816990:oidc-provider/k8s-infra-kops-discovery-20903067212211.s3.eu-central-1.amazonaws.com/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+route-table		e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io															rtb-063b0daa05ad8c18e
+security-group		api-elb.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														sg-030da095e742ad346
+security-group		masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														sg-039b7b9ae55739e1d
+security-group		nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io														sg-0341342b0c879ba1c
+sqs			https://sqs.eu-central-1.amazonaws.com/808842816990/e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth								https://sqs.eu-central-1.amazonaws.com/808842816990/e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth
+subnet			eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io													subnet-06e5803a6b24c8059
+target-group		kops-controller-e2e-e2e-k-cgu13v																	arn:aws:elasticloadbalancing:eu-central-1:808842816990:targetgroup/kops-controller-e2e-e2e-k-cgu13v/b0af09367c2e7d5d
+target-group		tcp-e2e-e2e-kops-aws-conf-a4412c																	arn:aws:elasticloadbalancing:eu-central-1:808842816990:targetgroup/tcp-e2e-e2e-kops-aws-conf-a4412c/c3f4cee645ec34b2
+volume			b.etcd-events.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io													vol-0984ba3028f670eca
+volume			b.etcd-main.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io													vol-069dae8e2c47cde84
+vpc			e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io															vpc-04a94ad07217932d0
+
+I0820 07:49:28.807717   14360 aws.go:339] Terminating 5 EC2 instances
+oidc-provider:arn:aws:iam::808842816990:oidc-provider/k8s-infra-kops-discovery-20903067212211.s3.eu-central-1.amazonaws.com/e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+sqs:https://sqs.eu-central-1.amazonaws.com/808842816990/e2e-e2e-kops-aws-conformance-1-36-tests-kops-aws-k8s-io-nth	ok
+iam-instance-profile:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+iam-instance-profile:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+load-balancer:arn:aws:elasticloadbalancing:eu-central-1:808842816990:loadbalancer/net/api-e2e-e2e-kops-aws-conf-osiemt/a3e73b9fdb79a74d	ok
+iam-role:ebs-csi-controller-sa.kube-system.sa.e2e-e2e-kops-aws-con-1samr0	ok
+iam-role:aws-cloud-controller-manager.kube-system.sa.e2e-e2e-kops--sr39sc	ok
+iam-role:aws-node-termination-handler.kube-system.sa.e2e-e2e-kops--gqdk9m	ok
+target-group:arn:aws:elasticloadbalancing:eu-central-1:808842816990:targetgroup/kops-controller-e2e-e2e-k-cgu13v/b0af09367c2e7d5d	ok
+autoscaling-group:nodes-eu-central-1b.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+autoscaling-group:control-plane-eu-central-1b.masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+eventbridge-rule:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceStateChange	ok
+target-group:arn:aws:elasticloadbalancing:eu-central-1:808842816990:targetgroup/tcp-e2e-e2e-kops-aws-conf-a4412c/c3f4cee645ec34b2	ok
+keypair:key-06009dc99e8d1a6e9	ok
+eventbridge-rule:e2e-e2e-kops-aws-conformance-1-36-kol9p6-ASGLifecycle	ok
+autoscaling-config:lt-0c5cc18ad8731a12c	ok
+internet-gateway:igw-0ad867adb22f37404	still has dependencies, will retry
+autoscaling-config:lt-0d1b0319d4799d830	ok
+eventbridge-rule:e2e-e2e-kops-aws-conformance-1-36-kol9p6-SpotInterruption	ok
+eventbridge-rule:e2e-e2e-kops-aws-conformance-1-36-kol9p6-InstanceScheduledChange	ok
+instance:i-0724cfb0d8b84c9ae	ok
+iam-role:nodes.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+iam-role:masters.e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io	ok
+subnet:subnet-06e5803a6b24c8059	still has dependencies, will retry
+volume:vol-069dae8e2c47cde84	still has dependencies, will retry
+volume:vol-0984ba3028f670eca	still has dependencies, will retry
+security-group:sg-030da095e742ad346	still has dependencies, will retry
+security-group:sg-0341342b0c879ba1c	still has dependencies, will retry
+security-group:sg-039b7b9ae55739e1d	still has dependencies, will retry
+Not all resources deleted; waiting before reattempting deletion
+	security-group:sg-0341342b0c879ba1c
+	subnet:subnet-06e5803a6b24c8059
+	security-group:sg-039b7b9ae55739e1d
+	vpc:vpc-04a94ad07217932d0
+	security-group:sg-030da095e742ad346
+	volume:vol-0984ba3028f670eca
+	dhcp-options:dopt-0e778020dcd0d876f
+	volume:vol-069dae8e2c47cde84
+	route-table:rtb-063b0daa05ad8c18e
+	internet-gateway:igw-0ad867adb22f37404
+subnet:subnet-06e5803a6b24c8059	still has dependencies, will retry
+volume:vol-0984ba3028f670eca	ok
+internet-gateway:igw-0ad867adb22f37404	still has dependencies, will retry
+volume:vol-069dae8e2c47cde84	ok
+security-group:sg-0341342b0c879ba1c	still has dependencies, will retry
+security-group:sg-039b7b9ae55739e1d	ok
+security-group:sg-030da095e742ad346	ok
+Not all resources deleted; waiting before reattempting deletion
+	dhcp-options:dopt-0e778020dcd0d876f
+	route-table:rtb-063b0daa05ad8c18e
+	internet-gateway:igw-0ad867adb22f37404
+	security-group:sg-0341342b0c879ba1c
+	subnet:subnet-06e5803a6b24c8059
+	vpc:vpc-04a94ad07217932d0
+subnet:subnet-06e5803a6b24c8059	ok
+internet-gateway:igw-0ad867adb22f37404	ok
+security-group:sg-0341342b0c879ba1c	ok
+route-table:rtb-063b0daa05ad8c18e	ok
+vpc:vpc-04a94ad07217932d0	ok
+dhcp-options:dopt-0e778020dcd0d876f	ok
+Deleted kubectl config for e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io
+
+Deleted cluster: "e2e-e2e-kops-aws-conformance-1-36.tests-kops-aws.k8s.io"
+I0820 07:51:41.224467   12931 s3.go:207] Bucket k8s-infra-kops-state-20903067212211 deleted
+I0820 07:51:41.994712   12931 s3.go:207] Bucket k8s-infra-kops-discovery-20903067212211 deleted
++ EXIT_VALUE=0
++ set +o xtrace

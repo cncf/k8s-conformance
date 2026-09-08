@@ -1,0 +1,9 @@
+vendor: 'OPENMARU, Inc.'
+name: 'MSAP.ai'
+version: '1.0.1.35.0'
+website_url: https://www.openmaru.io/
+documentation_url: 'https://docs.openmaru.io/docs/msap-user-guide/msap-console-user-guide/'
+product_logo_url: 'https://www.msap.ai/logo/msap.ai.svg'
+type: distribution
+description: 'MSAP.ai(Container Orchestration Platform) is a next-generation application operations platform that simplify complexity and support business innovation in cloud-native environment built on Kubernetes. It maximizes the value of Kubernetes adoption for enterprises while minimizing operational costs.'
+contact_email_address: 'cloudnative@openmaru.io'

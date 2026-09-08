@@ -1,0 +1,9 @@
+vendor: Softbank
+name: Infrinia AI Cloud OS
+version: v1.0.1-rc
+website_url: https://www.infrinia.ai
+documentation_url: https://docs-infrinia.web.app
+product_logo_url: https://gist.githubusercontent.com/tdiallo29/4f9ce82cba11650cca30e869d9fed9dd/raw/f6887de7b3d036de40bd6731177839da8059455a/softbank.svg
+type: Hosted
+description: Softbank Infrinia AI Cloud OS is a GPU-native managed Kubernetes platform purpose-built for AI and ML workloads, providing automated GPU infrastructure provisioning, Kubernetes cluster orchestration, and MLOps tooling on GPU hardware.
+contact_email_address: thierno.diallo@g.softbank.co.jp

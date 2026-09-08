@@ -1,0 +1,9 @@
+vendor: Viettel
+name: Viettel AI Platform
+version: v1.0.0
+website_url: https://viettelcloud.vn/
+documentation_url: https://docs.viettelcloud.vn/documentation
+product_logo_url: https://github.com/cncf/landscape/blob/master/hosted_logos/viettel.svg
+type: distribution
+description: Viettel AI Platform is a container management and orchestration platform based on Cloud Native architecture, designed to support AI/ML applications running in Kubernetes environments
+contact_email_address: vcloud@viettel.com.vn

@@ -1,0 +1,10 @@
+vendor: vCluster Labs
+name: vCluster with shared nodes
+version: v0.33.0
+website_url: https://www.vcluster.com/
+repo_url: https://github.com/loft-sh/vcluster
+documentation_url: https://www.vcluster.com/docs
+product_logo_url: https://static.loft.sh/branding/logos/vcluster/square/vcluster_square.svg
+type: distribution
+description: 'Shared Nodes is a tenancy model for vCluster that allows multiple virtual clusters to run workloads on the same physical Kubernetes nodes. This configuration is ideal for scenarios where maximizing resource utilization is a top priority'
+contact_email_address: cncf@vcluster.com

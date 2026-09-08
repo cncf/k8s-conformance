@@ -1,0 +1,9 @@
+vendor: QUANTUM C&S
+name: ORKESTRIX
+version: v0.1.0
+website_url: https://quantumcns.ai
+documentation_url: https://docs.quantumcns.ai/orkestrix/
+product_logo_url: https://docs.quantumcns.ai/img/ORKESTRIX.svg
+type: distribution
+description: "ORKESTRIX is a full-stack Kubernetes distribution by QUANTUM C&S, automating infrastructure provisioning, including QKS(Quantum Kubernetes Service) and various back-office components, tailored to each customer's environment."
+contact_email_address: aila@quantumcns.ai
