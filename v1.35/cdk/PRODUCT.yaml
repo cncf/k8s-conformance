@@ -7,4 +7,4 @@ documentation_url: https://ubuntu.com/kubernetes/docs
 product_logo_url: https://assets.ubuntu.com/v1/e6cd15f7-Charmed+Kubernetes_RGB_2022.svg
 type: distribution
 description: Deploy, scale and upgrade Kubernetes clusters across multiple physical or virtual machines with Charmed Kubernetes.
-contact_email_address: adam.dyess@canonical.com
+contact_email_address: k8s-team@canonical.com
