@@ -1,0 +1,8 @@
+vendor: Arcfra
+name: Arcfra Kubernetes Engine
+version: v1.6.0
+website_url: https://www.arcfra.com/kubernetes-engine/
+documentation_url: https://docs.arcfra.com/platform/6.2/deployment/kubernetes-engine/1.5.1/deploying_ake/ake_deploy_guide/ake_deploy_guide_03
+type: distribution
+description: 'Arcfra Kubernetes Engine (AKE) is the Kubernetes service of Arcfra Enterprise Cloud Platform (AECP). It helps enterprises automate the complete production-ready Kubernetes infrastructure, simplifying deployment, management, and usage with an out-of-the-box experience.'
+contact_email_address: rujia.liu@arcfra.com

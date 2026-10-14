@@ -1,0 +1,9 @@
+vendor: Canonical
+name: Canonical Kubernetes
+version: v1.32.10
+website_url: https://ubuntu.com/kubernetes
+documentation_url: https://documentation.ubuntu.com/canonical-kubernetes/latest/
+product_logo_url: https://assets.ubuntu.com/v1/563c0d9b-Canonical.svg
+type: distribution
+description: 'Performant and easy to deploy Kubernetes cluster with a zero-ops experience and everything needed for a fully functioning cluster (e.g. DNS, gateway, networking).'
+contact_email_address: daniel.neuberger@canonical.com

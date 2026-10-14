@@ -1,0 +1,10 @@
+vendor: QingCloud Technologies Corp.
+name: QingCloud Kubernetes Engine (QKE)
+version: v3.4.0 - Kubernetes v1.35.8
+website_url: https://www.qingcloud.com/products/qke/
+repo_url: https://github.com/QingCloudAppcenter/QKE
+documentation_url: https://docsv3.qingcloud.com/container/qke_plus/
+product_logo_url: https://yunify-qingcloud-docs.pek3b.qingstor.com/images/QKE.svg
+type: hosted
+description: "QKE provisions and manages highly available Kubernetes clusters on QingCloud with integrated compute, storage, and networking."
+contact_email_address: remote_support_center@yunify.com

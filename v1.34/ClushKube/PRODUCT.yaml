@@ -1,0 +1,9 @@
+vendor: Clush Inc.
+name: Clush Kube
+version: 250910
+website_url: https://www.clush.ai/en/clushkube
+documentation_url: https://drive.google.com/file/d/1ddqavo-jEgFoJnFxWE8D4wT8gTKP1a6L/view
+product_logo_url: https://static.wixstatic.com/shapes/fd6ab2_8562ffc5137c44e4b31161bb7f210725.svg
+type: distribution
+description: 'Clush Kube is a next-generation enterprise cloud operating solution that provides user management, systems management, PaaS management, DevOps management, helpdesk/service support, and monitoring capabilities.'
+contact_email_address: contact@clush.net

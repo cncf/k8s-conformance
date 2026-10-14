@@ -1,0 +1,8 @@
+vendor: Previder
+name: Previder Kubernetes Engine
+description: Previder Kubernetes Engine is a managed Kubernetes service to help users focus on their development as we take care of the maintenance and updates of the container infrastructure
+version: v1.0
+website_url: https://previder.nl
+documentation_url: https://previder.nl/diensten/kubernetes-as-a-service
+type: hosted
+contact_email_address: managed@previder.nl

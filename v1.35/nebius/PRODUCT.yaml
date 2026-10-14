@@ -1,0 +1,9 @@
+vendor: Nebius
+name: Managed Service for Kubernetes
+version: v1.35
+website_url: https://nebius.com/compute/kubernetes
+documentation_url: https://docs.nebius.com/kubernetes
+product_logo_url: https://raw.githubusercontent.com/cncf/landscape/master/hosted_logos/nebius.svg
+type: hosted platform
+description: A fully managed container orchestrator optimized for modern AI workloads.
+contact_email_address: dsebakov@nebius.com

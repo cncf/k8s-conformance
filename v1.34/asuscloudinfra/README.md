@@ -9,7 +9,7 @@
 | kubectl    | v1\.34\.1   |
 | etcd       | 3\.5\.9\-0  |
 | Calico     | v3\.23\.1   |
-| containerd | 1\.6\.22    |
+| containerd | 1\.6\.24    |
 | Haproxy    | 2\.3        |
 | Keepalived | 2\.0\.20    |
 

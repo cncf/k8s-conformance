@@ -1,0 +1,8 @@
+vendor: Viettel
+name: Viettel Kubernetes Engine
+version: v1.0.0
+website_url: https://viettelcloud.vn/
+documentation_url: https://docs.viettelcloud.vn/documentation
+type: hosted
+description: Viettel Kubernetes Engine is a fully managed Kubernetes service that enables you to deploy and operate Kubernetes clusters on the Viettel Cloud platform.
+contact_email_address: sdn@viettel.com.vn

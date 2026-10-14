@@ -1,0 +1,8 @@
+vendor: QUANTUM C&S
+name: QKS(Quantum Kubernetes Service)
+version: v0.1.0
+website_url: https://quantumcns.ai
+documentation_url: https://docs.quantumcns.ai
+type: hosted platform
+description: "QKS (Quantum Kubernetes Service) is a managed Kubernetes-as-a-Service platform by QUANTUM C&S, enabling on-premises multi-cluster environments with fully managed control planes — no infrastructure overhead for tenants."
+contact_email_address: aila@quantumcns.ai

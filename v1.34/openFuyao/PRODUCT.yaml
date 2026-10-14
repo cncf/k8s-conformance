@@ -1,0 +1,10 @@
+vendor: Huawei
+name: openFuyao
+version: v26.06
+website_url: https://www.openfuyao.cn/en/
+repo_url: https://gitcode.com/openFuyao/kubernetes
+documentation_url: https://docs.openfuyao.cn/en/docs/v26.06/legal_statement.html
+product_logo_url: https://static.openfuyao.cn/openfuyao-website/image/category/other/logo-black-text.svg
+type: distribution
+description: "openFuyao is deeply optimized based on Kubernetes, focusing on AI Native Infra capabilities. It provides out-of-the-box containerized cluster management capabilities, helping users rapidly build efficient, elastic, and intelligent computing infrastructure."
+contact_email_address: contact@openfuyao.cn

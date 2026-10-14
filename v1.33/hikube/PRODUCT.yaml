@@ -1,0 +1,9 @@
+vendor: Hidora
+name: Hikube
+version: v1.33.0
+website_url: https://hikube.cloud/
+documentation_url: https://docs.hikube.cloud/
+product_logo_url: https://hikube.cloud/hubfs/logo-hikube.svg
+type: hosted
+description: 'Hikube’s Managed Kubernetes provides a fully managed, multi-datacenter Kubernetes environment distributed across three Swiss sites, ensuring cluster redundancy, automated updates, integrated monitoring, and secure networking for production-grade workloads.'
+contact_email_address: 'contact@hidora.io'

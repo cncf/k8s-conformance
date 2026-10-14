@@ -1,0 +1,9 @@
+vendor: Chinaunicom
+name: Container Service for Kubernetes 
+version: v1.33.1
+website_url: https://www.cucloud.cn/product/csk.html 
+documentation_url: https://support.cucloud.cn/document/127/581/900.html?id=900&arcid=2904
+product_logo_url: https://raw.githubusercontent.com/c479096292/cucsk/refs/heads/main/docs/en/docs/images/lty-logo.svg 
+type: hosted
+description: 'Chinaunicom container service product based on Kubernetes. It provides high-performance and scalable container application management capabilities, supporting the full lifecycle management of enterprise-level Kubernetes containerized applications'
+contact_email_address: caibw5@chinaunicom.cn 

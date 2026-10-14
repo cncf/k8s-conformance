@@ -1,0 +1,10 @@
+vendor: Mirantis
+name: k0rdent
+version: v1.8.0
+website_url: https://k0rdent.io
+documentation_url: https://docs.k0rdent.io
+product_logo_url: https://raw.githubusercontent.com/k0rdent/docs/refs/heads/main/docs/img/k0rdent-logo-horizontal.svg 
+repo_url: https://github.com/k0rdent/kcm
+type: distribution
+description: "k0rdent is an open-source, Kubernetes-native distributed container management environment for platform engineers."
+contact_email_address: k0rdent-team@mirantis.com

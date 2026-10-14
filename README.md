@@ -1,6 +1,6 @@
 # Certified Kubernetes Conformance Program
 
-All vendors are invited to submit conformance testing results for review and certification by the CNCF.
+[Eligible vendors](https://github.com/cncf/k8s-conformance/blob/master/faq.md#what-is-the-cost-of-certification) are invited to submit conformance testing results for review and certification by the CNCF.
 If your company provides software based on Kubernetes, we encourage you to get certified today.
 For more information please checkout [cncf.io/ck](https://cncf.io/ck).
 

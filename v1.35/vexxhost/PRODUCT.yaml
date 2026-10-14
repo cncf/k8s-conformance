@@ -1,0 +1,9 @@
+vendor: VEXXHOST, Inc.
+name: VEXXHOST Kubernetes Engine
+version: 0.35.0
+website_url: https://vexxhost.com/products/openstack/services/kubernetes/
+repo_url: https://github.com/vexxhost/magnum-cluster-api
+documentation_url: https://vexxhost.github.io/magnum-cluster-api/user/getting-started/
+type: hosted platform
+description: OpenStack-powered fully open source Kuberentes service, with no vendor lock-in.
+contact_email_address: mnaser@vexxhost.com

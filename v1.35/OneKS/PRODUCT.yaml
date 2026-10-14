@@ -1,0 +1,10 @@
+vendor: OpenNebula Systems
+name: OpenNebula Elastic Kubernetes Service (OneKS)
+version: v1.35.0
+website_url: https://docs.opennebula.io/7.4/platform_services/oneks/
+repo_url: https://github.com/OpenNebula/one/tree/master/src/oneks
+documentation_url: https://docs.opennebula.io/7.4/platform_services/oneks/getting_started/
+product_logo_url: https://opennebula.io/logo-blue.svg
+type: platform
+description: OneKS provides Kubernetes as a Service on OpenNebula, enabling the deployment, access, and operation of Kubernetes clusters.
+contact_email_address: contact@opennebula.io
