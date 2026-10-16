@@ -6,3 +6,4 @@ documentation_url: https://teuto.net/k8s/docs/managed-kubernetes
 type: hosted platform
 description: teuto.net quickly deploys and manages production-ready kubernetes clusters for you.
 contact_email_address: kubernetes@teuto.net
+# kubernetes_version: 1.35.5
