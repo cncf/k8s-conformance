@@ -1,0 +1,9 @@
+vendor: Cloudera, Inc.
+name: Cloudera Distribution of Kubernetes (AI Platform)
+version: v1.0.0
+website_url: https://cloudera.com
+documentation_url: https://www.cloudera.com/services-and-support/professional-services.html
+product_logo_url: https://www.cloudera.com/content/dam/www/marketing/images/logos/cloudera/cloudera-logo@2x.png
+type: distribution
+description: Cloudera Distribution of Kubernetes (AI Platform) tailored for AI/ML workloads.
+contact_email_address : pdwivedi@cloudera.com
