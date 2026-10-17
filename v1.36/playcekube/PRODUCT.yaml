@@ -1,0 +1,9 @@
+vendor: Open Source Consulting Inc.
+name: PlayceKube
+version: "1.0"
+website_url: https://osci.kr/
+documentation_url: https://playcecloud.gitbook.io/osci-docs/playcecloud/playcekube
+product_logo_url: https://raw.githubusercontent.com/OpenSourceConsulting/PlayceCloud-Logo/main/PlayceKube/playce_kube_wordmark_color.svg
+type: distribution
+description: "PlayceKube is a Kubernetes distribution for on-premises environments, built on kubespray and Helm charts, providing automated cluster deployment, offline (air-gapped) installation, and template-based add-on management."
+contact_email_address: playcernd@osci.kr
