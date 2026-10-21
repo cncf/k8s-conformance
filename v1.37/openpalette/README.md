@@ -53,16 +53,19 @@ Deploy PaaS successfully, and create cluster complete!
 
 ### Run conformance tests
 
-Install the git & golang software, then build the Sonobuoy tool by myself:
+Install the git & golang software, then install the Sonobuoy CLI:
 
-```
-$ go get -u -v github.com/heptio/sonobuoy
+```sh
+go install github.com/vmware-tanzu/sonobuoy@latest
 ```
 
-Deploy a Sonobuoy pod to the OpenPalette Kubernetes cluster with:
+Ensure that Go's binary installation directory (`GOBIN`, or `$(go env GOPATH)/bin`
+when `GOBIN` is unset) is on your `PATH`.
 
-```
-$ sonobuoy run
+Deploy Sonobuoy to the OpenPalette Kubernetes cluster in certified conformance mode. This mode includes the disruptive conformance tests required for certification:
+
+```sh
+sonobuoy run --mode=certified-conformance
 ```
 
 View actively running pods:
