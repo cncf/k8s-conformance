@@ -1,0 +1,9 @@
+vendor: NVIDIA Corporation
+name: NVIDIA Kubernetes Engine
+version: 0.22.0
+website_url: https://docs.nvidia.com/dsx
+repo_url: https://github.com/dsx-ai-factory/nvke
+documentation_url: https://docs.nvidia.com/nvke
+type: installer
+description: "NVIDIA Kubernetes Engine (NVKE) is open source software that AI cloud operators install on their own infrastructure to create and run fleets of GPU-accelerated clusters on upstream Kubernetes."
+contact_email_address: eboyd@nvidia.com
