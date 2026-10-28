@@ -1,0 +1,10 @@
+vendor: Ctrl IQ, Inc.
+name: Stratum Kubernetes Engine (SKE)
+version: v1.37.1-stratum.0
+website_url: https://ciq.com/product/stratum
+repo_url: https://github.com/ctrliq/stratum
+documentation_url: https://docs.ciq.com/stratum
+product_logo_url: https://raw.githubusercontent.com/ctrliq/stratum/main/logos/SVG/Stratum_logo_h_clr.svg
+type: distribution
+description: "Stratum Kubernetes Engine (SKE) is a Kubernetes distribution delivered as one self-extracting binary that carries every component and container image, for connected and air-gapped clusters."
+contact_email_address: cwolford@ciq.com
