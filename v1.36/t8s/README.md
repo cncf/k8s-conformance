@@ -28,6 +28,6 @@ Follow the k8s-conformance
 to run the conformance tests.
 
 The output here was obtained with hydrophone 0.7.0 running on a
-Kubernetes 1.36.5 cluster.
+Kubernetes 1.36.6 cluster.
 
-<!-- t8s-conformance-metadata: {"kubernetes_version":"1.36.5"} -->
+<!-- t8s-conformance-metadata: {"kubernetes_version":"1.36.6"} -->
