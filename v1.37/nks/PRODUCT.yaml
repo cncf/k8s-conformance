@@ -1,0 +1,9 @@
+vendor: Nscale
+name: Nscale Managed Kubernetes
+version: "v1.37.0-nks.1"
+website_url: https://nscale.com
+documentation_url: https://docs.nscale.com/docs/platform-services/managed-kubernetes
+product_logo_url: https://raw.githubusercontent.com/nscaledev/media-kit/refs/heads/main/02%20Logo/01%20Full%20logo/01%20Vector%20WEB%20(SVG)/Nscale-logo_midnight.svg
+type: hosted
+description: "NKS is Nscale's Managed Kubernetes Service, a fully-managed Kubernetes environment with infrastructure integration designed for AI training and inference."
+contact_email_address: sales@nscale.com
