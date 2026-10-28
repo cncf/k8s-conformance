@@ -100,11 +100,15 @@ spec:
 
 
 ### Run Sonobuoy e2e
-```
-./sonobuoy run --mode=certified-conformance
+
+Wait for the conformance run to complete, then retrieve and inspect its results:
+
+```sh
+./sonobuoy run --mode=certified-conformance --wait
 results=$(./sonobuoy retrieve)
 mkdir ./results
-tar xzf $results -C ./results
-./sonobuoy e2e ${results}
+tar xzf "$results" -C ./results
+./sonobuoy results "$results"
 ```
-Result are available in `results/plugins/e2e/results/global` directory. 
+
+The submission artifacts `e2e.log` and `junit_01.xml` are available in `results/plugins/e2e/results/global/`.
