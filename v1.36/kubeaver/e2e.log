@@ -1,0 +1,559 @@
+  I1010 03:28:25.105582      20 e2e.go:109] Starting e2e run "4ae56d48-dbd2-423a-b4e1-b9fb7ba13808" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /usr/local/bin
+====================================================
+Random Seed: 1791602904 - will randomize all specs
+
+Will run 446 of 7579 specs
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-apps] CronJob should not schedule jobs when suspended [Slow] [Conformance] (Spec Runtime: 3m35.724s)
+      k8s.io/kubernetes/test/e2e/apps/cronjob.go:99
+      In [It] (Node Runtime: 3m35.713s)
+        k8s.io/kubernetes/test/e2e/apps/cronjob.go:99
+        At [By Step] Ensuring no jobs are scheduled (Step Runtime: 3m35.712s)
+          k8s.io/kubernetes/test/e2e/apps/cronjob.go:108
+
+        Begin Captured GinkgoWriter Output >>
+          I1010 03:35:10.869057      20 util.go:414] >>> kubeConfig: /tmp/kubeconfig-3527647432
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 8059 [select]
+          github.com/onsi/gomega/internal.(*AsyncAssertion).match(0x36489a521810, {0x5e27e48, 0x36489aac5ea0}, 0x1, {0x0, 0x0, 0x0})
+            github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:558
+          github.com/onsi/gomega/internal.(*AsyncAssertion).Should(0x36489a521810, {0x5e27e48, 0x36489aac5ea0}, {0x0, 0x0, 0x0})
+            github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:145
+        > k8s.io/kubernetes/test/e2e/apps.init.func2.2({0x5e37a20, 0x36489406ce40})
+            k8s.io/kubernetes/test/e2e/apps/cronjob.go:110
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x5e4c1f0?, 0x36489406ce40?})
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 7731
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:911
+
+        Begin Additional Progress Reports >>
+          There is no failure as the matcher passed to Consistently has not yet failed
+        << End Additional Progress Reports
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Slow] [Conformance] (Spec Runtime: 4m14.668s)
+      k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:144
+      In [It] (Node Runtime: 3m57.112s)
+        k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:144
+        At [By Step] retrieving the second page until the token expires (Step Runtime: 3m57.064s)
+          k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:165
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          I1010 03:42:09.024786      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:42:29.022719      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:42:49.020647      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:43:09.023766      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:43:29.023903      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:43:49.022369      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:44:09.023608      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:44:29.020738      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:44:49.021667      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1010 03:45:09.023572      20 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTEzNjIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 8795 [select]
+          k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x5e373c8, 0x8a52340}, 0x36489395f6f8, 0x3648925c9748)
+            k8s.io/apimachinery/pkg/util/wait/wait.go:210
+          k8s.io/apimachinery/pkg/util/wait.poll({0x5e373c8, 0x8a52340}, 0x0?, 0x36489395f6f8, 0x36489395f748)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x5e373c8?, 0x8a52340?}, 0x0?, 0x32?, 0x0?)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:85
+          k8s.io/apimachinery/pkg/util/wait.Poll(0x5a5b019?, 0x56?, 0x0?)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:66
+        > k8s.io/kubernetes/test/e2e/apimachinery.init.func5.3({0x5e37a20, 0x364896f6b500})
+            k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:168
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x5e4c1f0?, 0x364896f6b500?})
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 7731
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:911
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•S•SSSSS•SSSS•SSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSS•SSSSSS•SSSSSS•SSSSSSS•SSSSSSSSSSSS•SSS••SSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSS••SSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSS••SSSS•SSSSSSS•SS•SSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSS•••SSSSSSSS•SSSSSSSSSSSS•SSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS••SSSSSSS•SSSS•SSSSSSS•S•SSSSSSSSSSSSSS•SSSSSSS•SSSSSSSS•S•SSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS••SSSSSSSSSS•SSSS•SSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•••SSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSS•S•SSSSSSSSSSSS•SSSSSSSSSSSS•SSS•SSSSSSSS•SSSSSS•SSS•SSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSS•SSSSSSSS•SSSSSSSS•SSSSSSSSSSSS•SSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSS•S•SSS•SSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSS•SS•SSSSS•S•SSSSSSSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-node] Security Context when creating containers with AllowPrivilegeEscalation should not allow privilege escalation when false [LinuxOnly] [NodeConformance] [Conformance] (Spec Runtime: 17.496s)
+      k8s.io/kubernetes/test/e2e/common/node/security_context.go:722
+      In [It] (Node Runtime: 17.45s)
+        k8s.io/kubernetes/test/e2e/common/node/security_context.go:722
+
+      Begin Captured GinkgoWriter Output >>
+        I1010 04:23:28.416242      20 util.go:414] >>> kubeConfig: /tmp/kubeconfig-3527647432
+      << End Captured GinkgoWriter Output
+
+      Spec Goroutine
+      goroutine 17968 [select]
+        github.com/onsi/gomega/internal.(*AsyncAssertion).match(0x364892aa17a0, {0x5e28630, 0x364893d64f30}, 0x1, {0x0, 0x0, 0x0})
+          github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:558
+        github.com/onsi/gomega/internal.(*AsyncAssertion).Should(0x364892aa17a0, {0x5e28630, 0x364893d64f30}, {0x0, 0x0, 0x0})
+          github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:145
+        k8s.io/kubernetes/test/e2e/framework.asyncAssertion.Should({{0x5e37a20, 0x364895a56f60}, {0x364893d64f20, 0x1, 0x1}, 0x45d964b800, 0x77359400, 0x0}, {0x5e28630, 0x364893d64f30})
+          k8s.io/kubernetes/test/e2e/framework/expect.go:235
+        k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodCondition({0x5e37a20, 0x364895a56f60}, {0x5e9ad68?, 0x3648938e1bf0?}, {0x36489540a2c0, 0x1a}, {0x364892c7f600, 0x35}, {0x3648963c2af8, 0x13}, ...)
+          k8s.io/kubernetes/test/e2e/framework/pod/wait.go:315
+        k8s.io/kubernetes/test/e2e/framework/pod.(*PodClient).WaitForSuccess(0x364895a56e40, {0x5e37a20, 0x364895a56f60}, {0x364892c7f600, 0x35}, 0x45d964b800)
+          k8s.io/kubernetes/test/e2e/framework/pod/pod_client.go:292
+      > k8s.io/kubernetes/test/e2e/common/node.init.func38.7.2({0x5e37a20, 0x364895a56f60}, {0x364892c7f600, 0x35}, {0x3648963c2a50, 0x13}, 0x3648966a8890, 0x3e8)
+          k8s.io/kubernetes/test/e2e/common/node/security_context.go:694
+      > k8s.io/kubernetes/test/e2e/common/node.init.func38.7.4({0x5e37a20, 0x364895a56f60})
+          k8s.io/kubernetes/test/e2e/common/node/security_context.go:725
+        github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x5e4c1f0?, 0x364895a56f60?})
+          github.com/onsi/ginkgo/v2@v2.28.1/internal/node.go:578
+        github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+          github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:946
+        github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 7731
+          github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:911
+
+      Begin Additional Progress Reports >>
+        expected pod to be Succeeded or Failed, got instead:
+            <*v1.Pod | 0x364893925408>: 
+                metadata:
+                  creationTimestamp: "2026-10-10T04:23:28Z"
+                  generation: 1
+                  managedFields:
+                  - apiVersion: v1
+                    fieldsType: FieldsV1
+                    fieldsV1:
+                      f:spec:
+                        f:containers:
+                          k:{"name":"alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996"}:
+                            .: {}
+                            f:image: {}
+                            f:imagePullPolicy: {}
+                            f:name: {}
+                            f:resources: {}
+                            f:securityContext:
+                              .: {}
+                              f:allowPrivilegeEscalation: {}
+                              f:runAsUser: {}
+                            f:terminationMessagePath: {}
+                            f:terminationMessagePolicy: {}
+                        f:dnsPolicy: {}
+                        f:enableServiceLinks: {}
+                        f:restartPolicy: {}
+                        f:schedulerName: {}
+                        f:securityContext: {}
+                        f:terminationGracePeriodSeconds: {}
+                    manager: e2e.test
+                    operation: Update
+                    time: "2026-10-10T04:23:28Z"
+                  - apiVersion: v1
+                    fieldsType: FieldsV1
+                    fieldsV1:
+                      f:status:
+                        f:conditions:
+                          k:{"type":"ContainersReady"}:
+                            .: {}
+                            f:lastProbeTime: {}
+                            f:lastTransitionTime: {}
+                            f:message: {}
+                            f:observedGeneration: {}
+                            f:reason: {}
+                            f:status: {}
+                            f:type: {}
+                          k:{"type":"Initialized"}:
+                            .: {}
+                            f:lastProbeTime: {}
+                            f:lastTransitionTime: {}
+                            f:observedGeneration: {}
+                            f:status: {}
+                            f:type: {}
+                          k:{"type":"PodReadyToStartContainers"}:
+                            .: {}
+                            f:lastProbeTime: {}
+                            f:lastTransitionTime: {}
+                            f:observedGeneration: {}
+                            f:status: {}
+                            f:type: {}
+                          k:{"type":"PodScheduled"}:
+                            f:observedGeneration: {}
+                          k:{"type":"Ready"}:
+                            .: {}
+                            f:lastProbeTime: {}
+                            f:lastTransitionTime: {}
+                            f:message: {}
+                            f:observedGeneration: {}
+                            f:reason: {}
+                            f:status: {}
+                            f:type: {}
+                        f:containerStatuses: {}
+                        f:hostIP: {}
+                        f:hostIPs: {}
+                        f:observedGeneration: {}
+                        f:resources: {}
+                        f:startTime: {}
+                    manager: kubelet
+                    operation: Update
+                    subresource: status
+                    time: "2026-10-10T04:23:28Z"
+                  name: alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996
+                  namespace: security-context-test-7856
+                  resourceVersion: "24044"
+                  uid: e6947c85-7a21-4fa1-8807-5976ceff379c
+                spec:
+                  containers:
+                  - image: store.e-byte.cn/cncf/registry.k8s.io/e2e-test-images/nonewprivs:1.4
+                    imagePullPolicy: IfNotPresent
+                    name: alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996
+                    resources: {}
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                      runAsUser: 1000
+                    terminationMessagePath: /dev/termination-log
+                    terminationMessagePolicy: File
+                    volumeMounts:
+                    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+                      name: kube-api-access-8wvf7
+                      readOnly: true
+                  dnsPolicy: ClusterFirst
+                  enableServiceLinks: true
+                  nodeName: node4568
+                  preemptionPolicy: PreemptLowerPriority
+                  priority: 0
+                  restartPolicy: Never
+                  schedulerName: default-scheduler
+                  securityContext: {}
+                  serviceAccount: default
+                  serviceAccountName: default
+                  terminationGracePeriodSeconds: 30
+                  tolerations:
+                  - effect: NoExecute
+                    key: node.kubernetes.io/not-ready
+                    operator: Exists
+                    tolerationSeconds: 300
+                  - effect: NoExecute
+                    key: node.kubernetes.io/unreachable
+                    operator: Exists
+                    tolerationSeconds: 300
+                  volumes:
+                  - name: kube-api-access-8wvf7
+                    projected:
+                      defaultMode: 420
+                      sources:
+                      - serviceAccountToken:
+                          expirationSeconds: 3607
+                          path: token
+                      - configMap:
+                          items:
+                          - key: ca.crt
+                            path: ca.crt
+                          name: kube-root-ca.crt
+                      - downwardAPI:
+                          items:
+                          - fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.namespace
+                            path: namespace
+                status:
+                  conditions:
+                  - lastProbeTime: null
+                    lastTransitionTime: "2026-10-10T04:23:28Z"
+                    observedGeneration: 1
+                    status: "True"
+                    type: PodReadyToStartContainers
+                  - lastProbeTime: null
+                    lastTransitionTime: "2026-10-10T04:23:28Z"
+                    observedGeneration: 1
+                    status: "True"
+                    type: Initialized
+                  - lastProbeTime: null
+                    lastTransitionTime: "2026-10-10T04:23:28Z"
+                    message: 'containers with unready status: [alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996]'
+                    observedGeneration: 1
+                    reason: ContainersNotReady
+                    status: "False"
+                    type: Ready
+                  - lastProbeTime: null
+                    lastTransitionTime: "2026-10-10T04:23:28Z"
+                    message: 'containers with unready status: [alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996]'
+                    observedGeneration: 1
+                    reason: ContainersNotReady
+                    status: "False"
+                    type: ContainersReady
+                  - lastProbeTime: null
+                    lastTransitionTime: "2026-10-10T04:23:28Z"
+                    observedGeneration: 1
+                    status: "True"
+                    type: PodScheduled
+                  containerStatuses:
+                  - image: store.e-byte.cn/cncf/registry.k8s.io/e2e-test-images/nonewprivs:1.4
+                    imageID: ""
+                    lastState: {}
+                    name: alpine-nnp-false-a32279bc-bd75-4f89-a861-d0007a4ea996
+                    ready: false
+                    restartCount: 0
+                    started: false
+                    state:
+                      waiting:
+                        reason: ContainerCreating
+                    volumeMounts:
+                    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+                      name: kube-api-access-8wvf7
+                      readOnly: true
+                      recursiveReadOnly: Disabled
+                  hostIP: 10.193.45.68
+                  hostIPs:
+                  - ip: 10.193.45.68
+                  observedGeneration: 1
+                  phase: Pending
+                  qosClass: BestEffort
+                  resources: {}
+                  startTime: "2026-10-10T04:23:28Z"
+      << End Additional Progress Reports
+  ------------------------------
+•SSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS••SSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSS•SSSSSSSS•SSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•S••SSSSS•SSS•SSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSS•SSS•S•SSSSSSSSSS•SSSSSSSS•••SSSSSSSSSSS•SS•SSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSS•SSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•S•SSS•SSSSSSSSS•SSSSS•SSSSSS•SS•S•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSS•SSSSSSSSSSSS•SSSS•SS•SSSSSSSSSSSSSS•SSSS•SSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSS•SSSSSSS•SSSSSSSSSSSSS•SSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSS••SSSSSSSSSSSSS•SSSSSS•SSSSSSSSSS•SSSSSSS•S•SS
+  ------------------------------
+  You've requested a progress report:
+    [sig-scheduling] SchedulerPredicates [Serial] validates that there exists conflict between pods with same hostPort and protocol but one using 0.0.0.0 hostIP [Conformance] (Spec Runtime: 4m58.872s)
+      k8s.io/kubernetes/test/e2e/scheduling/predicates.go:706
+      In [It] (Node Runtime: 4m58.762s)
+        k8s.io/kubernetes/test/e2e/scheduling/predicates.go:706
+        At [By Step] Trying to create another pod(pod5) with hostport 54322 but hostIP 10.193.45.68 on the node which pod4 resides and expect not scheduled (Step Runtime: 4m54.725s)
+          k8s.io/kubernetes/test/e2e/scheduling/predicates.go:725
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          I1010 04:44:10.087415      20 predicates.go:958] coredns-84d66577fc-7xbg5 from kube-system started at 2026-10-10 02:19:29 +0000 UTC (1 container statuses recorded)
+          I1010 04:44:10.087417      20 predicates.go:960] 	Container coredns ready: true, restart count 0
+          I1010 04:44:10.087421      20 predicates.go:958] dns-autoscaler-6f86b7574f-ggp52 from kube-system started at 2026-10-10 02:54:39 +0000 UTC (1 container statuses recorded)
+          I1010 04:44:10.087422      20 predicates.go:960] 	Container autoscaler ready: true, restart count 0
+          I1010 04:44:10.087424      20 predicates.go:958] kube-flannel-v8jsh from kube-system started at 2026-10-10 02:19:18 +0000 UTC (1 container statuses recorded)
+          I1010 04:44:10.087425      20 predicates.go:960] 	Container kube-flannel ready: true, restart count 0
+          I1010 04:44:10.087427      20 predicates.go:958] kube-proxy-fzqq4 from kube-system started at 2026-10-10 02:19:05 +0000 UTC (1 container statuses recorded)
+          I1010 04:44:10.087428      20 predicates.go:960] 	Container kube-proxy ready: true, restart count 0
+          I1010 04:44:10.087430      20 predicates.go:958] metrics-server-bbc87756d-4zc4c from kube-system started at 2026-10-10 02:54:39 +0000 UTC (1 container statuses recorded)
+          I1010 04:44:10.087431      20 predicates.go:960] 	Container metrics-server ready: true, restart count 0
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 24922 [select]
+          github.com/onsi/gomega/internal.(*AsyncAssertion).match(0x364897b759d0, {0x5e28630, 0x3648966ea810}, 0x1, {0x0, 0x0, 0x0})
+            github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:558
+          github.com/onsi/gomega/internal.(*AsyncAssertion).Should(0x364897b759d0, {0x5e28630, 0x3648966ea810}, {0x0, 0x0, 0x0})
+            github.com/onsi/gomega@v1.39.1/internal/async_assertion.go:145
+          k8s.io/kubernetes/test/e2e/framework.asyncAssertion.Should({{0x5e37a20, 0x364896755bf0}, {0x3648966ea800, 0x1, 0x1}, 0x45d964b800, 0x77359400, 0x0}, {0x5e28630, 0x3648966ea810})
+            k8s.io/kubernetes/test/e2e/framework/expect.go:235
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodCondition({0x5e37a20, 0x364896755bf0}, {0x5e9ad68?, 0x36489397ae28?}, {0x364893fe2450, 0xf}, {0x5931e48, 0x4}, {0x594da26, 0xb}, ...)
+            k8s.io/kubernetes/test/e2e/framework/pod/wait.go:315
+          k8s.io/kubernetes/test/e2e/framework/pod.WaitForPodNotPending({0x5e37a20?, 0x364896755bf0?}, {0x5e9ad68?, 0x36489397ae28?}, {0x364893fe2450?, 0x0?}, {0x5931e48?, 0x0?})
+            k8s.io/kubernetes/test/e2e/framework/pod/wait.go:653
+        > k8s.io/kubernetes/test/e2e/scheduling.createHostPortPodOnNode({0x5e37a20, 0x364896755bf0}, 0x364895846000, {0x5931e48, 0x4}, {0x364893fe2450, 0xf}, {0x3648945d79c0, 0xc}, 0xd432, ...)
+            k8s.io/kubernetes/test/e2e/scheduling/predicates.go:1235
+        > k8s.io/kubernetes/test/e2e/scheduling.init.func2.13({0x5e37a20, 0x364896755bf0})
+            k8s.io/kubernetes/test/e2e/scheduling/predicates.go:726
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x5e4c1f0?, 0x364896755bf0?})
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 7731
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:911
+
+        Begin Additional Progress Reports >>
+          expected pod to be not pending, got instead:
+              <*v1.Pod | 0x364894f97908>: 
+                  metadata:
+                    creationTimestamp: "2026-10-10T04:44:14Z"
+                    generation: 1
+                    managedFields:
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:spec:
+                          f:containers:
+                            k:{"name":"agnhost"}:
+                              .: {}
+                              f:args: {}
+                              f:image: {}
+                              f:imagePullPolicy: {}
+                              f:name: {}
+                              f:ports:
+                                .: {}
+                                k:{"containerPort":8080,"protocol":"TCP"}:
+                                  .: {}
+                                  f:containerPort: {}
+                                  f:hostIP: {}
+                                  f:hostPort: {}
+                                  f:protocol: {}
+                              f:readinessProbe:
+                                .: {}
+                                f:failureThreshold: {}
+                                f:httpGet:
+                                  .: {}
+                                  f:path: {}
+                                  f:port: {}
+                                  f:scheme: {}
+                                f:periodSeconds: {}
+                                f:successThreshold: {}
+                                f:timeoutSeconds: {}
+                              f:resources: {}
+                              f:terminationMessagePath: {}
+                              f:terminationMessagePolicy: {}
+                          f:dnsPolicy: {}
+                          f:enableServiceLinks: {}
+                          f:nodeSelector: {}
+                          f:restartPolicy: {}
+                          f:schedulerName: {}
+                          f:securityContext: {}
+                          f:terminationGracePeriodSeconds: {}
+                      manager: e2e.test
+                      operation: Update
+                      time: "2026-10-10T04:44:14Z"
+                    - apiVersion: v1
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        f:status:
+                          f:conditions:
+                            .: {}
+                            k:{"type":"PodScheduled"}:
+                              .: {}
+                              f:lastProbeTime: {}
+                              f:lastTransitionTime: {}
+                              f:message: {}
+                              f:observedGeneration: {}
+                              f:reason: {}
+                              f:status: {}
+                              f:type: {}
+                      manager: kube-scheduler
+                      operation: Update
+                      subresource: status
+                      time: "2026-10-10T04:44:14Z"
+                    name: pod5
+                    namespace: sched-pred-9384
+                    resourceVersion: "33011"
+                    uid: b831c95f-d7ef-4c79-ac2c-4dc088d92a0e
+                  spec:
+                    containers:
+                    - args:
+                      - netexec
+                      - --http-port=8080
+                      - --udp-port=8080
+                      image: store.e-byte.cn/cncf/registry.k8s.io/e2e-test-images/agnhost:2.63.0
+                      imagePullPolicy: IfNotPresent
+                      name: agnhost
+                      ports:
+                      - containerPort: 8080
+                        hostIP: 10.193.45.68
+                        hostPort: 54322
+                        protocol: TCP
+                      readinessProbe:
+                        failureThreshold: 3
+                        httpGet:
+                          path: /hostname
+                          port: 8080
+                          scheme: HTTP
+                        periodSeconds: 10
+                        successThreshold: 1
+                        timeoutSeconds: 1
+                      resources: {}
+                      terminationMessagePath: /dev/termination-log
+                      terminationMessagePolicy: File
+                      volumeMounts:
+                      - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+                        name: kube-api-access-f8shq
+                        readOnly: true
+                    dnsPolicy: ClusterFirst
+                    enableServiceLinks: true
+                    nodeSelector:
+                      kubernetes.io/e2e-7245d5e9-fa85-4aef-92f2-a8b750923e1b: "95"
+                    preemptionPolicy: PreemptLowerPriority
+                    priority: 0
+                    restartPolicy: Always
+                    schedulerName: default-scheduler
+                    securityContext: {}
+                    serviceAccount: default
+                    serviceAccountName: default
+                    terminationGracePeriodSeconds: 30
+                    tolerations:
+                    - effect: NoExecute
+                      key: node.kubernetes.io/not-ready
+                      operator: Exists
+                      tolerationSeconds: 300
+                    - effect: NoExecute
+                      key: node.kubernetes.io/unreachable
+                      operator: Exists
+                      tolerationSeconds: 300
+                    volumes:
+                    - name: kube-api-access-f8shq
+                      projected:
+                        defaultMode: 420
+                        sources:
+                        - serviceAccountToken:
+                            expirationSeconds: 3607
+                            path: token
+                        - configMap:
+                            items:
+                            - key: ca.crt
+                              path: ca.crt
+                            name: kube-root-ca.crt
+                        - downwardAPI:
+                            items:
+                            - fieldRef:
+                                apiVersion: v1
+                                fieldPath: metadata.namespace
+                              path: namespace
+                  status:
+                    conditions:
+                    - lastProbeTime: null
+                      lastTransitionTime: "2026-10-10T04:44:14Z"
+                      message: '0/3 nodes are available: 1 node(s) didn''t have free ports for the requested
+                        pod ports, 2 node(s) didn''t match Pod''s node affinity/selector. no new claims
+                        to deallocate, preemption: 0/3 nodes are available: 1 No preemption victims
+                        found for incoming pod, 2 Preemption is not helpful for scheduling.'
+                      observedGeneration: 1
+                      reason: Unschedulable
+                      status: "False"
+                      type: PodScheduled
+                    phase: Pending
+                    qosClass: BestEffort
+        << End Additional Progress Reports
+  ------------------------------
+•SSSSSSSSS•SSSS•SS••SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSS•SSS•SS•SSS•SSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSS•S•SSSS•SSSSSS••SSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSS••SSSSS•SSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSS•SSS••SSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSS•SS•SSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS••SSSSS•SSSSSSSSSSSSSSSSS•SS•SS•SSSSSSSSSS•SS••SS•SS•SSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSS•S•SSSSS•S•S•SSSSSSSSSSSS•S•SSSSS•SSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSS•S•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•S•SSSSSSSS•SSSS•SSSSSSS•SSSSS•SSSSSSSSSSSSSS•SSSSSSSSSS•SS•SSSSSS•••SSSSSSSSSSSSS•SSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSS•SSSSSSS•SSSSSSSS•SSSS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS••SS•SSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSS•SSSSSSSSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-apps] CronJob should schedule multiple jobs concurrently [Conformance] (Spec Runtime: 45.121s)
+      k8s.io/kubernetes/test/e2e/apps/cronjob.go:72
+      In [It] (Node Runtime: 45.114s)
+        k8s.io/kubernetes/test/e2e/apps/cronjob.go:72
+        At [By Step] Ensuring more than one job is running at a time (Step Runtime: 45.112s)
+          k8s.io/kubernetes/test/e2e/apps/cronjob.go:79
+
+        Begin Captured GinkgoWriter Output >>
+          I1010 05:10:07.026479      20 util.go:414] >>> kubeConfig: /tmp/kubeconfig-3527647432
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 33108 [select]
+          k8s.io/apimachinery/pkg/util/wait.loopConditionUntilContext({0x5e37550, 0x36489507e850}, {0x5e28328, 0x364893ca6aa0}, 0x0, 0x0, 0x36489ad6fdf8)
+            k8s.io/apimachinery/pkg/util/wait/loop.go:66
+          k8s.io/apimachinery/pkg/util/wait.PollUntilContextTimeout({0x5e37a20?, 0x364892f91560?}, 0x77359400, 0x364893ca6a60?, 0x0, 0x36489ad6fdf8)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:48
+        > k8s.io/kubernetes/test/e2e/apps.waitForActiveJobs(...)
+            k8s.io/kubernetes/test/e2e/apps/cronjob.go:654
+        > k8s.io/kubernetes/test/e2e/apps.init.func2.1({0x5e37a20, 0x364892f91560})
+            k8s.io/kubernetes/test/e2e/apps/cronjob.go:80
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x5e4c1f0?, 0x364892f91560?})
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 7731
+            github.com/onsi/ginkgo/v2@v2.28.1/internal/suite.go:911
+  ------------------------------
+•SSSSSSSSSSSSSS•SSS••SSSSS•SSS•SSSSSS••SSSS•S•SSSSSSSSSSSSSSSS•SSSS•SSSSSSSSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSS•SSSS••SSSSSSSS•SSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSS•SS•S•SSSSSS•SSS•SSSSSSS•SSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSS•SSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSS•SSSSSS•SSSSSSSSS•SSSSSSS•SS•••SS•SSSS•SS•SSSSSSSSSSSSSSSSSSSSS•SS•SS•SSSSS•SSSSSSS•SSSS•SSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSS••SSSSSS•SSSSS••SSSSSS•SSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSS•SSSSSSSSSSS•SSSS•SSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSS•SSS•SSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSS•SSSS•SSSSSS•SSS•SSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSS•SSSS•SSS•SS•SSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSS•SSSS•SSSS•S•SSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSS•SSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSS•SSSSSSSSSSSSSSSSS•SSSSSSSSS••SS•SSSSSSSSSS•S•SSSSSSSSSSSSSSS•SS•SSSSSS
+
+Ran 446 of 7579 Specs in 7706.895 seconds
+SUCCESS! -- 446 Passed | 0 Failed | 0 Pending | 7133 Skipped
+PASS
+
+Ginkgo ran 1 suite in 2h8m27.641501992s
+Test Suite Passed
