@@ -1,0 +1,10 @@
+vendor: Conoa AB
+name: Proact Managed Container Platform
+version: v1.0
+website_url: https://www.conoa.se/container-as-a-service/ 
+repo_url: 
+documentation_url: https://www.conoa.se/container-as-a-service/ 
+product_logo_url: 
+type: hosted platform
+description: "Full Stack managed kubernetes platform which let's you focus on your application, we'll do the rest!"
+contact_email_address: pmcp-monitoring@conoa.se
