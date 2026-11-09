@@ -27,8 +27,8 @@ jobs:
           GH_APP_HMAC: ${{ secrets.GH_APP_HMAC }}
         run: |
           mkdir -p ./tmp/
-          echo '${{ env.GH_APP_PRIVATE_KEY }}' | base64 -d > ./tmp/github-app-private-key
-          echo '${{ env.GH_APP_HMAC }}' > ./tmp/hmac
+          printf '%s' "$GH_APP_PRIVATE_KEY" | base64 -d > ./tmp/github-app-private-key
+          printf '%s\n' "$GH_APP_HMAC" > ./tmp/hmac
       - name: verify-conformance
         env:
           GH_APP_ID: ${{ secrets.GH_APP_ID }}
