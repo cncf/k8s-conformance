@@ -1,0 +1,9 @@
+# DRAFT: replace TODO values before submission; ensure each URL is publicly accessible.
+vendor: QUANTUM C&S
+name: ORKESTRIX QKS
+version: v1.0.0
+website_url: https://quantumcns.ai
+documentation_url: https://quantumcns.ai/docs/qks/intro/what-is-qks
+type: hosted platform
+description: A GUI-based managed Kubernetes platform providing centralized multi-cluster and multi-tenant management, automated cluster lifecycle operations, virtual machine management, and integrated monitoring and alerting.
+contact_email_address: aila@quantumcns.ai

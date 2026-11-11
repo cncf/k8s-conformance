@@ -1,0 +1,8 @@
+vendor: centron
+name: centron Managed Kubernetes
+version: 2026-10-15
+website_url: https://www.centron.de/produkte/managed-kubernetes
+documentation_url: https://docs.centron.de/docs/product/compute/kubernetes/
+type: hosted
+description: "With centron Managed Kubernetes, you create clusters, scale them and delete them again whenever you like while we take care of operating the control plane, network, storage, backup, monitoring and policies."
+contact_email_address: info@centron.de
