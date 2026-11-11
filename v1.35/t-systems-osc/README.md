@@ -1,36 +1,26 @@
-# Reproducing the test results:
+# Conformance tests for Gardener v1.x provisioned by Open Sovereign Cloud
 
-Gardener is using [hydrophone](https://github.com/kubernetes-sigs/hydrophone) to run Kubernetes conformance tests!
+## Sign in at the OSC Dashboard, create a User and a Project
 
-## Requirements
-A valid installation of Gardener is required. 
+Follow the getting started guide according to the [documentation](https://docs.osc.live/v1.0.4/osc-gardener-user-documentation/01-Get_Started/user-creation.html). 
 
-Some of the many ways of installation Gardener can be found in the Gardener Deployment documentation at https://gardener.cloud/docs/gardener/deployment/. 
-Some of them include https://gardener.cloud/docs/gardener/deployment/getting_started_locally/ and https://gardener.cloud/docs/gardener/deployment/getting_started_remotely/.
 
-After Gardener is installed, a shoot cluster should be created either via the Gardener Dashboard or directly interacting with the Gardener Cluster API.
+## Shoot Creation
 
-## Launch E2E Conformance Tests
+After creating a project, follow [Shoot creation guide](https://docs.osc.live/v1.0.4/osc-gardener-user-documentation/01-Get_Started/shoots-creation.html) to create a Shoot cluster.
 
-Set the `KUBECONFIG` as path to the kubeconfig file of your newly created (shoot) cluster. 
-One way is to create a temporary one using the [shoots/adminkubeconfig Subresource](https://gardener.cloud/docs/gardener/shoot/shoot_access/#shoots-adminkubeconfig-subresource). 
 
-Run a docker container that mounts the shoot's kubeconfig inside it
-```bash
-docker run -ti --rm -v $SHOOT_KUBECONFIG:/mye2e/shoot.config golang:1.26 bash
+## Run conformance tests
+
+To verify that your OSC Gardener Shoot cluster is indeed conformant, you
+can download sonobuoy from
+[github.com/vmware-tanzu/sonobuoy/releases](https://github.com/vmware-tanzu/sonobuoy/releases)
+and run the test in your cluster:
+
+```
+sonobuoy run --mode=certified-conformance --wait
+outfile=$(sonobuoy retrieve)
+mkdir ./results; tar xzf $outfile -C ./results
 ```
 
-Within the container do the following:
-
-Checkout the repo [github.com/gardener/test-infra](https://github.com/gardener/test-infra) and cd into it
-
-Run the tests:
-
-```bash
-export E2E_EXPORT_PATH=/tmp/export; export KUBECONFIG=/mye2e/shoot.config; export GINKGO_PARALLEL=false
-
-go run -mod=mod ./conformance-tests/ --k8sVersion=1.34.3 --cloudprovider=gcp --kubeconfig=$KUBECONFIG
-```
-
-> [!NOTE]
-> Adjust values for arguments `k8sVersion` and `cloudprovider` respective to your cluster!
+You can find the result files in `results/plugins/e2e/results/global/`.
