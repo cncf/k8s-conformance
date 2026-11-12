@@ -1,0 +1,9 @@
+vendor: T-Systems
+name: Open Sovereign Cloud
+version: v1.0.0.5
+website_url: https://www.t-systems.com/de/en/cloud-services/solutions/cloud-infrastructure/private-cloud/open-sovereign-cloud
+documentation_url: https://docs.osc.live/latest/
+product_logo_url: https://osc-web-assets.obs.eu-de.otc.t-systems.com/osc_logo.svg
+type: hosted
+description: Open Sovereign Cloud (OSC) is T-Systems’ next-generation, open-source cloud platform, combining Gardener for Kubernetes lifecycle management with OnMetal for high-performance, bare-metal infrastructure. It provides a sovereign, transparent, and secure environment designed to keep data and infrastructure under European control.
+contact_email_address: Open_Sovereign_Cloud@t-systems.com
