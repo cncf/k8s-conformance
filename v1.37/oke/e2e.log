@@ -1,0 +1,98 @@
+  I1118 08:20:54.865866      17 e2e.go:109] Starting e2e run "7d46049d-d87b-44ff-8e61-5cead5f257fe" on Ginkgo node 1
+Running Suite: Kubernetes e2e suite - /usr/local/bin
+====================================================
+Random Seed: 1794990054 - will randomize all specs
+
+Will run 462 of 3206 specs
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-api-machinery] Servers with support for API chunking should support continue listing from the last key if the original version has been compacted away, though the list is inconsistent [Conformance] [Slow] (Spec Runtime: 6m0.192s)
+      k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:144
+      In [It] (Node Runtime: 5m42.635s)
+        k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:144
+        At [By Step] retrieving the second page until the token expires (Step Runtime: 5m42.585s)
+          k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:165
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          I1118 08:33:33.428879      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:33:53.427774      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:34:13.428569      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:34:33.429246      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:34:53.428639      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:35:13.428673      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:35:33.427850      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:35:53.428859      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:36:13.427680      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+          I1118 08:36:33.430629      17 chunking.go:171] Token eyJ2IjoibWV0YS5rOHMuaW8vdjEiLCJydiI6MTIxNDIsInN0YXJ0IjoiL3RlbXBsYXRlLTAwMzlcdTAwMDAifQ has not expired yet
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 4411 [select]
+          k8s.io/apimachinery/pkg/util/wait.waitForWithContext({0x6692718, 0x96ea400}, 0x2e8adc8496e0, 0x2e8adb755730)
+            k8s.io/apimachinery/pkg/util/wait/wait.go:210
+          k8s.io/apimachinery/pkg/util/wait.poll({0x6692718, 0x96ea400}, 0x0?, 0x2e8adc8496e0, 0x2e8adc849730)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:260
+          k8s.io/apimachinery/pkg/util/wait.PollWithContext({0x6692718?, 0x96ea400?}, 0x0?, 0x32?, 0x0?)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:85
+          k8s.io/apimachinery/pkg/util/wait.Poll(0x6271cbe?, 0x56?, 0x0?)
+            k8s.io/apimachinery/pkg/util/wait/poll.go:66
+        > k8s.io/kubernetes/test/e2e/apimachinery.init.func5.3({0x6692d70, 0x2e8add4a2420})
+            k8s.io/kubernetes/test/e2e/apimachinery/chunking.go:168
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x66aa430?, 0x2e8add4a2420?})
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 3332
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/suite.go:911
+  ------------------------------
+•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•S••S•SS••SSSS•SSSSSSSSS••S•SSSS•SSSSSSSSSS•SSS•S•SSSS•S•S•S•SSSS•SS•SSSSSSSSS••S••S•SSSSSSSSSSSS•S•SSS•SSSS•SSSSS•SS•S•SSS••SSS•SSSSSSSS•S••SSSSSSSSSS••S•SSSSSSS•SSS•SSSSSS•SSSSSS•SSS•SS•S•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSS•SSSSS•SSSSSSS•SSSSSSSS•SSS•SSSSSSSSSSSSSS•SS•SS•SSSSS•S•S•SSS•SSSSSS•SSSSSSSSSS•SS•S•S•S•S•SSSSS•SSSSSSSSSSSSSS•SSSSSSS•SS•SSS•SSSSSSS•S••SS•SSSS••SS•SSSSSSSSSS••SSSSS•SSSSSSSSSSSSS•SSSS•SSS•SSSSSSSSSSSSSSS•SSSSSSSS•S•SSSSSSSSS••SSS•SSS•SSSSSSS••SSSSSSSSSSSSS•SSSSSSSSSSSSSSSSS•SSSSS•SSSS•••••••SS•SSSSSSSS•SSSSS•SSSSS•SSSSSSSSS•SSS•SSSSS•SSSSS•SS•SSSS•S•SSSS•SSSSSSSSSSSSSSSSSSSS•SS••••SSSSSS•SSSSSSSSSSSSSSSSS•S•SSSSS•SSSSSS•SSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSS•SSSSS•SSSSSSSSSSS•S•SSS•SS•SSSSSSS•SS••S•••SSSSSS••SSSSSSS•S••SS•SSSS•SSSSSSSS•SSSS•SSSSSSSSS•SS••SS•S•S•S••SSSSS•SSS••SSS•SS•SSS•SSS•SSSSSSSSSSSSSSSSSS•SSSSSSS•SSS•SSSSSSSSSSSSSSS•SSSSSSSSSSSS••S•SSSSSSSS•S•SSSSSS•SSSSSSS•SSSSSSSS••S•SSSS•SS•S•SSS•SSS•S•SSSSSSS•SSSSS•SSSS•SSSSS••SSSSSSSSSSS•SSSSSSSSSSSSS••SSS•SSSSS•SSSSSSSSSSSSSS••SSSSSSSS•SSSSSSSSS•SSSSSS••SSSSS•SSSSS•S••SS•SSSSSSSS•SSSSSS•SSSSSS•SSS•SS•S•SSS•SSSSS•SSS••SSSS•SSSSS
+  ------------------------------
+  You've requested a progress report:
+    [sig-node] Probing container should *not* be restarted with a exec "cat /tmp/health" liveness probe [Conformance] [NodeConformance] (Spec Runtime: 2m43.946s)
+      k8s.io/kubernetes/test/e2e/common/node/container_probe.go:153
+      In [It] (Node Runtime: 2m43.91s)
+        k8s.io/kubernetes/test/e2e/common/node/container_probe.go:153
+        At [By Step] checking the pod's current state and verifying that restartCount is present (Step Runtime: 2m41.866s)
+          k8s.io/kubernetes/test/e2e/common/node/container_probe.go:1956
+
+        Begin Captured GinkgoWriter Output >>
+          ...
+          E1118 09:23:05.444127      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          E1118 09:23:06.444220      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          I1118 09:23:06.559677      17 container_probe.go:1970] Get pod busybox-6e7ac7b9-d864-4ebc-8493-b82e4809f395 in namespace container-probe-2838
+          E1118 09:23:07.444461      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          E1118 09:23:08.444473      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          I1118 09:23:08.568507      17 container_probe.go:1970] Get pod busybox-6e7ac7b9-d864-4ebc-8493-b82e4809f395 in namespace container-probe-2838
+          E1118 09:23:09.445437      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          E1118 09:23:10.446302      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+          I1118 09:23:10.577057      17 container_probe.go:1970] Get pod busybox-6e7ac7b9-d864-4ebc-8493-b82e4809f395 in namespace container-probe-2838
+          E1118 09:23:11.446427      17 retrywatcher.go:176] "Watch failed" err="context canceled"
+        << End Captured GinkgoWriter Output
+
+        Spec Goroutine
+        goroutine 20155 [sleep]
+          time.Sleep(0x77359400)
+            runtime/time.go:363
+        > k8s.io/kubernetes/test/e2e/common/node.runLivenessTest({0x6692d70, 0x2e8ade112930}, 0x2e8adba86000, 0x2e8aded2e008, 0x0, 0x37e11d6000, {0x6152e52, 0x7})
+            k8s.io/kubernetes/test/e2e/common/node/container_probe.go:1968
+        > k8s.io/kubernetes/test/e2e/common/node.RunLivenessTest({0x6692d70, 0x2e8ade112930}, 0x2e8adba86000, 0x2e8aded2e008, 0x0, 0x37e11d6000)
+            k8s.io/kubernetes/test/e2e/common/node/container_probe.go:1921
+        > k8s.io/kubernetes/test/e2e/common/node.init.func2.5({0x6692d70, 0x2e8ade112930})
+            k8s.io/kubernetes/test/e2e/common/node/container_probe.go:162
+          github.com/onsi/ginkgo/v2/internal.extractBodyFunction.func2({0x66aa430?, 0x2e8ade112930?})
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/node.go:578
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode.func3()
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/suite.go:946
+          github.com/onsi/ginkgo/v2/internal.(*Suite).runNode in goroutine 3332
+            github.com/onsi/ginkgo/v2@v2.32.0/internal/suite.go:911
+  ------------------------------
+•SSS•SS•SSSSSSSSSSSSSSS••S•SSSSSSSSSSSSS•SSS•S•SS•SSS•SSS•SSSS••SSSSSSSSSS•SSSSSSS•SSSS•SSSSS••SSSS•SSSSSS•SSSSSSSSSSS••SSSSSSSSS•SSSS•SS•SSSSSSSSSSSSSSSSS•SSSS•SSSS•SSSSSSSSSSSS••SSSSSSSS•SS••S•SS•S•SSSS•SSS•S•SSSSSSS••SSSSSSS••SSSSSSSSS•SSSSSSS•SSSSSSSSSSSSSSSSSSSSSSSSS•SSSSSSS•SS•SSSSSSS••SSSSSSSSSSSSS•SS•SSSSS•SS•SSS•SSSSSSSS••SSSSSSSSSS•S•SSSSSSSSS•S••SSSS•SSS•S••SSS•SSSSS••SSSS•SSSSSSSSS•SSS••SSSSSSSS••SSS•SSSSS•S•SSSSSSSSS•S•SSSSSSSS•SSSSSSS•SSSSSS••S•SSSSSSSSSSS••SSSS•S••SSSSS•SS•SSSSS•SSSSS•••SS•SSSSSSS•SSSS•SSSSSSSSSS•S••SSS•SSSSSSSS••SSSSSSSS•SSSS••SSS•SSS•SS•SSSSS•S•SSSSSSS•SSSSSSSS•SSSS•SSSSSS•SS•SSSSSSSSSSSSS•SSS•SSSSS•SSS•SSSSSSS•SS•SS•SS•S••SSSSSSS••S•SSSSSS•SSS•SSS•SS••SSSS••SSSSS•S•SSSSSSS•S•SSSSSS•••SS•S•SSSSSSSSS•SSSSSSSSSSSSSSSS•SSS•SSSSS•SSSSSS•SS•SS••SSSSSSSSSSSSSSSS•SSSS•SS•SSSSS•SSS•S••SSSSSSS•SSSSS•SSSSS•SS•SSS•S•SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS•SS•SSSSSSSSSSSSS•SSSSS••••SSSS•••SSSS•SSSS•S•SSSSSS•SS•SSS•SSSS•SS•SSSSSSSS••S•SSSS•••S•SSSSS•SSSSSSSSSSSSS•SSSSSSSSSSSS••SSSSSSSSSS•SSSSSSSSSSSSSS•SSSSSSSS•SS•SSSS•SSSSSSS•S•SSSSSSS•SSSS•SSS•SSSSSSS•SSSSS•SSSSSSSSSSS•SSSSSSSSSSSS•SSSSSSSSS•S••SSSSSSSSSS•SS•SSS•SSSSSS••S•SSS•SSSSSSSS••SSSSSSSSSSSSSSSS•S•SS••SSS•S•SSS•••SS•SSS•SS•S•SSSSSSS•SSS•SSSSSSS
+
+Ran 462 of 3206 Specs in 6903.712 seconds
+SUCCESS! -- 462 Passed | 0 Failed | 0 Pending | 2744 Skipped
+PASS
+
+Ginkgo ran 1 suite in 1h55m4.684646732s
+Test Suite Passed
