@@ -1,0 +1,8 @@
+vendor: Crusoe
+name: Crusoe Managed Kubernetes
+version: 1.35.5-cmk.28
+website_url: https://www.crusoe.ai
+documentation_url: https://docs.crusoecloud.com/orchestration/cmk/overview
+type: hosted platform
+description: 'Crusoe Managed Kubernetes is a hosted Kubernetes platform on Crusoe Cloud with managed control planes and GPU node pools for AI workloads.'
+contact_email_address: cmk-core@crusoe.ai
