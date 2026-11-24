@@ -1,0 +1,9 @@
+vendor: Clush Inc.
+name: AXLEON
+version: v1.36.4-10
+website_url: https://www.clush.ai/en/axleon-platformops
+documentation_url: https://www.clush.ai/en/axleon-platformops
+product_logo_url: https://static.wixstatic.com/shapes/fd6ab2_8ee83d2375ae4a2daa89d7832d25ddbf.svg
+type: distribution
+description: "AXLEON is a cloud-native Kubernetes platform that simplifies and automates cluster operations, from deployment to scaling, across multi-cloud and hybrid cloud environments."
+contact_email_address: contact@clush.net
